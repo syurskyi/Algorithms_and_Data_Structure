@@ -94,7 +94,6 @@ logs.txt
 data.db
 *.key
 *.indd
-*.png
 .DS_Store
 .vscode/
 __pycache__/
