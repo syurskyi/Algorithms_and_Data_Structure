@@ -1,3 +1,5 @@
+import timeit
+
 # %%
 '''
 # Big O for Python Data Structures
@@ -40,7 +42,7 @@ Let's now test these methods using the timeit magic function:
 '''
 
 # %%
-# %timeit method1()
+# print(timeit.timeit(method1))
 # %timeit method2()
 # %timeit method3()
 # %timeit method4()
