@@ -34,7 +34,7 @@ class TestUnique(object):
         assert_equal(sol(''), True)
         assert_equal(sol('goo'), False)
         assert_equal(sol('abcdefg'), True)
-        print 'ALL TEST CASES PASSED'
+        print('ALL TEST CASES PASSED')
         
 # Run Tests
 t = TestUnique()
