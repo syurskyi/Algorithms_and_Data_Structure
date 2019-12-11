@@ -90,7 +90,9 @@ anagram2('dd','aa')
 
 # %%
 '''
-A quick note on the second solution, the use of defaultdict form the collections module would clean up this code quite a bit, and the final for loop could be built into the second for loop, but in the above implementation every step is very clear.
+A quick note on the second solution, the use of defaultdict form the collections module would clean up this code quite 
+a bit, and the final for loop could be built into the second for loop, but in the above implementation every step is 
+very clear.
 '''
 
 # %%
@@ -115,14 +117,14 @@ class AnagramTest(object):
         assert_equal(sol('123','1 2'),False)
         print "ALL TEST CASES PASSED"
 
-# Run Tests
-t = AnagramTest()
-t.test(anagram)
-
-# %%
-t.test(anagram2)
-
-# %%
-'''
-# Good Job!
-'''
+# # Run Tests
+# t = AnagramTest()
+# t.test(anagram)
+#
+# # %%
+# t.test(anagram2)
+#
+# # %%
+# '''
+# # Good Job!
+# '''
