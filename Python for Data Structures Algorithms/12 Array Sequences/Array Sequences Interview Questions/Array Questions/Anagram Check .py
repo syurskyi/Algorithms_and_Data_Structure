@@ -14,7 +14,6 @@ Fill out your solution below:
 
 # %%
 def anagram(s1,s2):
-    
     pass
 
 # %%
@@ -35,11 +34,11 @@ Run the cell below to test your solution
 # %%
 """
 RUN THIS CELL TO TEST YOUR SOLUTION
-"""
+# """
 from nose.tools import assert_equal
 
 class AnagramTest(object):
-    
+
     def test(self, sol):
         assert_equal(sol('go go go','gggooo'),True)
         assert_equal(sol('abc','cba'),True)
@@ -51,11 +50,11 @@ class AnagramTest(object):
 # Run Tests
 t = AnagramTest()
 t.test(anagram)
-
-# %%
-t.test(anagram2)
-
-# %%
-'''
-# Good Job!
-'''
+#
+# # %%
+# t.test(anagram2)
+#
+# # %%
+# '''
+# # Good Job!
+# '''
