@@ -1,11 +1,8 @@
 # %%
 '''
 # Implementation of Deque
-
 In this lecture we will implement our own Deque class!
-
 ## Methods and Attributes
-
 * Deque() creates a new deque that is empty. It needs no parameters and returns an empty deque.
 * addFront(item) adds a new item to the front of the deque. It needs the item and returns nothing.
 * addRear(item) adds a new item to the rear of the deque. It needs the item and returns nothing.

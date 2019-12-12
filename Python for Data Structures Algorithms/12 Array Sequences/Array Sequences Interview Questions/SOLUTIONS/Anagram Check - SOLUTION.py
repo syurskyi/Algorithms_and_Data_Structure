@@ -38,7 +38,9 @@ anagram('aa','bb')
 
 # %%
 '''
-Now the above sorting approach is simple, but is actually not optimal and in an interview setting you would probably be asked to implement a more manual solution involving just counting the number of letters in each string to test your ability to understand hash tables. Let's build out a fuller solution using counting and Python dictionaries:
+Now the above sorting approach is simple, but is actually not optimal and in an interview setting you would probably 
+be asked to implement a more manual solution involving just counting the number of letters in each string to test your 
+ability to understand hash tables. Let's build out a fuller solution using counting and Python dictionaries:
 '''
 
 # %%

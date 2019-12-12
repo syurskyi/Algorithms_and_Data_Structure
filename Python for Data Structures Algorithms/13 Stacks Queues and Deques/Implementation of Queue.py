@@ -1,7 +1,6 @@
 # %%
 '''
 # Implementation of Queue
-
 In this lecture we will build on our previous understanding of Queues by implementing our own class of Queue!
 '''
 
@@ -9,7 +8,6 @@ In this lecture we will build on our previous understanding of Queues by impleme
 '''
 ____
 ## Queue Methods and Attributes
-
 
 Before we begin implementing our own queue, let's review the attribute and methods it will have:
 

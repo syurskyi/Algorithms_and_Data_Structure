@@ -1,7 +1,6 @@
 # %%
 '''
 # Implement a Stack -SOLUTION
-
 **Please refer to the lecture on implementation for a full explanation. Here is the code from that lecture:**
 '''
 

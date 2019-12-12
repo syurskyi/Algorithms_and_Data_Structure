@@ -1,12 +1,9 @@
 # %%
 '''
 # Largest Continuous Sum
-
 ## Problem
-Given an array of integers (positive and negative) find the largest continuous sum. 
-
+Given an array of integers (positive and negative) find the largest continuous sum.
 ## Solution
-
 Fill out your solution below:
 '''
 
@@ -29,7 +26,8 @@ large_cont_sum([1,2,-1,3,4,10,10,-10,-1])
 # %%
 '''
 ____
-Many times in an interview setting the question also requires you to report back the start and end points of the sum. Keep this in mind and see if you can solve that problem, we'll see it in the mock interview section of the course!
+Many times in an interview setting the question also requires you to report back the start and end points of the sum.
+Keep this in mind and see if you can solve that problem, we'll see it in the mock interview section of the course!
 '''
 
 # %%
