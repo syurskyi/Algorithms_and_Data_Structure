@@ -1,0 +1,2 @@
+def is_valid(zip_code):
+   return zip_code.isdigit()

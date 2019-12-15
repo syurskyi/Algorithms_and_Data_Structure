@@ -1,0 +1,17 @@
+Curve is defined by
+    x(t) = (1-t)^3 + 3 t(1-t)^2 + 3 v t^2(1-t)
+    y(t) = 3 v t(1-t)^2 + 3 t^2 (1-t) + t^3
+
+We need to find out the value of v.  Thanks to Wolfram Alpha.
+    Input: Integrate[(t^3 + 3 t^2 (1 - t) + 3 v t (1 - t)^2) D[3 v ((1 - t) t^2) + 3 t (1 - t)^2 + (1 - t)^3, t], {t, 1, 0}] == Pi/4
+    Output: {{v == 2 - Sqrt[(22 - 5 Pi)/3]}, {v == 2 + Sqrt[(22 - 5 Pi)/3]}}
+
+Plot to get arc length: (click more digits to get more digits)
+    Plot[{x == (1 - t)^3 + 3 t (1 - t)^2 + 3(2 - Sqrt[(22-5 pi)/3])(t^2 (1 - t)), y == 3(2 - Sqrt[(22-5 pi)/3]) (t (1 - t)^2) + 3 t^2 (1 - t) + t^3}, {t, 0, 1}]
+
+Arc length computing:    
+    Input: NIntegrate[Sqrt[(-1 + t)^2 (-6 + Sqrt[66 - 15 Pi] - 3 (-4 + Sqrt[66 - 15 Pi]) t)^2 + t^2 (6 - 2 Sqrt[66 - 15 Pi] + 3 (-4 + Sqrt[66 - 15 Pi]) t)^2], {t, 0, 1}, WorkingPrecision -> 100]
+    Output: 1.57079691127392508310038445839727202550078903940309163049508545958559154997782970994145192314759928550932819036209982408828157608298156698769713783892
+
+So the final answer:
+    0.000037209090605429341925865973367988200290267839270055072674...

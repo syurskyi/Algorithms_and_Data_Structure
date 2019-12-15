@@ -1,0 +1,16 @@
+def sum_neg(lst):
+    if len(lst) == 0:
+        return []
+    index = 0
+    output = []
+    s = 0
+    b = 0
+    while index < len(lst):
+        if lst[index] > 0:
+            s += 1
+        elif lst[index] <0:
+            b += lst[index]
+        index += 1
+    output.append(s)
+    output.append(b)
+    return output

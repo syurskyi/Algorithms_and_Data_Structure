@@ -1,0 +1,2 @@
+def hey(string):
+    pass

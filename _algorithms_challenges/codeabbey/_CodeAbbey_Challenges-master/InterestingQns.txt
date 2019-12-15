@@ -1,0 +1,24 @@
+Interesting Qns to revisit
+Problem 67 - Fibonacci Seq
+	> can use hashing to avoid long generation of numbers 
+	> use modular arithmetic approach
+Problem 31 - Rotate str
+	> using rotation in place - rotate twice in between two centre
+Problem 81 - Bit counting
+	> BIT WISE OPERATOR
+Problem 61 - Prime Number Generator
+	> Optimise on Sieve methods (~21.9s)
+	> Multiprogramming
+Problem 59 - Bulls n Cows
+	> Use the "hints" to solve the code
+Problem 22 - Two Printers
+	> Optimise methods of finding the min time
+Problem 34 - Binary searching
+	> solving monotonic eq for x
+Problem 33 - Parity Control
+	> Use BinToDec and DecToBin own method 
+Problem 53 - King N Queen
+	> do function check for each of the chess piece
+	> use neater methods
+
+

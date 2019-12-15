@@ -1,0 +1,22 @@
+d =  int(input())
+
+count = 0
+res = []
+while count < d:
+    a = input().split()
+    
+    a = [int(i) for i in a]
+    
+    for i in range(0,2):
+        for j in range(i,3):
+            if a[i] > a[j]:
+                temp = a[i]
+                a[i] = a[j]
+                a[j] = temp
+                continue
+                
+                
+    res.append(a[1])
+    count =  count +1
+res = ' '.join(str(e) for e in res)
+print(res)

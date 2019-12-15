@@ -1,0 +1,19 @@
+CXX = gcc
+LFLAGS  = -lm -Wall -o
+TARGET  = solution_1
+TARGET2 = solution_2
+EXTENSION_TARGET = c
+EXTENSION_OUT = out
+
+
+all: t1 t2 
+
+t1:
+	$(CXX) $(LFLAGS) $(TARGET).$(EXTENSION_OUT) $(TARGET).$(EXTENSION_TARGET)
+t2:
+	$(CXX) $(LFLAGS) $(TARGET2).$(EXTENSION_OUT) $(TARGET2).$(EXTENSION_TARGET)
+
+clean: 
+	rm -v *.$(EXTENSION_OUT)
+run:
+	./$(TARGET).$(EXTENSION_OUT)

@@ -1,0 +1,5 @@
+建立一個存款(Deposit)類別，其屬性與方法如下:
+定義私有屬性，principal、rate、term，分別存放本金、年利率、存放年數。
+定義建構函數，將所有屬性的初始值設定為0。
+定義方法 assign、receive，用來設定與取得 principal、rate、term值。
+定義方法 amount，計算 本利和 = 本金 x (1 + 年利率/12)^月數 ，並輸出。

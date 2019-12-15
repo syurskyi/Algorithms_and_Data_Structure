@@ -1,0 +1,2 @@
+def commands(number):
+    pass

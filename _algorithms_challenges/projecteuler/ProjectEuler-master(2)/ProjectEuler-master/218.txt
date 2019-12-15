@@ -1,0 +1,23 @@
+Answer: 0
+
+Proof:
+abc is primitive right angled triangle if and only if
+    a = m^2 - n^2, 
+    b = 2mn, 
+    c = m^2 + n^2
+where m and n are coprime and m - n is not divided by 2.
+
+c is a square, so there exists an integer k such that k^2 = c
+So k^2 = m^2 + n^2 or
+    m = d(p^2 - q^2),
+    n = d(2pq),
+    k = d(p^2 + q^2)
+where p and q are coprime and p - q is not divided by 2.
+d = 1 because m and n are coprime, so
+    m = p^2 - q^2,
+    n = 2pq,
+    k = p^2 + q^2
+
+The area A of abc is pq(p^2 - q^2)(p^4 - 6p^2q^2 + q^4).  
+Note that A is always divided by 84 for any combination of (p, q).
+(Here we use Python to check this fact :p)

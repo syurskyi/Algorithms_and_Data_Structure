@@ -1,0 +1,23 @@
+22
+7 4 J
+J 6
+J Q
+Q A
+3 9 3 A
+T A
+Q 7
+A Q
+T 2 A T
+8 8
+A 8
+5 T 4
+4 8 A Q
+8 3 3 A 9
+Q 8
+9 A
+J A
+5 T A
+A 5
+8 K
+T 3 A A 3
+Q 7

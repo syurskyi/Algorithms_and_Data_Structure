@@ -1,0 +1,10 @@
+定義一個CBox類別，此類別包含length與width屬性
+
+  (a)	請利用建構子設定length與width值，同時設計一個方法GetArea()，
+      此方法可計算面積，最後再設計一個Display方法列印面積，
+      最後建構三個物件具有不同的length與width屬性測試此類別。
+      
+  (b)	增加一衍生類別Cube，此類別多一個屬性height，同時設計一個方法GetVolume()，
+      此方法可計算體積，最後利用多型概念，再設計一個Display方法列印體積，
+      最後建構三個物件具有不同的length、width與height屬性測試此類別。
+

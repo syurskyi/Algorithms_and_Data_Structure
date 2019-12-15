@@ -1,0 +1,10 @@
+Topological sort by hand.  Check every possible digit.
+
+(1) 4, 5 are not in the passcode.
+(2) For digit 0, there are 7 digits in the front of 0, so 0 must be in the last position.
+(3) For digit 1, there are 2 digits (3 and 7) in the front of 1.  So 1 must be in the 3rd position (1-based index).
+(4) Find the relationship between 3 and 7.  7 is in the front of 3.  Currently the answer is 731????0.
+(5) For digit 2, there is only one digit, 6, in the front of 2.  73162??0.
+(6) Find the relationship between 8 and 9. 
+
+Done LOL

@@ -1,0 +1,3 @@
+def calc_determinant(matrix):
+    lst = matrix[0] + matrix[1]
+    return (lst[0] * lst[-1]) - (lst[1] * lst[2])

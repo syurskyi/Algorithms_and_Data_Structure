@@ -1,0 +1,4 @@
+def remove_first_last(txt):
+    if len(txt) <= 2:
+        return txt
+    return txt[1:-1]
