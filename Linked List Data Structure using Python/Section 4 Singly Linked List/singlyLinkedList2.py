@@ -19,7 +19,6 @@ class LinkedList:
         self.head.next = temporaryNode
         del temporaryNode
 
-
     def insertEnd(self, newNode):
         if self.head is None:
             self.head = newNode
@@ -48,11 +47,11 @@ class LinkedList:
 # firstNode.data => John, firstNode.next => None
 firstNode = Node("John")
 linkedList = LinkedList()
-linkedList.insert(firstNode)
+linkedList.insertEnd(firstNode)
 secondNode = Node("Ben")
 linkedList = LinkedList()
-linkedList.insert(secondNode)
+linkedList.insertEnd(secondNode)
 thirdNode = Node("Matthew")
-linkedList.insert(thirdNode)
+linkedList.insertHead(thirdNode)
 linkedList.printList()
 
