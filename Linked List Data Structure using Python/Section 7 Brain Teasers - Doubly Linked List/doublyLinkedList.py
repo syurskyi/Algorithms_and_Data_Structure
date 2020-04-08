@@ -27,6 +27,7 @@ class LinkedList:
         # 10->30->20 || position +> 1
         if position < 0 or position > self.listLength():
             print("Invalid position")
+            return
         if position is self.listLength():
             self.insertEnd(newNode)
             return
@@ -106,13 +107,13 @@ class LinkedList:
             print(reverseTraversalNode.data)
             reverseTraversalNode = reverseTraversalNode.previous
 
-nodeOne = Node('Joe')
-nodeTwo = Node('Mary')
-nodeThree = Node('Grace')
-linkedList = LinkedList()
-linkedList.insertEnd(nodeOne)
-linkedList.insertEnd(nodeTwo)
-linkedList.insertHead(nodeThree)
-linkedList.deleteAt(0)
-linkedList.printList()
+# nodeOne = Node('Joe')
+# nodeTwo = Node('Mary')
+# nodeThree = Node('Grace')
+# linkedList = LinkedList()
+# linkedList.insertEnd(nodeOne)
+# linkedList.insertEnd(nodeTwo)
+# linkedList.insertHead(nodeThree)
+# linkedList.deleteAt(0)
+# linkedList.printList()
 
