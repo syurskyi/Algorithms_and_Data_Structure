@@ -1,5 +1,3 @@
-
-
 def maxSum(arr, windowSize):
     arraySize = len(arr)
     # n must be greater than k
