@@ -6,30 +6,30 @@
 #
 # c_ LinkedList
 #     ___  - v..
-#         new_node _ ? v..
-#         head _ ?
-#         tail _ ?
-#         length _ 1
+#         n.. _ ? v..
+#         h.. _ ?
+#         t.. _ ?
+#         l.. _ 1
 #
 #     ___ print_list
-#         temp _ h..
+#         t.. _ h..
 #         w____ ? __ n.. N..
 #             print ?.v..
-#             temp _ ?.n..
+#             t.. _ ?.n..
 #
 #     ___ make_empty
-#         head _ N..
-#         tail _ N..
-#         length _ 0
+#         h.. _ N..
+#         t.. _ N..
+#         l.. _ 0
 #
 #     ___ appendvalue
 #         new_node _ ? v..
 #         __ h.. __ N..
-#             head _ ?
-#             tail _ ?
+#             h.. _ ?
+#             t.. _ ?
 #         ____
 #             t__.n.. _ n..
-#             tail _ n..
+#             t.. _ n..
 #         l.. +_ 1
 #
 #
