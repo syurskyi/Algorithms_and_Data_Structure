@@ -25,7 +25,6 @@ print('Length:', my_linked_list.length)
     Head: 4
     Tail: 4
     Length: 1
-    
+
 """
 
-                                                                                                                    
