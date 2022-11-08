@@ -6,7 +6,7 @@
 #
 # c_ LinkedList
 #     ___  - value
-#         new_node _ ? v..
+#         n.. _ ? v..
 #         h.. _ ?
 #         t.. _ ?
 #         l.. _ 1
@@ -18,14 +18,14 @@
 #             t.. _ ?.n..
 #
 #     ___ appendvalue
-#         new_node _ ? v..
+#         n.. _ ? v..
 #         __ l.. __ 0
 #             h.. _ ?
 #             t.. _ ?
 #         ____
 #             t__.n.. _ ?
 #             t.. _ ?
-#         length +_ 1
+#         l.. +_ 1
 #         r_ T..
 #
 #

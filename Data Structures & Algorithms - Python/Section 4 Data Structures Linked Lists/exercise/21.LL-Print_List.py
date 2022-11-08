@@ -1,39 +1,39 @@
-# c_ Node
-#     ___  - value
-#         ? _ ?
-#         n.. _ N..
-#
-#
-# c_ LinkedList
-#     ___  - value
-#         new_node _ ? v..
-#         h.. _ ?
-#         t.. _ ?
-#         l.. _ 1
-#
-#     ___ print_list
-#         t.. _ h..
-#         w____ ? __ n.. N..
-#             print ?.v..
-#             t.. _ ?.n..
-#
-#     ___ appendvalue
-#         new_node _ ? v..
-#         __ l.. __ 0
-#             h.. _ ?
-#             t.. _ ?
-#         ____
-#             t__.n.. _ ?
-#             t.. _ ?
-#         length +_ 1
-#         r_ T..
-#
-#
-# my_linked_list _ ? 11
-# ?.a.. 3
-# ?.a.. 23
-# ?.a.. 7
-#
-# ?.p..
-#
-#
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+
+
+class LinkedList:
+    def __init__(self, value):
+        new_node = Node(value)
+        self.head = new_node
+        self.tail = new_node
+        self.length = 1
+
+    def print_list(self):
+        temp = self.head
+        while temp is not None:
+            print(temp.value)
+            temp = temp.next
+
+    def appendvalue(self, value):
+        new_node = Node(value)
+        if self.length == 0:
+            self.head = new_node
+            self.tail = new_node
+        else:
+            self.tail.next = new_node
+            self.tail = new_node
+        self.length += 1
+        return True
+
+
+my_linked_list = LinkedList(11)
+my_linked_list.appendvalue(3)
+my_linked_list.appendvalue(23)
+my_linked_list.appendvalue(7)
+
+my_linked_list.print_list()
+
+
