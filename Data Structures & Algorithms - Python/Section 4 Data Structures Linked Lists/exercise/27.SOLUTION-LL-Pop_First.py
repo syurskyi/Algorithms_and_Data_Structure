@@ -1,91 +1,91 @@
-# c_ Node
-#     ___  - value
-#         ? _ ?
-#         n.. _ N..
-#
-#
-# c_ LinkedList
-#     ___  - value
-#         n.. _ ? v..
-#         h.. _ ?
-#         t.. _ ?
-#         l.. _ 1
-#
-#     ___ print_list
-#         t.. _ h..
-#         w____  ? __ n.. N..
-#             print ?.v..
-#             t.. _ ?.n..
-#
-#     ___ appendvalue
-#         n.. _ ? v..
-#         __ l.. __ 0
-#             h.. _ ?
-#             t.. _ ?
-#         ____
-#             t__.n.. _ ?
-#             t.. _ ?
-#         l.. +_ 1
-#         r_ T..
-#
-#     ___ pop
-#         __ l.. __ 0
-#             r_ N..
-#         t.. _ h..
-#         p.._ h..
-#         w____ ?.n..
-#             p.. _ t..
-#             t.. _ ?.n..
-#         t.. _ p..
-#         t__.n.. _ N..
-#         l.. -_ 1
-#         __ l.. __ 0
-#             h.. _ N..
-#             t.. _ N..
-#         r_ ?
-#
-#     ___ prependvalue
-#         n.. _ ? v..
-#         __ l.. __ 0
-#             h.. _ ?
-#             t.. _ ?
-#         ____
-#             ?.n.. _ h..
-#             h.. _ ?
-#         l.. +_ 1
-#         r_ T..
-#
-#     ___ pop_first
-#         __ l.. __ 0
-#             r_ N..
-#         t.. _ h..
-#         h.. _ ?.n..
-#         ?.n.. _ N..
-#         l.. -_ 1
-#         __ l.. __ 0
-#             t.. _ N..
-#         r_ ?
-#
-#
-#
-#
-# my_linked_list _ ? 2
-# ?.a.. 1)
-#
-#
-# # (2) Items - Returns 2 Node
-# print(?.p.. .v..
-# # (1) Item -  Returns 1 Node
-# print(?.p.. .v..
-# # (0) Items - Returns None
-# print(?.p..
-#
-#
-# """
-#     EXPECTED OUTPUT:
-#     ----------------
-#     2
-#     1
-#     None
-#
-# """
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+
+
+class LinkedList:
+    def __init__(self, value):
+        new_node = Node(value)
+        self.head = new_node
+        self.tail = new_node
+        self.length = 1
+
+    def print_list(self):
+        temp = self.head
+        while temp is not None:
+            print(temp.value)
+            temp = temp.next
+
+    def append(self, value):
+        new_node = Node(value)
+        if self.length == 0:
+            self.head = new_node
+            self.tail = new_node
+        else:
+            self.tail.next = new_node
+            self.tail = new_node
+        self.length += 1
+        return True
+
+    def pop(self):
+        if self.length == 0:
+            return None
+        temp = self.head
+        pre = self.head
+        while(temp.next):
+            pre = temp
+            temp = temp.next
+        self.tail = pre
+        self.tail.next = None
+        self.length -= 1
+        if self.length == 0:
+            self.head = None
+            self.tail = None
+        return temp
+
+    def prepend(self, value):
+        new_node = Node(value)
+        if self.length == 0:
+            self.head = new_node
+            self.tail = new_node
+        else:
+            new_node.next = self.head
+            self.head = new_node
+        self.length += 1
+        return True
+
+    def pop_first(self):
+        if self.length == 0:
+            return None
+        temp = self.head
+        self.head = self.head.next
+        temp.next = None
+        self.length -= 1
+        if self.length == 0:
+            self.tail = None
+        return temp
+
+
+
+
+my_linked_list = LinkedList(2)
+my_linked_list.append(1)
+
+
+# (2) Items - Returns 2 Node
+print(my_linked_list.pop_first().value)
+# (1) Item -  Returns 1 Node
+print(my_linked_list.pop_first().value)
+# (0) Items - Returns None
+print(my_linked_list.pop_first())
+
+
+"""
+    EXPECTED OUTPUT:
+    ----------------
+    2
+    1
+    None
+
+"""
