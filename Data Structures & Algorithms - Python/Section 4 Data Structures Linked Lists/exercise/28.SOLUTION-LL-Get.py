@@ -1,88 +1,88 @@
-c_ Node
-    ___  - value
-        ? _ ?
-        n.. _ N..
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
 
 
-c_ LinkedList
-    ___  - value
-        n.. _ ? v..
-        h.. _ ?
-        t.. _ ?
-        l.. _ 1
+class LinkedList:
+    def __init__(self, value):
+        new_node = Node(value)
+        self.head = new_node
+        self.tail = new_node
+        self.length = 1
 
-    ___ print_list
-        t.. _ h..
-        w____  ? __ n.. N..
-            print ?.v..
-            t.. _ ?.n..
+    def print_list(self):
+        temp = self.head
+        while temp is not None:
+            print(temp.value)
+            temp = temp.next
 
-    ___ appendvalue
-        n.. _ ? v..
-        __ l.. __ 0
-            h.. _ ?
-            t.. _ ?
-        ____
-            t__.n.. _ ?
-            t.. _ ?
-        l.. +_ 1
-        r_ T..
+    def append(self, value):
+        new_node = Node(value)
+        if self.length == 0:
+            self.head = new_node
+            self.tail = new_node
+        else:
+            self.tail.next = new_node
+            self.tail = new_node
+        self.length += 1
+        return True
 
-    ___ pop
-        __ l.. __ 0
-            r_ N..
-        t.. _ h..
-        p.._ h..
-        w____ ?.n..
-            p.. _ t..
-            t.. _ ?.n..
-        t.. _ p..
-        t__.n.. _ N..
-        l.. -_ 1
-        __ l.. __ 0
-            h.. _ N..
-            t.. _ N..
-        r_ ?
+    def pop(self):
+        if self.length == 0:
+            return None
+        temp = self.head
+        pre = self.head
+        while(temp.next):
+            pre = temp
+            temp = temp.next
+        self.tail = pre
+        self.tail.next = None
+        self.length -= 1
+        if self.length == 0:
+            self.head = None
+            self.tail = None
+        return temp
 
-    ___ prependvalue
-        n.. _ ? v..
-        __ l.. __ 0
-            h.. _ ?
-            t.. _ ?
-        ____
-            ?.n.. _ h..
-            h.. _ ?
-        l.. +_ 1
-        r_ T..
+    def prepend(self, value):
+        new_node = Node(value)
+        if self.length == 0:
+            self.head = new_node
+            self.tail = new_node
+        else:
+            new_node.next = self.head
+            self.head = new_node
+        self.length += 1
+        return True
 
-    ___ pop_first
-        __ l.. __ 0
-            r_ N..
-        t.. _ h..
-        h.. _ ?.n..
-        ?.n.. _ N..
-        l.. -_ 1
-        __ l.. __ 0
-            t.. _ N..
-        r_ ?
+    def pop_first(self):
+        if self.length == 0:
+            return None
+        temp = self.head
+        self.head = self.head.next
+        temp.next = None
+        self.length -= 1
+        if self.length == 0:
+            self.tail = None
+        return temp
 
-    ___ get  index
-         __  ? < 0 __ ? >_ l..
-            r_ N..
-        t.. _ h..
-        ___ _ __ r.. ?
-            t.. _ ?.n..
-        r_ ?
-
-
+    def get(self, index):
+        if index < 0 or index >= self.length:
+             return None
+        temp = self.head
+        for _ in range(index):
+            temp = temp.next
+        return temp
 
 
-my_linked_list _ ? 0)
-?.a.. 1)
-?.a.. 2)
-?.a.. 3)
 
-print(?.get(3).v..
+
+my_linked_list = LinkedList(0)
+my_linked_list.append(1)
+my_linked_list.append(2)
+my_linked_list.append("Test")
+
+print(my_linked_list.get(3).value)
 
 
 """
