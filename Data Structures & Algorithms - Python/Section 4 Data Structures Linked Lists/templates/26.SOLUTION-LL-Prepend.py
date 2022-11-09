@@ -14,7 +14,7 @@
 #     ___ print_list
 #         t.. _ h..
 #         w____ ? __ n.. N..
-#             print(temp.v..
+#             print ?.v..
 #             t.. _ ?.n..
 #
 #     ___ append value

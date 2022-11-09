@@ -1,111 +1,111 @@
-# c_ Node
-#     ___  - value
-#         ? _ ?
-#         n.. _ N..
-#
-#
-# c_ LinkedList
-#     ___  - value
-#         n.. _ ? v..
-#         h.. _ ?
-#         t.. _ ?
-#         l.. _ 1
-#
-#     ___ print_list
-#         t.. _ h..
-#         w____ ? __ n.. N..
-#             print(temp.v..
-#             t.. _ ?.n..
-#
-#     ___ appendvalue
-#         n.. _ ? v..
-#         __ l.. __ 0
-#             h.. _ ?
-#             t.. _ ?
-#         ____
-#             t__.n.. _ ?
-#             t.. _ ?
-#         l.. +_ 1
-#         r_ T..
-#
-#     ___ pop
-#         __ l.. __ 0
-#             r_ N..
-#         t.. _ h..
-#         p.._ h..
-#         w____ ?.n..
-#             p.. _ t..
-#             t.. _ ?.n..
-#         t.. _ p..
-#         t__.n.. _ N..
-#         l.. -_ 1
-#         __ l.. __ 0
-#             h.. _ N..
-#             t.. _ N..
-#         r_ ?
-#
-#     ___ prependvalue
-#         n.. _ ? v..
-#         __ l.. __ 0
-#             h.. _ ?
-#             t.. _ ?
-#         ____
-#             ?.n.. _ h..
-#             h.. _ ?
-#         l.. +_ 1
-#         r_ T..
-#
-#
-#
-#
-# my_linked_list _ ? 2
-# ?.a.. 3)
-#
-# print('Before prepend():'
-# print('----------------'
-# print('Head:', ?.h__.v..
-# print('Tail:', ?.t__.v..
-# print('Length:', ?.l.. '\n'
-# print('Linked List:'
-# ?.p..
-#
-#
-# ?.p.. 1
-#
-#
-# print('\n\nAfter prepend():'
-# print('---------------'
-# print('Head:', ?.h__.v..
-# print('Tail:', ?.t__.v..
-# print('Length:', ?.l.. '\n'
-# print('Linked List:'
-# ?.p..
-#
-#
-#
-# """
-#     EXPECTED OUTPUT:
-#
-#     Before prepend():
-#     ----------------
-#     Head: 2
-#     Tail: 3
-#     Length: 2
-#
-#     Linked List:
-#     2
-#     3
-#
-#
-#     After prepend():
-#     ---------------
-#     Head: 1
-#     Tail: 3
-#     Length: 3
-#
-#     Linked List:
-#     1
-#     2
-#     3
-#
-# """
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+
+
+class LinkedList:
+    def __init__(self, value):
+        new_node = Node(value)
+        self.head = new_node
+        self.tail = new_node
+        self.length = 1
+
+    def print_list(self):
+        temp = self.head
+        while temp is not None:
+            print(temp.value)
+            temp = temp.next
+
+    def append(self, value):
+        new_node = Node(value)
+        if self.length == 0:
+            self.head = new_node
+            self.tail = new_node
+        else:
+            self.tail.next = new_node
+            self.tail = new_node
+        self.length += 1
+        return True
+
+    def pop(self):
+        if self.length == 0:
+            return None
+        temp = self.head
+        pre = self.head
+        while(temp.next):
+            pre = temp
+            temp = temp.next
+        self.tail = pre
+        self.tail.next = None
+        self.length -= 1
+        if self.length == 0:
+            self.head = None
+            self.tail = None
+        return temp
+
+    def prepend(self, value):
+        new_node = Node(value)
+        if self.length == 0:
+            self.head = new_node
+            self.tail = new_node
+        else:
+            new_node.node = self.head
+            self.head = new_node
+        self.length += 1
+        return True
+
+
+
+
+my_linked_list = LinkedList(2)
+my_linked_list.append('Test')
+
+print('Before prepend():')
+print('----------------')
+print('Head:', my_linked_list.head.value)
+print('Tail:', my_linked_list.tail.value)
+print('Length:', my_linked_list.length, '\n')
+print('Linked List:')
+my_linked_list.print_list()
+
+
+my_linked_list.prepend(1)
+
+
+print('\n\nAfter prepend():')
+print('---------------')
+print('Head:', my_linked_list.head.value)
+print('Tail:', my_linked_list.tail.value)
+print('Length:', my_linked_list.length, '\n')
+print('Linked List:')
+my_linked_list.print_list()
+
+
+
+"""
+    EXPECTED OUTPUT:
+
+    Before prepend():
+    ----------------
+    Head: 2
+    Tail: 3
+    Length: 2
+
+    Linked List:
+    2
+    3
+
+
+    After prepend():
+    ---------------
+    Head: 1
+    Tail: 3
+    Length: 3
+
+    Linked List:
+    1
+    2
+    3
+
+"""
