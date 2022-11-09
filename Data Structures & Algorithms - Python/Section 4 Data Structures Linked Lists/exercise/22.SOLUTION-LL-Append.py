@@ -1,63 +1,63 @@
-# c_ Node
-#     ___  - value
-#         ? _ ?
-#         n.. _ N..
-#
-#
-# c_ LinkedList
-#     ___  - v..
-#         n.. _ ? v..
-#         h.. _ ?
-#         t.. _ ?
-#         l.. _ 1
-#
-#     ___ print_list
-#         t.. _ h..
-#         w____ ? __ n.. N..
-#             print ?.v..
-#             t.. _ ?.n..
-#
-#     ___ make_empty
-#         h.. _ N..
-#         t.. _ N..
-#         l.. _ 0
-#
-#     ___ appendvalue
-#         new_node _ ? v..
-#         __ h.. __ N..
-#             h.. _ ?
-#             t.. _ ?
-#         ____
-#             t__.n.. _ n..
-#             t.. _ n..
-#         l.. +_ 1
-#
-#
-#
-#
-# my_linked_list _ ? 1
-# ?.make_empty()
-#
-# ?.a.. 1
-# ?.a.. 2
-#
-# print('Head:', ?.h__.v..
-# print('Tail:', ?.t__.v..
-# print('Length:', ?.l.. '\n'
-#
-# print('Linked List:')
-# ?.p..
-#
-#
-# """
-#     EXPECTED OUTPUT:
-#     ----------------
-#     Head: 1
-#     Tail: 2
-#     Length: 2
-#
-#     Linked List:
-#     1
-#     2
-#
-# """
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+
+
+class LinkedList:
+    def __init__(self, value):
+        new_node = Node(value)
+        self.head = new_node
+        self.tail = new_node
+        self.length = 1
+
+    def print_list(self):
+        temp = self.head
+        while temp is not None:
+            print(temp.value)
+            temp = temp.next
+
+    def make_empty(self):
+        self.head = None
+        self.tail = None
+        self.length = 0
+
+    def append(self, value):
+        new_node = Node(value)
+        if self.head is None:
+            self.head = new_node
+            self.tail = new_node
+        else:
+            self.tail.next = new_node
+            self.tail = new_node
+        self.length += 1
+
+
+
+
+my_linked_list = LinkedList(1)
+my_linked_list.make_empty()
+
+my_linked_list.append(1)
+my_linked_list.append(2)
+
+print('Head:', my_linked_list.head.value)
+print('Tail:', my_linked_list.tail.value)
+print('Length:', my_linked_list.length, '\n')
+
+print('Linked List:')
+my_linked_list.print_list()
+
+
+"""
+    EXPECTED OUTPUT:
+    ----------------
+    Head: 1
+    Tail: 2
+    Length: 2
+
+    Linked List:
+    1
+    2
+
+"""

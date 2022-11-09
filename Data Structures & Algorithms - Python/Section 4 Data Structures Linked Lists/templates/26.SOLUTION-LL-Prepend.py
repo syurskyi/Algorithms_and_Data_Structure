@@ -17,7 +17,7 @@
 #             print(temp.v..
 #             t.. _ ?.n..
 #
-#     ___ appendvalue
+#     ___ append value
 #         n.. _ ? v..
 #         __ l.. __ 0
 #             h.. _ ?
