@@ -1,143 +1,139 @@
-# c_ Node
-#     ___  - value
-#         ? _ ?
-#         n.. _ N..
-#
-#
-# c_ LinkedList
-#     ___  - value
-#         n.. _ ? v..
-#         h.. _ ?
-#         t.. _ ?
-#         l.. _ 1
-#
-#     ___ print_list
-#         t.. _ h..
-#         w____  ? __ n.. N..
-#             print ?.v..
-#             t.. _ ?.n..
-#
-#     ___ appendvalue
-#         n.. _ ? v..
-#         __ l.. __ 0
-#             h.. _ ?
-#             t.. _ ?
-#         ____
-#             t__.n.. _ ?
-#             t.. _ ?
-#         l.. +_ 1
-#         r_ T..
-#
-#     ___ pop
-#         __ l.. __ 0
-#             r_ N..
-#         t.. _ h..
-#         p.._ h..
-#         w____ ?.n..
-#             p.. _ t..
-#             t.. _ ?.n..
-#         t.. _ p..
-#         t__.n.. _ N..
-#         l.. -_ 1
-#         __ l.. __ 0
-#             h.. _ N..
-#             t.. _ N..
-#         r_ ?
-#
-#     ___ prependvalue
-#         n.. _ ? v..
-#         __ l.. __ 0
-#             h.. _ ?
-#             t.. _ ?
-#         ____
-#             ?.n.. _ h..
-#             h.. _ ?
-#         l.. +_ 1
-#         r_ T..
-#
-#     ___ pop_first
-#         __ l.. __ 0
-#             r_ N..
-#         t.. _ h..
-#         h.. _ ?.n..
-#         ?.n.. _ N..
-#         l.. -_ 1
-#         __ l.. __ 0
-#             t.. _ N..
-#         r_ ?
-#
-#     ___ get  i..
-#          __  ? < 0 __ ? >_ l..
-#             r_ N..
-#         t.. _ h..
-#         ___ _ __ r.. ?
-#             t.. _ ?.n..
-#         r_ ?
-#
-#     ___ set_value  i.. v..
-#         t.. _ g.. ?
-#         __ ?
-#             ?.? _ ?
-#             r_ T..
-#         r_ F..
-#
-#     ___ insert  i.. v..
-#          __  ? < 0 __ ? > l..
-#             r_ F..
-#         __ ? __ 0
-#             r_ p.. v..
-#         __ ? __ l..
-#             r_ a.. v..
-#         n.. _ ? v..
-#         t.. _ g.. ? - 1
-#         n__.n.. _ ?.n..
-#         ?.n.. _ ?
-#         l.. +_ 1
-#         r_ T..
-#
-#     ___ remove  i..
-#          __  ? < 0 __ ? >_ l..
-#             r_ N..
-#         __ ? __ 0
-#             r_ p..
-#         __ ? __ l.. - 1
-#             r_ p..
-#         p.. _ g.. ? - 1
-#         t.. _ ?.n..
-#         ?.n.. _ ?.n..
-#         ?.n.. _ N..
-#         l.. -_ 1
-#         r_ ?
-#
-#
-#
-#
-# my_linked_list _ ? 1
-# ?.a.. 2)
-# ?.a.. 3)
-# ?.a.. 4)
-# ?.a.. 5)
-#
-# print('LL before remove():')
-# ?.p..
-#
-# print('\nRemoved node:')
-# print(?.r.. 2 .v..
-# print('LL after remove() in middle:')
-# ?.p..
-#
-# print('\nRemoved node:')
-# print(?.r.. 0.v..
-# print('LL after remove() of first node:')
-# ?.p..
-#
-# print('\nRemoved node:')
-# print(?.r.. 2 .v..
-# print('LL after remove() of last node:')
-# ?.p..
-#
-#
-#
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+
+
+class LinkedList:
+    def __init__(self, value):
+        new_node = Node(value)
+        self.head = new_node
+        self.tail = new_node
+        self.length = 1
+
+    def print_list(self):
+        temp = self.head
+        while temp is not None:
+            print(temp.value)
+            temp = temp.next
+
+    def append(self, value):
+        new_node = Node(value)
+        if self.length == 0:
+            self.head = new_node
+            self.tail = new_node
+        else:
+            self.tail.next = new_node
+            self.tail = new_node
+        self.length += 1
+        return True
+
+    def pop(self):
+        if self.length == 0:
+            return None
+        temp = self.head
+        pre = self.head
+        while (temp.next):
+            pre = temp
+            temp = temp.next
+        self.tail = pre
+        self.tail.next = None
+        self.length -= 1
+        if self.length == 0:
+            self.head = None
+            self.tail = None
+        return temp
+
+    def prepend(self, value):
+        new_node = Node(value)
+        if self.length == 0:
+            self.head = new_node
+            self.tail = new_node
+        else:
+            new_node.next = self.head
+            self.head = new_node
+        self.length += 1
+        return True
+
+    def pop_first(self):
+        if self.length == 0:
+            return None
+        temp = self.head
+        self.head = self.head.next
+        temp.next = None
+        self.length -= 1
+        if self.length == 0:
+            self.tail = None
+        return temp
+
+    def get(self, index):
+        if index < 0 or index > self.length:
+            return None
+        temp = self.head
+        for _ in range(index):
+            temp = temp.next
+        return temp
+
+    def set_value(self, index, value):
+        temp = self.get(index)
+        if temp:
+            temp.value = value
+            return True
+        return False
+
+    def insert(self, index, value):
+        if index < 0 or index > self.length:
+            return False
+        if index == 0:
+            return self.prepend(value)
+        if index == self.length:
+            return self.append(value)
+        new_node = Node(value)
+        temp = self.get(index - 1)
+        new_node.next = temp.next
+        temp.next = new_node
+        self.length += 1
+        return True
+
+    def remove(self, index):
+        if index < 0 or index >= self.length:
+            return None
+        if index == 0:
+            return self.pop_first()
+        if index == self.length - 1:
+            return self.pop()
+        prev = self.get(index - 1)
+        temp = prev.next
+        prev.next = temp.next
+        temp.next = None
+        self.length -= 1
+        return temp
+
+
+my_linked_list = LinkedList(1)
+my_linked_list.append(2)
+my_linked_list.append(3)
+my_linked_list.append(4)
+my_linked_list.append(5)
+
+print('LL before remove():')
+my_linked_list.print_list()
+
+print('\nRemoved node:')
+print(my_linked_list.remove(2).value)
+print('LL after remove() in middle:')
+my_linked_list.print_list()
+
+print('\nRemoved node:')
+print(my_linked_list.remove(0).value)
+print('LL after remove() of first node:')
+my_linked_list.print_list()
+
+print('\nRemoved node:')
+print(my_linked_list.remove(2).value)
+print('LL after remove() of last node:')
+my_linked_list.print_list()
+
 # """
 #     EXPECTED OUTPUT:
 #     ----------------
