@@ -1,60 +1,60 @@
-class Node:
-    def __init__(self, value):
-        self.value = value
-        self.next = None
-        self.prev = None
+c_ Node
+    ___  -  value)
+        ? _ ?
+        n.. _ N..
+        p.. _ N..
         
 
-class DoublyLinkedList:
-    def __init__(self, value):
-        new_node = Node(value)
-        self.head = new_node
-        self.tail = new_node
-        self.length = 1
+c_ DoublyLinkedList
+    ___  -  value)
+        n.. _ ? ?
+        h.. _ ?
+        t.. _ ?
+        l.. _ 1
 
-    def print_list(self):
-        temp = self.head
-        while temp is not None:
-            print(temp.value)
-            temp = temp.next
+    ___ print_list
+        t.. _ h..
+        w__ ? __ n.. N..
+            print ?.v..
+            ? _ ?.n..
         
-    def append(self, value):
-        new_node = Node(value)
-        if self.head is None:
-            self.head = new_node
-            self.tail = new_node
-        else:
-            self.tail.next = new_node
-            new_node.prev = self.tail
-            self.tail = new_node
-        self.length += 1
-        return True
+    ___ append  value)
+        n.. _ ? ?
+        __ ? __ N..
+            h.. _ ?
+            t.. _ ?
+        ____
+            t__.n.. _ ?
+            ?.p.. _ t..
+            t.. _ ?
+        ? =_ 1
+        r_ T..
 
-    def pop(self):
-        if self.length == 0:
-            return None
-        temp = self.tail
-        if self.length == 1:
-            self.head = None
-            self.tail = None 
-        else:       
-            self.tail = self.tail.prev
-            self.tail.next = None
-            temp.prev = None
-        self.length -= 1
-        return temp
+    ___ pop
+        __ ? __ 0
+            r_ N..
+        t.. _ t..
+        __ ? __ 1
+            h.. _ N..
+            t.. _ N.. 
+        ____       
+            t.. _ t__.p..
+            ?.n.. _ N.
+            ?.p.. _ N..
+        ? -_ 1
+        r_ ?
 
-    def prepend(self, value):
-        new_node = Node(value)
-        if self.length == 0:
-            self.head = new_node
-            self.tail = new_node
-        else:
-            new_node.next = self.head
-            self.head.prev = new_node
-            self.head = new_node
-        self.length += 1
-        return True
+    ___ prepend  value)
+        n.. _ ? ?
+        __ ? __ 0
+            h.. _ ?
+            t.. _ ?
+        ____
+            new_node.next = head
+            head.prev = new_node
+            h.. _ ?
+        ? =_ 1
+        r_ T..
 
     ## WRITE POP_FIRST METHOD HERE ##
     #                               #
@@ -66,16 +66,16 @@ class DoublyLinkedList:
 
 
 
-my_doubly_linked_list = DoublyLinkedList(2)
-my_doubly_linked_list.append(1)
+my_doubly_linked_list = ? 2)
+?.append(1)
 
 
 # (2) Items - Returns 2 Node
-print(my_doubly_linked_list.pop_first().value)
+print(?.pop_first().value)
 # (1) Item -  Returns 1 Node
-print(my_doubly_linked_list.pop_first().value)
+print(?.pop_first().value)
 # (0) Items - Returns None
-print(my_doubly_linked_list.pop_first())
+print(?.pop_first())
 
 
 """
