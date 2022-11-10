@@ -34,7 +34,7 @@ class LinkedList:
         temp = self.head
         prev = self.head
         while(temp.next):
-            prev = temp
+            pre = temp
             temp = temp.next
         self.tail = prev
         self.tail.next = None
@@ -122,20 +122,18 @@ class LinkedList:
             temp = after
 
 
-
-
-my_linked_list _ ? 1
-?.a.. 2
-?.a.. 3
-?.a.. 4
+my_linked_list = LinkedList(1)
+my_linked_list.append(2)
+my_linked_list.append(3)
+my_linked_list.append(4)
 
 print('LL before reverse():')
-?.p..
+my_linked_list.print_list()
 
-?.r..
+my_linked_list.reverse()
 
 print('\nLL after reverse():')
-?.p..
+my_linked_list.print_list()
 
 
 
