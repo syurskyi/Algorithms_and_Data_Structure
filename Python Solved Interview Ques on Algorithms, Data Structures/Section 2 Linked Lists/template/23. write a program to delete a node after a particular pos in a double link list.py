@@ -1,14 +1,14 @@
 c_ Node :
-	def  -( self, data ) :
+	___  -( self, data ) :
 		data _ data
 		next _ N.. 
 		prev _ N..  
 
 c_ LinkedList :
-	def  -
+	___  -
 		head _ N..		
 
-        def insertAtBeg data
+        ___ insertAtBeg data
                node _ Node( data )
                __ (head __ N..
                   head _ node 
@@ -19,7 +19,7 @@ c_ LinkedList :
                   head_node
 
 
-        def insertAtEnd data
+        ___ insertAtEnd data
               node_ ? ?
               __ (head __ N..
                  head _ node 
@@ -31,7 +31,7 @@ c_ LinkedList :
                  node.prev_current
 
 
-        def insertAtPos  pos, item
+        ___ insertAtPos  pos, item
                __ pos > size() __ pos < 0:
                    r_ N..
                __ pos __ 0:
@@ -63,7 +63,7 @@ c_ LinkedList :
 
 
 
-        def search  k
+        ___ search  k
                p _ head
                __ p __ not N..:
                    __ p.data __ k:
@@ -75,18 +75,18 @@ c_ LinkedList :
                r_ N..
 
 
-	def remove( self, p ) :
+	___ remove( self, p ) :
 		tmp _ p.prev
 		p.prev.next _ p.next
 		p.prev _ tmp
 
 
-        def deleteatbeg
+        ___ deleteatbeg
               __ head __ not N..:
                  current _ head
                  head _ ?.next
 
-        def deleteatpos  position
+        ___ deleteatpos  position
 
              # If linked list is empty
              __ head __ N..:
@@ -120,7 +120,7 @@ c_ LinkedList :
 	     temp.next.prev _ temp.prev
 	     temp _ N..
 			 
-        def deleteatend
+        ___ deleteatend
              __ head __ N..:
                 r_
 
@@ -131,7 +131,7 @@ c_ LinkedList :
              ?.prev.next_None
              current_None  
 
-        def deleteatbeg
+        ___ deleteatbeg
              __ head __ N..:
                 r_
 
@@ -140,7 +140,7 @@ c_ LinkedList :
              head.prev _ N..
              current _ N.. 
 
-        def size
+        ___ size
                current _ head
                count _ 0
                w__ ?
@@ -149,7 +149,7 @@ c_ LinkedList :
                r_ count
 
 
-	def -s
+	___ -s
 		s _ ""
 		p _ head
 		__ p !_ N.. :		

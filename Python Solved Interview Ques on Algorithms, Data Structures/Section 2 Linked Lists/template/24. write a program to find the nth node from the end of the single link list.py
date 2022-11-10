@@ -1,31 +1,31 @@
 from pprint import pprint
 
 
-c_ Node(object
+c_ Node o..
 
-    def  -  data_N.. next_node_None
+    ___  -  data_N.. next_node_None
         data _ data
         next_node _ N.. 
 
-    def get_data
+    ___ get_data
         r_  ?
 
-    def get_next
+    ___ get_next
         r_ next_node
 
-    def set_next new_next
+    ___ set_next new_next
         next_node _ new_next
 
-c_ LinkedList(object
-    def  -  head_None
+c_ LinkedList o..
+    ___  -  head_None
         head _ head
 
-    def insert data
+    ___ insert data
         new_node _ ? ?
-        ?.set_next(head)
+        ?.s.. h..
         head _ new_node
 
-    def insertatEnd item
+    ___ insertatEnd item
         current _ head
         __ ?
             w__ ?.g.. !_ N..:
@@ -35,7 +35,7 @@ c_ LinkedList(object
             head _ ? ?
 
 
-    def size
+    ___ size
         current _ head
         count _ 0
         w__ ?
@@ -44,7 +44,7 @@ c_ LinkedList(object
         r_ count 
 
 
-    def search data
+    ___ search data
         current _ head
         found _ F...
         w__ current a__ found __ F...:
@@ -57,7 +57,7 @@ c_ LinkedList(object
         r_ ?
 
 
-    def delete data
+    ___ delete data
         current _ head
         previous _ N..
         found _ F...
@@ -74,7 +74,7 @@ c_ LinkedList(object
         ____
             previous.set_next(?.get_next())
 
-    def -s
+    ___ -s
         s _ ""
         p _ head
         __ p !_ N.. :
@@ -85,7 +85,7 @@ c_ LinkedList(object
         r_ s
 
 
-    def findElement  N
+    ___ findElement  N
         __ head __ N..:
             r_ N..
         

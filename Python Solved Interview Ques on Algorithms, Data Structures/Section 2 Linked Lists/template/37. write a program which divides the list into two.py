@@ -1,30 +1,30 @@
-class Node(object
+c_ Node o..
 
-    def  -  data_N.. next_node_None
+    ___  -  data_N.. next_node_None
         data _ data
         next_node _ N..
 
-    def get_data
+    ___ get_data
         r_  ?
 
-    def get_next
+    ___ get_next
         r_ next_node
 
-    def set_next new_next
+    ___ set_next new_next
         next_node _ new_next
 
 
 
-class LinkedList(object
-    def  -  head_None
+c_ LinkedList o..
+    ___  -  head_None
         head _ head
 
-    def insert data
+    ___ insert data
         new_node _ ? ?
-        ?.set_next(head)
+        ?.s.. h..
         head _ new_node
 
-    def insertatEnd item
+    ___ insertatEnd item
         current _ head
         __ ?
             w__ ?.g.. !_ N..:
@@ -33,7 +33,7 @@ class LinkedList(object
         ____
             head _ ? ?
 
-    def size
+    ___ size
         current _ head
         count _ 0
         w__ ?
@@ -41,7 +41,7 @@ class LinkedList(object
           current _ ?.g..
         r_ count
 
-    def -s
+    ___ -s
         s _ ""
         p _ head
         __ p !_ N.. :
@@ -52,7 +52,7 @@ class LinkedList(object
         r_ s
 
 
-def divideListInto2(list1
+___ divideListInto2(list1
   first_list1
   second_list1
   w__ first !_ N.. a__ first.next_node !_ N..:
@@ -64,7 +64,7 @@ def divideListInto2(list1
   second.next_node_None
   r_ list1, third
 
-def displayList(list1
+___ displayList(list1
   temp_list1
   w__ temp:
     print temp.data
