@@ -1,65 +1,65 @@
-# Delete a node with the given data in a doubly linked list
-
-class Node:
-    def __init__(self, data):
-        self.data = data
-        self.next = None
-        self.previous = None
-
-class LinkedList:
-    def __init__(self):
-        self.head = None
-
-    def insertEnd(self, newNode):
-        if self.head is None:
-            self.head = newNode
-            return
-        currentNode = self.head
-        while currentNode.next is not None:
-            currentNode = currentNode.next
-        currentNode.next = newNode
-        newNode.previous = currentNode
-
-    def deleteNode(self, data):
-        currentNode = self.head
-        while currentNode is not None:
-            if currentNode.data == data:
-                # head node deletion
-                if currentNode is self.head:
-                    self.head = currentNode.next
-                    currentNode.next = None
-                    if self.head is not None:
-                        self.head.previous = None
-                    return
-                # last node deletion
-                if currentNode.next is None:
-                    currentNode.previous.next = None
-                    currentNode.previous = None
-                    return
-                # node in between two nodes
-                currentNode.next.previous = currentNode.previous
-                currentNode.previous.next = currentNode.next
-                currentNode.next = None
-                currentNode.previous = None
-                return
-            currentNode = currentNode.next
-        print("Data not found")
-
-    def printList(self):
-        if self.head is None:
-            print("Empty list")
-            return
-        currentNode = self.head
-        while currentNode is not None:
-            print(currentNode.data)
-            currentNode = currentNode.next
-
-nodeOne = Node(10)
-nodeTwo = Node(30)
-nodeThree = Node(15)
-linkedList = LinkedList()
-linkedList.insertEnd(nodeOne)
-linkedList.insertEnd(nodeTwo)
-linkedList.insertEnd(nodeThree)
-linkedList.deleteNode(30)
-linkedList.printList()
+# # Delete a node with the given data in a doubly linked list
+#
+# c_ Node
+#     ___ - data
+#         ? ?
+#         next _ N..
+#         previous _ N..
+#
+# c_ LinkedList
+#     ___ -
+#         head _ N..
+#
+#     ___ insertEnd newNode
+#         __ h.. __ N..
+#             h.. _ ?
+#             r_
+#         currentNode _ h..
+#         w__ ?.n.. __ no. N..
+#             ? _ ?.n..
+#         ?.n.. _ newNode
+#         ?.p.. _ ?
+#
+#     ___ deleteNode data
+#         currentNode _ h..
+#         w__ ? __ not N..
+#             __ ?.d.. __ d..
+#                 # h.. node deletion
+#                 __ ? __ h..
+#                     h.. _ ?.n..
+#                     ?.n.. _ N..
+#                     __ h.. __ no. N..
+#                         h...p.. _ N..
+#                     r_
+#                 # last node deletion
+#                 __ ?.n.. __ N..
+#                     ?.p...n.. _ N..
+#                     ?.p.. _ N..
+#                     r_
+#                 # node in between two nodes
+#                 ?.n...p.. _ ?.p..
+#                 ?.p...n.. _ ?.n..
+#                 ?.n.. _ N..
+#                 ?.p.. _ N..
+#                 r_
+#             ? _ ?.n..
+#         print("Data not found")
+#
+#     ___ printList
+#         __ h.. __ N..
+#             print("Empty list")
+#             r_
+#         currentNode _ h..
+#         w__ ? __ not N..
+#             print ?.d..
+#             ? _ ?.n..
+#
+# nodeOne _ ?(10)
+# nodeTwo _ ?(30)
+# nodeThree _ ?(15)
+# linkedList _ ?
+# ?.insertEnd(nodeOne)
+# ?.insertEnd(nodeTwo)
+# ?.insertEnd(nodeThree)
+# ?.deleteNode(30)
+# ?.printList()

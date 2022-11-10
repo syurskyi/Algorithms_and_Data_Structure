@@ -1,77 +1,77 @@
-# Swap the first node and last node of a doubly linked list
-
-class Node:
-    def __init__(self, data):
-        self.data = data
-        self.next = None
-        self.previous = None
-
-class LinkedList:
-    def __init__(self):
-        self.head = None
-
-    def insertEnd(self, newNode):
-        if self.head is None:
-            self.head = newNode
-            return
-        currentNode = self.head
-        while currentNode.next is not None:
-            currentNode = currentNode.next
-        currentNode.next = newNode
-        newNode.previous = currentNode
-
-    def swapHead(self):
-        if self.head is None:
-            print("Empty list")
-            return
-        # List has just 1 Node
-        if self.head.next is None:
-            return
-        lastNode = self.head
-        while lastNode.next is not None:
-            lastNode = lastNode.next
-        currentHead = self.head
-        # Change previous pointer of head
-        self.head.previous = lastNode.previous
-        # Change previous pointer of next node of head
-        self.head.next.previous = lastNode
-        # Change next pointer of last node
-        lastNode.next = self.head.next
-        # Change next pointer of previous node of last node
-        lastNode.previous.next = self.head
-        # Change next pointer of head
-        self.head.next = None
-        # Change previous pointer of last node
-        lastNode.previous = None
-        # Make last node as head node
-        self.head = lastNode
-
-
-    def printList(self):
-        if self.head is None:
-            print("Empty list")
-            return
-        currentNode = self.head
-        print("Printing from beginning")
-        while True:
-            print(currentNode.data)
-            if currentNode.next is None:
-                break
-            currentNode = currentNode.next
-        print("Printing from end")
-        while True:
-            print(currentNode.data)
-            if currentNode.previous is None:
-                break
-            currentNode = currentNode.previous
-
-
-nodeOne = Node(10)
-nodeTwo = Node(30)
-nodeThree = Node(15)
-linkedList = LinkedList()
-linkedList.insertEnd(nodeOne)
-linkedList.insertEnd(nodeTwo)
-linkedList.insertEnd(nodeThree)
-linkedList.swapHead()
-linkedList.printList()
+# # Swap the first node and last node of a doubly linked list
+#
+# c_ Node
+#     ___ - data
+#         ? ?
+#         next _ N...
+#         previous _ N...
+#
+# c_ LinkedList
+#     ___ -
+#         head _ N...
+#
+#     ___ insertEnd newNode
+#         __ head __ N...
+#             h__ _ newNode
+#             r_
+#         currentNode _ h__
+#         w__ ?.n.. __ no. N...
+#             ? _ ?.n..
+#         ?.n.. _ newNode
+#         ?.p.. _ ?
+#
+#     ___ swapHead
+#         __ h__ __ N...
+#             print("Empty list")
+#             r_
+#         # List has just 1 Node
+#         __ h__.n.. __ N...
+#             r_
+#         lastNode _ h__
+#         w__ ?.n.. __ no. N...
+#             ? _ ?.n..
+#         currentHead _ h__
+#         # Change previous pointer of head
+#         h__.p.. _ ?.p..
+#         # Change previous pointer of next node of head
+#         h__.n__.p.. _ l..
+#         # Change next pointer of last node
+#         ?.n.. _ h__.n..
+#         # Change next pointer of previous node of last node
+#         ?.p__.n.. _ h__
+#         # Change next pointer of head
+#         h__.n.. _ N...
+#         # Change previous pointer of last node
+#         l___.p.. _ N...
+#         # Make last node as head node
+#         h__ _ l..
+#
+#
+#     ___ printList
+#         __ h__ __ N...
+#             print("Empty list")
+#             r_
+#         currentNode _ h__
+#         print("Printing from beginning")
+#         w__ T..
+#             print ?.d..
+#             __ ?.n.. __ N...
+#                 b..
+#             ? _ ?.n..
+#         print("Printing from end")
+#         w__ T..
+#             print ?.d..
+#             __ ?.p.. __ N...
+#                 b...
+#             ? _ ?.p..
+#
+#
+# nodeOne _ ?(10)
+# nodeTwo _ ?(30)
+# nodeThree _ ?(15)
+# linkedList _ ?
+# ?.insertEnd(nodeOne)
+# ?.insertEnd(nodeTwo)
+# ?.insertEnd(nodeThree)
+# ?.swapHead()
+# ?.printList()

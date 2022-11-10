@@ -1,23 +1,23 @@
-from doublyLinkedList import Node, LinkedList
-
-def divideByTwo(linkedList):
-    # 2->13->5->10->15->None
-    currentNode = linkedList.head.next
-    while currentNode is not None:
-        if currentNode.previous.data % 2 is not 0:
-            currentNode.data = currentNode.data // 2
-        currentNode = currentNode.next
-
-nodeOne = Node(2)
-nodeTwo = Node(13)
-nodeThree = Node(10)
-nodeFour = Node(20)
-nodeFive = Node(15)
-linkedList = LinkedList()
-linkedList.insertEnd(nodeOne)
-linkedList.insertEnd(nodeTwo)
-linkedList.insertEnd(nodeThree)
-linkedList.insertEnd(nodeFour)
-linkedList.insertEnd(nodeFive)
-divideByTwo(linkedList)
-linkedList.printList()
+# ____ d.. ______ N.. L..
+#
+# ___ divideByTwo ?
+#     # 2->13->5->10->15->None
+#     currentNode _ ?.h__.n..
+#     w_ ? __ no. N..
+#         __ ?.p...d.. % 2 __ no. 0
+#             ?.d.. _ ?.d.. // 2
+#         ? _ ?.n..
+#
+# nodeOne _ ? 2
+# nodeTwo _ ?( 3
+# nodeThree _ ? 10
+# nodeFour _ ? 20
+# nodeFive _ ? 15
+# linkedList _ ?
+# ?.insertEnd(nodeOne)
+# ?.insertEnd(nodeTwo)
+# ?.insertEnd(nodeThree)
+# ?.insertEnd(nodeFour)
+# ?.insertEnd(nodeFive)
+# divideByTwo(?)
+# ?.printList()

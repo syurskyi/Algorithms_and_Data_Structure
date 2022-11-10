@@ -1,124 +1,124 @@
-# Create nodes
-# Create linked list
-# Add nodes to linked list
-# Print linked list
-
-class Node:
-    def __init__(self, data):
-        self.data = data
-        self.next = None
-
-class LinkedList:
-    def __init__(self):
-        self.head = None
-
-    def isListEmpty(self):
-        if self.head is None:
-            return True
-        else:
-            return False
-
-    def insertHead(self, newNode):
-        # data = > Matthew, next => None
-        temporaryNode = self.head # John
-        self.head = newNode # Matthew
-        self.head.next = temporaryNode
-        del temporaryNode
-
-    def listLength(self):
-        currentNode = self.head
-        length = 0
-        while currentNode is not None:
-            length += 1
-            currentNode = currentNode.next
-        return length
-
-    def insertAt(self, newNode, position):
-        # head =>10->20->None || newNode => 15 -> None || position=>1
-        if position < 0 or position > self.listLength():
-            print("Invalid position")
-            return
-        if position is 0:
-            self.insertHead(newNode)
-            return
-        currentNode = self.head # 10, 20
-        currentPosition = 0 # 0, 1
-        while True:
-            if currentPosition == position:
-                previousNode.next = newNode
-                newNode.next = currentNode
-                break
-            previousNode = currentNode
-            currentNode = currentNode.next
-            currentPosition += 1
-
-
-    def insertEnd(self, newNode):
-        if self.head is None:
-            self.head = newNode
-        else:
-            lastNode = self.head
-            while True:
-                if lastNode.next is None:
-                    break
-                lastNode = lastNode.next
-            lastNode.next = newNode
-
-    def deleteHead(self):
-        if self.isListEmpty() is False:
-            # head => 10 -> 15 -> 20 || 15->20->10-> None
-            previousHead = self.head
-            self.head = self.head.next
-            previousHead.next = None
-        else:
-            print("Linked List is empty. Delete failed")
-
-    def deleteAt(self, position):
-        if position < 0 or position > self.listLength():
-            print("Invalid position")
-            return
-        if self.isListEmpty() is False:
-            if position is 0:
-                self.deleteHead()
-                return
-            currentNode = self.head
-            currentPosition = 0
-            while True:
-                if currentPosition == position:
-                    previousNode.next = currentNode.nect
-                    currentNode.next = None
-                    break
-                previousNode = currentNode
-                currentNode = currentNode.next
-                currentPosition += 1
-
-
-    def deleteEnd(self):
-        # head => John -> Ben -> Mattew -> None
-        if self.isListEmpty() is False:
-            if self.head.next is None:
-                self.deleteHead()
-                return
-            lastNode = self.head
-            while lastNode.next is not None:
-                previousNode = lastNode
-                lastNode = lastNode.next
-            previousNode.next = None
-        else:
-            print("Linked List is empty. Delete failed")
-
-    def printList(self):
-        # head => John -> Ben -> Matthew -> None
-        if self.head is None:
-            print("List is empty")
-            return
-        currentNode = self.head
-        while True:
-            if currentNode is None:
-                break
-            print(currentNode.data)
-            currentNode = currentNode.next
-
+# # Create nodes
+# # Create linked list
+# # Add nodes to linked list
+# # Print linked list
+#
+# c_ Node
+#     ___ - data
+#         ? ?
+#         next _ N..
+#
+# c_ LinkedList:
+#     ___ -
+#         head _ N..
+#
+#     ___ isListEmpty
+#         __ h.. __ N..
+#             r_ T..
+#         ____
+#             r_ F..
+#
+#     ___ insertHead newNode
+#         # data = > Matthew, next => None
+#         temporaryNode _ h.. # John
+#         head _ nN.. # Matthew
+#         ?.ne.. _ tN..
+#         del ?
+#
+#     ___ listLength
+#         currentNode _ h..
+#         length _ 0
+#         w__ cN__ __ no. N..
+#             l.. +_ 1
+#             cN__ _ cN__.ne..
+#         r_ ?
+#
+#     ___ insertAt newNode position
+#         # head =>10->20->None || newNode => 15 -> None || position=>1
+#         __ p.. < 0 o. p... > lL..
+#             print("Invalid position")
+#             r_
+#         __ p.. __ 0
+#             iH.. ?
+#             r_
+#         cN__ _ h.. # 10, 20
+#         currentPosition _ 0 # 0, 1
+#         w__ T..
+#             __ ? __ p..
+#                 pN__.ne.. _ nN..
+#                 nN__.ne.. _ cN__
+#                 b..
+#             pN.. _ cN__
+#             cN__ _ cN__.ne..
+#             cP.. +_ 1
+#
+#
+#     ___ insertEnd newNode
+#         __ h.. __ N..
+#             h.. _ ?
+#         ____
+#             lastNode _ h..
+#             w__ T..
+#                 __ ?.ne.. __ N..
+#                     b..
+#                 ? _ ?.ne..
+#             ?.ne.. _ nN..
+#
+#     ___ deleteHead
+#         __ iLE.. __ F..
+#             # head => 10 -> 15 -> 20 || 15->20->10-> None
+#             previousHead _ h..
+#             h.. _ h__.ne..
+#             pH__.ne.. _ N..
+#         ____
+#             print("Linked List __ empty. Delete failed")
+#
+#     ___ deleteAt position
+#         __ p.. < 0 o. p.. > lL..
+#             print("Invalid position")
+#             r_
+#         __ iLE.. __ F..
+#             __ p.. __ 0
+#                 dH..
+#                 r_
+#             cN__ _ h..
+#             cP.. _ 0
+#             w__ T..
+#                 __ cP.. __ p..
+#                     pN__.ne.. _ cN__.ne..
+#                     cN__.ne.. _ N..
+#                     b..
+#                 pN.. _ cN__
+#                 cN__ _ cN__.ne..
+#                 cP... +_ 1
+#
+#
+#     ___ deleteEnd
+#         # head => John -> Ben -> Mattew -> None
+#         __ iLE.. __ F..
+#             __ h__.ne.. __ N..
+#                 dH..
+#                 r_
+#             lastNode _ h..
+#             w__ ?.ne.. __ not N..
+#                 pN.. _ ?
+#                 ? _ ?.ne..
+#             pN__.ne.. _ N..
+#         ____
+#             print("Linked List is empty. Delete failed")
+#
+#     ___ printList
+#         # head _> John -> Ben -> Matthew -> None
+#         __ h.. __ N..
+#             print("List is empty")
+#             r_
+#         cN__ _ h..
+#         w__ T..
+#             __ cN__ __ N..
+#                 b..
+#             print cN__.da..
+#             cN__ _ cN__.ne..
+#
 # # Node => data, next
 # # firstNode.data => John, firstNode.next => None
 # firstNode = Node("John")
@@ -130,6 +130,6 @@ class LinkedList:
 # thirdNode = Node("Matthew")
 # linkedList.insertHead(thirdNode)
 # linkedList.printList()
-
-
-
+#
+#
+#
