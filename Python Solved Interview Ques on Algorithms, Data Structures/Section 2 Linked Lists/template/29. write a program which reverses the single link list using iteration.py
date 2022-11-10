@@ -1,6 +1,6 @@
 c_ Node o..
 
-    ___  -  data_N.. next_node_None
+    ___  -  data_N.. next_node_N..
         data _ data
         next_node _ N..
 
