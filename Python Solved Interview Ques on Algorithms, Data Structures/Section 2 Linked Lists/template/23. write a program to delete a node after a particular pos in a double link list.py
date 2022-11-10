@@ -1,55 +1,55 @@
 c_ Node :
-	def __init__( self, data ) :
-		self.data = data
-		self.next = None 
-		self.prev = None  
+	def  -( self, data ) :
+		data _ data
+		next _ N.. 
+		prev _ N..  
 
 c_ LinkedList :
-	def __init__( self ) :
-		self.head = None		
+	def  -
+		head _ N..		
 
-        def insertAtBeg(self, data):
-               node = Node( data )
-               if (self.head == None):
-                  self.head = node 
-               else:
-                  node.prev=None
-                  node.next=self.head
-                  self.head.prev=node
-                  self.head=node
-
-
-        def insertAtEnd(self, data):
-              node= Node(data)
-              if (self.head == None):
-                 self.head = node 
-              else:
-                 current = self.head
-                 while (current.next != None):
-                       current=current.next
-                 current.next=node
-                 node.prev=current
+        def insertAtBeg data
+               node _ Node( data )
+               __ (head __ N..
+                  head _ node 
+               ____
+                  node.prev_None
+                  node.next_head
+                  head.prev_node
+                  head_node
 
 
-        def insertAtPos(self, pos, item):
-               if pos > self.size() or pos < 0:
-                   return None
-               if pos == 0:
-                   self.insertAtBeg(item)
-               else:
-                   if pos == self.size():
-                       self.insertatEnd(item)
-                   else:
-                       newNode = Node(item)
-                       current = self.head
-                       count = 0
-                       while count <= pos - 1:
-                           count += 1
-                           current = current.next
-                       newNode.prev=current.prev
-                       current.prev.next=newNode 
-                       newNode.next=current
-                       current.prev=newNode
+        def insertAtEnd data
+              node_ ? ?
+              __ (head __ N..
+                 head _ node 
+              ____
+                 current _ head
+                 w__ (?.next !_ N..
+                       current_current.next
+                 ?.next_node
+                 node.prev_current
+
+
+        def insertAtPos  pos, item
+               __ pos > size() __ pos < 0:
+                   r_ N..
+               __ pos __ 0:
+                   insertAtBeg(item)
+               ____
+                   __ pos __ size(
+                       insertatEnd(item)
+                   ____
+                       newNode _ ? ?
+                       current _ head
+                       count _ 0
+                       w__ count <_ pos - 1:
+                           count +_ 1
+                           current _ ?.next
+                       newNode.prev_current.prev
+                       ?.prev.next_newNode 
+                       newNode.next_current
+                       ?.prev_newNode
 
 
 #####     node1->node2->node3
@@ -63,104 +63,104 @@ c_ LinkedList :
 
 
 
-        def search(self, k):
-               p = self.head
-               if p is not None:
-                   if p.data == k:
-                       return p
-                   while p.next is not None:
-                       if p.data == k:
-                           return p
-                       p = p.next
-               return None
+        def search  k
+               p _ head
+               __ p __ not N..:
+                   __ p.data __ k:
+                       r_ p
+                   w__ p.next __ not N..:
+                       __ p.data __ k:
+                           r_ p
+                       p _ p.next
+               r_ N..
 
 
 	def remove( self, p ) :
-		tmp = p.prev
-		p.prev.next = p.next
-		p.prev = tmp
+		tmp _ p.prev
+		p.prev.next _ p.next
+		p.prev _ tmp
 
 
-        def deleteatbeg(self):
-              if self.head is not None:
-                 current = self.head
-                 self.head = current.next
+        def deleteatbeg
+              __ head __ not N..:
+                 current _ head
+                 head _ ?.next
 
-        def deleteatpos(self, position):
+        def deleteatpos  position
 
              # If linked list is empty
-             if self.head == None:
-                 return
+             __ head __ N..:
+                 r_
 
              # Store head node
-             temp = self.head
+             temp _ head
 
              # If head needs to be removed
-             if position == 0:
-                 self.head = temp.next
-                 temp = None
-                 return
+             __ position __ 0:
+                 head _ temp.next
+                 temp _ N..
+                 r_
 
              # Find previous node of the node to be deleted
-             for i in range(position -1 ):
-                 temp = temp.next
-                 if temp is None:
+             for i in range(position -1 
+                 temp _ temp.next
+                 __ temp __ N..:
                      break
 
              # If position is more than number of nodes
-             if temp is None:
-                 return
-             if temp.next is None:
-                 return
+             __ temp __ N..:
+                 r_
+             __ temp.next __ N..:
+                 r_
 
              # Node temp.next is the node to be deleted
              # store pointer to the next of node to be deleted
 			 
-	     temp.prev.next = temp.next
-	     temp.next.prev = temp.prev
-	     temp = None
+	     temp.prev.next _ temp.next
+	     temp.next.prev _ temp.prev
+	     temp _ N..
 			 
-        def deleteatend(self):
-             if self.head == None:
-                return
+        def deleteatend
+             __ head __ N..:
+                r_
 
-             current = self.head
-             while (current.next != None):
-                   current=current.next
+             current _ head
+             w__ (?.next !_ N..
+                   current_current.next
              
-             current.prev.next=None
-             current=None  
+             ?.prev.next_None
+             current_None  
 
-        def deleteatbeg(self):
-             if self.head == None:
-                return
+        def deleteatbeg
+             __ head __ N..:
+                r_
 
-             current = self.head
-             self.head = self.head.next
-             self.head.prev = None
-             current = None 
+             current _ head
+             head _ head.next
+             head.prev _ N..
+             current _ N.. 
 
-        def size(self):
-               current = self.head
-               count = 0
-               while current:
-                 count += 1
-                 current = current.next
-               return count
+        def size
+               current _ head
+               count _ 0
+               w__ ?
+                 count +_ 1
+                 current _ ?.next
+               r_ count
 
 
-	def __str__( self ) :
-		s = ""
-		p = self.head
-		if p != None :		
-			while p.next != None :
-				s += p.data
-				p = p.next
-			s += p.data
-		return s
+	def -s
+		s _ ""
+		p _ head
+		__ p !_ N.. :		
+			w__ p.next !_ N.. :
+				s +_ p.data
+				p _ p.next
+			s +_ p.data
+		r_ s
 
 # example code
-l = LinkedList()
+l_ ?
 
 l.insertAtBeg( 'a' )
 print l

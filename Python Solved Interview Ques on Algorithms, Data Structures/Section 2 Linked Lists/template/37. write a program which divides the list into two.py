@@ -1,77 +1,77 @@
-class Node(object):
+class Node(object
 
-    def __init__(self, data=None, next_node=None):
-        self.data = data
-        self.next_node = None
+    def  -  data_N.. next_node_None
+        data _ data
+        next_node _ N..
 
-    def get_data(self):
-        return self.data
+    def get_data
+        r_  ?
 
-    def get_next(self):
-        return self.next_node
+    def get_next
+        r_ next_node
 
-    def set_next(self, new_next):
-        self.next_node = new_next
-
-
-
-class LinkedList(object):
-    def __init__(self, head=None):
-        self.head = head
-
-    def insert(self, data):
-        new_node = Node(data)
-        new_node.set_next(self.head)
-        self.head = new_node
-
-    def insertatEnd(self,item):
-        current = self.head
-        if current:
-            while current.get_next() != None:
-                current = current.get_next()
-            current.set_next(Node(item))
-        else:
-            self.head = Node(item)
-
-    def size(self):
-        current = self.head
-        count = 0
-        while current:
-          count += 1
-          current = current.get_next()
-        return count
-
-    def __str__( self ) :
-        s = ""
-        p = self.head
-        if p != None :
-                while p.next_node != None :
-                        s += p.data
-                        p = p.next_node
-                s += p.data
-        return s
+    def set_next new_next
+        next_node _ new_next
 
 
-def divideListInto2(list1):
-  first=list1
-  second=list1
-  while first != None and first.next_node != None:
-    second=second.next_node
-    first=first.next_node
-    first=first.next_node
 
-  third =second.next_node
-  second.next_node=None
-  return list1, third
+class LinkedList(object
+    def  -  head_None
+        head _ head
 
-def displayList(list1):
-  temp=list1
-  while temp:
+    def insert data
+        new_node _ ? ?
+        ?.set_next(head)
+        head _ new_node
+
+    def insertatEnd item
+        current _ head
+        __ ?
+            w__ ?.g.. !_ N..:
+                current _ ?.g..
+            ?.s.. ? ?
+        ____
+            head _ ? ?
+
+    def size
+        current _ head
+        count _ 0
+        w__ ?
+          count +_ 1
+          current _ ?.g..
+        r_ count
+
+    def -s
+        s _ ""
+        p _ head
+        __ p !_ N.. :
+                w__ p.next_node !_ N.. :
+                        s +_ p.data
+                        p _ p.next_node
+                s +_ p.data
+        r_ s
+
+
+def divideListInto2(list1
+  first_list1
+  second_list1
+  w__ first !_ N.. a__ first.next_node !_ N..:
+    second_second.next_node
+    first_first.next_node
+    first_first.next_node
+
+  third _second.next_node
+  second.next_node_None
+  r_ list1, third
+
+def displayList(list1
+  temp_list1
+  w__ temp:
     print temp.data
-    temp=temp.next_node
+    temp_temp.next_node
 
 
-l = LinkedList()
+l_ ?
 
 l.insert( 'a' )
 l.insert( 'b' )
@@ -81,7 +81,7 @@ l.insert( 'e' )
 l.insert( 'f' )
 l.insert( 'g' )
 print l
-l1,l2=divideListInto2(l.head)
+l1,l2_divideListInto2(l.head)
 print "List1:"
 displayList(l1)
 print "List2:"

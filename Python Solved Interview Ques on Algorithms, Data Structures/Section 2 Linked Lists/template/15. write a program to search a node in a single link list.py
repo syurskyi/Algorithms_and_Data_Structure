@@ -1,91 +1,91 @@
 from pprint import pprint
 
 
-c_ Node(object):
+c_ Node(object
 
-    def __init__(self, data=None, next_node=None):
-        self.data = data
-        self.next_node = None 
+    def  -  data_N.. next_node_None
+        data _ data
+        next_node _ N.. 
 
-    def getData(self):
-        return self.data
+    def getData
+        r_  ?
 
-    def getNext(self):
-        return self.next_node
+    def getNext
+        r_ next_node
 
-    def setNext(self, new_next):
-        self.next_node = new_next
+    def setNext new_next
+        next_node _ new_next
 
-c_ LinkedList(object):
-    def __init__(self, head=None):
-        self.head = head
+c_ LinkedList(object
+    def  -  head_None
+        head _ head
 
-    def insert(self, data):
-        new_node = Node(data)
-        new_node.setNext(self.head)
-        self.head = new_node
+    def insert data
+        new_node _ ? ?
+        ?.setNext(head)
+        head _ new_node
 
-    def insertatEnd(self,item):
-        current = self.head
-        if current:
-            while current.getNext() != None:
-                current = current.getNext()
-            current.setNext(Node(item))
-        else:
-            self.head = Node(item)
-
-
-    def size(self):
-        current = self.head
-        count = 0
-        while current:
-          count += 1
-          current = current.getNext()
-        return count 
+    def insertatEnd item
+        current _ head
+        __ ?
+            w__ ?.getNext() !_ N..:
+                current _ ?.getNext()
+            ?.setNext(Node(item))
+        ____
+            head _ ? ?
 
 
-    def search(self, data):
-        current = self.head
-        found = False
-        while current and found is False:
-            if current.getData() == data:
-                found = True
-            else:
-                current = current.getNext()
-        if current is None:
-            raise ValueError("Data not in list")
-        return current
+    def size
+        current _ head
+        count _ 0
+        w__ ?
+          count +_ 1
+          current _ ?.getNext()
+        r_ count 
 
 
-    def delete(self, data):
-        current = self.head
-        previous = None
-        found = False
-        while current and found is False:
-            if current.getData() == data:
-                found = True
-            else:
-                previous = current
-                current = current.getNext()
-        if current is None:
-            raise ValueError("Data not in list")
-        if previous is None:
-            self.head = current.getNext()
-        else:
-            previous.setNext(current.getNext())
-
-    def __str__( self ) :
-        s = ""
-        p = self.head
-        if p != None :
-                while p.next_node != None :
-                        s += p.data
-                        p = p.next_node
-                s += p.data
-        return s
+    def search data
+        current _ head
+        found _ F...
+        w__ current a__ found __ F...:
+            __ ?.getData() __ data:
+                found _ T..
+            ____
+                current _ ?.getNext()
+        __ current __ N..:
+            r_ V..("Data not in list")
+        r_ ?
 
 
-l = LinkedList()
+    def delete data
+        current _ head
+        previous _ N..
+        found _ F...
+        w__ current a__ found __ F...:
+            __ ?.getData() __ data:
+                found _ T..
+            ____
+                previous _ current
+                current _ ?.getNext()
+        __ current __ N..:
+            r_ V..("Data not in list")
+        __ previous __ N..:
+            head _ ?.getNext()
+        ____
+            previous.setNext(?.getNext())
+
+    def -s
+        s _ ""
+        p _ head
+        __ p !_ N.. :
+                w__ p.next_node !_ N.. :
+                        s +_ p.data
+                        p _ p.next_node
+                s +_ p.data
+        r_ s
+
+
+l_ ?
 
 l.insert( 'a' )
 l.insert( 'b' )
@@ -94,9 +94,9 @@ l.insert( 'c' )
 
 print l
 
-if l.search( 'b' ):
+__ l.search( 'b' 
   print "node found"
-else:
+____
   print "not not found"
  
  

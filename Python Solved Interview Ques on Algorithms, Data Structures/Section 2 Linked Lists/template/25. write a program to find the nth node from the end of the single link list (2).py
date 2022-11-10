@@ -1,110 +1,110 @@
-c_ Node(object):
+c_ Node(object
 
-    def __init__(self, data=None, next_node=None):
-        self.data = data
-        self.next_node = None
+    def  -  data_N.. next_node_None
+        data _ data
+        next_node _ N..
 
-    def get_data(self):
-        return self.data
+    def get_data
+        r_  ?
 
-    def get_next(self):
-        return self.next_node
+    def get_next
+        r_ next_node
 
-    def set_next(self, new_next):
-        self.next_node = new_next
-
-
-
-c_ LinkedList(object):
-    def __init__(self, head=None):
-        self.head = head
-
-    def insert(self, data):
-        new_node = Node(data)
-        new_node.set_next(self.head)
-        self.head = new_node
-
-    def insertatEnd(self,item):
-        current = self.head
-        if current:
-            while current.get_next() != None:
-                current = current.get_next()
-            current.set_next(Node(item))
-        else:
-            self.head = Node(item)
+    def set_next new_next
+        next_node _ new_next
 
 
-    def size(self):
-        current = self.head
-        count = 0
-        while current:
-          count += 1
-          current = current.get_next()
-        return count
+
+c_ LinkedList(object
+    def  -  head_None
+        head _ head
+
+    def insert data
+        new_node _ ? ?
+        ?.set_next(head)
+        head _ new_node
+
+    def insertatEnd item
+        current _ head
+        __ ?
+            w__ ?.g.. !_ N..:
+                current _ ?.g..
+            ?.s.. ? ?
+        ____
+            head _ ? ?
 
 
-    def search(self, data):
-        current = self.head
-        found = False
-        while current and found is False:
-            if current.get_data() == data:
-                found = True
-            else:
-                current = current.get_next()
-        if current is None:
-            raise ValueError("Data not in list")
-        return current
+    def size
+        current _ head
+        count _ 0
+        w__ ?
+          count +_ 1
+          current _ ?.g..
+        r_ count
 
 
-    def delete(self, data):
-        current = self.head
-        previous = None
-        found = False
-        while current and found is False:
-            if current.get_data() == data:
-                found = True
-            else:
-                previous = current
-                current = current.get_next()
-        if current is None:
-            raise ValueError("Data not in list")
-        if previous is None:
-            self.head = current.get_next()
-        else:
-            previous.set_next(current.get_next())
-
-    def __str__( self ) :
-        s = ""
-        p = self.head
-        if p != None :
-                while p.next_node != None :
-                        s += p.data
-                        p = p.next_node
-                s += p.data
-        return s
+    def search data
+        current _ head
+        found _ F...
+        w__ current a__ found __ F...:
+            __ ?.g.. __ data:
+                found _ T..
+            ____
+                current _ ?.g..
+        __ current __ N..:
+            r_ V..("Data not in list")
+        r_ ?
 
 
-    def findnthNodeFromEnd(self, n):
-      if n < 0:
-         return None
-      first= self.head
-      count = 0
+    def delete data
+        current _ head
+        previous _ N..
+        found _ F...
+        w__ current a__ found __ F...:
+            __ ?.g.. __ data:
+                found _ T..
+            ____
+                previous _ current
+                current _ ?.g..
+        __ current __ N..:
+            r_ V..("Data not in list")
+        __ previous __ N..:
+            head _ ?.g..
+        ____
+            previous.set_next(?.get_next())
+
+    def -s
+        s _ ""
+        p _ head
+        __ p !_ N.. :
+                w__ p.next_node !_ N.. :
+                        s +_ p.data
+                        p _ p.next_node
+                s +_ p.data
+        r_ s
+
+
+    def findnthNodeFromEnd  n
+      __ n < 0:
+         r_ N..
+      first_ head
+      count _ 0
     
-      while count < n and None != first:
-        first=first.next_node
-        count+=1
+      w__ count < n a__ N.. !_ first:
+        first_first.next_node
+        count+_1
     
-      if count<n or None==first:
-        return None
+      __ count<n __ N..__first:
+        r_ N..
     
-      second=self.head
-      while first.next_node != None:
-        first=first.next_node
-        second=second.next_node
+      second_head
+      w__ first.next_node !_ N..:
+        first_first.next_node
+        second_second.next_node
  
-      return second
+      r_ second
 
-l = LinkedList()
+l_ ?
 
 l.insert( 'a' )
 l.insert( 'b' )

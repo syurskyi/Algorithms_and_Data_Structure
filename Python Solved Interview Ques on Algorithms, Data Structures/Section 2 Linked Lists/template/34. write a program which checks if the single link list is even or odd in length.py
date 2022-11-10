@@ -1,71 +1,71 @@
 from pprint import pprint
 
 
-class Node(object):
+class Node(object
 
-    def __init__(self, data=None, next_node=None):
-        self.data = data
-        self.next_node = None 
+    def  -  data_N.. next_node_None
+        data _ data
+        next_node _ N.. 
 
-    def get_data(self):
-        return self.data
+    def get_data
+        r_  ?
 
-    def get_next(self):
-        return self.next_node
+    def get_next
+        r_ next_node
 
-    def set_next(self, new_next):
-        self.next_node = new_next
+    def set_next new_next
+        next_node _ new_next
 
-class LinkedList(object):
-    def __init__(self, head=None):
-        self.head = head
+class LinkedList(object
+    def  -  head_None
+        head _ head
 
-    def insert(self, data):
-        new_node = Node(data)
-        new_node.set_next(self.head)
-        self.head = new_node
+    def insert data
+        new_node _ ? ?
+        ?.set_next(head)
+        head _ new_node
 
-    def insertatEnd(self,item):
-        current = self.head
-        if current:
-            while current.get_next() != None:
-                current = current.get_next()
-            current.set_next(Node(item))
-        else:
-            self.head = Node(item)
-
-
-    def size(self):
-        current = self.head
-        count = 0
-        while current:
-          count += 1
-          current = current.get_next()
-        return count 
+    def insertatEnd item
+        current _ head
+        __ ?
+            w__ ?.g.. !_ N..:
+                current _ ?.g..
+            ?.s.. ? ?
+        ____
+            head _ ? ?
 
 
-    def __str__( self ) :
-        s = ""
-        p = self.head
-        if p != None :
-                while p.next_node != None :
-                        s += p.data
-                        p = p.next_node
-                s += p.data
-        return s
+    def size
+        current _ head
+        count _ 0
+        w__ ?
+          count +_ 1
+          current _ ?.g..
+        r_ count 
 
 
-def findLengthOfListEvenOdd(list1):
-  temp=list1
-  while temp != None and temp.next_node != None:
-    temp = temp.next_node.next_node
-  if temp == None:
-    return 1
-  return 0 
+    def -s
+        s _ ""
+        p _ head
+        __ p !_ N.. :
+                w__ p.next_node !_ N.. :
+                        s +_ p.data
+                        p _ p.next_node
+                s +_ p.data
+        r_ s
+
+
+def findLengthOfListEvenOdd(list1
+  temp_list1
+  w__ temp !_ N.. a__ temp.next_node !_ N..:
+    temp _ temp.next_node.next_node
+  __ temp __ N..:
+    r_ 1
+  r_ 0 
    
 
 
-l = LinkedList()
+l_ ?
 
 l.insert( 'a' )
 l.insert( 'b' )
@@ -76,7 +76,7 @@ l.insert( 'f' )
 l.insert( 'g' )
 l.insert( 'h' )
 print l
-if findLengthOfListEvenOdd(l.head):
+__ findLengthOfListEvenOdd(l.head
   print "List is even in size"
-else:
+____
   print "List is odd in size"

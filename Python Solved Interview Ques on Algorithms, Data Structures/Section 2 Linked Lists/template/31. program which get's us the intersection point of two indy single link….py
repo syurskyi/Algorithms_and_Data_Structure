@@ -1,83 +1,83 @@
-class Node(object):
+class Node(object
 
-    def __init__(self, data=None, next_node=None):
-        self.data = data
-        self.next_node = None
+    def  -  data_N.. next_node_None
+        data _ data
+        next_node _ N..
 
-    def get_data(self):
-        return self.data
+    def get_data
+        r_  ?
 
-    def get_next(self):
-        return self.next_node
+    def get_next
+        r_ next_node
 
-    def set_next(self, new_next):
-        self.next_node = new_next
-
-
-
-class LinkedList(object):
-    def __init__(self, head=None):
-        self.head = head
-
-    def insert(self, data):
-        new_node = Node(data)
-        new_node.set_next(self.head)
-        self.head = new_node
-
-    def insertatEnd(self,item):
-        current = self.head
-        if current:
-            while current.get_next() != None:
-                current = current.get_next()
-            current.set_next(Node(item))
-        else:
-            self.head = Node(item)
-
-    def size(self):
-        current = self.head
-        count = 0
-        while current:
-          count += 1
-          current = current.get_next()
-        return count
+    def set_next new_next
+        next_node _ new_next
 
 
-    def __str__( self ) :
-        s = ""
-        p = self.head
-        if p != None :
-                while p.next_node != None :
-                        s += p.data
-                        p = p.next_node
-                s += p.data
-        return s
+
+class LinkedList(object
+    def  -  head_None
+        head _ head
+
+    def insert data
+        new_node _ ? ?
+        ?.set_next(head)
+        head _ new_node
+
+    def insertatEnd item
+        current _ head
+        __ ?
+            w__ ?.g.. !_ N..:
+                current _ ?.g..
+            ?.s.. ? ?
+        ____
+            head _ ? ?
+
+    def size
+        current _ head
+        count _ 0
+        w__ ?
+          count +_ 1
+          current _ ?.g..
+        r_ count
 
 
-def returnEnd(l):
-  l1=l.head 
-  while l1.next_node != None:
-    l1=l1.next_node
-  return l1
+    def -s
+        s _ ""
+        p _ head
+        __ p !_ N.. :
+                w__ p.next_node !_ N.. :
+                        s +_ p.data
+                        p _ p.next_node
+                s +_ p.data
+        r_ s
 
-def nodeJoiningPoint(list1, list2):
-  joiningPoint = {}
-  t = list1.head
 
-  while t != None:
-       joiningPoint[t]=True
-       t=t.next_node
+def returnEnd(l
+  l1_l.head 
+  w__ l1.next_node !_ N..:
+    l1_l1.next_node
+  r_ l1
 
-  t = list2.head
+def nodeJoiningPoint(list1, list2
+  joiningPoint _ {}
+  t _ list1.head
+
+  w__ t !_ N..:
+       joiningPoint[t]_True
+       t_t.next_node
+
+  t _ list2.head
   
-  while t != None:
-        if joiningPoint.get(t) != None:
-           return t
-        t=t.next_node
+  w__ t !_ N..:
+        __ joiningPoint.get(t) !_ N..:
+           r_ t
+        t_t.next_node
 
-  return None
+  r_ N..
 
-l1 = LinkedList()
-l2 = LinkedList()
+l1 _ LinkedList()
+l2 _ LinkedList()
 
 l1.insert( 'a' )
 l1.insert( 'b' )
@@ -90,18 +90,18 @@ l2.insert( '444' )
 l2.insert( '555' )
 l2.insert( '666' )
 print "list2:", l2
-l1lastNode=returnEnd(l1)
-l2lastNode=returnEnd(l2)
+l1lastNode_returnEnd(l1)
+l2lastNode_returnEnd(l2)
 
 
-l3=LinkedList()
+l3_LinkedList()
 l3.insert( 'ZZZ' )
 l3.insert( 'YYY' )
 l3.insert( 'XXX' )
 print "list3:", l3
 
-l1lastNode.next_node=l3.head
-l2lastNode.next_node=l3.head
+l1lastNode.next_node_l3.head
+l2lastNode.next_node_l3.head
 print l1
 print l2
 

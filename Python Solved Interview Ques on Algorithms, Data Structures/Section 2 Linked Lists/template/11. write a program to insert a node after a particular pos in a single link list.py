@@ -1,128 +1,128 @@
-from pprint import pprint
-
-
-c_ Node o..
-
-    ___ -  data=None, next_node_N..
-        self.data = data
-        self.next_node = None 
-
-    ___ get_data(self):
-        return self.data
-
-    ___ set_data(self, data):
-        self.data = data
-
-    ___ get_next(self):
-        return self.next_node
-
-    ___ set_next(self, new_next):
-        self.next_node = new_next
-
-c_ LinkedList o..
-    ___ __init__(self, head=None):
-        self.head = head
-
-    ___ insert(self, data):
-        new_node = Node(data)
-        new_node.set_next(self.head)
-        self.head = new_node
-
-    ___ insertatEnd(self,item):
-        current = self.head
-        if current:
-            while current.get_next() != None:
-                current = current.get_next()
-            current.set_next(Node(item))
-        else:
-            self.head = Node(item)
-
-    ___ insertAtPos(self, pos, item):
-        if pos > self.size() or pos < 0:
-            return None
-        if pos == 0:
-            self.insert(item)
-        else:
-            if pos == self.size():
-                self.insertatEnd(item)
-            else:
-                newNode = Node(item)
-                newNode.set_data(item)
-                current = self.head
-                count = 0
-                while count < pos - 1:
-                    count += 1
-                    current = current.get_next()
-                newNode.set_next(current.get_next())
-                current.set_next(newNode)
-
-    ___ size(self):
-        current = self.head
-        count = 0
-        while current:
-          count += 1
-          current = current.get_next()
-        return count 
-
-
-    ___ search(self, data):
-        current = self.head
-        found = False
-        while current and found is False:
-            if current.get_data() == data:
-                found = True
-            else:
-                current = current.get_next()
-        if current is None:
-            raise ValueError("Data not in list")
-        return current
-
-
-    ___ delete(self, data):
-        current = self.head
-        previous = None
-        found = False
-        while current and found is False:
-            if current.get_data() == data:
-                found = True
-            else:
-                previous = current
-                current = current.get_next()
-        if current is None:
-            raise ValueError("Data not in list")
-        if previous is None:
-            self.head = current.get_next()
-        else:
-            previous.set_next(current.get_next())
-
-    ___ __str__( self ) :
-        s = ""
-        p = self.head
-        if p != None :
-                while p.next_node != None :
-                        s += p.data
-                        p = p.next_node
-                s += p.data
-        return s
-
-
-l = LinkedList()
-
-l.insertatEnd( 'a' )
-l.insertatEnd( 'b' )
-l.insertatEnd( 'c' )
-
-print l
-
-l.insertAtPos(1,'ZZZZZ')
-
-print l
-
-#if l.search( 'b' ):
-#  print "node found"
-#else:
-#  print "not not found"
-# 
-#l.delete( 'b' ) 
-#print l
-# 
+# from pprint import pprint
+#
+#
+# c_ Node o..
+#
+#     ___ -  data_N.. next_node_N..
+#         ? _ ?
+#         ? _ N..
+#
+#     ___ get_data
+#         r_  ?
+#
+#     ___ set_data data
+#         ? _ ?
+#
+#     ___ get_next
+#         r_ next_node
+#
+#     ___ set_next new_next
+#         next_node _ ?
+#
+# c_ LinkedList o..
+#     ___  -  head_None
+#         ? _ ?
+#
+#     ___ insert data
+#         new_node _ ? ?
+#         ?.s.. h..
+#         head _ ?
+#
+#     ___ insertatEnd item
+#         current _ h..
+#         __ ?
+#             w__ ?.g.. !_ N..
+#                 c.. _ ?.g..
+#             ?.s.. ? ?
+#         ____
+#             head _ ? ?
+#
+#     ___ insertAtPos  pos item
+#         __ ? > s.. __ ? < 0
+#             r_ N..
+#         __ p.. __ 0
+#             i.. ?
+#         ____
+#             __ p.. __ s..
+#                 i.. ?
+#             ____
+#                 newNode _ ? ?
+#                 ?.s.. ?
+#                 current _ h..
+#                 count _ 0
+#                 w__ ? < ? - 1:=
+#                     ? +_ 1
+#                     c.. _ ?.g..
+#                 ?.s.. ?.g..
+#                 ?.s.. ?
+#
+#     ___ size
+#         current _ h..
+#         count _ 0
+#         w__ ?
+#           c.. +_ 1
+#           c.._ ?.g..
+#         r_ ?
+#
+#
+#     ___ search data
+#         current _ h..
+#         found _ F...
+#         w__ ? a__ ? __ F...
+#             __ ?.g.. __ ?
+#                 found _ T..
+#             ____
+#                 c.. _ ?.g..
+#         __ c.. __ N..
+#             r_ V..("Data not in list")
+#         r_ ?
+#
+#
+#     ___ delete data
+#         current _ h..
+#         previous _ N..
+#         found _ F...
+#         w__ ? a__ ? __ F...
+#             __ ?.g.. __ ?
+#                 f.. _ T..
+#             ____
+#                 p.. _ c..
+#                 c.. _ ?.g..
+#         __ ? __ N..
+#             r_ V..("Data not in list")
+#         __ p.. __ N..
+#             h.. _ ?.g..
+#         ____
+#             ?.s.. ?.g..
+#
+#     ___ -s
+#         s _ ""
+#         p _ h..
+#         __ p !_ N..
+#                 w__ ?.n.. !_ N..
+#                         s +_ ?.d..
+#                         ? _ ?.n..
+#                 s +_ ?.d..
+#         r_ ?
+#
+#
+# l_ ?
+#
+# ?.i.. 'a'
+# ?.i.. 'b'
+# ?.i.. 'c'
+#
+# print l
+#
+# l.i.. 1,'ZZZZZ'
+#
+# print l
+#
+# #if l.search( 'b' ):
+# #  print "node found"
+# #else:
+# #  print "not not found"
+# #
+# #l.delete( 'b' )
+# #print l
+# #

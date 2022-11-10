@@ -1,70 +1,70 @@
-class Node(object):
+class Node(object
 
-    def __init__(self, data=None, next_node=None):
-        self.data = data
-        self.next_node = None
+    def  -  data_N.. next_node_None
+        data _ data
+        next_node _ N..
 
-    def get_data(self):
-        return self.data
+    def get_data
+        r_  ?
 
-    def get_next(self):
-        return self.next_node
+    def get_next
+        r_ next_node
 
-    def set_next(self, new_next):
-        self.next_node = new_next
-
-
-
-class LinkedList(object):
-    def __init__(self, head=None):
-        self.head = head
-
-    def insert(self, data):
-        new_node = Node(data)
-        new_node.set_next(self.head)
-        self.head = new_node
-
-    def insertatEnd(self,item):
-        current = self.head
-        if current:
-            while current.get_next() != None:
-                current = current.get_next()
-            current.set_next(Node(item))
-        else:
-            self.head = Node(item)
+    def set_next new_next
+        next_node _ new_next
 
 
-    def exchangeData(self, t1, t2):
-        t = t1.data
-        t1.data = t2.data
-        t2.data = t
 
-    def reverseList(self):
-        current=self.head
-        while current != None and current.next_node != None:
-           self.exchangeData(current, current.next_node)
-           current=current.next_node.next_node
+class LinkedList(object
+    def  -  head_None
+        head _ head
 
-    def size(self):
-        current = self.head
-        count = 0
-        while current:
-          count += 1
-          current = current.get_next()
-        return count
+    def insert data
+        new_node _ ? ?
+        ?.set_next(head)
+        head _ new_node
 
-    def __str__( self ) :
-        s = ""
-        p = self.head
-        if p != None :
-                while p.next_node != None :
-                        s += p.data
-                        p = p.next_node
-                s += p.data
-        return s
+    def insertatEnd item
+        current _ head
+        __ ?
+            w__ ?.g.. !_ N..:
+                current _ ?.g..
+            ?.s.. ? ?
+        ____
+            head _ ? ?
 
 
-l = LinkedList()
+    def exchangeData  t1, t2
+        t _ t1.data
+        t1.data _ t2.data
+        t2.data _ t
+
+    def reverseList
+        current_head
+        w__ current !_ N.. a__ ?.next_node !_ N..:
+           exchangeData(current, ?.next_node)
+           current_current.next_node.next_node
+
+    def size
+        current _ head
+        count _ 0
+        w__ ?
+          count +_ 1
+          current _ ?.g..
+        r_ count
+
+    def -s
+        s _ ""
+        p _ head
+        __ p !_ N.. :
+                w__ p.next_node !_ N.. :
+                        s +_ p.data
+                        p _ p.next_node
+                s +_ p.data
+        r_ s
+
+
+l_ ?
 
 l.insert( 'a' )
 l.insert( 'b' )

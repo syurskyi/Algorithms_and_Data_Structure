@@ -3,94 +3,94 @@ from pprint import pprint
 
 c_ Node o..
 
-    c_ -  data=None, next_node=None):
+    c_ -  data_N.. next_node_None
         ? ?
         ? ?
 
-    c_ get_data(self):
-        return self.data
+    c_ get_data
+        r_  ?
 
-    c_ get_next(self):
-        return self.next_node
+    c_ get_next
+        r_ next_node
 
-    c_ set_next(self, new_next):
-        self.next_node = new_next
+    c_ set_next new_next
+        next_node _ new_next
 
 c_ LinkedList o..
-    c_ -(self, head=None):
-        self.head = head
+    c_ -  head_None
+        head _ head
 
-    c_ insert(self, data):
-        new_node = Node(data)
-        new_node.set_next(self.head)
-        self.head = new_node
+    c_ insert data
+        new_node _ ? ?
+        ?.set_next(head)
+        head _ new_node
 
-    c_ insertatEnd(self,item):
-        current = self.head
-        if current:
-            while current.get_next() != None:
-                current = current.get_next()
-            current.set_next(Node(item))
-        else:
-            self.head = Node(item)
+    c_ insertatEnd item
+        current _ head
+        __ ?
+            w__ ?.g.. !_ N..:
+                current _ ?.g..
+            ?.s.. ? ?
+        ____
+            head _ ? ?
 
-    c_ size(self):
-        current = self.head
-        count = 0
-        while current:
-          count += 1
-          current = current.get_next()
-        return count 
-
-
-    c_ search(self, data):
-        current = self.head
-        found = False
-        while current and found is False:
-            if current.get_data() == data:
-                found = True
-            else:
-                current = current.get_next()
-        if current is None:
-            raise ValueError("Data not in list")
-        return current
+    c_ size
+        current _ head
+        count _ 0
+        w__ ?
+          count +_ 1
+          current _ ?.g..
+        r_ count 
 
 
-    c_ delete(self, data):
-        current = self.head
-        previous = None
-        found = False
-        while current and found is False:
-            if current.get_data() == data:
-                found = True
-            else:
-                previous = current
-                current = current.get_next()
-        if current is None:
-            raise ValueError("Data not in list")
-        if previous is None:
-            self.head = current.get_next()
-        else:
-            previous.set_next(current.get_next())
+    c_ search data
+        current _ head
+        found _ F...
+        w__ current a__ found __ F...:
+            __ ?.g.. __ data:
+                found _ T..
+            ____
+                current _ ?.g..
+        __ current __ N..:
+            r_ V..("Data not in list")
+        r_ ?
 
 
-    c_ deleteatbeg(self):
-       if self.head is not None:
-          current = self.head
-          self.head = current.get_next()
+    c_ delete data
+        current _ head
+        previous _ N..
+        found _ F...
+        w__ current a__ found __ F...:
+            __ ?.g.. __ data:
+                found _ T..
+            ____
+                previous _ current
+                current _ ?.g..
+        __ current __ N..:
+            r_ V..("Data not in list")
+        __ previous __ N..:
+            head _ ?.g..
+        ____
+            previous.set_next(?.get_next())
 
-    c_ __str__( self ) :
-        s = ""
-        p = self.head
-        if p != None :
-                while p.next_node != None :
-                        s += p.data
-                        p = p.next_node
-                s += p.data
-        return s
+
+    c_ deleteatbeg
+       __ head __ not N..:
+          current _ head
+          head _ ?.g..
+
+    c_ -s
+        s _ ""
+        p _ head
+        __ p !_ N.. :
+                w__ p.next_node !_ N.. :
+                        s +_ p.data
+                        p _ p.next_node
+                s +_ p.data
+        r_ s
 
 
-l = LinkedList()
+l_ ?
 
 l.insert( 'a' )
 l.insert( 'b' )

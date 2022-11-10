@@ -1,84 +1,84 @@
-class Node(object):
+class Node(object
 
-    def __init__(self, data=None, next_node=None):
-        self.data = data
-        self.next_node = None
+    def  -  data_N.. next_node_None
+        data _ data
+        next_node _ N..
 
-    def get_data(self):
-        return self.data
+    def get_data
+        r_  ?
 
-    def get_next(self):
-        return self.next_node
+    def get_next
+        r_ next_node
 
-    def set_next(self, new_next):
-        self.next_node = new_next
-
-
-
-class LinkedList(object):
-    def __init__(self, head=None):
-        self.head = head
-
-    def insert(self, data):
-        new_node = Node(data)
-        new_node.set_next(self.head)
-        self.head = new_node
-
-    def insertatEnd(self,item):
-        current = self.head
-        if current:
-            while current.get_next() != None:
-                current = current.get_next()
-            current.set_next(Node(item))
-        else:
-            self.head = Node(item)
-
-    def makeCycle(self):
-        current = self.head
-        if current:
-            while current.get_next() != None:
-                current = current.get_next()
-            current.next_node=self.head.next_node 
-
-    def findTheStartNodeOfLoop(self):
-         first=self.head
-         second=self.head.next_node
-
-         while second != first:
-           second = second.next_node
-           first = first.next_node.next_node
-           if (first == None):
-              return None
-
-         second=self.head
-         while second != first:
-           second = second.next_node
-           first = first.next_node
-
-         return second
-
-    def size(self):
-        current = self.head
-        count = 0
-        while current:
-          count += 1
-          current = current.get_next()
-        return count
+    def set_next new_next
+        next_node _ new_next
 
 
 
-    def __str__( self ) :
-        s = ""
-        p = self.head
-        if p != None :
-                while p.next_node != None :
-                        s += p.data
-                        p = p.next_node
-                s += p.data
-        return s
+class LinkedList(object
+    def  -  head_None
+        head _ head
+
+    def insert data
+        new_node _ ? ?
+        ?.set_next(head)
+        head _ new_node
+
+    def insertatEnd item
+        current _ head
+        __ ?
+            w__ ?.g.. !_ N..:
+                current _ ?.g..
+            ?.s.. ? ?
+        ____
+            head _ ? ?
+
+    def makeCycle
+        current _ head
+        __ ?
+            w__ ?.g.. !_ N..:
+                current _ ?.g..
+            ?.next_node_head.next_node 
+
+    def findTheStartNodeOfLoop
+         first_head
+         second_head.next_node
+
+         w__ second !_ first:
+           second _ second.next_node
+           first _ first.next_node.next_node
+           __ (first __ N..
+              r_ N..
+
+         second_head
+         w__ second !_ first:
+           second _ second.next_node
+           first _ first.next_node
+
+         r_ second
+
+    def size
+        current _ head
+        count _ 0
+        w__ ?
+          count +_ 1
+          current _ ?.g..
+        r_ count
 
 
-l = LinkedList()
+
+    def -s
+        s _ ""
+        p _ head
+        __ p !_ N.. :
+                w__ p.next_node !_ N.. :
+                        s +_ p.data
+                        p _ p.next_node
+                s +_ p.data
+        r_ s
+
+
+l_ ?
 
 l.insert( 'a' )
 l.insert( 'b' )
