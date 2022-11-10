@@ -23,7 +23,7 @@
 #         l.. _ 0
 #
 #     ___ append value
-#         new_node _ ? v..
+#         n.. _ ? v..
 #         __ h.. __ N..
 #             h.. _ ?
 #             t.. _ ?

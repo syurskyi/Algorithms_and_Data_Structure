@@ -46,19 +46,15 @@ class LinkedList:
 
 
 
+my_linked_list _ ? 1
+?.a.. 2)
 
-my_linked_list = LinkedList(1)
-my_linked_list.append(2)
-
-print(my_linked_list.print_list())
 # (2) Items - Returns 2 Node
-print(my_linked_list.pop().value)
+print(?.p.. .v..
 # (1) Item -  Returns 1 Node
-print(my_linked_list.pop().value)
+print(?.p.. .v..
 # (0) Items - Returns None
-print(my_linked_list.pop())
-
-print(my_linked_list.print_list())
+print(?.p..
 
 
 """
