@@ -1,126 +1,126 @@
-c_ Node
-    ___  -  value)
-        ? _ ?
-        n.. _ N..
-        p.. _ N..
-        
-
-c_ DoublyLinkedList
-    ___  -  value)
-        n.. _ ? ?
-        h.. _ ?
-        t.. _ ?
-        l.. _ 1
-
-    ___ print_list
-        t.. _ h..
-        w__ ? __ n.. N..
-            print ?.v..
-            ? _ ?.n..
-        
-    ___ append  value)
-        n.. _ ? ?
-        __ ? __ N..
-            h.. _ ?
-            t.. _ ?
-        ____
-            t__.n.. _ ?
-            ?.p.. _ t..
-            t.. _ ?
-        ? =_ 1
-        r_ T..
-
-    ___ pop
-        __ ? __ 0
-            r_ N..
-        t.. _ t..
-        __ ? __ 1
-            h.. _ N..
-            t.. _ N.. 
-        ____       
-            t.. _ t__.p..
-            ?.n.. _ N.
-            ?.p.. _ N..
-        ? -_ 1
-        r_ ?
-
-    ___ prepend  value)
-        n.. _ ? ?
-        __ ? __ 0
-            h.. _ ?
-            t.. _ ?
-        ____
-            new_node.next = head
-            head.prev = new_node
-            h.. _ ?
-        ? =_ 1
-        r_ T..
-
-    ___ pop_first
-        __ ? __ 0
-            r_ N..
-        t.. _ h..
-        __ ? __ 1
-            h.. _ N..
-            t.. _ N..
-        ____
-            head = head.next
-            head.p.. _ N..
-            temp.n.. _ N..      
-        ? -_ 1
-        r_ ?
-
-    ___ get  index)
-        __ index < 0 or index >= length
-            r_ N..
-        t.. _ h..
-        __ index < length/2
-            for _ in range(index)
-                ? _ ?.n..
-        ____
-            t.. _ t..
-            for _ in range(length - 1, index, -1)
-                temp = temp.prev  
-        r_ ?
-        
-    ___ set_value  index, value)
-        temp = get(index)
-        __ temp
-            temp.? _ ?
-            r_ T..
-        r_ False
-    
-
-    
-  
-my_doubly_linked_list = ? 11)
-?.append(3)
-?.append(23)
-?.append(7)
-
-print('DLL before set_value():')
-?.print_list()
-
-?.set_value(1,4)
-
-print('\nDLL after set_value():')
-?.print_list()
-
-
-
-"""
-    EXPECTED OUTPUT:
-    ----------------
-    DLL before set_value():
-    11
-    3
-    23
-    7
-
-    DLL after set_value():
-    11
-    4
-    23
-    7
-
-"""
+# c_ Node
+#     ___  -  value
+#         ? _ ?
+#         n.. _ N..
+#         p.. _ N..
+#
+#
+# c_ DoublyLinkedList
+#     ___  -  value
+#         n.. _ ? ?
+#         h.. _ ?
+#         t.. _ ?
+#         l.. _ 1
+#
+#     ___ print_list
+#         t.. _ h..
+#         w__ ? __ n.. N..
+#             print ?.v..
+#             ? _ ?.n..
+#
+#     ___ append  value
+#         n.. _ ? ?
+#         __ ? __ N..
+#             h.. _ ?
+#             t.. _ ?
+#         ____
+#             t__.n.. _ ?
+#             ?.p.. _ t..
+#             t.. _ ?
+#         ? =_ 1
+#         r_ T..
+#
+#     ___ pop
+#         __ ? __ 0
+#             r_ N..
+#         t.. _ t..
+#         __ ? __ 1
+#             h.. _ N..
+#             t.. _ N..
+#         ____
+#             t.. _ t__.p..
+#             ?.n.. _ N.
+#             ?.p.. _ N..
+#         ? -_ 1
+#         r_ ?
+#
+#     ___ prepend  value
+#         n.. _ ? ?
+#         __ ? __ 0
+#             h.. _ ?
+#             t.. _ ?
+#         ____
+#             ?.n.. _ h..
+#             ?.p.. _ ?
+#             h.. _ ?
+#         ? =_ 1
+#         r_ T..
+#
+#     ___ pop_first
+#         __ ? __ 0
+#             r_ N..
+#         t.. _ h..
+#         __ ? __ 1
+#             h.. _ N..
+#             t.. _ N..
+#         ____
+#             h.. _ ?.n..
+#             ?.p.. _ N..
+#             t__.n.. _ N..
+#         ? -_ 1
+#         r_ ?
+#
+#     ___ get  index
+#         __ ? < 0 __ ? >_ ?
+#             r_ N..
+#         t.. _ h..
+#         __ ? < ?/2
+#             ___ _ __ r_ ?
+#                 ? _ ?.n..
+#         ____
+#             t.. _ t..
+#             ___ _ __ r_ ? -1 ? -1
+#                 ? _ ?.p..
+#         r_ ?
+#
+#     ___ set_value  ? value
+#         t.. _ g.. ?
+#         __ ?
+#             ?.? _ ?
+#             r_ T..
+#         r_ F..
+#
+#
+#
+#
+# my_doubly_linked_list = ? 11
+# ?.a.. 3
+# ?.a.. 23
+# ?.a.. 7
+#
+# print('DLL before set_value():')
+# ?.p..
+#
+# ?.s.. 1,4
+#
+# print('\nDLL after set_value():')
+# ?.p..
+#
+#
+#
+# """
+#     EXPECTED OUTPUT:
+#     ----------------
+#     DLL before set_value():
+#     11
+#     3
+#     23
+#     7
+#
+#     DLL after set_value():
+#     11
+#     4
+#     23
+#     7
+#
+# """

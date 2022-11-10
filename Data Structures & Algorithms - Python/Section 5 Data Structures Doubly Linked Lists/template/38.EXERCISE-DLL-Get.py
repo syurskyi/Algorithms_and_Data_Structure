@@ -51,8 +51,8 @@ c_ DoublyLinkedList
             h.. _ ?
             t.. _ ?
         ____
-            new_node.next = head
-            head.prev = new_node
+            ?.n.. _ h..
+            ?.p.. _ ?
             h.. _ ?
         ? =_ 1
         r_ T..
@@ -65,9 +65,9 @@ c_ DoublyLinkedList
             h.. _ N..
             t.. _ N..
         ____
-            head = head.next
-            head.p.. _ N..
-            temp.n.. _ N..      
+            h.. _ ?.n..
+            ?.p.. _ N..
+            t__.n.. _ N..      
         ? -_ 1
         r_ ?
 

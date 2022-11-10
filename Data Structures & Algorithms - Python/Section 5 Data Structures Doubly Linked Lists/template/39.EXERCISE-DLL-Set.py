@@ -50,8 +50,8 @@ c_ DoublyLinkedList
             h.. _ ?
             t.. _ ?
         ____
-            new_node.next = head
-            head.prev = new_node
+            ?.n.. _ h..
+            ?.p.. _ ?
             h.. _ ?
         ? =_ 1
         r_ T..
@@ -64,23 +64,23 @@ c_ DoublyLinkedList
             h.. _ N..
             t.. _ N..
         ____
-            head = head.next
-            head.p.. _ N..
-            temp.n.. _ N..      
+            h.. _ ?.n..
+            ?.p.. _ N..
+            t__.n.. _ N..      
         ? -_ 1
         r_ ?
 
     ___ get  index)
-        __ index < 0 or index >= length
+        __ ? < 0 __ ? >= ?
             r_ N..
         t.. _ h..
-        __ index < length/2
-            for _ in range(index)
+        __ ? < ?/2
+            ___ _ __ r_ ?
                 ? _ ?.n..
         ____
             t.. _ t..
-            for _ in range(length - 1, index, -1)
-                temp = temp.prev  
+            ___ _ __ r_ ? -1 ? -1)
+                ? _ ?.p.. 
         r_ ?
         
     ## WRITE SET_VALUE METHOD HERE ##
