@@ -1,129 +1,126 @@
-# c_ Node
-#     ___  - value
-#         ? _ ?
-#         n.. _ N..
-#
-#
-# c_ LinkedList
-#     ___  - value
-#         n.. _ ? v..
-#         h.. _ ?
-#         t.. _ ?
-#         l.. _ 1
-#
-#     ___ print_list
-#         t.. _ h..
-#         w____  ? __ n.. N..
-#             print ?.v..
-#             t.. _ ?.n..
-#
-#     ___ appendvalue
-#         n.. _ ? v..
-#         __ l.. __ 0
-#             h.. _ ?
-#             t.. _ ?
-#         ____
-#             t__.n.. _ ?
-#             t.. _ ?
-#         l.. +_ 1
-#         r_ T..
-#
-#     ___ pop
-#         __ l.. __ 0
-#             r_ N..
-#         t.. _ h..
-#         p.._ h..
-#         w____ ?.n..
-#             p.. _ t..
-#             t.. _ ?.n..
-#         t.. _ p..
-#         t__.n.. _ N..
-#         l.. -_ 1
-#         __ l.. __ 0
-#             h.. _ N..
-#             t.. _ N..
-#         r_ ?
-#
-#     ___ prependvalue
-#         n.. _ ? v..
-#         __ l.. __ 0
-#             h.. _ ?
-#             t.. _ ?
-#         ____
-#             ?.n.. _ h..
-#             h.. _ ?
-#         l.. +_ 1
-#         r_ T..
-#
-#     ___ pop_first
-#         __ l.. __ 0
-#             r_ N..
-#         t.. _ h..
-#         h.. _ ?.n..
-#         ?.n.. _ N..
-#         l.. -_ 1
-#         __ l.. __ 0
-#             t.. _ N..
-#         r_ ?
-#
-#     ___ get  i..
-#          __  ? < 0 __ ? >_ l..
-#             r_ N..
-#         t.. _ h..
-#         ___ _ __ r.. ?
-#             t.. _ ?.n..
-#         r_ ?
-#
-#     ___ set_value  i.. v..
-#         t.. _ g.. ?
-#         __ ?
-#             ?.? _ ?
-#             r_ T..
-#         r_ F..
-#
-#     ___ insert  i.. v..
-#          __  ? < 0 __ ? > l..
-#             r_ F..
-#         __ ? __ 0
-#             r_ p.. v..
-#         __ ? __ l..
-#             r_ a.. v..
-#         n.. _ ? v..
-#         t.. _ g.. ? - 1
-#         n__.n.. _ ?.n..
-#         ?.n.. _ ?
-#         l.. +_ 1
-#         r_ T..
-#
-#
-#
-#
-# my_linked_list _ ? 1
-# ?.a.. 3
-#
-#
-# print('LL before insert():')
-# ?.p..
-#
-#
-# ?.i.. 1 2
-#
-# print('\nLL after insert(2) in middle:')
-# ?.p..
-#
-#
-# ?.i.. 0 0
-#
-# print('\nLL after insert(0) at beginning:')
-# ?.p..
-#
-#
-# ?.i.. 4 4
-#
-# print('\nLL after insert(4) at end:')
-# ?.p..
-#
-#
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+
+
+class LinkedList:
+    def __init__(self, value):
+        new_node = Node(value)
+        self.head = new_node
+        self.tail = new_node
+        self.length = 1
+
+    def print_list(self):
+        temp = self.head
+        while temp is not None:
+            print(temp.value)
+            temp = temp.next
+
+    def append(self, value):
+        new_node = Node(value)
+        if self.length == 0:
+            self.head = new_node
+            self.tail = new_node
+        else:
+            self.tail.next = new_node
+            self.tail = new_node
+        self.length += 1
+        return True
+
+    def pop(self):
+        if self.length == 0:
+            return None
+        temp = self.head
+        pre = self.head
+        while (temp.next):
+            pre = temp
+            temp = temp.next
+        self.tail = pre
+        self.tail.next = None
+        self.length -= 1
+        if self.length == 0:
+            self.head = None
+            self.tail = None
+        return temp
+
+    def prepend(self, value):
+        new_node = Node(value)
+        if self.length == 0:
+            self.head = new_node
+            self.tail = new_node
+        else:
+            new_node.next = self.head
+            self.head = new_node
+        self.length += 1
+        return True
+
+    def pop_first(self):
+        if self.length == 0:
+            return None
+        temp = self.head
+        self.head = self.head.next
+        temp.next = None
+        self.length -= 1
+        if self.length == 0:
+            self.tail = None
+        return temp
+
+    def get(self, index):
+        if index < 0 or index >= self.length:
+            return None
+        temp = self.head
+        for _ in range(index):
+            temp = temp.next
+        return temp
+
+    def set_value(self, index, value):
+        temp = self.get(index)
+        if temp:
+            temp.value = value
+            return True
+        return False
+
+    def insert(self, index, value):
+        if  index < 0 or index > self.length:
+            return False
+        if index == 0:
+            return self.prepend(value)
+        if index == self.length:
+            return self.append(value)
+        new_node = Node(value)
+        temp = self.get(index - 1)
+        new_node.next = temp.next
+        temp.next = new_node
+        self.length += 1
+        return True
+
+
+
+my_linked_list = LinkedList(1)
+my_linked_list.append(3)
+
+
+print('LL before insert():')
+my_linked_list.print_list()
+
+
+my_linked_list.insert(1,2)
+
+print('\nLL after insert(2) in middle:')
+my_linked_list.print_list()
+
+
+my_linked_list.insert(0,0)
+
+print('\nLL after insert(0) at beginning:')
+my_linked_list.print_list()
+
+
+my_linked_list.insert(4,4)
+
+print('\nLL after insert(4) at end:')
+my_linked_list.print_list()
 #
 # """
 #     EXPECTED OUTPUT:
