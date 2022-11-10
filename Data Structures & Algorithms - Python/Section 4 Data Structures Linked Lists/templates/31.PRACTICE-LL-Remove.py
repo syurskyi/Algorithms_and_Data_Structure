@@ -44,7 +44,7 @@
 #             t.. _ N..
 #         r_ ?
 #
-#     ___ prependvalue
+#     ___ prepend value
 #         n.. _ ? v..
 #         __ l.. __ 0
 #             h.. _ ?
