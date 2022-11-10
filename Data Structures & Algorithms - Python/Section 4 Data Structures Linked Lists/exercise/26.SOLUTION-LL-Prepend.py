@@ -42,7 +42,7 @@ class LinkedList:
         if self.length == 0:
             self.head = None
             self.tail = None
-        return temp
+        return True
 
     def prepend(self, value):
         new_node = Node(value)
@@ -50,9 +50,9 @@ class LinkedList:
             self.head = new_node
             self.tail = new_node
         else:
-            new_node.node = self.head
+            new_node.next = self.head
             self.head = new_node
-        self.length += 1
+        self += 1
         return True
 
 
