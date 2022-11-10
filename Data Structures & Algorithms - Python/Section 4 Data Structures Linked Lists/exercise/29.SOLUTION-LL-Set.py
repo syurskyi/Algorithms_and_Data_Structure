@@ -35,51 +35,52 @@ class LinkedList:
         pre = self.head
         while(temp.next):
             pre = temp
-            t.. _ ?.n..
-        t.. _ p..
-        t__.n.. _ N..
-        l.. -_ 1
-        __ l.. __ 0
-            h.. _ N..
-            t.. _ N..
-        r_ ?
+            temp = temp.next
+        self.tail = pre
+        self.teal.next = None
+        self.length -= 1
+        if self.length == 0:
+            self.head = None
+            self.tail = None
+        return temp
 
-    ___ prependvalue
-        n.. _ ? v..
-        __ l.. __ 0
-            h.. _ ?
-            t.. _ ?
-        ____
-            ?.n.. _ h..
-            h.. _ ?
-        l.. +_ 1
-        r_ T..
+    def prepend(self, value):
+        new_node = Node(value)
+        if self.length == 0:
+            self.head = new_node
+            self.tail = new_node
+        else:
+            new_node.next = self.head
+            self.head = new_node
+        self.length += 1
+        return True
 
-    ___ pop_first
-        __ l.. __ 0
-            r_ N..
-        t.. _ h..
-        h.. _ ?.n..
-        ?.n.. _ N..
-        l.. -_ 1
-        __ l.. __ 0
-            t.. _ N..
-        r_ ?
+    def pop_first(self):
+        if self.length == 0:
+            return None
+        temp = self.head
+        self.head = self.head.next
+        temp.next = None
+        self.length -= 1
+        if self.length == 0:
+            self.tail = None
+        return temp
 
-    ___ get  index
-         __  ? < 0 __ ? >_ l..
-            r_ N..
-        t.. _ h..
-        ___ _ __ r.. ?
-            t.. _ ?.n..
-        r_ ?
+    def get(self, index):
+        if index < 0 or index >= self.length:
+            return  None
+        temp = self.head
+        for _ in range(index):
+            temp = temp.next
+        return temp
 
-    ___ set_value  index, v..
-        t.. _ g.. ?
-        __ ?
-            ?.? _ ?
-            r_ T..
-        r_ F..
+    def set_value(self, index, value):
+        temp = self.get(index)
+        if temp:
+            temp.value = value
+            return True
+        return False
+
 
 
 
