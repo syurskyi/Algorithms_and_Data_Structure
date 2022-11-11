@@ -17,59 +17,59 @@ class DoublyLinkedList:
         while temp is not None:
             print(temp.value)
             temp = temp.next
-#
-#     ___ append  value
-#         n.. _ ? ?
-#         __ ? __ N..
-#             h.. _ ?
-#             t.. _ ?
-#         ____
-#             t__.n.. _ ?
-#             ?.p.. _ t..
-#             t.. _ ?
-#         ? =_ 1
-#         r_ T..
-#
-#     ___ pop
-#         __ ? __ 0
-#             r_ N..
-#         t.. _ t..
-#         __ ? __ 1
-#             h.. _ N..
-#             t.. _ N..
-#         ____
-#             t.. _ t__.p..
-#             ?.n.. _ N.
-#             ?.p.. _ N..
-#         ? -_ 1
-#         r_ ?
-#
-#     ___ prepend  value
-#         n.. _ ? ?
-#         __ ? __ 0
-#             h.. _ ?
-#             t.. _ ?
-#         ____
-#             ?.n.. _ h..
-#             ?.p.. _ ?
-#             h.. _ ?
-#         ? =_ 1
-#         r_ T..
-#
-#     ___ pop_first
-#         __ ? __ 0
-#             r_ N..
-#         t.. _ h..
-#         __ ? __ 1
-#             h.. _ N..
-#             t.. _ N..
-#         ____
-#             h.. _ ?.n..
-#             ?.p.. _ N..
-#             t__.n.. _ N..
-#         ? -_ 1
-#         r_ ?
-#
+
+    def append(self, value):
+        new_node = Node(value)
+        if self.length == None:
+            self.head = new_node
+            self.tail = new_node
+        else:
+            self.tail.next = new_node
+            new_node.prev = self.tail
+            self.tail = new_node
+        self.length =+ 1
+        return True
+
+    def pop(self):
+        if self.length == 0:
+            return None
+        temp = self.tail
+        if self.length == 1:
+            self.head = None
+            self.tail = None
+        else:
+            self.tail = temp.prev
+            self.tail.next = None
+            temp.prev = None
+        self.length -= 1
+        return temp
+
+    def prepend(self, value):
+        new_node = Node(value)
+        if self.length == 0:
+            self.head = new_node
+            self.tail = new_node
+        else:
+            new_node.next = self.head
+            self.head.prev = new_node
+            self.head = new_node
+        self.length =+ 1
+        return True
+
+    def pop_first(self):
+        if self.length == 0:
+            return None
+        temp = self.head
+        if self.length == 1:
+            self.head = None
+            self.tail = None
+        else:
+            self.head = self.head.next
+            self.head.prev = None
+            self.temp.next = None
+        self.length -= 1
+        return temp
+
 my_doubly_linked_list = DoublyLinkedList(2)
 my_doubly_linked_list.append(1)
 
