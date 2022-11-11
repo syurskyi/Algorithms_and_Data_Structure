@@ -1,22 +1,22 @@
-# c_ Node
-#     ___  -  value)
-#         ? _
-#         n.. _ N..
-#         p.. _ N..
-#
-#
-# c_ DoublyLinkedList
-#     ___  -  value
-#         n.. _ ? ?
-#         h.. _ ?
-#         t.. _ ?
-#         l.. _ 1
-#
-#     ___ print_list
-#         t.. _ h..
-#         w__ ? __ n.. N..
-#             print ?.v..
-#             ? _ ?.n..
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+        self.prev = None
+
+
+class DoublyLinkedList:
+    def __init__(self, value):
+        new_node = Node(value)
+        self.head = new_node
+        self.tail = new_node
+        self.length = 1
+
+    def print_list(self):
+        temp = self.head
+        while temp is not None:
+            print(temp.value)
+            temp = temp.next
 #
 #     ___ append  value
 #         n.. _ ? ?
@@ -70,21 +70,17 @@
 #         ? -_ 1
 #         r_ ?
 #
-#
-#
-#
-# my_doubly_linked_list = ? 2
-# ?.append(1)
-#
-#
-# # (2) Items - Returns 2 Node
-# print(?.p__.v..
-# # (1) Item -  Returns 1 Node
-# print(?.p__.v..
-# # (0) Items - Returns None
-# print(?.p..
-#
-#
+my_doubly_linked_list = DoublyLinkedList(2)
+my_doubly_linked_list.append(1)
+
+
+# (2) Items - Returns 2 Node
+print(my_doubly_linked_list.pop_first().value)
+# (1) Item -  Returns 1 Node
+print(my_doubly_linked_list.pop_first().value)
+# (0) Items - Returns None
+print(my_doubly_linked_list.pop_first())
+
 # """
 #     EXPECTED OUTPUT:
 #     ----------------
