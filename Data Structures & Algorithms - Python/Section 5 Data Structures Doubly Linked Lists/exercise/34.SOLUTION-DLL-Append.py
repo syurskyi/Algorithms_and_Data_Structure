@@ -1,60 +1,60 @@
-# c_ Node
-#     ___  -  value
-#         ? _ ?
-#         n.. _ N..
-#         p.. _ N..
-#
-#
-# c_ DoublyLinkedList
-#     ___  -  value
-#         n.. _ ? ?
-#         h.. _ ?
-#         t.. _ ?
-#         l.. _ 1
-#
-#     ___ print_list
-#         t.. _ h..
-#         w__ ? __ n.. N..
-#             print ?.v..
-#             ? _ ?.n..
-#
-#     ___ append  value
-#         n.. _ ? ?
-#         __ ? __ N..
-#             h.. _ ?
-#             t.. _ ?
-#         ____
-#             t__.n.. _ ?
-#             ?.p.. _ t..
-#             t.. _ ?
-#         ? =_ 1
-#         r_ T..
-#
-#
-#
-#
-# my_doubly_linked_list = ? 1
-# ?.a.. 2
-#
-#
-# print('Head:', ?.h__.v..
-# print('Tail:', ?.t__.v..
-# print('Length:', ?.l.. '\n')
-#
-# print('Doubly Linked List:')
-# ?.p..
-#
-#
-#
-# """
-#     EXPECTED OUTPUT:
-#     ----------------
-#     Head: 1
-#     Tail: 2
-#     Length: 2
-#
-#     Doubly Linked List:
-#     1
-#     2
-#
-# """
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+        self.prev = None
+
+
+class DoublyLinkedList:
+    def __init__(self, value):
+        new_node = Node(value)
+        self.head = new_node
+        self.tail = new_node
+        self.length = 1
+
+    def print_list(self):
+        temp = self.head
+        while temp is not None:
+            print(temp.value)
+            temp = temp.next
+
+    def append(self, value):
+        new_node = Node(value)
+        if self.length == None:
+            self.head = new_node
+            self.tail = new_node
+        else:
+            self.tail.next = new_node
+            new_node.prev = self.tail
+            self.tail = new_node
+        self.length =+ 1
+        return True
+
+
+
+
+my_doubly_linked_list = DoublyLinkedList(1)
+my_doubly_linked_list.append(2)
+
+
+print('Head:', my_doubly_linked_list.head.value)
+print('Tail:', my_doubly_linked_list.tail.value)
+print('Length:', my_doubly_linked_list.length, '\n')
+
+print('Doubly Linked List:')
+my_doubly_linked_list.print_list()
+
+
+
+"""
+    EXPECTED OUTPUT:
+    ----------------
+    Head: 1
+    Tail: 2
+    Length: 2
+
+    Doubly Linked List:
+    1
+    2
+
+"""
