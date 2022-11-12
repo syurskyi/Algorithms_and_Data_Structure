@@ -1,23 +1,23 @@
-# c_ Node
-#     ___  -  value
-#         ? _ ?
-#         n.. _ N..
-#         p.. _ N..
-#
-#
-# c_ DoublyLinkedList
-#     ___  -  value
-#         n.. _ ? ?
-#         h.. _ ?
-#         t.. _ ?
-#         l.. _ 1
-#
-#     ___ print_list
-#         t.. _ h..
-#         w__ ? __ n.. N..
-#             print ?.v..
-#             ? _ ?.n..
-#
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+        self.prev = None
+
+
+class DoublyLinkedList:
+    def __init__(self, value):
+        new_node = Node(value)
+        self.head = new_node
+        self.tail = new_node
+        self.length = 1
+
+    def print_list(self):
+        temp = self.head
+        while temp is not None:
+            print(temp.value)
+            temp = temp.next
+
 #     ___ append  value
 #         n.. _ ? ?
 #         __ ? __ N..
@@ -128,34 +128,32 @@
 #         ? -_ 1
 #         r_ ?
 #
-#
-#
-#
-# my_doubly_linked_list = ? 1
-# ?.a.. 2
-# ?.a.. 3
-# ?.a.. 4
-# ?.a.. 5
-#
-# print('DLL before remove():')
-# ?.p..
-#
-# print('\nRemoved node:')
-# print(?.r.. 2 .v..
-# print('DLL after remove() in middle:')
-# ?.p..
-#
-# print('\nRemoved node:')
-# print(?.r.. 0 .v..
-# print('DLL after remove() of first node:')
-# ?.p..
-#
-# print('\nRemoved node:')
-# print(?.r.. 2 .v..
-# print('DLL after remove() of last node:')
-# ?.p..
-#
-#
+
+
+my_doubly_linked_list = DoublyLinkedList(1)
+my_doubly_linked_list.append(2)
+my_doubly_linked_list.append(3)
+my_doubly_linked_list.append(4)
+my_doubly_linked_list.append(5)
+
+print('DLL before remove():')
+my_doubly_linked_list.print_list()
+
+print('\nRemoved node:')
+print(my_doubly_linked_list.remove(2).value)
+print('DLL after remove() in middle:')
+my_doubly_linked_list.print_list()
+
+print('\nRemoved node:')
+print(my_doubly_linked_list.remove(0).value)
+print('DLL after remove() of first node:')
+my_doubly_linked_list.print_list()
+
+print('\nRemoved node:')
+print(my_doubly_linked_list.remove(2).value)
+print('DLL after remove() of last node:')
+my_doubly_linked_list.print_list()
+
 #
 # """
 #     EXPECTED OUTPUT:

@@ -1,22 +1,22 @@
-# c_ Node
-#     ___  -  value
-#         ? _ ?
-#         n.. _ N..
-#         p.. _ N..
-#
-#
-# c_ DoublyLinkedList
-#     ___  -  value
-#         n.. _ ? ?
-#         h.. _ ?
-#         t.. _ ?
-#         l.. _ 1
-#
-#     ___ print_list
-#         t.. _ h..
-#         w__ ? __ n.. N..
-#             print ?.v..
-#             ? _ ?.n..
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+        self.prev = None
+
+
+class DoublyLinkedList:
+    def __init__(self, value):
+        new_node = Node(value)
+        self.head = new_node
+        self.tail = new_node
+        self.length = 1
+
+    def print_list(self):
+        temp = self.head
+        while temp is not None:
+            print(temp.value)
+            temp = temp.next
 #
 #     ___ append  value
 #         n.. _ ? ?
@@ -111,34 +111,29 @@
 #         r_ T..
 #
 #
-#
-#
-# my_doubly_linked_list = ? 1
-# ?.a.. 3
-#
-#
-# print('DLL before insert():')
-# ?.p..
-#
-#
-# ?.i.. 1,2
-#
-# print('\nDLL after insert(2) in middle:')
-# ?.p..
-#
-#
-# ?.i.. 0,0
-#
-# print('\nDLL after insert(0) at beginning:')
-# ?.p..
-#
-#
-# ?.i.. 4,4
-#
-# print('\nDLL after insert(4) at end:')
-# ?.p..
-#
-#
+
+
+my_doubly_linked_list = DoublyLinkedList(1)
+my_doubly_linked_list.append(3)
+
+print('DLL before insert():')
+my_doubly_linked_list.print_list()
+
+my_doubly_linked_list.insert(1, 2)
+
+print('\nDLL after insert(2) in middle:')
+my_doubly_linked_list.print_list()
+
+my_doubly_linked_list.insert(0, 0)
+
+print('\nDLL after insert(0) at beginning:')
+my_doubly_linked_list.print_list()
+
+my_doubly_linked_list.insert(4, 4)
+
+print('\nDLL after insert(4) at end:')
+my_doubly_linked_list.print_list()
+
 #
 # """
 #     EXPECTED OUTPUT:
