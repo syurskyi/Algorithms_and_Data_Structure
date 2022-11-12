@@ -17,100 +17,100 @@ class DoublyLinkedList:
         while temp is not None:
             print(temp.value)
             temp = temp.next
-#
-#     ___ append  value
-#         n.. _ ? ?
-#         __ ? __ N..
-#             h.. _ ?
-#             t.. _ ?
-#         ____
-#             t__.n.. _ ?
-#             ?.p.. _ t..
-#             t.. _ ?
-#         ? =_ 1
-#         r_ T..
-#
-#     ___ pop
-#         __ ? __ 0
-#             r_ N..
-#         t.. _ t..
-#         __ ? __ 1
-#             h.. _ N..
-#             t.. _ N..
-#         ____
-#             t.. _ t__.p..
-#             ?.n.. _ N.
-#             ?.p.. _ N..
-#         ? -_ 1
-#         r_ ?
-#
-#     ___ prepend  value
-#         n.. _ ? ?
-#         __ ? __ 0
-#             h.. _ ?
-#             t.. _ ?
-#         ____
-#             ?.n.. _ h..
-#             ?.p.. _ ?
-#             h.. _ ?
-#         ? =_ 1
-#         r_ T..
-#
-#     ___ pop_first
-#         __ ? __ 0
-#             r_ N..
-#         t.. _ h..
-#         __ ? __ 1
-#             h.. _ N..
-#             t.. _ N..
-#         ____
-#             h.. _ ?.n..
-#             ?.p.. _ N..
-#             t__.n.. _ N..
-#         ? -_ 1
-#         r_ ?
-#
-#     ___ get  index
-#         __ ? < 0 __ ? >_ ?
-#             r_ N..
-#         t.. _ h..
-#         __ ? < ?/2
-#             ___ _ __ r_ ?
-#                 ? _ ?.n..
-#         ____
-#             t.. _ t..
-#             ___ _ __ r_ ? -1 ? -1
-#                 ? _ ?.p..
-#         r_ ?
-#
-#     ___ set_value  ? value
-#         temp = get ?
-#         __ ?
-#             ?.? _ ?
-#             r_ T..
-#         r_ F..
-#
-#     ___ insert  ? value
-#         __ ? < 0 __ ? > ?
-#             r_ F..
-#         __ ? __ 0
-#             r_ p.. ?
-#         __ ? __ ?
-#             r_ a.. ?
-#
-#         n.. _ ? ?
-#         b.. _ g.. ? - 1
-#         a.. _ b__.n..
-#
-#         ?.p.. _ b..
-#         ?.n.. _ a..
-#         b__.n.. _ ?
-#         a__.p.. _ n..
-#
-#         ? =_ 1
-#         r_ T..
-#
-#
+
+    def append(self,value):
+        new_node = Node(value)
+        if self.head is None:
+            self.head = new_node
+            self.tail = new_node
+        else:
+            self.tail.next = new_node
+            new_node.prev = self.tail
+            self.tail = new_node
+        self.length += 1
+        return True
+
+    def pop(self):
+        if self.length == 0:
+            return None
+        temp = self.tail
+        if self.length == 1:
+            self.head = None
+            self.tail = None
+        else:
+            self.tail = self.tail.prev
+            self.tail.next = None
+            temp.prev = None
+        self.length -= 1
+        return temp
+
+    def prepend(self, value):
+        new_node = Node(value)
+        if self.length == 0:
+            self.head = new_node
+            self.tail = new_node
+        else:
+            new_node.next = self.head
+            self.head.prev = new_node
+            self.head = new_node
+        self.length += 1
+        return True
+
+    def pop_first(self):
+        if self.length == 0:
+            return None
+        temp = self.head
+        if self.length == 1:
+            self.head = None
+            self.tail = None
+        else:
+            self.head = self.head.next
+            self.head.prev = None
+            temp.next = None
+        self.length -= 1
+        return temp
+
+    def get(self, index):
+        if index < 0 or index >= self.length:
+            return None
+        temp = self.head
+        if index < self.length/2:
+            for _ in range(index):
+                temp = temp.next
+        else:
+            temp = self.tail
+            for _ in range(self.length -1, index, -1):
+                temp = temp.prev
+        return temp
+
+    def set_value(self, index, value):
+        temp = self.get(index)
+        if temp:
+            temp.value = value
+            return True
+        return False
+
+    def insert(self, index, value):
+        if index < 0 or index > self.length:
+            return False
+        if index == 0:
+            return self.prepend(value)
+        if index == self.length:
+            return self.append(value)
+
+        new_node = Node(value)
+        before = self.get(index - 1)
+        after = before.next
+
+        new_node.prev = before
+        new_node.next = after
+        before.next = new_node
+        after.prev = new_node
+
+        self.length += 1
+        return True
+
+
 
 
 my_doubly_linked_list = DoublyLinkedList(1)
