@@ -29,13 +29,6 @@ class Graph:
             return True
         return False
 
-    ## WRITE REMOVE_VERTEX METHOD HERE ##
-    #                                   #
-    #                                   #
-    #                                   #
-    #                                   #
-    ##################################### 
-
 
 
 
@@ -43,39 +36,34 @@ my_graph = Graph()
 my_graph.add_vertex('A')
 my_graph.add_vertex('B')
 my_graph.add_vertex('C')
-my_graph.add_vertex('D')
 
 my_graph.add_edge('A','B')
-my_graph.add_edge('A','C')
-my_graph.add_edge('A','D')
-my_graph.add_edge('B','D')
-my_graph.add_edge('C','D')
+my_graph.add_edge('B','C')
+my_graph.add_edge('C','A')
 
-
-print('Graph before remove_vertex():')
+print('Graph before remove_edge():')
 my_graph.print_graph()
 
 
-my_graph.remove_vertex('D')
+my_graph.remove_edge('A','C')
 
 
-print('\nGraph after remove_vertex():')
+print('\nGraph after remove_edge():')
 my_graph.print_graph()
 
 
 
 """
-EXPECTED OUTPUT:
-----------------
-    Graph before remove_vertex():
-    A : ['B', 'C', 'D']
-    B : ['A', 'D']
-    C : ['A', 'D']
-    D : ['A', 'B', 'C']
-
-    Graph after remove_vertex():
+    EXPECTED OUTPUT:
+    ----------------
+    Graph before remove_edge():
     A : ['B', 'C']
-    B : ['A']
-    C : ['A']
+    B : ['A', 'C']
+    C : ['B', 'A']
 
+    Graph after remove_edge():
+    A : ['B']
+    B : ['A', 'C']
+    C : ['B']
+    
 """
