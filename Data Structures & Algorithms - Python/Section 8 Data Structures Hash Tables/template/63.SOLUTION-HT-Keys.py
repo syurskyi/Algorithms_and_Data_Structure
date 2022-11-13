@@ -1,55 +1,55 @@
-class HashTable:
-    def __init__(self, size = 7):
-        self.data_map = [None] * size
-      
-    def __hash(self, key):
-        my_hash = 0
-        for letter in key:
-            my_hash = (my_hash + ord(letter) * 23) % len(self.data_map)
-        return my_hash  
-
-    def print_table(self):
-        for i, val in enumerate(self.data_map): 
-            print(i, ": ", val)
-    
-    def set_item(self, key, value):
-        index = self.__hash(key)
-        if self.data_map[index] == None:
-            self.data_map[index] = []
-        self.data_map[index].append([key, value])
-    
-    def get_item(self, key):
-        index = self.__hash(key)
-        if self.data_map[index] is not None:
-            for i in range(len(self.data_map[index])):
-                if self.data_map[index][i][0] == key:
-                    return self.data_map[index][i][1]
-        return None
-
-    def keys(self):
-        all_keys = []
-        for i in range(len(self.data_map)):
-            if self.data_map[i] is not None:
-                for j in range(len(self.data_map[i])):
-                    all_keys.append(self.data_map[i][j][0])
-        return all_keys
-        
-
-        
-
-my_hash_table = HashTable()
-
-my_hash_table.set_item('bolts', 1400)
-my_hash_table.set_item('washers', 50)
-my_hash_table.set_item('lumber', 70)
-
-print(my_hash_table.keys())
-
-
-
-"""
-    EXPECTED OUTPUT:
-    ----------------
-    ['bolts', 'washers', 'lumber']
-
-"""
+# c_ HashTable
+#     ___ -  size _ 7
+#         d.. _ N.. * ?
+#
+#     ___ __hash  key
+#         m _ 0
+#         ___ letter __ ?
+#             m _ ? + o.. ? * 23) % l.. ?
+#         r_ ?
+#
+#     ___ pr__t_table
+#         ___ i, val __ e__ ?
+#             ? ? ": " ?
+#
+#     ___ set_item  k.. v..
+#         __d.. _ ? ?
+#         __ ? ? __ ?
+#             ? ? _   # list
+#         ? ?.a.. ? ?
+#
+#     ___ get_item  key
+#         __d.. _ ? ?
+#         __ ? ? __ n.. N..
+#             ___ i __ r.. l.. ? ?
+#                 __ ? ? ? 0 __ ?
+#                     r_ ? ? ? 1
+#         r_ N..
+#
+#     ___ ?s
+#         all_keys _  # lsit
+#         ___ i __ r.. l.. ?
+#             __ ? ? __ n.. N..
+#                 ___ j __ r.. l.. ? ?
+#                     ?.a.. ? ? ? 0
+#         r_ ?
+#
+#
+#
+#
+# my_hash_table = ?
+#
+# ?.s.. 'bolts', 1400)
+# ?.s.. 'washers', 50)
+# ?.s.. 'lumber', 70)
+#
+# pr__t(?.k..
+#
+#
+#
+# """
+#     EXPECTED OUTPUT:
+#     ----------------
+#     ['bolts', 'washers', 'lumber']
+#
+# """

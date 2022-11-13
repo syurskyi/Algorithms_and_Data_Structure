@@ -1,50 +1,50 @@
-class HashTable:
-    def __init__(self, size = 7):
-        self.data_map = [None] * size
-      
-    def __hash(self, key):
-        my_hash = 0
-        for letter in key:
-            my_hash = (my_hash + ord(letter) * 23) % len(self.data_map)
-        return my_hash  
-
-    def print_table(self):
-        for i, val in enumerate(self.data_map): 
-            print(i, ": ", val)
-    
-    def set_item(self, key, value):
-        index = self.__hash(key)
-        if self.data_map[index] == None:
-            self.data_map[index] = []
-        self.data_map[index].append([key, value])
-    
-    def get_item(self, key):
-        index = self.__hash(key)
-        if self.data_map[index] is not None:
-            for i in range(len(self.data_map[index])):
-                if self.data_map[index][i][0] == key:
-                    return self.data_map[index][i][1]
-        return None
-
-        
-             
-
-my_hash_table = HashTable()
-
-my_hash_table.set_item('bolts', 1400)
-my_hash_table.set_item('washers', 50)
-
-print('Bolts:', my_hash_table.get_item('bolts'))
-print('Washers:', my_hash_table.get_item('washers'))
-print('Lumber:', my_hash_table.get_item('lumber'))
-
-
-
-"""
-    EXPECTED OUTPUT:
-    ----------------
-    Bolts: 1400
-    Washers: 50
-    Lumber: None
-
-"""
+# c_ HashTable
+#     ___ -  s.. _ 7
+#         d.. _ N.. * ?
+#
+#     ___ __hash  k..
+#         m _ 0
+#         ___ l.. __ ?
+#             m _ ? + o.. ? * 23) % l.. ?
+#         r_ ?
+#
+#     ___ pr__t_table
+#         ___ i, val __ e__ ?
+#             ? ? ": " ?
+#
+#     ___ set_item  k.. v..
+#         __d.. _ ? ?
+#         __ ? ? __ ?
+#             ? ? _    # List
+#         ? ?.a.. ? ?
+#
+#     ___ get_item  k..
+#         __d.. _ ? ?
+#         __ ? ? __ n.. N..
+#             ___ i __ r.. l.. ? ?
+#                 __ ? ? ? 0 __ ?
+#                     r_ ? ? ? 1
+#         r_ N..
+#
+#
+#
+#
+# my_hash_table = HashTable()
+#
+# my_hash_table.set_item('bolts', 1400)
+# my_hash_table.set_item('washers', 50)
+#
+# pr__t('Bolts:', my_hash_table.get_item('bolts'))
+# pr__t('Washers:', my_hash_table.get_item('washers'))
+# pr__t('Lumber:', my_hash_table.get_item('lumber'))
+#
+#
+#
+# """
+#     EXPECTED OUTPUT:
+#     ----------------
+#     Bolts: 1400
+#     Washers: 50
+#     Lumber: None
+#
+# """
