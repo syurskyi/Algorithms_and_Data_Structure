@@ -1,42 +1,40 @@
-class Graph:
-    def __init__(self):
-        self.adj_list = {}
-
-    def print_graph(self):
-        for vertex in self.adj_list:
-            print(vertex, ':', self.adj_list[vertex])
-
-    def add_vertex(self, vertex):
-        if vertex not in self.adj_list.keys():
-            self.adj_list[vertex] = []
-            return True
-        return False
-
-    def add_edge(self, v1, v2):
-        if v1 in self.adj_list.keys() and v2 in self.adj_list.keys():
-            self.adj_list[v1].append(v2)
-            self.adj_list[v2].append(v1)
-            return True
-        return False
-
-
-
-
-my_graph = Graph()
-
-my_graph.add_vertex(1)
-my_graph.add_vertex(2)
-
-my_graph.add_edge(1,2)
-
-my_graph.print_graph()
-
-
-
-"""
-    EXPECTED OUTPUT:
-    ----------------
-    1 : [2]
-    2 : [1]
-
-"""
+# c_ Graph:
+#     ___  -
+#         adj_list _  # dict
+#
+#     ___ print_graph
+#         ___ v..__ ?
+#             print ? ':' ? ?
+#
+#     ___ add_vertex ? v..
+#         __ ? n.. __ ?.k..
+#             ? ?_  # lsit
+#             r_ T..
+#         r_ F..
+#
+#     ___ add_edge  v1, v2
+#         __ ? __ ?.k.. ___ ? __ ?.k..
+#             ? ?.a.. ?
+#             ? ?.a.. ?
+#             r_ T..
+#         r_ F..
+#
+#
+#
+#
+# my_graph = ?
+#
+# ?.a.. 1
+# ?.a.. 2
+# ?.a.. 1,2
+# ?.p..
+#
+#
+#
+# """
+#     EXPECTED OUTPUT:
+#     ----------------
+#     1 : [2]
+#     2 : [1]
+#
+# """
