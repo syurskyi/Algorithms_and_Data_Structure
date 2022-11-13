@@ -1,45 +1,45 @@
-class Node:
-    def __init__(self, value):
-        self.value = value
-        self.next = None
+c_ Node
+    ___ -  value
+        ? _ ?
+        n.. _ N..
         
 
-class Queue:
-    def __init__(self, value):
-        new_node = Node(value)
-        self.first = new_node
-        self.last = new_node
-        self.length = 1
+c_ Queue
+    ___ -  value
+        n... _ ? ?
+        first _ ?
+        last _ ?
+        length = 1
 
-    def print_queue(self):
-        temp = self.first
-        while temp is not None:
-            print(temp.value)
-            temp = temp.next
+    ___ print_queue
+        temp = first
+        _____  ? __ n.. N..
+            print ?.v..
+            ? _ ?.n..
         
-    def enqueue(self, value):
-        new_node = Node(value)
-        if self.first is None:
-            self.first = new_node
-            self.last = new_node
-        else:
-            self.last.next = new_node
-            self.last = new_node
-        self.length += 1
-        return True
+    ___ enqueue value
+        n... _ ? ?
+        __ first is N..
+            first _ ?
+            last _ ?
+        ____
+            last.next _ ?
+            last _ ?
+        length += 1
+        r.. T..
 
-    def dequeue(self):
-        if self.length == 0:
-            return None
-        temp = self.first
-        if self.length == 1:
-            self.first = None
-            self.last = None
-        else:
-            self.first = self.first.next
-            temp.next = None
-        self.length -= 1
-        return temp
+    ___ dequeue
+        __ length __ 0
+            r.. N..
+        temp = first
+        __ length __ 1
+            first = N..
+            last = N..
+        ____
+            first = first.next
+            temp.n.. _ N..
+        length -= 1
+        r.. temp
 
  
 
@@ -48,9 +48,9 @@ my_queue = Queue(1)
 my_queue.enqueue(2)
 
 # (2) Items - Returns 2 Node
-print(my_queue.dequeue().value)
+print(my_queue.dequeue().value
 # (1) Item -  Returns 1 Node
-print(my_queue.dequeue().value)
+print(my_queue.dequeue().value
 # (0) Items - Returns None
 print(my_queue.dequeue())
 
