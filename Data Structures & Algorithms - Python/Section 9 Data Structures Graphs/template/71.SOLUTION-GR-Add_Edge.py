@@ -1,4 +1,4 @@
-# c_ Graph:
+# c_ Graph
 #     ___  -
 #         adj_list _  # dict
 #
