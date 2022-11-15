@@ -1,26 +1,26 @@
-# c_ Node
-#     ___ -  value
-#         ? _ ?
-#         l.. _ N..
-#         r.. _ N..
-#
-#
-# c_ BinarySearchTree
-#     ___ -r.. _ N..
-#         r.. _ N..
-#
-#
-#
-#
-# my_tree = ?
-#
-# print(?.r..
-#
-#
-#
-# """
-#     EXPECTED OUTPUT:
-#     ----------------
-#     None
-#
-# """
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.left = None
+        self.right = None
+
+
+class BinarySearchTree:
+    def __init__(self):
+        self.root = None
+
+
+
+
+my_tree = BinarySearchTree()
+
+print(my_tree.root)
+
+
+
+"""
+    EXPECTED OUTPUT:
+    ----------------
+    None
+
+"""

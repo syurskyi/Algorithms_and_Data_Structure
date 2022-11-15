@@ -6,7 +6,7 @@
 #
 #
 # c_ BinarySearchTree
-#     ___ -r.. _ N..
+#     ___ -
 #         r.. _ N..
 #
 #     ___ insert  v..
