@@ -39,7 +39,7 @@ class Solution():
     @staticmethod
     def lcm_03(*args):
         """
-        math.gcd, recursion
+        math.gcd, 001_recursion
         """
 
         def _lcm_(*args):

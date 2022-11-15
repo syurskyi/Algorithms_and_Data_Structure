@@ -72,6 +72,6 @@ class KnightsTour:
 
 if __name__ == '__main__':
 
-    # for small values backtracking is fast
+    # for small values 002_backtracking is fast
     tour = KnightsTour(8)
     tour.solve_problem()

@@ -56,7 +56,7 @@ class Solution():
 
     def sierpinski_02(self, n):
         """
-        ljust, recursion
+        ljust, 001_recursion
         """
 
         def recur(n):

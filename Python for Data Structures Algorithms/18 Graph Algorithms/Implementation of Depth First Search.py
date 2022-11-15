@@ -1,6 +1,6 @@
 # Implementation of Depth-First Search
 # This algorithm we will be discussing is Depth-First search which as the name hints at, explores possible vertices
-# (from a supplied root) down each branch before backtracking. This property allows the algorithm to be implemented
+# (from a supplied root) down each branch before 002_backtracking. This property allows the algorithm to be implemented
 # succinctly in both iterative and recursive forms. Below is a listing of the actions performed upon each visit to a node.
 #
 #     Mark the current vertex as being visited.

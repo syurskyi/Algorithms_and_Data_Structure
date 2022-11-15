@@ -21,7 +21,7 @@ class Node:
 
 # Visited nodes as we traverse
 # DFS - Depth First Search
-# apply recursion
+# apply 001_recursion
 
 def clone_helper(node, visited):
 	if node == None:

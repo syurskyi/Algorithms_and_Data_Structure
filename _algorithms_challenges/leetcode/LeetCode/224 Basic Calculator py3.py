@@ -38,7 +38,7 @@ class Solution:
         prev_op = "+"
         operand = 0
         i = start
-        while i < len(s):  #  not using for-loop, since the cursor needs to advance in recursion
+        while i < len(s):  #  not using for-loop, since the cursor needs to advance in 001_recursion
             if s[i] == " ":
                 pass
             elif s[i].isdigit():

@@ -35,7 +35,7 @@ class Solution():
 
     def solve_01(self, map, miner, exit):
         """
-        recursion, last step recorded, intuitive if-return combination
+        001_recursion, last step recorded, intuitive if-return combination
         """
         cp = {
             'left': 'right',
@@ -74,7 +74,7 @@ class Solution():
 
     def solve_02(self, map, miner, exit):
         """
-        recursion, last step recorded, dict
+        001_recursion, last step recorded, dict
         """
         dirs = {
             'left': {'s_xy': lambda x, y: (x - 1, y), 'dir': 'right'},
@@ -105,7 +105,7 @@ class Solution():
 
     def solve_03(self, map, miner, exit):
         """
-        recursion, all steps recorded, dict
+        001_recursion, all steps recorded, dict
         """
         dxy2dir = {
             (-1, 0): 'up',

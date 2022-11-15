@@ -39,7 +39,7 @@ def binary_search(my_list, x):
 print(binary_search([1,2,3,5,8], 6))
 print(binary_search([1,2,3,5,8], 1))
 
-# solution 3 (with recursion)
+# solution 3 (with 001_recursion)
 def binary_search(my_list, x):
     if len(my_list) == 0:
         return False

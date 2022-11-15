@@ -61,7 +61,7 @@ def check_rec(eqparams, tracecombo=(dict(), 0, set(range(10))), p=0):
     # unique zero-allowed characters by rank
     # all unique characters by rank
     maxp, tchars, unzchars, uokzchars, uchars = eqparams
-    # recursion cumulative parameters
+    # 001_recursion cumulative parameters
     # established characters with digits
     # carry-over from the previous level
     # remaining unassigned digits
@@ -99,14 +99,14 @@ def check_rec(eqparams, tracecombo=(dict(), 0, set(range(10))), p=0):
         if r == 0:
             # if divisible, update the dictionary to all established
             newdict.update(prevdict)
-            # proceed to the next level of recursion with
+            # proceed to the next level of 001_recursion with
             # the same eqparams, but updated digit dictionary,
             # new carry over and remaining digits to assign
             rectest = check_rec(eqparams,
                                 (newdict, d, remdigs - set(newdigs)),
                                 p + 1)
             # if the recursive call returned a non-empty dictionary
-            # this means the recursion has found a solution
+            # this means the 001_recursion has found a solution
             # otherwise, proceed to the new permutation
             if rectest and len(rectest) > 0:
                 return rectest
@@ -172,5 +172,5 @@ def solve(an):
         uchars.append(tuple(unzchars[p]) + tuple(uokzchars[p]))
         # pre-convert check dictionaries to tuples
         tchars[p] = tuple(chardict.items())
-    # go for the recursion
+    # go for the 001_recursion
     return check_rec([maxp, tchars, unzchars, uokzchars, uchars])

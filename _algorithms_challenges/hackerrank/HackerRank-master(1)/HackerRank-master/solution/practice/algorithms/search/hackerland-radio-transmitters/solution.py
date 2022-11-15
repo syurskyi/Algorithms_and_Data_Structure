@@ -1,4 +1,4 @@
-# This problem is solved with greedy method.
+# This problem is solved with 004_greedy method.
 # We start from the left of the line. Put the first transmitter as right as possible,
 # while still covering the leftmost house. Then we remove the houses it covers, and repeat the process
 # until all houses are covered.

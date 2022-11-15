@@ -1,11 +1,11 @@
 # Coin Change Problem
-# Note: This problem has multiple solutions and is a classic problem in showing issues with basic recursion.
+# Note: This problem has multiple solutions and is a classic problem in showing issues with basic 001_recursion.
 # There are better solutions involving memoization and simple iterative solutions.If you are having trouble with this
 # problem (or it seems to be taking a long time to run in some cases) check out the Solution Notebook and fully read
 # the conclusion link for a detailed description of the various ways to solve this problem!
 # This problem is common enough that is actually has its own Wikipedia Entry! Let's check the problem statement again:
 #
-# This is a classic recursion problem: Given a target amount n and a list (array) of distinct coin values, what's the
+# This is a classic 001_recursion problem: Given a target amount n and a list (array) of distinct coin values, what's the
 # fewest coins needed to make the change amount.
 
 # For example:

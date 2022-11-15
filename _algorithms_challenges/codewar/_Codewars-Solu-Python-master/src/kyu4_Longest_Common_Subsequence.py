@@ -96,7 +96,7 @@ class Solution():
 
     # def lcs_03(self, x, y):
     #     """
-    #     recursion, no memorization, pass string <- just way too slow
+    #     001_recursion, no memorization, pass string <- just way too slow
     #     """
     #     def recur(x, y):
     #         if (not x) or (not y):
@@ -114,7 +114,7 @@ class Solution():
 
     def lcs_04(self, x, y):
         """
-        recursion, table memorization, pass index, tab
+        001_recursion, table memorization, pass index, tab
         """
         n_x = len(x)
         n_y = len(y)

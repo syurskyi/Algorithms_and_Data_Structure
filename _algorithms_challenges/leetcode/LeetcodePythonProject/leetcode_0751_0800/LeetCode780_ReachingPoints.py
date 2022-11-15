@@ -20,7 +20,7 @@ class Solution(object):
         else:
             return False
     
-    # RuntimeError: maximum recursion depth exceeded
+    # RuntimeError: maximum 001_recursion depth exceeded
     def reachingPoints_own(self, sx, sy, tx, ty):
         """
         :type sx: int

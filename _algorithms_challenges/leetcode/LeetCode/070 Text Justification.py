@@ -2,7 +2,7 @@
 Given an array of words and a length L, format the text such that each line has exactly L characters and is fully (left
 and right) justified.
 
-You should pack your words in a greedy approach; that is, pack as many words as you can in each line. Pad extra spaces
+You should pack your words in a 004_greedy approach; that is, pack as many words as you can in each line. Pad extra spaces
 ' ' when necessary so that each line has exactly L characters.
 
 Extra spaces between words should be distributed as evenly as possible. If the number of spaces on a line do not divide

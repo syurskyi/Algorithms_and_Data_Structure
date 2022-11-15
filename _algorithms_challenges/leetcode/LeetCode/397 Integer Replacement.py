@@ -35,7 +35,7 @@ class Solution(object):
     def integerReplacement(self, n):
         """
         Simulation using dp fails since bi-directional
-        Simple recursion
+        Simple 001_recursion
 
         Math solution: bit manipulation
         https://discuss.leetcode.com/topic/58334/a-couple-of-java-solutions-with-explanations/
@@ -57,7 +57,7 @@ class Solution(object):
 
     def integerReplacementRecur(self, n):
         """
-        Simple recursion
+        Simple 001_recursion
         :type n: int
         :rtype: int
         """

@@ -30,7 +30,7 @@ class Solution(object):
 
     def readBinaryWatch(self, num):
         """
-        orderly backtracking
+        orderly 002_backtracking
 
         :type num: int
         :rtype: List[str]

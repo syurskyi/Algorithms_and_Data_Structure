@@ -72,7 +72,7 @@ class Solution():
 
     def josephus_survivor_05(self, n, k):
         """
-        1-base, recursion
+        1-base, 001_recursion
         """
 
         def recur(n):
@@ -84,7 +84,7 @@ class Solution():
 
     def josephus_survivor_06(self, n, k):
         """
-        0-base, recursion
+        0-base, 001_recursion
         """
 
         def recur(n):

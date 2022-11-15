@@ -1,6 +1,6 @@
-# We use a recursion to find all possible combinations of powers
+# We use a 001_recursion to find all possible combinations of powers
 # which sum up to X. To avoid repeating ourselves, we introduce
-# a parameter 'larger_than' which limits further recursion to be
+# a parameter 'larger_than' which limits further 001_recursion to be
 # strictly larger than previous powers.
 
 import math

@@ -19,7 +19,7 @@ class Solution():
     """
     https://www.codewars.com/kata/529adbf7533b761c560004e5
 
-    The Fibonacci sequence is traditionally used to explain tree recursion.
+    The Fibonacci sequence is traditionally used to explain tree 001_recursion.
 
     def fibonacci(n):
         if n in [0, 1]:
@@ -27,8 +27,8 @@ class Solution():
         return fibonacci(n - 1) + fibonacci(n - 2)
 
     This algorithm serves welll its educative purpose but it's tremendously inefficient,
-    not only because of recursion, but because we invoke the fibonacci function twice,
-    and the right branch of recursion (i.e. fibonacci(n-2))
+    not only because of 001_recursion, but because we invoke the fibonacci function twice,
+    and the right branch of 001_recursion (i.e. fibonacci(n-2))
     recalculates all the Fibonacci numbers already calculated by
     the left branch (i.e. fibonacci(n-1)).
     This algorithm is so inefficient that the time to calculate
@@ -37,7 +37,7 @@ class Solution():
     But if you try it here in Code Wars you will most likely get a code timeout before any answers.
 
     For this particular Kata we want to implement the memoization solution.
-    This will be cool because it will let us keep using the tree recursion algorithm
+    This will be cool because it will let us keep using the tree 001_recursion algorithm
     while still keeping it sufficiently optimized to get an answer very rapidly.
 
     The trick of the memoized version is that we will keep a cache data structure
@@ -48,7 +48,7 @@ class Solution():
     otherwise we returned the cached number.
 
     Refactor the function into a recursive Fibonacci function
-    that using a memoized data structure avoids the deficiencies of tree recursion
+    that using a memoized data structure avoids the deficiencies of tree 001_recursion
     Can you make it so the memoization cache is private to this function?
     """
 
@@ -57,7 +57,7 @@ class Solution():
 
     def fibonacci_01(self, n):
         """
-        recursion, hashtab to memorize
+        001_recursion, hashtab to memorize
         """
         hashtab = {0: 0, 1: 1}
 
@@ -71,7 +71,7 @@ class Solution():
 
     def fibonacci_02(self, n):
         """
-        recursion, list to memorize
+        001_recursion, list to memorize
         """
         cache = [0, 1]
 
@@ -96,7 +96,7 @@ class Solution():
 
     def fibonacci_04(self, n):
         """
-        recursion, counter
+        001_recursion, counter
         """
 
         def recur(n, fib1, fib2):
@@ -108,7 +108,7 @@ class Solution():
 
     def fibonacci_05(self, n):
         """
-        recursion, hashtab to memorize, wrapper
+        001_recursion, hashtab to memorize, wrapper
         """
 
         def memoized(f):
@@ -176,7 +176,7 @@ class Solution():
 
     def fibonacci_09(self, n):
         """
-        recursion, matrix multiplication, reduced by even
+        001_recursion, matrix multiplication, reduced by even
         """
         if n == 0 or n == 1:
             return n
@@ -194,7 +194,7 @@ class Solution():
 
     def fibonacci_10(self, n):
         """
-        recursion, https://mitpress.mit.edu/sicp/chapter1/node15.html
+        001_recursion, https://mitpress.mit.edu/sicp/chapter1/node15.html
         """
 
         def recur(a, b, p, q, n):
@@ -224,7 +224,7 @@ class Solution():
 
     def fibonacci_12(self, n):
         """
-        recursion, fib(n) = fib(k)*fib(n-k+1) + fib(k-1)*fib(n-k)
+        001_recursion, fib(n) = fib(k)*fib(n-k+1) + fib(k-1)*fib(n-k)
         """
 
         # Solution based on relation:

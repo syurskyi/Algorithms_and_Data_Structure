@@ -1,6 +1,6 @@
 # String Permutation
 # Problem Statement
-# Given a string, write a function that uses recursion to output a list of all the possible permutations of that string.
+# Given a string, write a function that uses 001_recursion to output a list of all the possible permutations of that string.
 # For example, given s='abc' the function should return ['abc', 'acb', 'bac', 'bca', 'cab', 'cba']
 # Note: If a character is repeated, treat each occurence as distinct, for example an input of 'xxx' would return
 # a list with 6 "versions" of 'xxx'
@@ -70,7 +70,7 @@ t.test(permute)
 #     this was the recursive call that we made. How do we know when to save a string? When we are at a position i that
 #     is greater than the number of letters in the input string, then we know that we have found one valid permutation
 #     of the string and then we can add it to the list and return to changing letters at positions less than i.
-#     This was our base case – remember that we always must have a recursive case and a base case when using recursion
+#     This was our base case – remember that we always must have a recursive case and a base case when using 001_recursion
 #     Another big part of this problem was figuring out which letters we can put in a given position. Using our sample
 #     string abc, lets say that we are going through all the permutations where the first letter is c.
 #     Then, it should be clear that the letter in the 2nd and 3rd position can only be either a or b, because a

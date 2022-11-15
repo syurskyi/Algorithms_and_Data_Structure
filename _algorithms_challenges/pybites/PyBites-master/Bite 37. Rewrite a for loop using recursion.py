@@ -1,11 +1,11 @@
-"""Although you have to be careful using recursion it is one of those concepts you want to at least understand. It's also commonly used in coding interviews :)
+"""Although you have to be careful using 001_recursion it is one of those concepts you want to at least understand. It's also commonly used in coding interviews :)
 
-In this beginner Bite we let you rewrite a simple countdown for loop using recursion. See countdown_for below, it produces the following output:
+In this beginner Bite we let you rewrite a simple countdown for loop using 001_recursion. See countdown_for below, it produces the following output:
 
 
 least understand. It's also commonly used in coding interviews :)
 
-In this beginner Bite we let you rewrite a simple countdown for loop using recursion. See countdown_for below, it produces the following output:
+In this beginner Bite we let you rewrite a simple countdown for loop using 001_recursion. See countdown_for below, it produces the following output:
 
 $ python countdown.py
 10

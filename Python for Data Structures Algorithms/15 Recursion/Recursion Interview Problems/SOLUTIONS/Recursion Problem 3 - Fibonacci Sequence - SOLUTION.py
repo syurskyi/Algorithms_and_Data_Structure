@@ -99,7 +99,7 @@ t.test(fib_rec)
 
 # Passed all tests.
 # Conclusion
-# Hopefully this interview question served as a good excercise in exploring recursion, dynamic programming,
+# Hopefully this interview question served as a good excercise in exploring 001_recursion, dynamic programming,
 # and iterative solutions for a single problem! Its good to work through all three because in an interview a common
 # question may just begin with requesting a recursive solution and then checking to se if you can implement the other
 # forms!

@@ -1,5 +1,5 @@
 
-#tail recursion
+#tail 001_recursion
 def tail(n):
 
 	#base case
@@ -26,7 +26,7 @@ def head(n):
 	
 if __name__ == "__main__":
 
-	print("Tail recursion:\n")
+	print("Tail 001_recursion:\n")
 	tail(5)
-	print("\nHead recursion:\n")
+	print("\nHead 001_recursion:\n")
 	head(5)

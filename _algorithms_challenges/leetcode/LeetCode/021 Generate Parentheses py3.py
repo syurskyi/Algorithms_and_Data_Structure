@@ -19,7 +19,7 @@ from typing import List
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
         """
-        Method 1 - backtracking
+        Method 1 - 002_backtracking
         Method 2 - dp
         Let F[n] be the list of parentheses at length 2n
         """

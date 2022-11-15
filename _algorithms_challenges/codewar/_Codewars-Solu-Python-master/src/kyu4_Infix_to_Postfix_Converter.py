@@ -29,7 +29,7 @@ class Solution():
 
     def to_postfix_01(self, infix):
         """
-        recursion, w/ priority, left to right
+        001_recursion, w/ priority, left to right
         """
 
         def recur(infix):

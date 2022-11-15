@@ -39,7 +39,7 @@ class Solution:
 
                 for k in range(1, j + 1):
                     """
-                    backtracking to drop one egg on arbitrary floor `k`
+                    002_backtracking to drop one egg on arbitrary floor `k`
                     there is two cases, if previous egg is:
 
                     1. broken: reduce to subproblem (m - 1, k - 1)

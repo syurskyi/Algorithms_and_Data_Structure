@@ -29,12 +29,12 @@ class Solution:
             |__|
              b
 
-        be careful with the index: be greedy for the first scan
+        be careful with the index: be 004_greedy for the first scan
         [[1,2,3],
          [8,9,4],
          [7,6,5]]
 
-        if not greedy, the middle 9 won't be scanned
+        if not 004_greedy, the middle 9 won't be scanned
         [[1,2,3],
          [8,x,4],
          [7,6,5]]

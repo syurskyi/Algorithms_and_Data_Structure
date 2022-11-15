@@ -188,7 +188,7 @@ class KDTree:
 Change Log
 
 1. 2014.05.23    KDNode:nearest() function
-                 defect: in double recursion case, was comparing
+                 defect: in double 001_recursion case, was comparing
                          distance to self.above (and self.below)
                          instead of the returned point pt.
 

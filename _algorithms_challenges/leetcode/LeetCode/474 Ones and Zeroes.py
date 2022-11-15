@@ -152,7 +152,7 @@ class Solution:
 
     def findMaxForm_error(self, strs, m, n):
         """
-        reward is 1 regarless of length, then greedy - error
+        reward is 1 regarless of length, then 004_greedy - error
 
         :type strs: List[str]
         :type m: int

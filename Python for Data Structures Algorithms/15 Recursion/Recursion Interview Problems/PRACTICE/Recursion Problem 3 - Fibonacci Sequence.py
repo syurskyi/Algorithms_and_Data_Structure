@@ -13,7 +13,7 @@
 # Fill Out Your Solutions Below
 # Recursively
 #
-# Solve the problem using simple recursion.
+# Solve the problem using simple 001_recursion.
 
 def fib_rec(n):
     if n <=2:
@@ -95,4 +95,4 @@ t.test(fib_rec)
 #
 # Conclusion
 #
-# Hopefully this interview question served as a good excercise in exploring recursion, dynamic programming, and iterative solutions for a single problem! Its good to work through all three because in an interview a common question may just begin with requesting a recursive solution and then checking to se if you can implement the other forms!
+# Hopefully this interview question served as a good excercise in exploring 001_recursion, dynamic programming, and iterative solutions for a single problem! Its good to work through all three because in an interview a common question may just begin with requesting a recursive solution and then checking to se if you can implement the other forms!

@@ -49,7 +49,7 @@ class Solution():
 
     def listPosition_01(self, word):
         """
-        recursion, left to right, w/ explicit skip
+        001_recursion, left to right, w/ explicit skip
         """
         def recur(word):
             # skip uncounted portion
@@ -81,7 +81,7 @@ class Solution():
 
     def listPosition_02(self, word):
         """
-        recursion, left to right, optimize
+        001_recursion, left to right, optimize
         """
         def recur(word):
             if not word:

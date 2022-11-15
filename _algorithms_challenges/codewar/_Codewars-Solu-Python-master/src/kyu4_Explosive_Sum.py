@@ -49,7 +49,7 @@ class Solution():
     def exp_sum_01(self, n):
         """
         p(n, m) = sum(p(n-k, k)), k={1...m}
-        recursion
+        001_recursion
         """
         def recur(n, m):
             if n == 0:
@@ -68,7 +68,7 @@ class Solution():
     def exp_sum_02(self, n):
         """
         p(n, m) = sum(p(n-k, k)), k={1...m}
-        recursion, hashtab
+        001_recursion, hashtab
         """
         hashtab = {(0, 0): 1}
 
@@ -92,7 +92,7 @@ class Solution():
     def exp_sum_03(self, n):
         """
         pk(n) = pk-1(n) + pk(n-k)
-        recursion
+        001_recursion
         """
 
         def recur(n, k):
@@ -109,7 +109,7 @@ class Solution():
     def exp_sum_04(self, n):
         """
         pk(n) = pk-1(n) + pk(n-k)
-        recursion, hashtab
+        001_recursion, hashtab
         """
         hashtab = {(0, 0): 1}
 
@@ -131,7 +131,7 @@ class Solution():
     def exp_sum_05(self, n):
         """
         pk(n) = pk-1(n) + pk(n-k)
-        recursion by for-loop via list
+        001_recursion by for-loop via list
         """
         if n < 0:
             return 0

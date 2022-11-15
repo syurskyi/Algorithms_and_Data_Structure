@@ -1,5 +1,5 @@
 # Coin Change Problem
-# Note: This problem has multiple solutions and is a classic problem in showing issues with basic recursion.
+# Note: This problem has multiple solutions and is a classic problem in showing issues with basic 001_recursion.
 # If you are having trouble with this problem (or it seems to be taking a long time to run in some cases) check out
 # the Solution Notebook and fully read the conclusion link for a detailed description of the various ways to solve
 # this problem!

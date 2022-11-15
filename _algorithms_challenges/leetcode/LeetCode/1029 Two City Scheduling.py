@@ -33,7 +33,7 @@ It is guaranteed that costs.length is even.
 class Solution:
     def twoCitySchedCost(self, costs: List[List[int]]) -> int:
         """
-        sort by city A and greedy? [30, 20]?
+        sort by city A and 004_greedy? [30, 20]?
         sort by total?
         sort by diff - either choose A or B, the difference matters
 
@@ -54,7 +54,7 @@ class Solution:
 
     def twoCitySchedCost_error(self, costs: List[List[int]]) -> int:
         """
-        sort by city A and greedy? [30, 20]?
+        sort by city A and 004_greedy? [30, 20]?
         sort by total?
         sort by diff - either choose A or B, the difference matters
 

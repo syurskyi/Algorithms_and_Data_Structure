@@ -34,7 +34,7 @@ class Solution:
 
     def eval(self, s, i, stk):
         """
-        return the cursor since the cursor advances in recursion
+        return the cursor since the cursor advances in 001_recursion
         """
         operand = 0
         prev_op = "+"

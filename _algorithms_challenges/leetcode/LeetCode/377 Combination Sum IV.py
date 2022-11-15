@@ -34,7 +34,7 @@ class Solution(object):
         F[i] = sum(F[i-k] for k in nums)
 
         If negative number allowed, [1, -1], 1, then infinite combinations.
-        If the target is large, recursion & memoization is more space saving
+        If the target is large, 001_recursion & memoization is more space saving
         :type nums: List[int]
         :type target: int
         :rtype: int

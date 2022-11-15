@@ -40,7 +40,7 @@ class Balloon:
 class Solution:
     def findMinArrowShots(self, points):
         """
-        greedy shot since if two balloon no overlap, then must shot separately
+        004_greedy shot since if two balloon no overlap, then must shot separately
 
         heap: min, insert by s, pop by e
         Like the maximum overlapping interval

@@ -62,7 +62,7 @@ class Solution():
 
     def append_02(self, listA, listB):
         """
-        recursion
+        001_recursion
         """
         def recur(listA, listB):
             if not listA:

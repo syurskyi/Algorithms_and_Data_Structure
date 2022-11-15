@@ -3,7 +3,7 @@
 # * 0 is a losing situation.
 #
 # Note that functools.lru_cache can be used to write
-# plain recursion instead of DP without losing performance.
+# plain 001_recursion instead of DP without losing performance.
 
 import functools
 

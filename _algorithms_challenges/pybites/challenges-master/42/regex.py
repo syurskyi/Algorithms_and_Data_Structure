@@ -30,7 +30,7 @@ def get_all_hashtags_and_links():
 
 def match_first_paragraph():
     '''Use re.sub to extract the content of the first paragraph (excl tags)'''
-    html = ('<p>pybites != greedy</p>'
+    html = ('<p>pybites != 004_greedy</p>'
             '<p>not the same can be said REgarding ...</p>')
     return re.sub(...
 

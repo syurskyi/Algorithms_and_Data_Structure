@@ -50,7 +50,7 @@ class Solution(object):
     def dfs(self, s, cur, left, pi, i, rmcnt, ret):
         """
         Remove parenthesis
-        backtracking, post-check
+        002_backtracking, post-check
         :param s: original string
         :param cur: current string builder
         :param left: number of remaining left parentheses in s[0..i] not consumed by ")"

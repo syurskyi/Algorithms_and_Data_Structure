@@ -37,7 +37,7 @@ def test_get_all_hashtags_and_links_other_tweet():
 
 
 def test_match_first_paragraph_default_arg():
-    expected = 'pybites != greedy'
+    expected = 'pybites != 004_greedy'
     assert match_first_paragraph() == expected
 
 

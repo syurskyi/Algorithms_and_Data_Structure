@@ -20,7 +20,7 @@ def test_get_all_hashtags_and_links():
 
 
 def test_match_first_paragraph():
-    expected = 'pybites != greedy'
+    expected = 'pybites != 004_greedy'
     assert match_first_paragraph() == expected
 
 

@@ -64,7 +64,7 @@ class Solution:
 
     def leastInterval_complicated(self, tasks: List[str], n: int) -> int:
         """
-        greedy
+        004_greedy
         max heap, most tasks first
         cool down queue
         """

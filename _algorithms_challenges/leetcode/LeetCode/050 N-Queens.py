@@ -29,7 +29,7 @@ directions = [(+1, +1), (-1, -1), (-1, +1), (+1, -1)]
 class Solution:
     def solveNQueens(self, n):
         """
-        backtracking
+        002_backtracking
         :param n: integer
         :return: a list of lists of string
         """
@@ -40,7 +40,7 @@ class Solution:
 
     def backtrack(self, queen_index, current, result):
         """
-        Search problem: dfs, backtracking
+        Search problem: dfs, 002_backtracking
 
         Python:
         notice, the bound should be checked using "if condition" rather than "try-catch" since negative index is acceptable in python

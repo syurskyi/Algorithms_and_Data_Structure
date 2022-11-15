@@ -20,7 +20,7 @@ class Solution(object):
 
     def dfs(self, word):
         """
-        backtracking, pivoting letter
+        002_backtracking, pivoting letter
         :type word: str
         :rtype: List[str]
         """

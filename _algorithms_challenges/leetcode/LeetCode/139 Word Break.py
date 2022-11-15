@@ -25,7 +25,7 @@ class Solution:
         if s=="":
             return True
 
-        # greedy
+        # 004_greedy
         for i in range(len(s)):
             string_builder += s[i]
             if string_builder in dict:

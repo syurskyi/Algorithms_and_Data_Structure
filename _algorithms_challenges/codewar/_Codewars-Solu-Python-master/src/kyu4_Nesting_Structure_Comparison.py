@@ -33,7 +33,7 @@ class Solution():
 
     def same_structure_as_01(self, original, other):
         """
-        recursion, ele-by-ele
+        001_recursion, ele-by-ele
         """
         if isinstance(original, list):
             if not isinstance(other, list):
@@ -64,7 +64,7 @@ class Solution():
 
     def same_structure_as_03(self, original, other):
         """
-        stru by recursion reconstruction
+        stru by 001_recursion reconstruction
         """
 
         def stru(x):
@@ -76,7 +76,7 @@ class Solution():
 
     def same_structure_as_04(self, original, other):
         """
-        stru by recursion ele-by-ele replace
+        stru by 001_recursion ele-by-ele replace
         """
 
         def hashed(x):

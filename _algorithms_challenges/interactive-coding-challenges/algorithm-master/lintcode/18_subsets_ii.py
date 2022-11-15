@@ -27,7 +27,7 @@ class Solution:
             self.dfs(A, i + 1, ans, subset + [A[i]])
 
             """
-            backtracking if using same list
+            002_backtracking if using same list
             """
             # subset.append(A[i])
             # self.dfs(A, i + 1, ans, subset)

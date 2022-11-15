@@ -15,7 +15,7 @@ class BreadthFirstSearch(object):
 		queue.append(startNode);
 		startNode.visited = True;
 		
-		# BFS -> queue      DFS --> stack BUT usually we implement it with recursion !!!
+		# BFS -> queue      DFS --> stack BUT usually we implement it with 001_recursion !!!
 		while queue:
 		
 			actualNode = queue.pop(0);

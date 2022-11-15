@@ -4,7 +4,7 @@
 # method (#2) to get the set size.
 #
 # The find method is just plain path compression but written
-# in a more verbose manner to eliminate recursion.
+# in a more verbose manner to eliminate 001_recursion.
 
 class DisjointSet:
 

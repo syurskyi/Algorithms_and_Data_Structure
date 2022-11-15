@@ -27,7 +27,7 @@ class Solution():
 
     def permutations_02(self, string):
         """
-        recursion, global list update
+        001_recursion, global list update
         """
         ret = []
 
@@ -46,7 +46,7 @@ class Solution():
 
     def permutations_03(self, string):
         """
-        recursion, returned list
+        001_recursion, returned list
         """
         def recur(string):
             if len(string) == 1:
@@ -63,7 +63,7 @@ class Solution():
 
     def permutations_04(self, string):
         """
-        recursion, brute force, set every time
+        001_recursion, brute force, set every time
         """
         def recur(string):
             len_string = len(string)
@@ -79,7 +79,7 @@ class Solution():
 
     def permutations_05(self, string):
         """
-        recursion, brute force, set at end only
+        001_recursion, brute force, set at end only
         """
         def recur(string):
             len_string = len(string)

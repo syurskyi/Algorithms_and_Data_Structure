@@ -1,7 +1,7 @@
 """
 Main Concept:
 
-in product case, needs to remove product in last recursion, and adds the product in current.
+in product case, needs to remove product in last 001_recursion, and adds the product in current.
 """
 
 

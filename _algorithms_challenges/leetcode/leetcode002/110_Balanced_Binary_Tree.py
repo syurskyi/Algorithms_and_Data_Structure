@@ -11,7 +11,7 @@ class Solution(object):
         :type root: TreeNode
         :rtype: bool
         """
-        # Bottom-up recursion with sentinel -1
+        # Bottom-up 001_recursion with sentinel -1
         if root is None:
             return True
         if self.getDepth(root) < 0:
@@ -35,7 +35,7 @@ class Solution(object):
 
     # https://discuss.leetcode.com/topic/7798/the-bottom-up-o-n-solution-would-be-better
     # def isBalanced(self, root):
-    #     # Top-down recursion
+    #     # Top-down 001_recursion
     #     if root is None:
     #         return True
     #     left = self.depth(root.left)

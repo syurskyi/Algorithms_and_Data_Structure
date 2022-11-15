@@ -1,7 +1,7 @@
 # Reverse a String
 #
-# This interview question requires you to reverse a string using recursion. Make sure to think of the base case here.
-# Again, make sure you use recursion to accomplish this. Do not slice (e.g. string[::-1]) or use iteration,
+# This interview question requires you to reverse a string using 001_recursion. Make sure to think of the base case here.
+# Again, make sure you use 001_recursion to accomplish this. Do not slice (e.g. string[::-1]) or use iteration,
 # there must be a recursive call for the function.
 # Fill out your solution below
 

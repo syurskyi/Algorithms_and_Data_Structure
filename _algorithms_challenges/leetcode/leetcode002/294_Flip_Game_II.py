@@ -31,7 +31,7 @@ class Solution(object):
         return False
 
     # def canWin(self, s):
-    #     # backtracking with memo
+    #     # 002_backtracking with memo
     #     memo = {}
 
     #     def can(s):

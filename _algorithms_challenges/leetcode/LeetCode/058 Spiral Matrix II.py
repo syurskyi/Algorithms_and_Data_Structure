@@ -29,7 +29,7 @@ class Solution:
         result = [[-1 for _ in xrange(n)] for _ in xrange(n)]
         num = 1
         while left <= right and top <= bottom:
-            for i in xrange(left, right + 1):  # tuning ending condition, be greedy
+            for i in xrange(left, right + 1):  # tuning ending condition, be 004_greedy
                 result[top][i] = num
                 num += 1
             for i in xrange(top + 1, bottom):

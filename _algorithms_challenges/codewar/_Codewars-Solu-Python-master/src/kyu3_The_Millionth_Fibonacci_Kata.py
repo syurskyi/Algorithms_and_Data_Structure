@@ -58,7 +58,7 @@ class Solution():
 
     def fib_03(self, n):
         """
-        recursion, matrix
+        001_recursion, matrix
         """
         if n == 0 or n == 1:
             return n
@@ -93,7 +93,7 @@ class Solution():
 
     def fib_04(self, n):
         """
-        recursion, matrix, symmetric negative side
+        001_recursion, matrix, symmetric negative side
         """
         if n == 0 or n == 1:
             return n
@@ -122,7 +122,7 @@ class Solution():
 
     def fib_06(self, n):
         """
-        recursion, https://mitpress.mit.edu/sicp/chapter1/node15.html, symmetric negative side
+        001_recursion, https://mitpress.mit.edu/sicp/chapter1/node15.html, symmetric negative side
         """
         def recur(a, b, p, q, n):
             if n == 0:

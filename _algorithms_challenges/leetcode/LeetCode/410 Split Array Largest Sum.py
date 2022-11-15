@@ -122,7 +122,7 @@ class SolutionTLE:
         """
         Minimize the largest subarray sum
 
-        backtracking + memoization
+        002_backtracking + memoization
         """
         for n in nums:
             self.sums.append(self.sums[-1] + n)

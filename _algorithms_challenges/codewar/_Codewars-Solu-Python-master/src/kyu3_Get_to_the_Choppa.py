@@ -89,7 +89,7 @@ class Solution():
         Your function will return a list of nodes that represent, in order,
         the path that one must follow to get from the start node to the end node.
         The path must begin with the start node and end with the end node.
-        No single node should be repeated in the path (ie. no backtracking).
+        No single node should be repeated in the path (ie. no 002_backtracking).
 
         def find_shortest_path(grid, start_node, end_node):
           pass
@@ -141,7 +141,7 @@ class Solution():
 
     def find_shortest_path_01(self, grid, start_node, end_node):
         """
-        depth-first, recursion, move priority
+        depth-first, 001_recursion, move priority
         """
         if not grid:
             return []

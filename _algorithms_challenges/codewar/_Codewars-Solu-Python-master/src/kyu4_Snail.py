@@ -57,7 +57,7 @@ class Solution():
 
     def snail_03(self, array):
         """
-        pop, zip and reverse in recursion form
+        pop, zip and reverse in 001_recursion form
         """
         ret = []
 

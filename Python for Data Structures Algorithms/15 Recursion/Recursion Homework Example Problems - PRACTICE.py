@@ -1,11 +1,11 @@
 # Recursion Homework Problems
-# This assignment is a variety of small problems to begin you getting used to the idea of recursion.
+# This assignment is a variety of small problems to begin you getting used to the idea of 001_recursion.
 # hey are not full-blown interview questions, but do serve as a great start for getting your mind "in the zone"
-# for recursion problems.
+# for 001_recursion problems.
 # Problem 1
 # Write a recursive function which takes an integer and computes the cumulative sum of 0 to that integer
 # For example, if n=4 , return 4+3+2+1+0, which is 10.
-# This problem is very similar to the factorial problem presented during the introduction to recursion. Remember,
+# This problem is very similar to the factorial problem presented during the introduction to 001_recursion. Remember,
 # always think of what the base case will look like. In this case, we have a base case of n =0 (Note, you could have
 # also designed the cut off to be 1).
 #

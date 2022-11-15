@@ -62,7 +62,7 @@ class Solution():
 
     def evaluate_04(self, string):
         """
-        recursion, w/ priority
+        001_recursion, w/ priority
         """
         mp_op = {'+': operator.add,
                  '-': operator.sub,

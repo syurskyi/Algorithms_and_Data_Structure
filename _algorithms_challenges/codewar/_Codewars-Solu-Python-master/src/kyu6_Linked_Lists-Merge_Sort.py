@@ -63,7 +63,7 @@ class Solution():
     Linked Lists - Merge Sort
 
     Write a MergeSort() function which recursively sorts a list in ascending order.
-    Note that this problem requires recursion.
+    Note that this problem requires 001_recursion.
     Given FrontBackSplit() and SortedMerge(), you can write a classic recursive MergeSort().
     Split the list into two smaller lists, recursively sort those lists,
     and finally merge the two sorted lists together into a single sorted list. Return the list.

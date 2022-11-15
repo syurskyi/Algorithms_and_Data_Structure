@@ -10,7 +10,7 @@ DEFAULT = 0
 class Solution:
     def totalNQueens(self, n):
         """
-        backtracking
+        002_backtracking
         :param n: integer
         :return: a list of lists of string
         """

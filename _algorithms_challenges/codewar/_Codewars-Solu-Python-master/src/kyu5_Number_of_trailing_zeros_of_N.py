@@ -31,7 +31,7 @@ class Solution():
 
     def zeros_02(self, n):
         """
-        div by 5, recursion
+        div by 5, 001_recursion
         """
 
         def recur(n):

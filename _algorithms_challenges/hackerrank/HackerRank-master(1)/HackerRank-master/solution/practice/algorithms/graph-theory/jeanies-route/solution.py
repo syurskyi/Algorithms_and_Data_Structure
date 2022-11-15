@@ -12,7 +12,7 @@
 # the starting city and the finishing city.
 #
 # Using Dfs will greatly simplify the code. But the N seems too huge to
-# do the recursion properly. Maybe next time.
+# do the 001_recursion properly. Maybe next time.
 #
 # So here's what to do:
 # 1. Find the said subtree

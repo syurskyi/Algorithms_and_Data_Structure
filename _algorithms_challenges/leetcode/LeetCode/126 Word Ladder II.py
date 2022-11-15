@@ -175,7 +175,7 @@ class Solution_TLE2:
             for i in xrange(length_0):  #O(V)
                 current = queue[i]
 
-                # greedy, cannot repeat while possibly repeat in the same level; otherwise cannot be the shortest
+                # 004_greedy, cannot repeat while possibly repeat in the same level; otherwise cannot be the shortest
                 # the paths downwards are independent of the path before that.
                 dict -= {current.string}
 
@@ -231,7 +231,7 @@ class Solution:  # use set to mimic queue, fastest
         candidates[current].add(start)
         while end not in candidates[current]:
             current, previous = previous, current
-            for i in candidates[previous]: dict -= {i}  # greedy elimination
+            for i in candidates[previous]: dict -= {i}  # 004_greedy elimination
 
             candidates[current].clear()  # to be added to the current level
             for word in candidates[previous]:

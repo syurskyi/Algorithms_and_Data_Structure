@@ -36,7 +36,7 @@ class Solution:
         if not root:
             return
 
-        # check before recursion because need to know parent
+        # check before 001_recursion because need to know parent
         if key < root.val:
             root.left = self._delete(root.left, key)
             return root
@@ -85,7 +85,7 @@ class Solution:
         if not root:
             return
 
-        # check before recursion because need to know parent
+        # check before 001_recursion because need to know parent
         if key < root.val:
             root.left = self._delete(root.left, key)
             return root

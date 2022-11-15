@@ -24,7 +24,7 @@ class Solution():
 
     def count_change_01(self, money, coins):
         """
-        recursion, divmod
+        001_recursion, divmod
         """
         def recur(money, coins):
             ret = 0
@@ -52,7 +52,7 @@ class Solution():
 
     def count_change_02(self, money, coins):
         """
-        recursion, at least one of certain coin + no such coin at all
+        001_recursion, at least one of certain coin + no such coin at all
         """
         def recur(money, coins):
             if money < 0 or not coins:
@@ -65,7 +65,7 @@ class Solution():
 
     def count_change_03(self, money, coins):
         """
-        recursion by for-loop via list
+        001_recursion by for-loop via list
         """
         dp = [1] + [0] * money
         for coin in coins:

@@ -32,7 +32,7 @@ class Solution:
         for i in range(n):
             for j in range(i):
                 """
-                backtracking
+                002_backtracking
 
                 `A[i]` is larger than `A[j]`,
                 so check `A[i] % A[j]` if its zero

@@ -12,7 +12,7 @@ class TreeLinkNode:
 class Solution:
     """
     Recursion
-    1. recursion from right to left
+    1. 001_recursion from right to left
     2. first scan the nxt by level
     """
     def connect(self, root):

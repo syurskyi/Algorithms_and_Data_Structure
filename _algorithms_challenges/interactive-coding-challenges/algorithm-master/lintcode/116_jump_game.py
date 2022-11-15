@@ -44,7 +44,7 @@ class Solution:
         for i in range(1, n):
             for j in range(i):
                 """
-                backtracking
+                002_backtracking
                 if `j` could be reached
                 """
                 if dp[j] and j + A[j] >= i:

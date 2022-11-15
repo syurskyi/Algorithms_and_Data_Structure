@@ -43,7 +43,7 @@ Note:
 class Solution:
     def brokenCalc(self, X: int, Y: int) -> int:
         """
-        greedy + work backward
+        004_greedy + work backward
 
         If Y is odd, we can do only Y = Y + 1
         If Y is even, if we plus 1 to Y, then Y is odd, we need to plus another 1.

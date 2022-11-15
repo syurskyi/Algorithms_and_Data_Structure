@@ -10,7 +10,7 @@
 #
 # Solution
 #
-# It wont be practical to solve this problem using recursion, because recursion is similar to depth first search,
+# It wont be practical to solve this problem using 001_recursion, because 001_recursion is similar to depth first search,
 # but what we need here is breadth first search. So we will use a queue as we did previously in breadth first search.
 # First, we ll push the root node into the queue. Then we start a while loop with the condition queue not being empty.
 # Then, at each iteration we pop a node from the beginning of the queue and push its children to the end of the queue.

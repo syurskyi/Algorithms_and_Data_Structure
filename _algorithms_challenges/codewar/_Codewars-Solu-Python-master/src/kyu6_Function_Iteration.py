@@ -19,7 +19,7 @@ class Solution():
 
     def create_iterator_01(self, func, n):
         """
-        for-loop, no recursion
+        for-loop, no 001_recursion
         """
         def f(x):
             for _ in range(n):
@@ -33,7 +33,7 @@ class Solution():
 
     def create_iterator_02(self, func, n):
         """
-        recursion
+        001_recursion
         """
         def f(n):
             if n <= 1:

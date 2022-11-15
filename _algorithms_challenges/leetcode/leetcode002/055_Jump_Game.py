@@ -4,7 +4,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: bool
         """
-        # greedy
+        # 004_greedy
         # https://leetcode.com/articles/jump-game/
         length = len(nums)
         begin = length - 1

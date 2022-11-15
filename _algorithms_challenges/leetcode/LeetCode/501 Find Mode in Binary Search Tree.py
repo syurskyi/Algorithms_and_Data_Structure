@@ -27,7 +27,7 @@ return [2].
 Note: If a tree has more than one mode, you can return them in any order.
 
 Follow up: Could you do that without using any extra space? (Assume that the
-implicit stack space incurred due to recursion does not count).
+implicit stack space incurred due to 001_recursion does not count).
 """
 
 
@@ -81,7 +81,7 @@ class Solution:
     def findMode_error(self, root):
         """
         counter (extra space) for any tree
-        use recursion
+        use 001_recursion
 
         :type root: TreeNode
         :rtype: List[int]

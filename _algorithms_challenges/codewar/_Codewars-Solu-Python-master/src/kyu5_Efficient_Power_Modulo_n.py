@@ -46,7 +46,7 @@ class Solution():
     @staticmethod
     def power_mod_04(x, y, n):
         """
-        exponentiation by squaring, recursion
+        exponentiation by squaring, 001_recursion
         """
 
         def recur(x, y, n):

@@ -5,7 +5,7 @@ def factorial_head(n):
     if n == 0:
         return 1
 
-    # use recursion
+    # use 001_recursion
     result1 = factorial_head(n-1)
 
     # we do some operations

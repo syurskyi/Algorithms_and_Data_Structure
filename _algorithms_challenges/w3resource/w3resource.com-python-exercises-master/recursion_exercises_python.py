@@ -13,7 +13,7 @@ def sum_of_list(my_list):
 print(sum_of_list([1,2,3]))
 
 """
-3. Write a Python program of recursion list sum. 
+3. Write a Python program of 001_recursion list sum. 
 Test Data: [1, 2, [3,4], [5,6]]
 Expected Result: 21
 """
@@ -43,7 +43,7 @@ def factorial(number):
 print(factorial(2))
 
 """
-5. Write a Python program to solve the Fibonacci sequence using recursion.
+5. Write a Python program to solve the Fibonacci sequence using 001_recursion.
 """
 
  solution 1: bad function that will work for a low n but will slow the
@@ -173,7 +173,7 @@ print(power(3,4))
 integers.
 """
 
-# solution 1 (without recursion)
+# solution 1 (without 001_recursion)
 def find_gcd(num1, num2):
     for i in range(min(num1,num2), 0, -1):
         if num1%i==0 and num2%i==0:

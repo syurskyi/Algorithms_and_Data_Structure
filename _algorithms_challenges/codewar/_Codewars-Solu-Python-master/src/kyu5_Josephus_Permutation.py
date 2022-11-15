@@ -58,7 +58,7 @@ class Solution():
 
     def josephus_02(self, items, k):
         """
-        recombine, recursion
+        recombine, 001_recursion
         """
 
         def recur(items):
@@ -72,7 +72,7 @@ class Solution():
 
     def josephus_03(self, items, k):
         """
-        recombine, recursion, global update
+        recombine, 001_recursion, global update
         """
         ret = []
 

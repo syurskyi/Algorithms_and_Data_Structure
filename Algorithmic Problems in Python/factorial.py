@@ -19,7 +19,7 @@ def factorial_accumulator(n,accumulator=1):
 	if n==1:
 		return accumulator
 		
-	#now it is a tail recursion !!!
+	#now it is a tail 001_recursion !!!
 	return factorial_accumulator(n-1,n*accumulator)
 	
 if __name__ == "__main__":

@@ -22,7 +22,7 @@ from typing import List
 class Solution:
     def checkPossibility(self, A: List[int]) -> bool:
         """
-        greedy change
+        004_greedy change
         two way of changing
         """
         changed = False
@@ -42,7 +42,7 @@ class Solution:
 
     def checkPossibility_error(self, A: List[int]) -> bool:
         """
-        greedy change
+        004_greedy change
         """
         changed = False
         for i in range(len(A) - 1):

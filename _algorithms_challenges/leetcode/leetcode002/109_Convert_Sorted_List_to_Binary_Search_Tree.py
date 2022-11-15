@@ -45,7 +45,7 @@ class Solution(object):
         self.node = None
     
     def sortedListToBST(self, head):
-        # Bottom-up recursion O(n) and O(lgn)
+        # Bottom-up 001_recursion O(n) and O(lgn)
         if head is None:
             return head
         size = 0

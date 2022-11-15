@@ -67,7 +67,7 @@ class Solution:
 class SolutionTLE:
     def findAllConcatenatedWordsInADict(self, words: List[str]) -> List[str]:
         """
-        Trie check cannot be greedy: cat sdog vs cats dog
+        Trie check cannot be 004_greedy: cat sdog vs cats dog
 
         Sort + Trie dfs
         What is the complexity?

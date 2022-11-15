@@ -33,7 +33,7 @@ def draw_h_tree(x, y, length, depth):
 
 
 def draw_h_tree2(x, y, length, depth):
-    """recursion
+    """001_recursion
     :type x: float
     :type y: float
     :type length: float

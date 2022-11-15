@@ -1,6 +1,6 @@
 class Solution(object):
-  # O(nlogn) greedy to place most popular and distinct tasks first
-  # Actually, I don't think this is greedy
+  # O(nlogn) 004_greedy to place most popular and distinct tasks first
+  # Actually, I don't think this is 004_greedy
   # We always place different tasks in a cycle which will minimize steps
   # If not different tasks can be placed in a cycle, place an `idle`.
   def _leastInterval(self, tasks, n):

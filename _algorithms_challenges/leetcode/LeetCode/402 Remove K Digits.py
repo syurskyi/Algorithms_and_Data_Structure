@@ -27,7 +27,7 @@ __author__ = 'Daniel'
 class Solution(object):
     def removeKdigits(self, num, k):
         """
-        Stack and greedy.
+        Stack and 004_greedy.
         The leading digits should be as small as possible
         :type num: str
         :type k: int

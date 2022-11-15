@@ -42,7 +42,7 @@ class Solution():
 
     def determinant_01(self, matrix):
         """
-        intuitive recursion
+        intuitive 001_recursion
         """
         n = len(matrix)
         if n == 1:

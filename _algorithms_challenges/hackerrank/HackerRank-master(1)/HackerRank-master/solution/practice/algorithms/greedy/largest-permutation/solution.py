@@ -1,4 +1,4 @@
-# We take the greedy approach: for each element, we swap it
+# We take the 004_greedy approach: for each element, we swap it
 # to the largest element possible (e.g. swap N to the 0th place,
 # N - 1 to the 1st place, N - 2 to the 2nd place and so on).
 #

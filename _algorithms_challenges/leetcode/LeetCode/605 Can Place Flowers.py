@@ -25,7 +25,7 @@ from typing import List
 class Solution:
     def canPlaceFlowers(self, flowerbed: List[int], n: int) -> bool:
         """
-        greedy
+        004_greedy
         """
         if n == 0:
             return True

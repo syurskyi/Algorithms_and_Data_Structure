@@ -29,7 +29,7 @@ class ColoringProblem:
                     return True
 
                 # BACKTRACKING
-                # in this case backtracking means doing "nothing"
+                # in this case 002_backtracking means doing "nothing"
 
         return False
 

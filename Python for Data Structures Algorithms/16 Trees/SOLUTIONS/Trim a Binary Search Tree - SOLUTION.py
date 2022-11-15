@@ -53,5 +53,5 @@ def trimBST(tree, minVal, maxVal):
 
 # The complexity of this algorithm is O(N), where N is the number of nodes in the tree. Because we basically perform
 # a post-order traversal of the tree, visiting each and every node one. This is optimal because we should visit every
-# node at least once. This is a very elegant question that demonstrates the effectiveness of recursion in trees.
+# node at least once. This is a very elegant question that demonstrates the effectiveness of 001_recursion in trees.
 # Good Job!

@@ -10,7 +10,7 @@ __author__ = 'Daniel'
 class Solution(object):
     def generateAbbreviations(self, word):
         """
-        backtracking, pivoting letter
+        002_backtracking, pivoting letter
         :type word: str
         :rtype: List[str]
         """
@@ -34,7 +34,7 @@ class SolutionTLE(object):
     def generateAbbreviations(self, word):
         """
         Cached, brute force
-        Two-way backtracking, pivoting number
+        Two-way 002_backtracking, pivoting number
         :type word: str
         :rtype: List[str]
         """

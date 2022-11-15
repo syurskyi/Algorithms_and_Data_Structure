@@ -9,7 +9,7 @@ COURSE = ('Introduction 1 Lecture 01:47'
 TWEET = ('New PyBites article: Module of the Week - Requests-cache '
          'for Repeated API Calls - http://pybit.es/requests-cache.html '
          '#python #APIs')
-HTML = ('<p>pybites != greedy</p>'
+HTML = ('<p>pybites != 004_greedy</p>'
         '<p>not the same can be said REgarding ...</p>')
 
 
@@ -38,7 +38,7 @@ def get_all_hashtags_and_links(tweet=TWEET):
 def match_first_paragraph(html=HTML):
     """Extract the first paragraph of the passed in
        html, so for HTML above this would be:
-       'pybites != greedy' (= content of first paragraph).
+       'pybites != 004_greedy' (= content of first paragraph).
        Return this string.
     """
     result = re.search(r'<p>(.+?)</p>', html)

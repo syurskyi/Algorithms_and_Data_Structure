@@ -73,7 +73,7 @@ class Solution():
     @staticmethod
     def bowling_score_02(rolls):
         """
-        recursion
+        001_recursion
         """
 
         def recur(i, i_frame):
