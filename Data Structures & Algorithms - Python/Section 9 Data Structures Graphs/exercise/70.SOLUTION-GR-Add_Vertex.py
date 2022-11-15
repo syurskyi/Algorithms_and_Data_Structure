@@ -8,7 +8,7 @@
 #
 #     ___ add_vertex ? v..
 #         __ ? n.. __ ?.k..
-#             ? ?_  # lsit
+#             ? ?_  # list
 #             r_ T..
 #         r_ F..
 #

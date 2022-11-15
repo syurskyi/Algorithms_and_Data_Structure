@@ -3,12 +3,12 @@
 #         adj_list _  # dict
 #
 #     ___ print_graph
-#         ___ v..__ ?
+#         ___ v.. __ ?
 #             print ? ':' ? ?
 #
 #     ___ add_vertex ? v..
 #         __ ? n.. __ ?.k..
-#             ? ?_  # lsit
+#             ? ?_  # list
 #             r_ T..
 #         r_ F..
 #
