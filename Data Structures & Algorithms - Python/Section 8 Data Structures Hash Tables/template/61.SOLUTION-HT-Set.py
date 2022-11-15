@@ -4,7 +4,7 @@
 #
 #     ___ print_table
 #         ___ i, val __ e__ ?
-#             ? ? ": " ?
+#             print ? ": " ?
 #
 #     ___ __hash  key
 #         m.. _ 0

@@ -10,7 +10,7 @@
 #
 #     ___ print_table
 #         ___ i, val __ e__ ?
-#             ? ? ": " ?
+#             print ? ": " ?
 #
 #
 # my_hash_table = ?
