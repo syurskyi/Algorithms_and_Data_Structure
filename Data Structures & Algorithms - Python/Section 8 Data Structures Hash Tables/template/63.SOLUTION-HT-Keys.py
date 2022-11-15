@@ -1,14 +1,14 @@
 # c_ HashTable
-#     ___ -  size _ 7
+#     ___ -  s.. _ 7
 #         d.. _ N.. * ?
 #
 #     ___ __hash  key
-#         m _ 0
+#         m.. _ 0
 #         ___ letter __ ?
-#             m _ ? + o.. ? * 23) % l.. ?
+#             m.. _ ? + o.. ? * 23) % l.. ?
 #         r_ ?
 #
-#     ___ pr__t_table
+#     ___ print_table
 #         ___ i, val __ e__ ?
 #             ? ? ": " ?
 #
