@@ -6,7 +6,7 @@
 #         ___ v.. __ ?
 #             print ? ':' ? ?
 #
-#     ___ add_vertex ? v..
+#     ___ add_vertex v..
 #         __ ? n.. __ ?.k..
 #             ? ?_  # lsit
 #             r_ T..
