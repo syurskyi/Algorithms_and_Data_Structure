@@ -22,7 +22,7 @@ print(my_array)
 
 # 4. Insert value in an array using insert() method
 print("Step 4")
-my_array.insert(3, 11)
+my_array.i.. (3, 11)
 print(my_array)
 
 

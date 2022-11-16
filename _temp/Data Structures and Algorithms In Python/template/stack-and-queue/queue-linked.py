@@ -1,8 +1,8 @@
 # Copyright (C) Deepali Srivastava - All Rights Reserved
 # This code is part of DSA course available on CourseGalaxy.com  
 
-c_ EmptyQueueError(Exception
-    pass
+c_ E.. E..
+    p..
 
 c_ Node:
 
@@ -34,7 +34,7 @@ c_ Queue:
                  
     ___ dequeue 
         __ is_empty(
-            raise EmptyQueueError("Queue is empty")
+            r... E..("Queue is empty")
         x _ front.info
         front _ front.link
         size_queue-_1
@@ -42,7 +42,7 @@ c_ Queue:
 
     ___ peek 
         __ is_empty(
-            raise EmptyQueueError("Queue is empty")
+            r... E..("Queue is empty")
         r_ front.info
         
     ___ display 

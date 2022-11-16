@@ -27,7 +27,7 @@ ___ clone(node
 	queue.a..(node)
 
 	_____ l..(queue) > 0:
-		cur _ queue.pop(0)
+		cur _ queue.p.. 0)
 
 		new_node _ N..
 

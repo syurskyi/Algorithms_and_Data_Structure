@@ -1,11 +1,11 @@
 # Copyright (C) Deepali Srivastava - All Rights Reserved
 # This code is part of DSA course available on CourseGalaxy.com  
 
-c_ StackEmptyError(Exception
-    pass
+c_ StackEmptyError E..
+    p..
 
-c_ StackFullError(Exception
-    pass
+c_ StackFullError E..
+    p..
 
 c_ Stack:
     
@@ -24,14 +24,14 @@ c_ Stack:
     
     ___ pushx
         __ is_full(
-            raise StackFullError("Stack is full, can't push")
+            r... StackFullError("Stack is full, can't push")
 
         items[count] _ x
         count+_1
             
     ___ pop 
         __ is_empty(
-            raise StackEmptyError("Stack is empty, can't pop")
+            r... StackEmptyError("Stack is empty, can't pop")
              
         x _ items[count-1]
         items[count-1] _ N..
@@ -40,7 +40,7 @@ c_ Stack:
 
     ___ peek 
         __ is_empty(
-            raise StackEmptyError("Stack is empty, can't peek")
+            r... StackEmptyError("Stack is empty, can't peek")
 
         r_ items[count-1]
     

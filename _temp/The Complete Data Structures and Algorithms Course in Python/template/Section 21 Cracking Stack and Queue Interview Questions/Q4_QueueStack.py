@@ -28,10 +28,10 @@ c_ QueueviaStack(
   
   ___ dequeue 
     _____ l..(inStack
-      outStack.push(inStack.pop())
+      outStack.push(inStack.p.. ))
     result _ outStack.p.. 
     _____ l..(outStack
-      inStack.push(outStack.pop())
+      inStack.push(outStack.p.. ))
     r_ result
   
 

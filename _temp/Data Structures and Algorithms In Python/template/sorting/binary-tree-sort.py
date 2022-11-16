@@ -44,7 +44,7 @@ n _ i..(i..("Enter the number of elements to be sorted : "))
 tree _ BinarySearchTree()
 ___ i __ r..(n
     x _ i..(i..("Enter element : "))
-    tree.insert(x)
+    tree.i.. (x)
     
 tree.inorder()  
 

@@ -8,7 +8,7 @@ c_ QueueLine:
 
     ___ dequeue ) -> N..:
         __(l..(q) > 0
-            q.pop(0)
+            q.p.. 0)
 
     ___ front ) -> i..:
         __(l..(q) __ 0

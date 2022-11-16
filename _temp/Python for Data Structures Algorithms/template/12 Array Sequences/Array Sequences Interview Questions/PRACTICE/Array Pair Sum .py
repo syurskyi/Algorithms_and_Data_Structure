@@ -24,7 +24,7 @@ ___ pair_sum(arr,k
         ____
             lookup.add(num)
     r_ counter
-    pass
+    p..
 
 # %%
 pair_sum([1,3,2,2],4)

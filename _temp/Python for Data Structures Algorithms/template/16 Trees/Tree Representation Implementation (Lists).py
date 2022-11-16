@@ -7,19 +7,19 @@ ___ BinaryTree(r
     r_ [r,    # list, []]
 
 ___ insertLeft(root,newBranch
-    t _ root.pop(1)
+    t _ root.p.. 1)
     __ l..(t) > 1:
-        root.insert(1,[newBranch,t,[]])
+        root.i.. (1,[newBranch,t,[]])
     ____
-        root.insert(1,[newBranch,    # list, []])
+        root.i.. (1,[newBranch,    # list, []])
     r_ root
 
 ___ insertRight(root,newBranch
-    t _ root.pop(2)
+    t _ root.p.. 2)
     __ l..(t) > 1:
-        root.insert(2,[newBranch,   # list,t])
+        root.i.. (2,[newBranch,   # list,t])
     ____
-        root.insert(2,[newBranch,   # list,[]])
+        root.i.. (2,[newBranch,   # list,[]])
     r_ root
 
 ___ getRootVal(root

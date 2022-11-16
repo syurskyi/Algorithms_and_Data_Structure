@@ -15,12 +15,12 @@ c_ Queue o..
     ___ is_empty 
         r_ items __    # list
     ___ enqueue e
-        items.insert(0, e)
+        items.i.. (0, e)
     ___ dequeue 
         r_ items.p.. 
     ___ size 
         r_ l..(items)
-    pass
+    p..
 
 # %%
 q _ Queue()

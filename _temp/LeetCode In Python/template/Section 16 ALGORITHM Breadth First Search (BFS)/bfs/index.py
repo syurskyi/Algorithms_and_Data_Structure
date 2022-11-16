@@ -19,7 +19,7 @@ c_ Graph:
         visited.add(s)
 
         _____ queue:
-            u _ queue.pop(0)
+            u _ queue.p.. 0)
             print(u, end_" ")
 
             ___ v __ graph[u]:

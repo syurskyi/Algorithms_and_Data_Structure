@@ -6,7 +6,7 @@ c_ Node(
         visited _ F..
 
 c_ Graph(
-    pass
+    p..
 
 node1 _ Node("A")
 node2 _ Node("B")

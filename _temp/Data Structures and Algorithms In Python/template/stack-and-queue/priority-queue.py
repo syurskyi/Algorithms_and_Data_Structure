@@ -1,8 +1,8 @@
 # Copyright (C) Deepali Srivastava - All Rights Reserved
 # This code is part of DSA course available on CourseGalaxy.com  
 
-c_ EmptyQueueError(Exception
-    pass
+c_ E.. E..
+    p..
 
 c_ Node:
 
@@ -33,7 +33,7 @@ c_ PriorityQueue:
                  
     ___ dequeue
         __ is_empty(
-            raise EmptyQueueError("Queue is empty")
+            r... E..("Queue is empty")
         x _ front.info
         front _ front.link
         r_ x

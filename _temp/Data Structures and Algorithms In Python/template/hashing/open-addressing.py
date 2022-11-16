@@ -1,8 +1,8 @@
 # Copyright (C) Deepali Srivastava - All Rights Reserved
 # This code is part of DSA course available on CourseGalaxy.com  
 
-c_ InvalidOperationException(Exception
-    pass
+c_ InvalidOperationException E..
+    p..
 
 c_ studentRecord:
     ___ - i,Name
@@ -29,7 +29,7 @@ c_ HashTable:
     ___ hash1 key
         r_ (key % m)
     
-    ___ insert newRecord
+    ___ i..  newRecord
         key _ newRecord.get_student_id()
         h _ hash1(key)
 
@@ -42,7 +42,7 @@ c_ HashTable:
                 r_
             
             __ array[location].get_student_id() __ key:
-                raise InvalidOperationException("Duplicate key")
+                r... InvalidOperationException("Duplicate key")
 
             location _ (h + i) % m
         
@@ -108,7 +108,7 @@ _____ T..:
         id _ i..(i..("Enter student id : "))
         name _ i..("Enter student name : ")
         aRecord _ studentRecord(id,name)
-        table.insert(aRecord)
+        table.i.. (aRecord)
     ____ option __ 2:
         id _ i..(i..("Enter a key to be searched : "))
         aRecord _ table.search(id)

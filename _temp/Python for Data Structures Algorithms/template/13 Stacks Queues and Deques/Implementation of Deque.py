@@ -26,13 +26,13 @@ c_ Deque:
         items.a..(item)
 
     ___ addRear item
-        items.insert(0,item)
+        items.i.. (0,item)
 
     ___ removeFront 
         r_ items.p.. 
 
     ___ removeRear 
-        r_ items.pop(0)
+        r_ items.p.. 0)
 
     ___ size 
         r_ l..(items)

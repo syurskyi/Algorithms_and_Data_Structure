@@ -104,7 +104,7 @@ c_ HashTable:
             r_ array[h].search(key)
         r_ N..        
                
-    ___ insert newRecord
+    ___ i..  newRecord
         key _ newRecord.get_student_id()
         h _ hash(key)
 
@@ -142,7 +142,7 @@ _____ T..:
         id _ i..(i..("Enter student id : "))
         name _ i..("Enter student name : ")
         aRecord _ studentRecord(id,name)
-        table.insert(aRecord)
+        table.i.. (aRecord)
     ____ choice __ 2:
         id _ i..(i..("Enter a key to be searched : "))
         aRecord _ table.search(id)

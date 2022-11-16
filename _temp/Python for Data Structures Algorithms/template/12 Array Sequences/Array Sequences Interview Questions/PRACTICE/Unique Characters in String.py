@@ -22,7 +22,7 @@ ___ uni_char(s
         ____
             u.add(c)
     r_ T..
-    pass
+    p..
 
 # %%
 '''
@@ -33,7 +33,7 @@ ___ uni_char(s
 # another 1-line solution
 ___ uni_char2(s
     r_ l..(set(s)) __ l..(s)
-    pass
+    p..
 
 # %%
 '''

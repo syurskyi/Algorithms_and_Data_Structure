@@ -5,7 +5,7 @@ c_ Heap o..
         heap _ [0] * Heap.HEAP_SIZE
         currentPosition _ -1
 
-    ___ insert item
+    ___ i..  item
 
         __ isFull(
             print("Heap is full..");
@@ -73,15 +73,15 @@ c_ Heap o..
 
 __ __name__ __ "__main__":
     heap _ Heap()
-    heap.insert(10)
-    heap.insert(-20)
-    heap.insert(0)
-    heap.insert(2)
-    heap.insert(4)
-    heap.insert(5)
-    heap.insert(6)
-    heap.insert(7)
-    heap.insert(20)
-    heap.insert(15)
+    heap.i.. (10)
+    heap.i.. (-20)
+    heap.i.. (0)
+    heap.i.. (2)
+    heap.i.. (4)
+    heap.i.. (5)
+    heap.i.. (6)
+    heap.i.. (7)
+    heap.i.. (20)
+    heap.i.. (15)
 
     heap.heapsort()

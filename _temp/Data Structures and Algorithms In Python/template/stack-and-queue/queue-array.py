@@ -1,8 +1,8 @@
 # Copyright (C) Deepali Srivastava - All Rights Reserved
 # This code is part of DSA course available on CourseGalaxy.com  
 
-c_ EmptyQueueError(Exception
-    pass
+c_ E.. E..
+    p..
 
 c_ Queue:
   
@@ -20,12 +20,12 @@ c_ Queue:
         
     ___ dequeue 
         __ is_empty(
-            raise EmptyQueueError("Queue is Empty")
-        r_ items.pop(0)
+            r... E..("Queue is Empty")
+        r_ items.p.. 0)
     
     ___ peek 
         __ is_empty(
-            raise EmptyQueueError("Queue is Empty")
+            r... E..("Queue is Empty")
         r_ items[0]
 
     ___ display 

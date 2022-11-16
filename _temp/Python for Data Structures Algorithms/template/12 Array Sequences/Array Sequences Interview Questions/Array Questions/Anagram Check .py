@@ -14,7 +14,7 @@ Fill out your solution below:
 
 # %%
 ___ anagram(s1,s2
-    pass
+    p..
 
 # %%
 anagram('dog','god')

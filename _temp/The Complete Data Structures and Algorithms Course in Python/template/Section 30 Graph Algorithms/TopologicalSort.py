@@ -18,7 +18,7 @@ c_ Graph:
             __ i n.. __ visited:
                 topogologicalSortUtil(i, visited, stack)
         
-        stack.insert(0, v)
+        stack.i.. (0, v)
     
     ___ topologicalSort 
 

@@ -7,7 +7,7 @@ c_ Node:
         data _ value
 
 
-___ insert(root, node
+___ i.. (root, node
     __(root __ N..
         root _ node
         r_
@@ -16,12 +16,12 @@ ___ insert(root, node
         __(root.right __ N..
             root.right _ node
         ____
-            insert(root.right, node)
+            i.. (root.right, node)
     ____
         __(root.left __ N..
             root.left _ node
         ____
-            insert(root.left, node)
+            i.. (root.left, node)
 
 
 ___ preorder(node
@@ -79,18 +79,18 @@ ___ deleteNode(node, key
 #  2     4      6        8
 tree _ Node(5)
 
-insert(tree, Node(3))
+i.. (tree, Node(3))
 
 
-insert(tree, Node(2))
+i.. (tree, Node(2))
 
-insert(tree, Node(4))
+i.. (tree, Node(4))
 
-insert(tree, Node(7))
+i.. (tree, Node(7))
 
-insert(tree, Node(6))
+i.. (tree, Node(6))
 
-insert(tree, Node(8))
+i.. (tree, Node(8))
 
 deleteNode(tree, 7)
 

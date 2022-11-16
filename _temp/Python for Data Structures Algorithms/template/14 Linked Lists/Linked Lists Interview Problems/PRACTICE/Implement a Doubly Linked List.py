@@ -7,7 +7,7 @@ c_ Node o..
         prev _ N..
         val _ value
         next _ N..
-    pass
+    p..
 #
 # # Create a Doubly Linked List here
 #

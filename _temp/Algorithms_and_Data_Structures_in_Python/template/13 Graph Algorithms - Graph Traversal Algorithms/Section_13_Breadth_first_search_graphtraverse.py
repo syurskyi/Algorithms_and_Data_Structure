@@ -18,7 +18,7 @@ c_ BreadthFirstSearch o..
 		# BFS -> queue      DFS --> stack BUT usually we implement it with 001_recursion !!!
 		_____ queue:
 		
-			actualNode _ queue.pop(0);
+			actualNode _ queue.p.. 0);
 			print("%s " % actualNode.name);
 			
 			___ n __ actualNode.adjacencyList:

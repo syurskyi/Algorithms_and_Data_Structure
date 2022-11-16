@@ -1,8 +1,8 @@
 # Copyright (C) Deepali Srivastava - All Rights Reserved
 # This code is part of DSA course available on CourseGalaxy.com  
 
-c_ InvalidOperationException(Exception
-    pass
+c_ InvalidOperationException E..
+    p..
 
 c_ studentRecord:
     ___ - i,Name
@@ -34,7 +34,7 @@ c_ HashTable:
 
         ___ i __ r..(m
             __ array[i] !_ N.. ___ array[i].get_student_id() !_ -1:
-                temp.insert(array[i])
+                temp.i.. (array[i])
         array _ temp.array
         m _ new_size
 
@@ -42,9 +42,9 @@ c_ HashTable:
         __ n >_ m//2:
             rehash( next_prime(2*m) )
             print("New Table Size is : " , m )
-        insert(newRecord)
+        i.. (newRecord)
 
-    ___ insert newRecord
+    ___ i..  newRecord
         key _ newRecord.get_student_id()
         h _ hash1(key)
 
@@ -57,7 +57,7 @@ c_ HashTable:
                 r_
             
             __ array[location].get_student_id() __ key:
-                raise InvalidOperationException("Duplicate key")
+                r... InvalidOperationException("Duplicate key")
 
             location _ (h + i) % m
 

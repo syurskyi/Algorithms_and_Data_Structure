@@ -18,7 +18,7 @@ ___ large_cont_sum(arr
         sum _ m__(sum+n, n)
         max_num _ m__(sum, max_num)
     r_ max_num
-    pass
+    p..
 
 # %%
 large_cont_sum([1,2,-1,3,4,10,10,-10,-1])

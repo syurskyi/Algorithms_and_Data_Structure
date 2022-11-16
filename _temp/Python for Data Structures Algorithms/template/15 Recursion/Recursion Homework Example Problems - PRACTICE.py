@@ -18,7 +18,7 @@ ___ rec_sum(n
         r_ 0
     ____
         r_ n + rec_sum(n-1)
-    pass
+    p..
 
 rec_sum(4)
 # 10
@@ -32,7 +32,7 @@ ___ sum_func(n
         r_ n
     ____
         r_ n%10 + sum_func(i..(n/10))
-    pass
+    p..
 
 sum_func(4321)
 # 10
@@ -73,7 +73,7 @@ ___ word_split(phrase,list_of_words, output _ N..
             output.a..(word)
             word_split(phrase[l..(word], list_of_words, output)
     r_ output
-    pass
+    p..
 
 # Good Luck!
 #

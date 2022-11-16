@@ -11,7 +11,7 @@ c_ BinarySearchTree o..
     ___ -  
         root _ N..
 
-    ___ insert data
+    ___ i..  data
         __ n.. root:
             root _ Node(data)
         ____
@@ -119,10 +119,10 @@ c_ BinarySearchTree o..
 
 
 bst _ BinarySearchTree()
-bst.insert(10)
-bst.insert(13)
-bst.insert(5)
-bst.insert(14)
+bst.i.. (10)
+bst.i.. (13)
+bst.i.. (5)
+bst.i.. (14)
 bst.remove(10)
 
 bst.traverse()

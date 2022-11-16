@@ -14,7 +14,7 @@ c_ Graph:
         visited _ [vertex]
         queue _ [vertex]
         _____ queue:
-            deVertex _ queue.pop(0)
+            deVertex _ queue.p.. 0)
             print(deVertex)
             ___ adjacentVertex __ gdict[deVertex]:
                 __ adjacentVertex n.. __ visited:

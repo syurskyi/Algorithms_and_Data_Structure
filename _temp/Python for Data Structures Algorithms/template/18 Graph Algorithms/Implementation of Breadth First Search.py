@@ -24,7 +24,7 @@ graph _ {'A': set(['B', 'C']),
 ___ bfs(graph, start
     visited, queue _ s.., [start]
     _____ queue:
-        vertex _ queue.pop(0)
+        vertex _ queue.p.. 0)
         __ vertex n.. __ visited:
             visited.add(vertex)
             queue.extend(graph[vertex] - visited)
@@ -41,7 +41,7 @@ bfs(graph, 'A')
 ___ bfs_paths(graph, start, goal
     queue _ [(start, [start])]
     _____ queue:
-        (vertex, path) _ queue.pop(0)
+        (vertex, path) _ queue.p.. 0)
         ___ next __ graph[vertex] - set(path
             __ next __ goal:
                 yield path + [next]

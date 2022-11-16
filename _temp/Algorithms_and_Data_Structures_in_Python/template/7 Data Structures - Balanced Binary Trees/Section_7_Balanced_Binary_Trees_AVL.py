@@ -16,7 +16,7 @@ c_ AVL o..
         __ root:
             root _ removeNode(data, root)
 
-    ___ insert data
+    ___ i..  data
         root _ insertNode(data, root)
 
     ___ insertNode data, node
@@ -216,11 +216,11 @@ c_ AVL o..
 
 
 avl _ AVL()
-avl.insert(10)
-avl.insert(20)
-avl.insert(5)
-avl.insert(6)
-avl.insert(15)
+avl.i.. (10)
+avl.i.. (20)
+avl.i.. (5)
+avl.i.. (6)
+avl.i.. (15)
 avl.remove(15)
 avl.remove(20)
 avl.traverse()

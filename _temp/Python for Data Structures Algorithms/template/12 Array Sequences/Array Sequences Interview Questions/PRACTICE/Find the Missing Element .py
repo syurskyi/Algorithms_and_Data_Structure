@@ -21,7 +21,7 @@ ___ finder(arr1,arr2
     ___ n __ arr2:
         num -_ n
     r_ num
-    pass
+    p..
 
 # %%
 arr1 _ [1,2,3,4,5,6,7]

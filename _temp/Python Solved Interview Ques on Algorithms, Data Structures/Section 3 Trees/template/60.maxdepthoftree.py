@@ -82,30 +82,30 @@ ___ checkwhetheritsabintree(root
 ___ levelOrder(root
     items _    # list
     count_0
-    items.insert(count,root)
+    items.i.. (count,root)
     elements _""
     _____ items !_    # list:
         temp _ items.p.. 
         elements_ elements+str(temp.v)+ " "
         __ temp.l!_None:
-            items.insert(0,temp.l)
+            items.i.. (0,temp.l)
         __ temp.r!_None:
-            items.insert(0,temp.r)
+            items.i.. (0,temp.r)
     print "Level order traversal of BST: "+ elements
 
 
 ___ findsizeusingiteration(root
     items _    # list
     count_0
-    items.insert(count,root)
+    items.i.. (count,root)
     elements _""
     _____ items !_    # list:
         temp _ items.p.. 
         count +_ 1 
         __ temp.l!_None:
-            items.insert(0,temp.l)
+            items.i.. (0,temp.l)
         __ temp.r!_None:
-            items.insert(0,temp.r)
+            items.i.. (0,temp.r)
     print "size of the tree is : ", count
 
 
@@ -118,15 +118,15 @@ ___ findsize(tree
 ___ printReverse(root
     items _    # list
     count_0
-    items.insert(count,root)
+    items.i.. (count,root)
     elements _""
     _____ items !_    # list:
         temp _ items.p.. 
         elements_ str(temp.v)+ " " + elements
         __ temp.l!_None:
-            items.insert(0,temp.l)
+            items.i.. (0,temp.l)
         __ temp.r!_None:
-            items.insert(0,temp.r)
+            items.i.. (0,temp.r)
     print "Level order traversal of BST: "+ elements
 
 
@@ -139,15 +139,15 @@ ___ maximumDepthOfTree(root
 ___ deepestNode(root
     items _    # list
     count_0
-    items.insert(count,root)
+    items.i.. (count,root)
     elements _""
     _____ items !_    # list:
         temp _ items.p.. 
         elements_ str(temp.v)+ " " + elements
         __ temp.l!_None:
-            items.insert(0,temp.l)
+            items.i.. (0,temp.l)
         __ temp.r!_None:
-            items.insert(0,temp.r)
+            items.i.. (0,temp.r)
         ___ p __ items: print p.v
         print "####"
 
@@ -157,16 +157,16 @@ ___ deepestNode(root
 ___ countLeaves(root
     items _    # list
     count_0
-    items.insert(count,root)
+    items.i.. (count,root)
     elements _""
     _____ items !_    # list:
         temp _ items.p.. 
         __ temp.l __ N.. ___ temp.r __ N..:
             count +_ 1
         __ temp.l!_None:
-            items.insert(0,temp.l)
+            items.i.. (0,temp.l)
         __ temp.r!_None:
-            items.insert(0,temp.r)
+            items.i.. (0,temp.r)
 
     print "number of leafs in the tree ",count
 
@@ -174,15 +174,15 @@ ___ countLeaves(root
 ___ countFullNodes(root
     items _    # list
     count_0
-    items.insert(count,root)
+    items.i.. (count,root)
     _____ items !_    # list:
         temp _ items.p.. 
         __ temp.l __ n.. N.. ___ temp.r __ n.. N..:
             count +_ 1
         __ temp.l!_None:
-            items.insert(0,temp.l)
+            items.i.. (0,temp.l)
         __ temp.r!_None:
-            items.insert(0,temp.r)
+            items.i.. (0,temp.r)
 
     print "number of full nodes in the tree ",count
 
@@ -191,16 +191,16 @@ ___ countFullNodes(root
 ___ countHalfNodes(root
     items _    # list
     count_0
-    items.insert(count,root)
+    items.i.. (count,root)
     _____ items !_    # list:
         temp _ items.p.. 
         __ (temp.l __ N.. ___ temp.r __ n.. N..) __ \
                         (temp.l __ n.. N.. ___ temp.r __ N..
             count +_ 1
         __ temp.l!_None:
-            items.insert(0,temp.l)
+            items.i.. (0,temp.l)
         __ temp.r!_None:
-            items.insert(0,temp.r)
+            items.i.. (0,temp.r)
 
     print "number of half nodes in the tree ",count
 
@@ -271,15 +271,15 @@ ___ checkwhetherpathhassum(root, val
 ___ sumOfNodes(root
     items _    # list
     count_0
-    items.insert(count,root)
+    items.i.. (count,root)
     sum_0
     _____ items !_    # list:
         temp _ items.p.. 
         sum +_ temp.v 
         __ temp.l!_None:
-            items.insert(0,temp.l)
+            items.i.. (0,temp.l)
         __ temp.r!_None:
-            items.insert(0,temp.r)
+            items.i.. (0,temp.r)
         ___ p __ items: print p.v
         print "####"
 

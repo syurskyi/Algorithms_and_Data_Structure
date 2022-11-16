@@ -20,7 +20,7 @@ ___ fib_rec(n
         r_ i..((n+1)/2)
     ____
         r_ fib_rec(n-1) + fib_rec(n-2)
-    pass
+    p..
 
 fib_rec(10)
 # 55
@@ -42,7 +42,7 @@ ___ fib_dyn(n
     ____
         cache[n] _ fib_dyn(n-1) + fib_dyn(n-2)
     r_ cache[n]
-    pass
+    p..
 
 # [None, None, None, None, None, None, None, None, None, None, None]
 #

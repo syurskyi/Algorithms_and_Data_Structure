@@ -7,7 +7,7 @@ c_ Queue(
 
     ___ dequeue
         __ l..(items
-            r_ items.pop(0)
+            r_ items.p.. 0)
 
     ___ peek
         __ l..(items

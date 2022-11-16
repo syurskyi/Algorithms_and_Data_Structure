@@ -15,16 +15,16 @@ c_ Deque o..
     ___ is_empty
         r_ items __    # list
     ___ add_front e
-        items.insert(0, e)
+        items.i.. (0, e)
     ___ add_rear e
         items.a..(e)
     ___ remove_front
-        r_ items.pop(0)
+        r_ items.p.. 0)
     ___ remove_rear
         r_ items.p.. 
     ___ size
         r_ l..(items)
-    pass
+    p..
 
 # %%
 deq _ Deque()

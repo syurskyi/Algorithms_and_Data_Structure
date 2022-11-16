@@ -43,7 +43,7 @@ ___ nth_to_last_node(n, head
         fast_fast.nextnode
         slow_slow.nextnode
     r_ slow
-    pass
+    p..
 #
 # Test Your Solution
 #

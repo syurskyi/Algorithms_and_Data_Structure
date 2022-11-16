@@ -19,7 +19,7 @@ c_ LinkedList o..
     ___  -  head_None
         head _ head
 
-    ___ insert data
+    ___ i..  data
         new_node _ ? ?
         ?.s.. h..
         head _ new_node
@@ -73,13 +73,13 @@ ___ displayList(list1
 
 l_ ?
 
-l.insert( 'a' )
-l.insert( 'b' )
-l.insert( 'c' )
-l.insert( 'd' )
-l.insert( 'e' )
-l.insert( 'f' )
-l.insert( 'g' )
+l.i.. ( 'a' )
+l.i.. ( 'b' )
+l.i.. ( 'c' )
+l.i.. ( 'd' )
+l.i.. ( 'e' )
+l.i.. ( 'f' )
+l.i.. ( 'g' )
 print l
 l1,l2_divideListInto2(l.head)
 print "List1:"

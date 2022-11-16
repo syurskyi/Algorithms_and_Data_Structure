@@ -11,7 +11,7 @@ ___ reverse(s
     ____
         m _ i..(l..(s)/2)
         r_ reverse(s[m:]) + (reverse((s[:m])))
-    pass
+    p..
 
 reverse('hello world')
 # 'dlrow olleh'

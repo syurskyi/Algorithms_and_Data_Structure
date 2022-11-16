@@ -29,12 +29,12 @@ c_ Queue2Stacks o..
     ___ enqueueelement
         
         # FILL OUT CODE HERE
-        pass
+        p..
     
     ___ dequeue 
         
         # FILL OUT CODE HERE
-        pass  
+        p..  
 
 # %%
 '''

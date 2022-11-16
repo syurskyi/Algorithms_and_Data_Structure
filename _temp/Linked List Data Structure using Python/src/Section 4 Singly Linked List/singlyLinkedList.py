@@ -12,7 +12,7 @@ c_ LinkedList:
     ___ -  
         head _ N..
 
-    ___ insert newNode
+    ___ i..  newNode
         # head=>John->None
         __ head __ N..:
             head _ newNode
@@ -42,11 +42,11 @@ c_ LinkedList:
 # firstNode.data => John, firstNode.next => None
 firstNode _ Node("John")
 linkedList _ LinkedList()
-linkedList.insert(firstNode)
+linkedList.i.. (firstNode)
 secondNode _ Node("Ben")
 linkedList _ LinkedList()
-linkedList.insert(secondNode)
+linkedList.i.. (secondNode)
 thirdNode _ Node("Matthew")
-linkedList.insert(thirdNode)
+linkedList.i.. (thirdNode)
 linkedList.printList()
 

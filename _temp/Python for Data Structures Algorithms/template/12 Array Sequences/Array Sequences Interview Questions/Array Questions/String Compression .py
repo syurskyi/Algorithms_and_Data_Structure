@@ -16,7 +16,7 @@ Fill out your solution below:
 
 # %%
 ___ compress(s
-    pass
+    p..
 
 # %%
 compress('AAAAABBBBCCCC')

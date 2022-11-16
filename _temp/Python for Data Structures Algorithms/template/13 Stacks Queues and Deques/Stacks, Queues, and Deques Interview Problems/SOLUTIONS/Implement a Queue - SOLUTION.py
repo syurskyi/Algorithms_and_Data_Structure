@@ -13,7 +13,7 @@ c_ Queue:
         r_ items __    # list
 
     ___ enqueue item
-        items.insert(0,item)
+        items.i.. (0,item)
 
     ___ dequeue
         r_ items.p.. 

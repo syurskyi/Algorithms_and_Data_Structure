@@ -37,7 +37,7 @@ ___ compress(s
         i+_1
     r _ r+s[i-1]+str(cnt)
     r_ r
-    pass
+    p..
 
 # %%
 compress('AAAAABBBBCCCC')

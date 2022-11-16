@@ -26,7 +26,7 @@ c_ Stack o..
         r_ l..(items)
     ___ peek 
         r_ items[size()-1] # reuse the size funtion
-    pass
+    p..
 
 # %%
 stack _ Stack()

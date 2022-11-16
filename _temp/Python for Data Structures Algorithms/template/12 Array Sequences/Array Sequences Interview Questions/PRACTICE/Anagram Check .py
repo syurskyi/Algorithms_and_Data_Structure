@@ -44,7 +44,7 @@ ___ anagram(s, t
           r_ F..
     
     r_ T..
-    pass
+    p..
 
 # %%
 anagram('dog','god')

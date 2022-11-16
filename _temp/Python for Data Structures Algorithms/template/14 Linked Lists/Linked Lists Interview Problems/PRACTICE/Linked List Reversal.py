@@ -25,7 +25,7 @@ ___ reverse(head
         pre _ cur
         cur _ nxt
     r_ pre #watch out
-    pass
+    p..
 
 # Test Your Solution
 # Note, this isn't a classic run cell for testing your solution, please read the statements below carefully

@@ -19,7 +19,7 @@ c_ LinkedList o..
     ___  -  head_None
         head _ head
 
-    ___ insert data
+    ___ i..  data
         new_node _ ? ?
         ?.s.. h..
         head _ new_node
@@ -79,25 +79,25 @@ ___ nodeJoiningPoint(list1, list2
 l1 _ LinkedList()
 l2 _ LinkedList()
 
-l1.insert( 'a' )
-l1.insert( 'b' )
-l1.insert( 'c' )
+l1.i.. ( 'a' )
+l1.i.. ( 'b' )
+l1.i.. ( 'c' )
 print "list1:", l1
-l2.insert( '111' )
-l2.insert( '222' )
-l2.insert( '333' )
-l2.insert( '444' )
-l2.insert( '555' )
-l2.insert( '666' )
+l2.i.. ( '111' )
+l2.i.. ( '222' )
+l2.i.. ( '333' )
+l2.i.. ( '444' )
+l2.i.. ( '555' )
+l2.i.. ( '666' )
 print "list2:", l2
 l1lastNode_returnEnd(l1)
 l2lastNode_returnEnd(l2)
 
 
 l3_LinkedList()
-l3.insert( 'ZZZ' )
-l3.insert( 'YYY' )
-l3.insert( 'XXX' )
+l3.i.. ( 'ZZZ' )
+l3.i.. ( 'YYY' )
+l3.i.. ( 'XXX' )
 print "list3:", l3
 
 l1lastNode.next_node_l3.head

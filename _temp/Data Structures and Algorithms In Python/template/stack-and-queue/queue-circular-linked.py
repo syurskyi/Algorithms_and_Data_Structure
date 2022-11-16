@@ -1,8 +1,8 @@
 # Copyright (C) Deepali Srivastava - All Rights Reserved
 # This code is part of DSA course available on CourseGalaxy.com  
 
-c_ EmptyQueueError(Exception
-    pass
+c_ E.. E..
+    p..
 
 c_ Node:
 
@@ -43,7 +43,7 @@ c_ Queue:
         
     ___ dequeue
         __ is_empty(
-            raise EmptyQueueError("Queue is Empty")
+            r... E..("Queue is Empty")
         
         __ rear.link __ rear: #List has only one node
             temp _ rear
@@ -55,7 +55,7 @@ c_ Queue:
 
     ___ peek
         __ is_empty(
-            raise EmptyQueueError("Queue is Empty")
+            r... E..("Queue is Empty")
         r_ rear.link.info
 
     ___ display

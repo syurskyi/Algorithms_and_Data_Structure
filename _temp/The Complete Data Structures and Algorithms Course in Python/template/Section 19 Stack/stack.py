@@ -13,13 +13,13 @@ c_ MultiStack:
 
     ___ Push item, stacknum
         __ IsFull(stacknum
-            raise Exception('Stack is full')
+            r... Exception('Stack is full')
         sizes[stacknum] +_ 1
         array[IndexOfTop(stacknum)] _ item
 
     ___ Pop stacknum
         __ IsEmpty(stacknum
-            raise Exception('Stack is empty')
+            r... Exception('Stack is empty')
         value _ array[IndexOfTop(stacknum)]
         array[IndexOfTop(stacknum)] _ 0
         sizes[stacknum] -_ 1
@@ -27,7 +27,7 @@ c_ MultiStack:
 
     ___ Peek stacknum
         __ IsEmpty(stacknum
-            raise Exception('Stack is empty')
+            r... Exception('Stack is empty')
         r_ array[IndexOfTop(stacknum)]
 
     ___ IsEmpty stacknum

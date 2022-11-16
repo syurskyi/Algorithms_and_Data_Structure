@@ -1,8 +1,8 @@
 # Copyright (C) Deepali Srivastava - All Rights Reserved
 # This code is part of DSA course available on CourseGalaxy.com  
 
-c_ EmptyStackError(Exception
-    pass
+c_ EmptyStackError E..
+    p..
 
 c_ Node:
 
@@ -37,12 +37,12 @@ c_ Stack:
        
     ___ peek 
         __ is_empty(
-            raise EmptyStackError("Stack is empty")
+            r... EmptyStackError("Stack is empty")
         r_ top.info
     
     ___ pop 
         __ is_empty(
-            raise EmptyStackError("Stack is empty")
+            r... EmptyStackError("Stack is empty")
         popped _ top.info
         top _ top.link
         r_ popped

@@ -35,7 +35,7 @@ ___ rec_coin(target,coins
             num_coins _ rec_coin(target-value, coins) + 1
             min_coins _ min(num_coins, min_coins)
     r_ min_coins
-    pass
+    p..
 
 rec_coin(10,[1,5]) #2
 # 2

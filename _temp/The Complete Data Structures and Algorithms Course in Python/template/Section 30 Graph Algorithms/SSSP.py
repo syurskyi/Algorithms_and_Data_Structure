@@ -12,7 +12,7 @@ c_ Graph:
         queue _    # list
         queue.a..([start])
         _____ queue:
-            path _ queue.pop(0)
+            path _ queue.p.. 0)
             node _ path[-1]
             __ node __ end:
                 r_ path

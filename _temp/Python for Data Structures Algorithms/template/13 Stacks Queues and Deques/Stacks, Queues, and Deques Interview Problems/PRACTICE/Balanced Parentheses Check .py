@@ -21,7 +21,7 @@ ___ balance_check(s
         ____
             chars.a..(c)
     r_ chars __    # list
-    pass
+    p..
 
 balance_check('[]')
 # True

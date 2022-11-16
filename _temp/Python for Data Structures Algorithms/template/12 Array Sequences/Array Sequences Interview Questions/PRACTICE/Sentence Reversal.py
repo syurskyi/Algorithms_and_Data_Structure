@@ -18,7 +18,7 @@ Fill out your solution below:
 # %%
 ___ rev_word(s
     r_ " ".j..(reversed(s.split()))
-    pass
+    p..
 
 # %%
 rev_word('Hi John,   are you ready to go?')

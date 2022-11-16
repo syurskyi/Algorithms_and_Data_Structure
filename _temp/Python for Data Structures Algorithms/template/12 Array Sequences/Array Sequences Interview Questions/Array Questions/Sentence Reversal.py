@@ -17,7 +17,7 @@ Fill out your solution below:
 
 # %%
 ___ rev_word(s
-    pass
+    p..
 
 # %%
 rev_word('Hi John,   are you ready to go?')

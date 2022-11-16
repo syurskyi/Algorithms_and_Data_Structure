@@ -1,8 +1,8 @@
 # Copyright (C) Deepali Srivastava - All Rights Reserved
 # This code is part of DSA course available on CourseGalaxy.com  
 
-c_ HeapEmptyError(Exception
-    pass
+c_ HeapEmptyError E..
+    p..
 
 c_ Heap:
 
@@ -11,7 +11,7 @@ c_ Heap:
         n _ 0
         a[0] _ 99999
          
-    ___ insert value
+    ___ i..  value
         n+_1
         a[n] _ value
         restore_up(n)
@@ -28,7 +28,7 @@ c_ Heap:
     
     ___ delete_root 
         __ n __ 0:
-            raise HeapEmptyError("Heap is empty")
+            r... HeapEmptyError("Heap is empty")
 
         maxValue _ a[1]
         a[1] _ a[n]
@@ -85,7 +85,7 @@ _____ T..:
 
     __ choice __ 1:
         value _ i..(i..("Enter the value to be inserted : "))
-        h.insert(value)
+        h.i.. (value)
     ____ choice __ 2:
         print("Maximum value is " , h.delete_root())
     ____ choice __ 3:

@@ -17,7 +17,7 @@ c_ Graph(
         traversal _    # list
 
         _____ queue:
-            actualNode _ queue.pop(0)
+            actualNode _ queue.p.. 0)
             traversal.a..(actualNode.value)
 
             ___ element __ actualNode.adjacentlist:

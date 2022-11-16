@@ -16,7 +16,7 @@ Fill out your solution below:
 # %%
 ___ finder(arr1,arr2
     
-    pass
+    p..
 
 # %%
 arr1 _ [1,2,3,4,5,6,7]

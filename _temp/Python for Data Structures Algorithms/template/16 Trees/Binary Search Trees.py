@@ -119,12 +119,12 @@ c_ BinarySearchTree:
                 remove(nodeToRemove)
                 size _ size-1
             ____
-                raise KeyError('Error, key not in tree')
+                r... KeyError('Error, key not in tree')
         ____ size __ 1 ___ root.key __ key:
             root _ N..
             size _ size - 1
         ____
-            raise KeyError('Error, key not in tree')
+            r... KeyError('Error, key not in tree')
 
     ___ __delitem__key
 

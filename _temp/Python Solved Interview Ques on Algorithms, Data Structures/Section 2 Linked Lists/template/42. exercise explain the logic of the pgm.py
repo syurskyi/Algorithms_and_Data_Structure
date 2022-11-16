@@ -20,7 +20,7 @@ c_ LinkedList o..
     ___  -  head_None
         head _ head
 
-    ___ insert data
+    ___ i..  data
         new_node _ ? ?
         ?.s.. h..
         head _ new_node
@@ -65,10 +65,10 @@ c_ LinkedList o..
 
 l_ ?
 
-l.insert( 'a' )
-l.insert( 'b' )
-l.insert( 'b' )
-l.insert( 'd' )
+l.i.. ( 'a' )
+l.i.. ( 'b' )
+l.i.. ( 'b' )
+l.i.. ( 'd' )
 print l
 l.removeDuplicates()
 print l

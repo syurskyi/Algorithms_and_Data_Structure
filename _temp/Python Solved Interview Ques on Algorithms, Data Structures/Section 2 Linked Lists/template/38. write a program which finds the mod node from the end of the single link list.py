@@ -20,7 +20,7 @@ c_ LinkedList o..
     ___  -  head_None
         head _ head
 
-    ___ insert data
+    ___ i..  data
         new_node _ ? ?
         ?.s.. h..
         head _ new_node
@@ -77,12 +77,12 @@ c_ LinkedList o..
 
 l_ ?
 
-l.insert( '250' )
-l.insert( '200' )
-l.insert( '100' )
-l.insert( '25' )
-l.insert( '20' )
-l.insert( '10' )
+l.i.. ( '250' )
+l.i.. ( '200' )
+l.i.. ( '100' )
+l.i.. ( '25' )
+l.i.. ( '20' )
+l.i.. ( '10' )
 print l
 print(l.modnodefromend(3).data)
  

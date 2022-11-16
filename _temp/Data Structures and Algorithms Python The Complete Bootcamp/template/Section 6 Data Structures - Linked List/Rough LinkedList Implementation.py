@@ -9,11 +9,11 @@ c_ LinkedList:
     ___ -
         head _ N..
 
-    ___ insert
-        pass
+    ___ i.. 
+        p..
 
     ___ delete
-        pass
+        p..
 
     # Traverse Method To Print All Elements #
     ___ traverse

@@ -6,7 +6,7 @@ c_ Node o..
     ___ -  value
         val _ value
         next _ N..
-    pass
+    p..
 #
 # # Create a Singly Linked List here
 #

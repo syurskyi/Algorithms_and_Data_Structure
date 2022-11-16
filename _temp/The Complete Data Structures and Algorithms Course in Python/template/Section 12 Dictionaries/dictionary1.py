@@ -27,7 +27,7 @@ print(searchDict(myDict, 27))
 
 #  Delete or remove a dictionary
 
-myDict.pop('name')
+myDict.p.. 'name')
 
 
 

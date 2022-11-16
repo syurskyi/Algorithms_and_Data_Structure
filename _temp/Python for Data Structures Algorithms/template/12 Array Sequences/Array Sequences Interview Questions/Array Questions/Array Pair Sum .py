@@ -16,7 +16,7 @@ Fill out your solution below:
 # %%
 ___ pair_sum(arr,k
     
-    pass
+    p..
 
 # %%
 pair_sum([1,3,2,2],4)

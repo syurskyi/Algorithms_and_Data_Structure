@@ -29,16 +29,16 @@ c_ Queue2Stacks o..
     ___ enqueue element
         # FILL OUT CODE HERE
         in_stack.a..(element)
-        pass
+        p..
     
     ___ dequeue 
         
         # FILL OUT CODE HERE
         __ n.. out_stack:
             _____ in_stack:
-                out_stack.a..(in_stack.pop())
+                out_stack.a..(in_stack.p.. ))
         r_ out_stack.p.. 
-        pass
+        p..
 
 # %%
 '''

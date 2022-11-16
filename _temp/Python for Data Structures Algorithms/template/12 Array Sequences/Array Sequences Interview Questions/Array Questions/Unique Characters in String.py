@@ -14,7 +14,7 @@ Fill out your solution below:
 
 # %%
 ___ uni_char(s
-    pass
+    p..
 
 # %%
 '''

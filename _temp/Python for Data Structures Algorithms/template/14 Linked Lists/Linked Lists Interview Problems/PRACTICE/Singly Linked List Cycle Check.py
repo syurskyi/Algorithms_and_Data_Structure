@@ -26,7 +26,7 @@ ___ cycle_check(node
         fast _ fast.nextnode
         slow _ slow.nextnode
     r_ F..
-    pass #Your function should return a boolean
+    p.. #Your function should return a boolean
 
 # Test Your Solution
 

@@ -18,21 +18,21 @@ c_ AnimalShelter(
     __ l..(cats) __ 0:
       r_ N..
     ____
-      cat _ cats.pop(0)
+      cat _ cats.p.. 0)
       r_ cat
   
   ___ dequeueDog 
     __ l..(dogs) __ 0:
       r_ N..
     ____
-      dog _ dogs.pop(0)
+      dog _ dogs.p.. 0)
       r_ dog
   
   ___ dequeueAny 
     __ l..(cats) __ 0:
-      result _ dogs.pop(0)
+      result _ dogs.p.. 0)
     ____
-      result _ cats.pop(0)
+      result _ cats.p.. 0)
     r_ result
 
 customQueue _ AnimalShelter()

@@ -17,7 +17,7 @@ ___ i __ empty:
 
 myList _ [1,2,3,4,5,6,7]
 print(myList)
-myList.insert(4,15)
+myList.i.. (4,15)
 
 myList.a..(55)
 

@@ -1,8 +1,8 @@
 # Copyright (C) Deepali Srivastava - All Rights Reserved
 # This code is part of DSA course available on CourseGalaxy.com  
 
-c_ EmptyStackError(Exception
-    pass
+c_ EmptyStackError E..
+    p..
 
 c_ Stack:
         
@@ -20,12 +20,12 @@ c_ Stack:
 
     ___ pop
         __ is_empty(
-            raise EmptyStackError("Stack is empty")
+            r... EmptyStackError("Stack is empty")
         r_ items.p.. 
     
     ___ peek
         __ is_empty(
-            raise EmptyStackError("Stack is empty")
+            r... EmptyStackError("Stack is empty")
         r_ items[l..(items)-1]
 
     ___ display

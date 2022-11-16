@@ -50,7 +50,7 @@ ___ deleteString(root, word, index
             currentNode.endOfString _ F..
             r_ F..
         ____
-            root.children.pop(ch)
+            root.children.p.. ch)
             r_ T..
     
     __ currentNode.endOfString __ T..:
@@ -59,7 +59,7 @@ ___ deleteString(root, word, index
 
     canThisNodeBeDeleted _ deleteString(currentNode, word, index+1)
     __ canThisNodeBeDeleted __ T..:
-        root.children.pop(ch)
+        root.children.p.. ch)
         r_ T..
     ____
         r_ F..

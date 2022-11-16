@@ -15,7 +15,7 @@
 
 ___ rec_sum(n
 
-    pass
+    p..
 
 rec_sum(4)
 
@@ -26,7 +26,7 @@ rec_sum(4)
 # For example: if n = 4321, return 4+3+2+1
 #
 ___ sum_func(n
-    pass
+    p..
 
 sum_func(4321)
 # 10
@@ -59,7 +59,7 @@ word_split('themanran',['clown','ran','man'])
 # []
 #
 ___ word_split(phrase,list_of_words, output _ N..
-    pass
+    p..
 
 # Good Luck!
 #

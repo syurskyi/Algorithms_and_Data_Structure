@@ -23,7 +23,7 @@ c_ Queue:
         __ isEmpty(
             r_ "The is not any element in the Queue"
         ____
-            r_ items.pop(0)
+            r_ items.p.. 0)
     
     ___ peek 
         __ isEmpty(

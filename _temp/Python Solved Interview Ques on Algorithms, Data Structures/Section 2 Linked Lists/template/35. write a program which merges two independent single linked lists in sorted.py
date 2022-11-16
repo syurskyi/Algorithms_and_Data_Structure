@@ -19,7 +19,7 @@ c_ LinkedList o..
     ___  -  head_None
         head _ head
 
-    ___ insert data
+    ___ i..  data
         new_node _ ? ?
         ?.s.. h..
         head _ new_node
@@ -82,13 +82,13 @@ ___ joinListsInSortedOrder(l1, l2
 l1 _ LinkedList()
 l2 _ LinkedList()
 
-l1.insert( '3' )
-l1.insert( '2' )
-l1.insert( '1' )
+l1.i.. ( '3' )
+l1.i.. ( '2' )
+l1.i.. ( '1' )
 print "list1:", l1
-l2.insert( '6' )
-l2.insert( '5' )
-l2.insert( '4' )
+l2.i.. ( '6' )
+l2.i.. ( '5' )
+l2.i.. ( '4' )
 print "list2:", l2
 
 joinListsInSortedOrder(l1.head, l2.head)

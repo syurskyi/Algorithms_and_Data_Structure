@@ -38,7 +38,7 @@ ___ ladder(begin, end, word_list
 	queue.a..(Node(begin, [begin]))
 
 	_____ l..(queue) > 0:
-		cur _ queue.pop(0)
+		cur _ queue.p.. 0)
 
 		cur_word _ cur.word
 		path _ cur.path

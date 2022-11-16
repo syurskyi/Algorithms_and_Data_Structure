@@ -50,7 +50,7 @@ ___ nth_to_last_node(n, head
 
         # Check for edge case of not having enough nodes!
         __ n.. right_pointer.nextnode:
-            raise LookupError('Error: n is larger than the linked list.')
+            r... LookupError('Error: n is larger than the linked list.')
 
         # Otherwise, we can set the block
         right_pointer _ right_pointer.nextnode

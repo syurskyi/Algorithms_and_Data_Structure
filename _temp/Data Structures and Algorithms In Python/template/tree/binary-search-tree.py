@@ -1,8 +1,8 @@
 # Copyright (C) Deepali Srivastava - All Rights Reserved
 # This code is part of DSA course available on CourseGalaxy.com  
 
-c_ TreeEmptyError(Exception
-    pass
+c_ TreeEmptyError E..
+    p..
 
 c_ Node:
     ___ - value
@@ -152,7 +152,7 @@ c_ BinarySearchTree:
 
     ___ min1 
         __ is_empty(
-            raise TreeEmptyError("Tree is empty")
+            r... TreeEmptyError("Tree is empty")
         p _ root 
         _____ p.lchild __ n.. N..:
             p _ p.lchild 
@@ -160,7 +160,7 @@ c_ BinarySearchTree:
     
     ___ max1 
         __ is_empty(
-            raise TreeEmptyError("Tree is empty")
+            r... TreeEmptyError("Tree is empty")
         p _ root 
         _____ p.rchild __ n.. N..:
             p _ p.rchild 
@@ -168,7 +168,7 @@ c_ BinarySearchTree:
     
     ___ min2 
         __ is_empty(
-            raise TreeEmptyError("Tree is empty")
+            r... TreeEmptyError("Tree is empty")
         r_ _min(root).info 
 
     ___ _minp
@@ -178,7 +178,7 @@ c_ BinarySearchTree:
 
     ___ max2 
         __ is_empty(
-           raise TreeEmptyError("Tree is empty")
+           r... TreeEmptyError("Tree is empty")
         r_ _max(root).info 
 
     ___ _maxp
@@ -291,7 +291,7 @@ _____ T..:
         bst.insert1(x)
     ____ choice __ 5:
         x _ i..(i..("Enter the key to be inserted : "))
-        bst.insert(x)
+        bst.i.. (x)
     ____ choice __ 6:
         x _ i..(i..("Enter the element to be deleted : ")) 
         bst.delete1(x)
