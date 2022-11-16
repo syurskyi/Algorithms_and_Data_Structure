@@ -39,7 +39,7 @@ c_ Graph:
 
 #     assume there is one and only one start node (no one points to it) in the directed graph
     ___ get_start_vertex
-        cadidates _ set(get_nodes())
+        cadidates _ s..(get_nodes())
         ___ end __ connections.values(
             ___ k __ end.keys(
                 __ k __ cadidates:
@@ -76,7 +76,7 @@ g.get_start_vertex()
 type(g.get_start_vertex())
 # set
 #
-s _ set([1,2,3])
+s _ s..([1,2,3])
 #
 s
 #

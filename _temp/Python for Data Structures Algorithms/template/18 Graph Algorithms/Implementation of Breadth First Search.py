@@ -9,12 +9,12 @@
 #
 # We'll assume our Graph is in the form:
 
-graph _ {'A': set(['B', 'C']),
-         'B': set(['A', 'D', 'E']),
-         'C': set(['A', 'F']),
-         'D': set(['B']),
-         'E': set(['B', 'F']),
-         'F': set(['C', 'E'])}
+graph _ {'A': s..(['B', 'C']),
+         'B': s..(['A', 'D', 'E']),
+         'C': s..(['A', 'F']),
+         'D': s..(['B']),
+         'E': s..(['B', 'F']),
+         'F': s..(['C', 'E'])}
 
 # Connected Component
 #
@@ -42,7 +42,7 @@ ___ bfs_paths(graph, start, goal
     queue _ [(start, [start])]
     _____ queue:
         (vertex, path) _ queue.p.. 0)
-        ___ next __ graph[vertex] - set(path
+        ___ next __ graph[vertex] - s..(path
             __ next __ goal:
                 yield path + [next]
             ____

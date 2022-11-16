@@ -11,7 +11,7 @@ ___ removeDups(ll
         r_
     ____
         currentNode _ ll.head
-        visited _ set([currentNode.value])
+        visited _ s..([currentNode.value])
         _____ currentNode.next:
             __ currentNode.next.value __ visited:
                 currentNode.next _ currentNode.next.next

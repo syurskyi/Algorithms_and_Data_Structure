@@ -33,7 +33,7 @@ c_ Node:
 ___ ladder(begin, end, word_list
 	queue _    # list
 
-	words _ set(word_list)
+	words _ s..(word_list)
 
 	queue.a..(Node(begin, [begin]))
 

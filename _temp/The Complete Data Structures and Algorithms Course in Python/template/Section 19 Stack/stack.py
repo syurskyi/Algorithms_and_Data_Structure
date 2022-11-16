@@ -1,13 +1,13 @@
 #   Created by Elshad Karimov on 19/05/2020.
 #   Copyright © 2020 AppMillers. All rights reserved.
 
-c_ MultiStack:
+c_ MultiStack
 
     ___ -  stacksize
         numstacks _ 3
-        array _ [0] * (stacksize * numstacks)
-        sizes _ [0] * numstacks
-        stacksize _ stacksize
+        array _ [0] * (? * ?
+        sizes _ [0] * ?
+        ? _ ?
         # print(self.array)
         # print(self.sizes)
 

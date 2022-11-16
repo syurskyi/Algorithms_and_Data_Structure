@@ -21,7 +21,7 @@ ___ dijkstra(graph, initial
     visited _ {initial : 0}
     path _ defaultdict(list)
 
-    nodes _ set(graph.nodes)
+    nodes _ s..(graph.nodes)
 
     _____ nodes:
         minNode _ N..

@@ -4,4 +4,4 @@ c_ Solution o..
         :type nums: List[int]
         :rtype: int
         """
-        r_ 2*sum(set(nums))-sum(nums)
+        r_ 2*sum(s..(nums))-sum(nums)

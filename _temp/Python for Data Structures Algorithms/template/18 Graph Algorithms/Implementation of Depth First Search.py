@@ -61,7 +61,7 @@ ___ dfs_paths(graph, start, goal
     stack _ [(start, [start])]
     _____ stack:
         (vertex, path) _ stack.p.. 
-        ___ nxt __ graph[vertex] - set(path
+        ___ nxt __ graph[vertex] - s..(path
             __ nxt __ goal:
                 yield path + [nxt]
             ____

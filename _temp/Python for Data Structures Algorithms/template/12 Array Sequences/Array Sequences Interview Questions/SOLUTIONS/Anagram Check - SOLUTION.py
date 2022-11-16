@@ -18,7 +18,7 @@ You would be able to implement this second solution pretty easily in Python:
 '''
 
 # %%
-___ anagram(s1,s2
+___ anagram s1,s2
     
     # Remove spaces and lowercase letters
     s1 _ s1.replace(' ','').lower()
