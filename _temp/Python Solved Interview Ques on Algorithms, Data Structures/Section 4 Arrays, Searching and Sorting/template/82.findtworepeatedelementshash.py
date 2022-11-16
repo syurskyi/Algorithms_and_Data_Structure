@@ -14,7 +14,7 @@ ___ findtworepeatedelesusinghash(myarray
 
 	___ ele __ myarray:
                 #print "repeated eles are:"
-		__ tab[ele] == 2:
+		__ tab[ele] __ 2:
 			print ele
 			
 myarray _ [3, 5, 7, 18, 12, 18, 12, 1, 19]

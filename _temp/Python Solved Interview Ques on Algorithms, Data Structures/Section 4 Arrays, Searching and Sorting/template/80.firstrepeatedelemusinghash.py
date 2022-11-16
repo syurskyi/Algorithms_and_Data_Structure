@@ -6,7 +6,7 @@ ___ firstrepeatedeleinalistofrepeatednumbersusinghash(myarray
 	max _ 0
 	___ ele __ myarray:
                 #print "start loop >>"
-		__ ele __ tab and tab[ele] == 1:
+		__ ele __ tab and tab[ele] __ 1:
 			tab[ele] _ -2
                         #print "ele",ele,"exists", "tab[ele] was 1, assigning -2 ", tab
                         #print "in loop: tab",tab,"for ele'",ele,"' in array ",myarray

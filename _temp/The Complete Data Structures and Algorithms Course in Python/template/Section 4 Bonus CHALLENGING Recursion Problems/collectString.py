@@ -4,10 +4,10 @@
 # collectStrings Solution
 
 ___ collectStrings(obj
-    resultArr _ []
+    resultArr _    # list
     ___ key __ obj:
         __ type(obj[key]) __ str:
-            resultArr.append(obj[key])
+            resultArr.a..(obj[key])
         __ type(obj[key]) __ dict:
             resultArr _ resultArr + collectStrings(obj[key])
     r_ resultArr

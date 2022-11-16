@@ -22,10 +22,10 @@ c_ SLinkedList:
             head _ newNode
             tail _ newNode
         ____
-            __ location == 0:
+            __ location __ 0:
                 newNode.next _ head
                 head _ newNode
-            elif location == 1:
+            elif location __ 1:
                 newNode.next _ N..
                 tail.next _ newNode
                 tail _ newNode
@@ -55,7 +55,7 @@ c_ SLinkedList:
         ____
             node _ head
             _____ node __ n.. N..:
-                __ node.value == nodeValue:
+                __ node.value __ nodeValue:
                     r_ node.value
                 node _ node.next
             r_ "The value does not exist in this list"
@@ -65,20 +65,20 @@ c_ SLinkedList:
         __ head __ N..:
             print("The SLL does not exist")
         ____
-            __ location == 0:
-                __ head == tail:
+            __ location __ 0:
+                __ head __ tail:
                     head _ N..
                     tail _ N..
                 ____
                     head _ head.next
-            elif location == 1:
-                __ head == tail:
+            elif location __ 1:
+                __ head __ tail:
                     head _ N..
                     tail _ N..
                 ____
                     node _ head
                     _____ node __ n.. N..:
-                        __ node.next == tail:
+                        __ node.next __ tail:
                             break
                         node _ node.next
                     node.next _ N..

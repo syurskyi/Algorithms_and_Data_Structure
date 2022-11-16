@@ -3,12 +3,12 @@ c_ Solution:
         people.sort()
 
         left _ 0
-        right _ len(people)-1
+        right _ l..(people)-1
 
         boats_number _ 0
 
         _____(left<_right
-            __(left==right
+            __(left__right
                 boats_number+_1
                 break
             __(people[left]+people[right]<_limit

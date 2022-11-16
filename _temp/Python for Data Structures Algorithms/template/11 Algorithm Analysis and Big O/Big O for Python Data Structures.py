@@ -21,14 +21,14 @@ For example:
 
 # %%
 ___ method1(
-    l _ []
+    l _    # list
     ___ n __ range(10000
         l _ l + [n]
 
 ___ method2(
-    l _ []
+    l _    # list
     ___ n __ range(10000
-        l.append(n)
+        l.a..(n)
 
 ___ method3(
     l _ [n ___ n __ range(10000)]

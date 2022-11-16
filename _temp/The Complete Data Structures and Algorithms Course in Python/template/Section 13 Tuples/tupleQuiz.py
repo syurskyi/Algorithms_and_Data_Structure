@@ -20,7 +20,7 @@ print (init_tuple.__len__())
 init_tuple_a _ 'a', 'b'
 init_tuple_b _ ('a', 'b')
 
-print (init_tuple_a == init_tuple_b)
+print (init_tuple_a __ init_tuple_b)
 # A. 0
 # B.  1
 # C. False
@@ -112,7 +112,7 @@ print(init_tuple)
 # Q-10. What will be the output of the following code block?
 
 init_tuple _ ((1, 2),) * 7
-print(len(init_tuple[3:8]))
+print(l..(init_tuple[3:8]))
 # A. Exception
 # B. 5
 # C. 4

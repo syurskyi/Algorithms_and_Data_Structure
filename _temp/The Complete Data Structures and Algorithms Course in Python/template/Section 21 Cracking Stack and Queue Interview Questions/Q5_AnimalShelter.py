@@ -5,31 +5,31 @@
 
 c_ AnimalShelter(
   ___ -  
-    cats _ []
-    dogs _ []
+    cats _    # list
+    dogs _    # list
   
   ___ enqueue animal, type
-    __ type == 'Cat':
-      cats.append(animal)
+    __ type __ 'Cat':
+      cats.a..(animal)
     ____
-      dogs.append(animal)
+      dogs.a..(animal)
     
   ___ dequeueCat 
-    __ len(cats) == 0:
+    __ l..(cats) __ 0:
       r_ N..
     ____
       cat _ cats.pop(0)
       r_ cat
   
   ___ dequeueDog 
-    __ len(dogs) == 0:
+    __ l..(dogs) __ 0:
       r_ N..
     ____
       dog _ dogs.pop(0)
       r_ dog
   
   ___ dequeueAny 
-    __ len(cats) == 0:
+    __ l..(cats) __ 0:
       result _ dogs.pop(0)
     ____
       result _ cats.pop(0)

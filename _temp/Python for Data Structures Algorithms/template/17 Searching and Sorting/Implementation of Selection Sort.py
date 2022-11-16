@@ -15,7 +15,7 @@
 ___ selection_sort(arr
 
     # For every slot in array
-    ___ fillslot __ range(len(arr)-1,0,-1
+    ___ fillslot __ range(l..(arr)-1,0,-1
         positionOfMax_0
 
         # For every set of 0 to fillslot+1

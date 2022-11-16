@@ -14,10 +14,10 @@ ___ seq_search(arr,ele
     found _ False
 
     # go until end of list
-    _____ pos < len(arr) and n.. found:
+    _____ pos < l..(arr) and n.. found:
 
         # If match
-        __ arr[pos] == ele:
+        __ arr[pos] __ ele:
             found _ True
 
         # Else move one down
@@ -53,10 +53,10 @@ ___ ordered_seq_search(arr,ele
     stopped _ False
 
     # go until end of list
-    _____ pos < len(arr) and n.. found and n.. stopped:
+    _____ pos < l..(arr) and n.. found and n.. stopped:
 
         # If match
-        __ arr[pos] == ele:
+        __ arr[pos] __ ele:
             found _ True
 
         ____

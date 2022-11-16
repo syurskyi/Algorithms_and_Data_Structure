@@ -7,10 +7,10 @@
 # %%
 c_ Queue:
     ___ -
-        items _ []
+        items _    # list
 
     ___ isEmpty
-        r_ items == []
+        r_ items __    # list
 
     ___ enqueue item
         items.insert(0,item)
@@ -19,4 +19,4 @@ c_ Queue:
         r_ items.pop()
 
     ___ size
-        r_ len(items)
+        r_ l..(items)

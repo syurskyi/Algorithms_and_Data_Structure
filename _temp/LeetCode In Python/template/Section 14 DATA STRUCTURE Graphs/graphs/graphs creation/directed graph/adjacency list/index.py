@@ -6,7 +6,7 @@ c_ Graph:
         graph _ defaultdict(list)
 
     ___ insertEdge v1, v2
-        graph[v1].append(v2)
+        graph[v1].a..(v2)
 
     ___ printGraph 
         ___ node __ graph:

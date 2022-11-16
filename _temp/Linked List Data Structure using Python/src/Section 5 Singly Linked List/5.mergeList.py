@@ -49,8 +49,8 @@ secondList.printList()
 mergedList _ LinkedList()
 
 mergeLists(firstList, secondList, mergedList)
-del firstList
-del secondList
+d.. firstList
+d.. secondList
 
 print("Printing Merged List")
 mergedList.printList()

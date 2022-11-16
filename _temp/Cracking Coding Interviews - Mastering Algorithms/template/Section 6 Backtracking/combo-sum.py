@@ -29,17 +29,17 @@ import copy
 # ]
 
 ___ combos(candidates, target, path, cur_sum, candidate_index
-	__ cur_sum == target:
+	__ cur_sum __ target:
 		r_ [path]
 	elif cur_sum > target:
-		r_ []
+		r_    # list
 
-	output _ []
+	output _    # list
 
-	___ i __ range(candidate_index, len(candidates)):
+	___ i __ range(candidate_index, l..(candidates)):
 		cur _ candidates[i]
 		copy_path _ copy.deepcopy(path)
-		copy_path.append(cur)
+		copy_path.a..(cur)
 
 		combinations _ combos(candidates, target, copy_path, cur_sum + cur, i)
 
@@ -48,7 +48,7 @@ ___ combos(candidates, target, path, cur_sum, candidate_index
 	r_ output
 
 ___ combo_sum(candidates, target
-	r_ combos(candidates, target, [], 0, 0)
+	r_ combos(candidates, target,    # list, 0, 0)
 
 print(combo_sum([2,3,6,7], 7))
 

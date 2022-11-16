@@ -29,7 +29,7 @@ c_ LinkedList:
     ___ printMiddle
         length _ listLength()
         __ length !_ 0:
-            __ length == 1:
+            __ length __ 1:
                 print("Middle Node: ",head.data)
                 r_
             middlePosition _ length // 2

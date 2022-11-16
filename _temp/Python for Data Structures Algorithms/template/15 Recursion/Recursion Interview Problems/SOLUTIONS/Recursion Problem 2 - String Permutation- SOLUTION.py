@@ -19,10 +19,10 @@
 # Let's go ahead and see this implemented:
 
 ___ permute(s
-    out _ []
+    out _    # list
 
     # Base Case
-    __ len(s) == 1:
+    __ l..(s) __ 1:
         out _ [s]
 
     ____

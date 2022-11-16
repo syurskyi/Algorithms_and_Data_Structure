@@ -1,9 +1,9 @@
 ___ myBubbleSort(myArray
     print "Given Array:",myArray
-    ___ i __ range(len(myArray)):
+    ___ i __ range(l..(myArray)):
         #print "outer loop:",myArray
         #print "I index:",i
-        ___ k __ range(len(myArray) - 1, i, -1
+        ___ k __ range(l..(myArray) - 1, i, -1
                 #print "inner loop:",myArray
                 #print "K index:",k 
                 #print "comparing myArray[",k,"] with myArray[",k-1,"]",myArray[k],myArray[k-1]

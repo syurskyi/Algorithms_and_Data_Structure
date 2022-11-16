@@ -4,11 +4,11 @@
 # Convert One String to Another with minimum operation in Python
 
 ___ findMinOperation(s1, s2, index1, index2
-    __ index1 == len(s1
-        r_ len(s2)-index2
-    __ index2 == len(s2
-        r_ len(s1)-index1
-    __ s1[index1] == s2[index2]:
+    __ index1 __ l..(s1
+        r_ l..(s2)-index2
+    __ index2 __ l..(s2
+        r_ l..(s1)-index1
+    __ s1[index1] __ s2[index2]:
         r_ findMinOperation(s1, s2, index1+1, index2+1)
     ____
         deleteOp _ 1 + findMinOperation(s1, s2, index1, index2+1)

@@ -17,7 +17,7 @@ print(my_array[3])
 # 3. Append any value to the array using append() method
 
 print("Step 3")
-my_array.append(6)
+my_array.a..(6)
 print(my_array)
 
 # 4. Insert value in an array using insert() method
@@ -63,7 +63,7 @@ print(my_array.buffer_info())
 
 # 12. Check for number of occurrences of an element using count() method
 print("Step 12")
-my_array.append(11)
+my_array.a..(11)
 print(my_array.count(11))
 print(my_array)
 # 13. Convert array to string using tostring() method

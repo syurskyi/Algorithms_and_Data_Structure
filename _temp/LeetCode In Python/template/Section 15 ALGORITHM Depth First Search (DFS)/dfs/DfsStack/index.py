@@ -7,14 +7,14 @@ c_ Graph:
         graph _ defaultdict(list)
 
     ___ insertEdge v1, v2
-        graph[v1].append(v2)
+        graph[v1].a..(v2)
 
     ___ DFS startNode
         visited _ set()
-        st _ []
-        st.append(startNode)
+        st _    # list
+        st.a..(startNode)
 
-        _____(len(st)):
+        _____(l..(st)):
             cur _ st[-1]
             st.pop()
 
@@ -24,7 +24,7 @@ c_ Graph:
 
             ___ vertex __ graph[cur]:
                 __(vertex n.. __ visited
-                    st.append(vertex)
+                    st.a..(vertex)
 
 
 g _ Graph()

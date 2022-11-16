@@ -5,16 +5,16 @@
 import math
 ___ binarySearch(array, value
     start _ 0
-    end _ len(array)-1
+    end _ l..(array)-1
     middle _ math.floor((start+end)/2)
-    _____ n..(array[middle]==value) and start<_end:
+    _____ n..(array[middle]__value) and start<_end:
         __ value < array[middle]:
             end _ middle - 1
         ____
             start _ middle + 1
         middle _ math.floor((start+end)/2)
         # print(start, middle, end)
-    __ array[middle] == value:
+    __ array[middle] __ value:
         r_ middle
     ____
         r_ -1

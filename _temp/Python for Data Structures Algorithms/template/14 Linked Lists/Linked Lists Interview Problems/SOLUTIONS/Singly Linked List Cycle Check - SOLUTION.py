@@ -40,7 +40,7 @@ ___ cycle_check(node
         marker2 _ marker2.nextnode.nextnode
 
         # Check if the markers have matched
-        __ marker2 == marker1:
+        __ marker2 __ marker1:
             r_ True
 
     # Case where marker ahead reaches the end of the list

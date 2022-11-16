@@ -11,7 +11,7 @@
 ___ unique_characters(word
 	visited_chars _ set()
 
-	___ i __ range(len(word)):
+	___ i __ range(l..(word)):
 		letter _ word[i]
 
 		__ letter __ visited_chars:

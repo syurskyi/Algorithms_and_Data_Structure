@@ -5,7 +5,7 @@ c_ Solution:
         """
 
         left _ 0
-        right _ len(s) - 1
+        right _ l..(s) - 1
 
         _____ left < right:
             s[left], s[right] _ s[right], s[left]

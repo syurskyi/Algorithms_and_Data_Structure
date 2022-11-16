@@ -38,7 +38,7 @@ ___ fact(n
     Note use of 001_recursion
     '''
     # BASE CASE!
-    __ n == 0:
+    __ n __ 0:
         r_ 1
 
     # Recursion!

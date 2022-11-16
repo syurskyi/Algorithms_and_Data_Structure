@@ -20,7 +20,7 @@ traverseDict(myDict)
 
 ___ searchDict(dict, value
     ___ key __ dict:
-        __ dict[key] == value:
+        __ dict[key] __ value:
             r_ key, value
     r_ 'The value does not exist'
 print(searchDict(myDict, 27))

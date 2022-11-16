@@ -20,22 +20,22 @@
 c_ Stack:
 
     ___ -  
-        items _ []
+        items _    # list
 
     ___ isEmpty 
-        r_ items == []
+        r_ items __    # list
 
     ___ push item
-        items.append(item)
+        items.a..(item)
 
     ___ pop 
         r_ items.pop()
 
     ___ peek 
-        r_ items[len(items) - 1]
+        r_ items[l..(items) - 1]
 
     ___ size 
-        r_ len(items)
+        r_ l..(items)
 
 # Let's try it out!
 

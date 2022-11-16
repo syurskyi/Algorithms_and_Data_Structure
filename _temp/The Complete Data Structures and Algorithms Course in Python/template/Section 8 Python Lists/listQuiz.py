@@ -99,8 +99,8 @@ ___ i __ range(0, 4
 
 # Q-8. What will be the output of the following code snippet?
 
-___ f(i, values _ []
-    values.append(i)
+___ f(i, values _    # list
+    values.a..(i)
     print (values)
     r_ values
 f(1)
@@ -140,9 +140,9 @@ fruit_list3[1] _ 'Kiwi'
 
 sum _ 0
 ___ ls __ (fruit_list1, fruit_list2, fruit_list3
-    __ ls[0] == 'Guava':
+    __ ls[0] __ 'Guava':
         sum +_ 1
-    __ ls[1] == 'Kiwi':
+    __ ls[1] __ 'Kiwi':
         sum +_ 20
 
 print(sum)

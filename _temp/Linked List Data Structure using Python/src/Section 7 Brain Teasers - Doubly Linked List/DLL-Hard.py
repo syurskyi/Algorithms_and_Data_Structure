@@ -35,7 +35,7 @@ ___ isDuplicate(currentNode, mergedList
     currentMerge _ mergedList.head
     # Check if data already exists in list
     _____ currentMerge __ n.. N..:
-        __ currentNode.data == currentMerge.data:
+        __ currentNode.data __ currentMerge.data:
             r_ True
         currentMerge _ currentMerge.next
     r_ False

@@ -13,7 +13,7 @@ ___ getfirstnonrepeated(myarray
                 #print "in loop:",tab,"for","'",ele,"'","in",myarray
 
 	___ ele __ myarray.lower(
-		__ tab[ele] == 1:
+		__ tab[ele] __ 1:
 			print("the first non repeated character is: %s" % (ele))
 			r_ ele
 

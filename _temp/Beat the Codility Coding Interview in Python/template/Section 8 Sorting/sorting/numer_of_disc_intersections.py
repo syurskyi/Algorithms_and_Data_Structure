@@ -8,10 +8,10 @@ c_ DiscLog(
         start_end _ start_end
 
 ___ solution(A
-    discHistory _ []
-    ___ i __ range(len(A)):
-        discHistory.append(DiscLog(i - A[i], 1))
-        discHistory.append(DiscLog(i + A[i], -1))
+    discHistory _    # list
+    ___ i __ range(l..(A)):
+        discHistory.a..(DiscLog(i - A[i], 1))
+        discHistory.a..(DiscLog(i + A[i], -1))
     discHistory.sort(key_lambda d: (d.x, -d.start_end))
     intersections _ 0
     active_intersections _ 0

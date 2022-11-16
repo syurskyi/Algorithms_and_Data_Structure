@@ -27,16 +27,16 @@ ___ levelOrderPrint(tree
         r_
 
     queue _ deque()
-    queue.append(tree)
-    _____ len(queue) !_ 0:
+    queue.a..(tree)
+    _____ l..(queue) !_ 0:
         temp _ deque()
-        _____ len(queue) !_ 0:
+        _____ l..(queue) !_ 0:
             node _ queue.pop()
             print(str(node.val) + ' ')
             __ node.left __ n.. N..:
-                temp.append(tree.left)
+                temp.a..(tree.left)
             __ node.right __ n.. N..:
-                temp.append(tree.right)
+                temp.a..(tree.right)
             queue _ temp
 
 root _ Node(2)

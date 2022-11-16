@@ -6,9 +6,9 @@ c_ Node:
 		right _ right
 
 ___ convert(root
-	__ root == N..:
+	__ root __ N..:
 		r_ N..
-	elif root.left == N.. and root.right == N..:
+	elif root.left __ N.. and root.right __ N..:
 		r_ [root, root]
 
 	left _ convert(root.left)

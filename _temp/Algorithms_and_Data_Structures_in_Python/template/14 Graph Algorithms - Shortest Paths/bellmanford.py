@@ -6,7 +6,7 @@ c_ Node o..
 		name _ name;
 		visited _ False;
 		predecessor _ N..;
-		adjacenciesList _ [];
+		adjacenciesList _    # list;
 		minDistance _ sys.maxsize;
 		
 c_ Edge o..
@@ -24,7 +24,7 @@ c_ BellmanFord o..
 	
 		startVertex.minDistance _ 0;
 		
-		___ i __ range(0,len(vertexList)-1
+		___ i __ range(0,l..(vertexList)-1
 			___ edge __ edgeList:
 			
 				u _ edge.startVertex;
@@ -92,22 +92,22 @@ edge17 _ Edge(1,node1,node2);
 edge18 _ Edge(1,node2,node3);
 edge19 _ Edge(-3,node3,node1);
 
-node1.adjacenciesList.append(edge1);
-node1.adjacenciesList.append(edge2);
-node1.adjacenciesList.append(edge3);
-node2.adjacenciesList.append(edge4);
-node2.adjacenciesList.append(edge5);
-node2.adjacenciesList.append(edge6);
-node8.adjacenciesList.append(edge7);
-node8.adjacenciesList.append(edge8);
-node5.adjacenciesList.append(edge9);
-node5.adjacenciesList.append(edge10);
-node5.adjacenciesList.append(edge11);
-node6.adjacenciesList.append(edge12);
-node6.adjacenciesList.append(edge13);
-node3.adjacenciesList.append(edge14);
-node3.adjacenciesList.append(edge15);
-node4.adjacenciesList.append(edge16);
+node1.adjacenciesList.a..(edge1);
+node1.adjacenciesList.a..(edge2);
+node1.adjacenciesList.a..(edge3);
+node2.adjacenciesList.a..(edge4);
+node2.adjacenciesList.a..(edge5);
+node2.adjacenciesList.a..(edge6);
+node8.adjacenciesList.a..(edge7);
+node8.adjacenciesList.a..(edge8);
+node5.adjacenciesList.a..(edge9);
+node5.adjacenciesList.a..(edge10);
+node5.adjacenciesList.a..(edge11);
+node6.adjacenciesList.a..(edge12);
+node6.adjacenciesList.a..(edge13);
+node3.adjacenciesList.a..(edge14);
+node3.adjacenciesList.a..(edge15);
+node4.adjacenciesList.a..(edge16);
 
 
 vertexList _ (node1,node2,node3, node4, node5, node6, node7, node8);

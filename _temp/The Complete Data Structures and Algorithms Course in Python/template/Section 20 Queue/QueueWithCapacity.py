@@ -13,15 +13,15 @@ c_ Queue:
         r_ ' '.join(values)
     
     ___ isFull
-        __ top + 1 == start:
+        __ top + 1 __ start:
             r_ True
-        elif start == 0 and top + 1 == maxSize:
+        elif start __ 0 and top + 1 __ maxSize:
             r_ True
         ____
             r_ False
     
     ___ isEmpty
-        __ top == -1:
+        __ top __ -1:
             r_ True
         ____
             r_ False
@@ -30,11 +30,11 @@ c_ Queue:
         __ isFull(
             r_ "The queue is full"
         ____
-            __ top + 1 == maxSize:
+            __ top + 1 __ maxSize:
                 top _ 0
             ____
                 top +_ 1
-                __ start == -1:
+                __ start __ -1:
                     start _ 0
             items[top] _ value
             r_ "The element is inserted at the end of Queue"
@@ -45,10 +45,10 @@ c_ Queue:
         ____
             firstElement _ items[start]
             start _ start
-            __ start == top:
+            __ start __ top:
                 start _ -1
                 top _ -1
-            elif start + 1 == maxSize:
+            elif start + 1 __ maxSize:
                 start _ 0
             ____
                 start +_ 1

@@ -37,7 +37,7 @@ c_ LinkedList:
         currentNode _ head
         currentPosition _ 0
         _____ True:
-            __ currentPosition == position:
+            __ currentPosition __ position:
                 currentNode.previous.next _ newNode
                 newNode.previous _ currentNode.previous
                 newNode.next _ currentNode
@@ -68,7 +68,7 @@ c_ LinkedList:
         currentNode _ head
         currentPosition _ 0
         _____ True:
-            __ currentPosition == position:
+            __ currentPosition __ position:
                 currentNode.previous.next _ currentNode.next
                 currentNode.next.previous _ currentNode.previous
                 currentNode.next _ N..

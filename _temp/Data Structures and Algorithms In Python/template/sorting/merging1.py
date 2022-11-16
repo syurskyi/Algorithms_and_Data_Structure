@@ -30,7 +30,7 @@ ___ merge(a,temp,low1,up1,low2,up2
 
 a _ [1,2,4,6,  3,5,6,7,13,19]
 
-temp_[N..]*len(a)
+temp_[N..]*l..(a)
 
 merge(a,temp,0,3,4,9)
 

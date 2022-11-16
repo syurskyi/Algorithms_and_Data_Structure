@@ -14,7 +14,7 @@ c_ binTree:
         r_ root
 
     ___ addnode data
-        __(root == N..
+        __(root __ N..
             root _ Node(data)
         ____
             _add(data, root)
@@ -38,7 +38,7 @@ c_ binTree:
             r_ N..
 
     ___ _find data, node
-        __(data == node.v
+        __(data __ node.v
             r_ node
         elif(data < node.v and node.l !_ N..
             _find(data, node.l)

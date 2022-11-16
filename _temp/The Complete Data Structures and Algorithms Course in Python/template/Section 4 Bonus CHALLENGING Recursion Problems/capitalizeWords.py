@@ -4,10 +4,10 @@
 # capitalizeWords Solution
 
 ___ capitalizeWords(arr
-    result _ []
-    __ len(arr) == 0:
+    result _    # list
+    __ l..(arr) __ 0:
         r_ result
-    result.append(arr[0].upper())
+    result.a..(arr[0].upper())
     r_ result + capitalizeWords(arr[1:])
 
 

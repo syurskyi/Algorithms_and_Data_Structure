@@ -5,9 +5,9 @@
 
 
 ___ isPalindrome(strng
-    __ len(strng) == 0:
+    __ l..(strng) __ 0:
         r_ True
-    __ strng[0] !_ strng[len(strng)-1]:
+    __ strng[0] !_ strng[l..(strng)-1]:
         r_ False
     r_ isPalindrome(strng[1:-1])
 

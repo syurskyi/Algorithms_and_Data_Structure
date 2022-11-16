@@ -19,13 +19,13 @@ ___ index_less_than(sortedDiscList, i, start, last
         r_ index_less_than(sortedDiscList, i, mid + 1, last)
 
 ___ solution(A
-    discs _ []
-    ___ i __ range(len(A)):
-        discs.append(Disc(i - A[i], i + A[i]))
+    discs _    # list
+    ___ i __ range(l..(A)):
+        discs.a..(Disc(i - A[i], i + A[i]))
     discs _ sorted(discs, key_lambda d: d.low_x)
     total _ 0
-    ___ i __ range(len(discs)):
-        total +_ index_less_than(discs, discs[i].high_x + 0.5, 0, len(discs) - 1) - i
+    ___ i __ range(l..(discs)):
+        total +_ index_less_than(discs, discs[i].high_x + 0.5, 0, l..(discs) - 1) - i
         __ total > 10000000:
             total _ -1
             break

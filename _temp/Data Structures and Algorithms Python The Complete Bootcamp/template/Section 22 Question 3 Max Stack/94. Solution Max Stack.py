@@ -1,20 +1,20 @@
 c_ MaxStack:
 
     ___ -  
-        stack _ []
-        max _ []
+        stack _    # list
+        max _    # list
 
     ___ push x
-        stack.append(x)
+        stack.a..(x)
 
         __ max:
             __ x >_ max[-1]:
-                max.append(x)
+                max.a..(x)
         ____
-            max.append(x)
+            max.a..(x)
 
     ___ pop 
-        __ stack[-1] == max[-1]:
+        __ stack[-1] __ max[-1]:
             max.pop()
         stack.pop()
 

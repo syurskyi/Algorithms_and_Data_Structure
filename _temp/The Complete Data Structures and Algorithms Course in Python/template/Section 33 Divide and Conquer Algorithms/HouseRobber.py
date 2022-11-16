@@ -4,7 +4,7 @@
 # House Robber Problem  in Python
 
 ___ houseRobber(houses, currentIndex
-    __ currentIndex >_ len(houses
+    __ currentIndex >_ l..(houses
         r_ 0
     ____
         stealFirstHouse _ houses[currentIndex] + houseRobber(houses, currentIndex + 2)

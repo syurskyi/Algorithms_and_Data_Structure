@@ -28,30 +28,30 @@ c_ HashTable o..
         #Note, we'll only use integer keys for ease of use with the Hash Function
 
         # Get the hash value
-        hashvalue _ hashfunction(key,len(slots))
+        hashvalue _ hashfunction(key,l..(slots))
 
         # If Slot is Empty
-        __ slots[hashvalue] == N..:
+        __ slots[hashvalue] __ N..:
             slots[hashvalue] _ key
             data[hashvalue] _ data
 
         ____
 
             # If key already exists, replace old value
-            __ slots[hashvalue] == key:
+            __ slots[hashvalue] __ key:
                 data[hashvalue] _ data
 
             # Otherwise, find the next available slot
             ____
 
-                nextslot _ rehash(hashvalue,len(slots))
+                nextslot _ rehash(hashvalue,l..(slots))
 
                 # Get to the next slot
                 _____ slots[nextslot] !_ N.. and slots[nextslot] !_ key:
-                    nextslot _ rehash(nextslot,len(slots))
+                    nextslot _ rehash(nextslot,l..(slots))
 
                 # Set new key, if NONE
-                __ slots[nextslot] == N..:
+                __ slots[nextslot] __ N..:
                     slots[nextslot]_key
                     data[nextslot]_data
 
@@ -73,7 +73,7 @@ c_ HashTable o..
         # Getting items given a key
 
         # Set up variables for our search
-        startslot _ hashfunction(key,len(slots))
+        startslot _ hashfunction(key,l..(slots))
         data _ N..
         stop _ False
         found _ False
@@ -82,13 +82,13 @@ c_ HashTable o..
         # Until we discern that its not empty or found (and haven't stopped yet)
         _____ slots[position] !_ N.. and n.. found and n.. stop:
 
-            __ slots[position] == key:
+            __ slots[position] __ key:
                 found _ True
                 data _ data[position]
 
             ____
-                position_self.rehash(position,len(slots))
-                __ position == startslot:
+                position_self.rehash(position,l..(slots))
+                __ position __ startslot:
 
                     stop _ True
         r_ data

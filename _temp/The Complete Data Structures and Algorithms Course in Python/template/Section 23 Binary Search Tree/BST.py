@@ -10,7 +10,7 @@ c_ BSTNode:
         rightChild _ N..
 
 ___ insertNode(rootNode, nodeValue
-    __ rootNode.data == N..:
+    __ rootNode.data __ N..:
         rootNode.data _ nodeValue
     elif nodeValue <_ rootNode.data:
         __ rootNode.leftChild __ N..:
@@ -61,15 +61,15 @@ ___ levelOrderTraversal(rootNode
             
 
 ___ searchNode(rootNode, nodeValue
-    __ rootNode.data == nodeValue:
+    __ rootNode.data __ nodeValue:
         print("The value is found")
     elif nodeValue < rootNode.data:
-        __ rootNode.leftChild.data == nodeValue:
+        __ rootNode.leftChild.data __ nodeValue:
             print("The value is found")
         ____
             searchNode(rootNode.leftChild, nodeValue)
     ____
-        __ rootNode.rightChild.data == nodeValue:
+        __ rootNode.rightChild.data __ nodeValue:
             print("The value is found")
         ____
             searchNode(rootNode.rightChild, nodeValue)

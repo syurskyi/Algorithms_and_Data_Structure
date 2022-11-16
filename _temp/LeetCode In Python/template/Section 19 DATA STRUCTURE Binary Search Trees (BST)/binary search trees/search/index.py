@@ -29,7 +29,7 @@ ___ search(node, key
     __(node __ N..
         print("No node found")
         r_ N..
-    __(node.data == key
+    __(node.data __ key
         print("Node found !")
         r_ node
 

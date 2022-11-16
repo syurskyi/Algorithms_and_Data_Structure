@@ -1,22 +1,22 @@
 c_ Solution:
 
     ___ backtracking ans, m, digits, combination, index
-        __(index > len(digits)):
+        __(index > l..(digits)):
             r_
-        __(len(combination) == len(digits)):
-            ans.append(combination[:])
+        __(l..(combination) __ l..(digits)):
+            ans.a..(combination[:])
             r_
 
         currentDigit _ digits[index]
         curString _ m[currentDigit]
 
-        ___ i __ range(len(curString)):
+        ___ i __ range(l..(curString)):
             backtracking(ans, m, digits, combination +
                               curString[i], index+1)
 
     ___ letterCombinations digits: str) -> List[str]:
-        ans _ []
-        __(len(digits) == 0
+        ans _    # list
+        __(l..(digits) __ 0
             r_ ans
 
         m _ {}

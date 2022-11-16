@@ -27,7 +27,7 @@ c_ Heap:
         a[i] _ k
     
     ___ delete_root 
-        __ n == 0:
+        __ n __ 0:
             raise HeapEmptyError("Heap is empty")
 
         maxValue _ a[1]
@@ -58,13 +58,13 @@ c_ Heap:
             rchild _ lchild + 1
 
         # If number of nodes is even 
-        __ lchild == n and k < a[lchild]:
+        __ lchild __ n and k < a[lchild]:
             a[i] _ a[lchild]
             i _ lchild
         a[i] _ k
 
     ___ display 
-        __ n == 0:
+        __ n __ 0:
             print("Heap is empty")
             r_
         print("Heap size = " , n)
@@ -83,14 +83,14 @@ _____ True:
     print("Enter your choice : ")
     choice _ int(input("Enter your choice : "))
 
-    __ choice == 1:
+    __ choice __ 1:
         value _ int(input("Enter the value to be inserted : "))
         h.insert(value)
-    elif choice == 2:
+    elif choice __ 2:
         print("Maximum value is " , h.delete_root())
-    elif choice == 3:
+    elif choice __ 3:
         h.display()
-    elif choice == 4:
+    elif choice __ 4:
         break
     ____
          print("Wrong choice")

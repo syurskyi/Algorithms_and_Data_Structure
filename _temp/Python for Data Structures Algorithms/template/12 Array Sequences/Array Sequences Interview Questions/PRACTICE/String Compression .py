@@ -17,11 +17,11 @@ Fill out your solution below:
 # %%
 ___ compress(s
     r _ ""
-    l _ len(s)
+    l _ l..(s)
     
-    __ l==0:
+    __ l__0:
         r_ ''
-    __ l==1:
+    __ l__1:
         r_ s+'1'
     
     last _ s[0]
@@ -29,7 +29,7 @@ ___ compress(s
     i_1
     
     _____ i<l:
-        __ s[i]==s[i-1]:
+        __ s[i]__s[i-1]:
             cnt +_ 1
         ____
             r_r+s[i-1]+str(cnt)

@@ -1,8 +1,8 @@
 ___ mergeSort(my_array
-    __ len(my_array) == 1:
+    __ l..(my_array) __ 1:
         r_ my_array
 
-    middle _ len(my_array) // 2
+    middle _ l..(my_array) // 2
     left _ my_array[:middle]
     right _ my_array[middle:]
 
@@ -13,10 +13,10 @@ ___ mergeSort(my_array
 
 
 ___ merge(left_result, right_result
-    result _ [N..] * (len(left_result) + len(right_result))
+    result _ [N..] * (l..(left_result) + l..(right_result))
     i _ j _ k _ 0
 
-    _____ i < len(left_result) and j < len(right_result
+    _____ i < l..(left_result) and j < l..(right_result
         __ left_result[i] <_ right_result[j]:
             result[k] _ left_result[i]
             i +_ 1
@@ -25,12 +25,12 @@ ___ merge(left_result, right_result
             j +_ 1
         k +_ 1
 
-    _____ i < len(left_result
+    _____ i < l..(left_result
         result[k] _ left_result[i]
         i +_ 1
         k +_ 1
 
-    _____ j < len(right_result
+    _____ j < l..(right_result
         result[k] _ right_result[j]
         j +_ 1
         k +_ 1

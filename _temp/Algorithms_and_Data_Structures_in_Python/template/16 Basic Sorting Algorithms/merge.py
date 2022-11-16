@@ -1,10 +1,10 @@
 
 ___ merge_sort(nums
     
-	__ len(nums) == 1:                                  
+	__ l..(nums) __ 1:
 		r_
 		
-	middle_index _ len(nums) // 2
+	middle_index _ l..(nums) // 2
 		
 	left_half _ nums[:middle_index]
 	right_half _ nums[middle_index:]
@@ -16,7 +16,7 @@ ___ merge_sort(nums
 	j _ 0
 	k _ 0
 	
-	_____ i<len(left_half) and j<len(right_half
+	_____ i<l..(left_half) and j<l..(right_half
 		__ left_half[i] < right_half[j]:
 			nums[k] _ left_half[i]
 			i _ i + 1
@@ -26,12 +26,12 @@ ___ merge_sort(nums
 			
 		k _ k + 1
 		
-	_____ i<len(left_half
+	_____ i<l..(left_half
 		nums[k] _ left_half[i]
 		k _ k + 1
 		i _ i + 1		
 	
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
    
    nums _ [-3,-2,-1,1,2,1,0,-1,-2,-3]
    merge_sort(nums)

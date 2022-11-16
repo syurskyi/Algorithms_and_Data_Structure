@@ -10,7 +10,7 @@ c_ Solution:
         __(root __ N..
             r_ False
         cur+_root.val
-        __(cur==sum and root.left __ N.. and root.right __ N..
+        __(cur__sum and root.left __ N.. and root.right __ N..
             r_ True
         r_ (hasSum(root.right,sum,cur) or hasSum(root.left,sum,cur))
     ___ hasPathSum root: TreeNode, sum: int) -> bool:

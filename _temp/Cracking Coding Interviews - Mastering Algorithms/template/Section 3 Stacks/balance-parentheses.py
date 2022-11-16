@@ -25,19 +25,19 @@
 # Output: true
 
 ___ balanced(s
-	stack _ []
+	stack _    # list
 
-	___ i __ range(len(s)):
-		__ s[i] == "(" or s[i] == "{" or s[i] == "[":
-			stack.append(s[i])
-		elif s[i] == ")" and (len(stack) == 0 or stack.pop() !_ "("
+	___ i __ range(l..(s)):
+		__ s[i] __ "(" or s[i] __ "{" or s[i] __ "[":
+			stack.a..(s[i])
+		elif s[i] __ ")" and (l..(stack) __ 0 or stack.pop() !_ "("
 			r_ False
-		elif s[i] == "]" and (len(stack) == 0 or stack.pop() !_ "["
+		elif s[i] __ "]" and (l..(stack) __ 0 or stack.pop() !_ "["
 			r_ False
-		elif s[i] == "}" and (len(stack) == 0 or stack.pop() !_ "{"
+		elif s[i] __ "}" and (l..(stack) __ 0 or stack.pop() !_ "{"
 			r_ False
 
-	r_ len(stack) == 0
+	r_ l..(stack) __ 0
 
 
 

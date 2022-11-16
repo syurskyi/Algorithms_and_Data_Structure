@@ -17,10 +17,10 @@ c_ Stack:
         r_ count
 
     ___ is_empty 
-        r_ count == 0
+        r_ count __ 0
 
     ___ is_full 
-        r_ count == len(items)
+        r_ count __ l..(items)
     
     ___ pushx
         __ is_full(
@@ -49,7 +49,7 @@ c_ Stack:
      
 ##########################################################
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
     st _ Stack(8)
     
@@ -63,19 +63,19 @@ __ __name__ == "__main__":
          
         choice _ int(input("Enter your choice : "))
 
-        __ choice == 1:
+        __ choice __ 1:
             x_int(input("Enter the element to be pushed : "))
             st.push(x) 
-        elif choice == 2:
+        elif choice __ 2:
             x_st.pop()
             print("Popped element is : " , x) 
-        elif choice == 3:
+        elif choice __ 3:
             print("Element at the top is : " , st.peek()) 
-        elif choice == 4:
+        elif choice __ 4:
             print("Size of stack " , st.size()) 
-        elif choice == 5:
+        elif choice __ 5:
             st.display() 
-        elif choice == 6:
+        elif choice __ 6:
           break
         ____
           print("Wrong choice") 

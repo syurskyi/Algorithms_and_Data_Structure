@@ -14,7 +14,7 @@
 # Fill out a sample solution:
 
 ___ rec_sum(n
-    __ n == 0:
+    __ n __ 0:
         r_ 0
     ____
         r_ n + rec_sum(n-1)
@@ -66,12 +66,12 @@ word_split('themanran',['clown','ran','man'])
 #
 ___ word_split(phrase,list_of_words, output _ N..
     __ output __ N..:
-        output _ []
+        output _    # list
 
     ___ word __ list_of_words:
         __ phrase.startswith(word
-            output.append(word)
-            word_split(phrase[len(word], list_of_words, output)
+            output.a..(word)
+            word_split(phrase[l..(word], list_of_words, output)
     r_ output
     pass
 

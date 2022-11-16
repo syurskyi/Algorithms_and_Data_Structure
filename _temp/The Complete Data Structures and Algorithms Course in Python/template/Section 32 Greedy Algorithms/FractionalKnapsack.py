@@ -23,7 +23,7 @@ ___ knapsackMethod(items, capacity
             usedCapacity +_ unusedWeight
             totalValue +_ value
         
-        __ usedCapacity == capacity:
+        __ usedCapacity __ capacity:
             break
     print("Total value obtained: "+str(totalValue))
 

@@ -2,7 +2,7 @@
 # This code is part of DSA course available on CourseGalaxy.com  
 
 ___ quick_sort(a
-    sort(a,0,len(a)-1)
+    sort(a,0,l..(a)-1)
     
 ___ sort(a, low, up
     __ low >_ up: # zero or one element in sublist

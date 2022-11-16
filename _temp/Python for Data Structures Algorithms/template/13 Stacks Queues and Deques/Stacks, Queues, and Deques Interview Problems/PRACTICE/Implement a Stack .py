@@ -15,15 +15,15 @@ It should have the methods:
 c_ Stack o..
     # Fill out the Stack Methods here
     ___ -  
-        items _ []
+        items _    # list
     ___ isEmpty 
-        r_ len(items) == 0
+        r_ l..(items) __ 0
     ___ push e
-        items.append(e)
+        items.a..(e)
     ___ pop 
         r_ items.pop()
     ___ size 
-        r_ len(items)
+        r_ l..(items)
     ___ peek 
         r_ items[size()-1] # reuse the size funtion
     pass

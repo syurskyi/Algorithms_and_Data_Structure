@@ -1,8 +1,8 @@
 ___ selectionSort(arr
-    ___ i __ range(len(arr)):
+    ___ i __ range(l..(arr)):
         min_x _ i
 
-        ___ item __ range(i + 1, len(arr)):
+        ___ item __ range(i + 1, l..(arr)):
             __ arr[item] < arr[min_x]:
                 min_x _ item
 

@@ -27,11 +27,11 @@ ___ is_valid(expr
         r_ False 
 	  	    
 ___ match_parentheses(left_par, right_par
-    __  left_par == '[' and right_par == ']':
+    __  left_par __ '[' and right_par __ ']':
         r_ True 
-    __  left_par == '{' and right_par == '}':
+    __  left_par __ '{' and right_par __ '}':
         r_ True 
-    __  left_par == '(' and right_par == ')':
+    __  left_par __ '(' and right_par __ ')':
         r_ True 
     r_ False 
 
@@ -42,7 +42,7 @@ _____ True:
     print("Enter an expression with parentheses (q to quit) : ", end _ ' ')
     expression _ input()
 
-    __ expression == "q":
+    __ expression __ "q":
         break
 
     __ is_valid(expression

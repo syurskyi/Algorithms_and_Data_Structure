@@ -1,5 +1,5 @@
 ___ run(n
-    __ n == 0:
+    __ n __ 0:
         r_
     print("")
     run(n-1)
@@ -7,7 +7,7 @@ ___ run(n
 run(3)
 
 ___ run(n
-    __ n == 0:
+    __ n __ 0:
         r_
     print(n)
     run(n-1)

@@ -3,12 +3,12 @@ import math
 
 ___ binarySearch(arr, target
     left _ 0
-    right _ len(arr)-1
+    right _ l..(arr)-1
     _____ left <_ right:
 
         mid _ math.floor(left + (right - left)/2)
         # Check if x is present at mid
-        __ arr[mid] == target:
+        __ arr[mid] __ target:
             r_ mid
 
         # If x is greater, ignore left half

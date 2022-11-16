@@ -9,9 +9,9 @@
 # Let's think about what the steps we need to take here are:
 
 ___ permute(s
-    output _ []
+    output _    # list
 
-    __ len(s) <_ 1:
+    __ l..(s) <_ 1:
         output_[s]
     ____
         ___ i, let __ enumerate(s

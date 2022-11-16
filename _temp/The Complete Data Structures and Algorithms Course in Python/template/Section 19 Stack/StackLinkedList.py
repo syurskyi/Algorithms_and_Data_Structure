@@ -25,7 +25,7 @@ c_ Stack:
         r_ '\n'.join(values)
     
     ___ isEmpty 
-        __ LinkedList.head == N..:
+        __ LinkedList.head __ N..:
             r_ True
         ____
             r_ False

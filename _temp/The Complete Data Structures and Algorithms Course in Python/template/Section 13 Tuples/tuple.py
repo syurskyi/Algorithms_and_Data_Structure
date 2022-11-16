@@ -19,7 +19,7 @@ ___ i __ newTuple:
     print(i)
 
 
-___ index __ range(len(newTuple)):
+___ index __ range(l..(newTuple)):
     print(newTuple[index])
 
 
@@ -29,7 +29,7 @@ print('a' __ newTuple)
 
 ___ searchInTuple(pTuple, element
     ___ i __ pTuple:
-        __ i == element:
+        __ i __ element:
             r_ pTuple.index(i)
     r_ 'The element does not exist'
 

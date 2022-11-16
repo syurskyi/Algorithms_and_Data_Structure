@@ -2,7 +2,7 @@
 ___ findmissingnumberusingxor(myarray
         print "Given Array:", myarray
         #print "Len of the Array:", len(myarray)
-	arraylen _ len(myarray)
+	arraylen _ l..(myarray)
 	xorval _ 0
         #print "In the First loop"
 	___ i __ range(1, arraylen + 2

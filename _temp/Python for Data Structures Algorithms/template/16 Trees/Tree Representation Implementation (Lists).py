@@ -4,22 +4,22 @@
 # a live coding demonstration!
 
 ___ BinaryTree(r
-    r_ [r, [], []]
+    r_ [r,    # list, []]
 
 ___ insertLeft(root,newBranch
     t _ root.pop(1)
-    __ len(t) > 1:
+    __ l..(t) > 1:
         root.insert(1,[newBranch,t,[]])
     ____
-        root.insert(1,[newBranch, [], []])
+        root.insert(1,[newBranch,    # list, []])
     r_ root
 
 ___ insertRight(root,newBranch
     t _ root.pop(2)
-    __ len(t) > 1:
-        root.insert(2,[newBranch,[],t])
+    __ l..(t) > 1:
+        root.insert(2,[newBranch,   # list,t])
     ____
-        root.insert(2,[newBranch,[],[]])
+        root.insert(2,[newBranch,   # list,[]])
     r_ root
 
 ___ getRootVal(root

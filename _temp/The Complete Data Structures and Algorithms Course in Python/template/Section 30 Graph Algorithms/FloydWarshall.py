@@ -8,7 +8,7 @@ INF _ 9999
 ___ printSolution(nV, distance
     ___ i __ range(nV
         ___ j __ range(nV
-            __(distance[i][j] == INF
+            __(distance[i][j] __ INF
                 print("INF", end_" ")
             ____
                 print(distance[i][j], end_"  ")

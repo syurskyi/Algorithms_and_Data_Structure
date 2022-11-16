@@ -17,7 +17,7 @@ ___ element __ array:
 
 ######  Logarithmic time complexity  #######
 print('######  Logarithmic time complexity  #######')
-___ index __ range(0,len(array),3
+___ index __ range(0,l..(array),3
      print(array[index])
 
 
@@ -56,7 +56,7 @@ sample1Array _ [1,10,45,33,23,45,67,2,3,33,55,11,65,76,34,35,27,99]
 
 ___ findBiggestNumber(sampleArray
     biggestNumber _ sampleArray[0]
-    ___ index __ range(1,len(sampleArray)):
+    ___ index __ range(1,l..(sampleArray)):
         __ sampleArray[index] > biggestNumber:
             biggestNumber _ sampleArray[index]
     print(biggestNumber)
@@ -66,11 +66,11 @@ findBiggestNumber(sample1Array)
 ######  Recursive algorithm - finding the biggest number in the array ####### 
 
 ___ findMaxNumRec(sampleArray, n
-    __ n == 1:
+    __ n __ 1:
        r_ sampleArray[0]
     r_ max(sampleArray[n-1],findMaxNumRec(sampleArray,n-1))
 
-print(findMaxNumRec(sample1Array,len(sample1Array)))
+print(findMaxNumRec(sample1Array,l..(sample1Array)))
 
 
 ######  Recursive algorithm multiple calls ####### 

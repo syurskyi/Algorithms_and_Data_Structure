@@ -14,7 +14,7 @@
 
 ___ large_cont_sum(arr
     # Check to see if array is length 0
-    __ len(arr) == 0:
+    __ l..(arr) __ 0:
         r_ 0
 
     # Start the max and current sum at the first element

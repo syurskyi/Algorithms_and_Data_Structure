@@ -7,8 +7,8 @@ Use a Python list data structure as your Stack.
 
 # %%
 # Uses lists instead of your own Stack class.
-stack1 _ []
-stack2 _ []
+stack1 _    # list
+stack2 _    # list
 
 # %%
 '''
@@ -23,8 +23,8 @@ c_ Queue2Stacks o..
     ___ -  
         
         # Two Stacks
-        stack1 _ []
-        stack2 _ []
+        stack1 _    # list
+        stack2 _    # list
      
     ___ enqueueelement
         

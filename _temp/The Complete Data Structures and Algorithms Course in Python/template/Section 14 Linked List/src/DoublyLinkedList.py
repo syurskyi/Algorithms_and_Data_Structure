@@ -36,12 +36,12 @@ c_ DoublyLinkedList:
             print("The node cannot be inserted")
         ____
             newNode _ Node(nodeValue)
-            __ location == 0:
+            __ location __ 0:
                 newNode.prev _ N..
                 newNode.next _ head
                 head.prev _ newNode
                 head _ newNode
-            elif location == 1:
+            elif location __ 1:
                 newNode.next _ N..
                 newNode.prev _ tail
                 tail.next _ newNode
@@ -84,7 +84,7 @@ c_ DoublyLinkedList:
         ____
             tempNode _ head
             _____ tempNode:
-                __ tempNode.value == nodeValue:
+                __ tempNode.value __ nodeValue:
                     r_ tempNode.value
                 tempNode _ tempNode.next
             r_ "The node does not exist in this list"
@@ -94,15 +94,15 @@ c_ DoublyLinkedList:
         __ head __ N..:
             print("There is not any element in DLL")
         ____
-            __ location == 0:
-                __ head == tail:
+            __ location __ 0:
+                __ head __ tail:
                     head _ N..
                     tail _ N..
                 ____
                     head _ head.next
                     head.prev _ N..
-            elif location == 1:
-                __ head == tail:
+            elif location __ 1:
+                __ head __ tail:
                     head _ N..
                     tail _ N..
                 ____

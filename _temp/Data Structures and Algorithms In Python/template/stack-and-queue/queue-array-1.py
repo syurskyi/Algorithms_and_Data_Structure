@@ -7,17 +7,17 @@ c_ EmptyQueueError(Exception
 c_ Queue:
     
     ___ -  
-        items _ []
+        items _    # list
         front _ 0
       
     ___ is_empty 
-        r_ front == len(items)
+        r_ front __ l..(items)
     
     ___ size 
-        r_ len(items)-front
+        r_ l..(items)-front
         
     ___ enqueue item
-        items.append(item)
+        items.a..(item)
         
     ___ dequeue 
         __ is_empty(
@@ -39,7 +39,7 @@ c_ Queue:
                      
 ###########################################################
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     qu _ Queue()
 
     _____ True:
@@ -52,19 +52,19 @@ __ __name__ == "__main__":
          
         choice _ int(input("Enter your choice : "))
 
-        __ choice == 1:
+        __ choice __ 1:
             x_int(input("Enter the element : "))
             qu.enqueue(x) 
-        elif choice == 2:
+        elif choice __ 2:
             x_qu.dequeue()
             print("Element deleted from the queue is : " , x) 
-        elif choice == 3:
+        elif choice __ 3:
             print("Element at the front end is " , qu.peek()) 
-        elif choice == 4:
+        elif choice __ 4:
             print("Size of queue ", qu.size()) 
-        elif choice == 5:
+        elif choice __ 5:
             qu.display() 
-        elif choice == 6:
+        elif choice __ 6:
           break;
         ____
           print("Wrong choice") 

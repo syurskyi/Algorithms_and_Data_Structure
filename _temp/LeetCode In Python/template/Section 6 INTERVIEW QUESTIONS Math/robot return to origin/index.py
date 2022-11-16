@@ -5,12 +5,12 @@ c_ Solution:
         y _ 0
 
         ___ move __ moves:
-            __(move=='U'
+            __(move__'U'
                 y+_1
-            elif(move=='R'
+            elif(move__'R'
                 x+_1
-            elif(move=='D'
+            elif(move__'D'
                 y-_1
-            elif(move=='L'
+            elif(move__'L'
                 x-_1
-        r_ x==0 and y==0
+        r_ x__0 and y__0

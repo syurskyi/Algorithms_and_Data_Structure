@@ -4,7 +4,7 @@
 ___ shell_sort(a
     h _ int(input("Enter maximum increment(odd value) : "))
     _____ h>_1:
-        ___ i __ range(h,len(a)):  
+        ___ i __ range(h,l..(a)):  
             temp _ a[i]
             j_i-h
             _____ j >_ 0 and a[j] > temp:

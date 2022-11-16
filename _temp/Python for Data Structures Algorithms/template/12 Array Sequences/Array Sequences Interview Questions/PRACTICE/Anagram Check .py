@@ -24,7 +24,7 @@ ___ anagram(s, t
     s_s.replace(' ','').lower()
     t_t.replace(' ','').lower()
     
-    __(len(s)!_len(t)):
+    __(l..(s)!_len(t)):
         r_ False
     counter _ {}
     ___ letter __ s:

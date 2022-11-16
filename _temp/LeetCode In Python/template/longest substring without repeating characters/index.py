@@ -4,7 +4,7 @@ c_ Solution:
         left _ 0
         right _ 0
         ans _ 0
-        n _ len(s)
+        n _ l..(s)
         _____(left<n and right<n
             el _ s[right]
             __(el __ m

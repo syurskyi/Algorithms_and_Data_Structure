@@ -8,7 +8,7 @@ ___ findGreater(linkedList
         currentNode _ linkedList.head
         currentPosition _ 0
         _____ True:
-            __ currentPosition == middlePosition:
+            __ currentPosition __ middlePosition:
                 __ currentNode.previous.data > currentNode.next.data:
                     print("Previous node has a greater value than next node")
                 ____

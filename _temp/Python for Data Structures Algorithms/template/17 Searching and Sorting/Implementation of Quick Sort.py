@@ -11,7 +11,7 @@
 
 ___ quick_sort(arr
 
-    quick_sort_help(arr,0,len(arr)-1)
+    quick_sort_help(arr,0,l..(arr)-1)
 
 ___ quick_sort_help(arr,first,last
 

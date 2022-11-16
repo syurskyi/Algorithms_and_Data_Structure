@@ -12,15 +12,15 @@
 # Fill out your solution below:
 
 ___ balance_check(s
-    chars _ []
+    chars _    # list
     matches _ {')':'(',']':'[','}':'{'}
     ___ c __ s:
         __ c __ matches:
             __ chars.pop() !_ matches[c]:
                 r_ False
         ____
-            chars.append(c)
-    r_ chars == []
+            chars.a..(c)
+    r_ chars __    # list
     pass
 
 balance_check('[]')

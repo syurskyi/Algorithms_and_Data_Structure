@@ -4,14 +4,14 @@
 # someRecursive Solution
 
 ___ someRecursive(arr, cb
-    __ len(arr) == 0:
+    __ l..(arr) __ 0:
         r_ False
     __ n..(cb(arr[0])):
         r_ someRecursive(arr[1:], cb)
     r_ True
 
 ___ isOdd(num
-    __ num%2==0:
+    __ num%2__0:
         r_ False
     ____
         r_ True

@@ -63,7 +63,7 @@ ___ searchBT(rootNode, nodeValue
         customQueue.enqueue(rootNode)
         _____ n..(customQueue.isEmpty()):
             root _ customQueue.dequeue()
-            __ root.value.data == nodeValue:
+            __ root.value.data __ nodeValue:
                 r_ "Success"
             __ (root.value.leftChild __ n.. N..
                 customQueue.enqueue(root.value.leftChild)
@@ -139,7 +139,7 @@ ___ deleteNodeBT(rootNode, node
         customQueue.enqueue(rootNode)
         _____ n..(customQueue.isEmpty()):
             root _ customQueue.dequeue()
-            __ root.value.data == node:
+            __ root.value.data __ node:
                 dNode _ getDeepestNode(rootNode)
                 root.value.data _ dNode.data
                 deleteDeepestNode(rootNode, dNode)

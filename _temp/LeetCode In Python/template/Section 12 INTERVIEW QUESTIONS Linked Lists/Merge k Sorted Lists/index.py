@@ -32,11 +32,11 @@ c_ Solution:
         r_ ans.next
 
     ___ mergeKLists lists: List[ListNode]) -> ListNode:
-        __(len(lists) == 0
+        __(l..(lists) __ 0
             r_ N..
 
         i _ 0
-        last _ len(lists)-1
+        last _ l..(lists)-1
         j _ last
 
         _____(last !_ 0

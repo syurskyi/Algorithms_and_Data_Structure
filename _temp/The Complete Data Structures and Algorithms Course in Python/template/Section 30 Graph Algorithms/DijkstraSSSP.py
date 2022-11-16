@@ -13,7 +13,7 @@ c_ Graph:
         nodes.add(value)
     
     ___ addEdge fromNode, toNode, distance
-        edges[fromNode].append(toNode)
+        edges[fromNode].a..(toNode)
         distances[(fromNode, toNode)] _ distance
 
 
@@ -41,7 +41,7 @@ ___ dijkstra(graph, initial
             weight _ currentWeight + graph.distances[(minNode, edge)]
             __ edge n.. __ visited or weight < visited[edge]:
                 visited[edge] _ weight
-                path[edge].append(minNode)
+                path[edge].a..(minNode)
     
     r_ visited, path
 

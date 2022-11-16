@@ -12,7 +12,7 @@ c_ BinarySearchTree:
         root _ N..
     
     ___ is_empty
-        r_ root == N..
+        r_ root __ N..
            
     ___ insertx
         root _ _insert(root, x)

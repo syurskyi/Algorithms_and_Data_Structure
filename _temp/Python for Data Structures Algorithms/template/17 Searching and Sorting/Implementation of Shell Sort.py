@@ -11,7 +11,7 @@
 #     Sorting Algorithms Animcation with Pseudocode
 
 ___ shell_sort(arr
-    sublistcount _ len(arr)/2
+    sublistcount _ l..(arr)/2
 
     # While we still have sub lists
     _____ sublistcount > 0:
@@ -24,7 +24,7 @@ ___ shell_sort(arr
         sublistcount _ sublistcount / 2
 
 ___ gap_insertion_sort(arr,start,gap
-    ___ i __ range(start+gap,len(arr),gap
+    ___ i __ range(start+gap,l..(arr),gap
 
         currentvalue _ arr[i]
         position _ i

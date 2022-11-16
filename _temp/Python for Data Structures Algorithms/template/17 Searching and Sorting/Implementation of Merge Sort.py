@@ -8,8 +8,8 @@
 
 ___ merge_sort(arr
 
-    __ len(arr)>1:
-        mid _ len(arr)/2
+    __ l..(arr)>1:
+        mid _ l..(arr)/2
         lefthalf _ arr[:mid]
         righthalf _ arr[mid:]
 
@@ -19,7 +19,7 @@ ___ merge_sort(arr
         i_0
         j_0
         k_0
-        _____ i < len(lefthalf) and j < len(righthalf
+        _____ i < l..(lefthalf) and j < l..(righthalf
             __ lefthalf[i] < righthalf[j]:
                 arr[k]_lefthalf[i]
                 i_i+1
@@ -28,12 +28,12 @@ ___ merge_sort(arr
                 j_j+1
             k_k+1
 
-        _____ i < len(lefthalf
+        _____ i < l..(lefthalf
             arr[k]_lefthalf[i]
             i_i+1
             k_k+1
 
-        _____ j < len(righthalf
+        _____ j < l..(righthalf
             arr[k]_righthalf[j]
             j_j+1
             k_k+1

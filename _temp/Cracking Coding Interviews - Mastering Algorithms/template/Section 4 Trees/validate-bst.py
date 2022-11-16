@@ -30,7 +30,7 @@ root1 _ Node(2, Node(1), Node(3))
 root2 _ Node(5, Node(1), Node(4, Node(3), Node(6)))
 
 ___ is_valid_bst_helper(root, low, high
-	__ root == N..:
+	__ root __ N..:
 		r_ True
 	elif high !_ N.. and root.val >_ high or low !_ N.. and root.val <_ low:
 		r_ False

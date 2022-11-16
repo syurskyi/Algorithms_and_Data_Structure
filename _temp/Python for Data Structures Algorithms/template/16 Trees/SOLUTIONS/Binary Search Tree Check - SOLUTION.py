@@ -7,16 +7,16 @@
 # to sorted order of the values in the tree. So, we can perform an inorder traversal and check whether the node values
 # are sorted or not.
 
-tree_vals _ []
+tree_vals _    # list
 
 ___ inorder(tree
     __ tree !_ N..:
         inorder(tree.getLeftChild())
-        tree_vals.append(tree.getRootVal())
+        tree_vals.a..(tree.getRootVal())
         inorder(tree.getRightChild())
 
 ___ sort_check(tree_vals
-    r_ tree_vals == sorted(tree_vals)
+    r_ tree_vals __ sorted(tree_vals)
 
 inorder(tree)
 sort_check(tree_vals)

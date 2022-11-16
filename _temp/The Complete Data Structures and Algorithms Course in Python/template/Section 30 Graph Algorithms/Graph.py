@@ -8,7 +8,7 @@ c_ Graph:
         gdict _ gdict
     
     ___ addEdge vertex, edge
-        gdict[vertex].append(edge)
+        gdict[vertex].a..(edge)
     
     ___ bfs vertex
         visited _ [vertex]
@@ -18,8 +18,8 @@ c_ Graph:
             print(deVertex)
             ___ adjacentVertex __ gdict[deVertex]:
                 __ adjacentVertex n.. __ visited:
-                    visited.append(adjacentVertex)
-                    queue.append(adjacentVertex)
+                    visited.a..(adjacentVertex)
+                    queue.a..(adjacentVertex)
     
     ___ dfs vertex
         visited _ [vertex]
@@ -29,8 +29,8 @@ c_ Graph:
             print(popVertex)
             ___ adjacentVertex __ gdict[popVertex]:
                 __ adjacentVertex n.. __ visited:
-                    visited.append(adjacentVertex)
-                    stack.append(adjacentVertex)
+                    visited.a..(adjacentVertex)
+                    stack.a..(adjacentVertex)
     
 
 

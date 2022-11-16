@@ -4,7 +4,7 @@ c_ Solution:
         ___ num __ nums:
             m[num] _ m.get(num,0)+1
         ___ num __ nums:
-            __(m[num]>len(nums)//2
+            __(m[num]>l..(nums)//2
                 r_ num
         
                 

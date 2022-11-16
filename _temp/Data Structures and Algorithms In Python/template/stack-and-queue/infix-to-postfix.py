@@ -9,12 +9,12 @@ ___ infix_to_postfix(infix
     st _ Stack()
 
     ___ symbol __ infix:
-        __ symbol == ' ' or symbol == '\t': #ignore blanks and tabs
+        __ symbol __ ' ' or symbol __ '\t': #ignore blanks and tabs
             continue
 
-        __ symbol == '(':
+        __ symbol __ '(':
             st.push(symbol)
-        elif symbol == ')':
+        elif symbol __ ')':
             next _ st.pop()
             _____ next !_ '(':
                 postfix _ postfix + next
@@ -31,13 +31,13 @@ ___ infix_to_postfix(infix
     r_ postfix
 
 ___ precedence(symbol
-    __ symbol == '(':
+    __ symbol __ '(':
         r_ 0
     elif symbol __ '+-':
         r_ 1
     elif symbol __ '*/%':
         r_ 2
-    elif symbol == '^':
+    elif symbol __ '^':
         r_ 3
     ____
         r_ 0
@@ -52,17 +52,17 @@ ___ evaluate_postfix(postfix
             x _ st.pop()
             y _ st.pop()
 
-            __ symbol == '+':
+            __ symbol __ '+':
                 st.push(y + x)
-            elif symbol == '-':
+            elif symbol __ '-':
                 st.push(y - x)
-            elif symbol == '*':
+            elif symbol __ '*':
                 st.push(y * x)
-            elif symbol == '/':
+            elif symbol __ '/':
                 st.push (y / x)
-            elif symbol == '%':
+            elif symbol __ '%':
                 st.push(y % x)
-            elif symbol == '^':
+            elif symbol __ '^':
                 st.push(y ** x)
             
     r_ st.pop()
@@ -73,7 +73,7 @@ _____ True:
     print("Enter infix expression (q to quit) : ", end _ '')
 
     expression _ input()
-    __ expression == 'q':
+    __ expression __ 'q':
         break
     
     postfix _ infix_to_postfix(expression)

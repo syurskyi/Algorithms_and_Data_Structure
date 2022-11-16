@@ -2,7 +2,7 @@ c_ Solution:
     ___ twoSum nums, target
         store _ {}
 
-        ___ i __ range(len(nums)):
+        ___ i __ range(l..(nums)):
             __ nums[i] __ store:
                 r_ [store[nums[i]], i]
             ____

@@ -28,9 +28,9 @@ c_ Node:
 # => False
 
 ___ sym_tree_helper(root1, root2
-	__ root1 == N.. and root2 == N..:
+	__ root1 __ N.. and root2 __ N..:
 		r_ True
-	elif root1 == N.. or root2 == N..:
+	elif root1 __ N.. or root2 __ N..:
 		r_ False
 	elif root1.val !_ root2.val:
 		r_ False
@@ -38,7 +38,7 @@ ___ sym_tree_helper(root1, root2
 	r_ sym_tree_helper(root1.right, root2.left) and sym_tree_helper(root1.left, root2.right)
 
 ___ sym_tree(root
-	__ root == N..:
+	__ root __ N..:
 		r_ True
 
 	r_ sym_tree_helper(root.left, root.right)

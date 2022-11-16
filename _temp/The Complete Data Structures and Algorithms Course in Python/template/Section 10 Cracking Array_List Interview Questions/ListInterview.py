@@ -16,9 +16,9 @@ ___ findMissing(list, n
 
 # Question 2
 ___ findPairs(list, sum
-    ___ i __ range(len(list)):
-        ___ j __ range(i+1,len(list)):
-            __ (list[i]+list[j]) == sum:
+    ___ i __ range(l..(list)):
+        ___ j __ range(i+1,l..(list)):
+            __ (list[i]+list[j]) __ sum:
                 print(list[i],list[j])
 # findPairs(mylist, 100)
 
@@ -28,8 +28,8 @@ import numpy as np
 myArray _ np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20])
 
 ___ findNumber(array, number
-    ___ i __ range(len(array)):
-        __ array[i] == number:
+    ___ i __ range(l..(array)):
+        __ array[i] __ number:
             print(i)
 
 findNumber(myArray, 12)
@@ -38,8 +38,8 @@ findNumber(myArray, 12)
 
 ___ findMaxProduct(array
     maxProduct _ 0
-    ___ i __ range(len(array)):
-        ___ j __ range(i+1,len(array)):
+    ___ i __ range(l..(array)):
+        ___ j __ range(i+1,l..(array)):
             __ array[i]*array[j] > maxProduct:
                 maxProduct _ array[i]*array[j]
                 pairs _ str(array[i])+ "," + str(array[j])
@@ -52,13 +52,13 @@ findMaxProduct(myArray)
 
 #Question 5 - isqunieuq
 ___ isUnique(list
-  a_[]
+  a_   # list
   ___ i __ list:
     __ i __ a:
         print(i)
         r_ False
     ____
-        a.append(i)
+        a.a..(i)
   r_ True
 
 print(isUnique(myList))
@@ -70,7 +70,7 @@ print(isUnique(myList))
 ___ permuntation(list1, list2
     print(list1)
     print(list2.reverse())
-    __ list1 == list2:   # if list1 == list2.reverse() -- false
+    __ list1 __ list2:   # if list1 == list2.reverse() -- false
         r_ True
     ____
         r_ False
@@ -82,7 +82,7 @@ ___ permuntation(list1, list2
 
 ___ rotate_matrix(matrix
     '''rotates a matrix 90 degrees clockwise'''
-    n _ len(matrix)
+    n _ l..(matrix)
     ___ layer __ range(n // 2
         first, last _ layer, n - layer - 1
         ___ i __ range(first, last

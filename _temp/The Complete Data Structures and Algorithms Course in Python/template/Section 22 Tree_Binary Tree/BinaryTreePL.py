@@ -8,15 +8,15 @@ c_ BinaryTree:
         maxSize _ size
     
     ___ insertNode value
-        __ lastUsedIndex + 1 == maxSize:
+        __ lastUsedIndex + 1 __ maxSize:
             r_ "The Binary Tree is full"
         customList[lastUsedIndex+1] _ value
         lastUsedIndex +_ 1
         r_ "The value has been successfully inserted"
 
     ___ searchNode nodeValue
-        ___ i __ range(len(customList)):
-            __ customList[i] == nodeValue:
+        ___ i __ range(l..(customList)):
+            __ customList[i] __ nodeValue:
                 r_ "Success"
         r_ "Not found"
     
@@ -46,10 +46,10 @@ c_ BinaryTree:
             print(customList[i])
     
     ___ deleteNode value
-        __ lastUsedIndex == 0:
+        __ lastUsedIndex __ 0:
             r_ "There is not any node to delete"
         ___ i __ range(1, lastUsedIndex+1
-            __ customList[i] == value:
+            __ customList[i] __ value:
                 customList[i] _ customList[lastUsedIndex]
                 customList[lastUsedIndex] _ N..
                 lastUsedIndex -_ 1

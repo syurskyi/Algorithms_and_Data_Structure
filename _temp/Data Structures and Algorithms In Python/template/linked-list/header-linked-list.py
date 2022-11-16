@@ -13,7 +13,7 @@ c_ HeaderLinkedList o..
         head _ Node(0)
 
     ___ display_list
-        __ head.link == N..:
+        __ head.link __ N..:
             print("List is empty")
             r_
 
@@ -48,7 +48,7 @@ c_ HeaderLinkedList o..
         # Find pointer to predecessor of node containing x
         p _ head
         _____  p.link __ n.. N..:
-            __ p.link.info == x:
+            __ p.link.info __ x:
                 break
             p _ p.link
             
@@ -76,11 +76,11 @@ c_ HeaderLinkedList o..
     ___ delete_nodedata
         p _ head
         _____ p.link __ n.. N..:
-            __ p.link.info == data:
+            __ p.link.info __ data:
                 break
             p _ p.link
         
-        __ p.link == N..:
+        __ p.link __ N..:
             print(data + "Element %d not found")
         ____
             p.link _ p.link.link
@@ -111,25 +111,25 @@ _____ True:
         
     option _ int(input("Enter your choice : " ))
 
-    __ option == 1:
+    __ option __ 1:
         list.display_list()
-    elif option == 2:
+    elif option __ 2:
         data _ int(input("Enter the element to be inserted : "))
         list.insert_at_end(data)
-    elif option == 3:
+    elif option __ 3:
         data _ int(input("Enter the element to be inserted : "))
         x _ int(input("Enter the element before which to insert : "))
         list.insert_before(data,x)
-    elif option == 4:
+    elif option __ 4:
         data _ int(input("Enter the element to be inserted : "))
         k _ int(input("Enter the position at which to insert : "))
         list.insert_at_position(data,k)
-    elif option == 5:
+    elif option __ 5:
         data _ int(input("Enter the element to be deleted : "))
         list.delete_node(data)             
-    elif option == 6:
+    elif option __ 6:
         list.reverse_list()
-    elif option == 7:
+    elif option __ 7:
         break
     ____
         print("Wrong option") 

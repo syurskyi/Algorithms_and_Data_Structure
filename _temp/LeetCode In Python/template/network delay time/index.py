@@ -4,7 +4,7 @@ c_ Solution:
 
         g _ collections.defaultdict(list)
         ___ u, v, cost __ times:
-            g[u].append((cost, v))
+            g[u].a..((cost, v))
 
         # cost,node
         min_heap _ [(0, K)]
@@ -17,7 +17,7 @@ c_ Solution:
             __ u __ visited:
                 continue
             visited.add(u)
-            __ len(visited) == N:
+            __ l..(visited) __ N:
                 r_ cur_dist
 
             ___ direct_distance, v __ g[u]:

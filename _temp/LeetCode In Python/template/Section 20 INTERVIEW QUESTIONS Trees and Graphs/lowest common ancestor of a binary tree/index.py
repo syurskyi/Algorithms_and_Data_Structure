@@ -9,7 +9,7 @@ c_ Solution:
     ___ lowestCommonAncestor root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
         __(root __ N..
             r_ N..
-        __(root.val==p.val or root.val==q.val
+        __(root.val__p.val or root.val__q.val
             r_ root
         
         left _ lowestCommonAncestor(root.left,p,q)

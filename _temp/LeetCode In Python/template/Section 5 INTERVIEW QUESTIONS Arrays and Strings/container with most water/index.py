@@ -2,7 +2,7 @@ c_ Solution:
     ___ maxArea height: List[int]) -> int:
 		maxarea _ 0
 		l _ 0
-		r _ len(height)-1
+		r _ l..(height)-1
 
 		_____(l<r
 			maxarea _ max(maxarea, min(height[l],height[r])*(r-l))

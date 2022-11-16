@@ -1,19 +1,19 @@
 c_ PlateStack:
 
     ___ -  
-        st _ []
+        st _    # list
 
     ___ push x: int) -> N..:
-        st.append(x)
+        st.a..(x)
 
     ___ pop ) -> N..:
-        __(len(st) > 0
+        __(l..(st) > 0
             st.pop()
 
     ___ top ) -> int:
-        __(len(st) == 0
+        __(l..(st) __ 0
             r_ N..
         r_ st[-1]
 
     ___ getLen ) -> int:
-      r_ len(st)
+      r_ l..(st)

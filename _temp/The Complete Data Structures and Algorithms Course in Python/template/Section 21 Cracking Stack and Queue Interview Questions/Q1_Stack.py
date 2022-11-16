@@ -11,13 +11,13 @@ c_ MultiStack:
         stacksize _ stacksize
     
     ___ isFull stacknum
-        __ sizes[stacknum] == stacksize:
+        __ sizes[stacknum] __ stacksize:
             r_ True
         ____
             r_ False
     
     ___ isEmpty stacknum
-        __ sizes[stacknum] == 0:
+        __ sizes[stacknum] __ 0:
             r_ True
         ____
             r_ False

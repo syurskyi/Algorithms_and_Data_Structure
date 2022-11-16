@@ -3,12 +3,12 @@
 
 # flatten Solution
 ___ flatten(arr
-    resultArr _ []
+    resultArr _    # list
     ___ custItem __ arr:
         __ type(custItem) __ list:
             resultArr.extend(flatten(custItem))
         ____ 
-            resultArr.append(custItem)
+            resultArr.a..(custItem)
     r_ resultArr 
 
 

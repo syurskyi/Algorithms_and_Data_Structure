@@ -38,7 +38,7 @@ ___ retsore_down(i, a, n
              
 
     # If number of nodes is even
-    __ lchild == n and k < a[lchild]:
+    __ lchild __ n and k < a[lchild]:
         a[i] _ a[lchild]
         i _ lchild
     a[i] _ k

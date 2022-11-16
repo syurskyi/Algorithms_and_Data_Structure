@@ -31,32 +31,32 @@ c_ Node:
 		path _ path
 
 ___ ladder(begin, end, word_list
-	queue _ []
+	queue _    # list
 
 	words _ set(word_list)
 
-	queue.append(Node(begin, [begin]))
+	queue.a..(Node(begin, [begin]))
 
-	_____ len(queue) > 0:
+	_____ l..(queue) > 0:
 		cur _ queue.pop(0)
 
 		cur_word _ cur.word
 		path _ cur.path
 
-		__ cur_word == end:
+		__ cur_word __ end:
 			r_ path
 
-		___ i __ range(len(cur_word)):
+		___ i __ range(l..(cur_word)):
 			___ c __ ascii_lowercase:
 				potential_word _ cur_word[:i] + c + cur_word[i+1:]
 
 				__ potential_word __ words:
 					copy_path _ copy.deepcopy(path)
-					copy_path.append(potential_word)
-					queue.append(Node(potential_word, copy_path))
+					copy_path.a..(potential_word)
+					queue.a..(Node(potential_word, copy_path))
 					words.remove(potential_word)
 
-	r_ []
+	r_    # list
 
 print(ladder("hit", "cog", ["hot","dot","dog","lot","log","cog"]))
 print(ladder("hit", "cog", ["hot","dot","dog","lot","log"]))

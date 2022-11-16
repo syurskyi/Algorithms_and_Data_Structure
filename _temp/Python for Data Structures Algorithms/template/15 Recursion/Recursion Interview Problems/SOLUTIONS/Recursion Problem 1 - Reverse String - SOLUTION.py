@@ -11,7 +11,7 @@
 ___ reverse(s
 
     # Base Case
-    __ len(s) <_ 1:
+    __ l..(s) <_ 1:
         r_ s
 
     # Recursion

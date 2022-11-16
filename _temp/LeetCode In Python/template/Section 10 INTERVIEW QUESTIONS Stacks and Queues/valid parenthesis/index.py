@@ -1,20 +1,20 @@
 c_ Solution:
     ___ isEqual c1, c2) -> bool:
-        __(c1 == '(' and c2 == ')'
+        __(c1 __ '(' and c2 __ ')'
             r_ True
-        __(c1 == '[' and c2 == ']'
+        __(c1 __ '[' and c2 __ ']'
             r_ True
-        __(c1 == '{' and c2 == '}'
+        __(c1 __ '{' and c2 __ '}'
             r_ True
         r_ False
 
     ___ isValid s: str) -> bool:
-        st _ []
+        st _    # list
         ___ character __ s:
-            __(len(st) !_ 0
+            __(l..(st) !_ 0
                 li _ st[-1]
                 __(isEqual(li, character)):
                     st.pop()
                     continue
-            st.append(characrer)
-        r_ len(st) == 0
+            st.a..(characrer)
+        r_ l..(st) __ 0

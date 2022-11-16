@@ -5,7 +5,7 @@ ___ reverse_slicing(s
 
 input_str _ 'ABç∂EF'
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     print('Reverse String using slicing =', reverse_slicing(input_str))
 
 
@@ -19,7 +19,7 @@ ___ reverse_for_loop(s
 
 input_str _ 'ABç∂EF'
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     print('Reverse String using for loop =', reverse_for_loop(input_str))
 
 
@@ -27,7 +27,7 @@ __ __name__ == "__main__":
 
 ___ reverse_while_loop(s
     s1 _ ''
-    length _ len(s) - 1
+    length _ l..(s) - 1
     _____ length >_ 0:
         s1 _ s1 + s[length]
         length _ length - 1
@@ -35,7 +35,7 @@ ___ reverse_while_loop(s
 
 input_str _ 'ABç∂EF'
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     print('Reverse String using while loop =', reverse_while_loop(input_str))
 
 
@@ -55,7 +55,7 @@ ___ reverse_list(s
 # 1.6) Python Reverse String using Recursion
 
 ___ reverse_recursion(s
-    __ len(s) == 0:
+    __ l..(s) __ 0:
         r_ s
     ____
         r_ reverse_recursion(s[1:]) + s[0]

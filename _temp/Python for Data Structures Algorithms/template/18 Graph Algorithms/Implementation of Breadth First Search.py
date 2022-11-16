@@ -43,10 +43,10 @@ ___ bfs_paths(graph, start, goal
     _____ queue:
         (vertex, path) _ queue.pop(0)
         ___ next __ graph[vertex] - set(path
-            __ next == goal:
+            __ next __ goal:
                 yield path + [next]
             ____
-                queue.append((next, path + [next]))
+                queue.a..((next, path + [next]))
 
 list(bfs_paths(graph, 'A', 'F'))
 # [['A', 'C', 'F'], ['A', 'B', 'E', 'F']]

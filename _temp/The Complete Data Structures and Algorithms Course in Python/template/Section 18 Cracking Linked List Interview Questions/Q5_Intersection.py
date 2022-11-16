@@ -9,13 +9,13 @@ ___ intersection(llA, llB
     __ llA.tail __ n.. llB.tail:
         r_ False
     
-    lenA _ len(llA)
-    lenB _ len(llB)
+    lenA _ l..(llA)
+    lenB _ l..(llB)
 
     shorter _ llA __ lenA < lenB else llB
     longer _ llB __ lenA < lenB else llA
 
-    diff _ len(longer) - len(shorter)
+    diff _ l..(longer) - l..(shorter)
     longerNode _ longer.head
     shorterNode _ shorter.head
 

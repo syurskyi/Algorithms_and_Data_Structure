@@ -10,24 +10,24 @@ c_ Solution:
         __(n.. root
             r_
         
-        ans _ []
-        s1 _ []
-        s2 _ []
+        ans _    # list
+        s1 _    # list
+        s2 _    # list
 
-        s1.append(root)
+        s1.a..(root)
 
         _____(s1
             x _ s1[-1]
             s1.pop()
-            s2.append(x)
+            s2.a..(x)
 
             __(x.left
-                s1.append(x.left)
+                s1.a..(x.left)
             __(x.right
-                s1.append(x.right)
+                s1.a..(x.right)
         
         _____(s2
             y _ s2[-1]
             s2.pop()
-            ans.append(y.val)
+            ans.a..(y.val)
         r_ ans

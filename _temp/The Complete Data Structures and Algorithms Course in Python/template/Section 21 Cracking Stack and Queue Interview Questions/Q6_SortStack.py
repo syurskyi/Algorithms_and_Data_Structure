@@ -15,7 +15,7 @@ ___ sort_stack(stack
     ____
       temp.push(current)
       current _ stack.pop()
-    __ current == N.. and previous: temp.push(previous)
+    __ current __ N.. and previous: temp.push(previous)
        
   sorted _ True
   previous _ temp.pop()
@@ -29,7 +29,7 @@ ___ sort_stack(stack
       stack.push(current)
       current _ temp.pop()
       sorted _ False
-    __ current == N.. and previous: stack.push(previous)
+    __ current __ N.. and previous: stack.push(previous)
   __ sorted: r_ stack
   ____ r_ sort_stack(stack)
 

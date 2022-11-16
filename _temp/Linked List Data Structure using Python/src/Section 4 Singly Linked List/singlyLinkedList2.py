@@ -17,7 +17,7 @@ c_ LinkedList:
         temporaryNode _ head # John
         head _ newNode # Matthew
         head.next _ temporaryNode
-        del temporaryNode
+        d.. temporaryNode
 
     ___ insertEnd newNode
         __ head __ N..:

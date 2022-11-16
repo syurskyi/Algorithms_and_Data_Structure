@@ -18,13 +18,13 @@
 ___ twosum(nums, target
 	dic _ {}
 
-	___ i __ range(len(nums)):
+	___ i __ range(l..(nums)):
 		__ nums[i] __ dic.keys(
 			r_ [dic[nums[i]], i]
 		____
 			dic[target - nums[i]] _ i
 
-	r_ []
+	r_    # list
 
 print(twosum([2, 7, 11, 15], 9))
 print(twosum([2, 7, 11, 15, 4, 23, 19, 5], 19))

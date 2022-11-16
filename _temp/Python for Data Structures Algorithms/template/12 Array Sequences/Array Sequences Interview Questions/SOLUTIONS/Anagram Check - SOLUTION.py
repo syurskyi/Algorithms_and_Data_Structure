@@ -25,7 +25,7 @@ ___ anagram(s1,s2
     s2 _ s2.replace(' ','').lower()
     
     # Return boolean for sorted match.
-    r_ sorted(s1) == sorted(s2)
+    r_ sorted(s1) __ sorted(s2)
 
 # %%
 anagram('dog','god')
@@ -51,7 +51,7 @@ ___ anagram2(s1,s2
     s2 _ s2.replace(' ','').lower()
     
     # Edge Case to check if same number of letters
-    __ len(s1) !_ len(s2
+    __ l..(s1) !_ l..(s2
         r_ False
     
     # Create counting dictionary (Note could use DefaultDict from Collections module)

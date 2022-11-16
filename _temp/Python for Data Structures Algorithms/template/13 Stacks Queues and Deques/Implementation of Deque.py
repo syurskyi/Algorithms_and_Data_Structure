@@ -17,13 +17,13 @@ In this lecture we will implement our own Deque class!
 # %%
 c_ Deque:
     ___ -  
-        items _ []
+        items _    # list
 
     ___ isEmpty 
-        r_ items == []
+        r_ items __    # list
 
     ___ addFront item
-        items.append(item)
+        items.a..(item)
 
     ___ addRear item
         items.insert(0,item)
@@ -35,7 +35,7 @@ c_ Deque:
         r_ items.pop(0)
 
     ___ size 
-        r_ len(items)
+        r_ l..(items)
 
 # %%
 d _ Deque()

@@ -16,7 +16,7 @@ c_ CircularSinglyLinkedList:
         _____ node:
             yield node
             node _ node.next
-            __ node == tail.next:
+            __ node __ tail.next:
                 break
             
 
@@ -35,11 +35,11 @@ c_ CircularSinglyLinkedList:
             r_ "The head reference is None"
         ____
             newNode _ Node(value)
-            __ location == 0:
+            __ location __ 0:
                 newNode.next _ head
                 head _ newNode
                 tail.next _ newNode
-            elif location == 1:
+            elif location __ 1:
                 newNode.next _ tail.next
                 tail.next _ newNode
                 tail _ newNode
@@ -63,7 +63,7 @@ c_ CircularSinglyLinkedList:
             _____ tempNode:
                 print(tempNode.value)
                 tempNode _ tempNode.next
-                __ tempNode == tail.next:
+                __ tempNode __ tail.next:
                     break
     
     # Searching for a node in circular singly linked list
@@ -73,10 +73,10 @@ c_ CircularSinglyLinkedList:
         ____
             tempNode _ head
             _____ tempNode:
-                __ tempNode.value == nodeValue:
+                __ tempNode.value __ nodeValue:
                     r_ tempNode.value
                 tempNode _ tempNode.next
-                __ tempNode == tail.next:
+                __ tempNode __ tail.next:
                     r_ "The node does not exist in this CSLL"
 
     # Delete  a node from circular singly linked list
@@ -84,23 +84,23 @@ c_ CircularSinglyLinkedList:
         __ head __ N..:
             print("There is not any node in CSLL")
         ____
-            __ location == 0:
-                __ head == tail:
+            __ location __ 0:
+                __ head __ tail:
                     head.next _ N..
                     head _ N..
                     tail _ N..
                 ____
                     head _ head.next
                     tail.next _ head
-            elif location == 1:
-                __ head == tail:
+            elif location __ 1:
+                __ head __ tail:
                     head.next _ N..
                     head _ N..
                     tail _ N..
                 ____
                     node _ head
                     _____ node __ n.. N..:
-                        __ node.next == tail:
+                        __ node.next __ tail:
                             break
                         node _ node.next
                     node.next _ head

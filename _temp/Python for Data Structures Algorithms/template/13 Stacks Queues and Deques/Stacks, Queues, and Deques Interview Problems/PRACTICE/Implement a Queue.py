@@ -11,15 +11,15 @@ It's very common to be asked to implement a Queue class! The class should be abl
 # %%
 c_ Queue o..
     ___ -  
-        items _ []
+        items _    # list
     ___ is_empty 
-        r_ items == []
+        r_ items __    # list
     ___ enqueue e
         items.insert(0, e)
     ___ dequeue 
         r_ items.pop()
     ___ size 
-        r_ len(items)
+        r_ l..(items)
     pass
 
 # %%

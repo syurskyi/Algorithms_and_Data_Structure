@@ -37,8 +37,8 @@ ___ rev_word3(s
     Manually doing the splits on the spaces.
     """
 
-    words _ []
-    length _ len(s)
+    words _    # list
+    length _ l..(s)
     spaces _ [' ']
 
     # Index Tracker
@@ -57,7 +57,7 @@ ___ rev_word3(s
                 # Get index where word ends
                 i +_ 1
             # Append that word to the list
-            words.append(s[word_start:i])
+            words.a..(s[word_start:i])
         # Add to index
         i +_ 1
 

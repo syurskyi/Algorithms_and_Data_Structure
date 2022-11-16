@@ -46,18 +46,18 @@ c_ AVL o..
 
             __ n.. node.leftChild and n.. node.rightChild:
                 print("Removing a leaf node...")
-                del node
+                d.. node
                 r_ N..
 
             __ n.. node.leftChild:
                 print("Removing a node with a right child...")
                 tempNode _ node.rightChild
-                del node
+                d.. node
                 r_ tempNode
             elif n.. node.rightChild:
                 print("Removing a node with a left child...")
                 tempNode _ node.leftChild
-                del node
+                d.. node
                 r_ tempNode
 
             print("Removing node with two children...")

@@ -16,7 +16,7 @@ c_ Graph:
 
     ___ printGraph
         ___ i __ range(numberOfNodes
-            ___ j __ range(len(graph[i])):
+            ___ j __ range(l..(graph[i])):
                 __(graph[i][j]
                     print(i, "->", j)
 

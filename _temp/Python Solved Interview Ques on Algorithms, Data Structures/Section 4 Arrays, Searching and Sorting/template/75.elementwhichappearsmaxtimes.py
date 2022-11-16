@@ -4,10 +4,10 @@ ___ elementwhichappearsmaxtimes(myarray
 	j _ 0
 	count _ max _ 1
 	element _ myarray[0]
-	___ i __ range(1, len(myarray)):
+	___ i __ range(1, l..(myarray)):
                 #print "in for loop:", myarray
                 #print "comparing", myarray[i],"and", element   
-		__ (myarray[i] == element
+		__ (myarray[i] __ element
                         #print myarray[i],"and", element,"are same"   
 			count +_ 1
                         #print myarray[i],"appeared", count,"times"

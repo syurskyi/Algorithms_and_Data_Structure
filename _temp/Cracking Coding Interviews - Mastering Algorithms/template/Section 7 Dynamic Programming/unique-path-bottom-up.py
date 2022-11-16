@@ -25,7 +25,7 @@ ___ unique_paths(m, n
 
 	___ i __ range(n
 		___ j __ range(m
-			__ i == 0 or j == 0:
+			__ i __ 0 or j __ 0:
 				arr[i][j] _ 1
 			____
 				arr[i][j] _ arr[i - 1][j] + arr[i][j - 1]

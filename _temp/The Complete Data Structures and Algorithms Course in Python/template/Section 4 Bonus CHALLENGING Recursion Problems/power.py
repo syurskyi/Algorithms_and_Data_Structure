@@ -5,7 +5,7 @@
 
 
 ___ power(base, exponent
-    __ exponent == 0:
+    __ exponent __ 0:
         r_ 1
     r_ base * power(base, exponent-1)
 

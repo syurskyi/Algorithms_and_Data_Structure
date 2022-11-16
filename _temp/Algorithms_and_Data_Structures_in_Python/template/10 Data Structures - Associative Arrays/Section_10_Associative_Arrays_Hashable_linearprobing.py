@@ -11,7 +11,7 @@ c_ HashTable o..
 
         # not None -> it is a collision !!!
         _____ keys[index] __ n.. N..:
-            __ keys[index] == key:
+            __ keys[index] __ key:
                 values[index] _ data  # update
                 r_
 
@@ -27,7 +27,7 @@ c_ HashTable o..
         index _ hashfunction(key)
 
         _____ keys[index] __ n.. N..:
-            __ keys[index] == key:
+            __ keys[index] __ key:
                 r_ values[index]
 
             index _ (index + 1) % size
@@ -37,13 +37,13 @@ c_ HashTable o..
 
     ___ hashfunction key
         sum _ 0
-        ___ pos __ range(len(key)):
+        ___ pos __ range(l..(key)):
             sum _ sum + ord(key[pos])
 
         r_ sum % size
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     table _ HashTable()
 
     table.put("apple", 10)

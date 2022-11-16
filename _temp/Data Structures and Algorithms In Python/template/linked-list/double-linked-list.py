@@ -48,7 +48,7 @@ c_ DoubleLinkedList o..
 
     ___ create_list
         n _ int(input("Enter the number of nodes : "))
-        __ n == 0:
+        __ n __ 0:
             r_
         data _ int(input("Enter the first element to be inserted : "))
         insert_in_empty_list(data)
@@ -62,7 +62,7 @@ c_ DoubleLinkedList o..
         temp _ Node(data)
         p _ start
         _____ p __ n.. N..:
-            __  p.info == x:
+            __  p.info __ x:
                 break
             p _ p.next
 
@@ -80,7 +80,7 @@ c_ DoubleLinkedList o..
             print("List is empty")
             r_
 
-        __ start.info == x:
+        __ start.info __ x:
             temp _ Node(data)
             temp.next _ start
             start.prev _ temp
@@ -89,7 +89,7 @@ c_ DoubleLinkedList o..
 
         p _ start;
         _____ p __ n.. N..:
-            __ p.info == x:
+            __ p.info __ x:
                 break
             p _ p.next
 
@@ -128,21 +128,21 @@ c_ DoubleLinkedList o..
         __ start __ N..:   # list is empty
             r_
         __ start.next __ N..:	# list has only one node
-            __ start.info == x:
+            __ start.info __ x:
                 start _ N..;
             ____
                 print(x," not found")
             r_
 			
         # Deletion of first node
-        __ start.info == x:
+        __ start.info __ x:
             start _ start.next
             start.prev _ N..
             r_
         
         p _ start.next
         _____ p.next __ n.. N..:
-            __ p.info == x:
+            __ p.info __ x:
                 break
             p _ p.next
             
@@ -151,7 +151,7 @@ c_ DoubleLinkedList o..
             p.prev.next _ p.next
             p.next.prev _ p.prev;
         ____ # p refers to last node
-            __ p.info == x: # node to be deleted is last node
+            __ p.info __ x: # node to be deleted is last node
                 p.prev.next _ N..
             ____
                 print(x," not found")
@@ -191,35 +191,35 @@ _____ True:
         
     option _ int(input("Enter your choice : " ))
 
-    __ option == 1:
+    __ option __ 1:
         list.display_list()
-    elif option == 2:
+    elif option __ 2:
         data _ int(input("Enter the element to be inserted : "))
         list.insert_in_empty_list(data)
-    elif option == 3:
+    elif option __ 3:
         data _ int(input("Enter the element to be inserted : "))
         list.insert_in_beginning(data)
-    elif option == 4:
+    elif option __ 4:
         data _ int(input("Enter the element to be inserted : "))
         list.insert_at_end(data)
-    elif option == 5:
+    elif option __ 5:
         data _ int(input("Enter the element to be inserted : "))
         x _ int(input("Enter the element after which to insert : "))
         list.insert_after(data,x)
-    elif option == 6:
+    elif option __ 6:
         data _ int(input("Enter the element to be inserted : "))
         x _ int(input("Enter the element before which to insert : "))
         list.insert_before(data,x)
-    elif option == 7:
+    elif option __ 7:
         list.delete_first_node() 
-    elif option == 8:
+    elif option __ 8:
         list.delete_last_node() 
-    elif option == 9:
+    elif option __ 9:
         data _ int(input("Enter the element to be deleted : "))
         list.delete_node(data)             
-    elif option == 10:
+    elif option __ 10:
         list.reverse_list()
-    elif option == 11:
+    elif option __ 11:
         break
     ____
         print("Wrong option") 

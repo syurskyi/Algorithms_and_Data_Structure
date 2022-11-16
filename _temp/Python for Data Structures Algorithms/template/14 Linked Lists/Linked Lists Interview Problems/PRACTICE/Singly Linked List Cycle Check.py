@@ -21,7 +21,7 @@ ___ cycle_check(node
     fast, slow _ node, node
     _____ fast and fast.nextnode:
         fast _ fast.nextnode
-        __ fast == slow:
+        __ fast __ slow:
             r_ True
         fast _ fast.nextnode
         slow _ slow.nextnode

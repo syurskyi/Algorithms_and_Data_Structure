@@ -1,6 +1,6 @@
 
 ___ seperateonezero(myarray
-	l _ 0; r _ len(myarray) - 1
+	l _ 0; r _ l..(myarray) - 1
         print "Given array:",myarray
         #print "left:",l
         #print "right:",r
@@ -9,11 +9,11 @@ ___ seperateonezero(myarray
                 #print "left:",l
                 #print "right:",r
 		
-                _____(myarray[l] % 2 == 0 and l < r
+                _____(myarray[l] % 2 __ 0 and l < r
 			l +_ 1
                 #print "Found 1",myarray[l],"so move left from",l-1,"to",l
 
-		_____(myarray[r] % 2 == 1 and l < r
+		_____(myarray[r] % 2 __ 1 and l < r
 			r -_ 1
                 #print "Found 0",myarray[r],"so move right from",r+1,"to",r
 

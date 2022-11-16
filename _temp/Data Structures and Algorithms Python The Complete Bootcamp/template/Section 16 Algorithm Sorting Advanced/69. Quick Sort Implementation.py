@@ -1,5 +1,5 @@
 ___ quickSort(my_array
-    qshelper(my_array, 0, len(my_array) - 1)
+    qshelper(my_array, 0, l..(my_array) - 1)
     r_ my_array
 
 

@@ -14,7 +14,7 @@ c_ CircularLinkedList o..
         last _ N..
 
     ___ display_list 
-        __ last == N..:
+        __ last __ N..:
             print("List is empty\n")
             r_
 
@@ -23,7 +23,7 @@ c_ CircularLinkedList o..
         _____ True:
             print(p.info , " ",end_'')
             p _ p.link
-            __  p == last.link:
+            __  p __ last.link:
                 break
         print() 
 
@@ -42,7 +42,7 @@ c_ CircularLinkedList o..
 
     ___ create_list 
         n _ int(input("Enter the number of nodes : "))
-        __ n == 0:
+        __ n __ 0:
             r_
         data _ int(input("Enter the element to be inserted : "))
         insert_in_empty_list(data)

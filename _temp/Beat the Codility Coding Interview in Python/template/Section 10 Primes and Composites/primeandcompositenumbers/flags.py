@@ -4,10 +4,10 @@
 
 
 ___ solution(A
-    peaks _ [0] * len(A)
-    next_peak _ len(A)
-    peaks[len(A) - 1] _ next_peak
-    ___ i __ range(len(A) - 2, 0, -1
+    peaks _ [0] * l..(A)
+    next_peak _ l..(A)
+    peaks[l..(A) - 1] _ next_peak
+    ___ i __ range(l..(A) - 2, 0, -1
         __ A[i - 1] < A[i] and A[i + 1] < A[i]:
             next_peak _ i
         peaks[i] _ next_peak
@@ -24,10 +24,10 @@ ___ solution(A
 ___ can_place_flags(peaks, flags_to_place
     current_position _ 1 - flags_to_place
     ___ i __ range(flags_to_place
-        __ current_position + flags_to_place > len(peaks) - 1:
+        __ current_position + flags_to_place > l..(peaks) - 1:
             r_ False
         current_position _ peaks[current_position + flags_to_place]
-    r_ current_position < len(peaks)
+    r_ current_position < l..(peaks)
 
 
 test_trail _ [1,5,3,4,3,4,1,2,3,4,6,2]

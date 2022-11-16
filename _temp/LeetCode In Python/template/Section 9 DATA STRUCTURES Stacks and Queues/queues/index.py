@@ -1,17 +1,17 @@
 c_ QueueLine:
 	___ -  
-        q _ []
+        q _    # list
     
     ___ enqueue x: int) -> N..:
-        q.append(x)
+        q.a..(x)
 
 
     ___ dequeue ) -> N..:
-        __(len(q) > 0
+        __(l..(q) > 0
             q.pop(0)
 
     ___ front ) -> int:
-        __(len(q) == 0
+        __(l..(q) __ 0
             r_ N..
 
         r_ q[0]

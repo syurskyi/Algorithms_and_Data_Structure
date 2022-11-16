@@ -2,7 +2,7 @@
 # This code is part of DSA course available on CourseGalaxy.com  
 
 ___ insertion_sort(a
-    ___ i __ range(1,len(a)):  
+    ___ i __ range(1,l..(a)):
         temp _ a[i]
         j _ i-1
         _____ j >_ 0 and a[j] > temp:

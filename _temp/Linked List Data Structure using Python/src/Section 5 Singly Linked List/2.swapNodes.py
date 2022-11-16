@@ -10,14 +10,14 @@ ___ swapNodes(linkedList, dataOne, dataTwo
     previousFirst _ N..
     previousSecond _ N..
     _____ True:
-        __ currentNode.data == dataOne:
+        __ currentNode.data __ dataOne:
             firstNode _ currentNode
             break
         previousFirst _ currentNode
         currentNode _ currentNode.next
     currentNode _ linkedList.head
     _____ True:
-        __ currentNode.data == dataTwo:
+        __ currentNode.data __ dataTwo:
             secondNode _ currentNode
             break
         previousSecond _ currentNode

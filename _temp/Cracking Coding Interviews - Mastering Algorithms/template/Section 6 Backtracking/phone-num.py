@@ -18,24 +18,24 @@ mapping _ {
 }
 
 ___ combos(digits
-	__ len(digits) == 0:
-		r_ []
+	__ l..(digits) __ 0:
+		r_    # list
 
-	output _ []
+	output _    # list
 
 	cur_digit _ digits[0]
 	letters _ mapping[cur_digit]
 
 	remaining_combos _ combos(digits[1:])
 
-	___ i __ range(len(letters)):
+	___ i __ range(l..(letters)):
 		letter _ letters[i]
 
 		___ word __ remaining_combos:
-			output.append(letter + word)
+			output.a..(letter + word)
 
-		__ len(remaining_combos) == 0:
-			output.append(letter)
+		__ l..(remaining_combos) __ 0:
+			output.a..(letter)
 
 	r_ output
 

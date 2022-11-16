@@ -31,10 +31,10 @@ c_ MultiStack:
         r_ array[IndexOfTop(stacknum)]
 
     ___ IsEmpty stacknum
-        r_ sizes[stacknum] == 0
+        r_ sizes[stacknum] __ 0
 
     ___ IsFull stacknum
-        r_ sizes[stacknum] == stacksize
+        r_ sizes[stacknum] __ stacksize
 
     ___ IndexOfTop stacknum
         offset _ stacknum * stacksize

@@ -1,7 +1,7 @@
 c_ Solution:
     ___ minWindow s: str, t: str) -> str:
-        len1 _ len(s)
-        len2 _ len(t)
+        len1 _ l..(s)
+        len2 _ l..(t)
 
         __(len1 < len2
             r_ ""
@@ -33,7 +33,7 @@ c_ Solution:
 
                 count +_ 1  # keep incrementing the count if string hash is less then pattern hash
             # count==len2 means a window is found that contains all character of pattern string
-            __ (count == len2
+            __ (count __ len2
 
                 __(hashStr.get(s[left]) __ N..
                     hashStr[s[right]] _ 0
@@ -41,7 +41,7 @@ c_ Solution:
                     hashPat[s[right]] _ 0
                 _____ (
                     hashStr.get(s[left]) > hashPat.get(s[left]) or
-                    hashPat.get(s[left]) == 0
+                    hashPat.get(s[left]) __ 0
 
                     #minimizing the windows range from left side
 
@@ -54,6 +54,6 @@ c_ Solution:
                     minLen _ windowLen
                     startIndex _ left
 
-        __ (startIndex == -1
+        __ (startIndex __ -1
             r_ ""
         r_ s[startIndex:startIndex+minLen]

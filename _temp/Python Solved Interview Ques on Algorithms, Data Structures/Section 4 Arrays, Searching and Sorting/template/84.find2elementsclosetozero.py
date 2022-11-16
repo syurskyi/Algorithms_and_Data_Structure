@@ -3,7 +3,7 @@ import sys
 ___ gettwoelementsclosesttozero(myarray
         print "Given Array:", myarray
         #print "Length of the Array:", len(myarray) 
-	arrayLen _ len(myarray)
+	arrayLen _ l..(myarray)
 	myarray.sort()
         #print "Array sorted:", myarray
 	__(arrayLen < 2

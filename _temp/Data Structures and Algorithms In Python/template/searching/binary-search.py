@@ -28,7 +28,7 @@ searchValue _ int(input("Enter the search value : "))
 
 index _ binary_search(a, n, searchValue)
 
-__ index == -1:
+__ index __ -1:
     print("Value " , searchValue , " not present in the array")
 ____
     print("Value " , searchValue , " present at index " , index)

@@ -23,7 +23,7 @@
 
 ___ balance_check(s
     # Check is even number of brackets
-    __ len(s) % 2 !_ 0:
+    __ l..(s) % 2 !_ 0:
         r_ False
 
     # Set of opening brackets
@@ -33,19 +33,19 @@ ___ balance_check(s
     matches _ set([('(', ')'), ('[', ']'), ('{', '}')])
 
     # Use a list as a "Stack"
-    stack _ []
+    stack _    # list
 
     # Check every parenthesis in string
     ___ paren __ s:
 
         # If its an opening, append it to list
         __ paren __ opening:
-            stack.append(paren)
+            stack.a..(paren)
 
         ____
 
             # Check that there are parentheses in Stack
-            __ len(stack) == 0:
+            __ l..(stack) __ 0:
                 r_ False
 
             # Check the last open parenthesis
@@ -55,7 +55,7 @@ ___ balance_check(s
             __ (last_open, paren) n.. __ matches:
                 r_ False
 
-    r_ len(stack) == 0
+    r_ l..(stack) __ 0
 
 
 balance_check('[]')

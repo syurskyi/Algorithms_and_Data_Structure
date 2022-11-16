@@ -15,14 +15,14 @@ import copy
 # ]
 
 ___ permutation_recursive(nums, path
-	__ len(nums) == 0:
+	__ l..(nums) __ 0:
 		r_ [path]
 
-	output _ []
+	output _    # list
 
-	___ i __ range(len(nums)):
+	___ i __ range(l..(nums)):
 		copy_path _ copy.deepcopy(path)
-		copy_path.append(nums[i])
+		copy_path.a..(nums[i])
 		permutations _ permutation_recursive(nums[:i] + nums[i + 1:], copy_path)
 
 		output +_ permutations
@@ -30,6 +30,6 @@ ___ permutation_recursive(nums, path
 	r_ output
 
 ___ permute(nums
-	r_ permutation_recursive(nums, [])
+	r_ permutation_recursive(nums,    # list)
 
 print(permute([1, 2, 3, 4, 5, 6]))

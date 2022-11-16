@@ -1,7 +1,7 @@
 #### Russian Doll recursive function ###
 
 ___ openRussianDoll(doll
-    __ doll == 1:
+    __ doll __ 1:
         print("All dolls are opened")
     ____
         openRussianDoll(doll-1)
@@ -47,7 +47,7 @@ recursiveMethod(4)
  ## Recursion vs Iterarion###
 
 ___ powerOfTwo(n
-    __ n == 0:
+    __ n __ 0:
          r_ 1
     ____
         power _ powerOfTwo(n-1)
@@ -70,7 +70,7 @@ print(powerOfTwoIt(4))
 
 
 ___ factorial(n
-    assert n >_ 0 and int(n) == n, 'The number must be positive integer only!'
+    assert n >_ 0 and int(n) __ n, 'The number must be positive integer only!'
     __ n __ [0,1]:
         r_ 1
     ____
@@ -80,7 +80,7 @@ ___ factorial(n
  ## Fibonacci###
 
 ___ fibonacci(n
-    assert n >_0 and int(n) == n , 'Fibonacci number cannot be negative number or non integer.'
+    assert n >_0 and int(n) __ n , 'Fibonacci number cannot be negative number or non integer.'
     __ n __ [0,1]:
         r_ n
     ____

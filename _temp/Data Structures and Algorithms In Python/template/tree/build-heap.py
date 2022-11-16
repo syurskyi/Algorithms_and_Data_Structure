@@ -42,7 +42,7 @@ ___ restore_down(i, a, n
              
 
         # If number of nodes is even
-        __ lchild == n and k < a[lchild]:
+        __ lchild __ n and k < a[lchild]:
             a[i] _ a[lchild]
             i _ lchild
         a[i] _ k
@@ -50,7 +50,7 @@ ___ restore_down(i, a, n
 ####################################################
         
 a1_[99999,20,33,15,6,40,60,45,16,75,10,80,12]
-n1 _ len(a1)-1
+n1 _ l..(a1)-1
 
 build_heap_bottom_up(a1,n1)
 
@@ -59,7 +59,7 @@ ___ i __ range(1,n1+1
 print()
 
 a2_[99999,20,33,15,6,40,60,45,16,75,10,80,12]
-n2 _ len(a2)-1
+n2 _ l..(a2)-1
 
 build_heap_top_down(a2,n2) 
 

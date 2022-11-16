@@ -5,16 +5,16 @@
 
 c_ Stack(
   ___ -  
-    list _ []
+    list _    # list
   
   ___ __len__ 
-    r_ len(list)
+    r_ l..(list)
   
   ___ push item
-    list.append(item)
+    list.a..(item)
   
   ___ pop 
-    __ len(list) == 0:
+    __ l..(list) __ 0:
       r_ N..
     r_ list.pop()
 
@@ -27,10 +27,10 @@ c_ QueueviaStack(
     inStack.push(item)
   
   ___ dequeue 
-    _____ len(inStack
+    _____ l..(inStack
       outStack.push(inStack.pop())
     result _ outStack.pop()
-    _____ len(outStack
+    _____ l..(outStack
       inStack.push(outStack.pop())
     r_ result
   

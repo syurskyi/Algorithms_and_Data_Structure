@@ -22,7 +22,7 @@ c_ LinkedList:
         temp _ head
         __(temp __ N..
             r_
-        __(temp.data == key
+        __(temp.data __ key
             head _ temp.next
             temp _ N..
             r_

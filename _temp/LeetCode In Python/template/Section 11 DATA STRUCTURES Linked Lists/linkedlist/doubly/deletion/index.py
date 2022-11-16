@@ -19,7 +19,7 @@ c_ LinkedList:
 
     ___ createList arr
         start _ head
-        n _ len(arr)
+        n _ l..(arr)
         # Declare newNode and temporary pointer
         temp _ start
         i _ 0
@@ -30,7 +30,7 @@ c_ LinkedList:
             # Create new node
             newNode _ Node(arr[i])
 
-            __ (i == 0
+            __ (i __ 0
                 start _ newNode
                 newNode.prev _ start
                 temp _ start
@@ -79,12 +79,12 @@ c_ LinkedList:
       __(count < index
         r_ temp
 
-      __(index == 1
+      __(index __ 1
         temp _ temp.next
         head _ temp
         r_ head
 
-      __(count == index
+      __(count __ index
         _____(temp.next __ n.. N.. and temp.next.next __ n.. N..
           temp _ temp.next
          # 1 => 2 => 3 => 4

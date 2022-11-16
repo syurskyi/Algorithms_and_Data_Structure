@@ -17,7 +17,7 @@ ___ posToNodeId(row, column, board_size
     r_ (row * board_size) + column
 
 ___ genLegalMoves(x,y,bdSize
-    newMoves _ []
+    newMoves _    # list
     moveOffsets _ [(-1,-2),(-1,2),(-2,-1),(-2,1),
                    ( 1,-2),( 1,2),( 2,-1),( 2,1)]
     ___ i __ moveOffsets:
@@ -25,7 +25,7 @@ ___ genLegalMoves(x,y,bdSize
         newY _ y + i[1]
         __ legalCoord(newX,bdSize) and \
                         legalCoord(newY,bdSize
-            newMoves.append((newX,newY))
+            newMoves.a..((newX,newY))
     r_ newMoves
 
 ___ legalCoord(x,bdSize
@@ -36,13 +36,13 @@ ___ legalCoord(x,bdSize
 
 ___ knightTour(n,path,u,limit
         u.setColor('gray')
-        path.append(u)
+        path.a..(u)
         __ n < limit:
             nbrList _ list(u.getConnections())
             i _ 0
             done _ False
-            _____ i < len(nbrList) and n.. done:
-                __ nbrList[i].getColor() == 'white':
+            _____ i < l..(nbrList) and n.. done:
+                __ nbrList[i].getColor() __ 'white':
                     done _ knightTour(n+1, path, nbrList[i], limit)
                 i _ i + 1
             __ n.. done:  # prepare to backtrack

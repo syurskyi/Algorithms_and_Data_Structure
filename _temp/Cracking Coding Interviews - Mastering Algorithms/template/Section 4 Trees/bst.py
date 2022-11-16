@@ -6,7 +6,7 @@ c_ Node:
 
 
 ___ inorder(root
-	__ root == N..:
+	__ root __ N..:
 		r_
 
 	inorder(root.left)

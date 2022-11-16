@@ -6,6 +6,6 @@ c_ Solution:
         _____ turtle and hare and hare.next:
             hare _ hare.next.next
             turtle _ turtle.next
-            __(turtle == hare
+            __(turtle __ hare
                 r_ True
         r_ False

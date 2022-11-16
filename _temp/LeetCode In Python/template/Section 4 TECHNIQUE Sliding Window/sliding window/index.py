@@ -1,5 +1,5 @@
 ___ maxSum(arr, windowSize
-    arraySize _ len(arr)
+    arraySize _ l..(arr)
     # n must be greater than k
     __ arraySize <_ windowSize:
         print("Invalid operation")

@@ -12,7 +12,7 @@ c_ LRUCache:
         __ key __ m:
             value _ m[key]
             deq.remove(key)
-            deq.append(key)
+            deq.a..(key)
             r_ value
         ____
             r_ -1
@@ -24,11 +24,11 @@ c_ LRUCache:
         # param_1 = obj.get(key)
         # obj.put(key,value)
         __ key n.. __ m:
-            __ len(deq) == c:
+            __ l..(deq) __ c:
                 oldest _ deq.popleft()
-                del m[oldest]
+                d.. m[oldest]
         ____
             deq.remove(key)
 
         m[key] _ value
-        deq.append(key)
+        deq.a..(key)

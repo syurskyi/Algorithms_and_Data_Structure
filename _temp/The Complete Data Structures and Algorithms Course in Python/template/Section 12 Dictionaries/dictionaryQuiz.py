@@ -38,7 +38,7 @@ ___ addone(index
 addone('Apple')
 addone('Banana')
 addone('apple')
-print (len(fruit))
+print (l..(fruit))
 # A. 1 
 # B. 2
 # C. 3 
@@ -142,7 +142,7 @@ ___ _ __ sorted(dict
 
 rec _ {"Name" : "Python", "Age":"20"}
 r _ rec.copy()
-print(id(r) == id(rec))
+print(id(r) __ id(rec))
 # A. True
 # B. False
 # C. 0
@@ -154,10 +154,10 @@ print(id(r) == id(rec))
 
 rec _ {"Name" : "Python", "Age":"20", "Addr" : "NJ", "Country" : "USA"}
 id1 _ id(rec)
-del rec
+d.. rec
 rec _ {"Name" : "Python", "Age":"20", "Addr" : "NJ", "Country" : "USA"}
 id2 _ id(rec)
-print(id1 == id2)
+print(id1 __ id2)
 # A. True
 # B. False
 # C. 1

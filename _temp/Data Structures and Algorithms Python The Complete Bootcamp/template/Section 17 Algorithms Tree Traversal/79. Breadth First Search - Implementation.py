@@ -1,16 +1,16 @@
 c_ Queue(
     ___ -
-        items _ []
+        items _    # list
 
     ___ enqueue item
-        items.append(item)
+        items.a..(item)
 
     ___ dequeue
-        __ len(items
+        __ l..(items
             r_ items.pop(0)
 
     ___ peek
-        __ len(items
+        __ l..(items
             r_ items[0].value
 
 
@@ -31,10 +31,10 @@ c_ BinaryTree(
 
         queue _ Queue()
         queue.enqueue(start)
-        traversal _ []
+        traversal _    # list
 
-        _____ len(queue.items) > 0:
-            traversal.append(queue.peek())
+        _____ l..(queue.items) > 0:
+            traversal.a..(queue.peek())
             node _ queue.dequeue()
 
             __ node.left:

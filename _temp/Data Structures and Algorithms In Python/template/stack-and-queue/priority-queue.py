@@ -39,7 +39,7 @@ c_ PriorityQueue:
         r_ x
     
     ___ is_empty
-        r_ front == N..
+        r_ front __ N..
             
     ___ display
         __ is_empty(
@@ -65,7 +65,7 @@ c_ PriorityQueue:
     
 #########################################################################################
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     qu _ PriorityQueue()
 
     _____ True:
@@ -77,18 +77,18 @@ __ __name__ == "__main__":
          
         choice _ int(input("Enter your choice : "))
 
-        __ choice == 1:
+        __ choice __ 1:
             x _ int(input("Enter the element : "))
             pr _ int(input("Enter its priority : "))
             qu.enqueue(x,pr) 
-        elif choice == 2:
+        elif choice __ 2:
             x_qu.dequeue()
             print("Element is : " , x) 
-        elif choice == 3:
+        elif choice __ 3:
             qu.display() 
-        elif choice == 4:
+        elif choice __ 4:
             print("Size of queue " , qu.size()) 
-        elif choice == 5:
+        elif choice __ 5:
           break;
         ____
           print("Wrong choice") 

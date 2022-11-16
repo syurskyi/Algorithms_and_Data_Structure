@@ -36,12 +36,12 @@ c_ HashTable:
         location _ h
 
         ___ i __ range(1,m
-            __ array[location] __ N.. or array[location].get_student_id() == -1:
+            __ array[location] __ N.. or array[location].get_student_id() __ -1:
                 array[location] _ newRecord
                 n+_1
                 r_
             
-            __ array[location].get_student_id() == key:
+            __ array[location].get_student_id() __ key:
                 raise InvalidOperationException("Duplicate key")
 
             location _ (h + i) % m
@@ -56,7 +56,7 @@ c_ HashTable:
         ___ i __ range(1,m
             __ array[location] __ N.. :
                 r_ N..
-            __ array[location].get_student_id() == key:
+            __ array[location].get_student_id() __ key:
                 r_ array[location]
             location _ (h + i) % m
         r_ N..
@@ -80,7 +80,7 @@ c_ HashTable:
             __ array[location] __ N..:
                 r_ N..
             
-            __ array[location].get_student_id() == key:
+            __ array[location].get_student_id() __ key:
                 temp _ array[location]
                 array[location].set_student_id(-1)
                 n-_1
@@ -104,24 +104,24 @@ _____ True:
     print("5.Exit")
     option _ int(input("Enter your option :  "))
 
-    __ option == 1:
+    __ option __ 1:
         id _ int(input("Enter student id : "))
         name _ input("Enter student name : ")
         aRecord _ studentRecord(id,name)
         table.insert(aRecord)
-    elif option == 2:
+    elif option __ 2:
         id _ int(input("Enter a key to be searched : "))
         aRecord _ table.search(id)
         __  aRecord __ N..:
             print("Key not found")
         ____
             print(aRecord)
-    elif option == 3:
+    elif option __ 3:
         id _ int(input("Enter a key to be deleted :"))
         table.delete(id)
-    elif option == 4:
+    elif option __ 4:
         table.display_table()
-    elif option == 5:
+    elif option __ 5:
         break
     ____
         print("Wrong option") 

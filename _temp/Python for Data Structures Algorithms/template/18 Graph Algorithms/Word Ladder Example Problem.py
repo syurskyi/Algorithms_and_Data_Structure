@@ -66,10 +66,10 @@ ___ buildGraph(wordFile
         print line
         word _ line[:-1]
         print word
-        ___ i __ range(len(word)):
+        ___ i __ range(l..(word)):
             bucket _ word[:i] + '_' + word[i+1:]
             __ bucket __ d:
-                d[bucket].append(word)
+                d[bucket].a..(word)
             ____
                 d[bucket] _ [word]
     # add vertices and edges for words in the same bucket

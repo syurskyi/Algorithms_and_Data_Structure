@@ -21,7 +21,7 @@ ___ i __ range(n
 searchValue _ int(input("Enter the search value : "))
 index _ Search(a, n, searchValue)
 
-__ index == -1:
+__ index __ -1:
     print("Value ", searchValue ," not present in the list")
 ____
     print("Value ", searchValue ," present at index " , index)

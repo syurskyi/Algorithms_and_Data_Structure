@@ -14,7 +14,7 @@ c_ BinaryTree:
         root _ N..
     
     ___ is_empty 
-        r_ root == N..
+        r_ root __ N..
         
     ___ display 
         _display(root,0)
@@ -70,15 +70,15 @@ c_ BinaryTree:
             r_
               	     
         qu _ deque()
-        qu.append(root)
+        qu.a..(root)
 
-        _____ len(qu)!_0:
+        _____ l..(qu)!_0:
             p _ qu.popleft()
             print(p.info + " ",end_'')
             __ p.lchild __ n.. N..:
-                qu.append(p.lchild)
+                qu.a..(p.lchild)
             __ p.rchild __ n.. N..:
-                qu.append(p.rchild)
+                qu.a..(p.rchild)
     	     
     
     ___ height 

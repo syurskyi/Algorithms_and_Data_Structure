@@ -12,7 +12,7 @@ c_ DisjointSet:
         rank _ dict.fromkeys(vertices, 0)
     
     ___ find item
-        __ parent[item] == item:
+        __ parent[item] __ item:
             r_ item
         ____
             r_ find(parent[item])

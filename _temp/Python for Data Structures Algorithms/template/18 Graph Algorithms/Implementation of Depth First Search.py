@@ -62,10 +62,10 @@ ___ dfs_paths(graph, start, goal
     _____ stack:
         (vertex, path) _ stack.pop()
         ___ nxt __ graph[vertex] - set(path
-            __ nxt == goal:
+            __ nxt __ goal:
                 yield path + [nxt]
             ____
-                stack.append((nxt, path + [nxt]))
+                stack.a..((nxt, path + [nxt]))
 
 list(dfs_paths(graph, 'A', 'F'))
 # [['A', 'B', 'E', 'F'], ['A', 'C', 'F']]

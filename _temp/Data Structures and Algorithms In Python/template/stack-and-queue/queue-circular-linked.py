@@ -16,7 +16,7 @@ c_ Queue:
         rear _ N..
        
     ___ is_empty
-        r_ rear == N..
+        r_ rear __ N..
             
     ___ size
         __ is_empty(
@@ -26,7 +26,7 @@ c_ Queue:
         _____ True:
             n+_1
             p _ p.link
-            __  p == rear.link:
+            __  p __ rear.link:
                 break
         r_ n
     
@@ -45,7 +45,7 @@ c_ Queue:
         __ is_empty(
             raise EmptyQueueError("Queue is Empty")
         
-        __ rear.link == rear: #List has only one node
+        __ rear.link __ rear: #List has only one node
             temp _ rear
             rear _ N..
         ____
@@ -67,13 +67,13 @@ c_ Queue:
         _____ True:
             print(p.info , " ",end_'')
             p _ p.link
-            __ p == rear.link:
+            __ p __ rear.link:
                 break
         print()
         
 ########################################################################
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     qu _ Queue()
 
     _____ True:
@@ -86,19 +86,19 @@ __ __name__ == "__main__":
          
         choice _ int(input("Enter your choice : "))
 
-        __ choice == 1:
+        __ choice __ 1:
             x_int(input("Enter the element : "))
             qu.enqueue(x) 
-        elif choice == 2:
+        elif choice __ 2:
             x_qu.dequeue()
             print("Element deleted from the queue is : " , x) 
-        elif choice == 3:
+        elif choice __ 3:
             print("Element at the front end is " , qu.peek()) 
-        elif choice == 4:
+        elif choice __ 4:
             print("Size of queue ", qu.size()) 
-        elif choice == 5:
+        elif choice __ 5:
             qu.display() 
-        elif choice == 6:
+        elif choice __ 6:
           break;
         ____
           print("Wrong choice") 

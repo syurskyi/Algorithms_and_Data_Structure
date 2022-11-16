@@ -5,9 +5,9 @@
 
 
 ___ reverse(strng
-    __ len(strng) <_ 1:
+    __ l..(strng) <_ 1:
       r_ strng
-    r_ strng[len(strng)-1] + reverse(strng[0:len(strng)-1])
+    r_ strng[l..(strng)-1] + reverse(strng[0:l..(strng)-1])
 
 
 print(reverse('python')) # 'nohtyp'

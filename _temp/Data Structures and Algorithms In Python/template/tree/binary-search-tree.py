@@ -15,7 +15,7 @@ c_ BinarySearchTree:
         root _ N..
     
     ___ is_empty 
-        r_ root == N..
+        r_ root __ N..
            
     ___ insertx
         root _ _insert(root, x)
@@ -46,7 +46,7 @@ c_ BinarySearchTree:
 
         temp _ Node(x) 
 
-        __ par == N..:
+        __ par __ N..:
             root _ temp 
         elif x < par.info:
             par.lchild _ temp 
@@ -110,7 +110,7 @@ c_ BinarySearchTree:
         par _ N..
 
         _____ p __ n.. N..:
-            __ x == p.info:
+            __ x __ p.info:
                 break
             par _ p
             __ x < p.info:
@@ -118,7 +118,7 @@ c_ BinarySearchTree:
             ____
                 p _ p.rchild
             
-        __ p == N..:
+        __ p __ N..:
             print(x , " not found")
             r_
 
@@ -142,9 +142,9 @@ c_ BinarySearchTree:
         ____                # node to be deleted has right child or no child
             ch _ p.rchild
 
-        __ par == N..:   # node to be deleted is root node
+        __ par __ N..:   # node to be deleted is root node
             root _ ch
-        elif p == par.lchild: # node is left child of its parent
+        elif p __ par.lchild: # node is left child of its parent
             par.lchild _ ch
         ____       # node is right child of its parent
             par.rchild _ ch 
@@ -272,49 +272,49 @@ _____ True:
     print("16.Quit")
     choice _ int(input("Enter your choice : "))
     
-    __ choice == 1:
+    __ choice __ 1:
         bst.display()
-    elif choice == 2:
+    elif choice __ 2:
         x _ int(input("Enter the key to be searched : "))
         __ bst.search1(x
             print("Key found")
         ____
             print("Key not found")
-    elif choice == 3:
+    elif choice __ 3:
         x _ int(input("Enter the key to be searched : "))
         __ bst.search(x
             print("Key found")
         ____
             print("Key not found")
-    elif choice == 4:
+    elif choice __ 4:
         x _ int(input("Enter the key to be inserted : "))
         bst.insert1(x)
-    elif choice == 5:
+    elif choice __ 5:
         x _ int(input("Enter the key to be inserted : "))
         bst.insert(x)
-    elif choice == 6:
+    elif choice __ 6:
         x _ int(input("Enter the element to be deleted : ")) 
         bst.delete1(x)
-    elif choice == 7:
+    elif choice __ 7:
         x _ int(input("Enter the element to be deleted : ")) 
         bst.delete(x)
-    elif choice == 8:
+    elif choice __ 8:
         print("Minimum key is " , bst.min1())
-    elif choice == 9:
+    elif choice __ 9:
         print("Minimum key is " , bst.min2())
-    elif choice == 10:
+    elif choice __ 10:
         print("Maximum key is " , bst.max1())
-    elif choice == 11:
+    elif choice __ 11:
         print("Maximum key is " , bst.max2())
-    elif choice == 12:
+    elif choice __ 12:
         bst.preorder()
-    elif choice == 13:
+    elif choice __ 13:
         bst.inorder()
-    elif choice == 14:
+    elif choice __ 14:
         bst.postorder()
-    elif choice == 15:
+    elif choice __ 15:
         print("Height of tree is " , bst.height())
-    elif choice == 16:
+    elif choice __ 16:
         break
     ____
         print("Wrong choice") 

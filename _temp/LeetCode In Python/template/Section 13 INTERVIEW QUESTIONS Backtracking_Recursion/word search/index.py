@@ -3,15 +3,15 @@ c_ Solution:
     dy _ [1, -1, 0, 0]
 
     ___ solution board, word, x, y, cur
-        __(x < 0 or x >_ len(board) or y < 0 or y >_ len(board[x]) or board[x][y] == ' '
+        __(x < 0 or x >_ l..(board) or y < 0 or y >_ l..(board[x]) or board[x][y] __ ' '
             r_ False
         cur +_ board[x][y]
 
-        __(len(cur) > len(word)):
+        __(l..(cur) > l..(word)):
             r_ False
-        __(cur[len(cur)-1] !_ word[len(cur)-1]
+        __(cur[l..(cur)-1] !_ word[l..(cur)-1]
             r_ False
-        __(cur == word
+        __(cur __ word
             r_ True
 
         temp _ board[x][y]
@@ -25,12 +25,12 @@ c_ Solution:
         r_ False
 
     ___ exist board: List[List[str]], word: str) -> bool:
-        __(len(word) == 0
+        __(l..(word) __ 0
             r_ True
-        n _ len(board)
+        n _ l..(board)
         ___ i __ range(n
-            m _ len(board[i])
+            m _ l..(board[i])
             ___ j __ range(m
-                __(word[0] == board[i][j] and solution(board, word, i, j, "")):
+                __(word[0] __ board[i][j] and solution(board, word, i, j, "")):
                     r_ True
         r_ False

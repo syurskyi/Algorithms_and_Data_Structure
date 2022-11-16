@@ -23,7 +23,7 @@ c_ LinkedList:
     ___ deleteNode data
         currentNode _ head
         _____ currentNode __ n.. N..:
-            __ currentNode.data == data:
+            __ currentNode.data __ data:
                 # head node deletion
                 __ currentNode __ head:
                     head _ currentNode.next

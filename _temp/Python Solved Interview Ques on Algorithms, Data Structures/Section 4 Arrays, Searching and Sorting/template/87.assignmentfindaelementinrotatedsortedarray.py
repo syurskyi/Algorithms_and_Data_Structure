@@ -1,10 +1,10 @@
 
 ___ func(myarray, value
 	l _ 0
-	r _ len(myarray) - 1
+	r _ l..(myarray) - 1
 	_____ l <_ r:
 	    m _ (l + r) / 2
-	    __ myarray[m] == value:
+	    __ myarray[m] __ value:
 		r_ m
 	    __ myarray[m] >_ myarray[l]:
 		__ myarray[l] <_ value < myarray[m]:

@@ -6,14 +6,14 @@ c_ Graph:
 
     ___ -  vertices
         V _ vertices
-        graph _ []
-        nodes _ []
+        graph _    # list
+        nodes _    # list
 
     ___ add_edge s, d, w
-        graph.append([s, d, w])
+        graph.a..([s, d, w])
     
     ___ addNodevalue
-        nodes.append(value)
+        nodes.a..(value)
 
     ___ print_solution dist
         print("Vertex Distance from Source")

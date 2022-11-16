@@ -1,8 +1,8 @@
 
 ___ getfirstoccurenceofanumusingbinsearch(myarray, value
-	__ myarray == N.. or len(myarray) == 0:
+	__ myarray __ N.. or l..(myarray) __ 0:
 	    r_ -1;
-	h _ len(myarray) - 1
+	h _ l..(myarray) - 1
         l _ 0
         m _ 0
         found _ -1;
@@ -24,7 +24,7 @@ ___ getfirstoccurenceofanumusingbinsearch(myarray, value
                r_ found
             m _ (l + h) / 2
             #print "mid:", m
-            __ (myarray[m] == value
+            __ (myarray[m] __ value
                temp _ h
 	       found _ m; h _ m - 1
                #print "element found at position:",m,"high moved from",temp,"to",h 

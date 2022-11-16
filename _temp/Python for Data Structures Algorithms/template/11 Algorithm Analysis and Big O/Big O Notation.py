@@ -110,7 +110,7 @@ big_o _ [np.ones(n.shape),np.log(n),n,n*np.log(n),n**2,n**3,2**n]
 plt.figure(figsize_(12,10))
 plt.ylim(0,50)
 
-___ i __ range(len(big_o)):
+___ i __ range(l..(big_o)):
     plt.plot(n,big_o[i],label _ labels[i])
 
 

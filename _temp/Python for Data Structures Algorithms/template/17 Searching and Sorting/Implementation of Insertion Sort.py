@@ -12,7 +12,7 @@
 ___ insertion_sort(arr
 
     # For every index in array
-    ___ i __ range(1,len(arr)):
+    ___ i __ range(1,l..(arr)):
 
         # Set current values and position
         currentvalue _ arr[i]

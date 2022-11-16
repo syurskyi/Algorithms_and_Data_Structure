@@ -35,17 +35,17 @@ ___ levelOrderPrint(tree
         r_
     nodes_collections.deque([tree])
     currentCount, nextCount _ 1, 0
-    _____ len(nodes)!_0:
+    _____ l..(nodes)!_0:
         currentNode_nodes.popleft()
         currentCount-_1
         print currentNode.val,
         __ currentNode.left:
-            nodes.append(currentNode.left)
+            nodes.a..(currentNode.left)
             nextCount+_1
         __ currentNode.right:
-            nodes.append(currentNode.right)
+            nodes.a..(currentNode.right)
             nextCount+_1
-        __ currentCount==0:
+        __ currentCount__0:
             #finished printing current level
             print '\n',
             currentCount, nextCount _ nextCount, currentCount

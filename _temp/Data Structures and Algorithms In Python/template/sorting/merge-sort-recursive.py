@@ -8,7 +8,7 @@ ___ merge_sort(a
              
 
 ___ sort(a,temp,low,up
-    __ low == up: # only one element
+    __ low __ up: # only one element
         r_
 
     mid _ (low + up)//2

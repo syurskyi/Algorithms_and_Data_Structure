@@ -2,7 +2,7 @@
 ___ gettheoddlyrepeatednumber(myarray
         print "myarray:",myarray
 	i _ result _ 0
- 	___ i __ range (0, len(myarray)):
+ 	___ i __ range (0, l..(myarray)):
                 #print result,"^",myarray[i],"is",result ^ myarray[i] 
 		result _ result ^ myarray[i]
                  

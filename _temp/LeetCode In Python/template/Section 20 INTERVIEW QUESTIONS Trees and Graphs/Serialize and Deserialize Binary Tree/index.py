@@ -30,7 +30,7 @@ c_ Codec:
 
         ___ dfs(
             val _ next(data)
-            __ val == 'X':
+            __ val __ 'X':
                 r_ N..
             node _ TreeNode(int(val))
 

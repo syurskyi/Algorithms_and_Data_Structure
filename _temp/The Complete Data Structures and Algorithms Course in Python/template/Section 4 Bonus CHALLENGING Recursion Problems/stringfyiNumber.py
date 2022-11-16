@@ -16,7 +16,7 @@ ___ stringifyNumbers(obj
 
 obj _ {
   "num": 1,
-  "test": [],
+  "test":    # list,
   "data": {
     "val": 4,
     "info": {
@@ -29,7 +29,7 @@ obj _ {
 print(stringifyNumbers(obj))
 
 {'num': '1', 
- 'test': [], 
+ 'test':    # list, 
  'data': {'val': '4', 
           'info': {'isRight': True, 'random': '66'}
           }

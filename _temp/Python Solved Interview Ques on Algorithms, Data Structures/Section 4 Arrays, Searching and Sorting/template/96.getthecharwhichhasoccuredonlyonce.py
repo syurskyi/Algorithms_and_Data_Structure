@@ -15,7 +15,7 @@ ___ getelemwhichhassingleoccurence(myarray
 
 
 	___ elem __ myarray.lower(
-		__ hashTable[elem] == 1:
+		__ hashTable[elem] __ 1:
                         print "the first non repeated  character is:" ,elem
 			r_ elem
 

@@ -12,7 +12,7 @@ c_ Solution:
         ___ i, e __ enumerate(inorder
             memory[e] _ i
 
-        root _ helper(preorder[::-1], inorder, 0, len(inorder), memory)
+        root _ helper(preorder[::-1], inorder, 0, l..(inorder), memory)
         r_ root
 
     ___ helper preorder, inorder, leftPointer, rightPointer, memory

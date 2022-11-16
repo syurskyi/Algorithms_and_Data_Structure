@@ -14,7 +14,7 @@ c_ binTree:
         r_ root
 
     ___ addnode data
-        __(root == N..
+        __(root __ N..
             root _ Node(data)
         ____
             _add(data, root)
@@ -38,7 +38,7 @@ c_ binTree:
             r_ N..
 
     ___ _find data, node
-        __(data == node.v
+        __(data __ node.v
             r_ node
         elif(data < node.v and node.l !_ N..
             _find(data, node.l)
@@ -61,7 +61,7 @@ c_ binTree:
 
 
 ___ checkwhetheritsabintree(root
-        __ root == N..:
+        __ root __ N..:
                   r_ 1
         # false if left is > than root
         __ root.l !_ N.. and root.l.v > root.v:
@@ -80,11 +80,11 @@ ___ checkwhetheritsabintree(root
 
 
 ___ levelOrder(root
-    items _ []
+    items _    # list
     count_0
     items.insert(count,root)
     elements _""
-    _____ items !_ []:
+    _____ items !_    # list:
         temp _ items.pop()
         elements_ elements+str(temp.v)+ " "
         __ temp.l!_None:
@@ -95,11 +95,11 @@ ___ levelOrder(root
 
 
 ___ findsizeusingiteration(root
-    items _ []
+    items _    # list
     count_0
     items.insert(count,root)
     elements _""
-    _____ items !_ []:
+    _____ items !_    # list:
         temp _ items.pop()
         count +_ 1
         __ temp.l!_None:
@@ -116,11 +116,11 @@ ___ findsize(tree
        r_ findsize(tree.l)+findsize(tree.r)+1
 
 ___ printReverse(root
-    items _ []
+    items _    # list
     count_0
     items.insert(count,root)
     elements _""
-    _____ items !_ []:
+    _____ items !_    # list:
         temp _ items.pop()
         elements_ str(temp.v)+ " " + elements
         __ temp.l!_None:
@@ -131,17 +131,17 @@ ___ printReverse(root
 
 
 ___ maximumDepthOfTree(root
-        __ root == N..:
+        __ root __ N..:
             r_ 0
         r_ max(maximumDepthOfTree(root.l), maximumDepthOfTree(root.r)) + 1
 
 
 ___ deepestNode(root
-    items _ []
+    items _    # list
     count_0
     items.insert(count,root)
     elements _""
-    _____ items !_ []:
+    _____ items !_    # list:
         temp _ items.pop()
         elements_ str(temp.v)+ " " + elements
         __ temp.l!_None:
@@ -155,11 +155,11 @@ ___ deepestNode(root
 
 
 ___ countLeaves(root
-    items _ []
+    items _    # list
     count_0
     items.insert(count,root)
     elements _""
-    _____ items !_ []:
+    _____ items !_    # list:
         temp _ items.pop()
         __ temp.l __ N.. and temp.r __ N..:
             count +_ 1
@@ -172,10 +172,10 @@ ___ countLeaves(root
 
 
 ___ countFullNodes(root
-    items _ []
+    items _    # list
     count_0
     items.insert(count,root)
-    _____ items !_ []:
+    _____ items !_    # list:
         temp _ items.pop()
         __ temp.l __ n.. N.. and temp.r __ n.. N..:
             count +_ 1
@@ -189,10 +189,10 @@ ___ countFullNodes(root
 
 
 ___ countHalfNodes(root
-    items _ []
+    items _    # list
     count_0
     items.insert(count,root)
-    _____ items !_ []:
+    _____ items !_    # list:
         temp _ items.pop()
         __ (temp.l __ N.. and temp.r __ n.. N..) or \
                         (temp.l __ n.. N.. and temp.r __ N..
@@ -222,17 +222,17 @@ ___ appendpath(root, path, paths
         __ n.. root:
                 r_ 0
 
-        path.append(root.v)
+        path.a..(root.v)
         print "PATH:",path
-        paths.append(path)
+        paths.a..(path)
         print "PATHS:",paths
         appendpath(root.l, path + [root.v], paths)
         appendpath(root.r, path + [root.v], paths)
 
 
 ___ getthepathofeachnode(rootnode
-    nodepaths _ []
-    appendpath(rootnode, [], nodepaths)
+    nodepaths _    # list
+    appendpath(rootnode,    # list, nodepaths)
     print 'path of nodes:', nodepaths
 
 
@@ -249,9 +249,9 @@ ___ getthepath(root, val, path, paths
         r_ False
 
     __ n.. root.l and n.. root.r:
-        __ root.v == val:
-            path.append(root.v)
-            paths.append(path)
+        __ root.v __ val:
+            path.a..(root.v)
+            paths.a..(path)
             r_ True
         ____
             r_ False
@@ -262,18 +262,18 @@ ___ getthepath(root, val, path, paths
 
 
 ___ checkwhetherpathhassum(root, val
-    paths _ []
-    getthepath(root, val, [], paths)
+    paths _    # list
+    getthepath(root, val,    # list, paths)
     print 'sum:', val
     print 'paths:', paths
 
 
 ___ sumOfNodes(root
-    items _ []
+    items _    # list
     count_0
     items.insert(count,root)
     sum_0
-    _____ items !_ []:
+    _____ items !_    # list:
         temp _ items.pop()
         sum +_ temp.v
         __ temp.l!_None:
@@ -287,7 +287,7 @@ ___ sumOfNodes(root
 
 ___ compareTrees(r1, r2
         __ n.. (r1.l) and n.. (r1.r) and n.. (r2.l) and \
-                n.. (r2.r) and r1.v == r2.v:
+                n.. (r2.r) and r1.v __ r2.v:
                 r_ True
 
         __ (r1.v !_ r2.v) or (r1.l and n.. r2.l) or \

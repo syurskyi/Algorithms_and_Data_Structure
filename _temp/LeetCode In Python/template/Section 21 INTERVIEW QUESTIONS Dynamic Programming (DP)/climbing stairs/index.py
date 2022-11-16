@@ -1,6 +1,6 @@
 c_ Solution:
     ___ climbStairs n: int) -> int:
-        __(n == 1
+        __(n __ 1
             r_ 1
         dp _ [0]*(n+1)
         dp[1] _ 1

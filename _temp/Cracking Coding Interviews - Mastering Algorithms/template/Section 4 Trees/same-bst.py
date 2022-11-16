@@ -46,9 +46,9 @@ root5 _ Node(1, Node(2), Node(1))
 root6 _ Node(1, Node(1), Node(2))
 
 ___ same_tree(root1, root2
-	__ root1 == N.. and root2 == N..:
+	__ root1 __ N.. and root2 __ N..:
 		r_ True
-	elif root1 == Node or root2 == N..:
+	elif root1 __ Node or root2 __ N..:
 		r_ False
 	elif root1.val !_ root2.val:
 		r_ False

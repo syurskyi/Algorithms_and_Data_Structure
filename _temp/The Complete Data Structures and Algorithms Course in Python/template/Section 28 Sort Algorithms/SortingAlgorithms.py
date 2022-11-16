@@ -4,24 +4,24 @@
 import math
 
 ___ bubbleSort(customList
-    ___ i __ range(len(customList)-1
-        ___ j __ range(len(customList)-i-1
+    ___ i __ range(l..(customList)-1
+        ___ j __ range(l..(customList)-i-1
             __ customList[j] > customList[j+1]:
                 customList[j], customList[j+1] _ customList[j+1], customList[j]
     print(customList)
 
 
 ___ selectionSort(customList
-    ___ i __ range(len(customList)):
+    ___ i __ range(l..(customList)):
         min_index _ i
-        ___ j __ range(i+1, len(customList)):
+        ___ j __ range(i+1, l..(customList)):
             __ customList[min_index] > customList[j]:
                 min_index _ j
         customList[i], customList[min_index] _ customList[min_index], customList[i]
     print(customList)
 
 ___ insertionSort(customList
-    ___ i __ range(1, len(customList)):
+    ___ i __ range(1, l..(customList)):
         key _ customList[i]
         j _ i-1
         _____ j>_0 and key < customList[j]:
@@ -32,22 +32,22 @@ ___ insertionSort(customList
 
 
 ___ bucketSort(customList
-    numberofBuckets _ round(math.sqrt(len(customList)))
+    numberofBuckets _ round(math.sqrt(l..(customList)))
     maxValue _ max(customList)
-    arr _ []
+    arr _    # list
 
     ___ i __ range(numberofBuckets
-        arr.append([])
+        arr.a..(   # list)
     ___ j __ customList:
         index_b _ math.ceil(j*numberofBuckets/maxValue)
-        arr[index_b-1].append(j)
+        arr[index_b-1].a..(j)
     
     ___ i __ range(numberofBuckets
         arr[i] _ insertionSort(arr[i])
     
     k _ 0
     ___ i __ range(numberofBuckets
-        ___ j __ range(len(arr[i])):
+        ___ j __ range(l..(arr[i])):
             customList[k] _ arr[i][j]
             k +_ 1
     r_ customList
@@ -127,7 +127,7 @@ ___ heapify(customList, n, i
 
 
 ___ heapSort(customList
-    n _ len(customList)
+    n _ l..(customList)
     ___ i __ range(int(n/2)-1, -1, -1
         heapify(customList, n, i)
     

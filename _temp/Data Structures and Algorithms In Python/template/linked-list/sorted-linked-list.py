@@ -16,7 +16,7 @@ c_ SortedLinkedList o..
             temp _ Node(data)
 
             # List empty or node to be inserted before first node 
-            __ start == N.. or data < start.info:
+            __ start __ N.. or data < start.info:
                 temp.link _ start
                 start _ temp
                 r_
@@ -30,7 +30,7 @@ c_ SortedLinkedList o..
 
     ___ create_list
         n _ int(input("Enter the number of nodes : "))
-        __ n == 0:
+        __ n __ 0:
             r_
         
 	___ i __ range(n
@@ -44,7 +44,7 @@ c_ SortedLinkedList o..
         p _ start
         position _ 1
         _____  p __ n.. N.. and p.info <_ x:
-            __  p.info == x:
+            __  p.info __ x:
                 break
             position+_1
             p _ p.link
@@ -78,15 +78,15 @@ _____ True:
         
     option _ int(input("Enter your choice : " ))
 
-    __ option == 1:
+    __ option __ 1:
         list.display_list()
-    elif option == 2:
+    elif option __ 2:
         data _ int(input("Enter the element to be inserted : "))
         list.insert_in_order(data)
-    elif option == 3:
+    elif option __ 3:
         data _ int(input("Enter the element to be searched : "))
         list.search(data)
-    elif option == 4:
+    elif option __ 4:
         break
     ____
         print("Wrong option") 

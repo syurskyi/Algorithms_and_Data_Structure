@@ -20,13 +20,13 @@ c_ Node:
 # 4 <---> 3
 
 ___ clone(node
-	queue _ []
+	queue _    # list
 
 	visited _ {}
 
-	queue.append(node)
+	queue.a..(node)
 
-	_____ len(queue) > 0:
+	_____ l..(queue) > 0:
 		cur _ queue.pop(0)
 
 		new_node _ N..
@@ -34,19 +34,19 @@ ___ clone(node
 		__ cur __ visited.keys(
 			new_node _ visited[cur]
 		____
-			new_node _ Node(cur.val, [])
+			new_node _ Node(cur.val,    # list)
 
 		neighbors _ new_node.neighbors
 
 		visited[cur] _ new_node
 
-		___ i __ range(len(cur.neighbors)):
+		___ i __ range(l..(cur.neighbors)):
 			__ cur.neighbors[i] __ visited.keys(
-				neighbors.append(visited[cur.neighbors[i]])
+				neighbors.a..(visited[cur.neighbors[i]])
 			____
-				queue.append(cur.neighbors[i])
-				new_neighbor_node _ Node(cur.neighbors[i].val, [])
-				neighbors.append(new_neighbor_node)
+				queue.a..(cur.neighbors[i])
+				new_neighbor_node _ Node(cur.neighbors[i].val,    # list)
+				neighbors.a..(new_neighbor_node)
 				visited[cur.neighbors[i]] _ new_neighbor_node
 
 	r_ visited[node]
@@ -54,19 +54,19 @@ ___ clone(node
 
 
 
-node _ Node(1, [])
-node2 _ Node(2, [])
-node3 _ Node(3, [])
-node4 _ Node(4, [])
+node _ Node(1,    # list)
+node2 _ Node(2,    # list)
+node3 _ Node(3,    # list)
+node4 _ Node(4,    # list)
 
-node.neighbors.append(node2)
-node.neighbors.append(node4)
+node.neighbors.a..(node2)
+node.neighbors.a..(node4)
 
-node2.neighbors.append(node)
-node2.neighbors.append(node3)
+node2.neighbors.a..(node)
+node2.neighbors.a..(node3)
 
-node3.neighbors.append(node2)
-node3.neighbors.append(node4)
+node3.neighbors.a..(node2)
+node3.neighbors.a..(node4)
 
-node4.neighbors.append(node)
-node4.neighbors.append(node3)
+node4.neighbors.a..(node)
+node4.neighbors.a..(node3)

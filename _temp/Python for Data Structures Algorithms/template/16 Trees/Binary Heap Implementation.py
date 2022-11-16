@@ -33,7 +33,7 @@ c_ BinHeap:
 
     ___ insertk
 
-        heapList.append(k)
+        heapList.a..(k)
         currentSize _ currentSize + 1
         percUp(currentSize)
 
@@ -70,8 +70,8 @@ c_ BinHeap:
         r_ retval
 
     ___ buildHeapalist
-        i _ len(alist) // 2
-        currentSize _ len(alist)
+        i _ l..(alist) // 2
+        currentSize _ l..(alist)
         heapList _ [0] + alist[:]
         _____ (i > 0
             percDown(i)

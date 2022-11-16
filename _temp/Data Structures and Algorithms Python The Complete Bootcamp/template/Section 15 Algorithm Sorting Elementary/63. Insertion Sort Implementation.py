@@ -1,5 +1,5 @@
 ___ insertionSort(arr
-    ___ i __ range(1, len(arr)):
+    ___ i __ range(1, l..(arr)):
         key _ arr[i]
         last _ i - 1
 

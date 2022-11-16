@@ -30,13 +30,13 @@ ___ heapifyTreeInsert(rootNode, index, heapType
     parentIndex _ int(index/2)
     __ index <_ 1:
         r_
-    __ heapType == "Min":
+    __ heapType __ "Min":
         __ rootNode.customList[index] < rootNode.customList[parentIndex]:
             temp _ rootNode.customList[index]
             rootNode.customList[index] _ rootNode.customList[parentIndex]
             rootNode.customList[parentIndex] _ temp
         heapifyTreeInsert(rootNode, parentIndex, heapType)
-    elif heapType == "Max":
+    elif heapType __ "Max":
         __ rootNode.customList[index] > rootNode.customList[parentIndex]:
             temp _ rootNode.customList[index]
             rootNode.customList[index] _ rootNode.customList[parentIndex]
@@ -44,7 +44,7 @@ ___ heapifyTreeInsert(rootNode, index, heapType
         heapifyTreeInsert(rootNode, parentIndex, heapType)
 
 ___ inserNode(rootNode, nodeValue, heapType
-    __ rootNode.heapSize + 1 == rootNode.maxSize:
+    __ rootNode.heapSize + 1 __ rootNode.maxSize:
         r_ "The Binary Heap is Full"
     rootNode.customList[rootNode.heapSize + 1] _ nodeValue
     rootNode.heapSize +_ 1
@@ -58,8 +58,8 @@ ___ heapifyTreeExtract(rootNode, index, heapType
 
     __ rootNode.heapSize < leftIndex:
         r_
-    elif rootNode.heapSize == leftIndex:
-        __ heapType == "Min":
+    elif rootNode.heapSize __ leftIndex:
+        __ heapType __ "Min":
             __ rootNode.customList[index] > rootNode.customList[leftIndex]:
                 temp _ rootNode.customList[index]
                 rootNode.customList[index] _ rootNode.customList[leftIndex]
@@ -73,7 +73,7 @@ ___ heapifyTreeExtract(rootNode, index, heapType
             r_
 
     ____
-        __ heapType == "Min":
+        __ heapType __ "Min":
             __ rootNode.customList[leftIndex] < rootNode.customList[rightIndex]:
                 swapChild _ leftIndex
             ____
@@ -94,7 +94,7 @@ ___ heapifyTreeExtract(rootNode, index, heapType
     heapifyTreeExtract(rootNode, swapChild, heapType)
 
 ___ extractNode(rootNode, heapType
-    __ rootNode.heapSize == 0:
+    __ rootNode.heapSize __ 0:
         r_
     ____
         extractedNode _ rootNode.customList[1]

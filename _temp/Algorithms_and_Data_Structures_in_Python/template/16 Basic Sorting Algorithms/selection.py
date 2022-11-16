@@ -1,11 +1,11 @@
 
 ___ selection_sort(nums
     
-	___ i __ range(len(nums)-1
+	___ i __ range(l..(nums)-1
 		
 		index _ i
 		
-		___ j __ range(i+1,len(nums),1
+		___ j __ range(i+1,l..(nums),1
 			__ nums[j] < nums[index]:
 				index _ j
 			
@@ -20,7 +20,7 @@ ___ swap(nums, i, j
 	nums[i] _ nums[j]
 	nums[j] _ temp
  
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
    
    nums _ [-1,4,5,2,-2,0,1,2,3,2,1,0,1,2,3]
    print(selection_sort(nums))

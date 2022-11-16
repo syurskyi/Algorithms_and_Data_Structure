@@ -9,17 +9,17 @@ c_ Graph:
         gdict _ gdict
     
     ___ bfs start, end
-        queue _ []
-        queue.append([start])
+        queue _    # list
+        queue.a..([start])
         _____ queue:
             path _ queue.pop(0)
             node _ path[-1]
-            __ node == end:
+            __ node __ end:
                 r_ path
-            ___ adjacent __ gdict.get(node, []
+            ___ adjacent __ gdict.get(node,    # list
                 new_path _ list(path)
-                new_path.append(adjacent)
-                queue.append(new_path)
+                new_path.a..(adjacent)
+                queue.a..(new_path)
 
 customDict _ { "a" : ["b", "c"],
                "b" : ["d", "g"],

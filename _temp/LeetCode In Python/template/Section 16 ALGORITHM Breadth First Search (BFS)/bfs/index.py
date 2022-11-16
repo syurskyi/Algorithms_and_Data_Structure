@@ -8,13 +8,13 @@ c_ Graph:
         graph _ defaultdict(list)
 
     ___ setEdge u, v
-        graph[u].append(v)
+        graph[u].a..(v)
 
     ___ bfs s
         visited _ set()
 
-        queue _ []
-        queue.append(s)
+        queue _    # list
+        queue.a..(s)
 
         visited.add(s)
 
@@ -24,7 +24,7 @@ c_ Graph:
 
             ___ v __ graph[u]:
                 __ v n.. __ visited:
-                    queue.append(v)
+                    queue.a..(v)
                     visited.add(v)
 
 

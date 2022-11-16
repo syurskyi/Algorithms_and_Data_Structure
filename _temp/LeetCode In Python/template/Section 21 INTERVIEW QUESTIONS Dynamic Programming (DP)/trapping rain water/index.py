@@ -1,7 +1,7 @@
 c_ Solution:
     ___ trap height: List[int]) -> int:
-        n _ len(height)
-        __(n == 0
+        n _ l..(height)
+        __(n __ 0
             r_ 0
 
         left _ [0]*n

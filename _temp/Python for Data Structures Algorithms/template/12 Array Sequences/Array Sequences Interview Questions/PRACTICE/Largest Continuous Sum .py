@@ -9,7 +9,7 @@ Fill out your solution below:
 
 # %%
 ___ large_cont_sum(arr
-    __ len(arr) == 0:
+    __ l..(arr) __ 0:
         r_ 0
     
     max_num _ sum _ arr[0]# max=sum=arr[0] bug: TypeError: 'int' object is not callable. (Do not use the keyword!)

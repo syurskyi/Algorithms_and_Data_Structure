@@ -11,7 +11,7 @@ c_ Solution:
         helper(root.left)
         
         k -_ 1
-        __ k == 0:
+        __ k __ 0:
             res _ root.val
             r_
         helper(root.right)

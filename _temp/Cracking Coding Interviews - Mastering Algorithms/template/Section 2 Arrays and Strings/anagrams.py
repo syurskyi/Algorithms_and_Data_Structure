@@ -7,24 +7,24 @@
 # O(nlogn)
 
 ___ anagram(word1, word2
-	r_ sorted(word1) == sorted(word2)
+	r_ sorted(word1) __ sorted(word2)
 
 # O(n) O(n)
 
 ___ anagram2(word1, word2
-	__ len(word1) !_ len(word2
+	__ l..(word1) !_ l..(word2
 		r_ False
 
 	dict1 _ {}
 	dict2 _ {}
 
-	___ i __ range(len(word1)):
+	___ i __ range(l..(word1)):
 		__ word1[i] n.. __ dict1.keys(
 			dict1[word1[i]] _ 1
 		____
 			dict1[word1[i]] +_ 1
 
-	___ i __ range(len(word2)):
+	___ i __ range(l..(word2)):
 		__ word2[i] n.. __ dict2.keys(
 			dict2[word2[i]] _ 1
 		____

@@ -43,7 +43,7 @@ c_ SingleLinkedList:
     ___ searchx
         p _ start
         _____ p __ n.. N..:
-            __ p.info.get_student_id() == x:
+            __ p.info.get_student_id() __ x:
                 r_ p.info
             p _ p.link
         ____
@@ -60,14 +60,14 @@ c_ SingleLinkedList:
             r_ 
 
         # Deletion of first node
-        __ start.info.get_student_id() == x:
+        __ start.info.get_student_id() __ x:
             start _ start.link   
             r_ 
 
         # Deletion in between or at the end
         p _ start 
         _____ p.link __ n.. N..:
-            __ p.link.info.get_student_id() == x:
+            __ p.link.info.get_student_id() __ x:
                 break 	
             p _ p.link 
 
@@ -108,7 +108,7 @@ c_ HashTable:
         key _ newRecord.get_student_id()
         h _ hash(key)
 
-        __ array[h] == N..:
+        __ array[h] __ N..:
             array[h] _ SingleLinkedList()
         array[h].insert_in_beginning(newRecord)
         n+_1
@@ -138,24 +138,24 @@ _____ True:
     print("5.Exit")
 
     choice _ int(input("Enter your choice : "))
-    __ choice == 1:
+    __ choice __ 1:
         id _ int(input("Enter student id : "))
         name _ input("Enter student name : ")
         aRecord _ studentRecord(id,name)
         table.insert(aRecord)
-    elif choice == 2:
+    elif choice __ 2:
         id _ int(input("Enter a key to be searched : "))
         aRecord _ table.search(id)
         __  aRecord __ N..:
             print("Key not found")
         ____
             print(aRecord)
-    elif choice == 3:
+    elif choice __ 3:
           id _ int(input("Enter a key to be deleted :"))
           table.delete(id)
-    elif choice == 4:
+    elif choice __ 4:
           table.display_table()
-    elif choice == 5:
+    elif choice __ 5:
           break
     ____
           print("Wrong option") 

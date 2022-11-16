@@ -9,10 +9,10 @@ c_ Graph:
         numberofVertices _ numberofVertices
     
     ___ addEdge vertex, edge
-        graph[vertex].append(edge)
+        graph[vertex].a..(edge)
     
     ___ topogologicalSortUtil v, visited, stack
-        visited.append(v)
+        visited.a..(v)
 
         ___ i __ graph[v]:
             __ i n.. __ visited:
@@ -22,8 +22,8 @@ c_ Graph:
     
     ___ topologicalSort 
 
-        visited _ []
-        stack _ []
+        visited _    # list
+        stack _    # list
 
         ___ k __ list(graph
             __ k n.. __ visited:

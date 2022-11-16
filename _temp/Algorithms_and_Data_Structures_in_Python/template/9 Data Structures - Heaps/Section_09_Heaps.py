@@ -65,13 +65,13 @@ c_ Heap o..
                 break;
 
     ___ isFull
-        __ currentPosition == Heap.HEAP_SIZE:
+        __ currentPosition __ Heap.HEAP_SIZE:
             r_ True
         ____
             r_ False
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     heap _ Heap()
     heap.insert(10)
     heap.insert(-20)

@@ -8,7 +8,7 @@ ___ binary_search(arr,ele
 
     # First and last index values
     first _ 0
-    last _ len(arr) - 1
+    last _ l..(arr) - 1
 
     found _ False
 
@@ -18,7 +18,7 @@ ___ binary_search(arr,ele
         mid _ (first+last)/2 # or // for Python 3
 
         # Match found
-        __ arr[mid] == ele:
+        __ arr[mid] __ ele:
             found _ True
 
         # Set new midpoints up or down depending on comparison
@@ -46,16 +46,16 @@ binary_search(arr,2.2)
 ___ rec_bin_search(arr,ele
 
     # Base Case!
-    __ len(arr) == 0:
+    __ l..(arr) __ 0:
         r_ False
 
     # Recursive Case
     ____
 
-        mid _ len(arr)/2
+        mid _ l..(arr)/2
 
         # If match found
-        __ arr[mid]==ele:
+        __ arr[mid]__ele:
             r_ True
 
         ____

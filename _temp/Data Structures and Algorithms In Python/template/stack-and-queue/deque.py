@@ -6,19 +6,19 @@ c_ EmptyQueueError(Exception
 
 c_ Deque:
     ___ -
-        items _ []
+        items _    # list
 
     ___ is_empty
-        r_ items == []
+        r_ items __    # list
 
     ___ size
-        r_ len(items)
+        r_ l..(items)
 
     ___ insert_front item
         items.insert(0,item)
     
     ___ insert_rear item
-        items.append(item)
+        items.a..(item)
 
     ___ delete_front
         __ is_empty(
@@ -44,7 +44,7 @@ c_ Deque:
         print(items)
 
 ####################################################################
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     qu _ Deque()
 
     _____ True:
@@ -60,27 +60,27 @@ __ __name__ == "__main__":
              
         choice _ int(input("Enter your choice : "))
 
-        __ choice == 1:
+        __ choice __ 1:
             x_int(input("Enter the element : "))
             qu.insert_front(x)
-        elif choice== 2:
+        elif choice__ 2:
             x_int(input("Enter the element : "))
             qu.insert_rear(x)
-        elif choice == 3:
+        elif choice __ 3:
             x _ qu.delete_front()
             print("Element deleted from front end is  ", x)
-        elif choice == 4:
+        elif choice __ 4:
             x _ qu.delete_rear()
             print("Element deleted from rear end is  ", x)
-        elif choice == 5:
+        elif choice __ 5:
             print("First element is  ", qu.first())
-        elif choice == 6:
+        elif choice __ 6:
             print("Last element is  ", qu.last())
-        elif choice == 7:
+        elif choice __ 7:
             qu.display()
-        elif choice == 8:
+        elif choice __ 8:
             print("Size of queue " , qu.size())
-        elif choice == 9:
+        elif choice __ 9:
             break
         ____
             print("Wrong choice")

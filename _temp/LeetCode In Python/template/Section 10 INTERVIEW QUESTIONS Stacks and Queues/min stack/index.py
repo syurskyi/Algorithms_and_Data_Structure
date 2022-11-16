@@ -1,12 +1,12 @@
 c_ MinStack:
     ___ -
-        st _ []
+        st _    # list
 
     ___ push x: int) -> N..:
         curMin _ getMin()
-        __ curMin == N.. or curMin > x:
+        __ curMin __ N.. or curMin > x:
             curMin _ x
-        st.append((x, curMin))
+        st.a..((x, curMin))
 
     ___ pop ) -> N..:
         st.pop()

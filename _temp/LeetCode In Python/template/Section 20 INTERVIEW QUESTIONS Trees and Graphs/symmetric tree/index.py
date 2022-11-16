@@ -11,6 +11,6 @@ c_ Solution:
             r_ True
         __(t1 __ N.. or t2 __ N..
             r_ False
-        r_ (t1.val==t2.val) and isMirror(t1.right,t2.left) and isMirror(t1.left,t2.right)
+        r_ (t1.val__t2.val) and isMirror(t1.right,t2.left) and isMirror(t1.left,t2.right)
     ___ isSymmetric root: TreeNode) -> bool:
         r_ isMirror(root,root)

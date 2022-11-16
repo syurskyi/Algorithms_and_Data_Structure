@@ -24,7 +24,7 @@
 # is O(N) in total.
 
 ___ pair_sum(arr, k
-    __ len(arr) < 2:
+    __ l..(arr) < 2:
         r_
 
     # Sets for tracking
@@ -46,7 +46,7 @@ ___ pair_sum(arr, k
             output.add((min(num, target), max(num, target)))
 
     # FOR TESTING
-    r_ len(output)
+    r_ l..(output)
     # Nice one-liner for printing output
     # return '\n'.join(map(str,list(output)))
 

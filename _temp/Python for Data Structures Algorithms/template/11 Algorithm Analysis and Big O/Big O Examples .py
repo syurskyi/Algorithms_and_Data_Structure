@@ -133,7 +133,7 @@ ___ comp(lst
     '''
     print(lst[0])
     
-    midpoint _ len(lst)/2
+    midpoint _ l..(lst)/2
     
     ___ val __ lst[:midpoint]:
         print(val)
@@ -168,7 +168,7 @@ ___ matcher(lst,match
     Given a list lst, return a boolean indicating if match item is in the list
     '''
     ___ item __ lst:
-        __ item == match:
+        __ item __ match:
             r_ True
     r_ False
 
@@ -213,10 +213,10 @@ Let's see an example of O(n) **space** complexity:
 
 # %%
 ___ create_list(n
-    new_list _ []
+    new_list _    # list
     
     ___ num __ range(n
-        new_list.append('new')
+        new_list.a..('new')
     
     r_ new_list
 

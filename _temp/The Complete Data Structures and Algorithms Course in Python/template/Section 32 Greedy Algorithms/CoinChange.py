@@ -7,7 +7,7 @@
 ___ coinChange(totalNumber, coins
     N _ totalNumber
     coins.sort()
-    index _ len(coins)-1
+    index _ l..(coins)-1
     _____ True:
         coinValue _ coins[index]
         __ N >_ coinValue:
@@ -16,7 +16,7 @@ ___ coinChange(totalNumber, coins
         __ N < coinValue:
             index -_ 1
         
-        __ N == 0:
+        __ N __ 0:
             break
 
 coins _ [1,2,5,20,50,100]

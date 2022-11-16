@@ -9,7 +9,7 @@ c_ Item:
         weight _ weight
 
 ___ zoKnapsack(items, capacity, currentIndex
-    __ capacity <_0 or currentIndex < 0 or currentIndex >_ len(items
+    __ capacity <_0 or currentIndex < 0 or currentIndex >_ l..(items
         r_ 0
     elif items[currentIndex].weight <_ capacity:
         profit1 _ items[currentIndex].profit + zoKnapsack(items, capacity-items[currentIndex].weight, currentIndex+1)

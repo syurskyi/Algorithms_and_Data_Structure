@@ -3,20 +3,20 @@
 
 c_ Queue:
     ___ -  
-        items _ []
+        items _    # list
     
     ___ __str__ 
         values _ [str(x) ___ x __ items]
         r_ ' '.join(values)
     
     ___ isEmpty 
-        __ items == []:
+        __ items __    # list:
             r_ True
         ____
             r_ False
     
     ___ enqueue value
-        items.append(value)
+        items.a..(value)
         r_ "The element is inserted at the end of Queue"
     
     ___ dequeue 

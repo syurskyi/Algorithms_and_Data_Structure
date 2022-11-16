@@ -5,7 +5,7 @@
 ___ solution(A
     global_max_sum _ 0
     local_max_sum _ 0
-    ___ i __ range(1, len(A)):
+    ___ i __ range(1, l..(A)):
         d _ A[i] - A[i - 1]
         local_max_sum _ max(d, local_max_sum + d)
         global_max_sum _ max(local_max_sum, global_max_sum)

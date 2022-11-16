@@ -1,7 +1,7 @@
 
 ___ insertion_sort(nums
     
-	___ i __ range(len(nums)):
+	___ i __ range(l..(nums)):
 		
 		j _ i
 		
@@ -16,7 +16,7 @@ ___ swap(nums, i, j
 	nums[i] _ nums[j]
 	nums[j] _ temp
  
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
    
    nums _ [5,4,3,2,1]
    print(insertion_sort(nums))

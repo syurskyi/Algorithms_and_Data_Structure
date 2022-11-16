@@ -8,7 +8,7 @@ c_ Graph:
         edges _ edges
         nodes _ nodes
         vertexNum _ vertexNum
-        MST _ []
+        MST _    # list
     
     ___ printSolution 
         print("Edge : Weight")
@@ -29,7 +29,7 @@ c_ Graph:
                                 min _ edges[i][j]
                                 s _ i
                                 d _ j
-            MST.append([nodes[s], nodes[d], edges[s][d]])
+            MST.a..([nodes[s], nodes[d], edges[s][d]])
             visited[d] _ True
             edgeNum +_ 1
         printSolution()

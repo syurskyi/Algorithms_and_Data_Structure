@@ -16,7 +16,7 @@ ___ solution(N, A
             counters[x] +_ 1
         __ i <_ N and counters[x] > current_max:
             current_max _ counters[x]
-    ___ i __ range(0, len(counters)):
+    ___ i __ range(0, l..(counters)):
         __ counters[i] < start_line:
             counters[i] _ start_line
     r_ counters

@@ -11,19 +11,19 @@ Finally, implement a Deque class! It should be able to do the following:
 # %%
 c_ Deque o..
     ___ -
-        items _ []
+        items _    # list
     ___ is_empty
-        r_ items == []
+        r_ items __    # list
     ___ add_front e
         items.insert(0, e)
     ___ add_rear e
-        items.append(e)
+        items.a..(e)
     ___ remove_front
         r_ items.pop(0)
     ___ remove_rear
         r_ items.pop()
     ___ size
-        r_ len(items)
+        r_ l..(items)
     pass
 
 # %%

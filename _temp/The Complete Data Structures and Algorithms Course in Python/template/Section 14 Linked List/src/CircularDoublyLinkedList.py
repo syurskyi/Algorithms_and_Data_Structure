@@ -18,7 +18,7 @@ c_ CircularDoublyLinkedList:
         _____ node:
             yield node
             node _ node.next
-            __ node == tail.next:
+            __ node __ tail.next:
                 break
     
     #  Creation of Circular Doubly Linked List
@@ -37,13 +37,13 @@ c_ CircularDoublyLinkedList:
             r_ "The CDLL does not exist"
         ____
             newNode _ Node(value)
-            __ location == 0:
+            __ location __ 0:
                 newNode.next _ head
                 newNode.prev _ tail
                 head.prev _ newNode
                 head _ newNode
                 tail.next _ newNode
-            elif location == 1:
+            elif location __ 1:
                 newNode.next _ head
                 newNode.prev _ tail
                 head.prev _ newNode
@@ -69,7 +69,7 @@ c_ CircularDoublyLinkedList:
             tempNode _ head
             _____ tempNode:
                 print(tempNode.value)
-                __ tempNode == tail:
+                __ tempNode __ tail:
                     break
                 tempNode _ tempNode.next
 
@@ -81,7 +81,7 @@ c_ CircularDoublyLinkedList:
             tempNode _ tail
             _____ tempNode:
                 print(tempNode.value)
-                __ tempNode == head:
+                __ tempNode __ head:
                     break
                 tempNode _ tempNode.prev
     
@@ -92,9 +92,9 @@ c_ CircularDoublyLinkedList:
         ____
             tempNode _ head
             _____ tempNode:
-                __ tempNode.value == nodeValue:
+                __ tempNode.value __ nodeValue:
                     r_ tempNode.value
-                __ tempNode == tail:
+                __ tempNode __ tail:
                     r_ "The value does not exist in CDLL"
                 tempNode _ tempNode.next
     
@@ -103,8 +103,8 @@ c_ CircularDoublyLinkedList:
         __ head __ N..:
             print("There is not any node to delete")
         ____
-            __ location == 0:
-                __ head == tail:
+            __ location __ 0:
+                __ head __ tail:
                     head.prev _ N..
                     head.next _ N..
                     head _ N..
@@ -113,8 +113,8 @@ c_ CircularDoublyLinkedList:
                     head _ head.next
                     head.prev _ tail
                     tail.next _ head
-            elif location == 1:
-                __ head == tail:
+            elif location __ 1:
+                __ head __ tail:
                     head.prev _ N..
                     head.next _ N..
                     head _ N..

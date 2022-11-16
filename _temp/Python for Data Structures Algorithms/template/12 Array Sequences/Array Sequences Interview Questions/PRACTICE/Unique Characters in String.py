@@ -32,7 +32,7 @@ ___ uni_char(s
 # %%
 # another 1-line solution
 ___ uni_char2(s
-    r_ len(set(s)) == len(s)
+    r_ l..(set(s)) __ l..(s)
     pass
 
 # %%

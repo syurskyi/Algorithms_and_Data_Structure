@@ -6,9 +6,9 @@ c_ Node:
 
 
 ___ search(root, target
-	__ root == N..:
+	__ root __ N..:
 		r_ N..
-	elif root.val == target:
+	elif root.val __ target:
 		r_ root
 	elif root.val < target:
 		r_ search(root.right, target)

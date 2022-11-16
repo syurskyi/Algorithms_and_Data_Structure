@@ -17,10 +17,10 @@ c_ TreeNode:
         r_ rightChild
 
     ___ isLeftChild 
-        r_ parent and parent.leftChild == self
+        r_ parent and parent.leftChild __ self
 
     ___ isRightChild 
-        r_ parent and parent.rightChild == self
+        r_ parent and parent.rightChild __ self
 
     ___ isRoot 
         r_ n.. parent
@@ -94,7 +94,7 @@ c_ BinarySearchTree:
 
         __ n.. currentNode:
             r_ N..
-        elif currentNode.key == key:
+        elif currentNode.key __ key:
             r_ currentNode
         elif key < currentNode.key:
             r_ _get(key,currentNode.leftChild)
@@ -120,7 +120,7 @@ c_ BinarySearchTree:
                 size _ size-1
             ____
                 raise KeyError('Error, key not in tree')
-        elif size == 1 and root.key == key:
+        elif size __ 1 and root.key __ key:
             root _ N..
             size _ size - 1
         ____
@@ -183,7 +183,7 @@ c_ BinarySearchTree:
     ___ removecurrentNode
 
         __ currentNode.isLeaf( #leaf
-            __ currentNode == currentNode.parent.leftChild:
+            __ currentNode __ currentNode.parent.leftChild:
                 currentNode.parent.leftChild _ N..
             ____
                 currentNode.parent.rightChild _ N..

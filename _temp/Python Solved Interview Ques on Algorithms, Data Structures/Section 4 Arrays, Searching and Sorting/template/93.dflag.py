@@ -1,11 +1,11 @@
 ___ dflag(myarray
     print "given array:",myarray
-    n _ len(myarray)
+    n _ l..(myarray)
     zeroIndex _ 0; twoIndex _ n - 1
     currentIndex _ 0
     _____ currentIndex <_ twoIndex:
         ##print "CURIndex:",currentIndex,"MYARRAY:",myarray,"ZEROIndex:",zeroIndex,"TWOIndex:",twoIndex
-        __ myarray[currentIndex] == 0:
+        __ myarray[currentIndex] __ 0:
             __ currentIndex > zeroIndex:
                 #print "currentIndex:",currentIndex,"is > then zeroIndex:",zeroIndex
                 #print "myarray[currentIndex:",currentIndex,"] is 0, so exchanging myarray[",zeroIndex,"] and myarray[",currentIndex,"]:",myarray[zeroIndex], "with", myarray[currentIndex]
@@ -16,7 +16,7 @@ ___ dflag(myarray
                 currentIndex +_ 1
                 zeroIndex +_ 1
         
-        elif myarray[currentIndex] == 2:
+        elif myarray[currentIndex] __ 2:
             __ currentIndex < twoIndex:
                 #print "currentIndex:",currentIndex,"is < then twoIndex:",twoIndex
                 #print "myarray[currentIndex:",currentIndex,"] is 2, so exchanging myarray[",twoIndex,"] and myarray[",currentIndex,"]:",myarray[twoIndex], "with", myarray[currentIndex]
@@ -30,7 +30,7 @@ ___ dflag(myarray
     print myarray, '\n'
     r_ myarray
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
 #     dflag([0,1,2])   
 #      dflag([0,2,1])   
 #      dflag([2, 0, 1, 0, 2])

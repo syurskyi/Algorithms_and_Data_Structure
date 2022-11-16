@@ -18,14 +18,14 @@ ___ compress(s
 
     # Begin Run as empty string
     r _ ""
-    l _ len(s)
+    l _ l..(s)
 
     # Check for length 0
-    __ l == 0:
+    __ l __ 0:
         r_ ""
 
     # Check for length 1
-    __ l == 1:
+    __ l __ 1:
         r_ s + "1"
 
     # Intialize Values
@@ -36,7 +36,7 @@ ___ compress(s
     _____ i < l:
 
         # Check to see if it is the same letter
-        __ s[i] == s[i - 1]:
+        __ s[i] __ s[i - 1]:
             # Add a count if same as previous
             cnt +_ 1
         ____

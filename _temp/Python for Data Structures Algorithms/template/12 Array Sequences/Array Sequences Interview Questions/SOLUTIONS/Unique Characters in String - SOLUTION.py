@@ -9,7 +9,7 @@
 # a built-in data structure but using a look-up method to check if the characters are unique
 
 ___ uni_char(s
-    r_ len(set(s)) == len(s)
+    r_ l..(set(s)) __ l..(s)
 
 ___ uni_char2(s
     chars _ set()

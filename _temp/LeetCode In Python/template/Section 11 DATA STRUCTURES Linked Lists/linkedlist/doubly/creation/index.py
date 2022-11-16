@@ -11,14 +11,14 @@ c_ LinkedList:
 
     ___ createList arr
         start _ head
-        n _ len(arr)
+        n _ l..(arr)
 
         temp _ start
         i _ 0
 
         _____(i < n
             newNode _ Node(arr[i])
-            __(i == 0
+            __(i __ 0
                 start _ newNode
                 temp _ start
             ____

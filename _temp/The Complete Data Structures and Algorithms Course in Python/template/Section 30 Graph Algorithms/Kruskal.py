@@ -7,15 +7,15 @@ import DisjointSet as dst
 c_ Graph:
     ___ -  vertices
         V _ vertices
-        graph _ []
-        nodes _ []
-        MST _ []
+        graph _    # list
+        nodes _    # list
+        MST _    # list
 
     ___ addEdge s, d, w
-        graph.append([s, d, w])
+        graph.a..([s, d, w])
     
     ___ addNode value
-        nodes.append(value)
+        nodes.a..(value)
     
     ___ printSolutions,d,w
         ___ s, d, w __ MST:
@@ -32,7 +32,7 @@ c_ Graph:
             y _ ds.find(d)
             __ x !_ y:
                 e +_ 1
-                MST.append([s,d,w])
+                MST.a..([s,d,w])
                 ds.union(x,y)
         printSolution(s,d,w)
 

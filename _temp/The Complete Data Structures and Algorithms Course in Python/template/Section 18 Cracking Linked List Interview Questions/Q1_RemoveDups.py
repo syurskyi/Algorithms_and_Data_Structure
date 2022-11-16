@@ -28,7 +28,7 @@ ___ removeDups1(ll
     _____ currentNode:
         runner _ currentNode
         _____ runner.next:
-            __ runner.next.value == currentNode.value:
+            __ runner.next.value __ currentNode.value:
                 runner.next _ runner.next.next
             ____
                 runner _ runner.next

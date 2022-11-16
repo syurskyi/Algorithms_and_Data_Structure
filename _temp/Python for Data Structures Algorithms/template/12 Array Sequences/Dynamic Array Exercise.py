@@ -77,7 +77,7 @@ c_ DynamicArray o..
         """
         Add element to end of the array
         """
-        __ n == capacity:
+        __ n __ capacity:
             _resize(2*capacity) #Double capacity if not enough room
         
         A[n] _ ele #Set self.n index to element
@@ -108,19 +108,19 @@ arr _ DynamicArray()
 
 # %%
 # Append new element
-arr.append(1)
+arr.a..(1)
 
 # %%
 # Check length
-len(arr)
+l..(arr)
 
 # %%
 # Append new element
-arr.append(2)
+arr.a..(2)
 
 # %%
 # Check length
-len(arr)
+l..(arr)
 
 # %%
 # Index

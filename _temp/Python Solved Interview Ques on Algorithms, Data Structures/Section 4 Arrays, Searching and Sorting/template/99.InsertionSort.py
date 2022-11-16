@@ -1,7 +1,7 @@
 
 ___ myInsertionSort(myarray
   print "myarray:",myarray
-  ___ i __ range(1, len(myarray)):
+  ___ i __ range(1, l..(myarray)):
     tmp _ myarray[i]
     k _ i
     #print "in outer loop:",myarray

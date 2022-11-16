@@ -3,10 +3,10 @@
 # This is marked as PAINLESS difficulty
 
 ___ solution(A, K
-    result _ [N..] * len(A)
+    result _ [N..] * l..(A)
 
-    ___ i __ range(len(A)):
-        result[(i + K) % len(A)] _ A[i]
+    ___ i __ range(l..(A)):
+        result[(i + K) % l..(A)] _ A[i]
 
     r_ result
 

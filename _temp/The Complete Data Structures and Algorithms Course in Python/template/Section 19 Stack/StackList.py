@@ -4,7 +4,7 @@
     
 c_ Stack:
     ___ -
-        list _ []
+        list _    # list
     
     ___ __str__
         values _ list.reverse()
@@ -13,13 +13,13 @@ c_ Stack:
     
     # isEmpty
     ___ isEmpty
-        __ list == []:
+        __ list __    # list:
             r_ True
         ____
             r_ False
     # push
     ___ push value
-        list.append(value)
+        list.a..(value)
         r_ "The element has been successfully inserted"
 
     # pop
@@ -34,7 +34,7 @@ c_ Stack:
         __ isEmpty(
             r_ "There is not any element in the stack"
         ____
-            r_ list[len(list)-1]
+            r_ list[l..(list)-1]
     
     # delete
     ___ delete

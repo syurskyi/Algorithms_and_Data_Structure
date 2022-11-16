@@ -21,7 +21,7 @@
 # ]
 
 ___ unique_paths_rec(m, n, i, j, memo
-	__ m - 1 == i and n - 1 == j:
+	__ m - 1 __ i and n - 1 __ j:
 		r_ 1
 	elif i >_ m or j >_ n:
 		r_ 0

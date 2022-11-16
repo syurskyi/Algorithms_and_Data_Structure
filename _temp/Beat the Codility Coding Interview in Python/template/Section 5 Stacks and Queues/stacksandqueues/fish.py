@@ -3,21 +3,21 @@
 # This is marked as PAINLESS difficulty
 
 ___ solution(A, B
-    stack _ []
+    stack _    # list
     survivors _ 0
-    ___ i __ range(len(A)):
+    ___ i __ range(l..(A)):
         weight _ A[i]
-        __ B[i] == 1:
-            stack.append(weight)
+        __ B[i] __ 1:
+            stack.a..(weight)
         ____
             weightdown _ stack.pop() __ stack else -1
             _____ weightdown !_ -1 and weightdown < weight:
                 weightdown _ stack.pop() __ stack else -1
-            __ weightdown == -1:
+            __ weightdown __ -1:
                 survivors +_ 1
             ____
-                stack.append(weightdown)
-    r_ survivors + len(stack)
+                stack.a..(weightdown)
+    r_ survivors + l..(stack)
 
 print(solution([4, 8, 2, 6, 7], [0, 1, 1, 0, 0]))
 

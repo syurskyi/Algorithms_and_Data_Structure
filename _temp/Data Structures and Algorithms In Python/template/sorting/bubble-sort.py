@@ -2,7 +2,7 @@
 # This code is part of DSA course available on CourseGalaxy.com  
 
 ___ bubble_sort(a
-    ___ x __ range(len(a)-1,0,-1
+    ___ x __ range(l..(a)-1,0,-1
         ___ j __ range(x
               __ a[j]>a[j+1]:
                   a[j],a[j+1] _ a[j+1],a[j]

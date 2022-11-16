@@ -1,7 +1,7 @@
 ___ getthreeelementswithsum(myarray, sum
         print "Sorted array:", myarray
         #print "length of array:", len(myarray)
-	n _ len(myarray)
+	n _ l..(myarray)
 	leftindex _ 0
 	rightindex _ n - 1
 	___ i __ range(0, n - 2
@@ -19,7 +19,7 @@ ___ getthreeelementswithsum(myarray, sum
                         #print "in while loop - rightindex index:", rightindex 
                         #print myarray[i],"+",myarray[leftindex],"+",myarray[rightindex],"actual sum is", myarray[i] + myarray[leftindex] + myarray[rightindex],"exp sum",sum
 			#print myarray[i] + myarray[leftindex] + myarray[rightindex], sum
-			__(myarray[i] + myarray[leftindex] + myarray[rightindex] == sum
+			__(myarray[i] + myarray[leftindex] + myarray[rightindex] __ sum
                                 #print "the numbers forming the sum are found"
 				print myarray[i], " + ", myarray[leftindex], " + ", myarray[rightindex], " = ", sum	
                                 #print "exiting" 	

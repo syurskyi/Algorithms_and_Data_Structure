@@ -14,7 +14,7 @@
 ___ fib_rec(n
 
     # Base Case
-    __ n == 0 or n == 1:
+    __ n __ 0 or n __ 1:
         r_ n
 
     # Recursion
@@ -38,7 +38,7 @@ cache _ [N..] * (n + 1)
 ___ fib_dyn(n
 
     # Base Case
-    __ n == 0 or n == 1:
+    __ n __ 0 or n __ 1:
         r_ n
 
     # Check cache

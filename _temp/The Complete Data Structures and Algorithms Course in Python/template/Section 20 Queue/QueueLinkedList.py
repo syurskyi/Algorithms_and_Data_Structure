@@ -31,7 +31,7 @@ c_ Queue:
     
     ___ enqueue value
         newNode _ Node(value)
-        __ linkedList.head == N..:
+        __ linkedList.head __ N..:
             linkedList.head _ newNode
             linkedList.tail _ newNode
         ____
@@ -39,7 +39,7 @@ c_ Queue:
             linkedList.tail _ newNode
     
     ___ isEmpty 
-        __ linkedList.head == N..:
+        __ linkedList.head __ N..:
             r_ True
         ____
             r_ False
@@ -49,7 +49,7 @@ c_ Queue:
             r_ "There is not any node in the Queue"
         ____
             tempNode _ linkedList.head
-            __ linkedList.head == linkedList.tail:
+            __ linkedList.head __ linkedList.tail:
                 linkedList.head _ N..
                 linkedList.tail _ N..
             ____

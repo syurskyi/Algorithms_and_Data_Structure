@@ -6,8 +6,8 @@ Use a Python list data structure as your Stack.
 '''
 
 # %%
-stack1 _ []
-stack2 _ []
+stack1 _    # list
+stack2 _    # list
 
 # %%
 '''
@@ -25,19 +25,19 @@ c_ Queue2Stacks o..
     ___ -  
         
         # Two Stacks
-        instack _ []
-        outstack _ []
+        instack _    # list
+        outstack _    # list
      
     ___ enqueueelement
         
         # Add an enqueue with the "IN" stack
-        instack.append(element)
+        instack.a..(element)
     
     ___ dequeue 
         __ n.. outstack:
             _____ instack:
                 # Add the elements to the outstack to reverse the order when called
-                outstack.append(instack.pop())
+                outstack.a..(instack.pop())
         r_ outstack.pop()
 
 # %%

@@ -25,7 +25,7 @@
 # 3. 2 steps + 1 step
 
 ___ climb(n, i, memo
-	__ n == i:
+	__ n __ i:
 		r_ 1
 	elif i > n:
 		r_ 0

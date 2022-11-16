@@ -17,7 +17,7 @@ c_ LinkedList:
         temporaryNode _ head # John
         head _ newNode # Matthew
         head.next _ temporaryNode
-        del temporaryNode
+        d.. temporaryNode
 
     ___ listLength 
         currentNode _ head
@@ -38,7 +38,7 @@ c_ LinkedList:
         currentNode _ head # 10, 20
         currentPosition _ 0 # 0, 1
         _____ True:
-            __ currentPosition == position:
+            __ currentPosition __ position:
                 previousNode.next _ newNode
                 newNode.next _ currentNode
                 break

@@ -4,8 +4,8 @@
 # Searching algorithms - Linear Search
 
 ___ linearSearch(array, value
-    ___ i __ range(len(array)):
-        __ array[i] == value:
+    ___ i __ range(l..(array)):
+        __ array[i] __ value:
             r_ i
     r_ -1
 

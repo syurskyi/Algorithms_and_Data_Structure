@@ -31,9 +31,9 @@ ___ swap(nums,i,j
 	nums[j] _ temp
 	
 	
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
    
    nums _ [-2,-1,0,1,0,-1,-2]
-   quick_sort(nums,0,len(nums)-1)
+   quick_sort(nums,0,l..(nums)-1)
    print(nums)
   

@@ -15,7 +15,7 @@ c_ Trie:
         ___ i __ word:
             ch _ i
             node _ current.children.get(ch)
-            __ node == N..:
+            __ node __ N..:
                 node _ TrieNode()
                 current.children.update({ch:node})
             current _ node
@@ -26,11 +26,11 @@ c_ Trie:
         currentNode _ root
         ___ i __ word:
             node _ currentNode.children.get(i)
-            __ node == N..:
+            __ node __ N..:
                 r_ False
             currentNode _ node
 
-        __ currentNode.endOfString == True:
+        __ currentNode.endOfString __ True:
             r_ True
         ____
             r_ False
@@ -41,24 +41,24 @@ ___ deleteString(root, word, index
     currentNode _ root.children.get(ch)
     canThisNodeBeDeleted _ False
 
-    __ len(currentNode.children) > 1:
+    __ l..(currentNode.children) > 1:
         deleteString(currentNode, word, index+1)
         r_ False
     
-    __ index == len(word) - 1:
-        __ len(currentNode.children) >_ 1:
+    __ index __ l..(word) - 1:
+        __ l..(currentNode.children) >_ 1:
             currentNode.endOfString _ False
             r_ False
         ____
             root.children.pop(ch)
             r_ True
     
-    __ currentNode.endOfString == True:
+    __ currentNode.endOfString __ True:
         deleteString(currentNode, word, index+1)
         r_ False
 
     canThisNodeBeDeleted _ deleteString(currentNode, word, index+1)
-    __ canThisNodeBeDeleted == True:
+    __ canThisNodeBeDeleted __ True:
         root.children.pop(ch)
         r_ True
     ____

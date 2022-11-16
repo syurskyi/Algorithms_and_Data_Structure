@@ -9,7 +9,7 @@ c_ BinaryTree o..
         rightChild _ N..
 
     ___ insertLeftnewNode
-        __ leftChild == N..:
+        __ leftChild __ N..:
             leftChild _ BinaryTree(newNode)
         ____
             t _ BinaryTree(newNode)
@@ -17,7 +17,7 @@ c_ BinaryTree o..
             leftChild _ t
 
     ___ insertRightnewNode
-        __ rightChild == N..:
+        __ rightChild __ N..:
             rightChild _ BinaryTree(newNode)
         ____
             t _ BinaryTree(newNode)

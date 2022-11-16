@@ -12,16 +12,16 @@ c_ Solution:
         root _ TreeNode(preorder[0])
         stack _ [root]
 
-        ___ i __ range(1, len(preorder)):
+        ___ i __ range(1, l..(preorder)):
             __ preorder[i] < stack[-1].val:
                 node _ TreeNode(preorder[i])
                 stack[-1].left _ node
-                stack.append(node)
+                stack.a..(node)
             ____
                 _____ stack and stack[-1].val < preorder[i]:
                     pop _ stack.pop()
                 node _ TreeNode(preorder[i])
                 pop.right _ node
-                stack.append(node)
+                stack.a..(node)
 
         r_ root

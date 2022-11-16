@@ -21,7 +21,7 @@ c_ LinkedList:
     # list start at 0
     ___ insertNode val, pos
         target _ Node(val)
-        __(pos == 0
+        __(pos __ 0
             target.next _ head
             head _ target
             r_

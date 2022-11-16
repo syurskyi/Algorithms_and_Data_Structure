@@ -59,7 +59,7 @@ ___ finder2(arr1, arr2
 
         # Check if num not in dictionary
     ___ num __ arr1:
-        __ d[num] == 0:
+        __ d[num] __ 0:
             r_ num
 
             # Otherwise, subtract a count

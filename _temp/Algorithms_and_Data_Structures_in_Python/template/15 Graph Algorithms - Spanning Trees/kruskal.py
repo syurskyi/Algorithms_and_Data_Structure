@@ -31,7 +31,7 @@ c_ DisjointSet o..
 
 	___ -  vertexList
 		vertexList _ vertexList;
-		rootNodes _ [];
+		rootNodes _    # list;
 		nodeCount _ 0;
 		setCount _ 0;
 		makeSets(vertexList);
@@ -58,7 +58,7 @@ c_ DisjointSet o..
 		index1 _ find(node1);
 		index2 _ find(node2);
 		
-		__ index1 == index2:
+		__ index1 __ index2:
 			r_;  # they are in the same set !!!!
 			
 		root1 _ rootNodes[index1];
@@ -77,9 +77,9 @@ c_ DisjointSet o..
 			makeSet(v);
 			
 	___ makeSet vertex
-		node _ Node(0, len(rootNodes),N..);
+		node _ Node(0, l..(rootNodes),N..);
 		vertex.node _ node;
-		rootNodes.append(node);
+		rootNodes.a..(node);
 		setCount _ setCount + 1;
 		nodeCount _ nodeCount + 1;
 		
@@ -88,7 +88,7 @@ c_ KruskalAlgorithm o..
 	___ spanningTree vertexList, edgeList
 	
 		disjointSet _ DisjointSet(vertexList);
-		spanningTree _ [];
+		spanningTree _    # list;
 		
 		edgeList.sort();
 		
@@ -98,7 +98,7 @@ c_ KruskalAlgorithm o..
 			v _ edge.targetVertex;
 			
 			__ disjointSet.find(u.node) __ n.. disjointSet.find(v.node
-				spanningTree.append(edge);
+				spanningTree.a..(edge);
 				disjointSet.merge(u.node, v.node);  # !!!! dot
 				
 		___ edge __ spanningTree:
@@ -125,27 +125,27 @@ edge10 _ Edge(5,vertex4,vertex7);
 edge11 _ Edge(5,vertex6,vertex7);
 
 
-vertexList _ [];
-vertexList.append(vertex1);
-vertexList.append(vertex2);
-vertexList.append(vertex3);
-vertexList.append(vertex4);
-vertexList.append(vertex5);
-vertexList.append(vertex6);
-vertexList.append(vertex7);
+vertexList _    # list;
+vertexList.a..(vertex1);
+vertexList.a..(vertex2);
+vertexList.a..(vertex3);
+vertexList.a..(vertex4);
+vertexList.a..(vertex5);
+vertexList.a..(vertex6);
+vertexList.a..(vertex7);
 
-edgeList _ [];
-edgeList.append(edge1);
-edgeList.append(edge2);
-edgeList.append(edge3);
-edgeList.append(edge4);
-edgeList.append(edge5);
-edgeList.append(edge6);
-edgeList.append(edge7);
-edgeList.append(edge8);
-edgeList.append(edge9);
-edgeList.append(edge10);
-edgeList.append(edge11);
+edgeList _    # list;
+edgeList.a..(edge1);
+edgeList.a..(edge2);
+edgeList.a..(edge3);
+edgeList.a..(edge4);
+edgeList.a..(edge5);
+edgeList.a..(edge6);
+edgeList.a..(edge7);
+edgeList.a..(edge8);
+edgeList.a..(edge9);
+edgeList.a..(edge10);
+edgeList.a..(edge11);
 
 algorithm _ KruskalAlgorithm();
 algorithm.spanningTree(vertexList, edgeList);			
