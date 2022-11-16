@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ numRescueBoats people: List[int], limit: int) -> int:
+    ___ numRescueBoats people: List[i..], limit: i..) -> i..:
         people.sort()
 
         left _ 0
@@ -10,7 +10,7 @@ c_ Solution:
         _____(left<_right
             __(left__right
                 boats_number+_1
-                break
+                b..
             __(people[left]+people[right]<_limit
                 left+_1
 

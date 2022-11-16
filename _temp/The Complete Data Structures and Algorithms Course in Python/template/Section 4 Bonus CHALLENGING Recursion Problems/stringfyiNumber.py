@@ -6,7 +6,7 @@
 ___ stringifyNumbers(obj
     newObj _ obj
     ___ key __ newObj:
-        __ type(newObj[key]) __ int:
+        __ type(newObj[key]) __ i..:
             newObj[key] _ str(newObj[key])
         __ type(newObj[key]) __ dict:
             newObj[key] _ stringifyNumbers(newObj[key])

@@ -28,7 +28,7 @@ c_ LinkedList:
         _____ T..:
             print(currentNode.data)
             __ currentNode.next __ N..:
-                break
+                b..
             currentNode _ currentNode.next
 
 ___ isDuplicate(currentNode, mergedList
@@ -69,7 +69,7 @@ ___ mergeList(linkedListOne, linkedListTwo, mergedList
     # Insert list one into merged list
     _____ T..:
         __ currentFirst __ N..:
-            break
+            b..
         currentFirstNext _ currentFirst.next
         currentFirst.next _ N..
         currentFirst.previous _ N..
@@ -85,7 +85,7 @@ ___ mergeList(linkedListOne, linkedListTwo, mergedList
     # Insert list two into merged list
     _____ T..:
         __ currentSecond __ N..:
-            break
+            b..
         currentSecondNext _ currentSecond.next
         currentSecond.next _ N..
         currentSecond.previous _ N..

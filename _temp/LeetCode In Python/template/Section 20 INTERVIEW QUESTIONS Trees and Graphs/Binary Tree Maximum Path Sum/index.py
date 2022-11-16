@@ -19,6 +19,6 @@ c_ Solution:
         ans _ m__(ans,mxTop)
         r_ mxSide
 
-    ___ maxPathSum root: TreeNode) -> int:
+    ___ maxPathSum root: TreeNode) -> i..:
         solution(root)
         r_ ans

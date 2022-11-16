@@ -17,14 +17,14 @@ c_ Heap o..
 
     ___ fixUp index
 
-        parentIndex _ int((index - 1) / 2)
+        parentIndex _ i..((index - 1) / 2)
 
         _____ parentIndex >_ 0 ___ heap[parentIndex] < heap[index]:
             temp _ heap[index]
             heap[index] _ heap[parentIndex]
             heap[parentIndex] _ temp
             index _ parentIndex
-            parentIndex _ (int)((index - 1) / 2)
+            parentIndex _ (i..)((index - 1) / 2)
 
     ___ heapsort
 
@@ -58,11 +58,11 @@ c_ Heap o..
                     heap[index] _ heap[childToSwap]
                     heap[childToSwap] _ temp
                 ____
-                    break
+                    b..
 
                 index _ childToSwap
             ____
-                break;
+                b..;
 
     ___ isFull
         __ currentPosition __ Heap.HEAP_SIZE:

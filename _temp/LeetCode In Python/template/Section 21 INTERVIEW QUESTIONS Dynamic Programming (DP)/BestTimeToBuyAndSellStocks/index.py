@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ maxProfit prices: List[int]) -> int:
+    ___ maxProfit prices: List[i..]) -> i..:
         buyPrice _ float("inf")
         profit _ 0
 

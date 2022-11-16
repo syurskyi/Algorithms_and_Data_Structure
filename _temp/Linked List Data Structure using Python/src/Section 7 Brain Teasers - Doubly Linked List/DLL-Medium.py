@@ -56,13 +56,13 @@ c_ LinkedList:
         _____ T..:
             print(currentNode.data)
             __ currentNode.next __ N..:
-                break
+                b..
             currentNode _ currentNode.next
         print("Printing from end")
         _____ T..:
             print(currentNode.data)
             __ currentNode.previous __ N..:
-                break
+                b..
             currentNode _ currentNode.previous
 
 

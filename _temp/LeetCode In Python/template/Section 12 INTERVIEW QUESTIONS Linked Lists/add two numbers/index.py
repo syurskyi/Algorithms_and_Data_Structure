@@ -21,7 +21,7 @@ c_ Solution:
                 sum+_l2.val
                 l2 _ l2.val
             
-            carry _ int(sum/10)
+            carry _ i..(sum/10)
             pointer.next  _ ListNode(sum%10)
 
             pointer _ pointer.next

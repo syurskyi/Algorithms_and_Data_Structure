@@ -75,11 +75,11 @@ __ __name__ __ "__main__":
         print("4.Display size of the queue")  
         print("5.Quit") 
          
-        choice _ int(input("Enter your choice : "))
+        choice _ i..(i..("Enter your choice : "))
 
         __ choice __ 1:
-            x _ int(input("Enter the element : "))
-            pr _ int(input("Enter its priority : "))
+            x _ i..(i..("Enter the element : "))
+            pr _ i..(i..("Enter its priority : "))
             qu.enqueue(x,pr) 
         ____ choice __ 2:
             x_qu.dequeue()
@@ -89,7 +89,7 @@ __ __name__ __ "__main__":
         ____ choice __ 4:
             print("Size of queue " , qu.size()) 
         ____ choice __ 5:
-          break;
+          b..;
         ____
           print("Wrong choice") 
         print() 

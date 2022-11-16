@@ -9,7 +9,7 @@ c_ Solution:
                 solution(candidates,ans,cur,target,i,sum+candidates[i])
                 cur.p.. 
         r_
-    ___ combinationSum candidates: List[int], target: int) -> List[List[int]]:
+    ___ combinationSum candidates: List[i..], target: i..) -> List[List[i..]]:
         ans _    # list
         cur _    # list
         solution(candidates,ans,cur,target,0,0)

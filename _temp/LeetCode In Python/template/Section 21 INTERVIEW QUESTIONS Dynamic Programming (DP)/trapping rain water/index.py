@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ trap height: List[int]) -> int:
+    ___ trap height: List[i..]) -> i..:
         n _ l..(height)
         __(n __ 0
             r_ 0

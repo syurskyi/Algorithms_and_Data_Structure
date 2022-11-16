@@ -13,7 +13,7 @@ ___ removeDuplicate(linkedList
         __ currentNode.next __ N..:
             _____ T..:
                 __ currentNode.previous __ N..:
-                    break
+                    b..
                 previousNode _ currentNode.previous
                 __ nodeCount[currentNode.data] > 1:
                     currentNode.previous.next _ currentNode.next
@@ -23,7 +23,7 @@ ___ removeDuplicate(linkedList
                     currentNode.previous _ N..
                     nodeCount[currentNode.data] -_ 1
                 currentNode _ previousNode
-            break    
+            b..    
         currentNode _ currentNode.next
 
 

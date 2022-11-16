@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ majorityElement nums: List[int]) -> int:
+    ___ majorityElement nums: List[i..]) -> i..:
         m _     # dict
         ___ num __ nums:
             m[num] _ m.get(num,0)+1

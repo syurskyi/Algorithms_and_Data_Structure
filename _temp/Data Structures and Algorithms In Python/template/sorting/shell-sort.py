@@ -2,7 +2,7 @@
 # This code is part of DSA course available on CourseGalaxy.com  
 
 ___ shell_sort(a
-    h _ int(input("Enter maximum increment(odd value) : "))
+    h _ i..(i..("Enter maximum increment(odd value) : "))
     _____ h>_1:
         ___ i __ r..(h,l..(a  
             temp _ a[i]

@@ -17,13 +17,13 @@ ___ _search(a, first, last, searchValue
     
 ############################################################
     
-n _ int(input("Enter the number of elements : "))
+n _ i..(i..("Enter the number of elements : "))
 a _ [N..]*n
 print("Enter the elements in sorted order  - ")
 ___ i __ r..(n
-    a[i] _ int(input("Enter element : "))
+    a[i] _ i..(i..("Enter element : "))
 
-searchValue _ int(input("Enter the search value : "))
+searchValue _ i..(i..("Enter the search value : "))
 index _ binary_search(a, n, searchValue)
 
 __ index __ -1:

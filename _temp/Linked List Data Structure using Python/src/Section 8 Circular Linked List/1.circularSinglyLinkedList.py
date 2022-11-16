@@ -50,7 +50,7 @@ c_ LinkedList:
             print(currentNode.data)
             currentNode _ currentNode.next
             __ currentNode __ head:
-                break
+                b..
         print(currentNode.data)
 
 nodeOne _ Node(10)

@@ -3,12 +3,12 @@ from collections import deque
 
 c_ LRUCache:
 
-    ___ -  capacity: int
+    ___ -  capacity: i..
         c _ capacity
         m _ dict()
         deq _ deque()
 
-    ___ get key: int) -> int:
+    ___ get key: i..) -> i..:
         __ key __ m:
             value _ m[key]
             deq.remove(key)
@@ -17,7 +17,7 @@ c_ LRUCache:
         ____
             r_ -1
 
-    ___ put key: int, value: int) -> N..:
+    ___ put key: i.., value: i..) -> N..:
 
         # Your LRUCache object will be instantiated and called as such:
         # obj = LRUCache(capacity)

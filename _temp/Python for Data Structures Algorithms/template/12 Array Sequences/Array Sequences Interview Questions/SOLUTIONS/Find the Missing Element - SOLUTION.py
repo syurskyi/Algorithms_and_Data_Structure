@@ -51,7 +51,7 @@ import collections
 
 ___ finder2(arr1, arr2
     # Using default dict to avoid key errors
-    d _ collections.defaultdict(int)
+    d _ collections.defaultdict(i..)
 
     # Add a count for every instance in Array 1
     ___ num __ arr2:

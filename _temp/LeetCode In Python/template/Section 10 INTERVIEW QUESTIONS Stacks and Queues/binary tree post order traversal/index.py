@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution:
-    ___ postorderTraversal root: TreeNode) -> List[int]:
+    ___ postorderTraversal root: TreeNode) -> List[i..]:
         __(n.. root
             r_
         

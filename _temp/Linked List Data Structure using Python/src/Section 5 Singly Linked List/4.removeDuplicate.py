@@ -8,7 +8,7 @@ ___ removeDuplicate(linkedList
             duplicateNode _ currentNode.next
             currentNode.next _ duplicateNode.next
             duplicateNode.next _ N..
-            break
+            b..
         currentNode _ currentNode.next
 
 

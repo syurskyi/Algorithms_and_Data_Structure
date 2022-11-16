@@ -111,7 +111,7 @@ c_ BinarySearchTree:
 
         _____ p __ n.. N..:
             __ x __ p.info:
-                break
+                b..
             par _ p
             __ x < p.info:
                 p _ p.lchild
@@ -270,33 +270,33 @@ _____ T..:
     print("14.Postorder Traversal") 
     print("15.Height of tree")
     print("16.Quit")
-    choice _ int(input("Enter your choice : "))
+    choice _ i..(i..("Enter your choice : "))
     
     __ choice __ 1:
         bst.display()
     ____ choice __ 2:
-        x _ int(input("Enter the key to be searched : "))
+        x _ i..(i..("Enter the key to be searched : "))
         __ bst.search1(x
             print("Key found")
         ____
             print("Key not found")
     ____ choice __ 3:
-        x _ int(input("Enter the key to be searched : "))
+        x _ i..(i..("Enter the key to be searched : "))
         __ bst.search(x
             print("Key found")
         ____
             print("Key not found")
     ____ choice __ 4:
-        x _ int(input("Enter the key to be inserted : "))
+        x _ i..(i..("Enter the key to be inserted : "))
         bst.insert1(x)
     ____ choice __ 5:
-        x _ int(input("Enter the key to be inserted : "))
+        x _ i..(i..("Enter the key to be inserted : "))
         bst.insert(x)
     ____ choice __ 6:
-        x _ int(input("Enter the element to be deleted : ")) 
+        x _ i..(i..("Enter the element to be deleted : ")) 
         bst.delete1(x)
     ____ choice __ 7:
-        x _ int(input("Enter the element to be deleted : ")) 
+        x _ i..(i..("Enter the element to be deleted : ")) 
         bst.delete(x)
     ____ choice __ 8:
         print("Minimum key is " , bst.min1())
@@ -315,7 +315,7 @@ _____ T..:
     ____ choice __ 15:
         print("Height of tree is " , bst.height())
     ____ choice __ 16:
-        break
+        b..
     ____
         print("Wrong choice") 
     print()

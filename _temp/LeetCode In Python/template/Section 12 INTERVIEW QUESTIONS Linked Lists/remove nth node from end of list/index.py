@@ -5,7 +5,7 @@
 #         self.next = None
 
 c_ Solution:
-    ___ removeNthFromEnd head: ListNode, n: int) -> ListNode:
+    ___ removeNthFromEnd head: ListNode, n: i..) -> ListNode:
         ans _ ListNode(0)
         ans.next _ head
 

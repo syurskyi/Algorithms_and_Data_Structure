@@ -17,7 +17,7 @@
 
 ___ fib_rec(n
     __ n <_2:
-        r_ int((n+1)/2)
+        r_ i..((n+1)/2)
     ____
         r_ fib_rec(n-1) + fib_rec(n-2)
     pass
@@ -38,7 +38,7 @@ ___ fib_dyn(n
     __ cache[n] __ n.. N..:
          r_ cache[n]
     __ n <_2:
-        cache[n] _ int((n+1)/2)
+        cache[n] _ i..((n+1)/2)
     ____
         cache[n] _ fib_dyn(n-1) + fib_dyn(n-2)
     r_ cache[n]

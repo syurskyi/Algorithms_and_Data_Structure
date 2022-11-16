@@ -19,7 +19,7 @@ c_ CircularDoublyLinkedList:
             yield node
             node _ node.next
             __ node __ tail.next:
-                break
+                b..
     
     #  Creation of Circular Doubly Linked List
     ___ createCDLL nodeValue
@@ -70,7 +70,7 @@ c_ CircularDoublyLinkedList:
             _____ tempNode:
                 print(tempNode.value)
                 __ tempNode __ tail:
-                    break
+                    b..
                 tempNode _ tempNode.next
 
     # Reverse traversal of Circular Doubly Linked List
@@ -82,7 +82,7 @@ c_ CircularDoublyLinkedList:
             _____ tempNode:
                 print(tempNode.value)
                 __ tempNode __ head:
-                    break
+                    b..
                 tempNode _ tempNode.prev
     
     # Search Circular Doubly Linked List

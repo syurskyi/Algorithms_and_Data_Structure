@@ -13,5 +13,5 @@ c_ Solution:
         __(cur__sum ___ root.left __ N.. ___ root.right __ N..
             r_ T..
         r_ (hasSum(root.right,sum,cur) __ hasSum(root.left,sum,cur))
-    ___ hasPathSum root: TreeNode, sum: int) -> bool:
+    ___ hasPathSum root: TreeNode, sum: i..) -> bool:
         r_ hasSum(root,sum, 0)

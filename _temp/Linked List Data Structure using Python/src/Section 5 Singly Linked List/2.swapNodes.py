@@ -12,14 +12,14 @@ ___ swapNodes(linkedList, dataOne, dataTwo
     _____ T..:
         __ currentNode.data __ dataOne:
             firstNode _ currentNode
-            break
+            b..
         previousFirst _ currentNode
         currentNode _ currentNode.next
     currentNode _ linkedList.head
     _____ T..:
         __ currentNode.data __ dataTwo:
             secondNode _ currentNode
-            break
+            b..
         previousSecond _ currentNode
         currentNode _ currentNode.next
     # Changing pointers

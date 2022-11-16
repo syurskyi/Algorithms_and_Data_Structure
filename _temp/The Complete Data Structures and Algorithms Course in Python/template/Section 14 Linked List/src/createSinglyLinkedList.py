@@ -80,7 +80,7 @@ c_ SLinkedList:
                     node _ head
                     _____ node __ n.. N..:
                         __ node.next __ tail:
-                            break
+                            b..
                         node _ node.next
                     node.next _ N..
                     tail _ node

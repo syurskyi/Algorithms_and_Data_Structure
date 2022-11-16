@@ -1,6 +1,6 @@
 # network delay time - leetcode
 c_ Solution:
-    ___ networkDelayTime times: List[List[int]], N: int, K: int) -> int:
+    ___ networkDelayTime times: List[List[i..]], N: i.., K: i..) -> i..:
 
         g _ collections.defaultdict(list)
         ___ u, v, cost __ times:

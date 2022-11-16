@@ -29,7 +29,7 @@ ___ partition(a, low, up
             i+_1
             j-_1
         ____ # found proper place for pivot
-            break
+            b..
             
     # Proper place for pivot is j
     a[low] _ a[j]

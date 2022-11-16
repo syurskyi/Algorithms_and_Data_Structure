@@ -93,7 +93,7 @@ c_ HashTable:
 ##################################################################################
 
    
-size _ int(input("Enter initial size of table : "))
+size _ i..(i..("Enter initial size of table : "))
 table _ HashTable(size)
 
 _____ T..:
@@ -102,27 +102,27 @@ _____ T..:
     print("3.Delete a record")
     print("4.Display table")
     print("5.Exit")
-    option _ int(input("Enter your option :  "))
+    option _ i..(i..("Enter your option :  "))
 
     __ option __ 1:
-        id _ int(input("Enter student id : "))
-        name _ input("Enter student name : ")
+        id _ i..(i..("Enter student id : "))
+        name _ i..("Enter student name : ")
         aRecord _ studentRecord(id,name)
         table.insert(aRecord)
     ____ option __ 2:
-        id _ int(input("Enter a key to be searched : "))
+        id _ i..(i..("Enter a key to be searched : "))
         aRecord _ table.search(id)
         __  aRecord __ N..:
             print("Key not found")
         ____
             print(aRecord)
     ____ option __ 3:
-        id _ int(input("Enter a key to be deleted :"))
+        id _ i..(i..("Enter a key to be deleted :"))
         table.delete(id)
     ____ option __ 4:
         table.display_table()
     ____ option __ 5:
-        break
+        b..
     ____
         print("Wrong option") 
     print() 

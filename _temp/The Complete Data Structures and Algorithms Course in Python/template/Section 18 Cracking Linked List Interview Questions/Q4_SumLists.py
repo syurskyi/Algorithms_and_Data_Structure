@@ -19,7 +19,7 @@ ___ sumList(llA, llB
         __ n2:
             result +_ n2.value
             n2 _ n2.next
-        ll.add(int(result % 10))
+        ll.add(i..(result % 10))
         carry _ result / 10
     
     r_ ll

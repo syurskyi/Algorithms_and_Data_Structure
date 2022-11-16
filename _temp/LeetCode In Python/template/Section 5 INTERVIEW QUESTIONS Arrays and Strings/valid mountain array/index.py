@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ validMountainArray A: List[int]) -> bool:
+    ___ validMountainArray A: List[i..]) -> bool:
         __(l..(A)<3
             r_ F..
         

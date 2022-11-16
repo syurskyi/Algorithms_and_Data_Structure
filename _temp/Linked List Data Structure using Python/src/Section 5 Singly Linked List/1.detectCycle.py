@@ -12,7 +12,7 @@ ___ detectCycle(linkedList
     _____ T..:
         __ currentNode.next.isVisited __ T..:
             currentNode.next _ N..
-            break
+            b..
         currentNode _ currentNode.next
         currentNode.isVisited _ T..
 

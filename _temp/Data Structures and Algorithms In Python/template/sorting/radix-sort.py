@@ -78,10 +78,10 @@ ___ Digit(n, k
 #################################################
 start _ N..
 
-n _ int(input("Enter the number of elements : "))
+n _ i..(i..("Enter the number of elements : "))
 
 ___ i __ r..(n  #Inserting elements in linked list
-    data _ int(input("Enter element : "))
+    data _ i..(i..("Enter element : "))
 
     temp _ Node(data)
     __ start __ N..:

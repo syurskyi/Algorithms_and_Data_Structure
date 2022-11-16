@@ -105,7 +105,7 @@ c_ LinkedList :
              ___ i __ r..(position -1 
                  temp _ temp.next
                  __ temp __ N..:
-                     break
+                     b..
 
              # If position is more than number of nodes
              __ temp __ N..:

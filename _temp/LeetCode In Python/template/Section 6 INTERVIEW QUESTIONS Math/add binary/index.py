@@ -9,10 +9,10 @@ c_ Solution o..
             total _ carry
 
             __ i >_ 0:
-                total +_ int(a[i])
+                total +_ i..(a[i])
                 i -_ 1
             __ j >_ 0:
-                total +_ int(b[j])
+                total +_ i..(b[j])
                 j -_ 1
 
             result.a..(str(total % 2))

@@ -41,7 +41,7 @@ c_ LinkedList:
                 newNode.previous _ currentNode.previous
                 newNode.next _ currentNode
                 currentNode.previous _ newNode
-                break
+                b..
             currentNode _ currentNode.next
             currentPosition +_ 1
 
@@ -53,7 +53,7 @@ c_ LinkedList:
         currentNode _ head
         _____ T..:
             __ currentNode.next __ N..:
-                break
+                b..
             currentNode _ currentNode.next
         currentNode.next _ newNode
         newNode.previous _ currentNode
@@ -72,7 +72,7 @@ c_ LinkedList:
                 currentNode.next.previous _ currentNode.previous
                 currentNode.next _ N..
                 currentNode.previous _ N..
-                break
+                b..
             currentNode _ currentNode.next
             currentPosition +_ 1
 
@@ -83,7 +83,7 @@ c_ LinkedList:
                 currentNode.next.previous _ N..
                 currentNode.next.next _ N..
                 currentNode.next _ N..
-                break
+                b..
             currentNode _ currentNode.next
 
     ___ printList
@@ -94,7 +94,7 @@ c_ LinkedList:
         print("Printing from the beginning")
         _____ T..:
             __ currentNode __ N..:
-                break
+                b..
             print(currentNode.data)
             __ currentNode.next __ N..:
                 reverseTraversalNode _ currentNode
@@ -102,7 +102,7 @@ c_ LinkedList:
         print("Printing form end")
         _____ T..:
             __ reverseTraversalNode __ N..:
-                break
+                b..
             print(reverseTraversalNode.data)
             reverseTraversalNode _ reverseTraversalNode.previous
 

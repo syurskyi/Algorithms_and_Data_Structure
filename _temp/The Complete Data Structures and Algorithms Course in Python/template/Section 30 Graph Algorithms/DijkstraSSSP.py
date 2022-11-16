@@ -32,7 +32,7 @@ ___ dijkstra(graph, initial
                 ____ visited[node] < visited[minNode]:
                     minNode _ node
         __ minNode __ N..:
-            break
+            b..
 
         nodes.remove(minNode)
         currentWeight _ visited[minNode]

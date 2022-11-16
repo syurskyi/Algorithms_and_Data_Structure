@@ -24,7 +24,7 @@ ___ knapsackMethod(items, capacity
             totalValue +_ value
         
         __ usedCapacity __ capacity:
-            break
+            b..
     print("Total value obtained: "+str(totalValue))
 
 item1 _ Item(20,100)

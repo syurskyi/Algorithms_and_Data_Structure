@@ -3,11 +3,11 @@
 
 # Question 1
 ___ sumofDigits(n
-    assert n>_0 ___ int(n) __ n , 'The number has to be a postive integer only!'
+    assert n>_0 ___ i..(n) __ n , 'The number has to be a postive integer only!'
     __ n __ 0:
         r_ 0
     ____
-        r_ int(n%10) + sumofDigits(int(n/10))
+        r_ i..(n%10) + sumofDigits(i..(n/10))
 
 print(sumofDigits(11111))
 
@@ -28,7 +28,7 @@ print(power(4,2))
 
 
 ___ gcd(a, b
-    assert int(a) __ a ___ int(b) __ b, 'The numbers must be integer only!'
+    assert i..(a) __ a ___ i..(b) __ b, 'The numbers must be integer only!'
     __ a < 0:
         a _ -1 * a
     __ b < 0:
@@ -45,7 +45,7 @@ ___ binaryToDemical(n
     __ n __ 0:
         r_ 1
     ____
-        r_ n%2 + 10*binaryToDemical(int(n/2))
+        r_ n%2 + 10*binaryToDemical(i..(n/2))
 
 
 print(binaryToDemical(1))

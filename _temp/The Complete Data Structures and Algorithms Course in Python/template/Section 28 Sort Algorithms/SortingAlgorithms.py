@@ -128,7 +128,7 @@ ___ heapify(customList, n, i
 
 ___ heapSort(customList
     n _ l..(customList)
-    ___ i __ r..(int(n/2)-1, -1, -1
+    ___ i __ r..(i..(n/2)-1, -1, -1
         heapify(customList, n, i)
     
     ___ i __ r..(n-1,0,-1

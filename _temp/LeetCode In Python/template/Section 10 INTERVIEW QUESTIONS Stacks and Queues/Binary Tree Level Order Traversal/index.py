@@ -8,7 +8,7 @@
 from collections import deque
 
 c_ Solution:
-    ___ levelOrder root: TreeNode) -> List[List[int]]:
+    ___ levelOrder root: TreeNode) -> List[List[i..]]:
         ans _    # list
 
         __(root __ N..

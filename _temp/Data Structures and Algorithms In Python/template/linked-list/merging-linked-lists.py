@@ -38,11 +38,11 @@ c_ SingleLinkedList:
 
 
     ___ create_list 
-        n _ int(input("Enter the number of nodes : "))
+        n _ i..(i..("Enter the number of nodes : "))
         __ n __ 0:
             r_
         ___ i __ r..(n
-            data _ int(input("Enter the element to be inserted : "))
+            data _ i..(i..("Enter the element to be inserted : "))
             insert_at_end(data)
     
 

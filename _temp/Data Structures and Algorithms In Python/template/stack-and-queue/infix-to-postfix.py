@@ -47,7 +47,7 @@ ___ evaluate_postfix(postfix
     
     ___ symbol __ postfix:
         __ symbol.isdigit(
-            st.push( int(symbol) )
+            st.push( i..(symbol) )
         ____
             x _ st.p.. 
             y _ st.p.. 
@@ -72,9 +72,9 @@ ___ evaluate_postfix(postfix
 _____ T..:
     print("Enter infix expression (q to quit) : ", end _ '')
 
-    expression _ input()
+    expression _ i..()
     __ expression __ 'q':
-        break
+        b..
     
     postfix _ infix_to_postfix(expression)
     print("Postfix expression is : " ,postfix)

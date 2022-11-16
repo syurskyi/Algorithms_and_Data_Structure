@@ -9,7 +9,7 @@ ___ reverse(s
     __(l..(s)<_1
         r_ s
     ____
-        m _ int(l..(s)/2)
+        m _ i..(l..(s)/2)
         r_ reverse(s[m:]) + (reverse((s[:m])))
     pass
 

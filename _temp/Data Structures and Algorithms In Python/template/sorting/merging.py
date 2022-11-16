@@ -31,17 +31,17 @@ ___ merge(a1,a2,temp
 
           
 #####################################################################
-n1 _ int(input("Enter the number of elements in list a1 : "))
+n1 _ i..(i..("Enter the number of elements in list a1 : "))
 print("Enter elements in sorted order : " );
 a1 _ [N..]*n1
 ___ i __ r..(n1
-    a1[i] _ int(input("Enter element : "))
+    a1[i] _ i..(i..("Enter element : "))
 
-n2 _ int(input("Enter the number of elements in list a2 : "))
+n2 _ i..(i..("Enter the number of elements in list a2 : "))
 print("Enter elements in sorted order : " );
 a2 _ [N..]*n2
 ___ i __ r..(n2
-    a2[i] _ int(input("Enter element : "))
+    a2[i] _ i..(i..("Enter element : "))
 
 temp_[N..]*(n1+n2)
 

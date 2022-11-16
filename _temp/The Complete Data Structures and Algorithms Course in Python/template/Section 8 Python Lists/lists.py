@@ -42,8 +42,8 @@ print(searchinList(myList, 100))
 total _ 0 
 count _ 0
 _____ (T..
-    inp _ input('Enter a number: ') 
-    __ inp __ 'done': break
+    inp _ i..('Enter a number: ') 
+    __ inp __ 'done': b..
     value _ float(inp)
     total _ total + value
     count _ count + 1 
@@ -55,8 +55,8 @@ print('Average:', average)
 
 numlist _ list() 
 _____ (T..
-    inp _ input('Enter a number: ') 
-    __ inp __ 'done': break
+    inp _ i..('Enter a number: ') 
+    __ inp __ 'done': b..
     value _ float(inp)
     numlist.a..(value)
 					

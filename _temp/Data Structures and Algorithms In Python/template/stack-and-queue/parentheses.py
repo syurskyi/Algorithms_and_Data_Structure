@@ -40,10 +40,10 @@ ___ match_parentheses(left_par, right_par
 
 _____ T..:
     print("Enter an expression with parentheses (q to quit) : ", end _ ' ')
-    expression _ input()
+    expression _ i..()
 
     __ expression __ "q":
-        break
+        b..
 
     __ is_valid(expression
         print("Valid expression")

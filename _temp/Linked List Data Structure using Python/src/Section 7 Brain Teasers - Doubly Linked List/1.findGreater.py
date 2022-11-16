@@ -13,7 +13,7 @@ ___ findGreater(linkedList
                     print("Previous node has a greater value than next node")
                 ____
                     print("Next node has a greater value than the previous node")
-                break
+                b..
             currentNode _ currentNode.next
             currentPosition +_ 1
     ____

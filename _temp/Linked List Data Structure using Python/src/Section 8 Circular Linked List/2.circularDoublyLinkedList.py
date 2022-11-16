@@ -52,7 +52,7 @@ c_ LinkedList:
         currentNode _ head
         _____ T..:
             __ currentNode.next.next __ head:
-                break
+                b..
             currentNode _ currentNode.next
         head.previous _ currentNode
         currentNode.next.previous _ N..
@@ -66,7 +66,7 @@ c_ LinkedList:
                 print(currentNode.data)
                 currentNode _ currentNode.next
                 __ currentNode __ head:
-                    break
+                    b..
             # Print previous of head node to verify the connection to last node
             print(currentNode.previous.data)
 

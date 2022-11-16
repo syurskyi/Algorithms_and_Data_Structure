@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ kthSmallest root: TreeNode, k: int) -> int:
+    ___ kthSmallest root: TreeNode, k: i..) -> i..:
         k _ k
         res _ N..
         helper(root)

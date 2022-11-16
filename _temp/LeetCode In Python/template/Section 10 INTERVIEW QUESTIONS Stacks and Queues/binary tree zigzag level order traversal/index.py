@@ -7,7 +7,7 @@
 
 
 c_ Solution:
-    ___ zigzagLevelOrder root: TreeNode) -> List[List[int]]:
+    ___ zigzagLevelOrder root: TreeNode) -> List[List[i..]]:
         __ n.. root:
             r_    # list
         res _    # list

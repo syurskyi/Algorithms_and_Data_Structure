@@ -81,17 +81,17 @@ _____ T..:
     print("3.Display")
     print("4.Exit")
     print("Enter your choice : ")
-    choice _ int(input("Enter your choice : "))
+    choice _ i..(i..("Enter your choice : "))
 
     __ choice __ 1:
-        value _ int(input("Enter the value to be inserted : "))
+        value _ i..(i..("Enter the value to be inserted : "))
         h.insert(value)
     ____ choice __ 2:
         print("Maximum value is " , h.delete_root())
     ____ choice __ 3:
         h.display()
     ____ choice __ 4:
-        break
+        b..
     ____
          print("Wrong choice")
         

@@ -11,11 +11,11 @@ ___ solution(A
         peaks[i] _ next_peak
     peaks[0] _ next_peak
 
-    upper_guess _ int(sqrt(l..(A))) + 2
+    upper_guess _ i..(sqrt(l..(A))) + 2
     lower_guess _ 0
 
     _____ lower_guess < upper_guess - 1:
-        current_guess _ int((lower_guess + upper_guess) / 2)
+        current_guess _ i..((lower_guess + upper_guess) / 2)
         __ can_place_flags(peaks, current_guess
             lower_guess _ current_guess
         ____

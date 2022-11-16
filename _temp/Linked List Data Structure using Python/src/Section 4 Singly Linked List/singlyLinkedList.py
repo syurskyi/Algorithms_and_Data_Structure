@@ -21,7 +21,7 @@ c_ LinkedList:
             lastNode _ head
             _____ T..:
                 __ lastNode.next __ N..:
-                    break
+                    b..
                 lastNode _ lastNode.next
             lastNode.next _ newNode
 
@@ -33,7 +33,7 @@ c_ LinkedList:
         currentNode _ head
         _____ T..:
             __ currentNode __ N..:
-                break
+                b..
             print(currentNode.data)
             currentNode _ currentNode.next
 

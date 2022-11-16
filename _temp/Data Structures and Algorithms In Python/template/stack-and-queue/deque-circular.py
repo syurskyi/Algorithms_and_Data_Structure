@@ -91,13 +91,13 @@ __ __name__ __ "__main__":
         print("8.Size")
         print("9.Quit")
              
-        choice _ int(input("Enter your choice : "))
+        choice _ i..(i..("Enter your choice : "))
 
         __ choice __ 1:
-            x_int(input("Enter the element : "))
+            x_int(i..("Enter the element : "))
             qu.insert_front(x)
         ____ choice__ 2:
-            x_int(input("Enter the element : "))
+            x_int(i..("Enter the element : "))
             qu.insert_rear(x)
         ____ choice __ 3:
             x _ qu.delete_front()
@@ -114,7 +114,7 @@ __ __name__ __ "__main__":
         ____ choice __ 8:
             print("Size of queue " , qu.size())
         ____ choice __ 9:
-            break
+            b..
         ____
             print("Wrong choice")
         print()

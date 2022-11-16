@@ -68,7 +68,7 @@ c_ SingleLinkedList:
         p _ start 
         _____ p.link __ n.. N..:
             __ p.link.info.get_student_id() __ x:
-                break 	
+                b.. 	
             p _ p.link 
 
         __ p.link __ N..:
@@ -127,7 +127,7 @@ c_ HashTable:
                 
 ##################################################################
                
-size _ int(input("Enter size of table : "))
+size _ i..(i..("Enter size of table : "))
 table _ HashTable(size)
 
 _____ T..:
@@ -137,26 +137,26 @@ _____ T..:
     print("4.Display table")
     print("5.Exit")
 
-    choice _ int(input("Enter your choice : "))
+    choice _ i..(i..("Enter your choice : "))
     __ choice __ 1:
-        id _ int(input("Enter student id : "))
-        name _ input("Enter student name : ")
+        id _ i..(i..("Enter student id : "))
+        name _ i..("Enter student name : ")
         aRecord _ studentRecord(id,name)
         table.insert(aRecord)
     ____ choice __ 2:
-        id _ int(input("Enter a key to be searched : "))
+        id _ i..(i..("Enter a key to be searched : "))
         aRecord _ table.search(id)
         __  aRecord __ N..:
             print("Key not found")
         ____
             print(aRecord)
     ____ choice __ 3:
-          id _ int(input("Enter a key to be deleted :"))
+          id _ i..(i..("Enter a key to be deleted :"))
           table.delete(id)
     ____ choice __ 4:
           table.display_table()
     ____ choice __ 5:
-          break
+          b..
     ____
           print("Wrong option") 
     print() 

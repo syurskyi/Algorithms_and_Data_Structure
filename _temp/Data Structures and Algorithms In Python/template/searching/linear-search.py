@@ -10,13 +10,13 @@ ___ Search(a, n, searchValue
 
 #######################################################
 
-n _ int(input("Enter the number of elements : "))
+n _ i..(i..("Enter the number of elements : "))
 a _ [N..]*n
 print("Enter the elements - ")
 ___ i __ r..(n
-    a[i] _ int(input("Enter element : "))
+    a[i] _ i..(i..("Enter element : "))
 
-searchValue _ int(input("Enter the search value : "))
+searchValue _ i..(i..("Enter the search value : "))
 index _ Search(a, n, searchValue)
 
 __ index __ -1:

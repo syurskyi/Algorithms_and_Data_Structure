@@ -7,10 +7,10 @@ ___ mergeLists(firstList, secondList, mergedList
     _____ T..:
         __ currentFirst __ N..:
             mergedList.insertEnd(currentSecond)
-            break
+            b..
         __ currentSecond __ N..:
             mergedList.insertEnd(currentFirst)
-            break
+            b..
         __ currentFirst.data < currentSecond.data:
             currentFirstNext _ currentFirst.next
             currentFirst.next _ N..

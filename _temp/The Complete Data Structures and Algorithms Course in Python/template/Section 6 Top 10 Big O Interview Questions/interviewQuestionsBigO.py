@@ -57,7 +57,7 @@ ___ printUnorderedPairs(arrayA, arrayB
 
 #Question6
 ___ reverse(array
-    ___ i __ r..(0,int(l..(array)/2
+    ___ i __ r..(0,i..(l..(array)/2
         other _ l..(array)-i-1
         temp _ array[i]
         array[i] _ array[other]
@@ -102,7 +102,7 @@ ___ powersOf2(n
         print(1)
         r_ 1
     ____
-        prev _ powersOf2(int(n/2))
+        prev _ powersOf2(i..(n/2))
         # print("prev:"+str(prev))
         print(prev)
         curr _ prev*2

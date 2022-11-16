@@ -24,7 +24,7 @@ ___ dflag(myarray
                 #print "moving twoIndex from",twoIndex,"to",twoIndex-1
                 twoIndex -_ 1
             ____
-                break
+                b..
         ____
             currentIndex +_ 1
     print myarray, '\n'

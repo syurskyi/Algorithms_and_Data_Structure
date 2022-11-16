@@ -44,10 +44,10 @@ __ __name__ __ "__main__":
         print("5.Display") 
         print("6.Quit")
          
-        choice _ int(input("Enter your choice : "))
+        choice _ i..(i..("Enter your choice : "))
 
         __ choice __ 1:
-            x_int(input("Enter the element to be pushed : "))
+            x_int(i..("Enter the element to be pushed : "))
             st.push(x) 
         ____ choice __ 2:
             x_st.p.. 
@@ -59,7 +59,7 @@ __ __name__ __ "__main__":
         ____ choice __ 5:
             st.display()         
         ____ choice __ 6:
-          break;
+          b..;
         ____
           print("Wrong choice") 
         print() 

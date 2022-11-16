@@ -45,10 +45,10 @@ ___ retsore_down(i, a, n
 
 ###################################################
       
-n _ int(input("Enter the number of elements : "))
+n _ i..(i..("Enter the number of elements : "))
 a _ [N..]*(n+1)
 ___ i __ r..(1,n+1
-    a[i] _ int(input("Enter element : "))
+    a[i] _ i..(i..("Enter element : "))
 
 heap_sort(a,n)
 

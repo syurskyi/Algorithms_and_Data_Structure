@@ -33,7 +33,7 @@ c_ Solution:
 
         r_ -1
 
-    ___ searchRange nums: List[int], target: int) -> List[int]:
+    ___ searchRange nums: List[i..], target: i..) -> List[i..]:
         left _ getLeftPosition(nums, target)
         right _ getRightPosition(nums, target)
 

@@ -16,7 +16,7 @@ c_ LinkedList:
         currentNode _ head
         _____ T..:
             __ currentNode.next __ N..:
-                break
+                b..
             currentNode _ currentNode.next
         currentNode.next _ newNode
         newNode.previous _ currentNode
@@ -29,7 +29,7 @@ c_ LinkedList:
         print("Printing from the beginning")
         _____ T..:
             __ currentNode __ N..:
-                break
+                b..
             print(currentNode.data)
             __ currentNode.next __ N..:
                 reverseTraversalNode _ currentNode
@@ -37,7 +37,7 @@ c_ LinkedList:
         print("Printing form end")
         _____ T..:
             __ reverseTraversalNode __ N..:
-                break
+                b..
             print(reverseTraversalNode.data)
             reverseTraversalNode _ reverseTraversalNode.previous
 

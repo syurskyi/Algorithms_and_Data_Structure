@@ -28,7 +28,7 @@ ___ solution(A
         total +_ index_less_than(discs, discs[i].high_x + 0.5, 0, l..(discs) - 1) - i
         __ total > 10000000:
             total _ -1
-            break
+            b..
     r_ total
 
 print(solution([1, 5, 2, 1, 4, 0]))
