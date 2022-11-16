@@ -52,7 +52,7 @@ c_ Graph:
         r_ vertList.keys()
 
     ___ __iter__ 
-        r_ iter(vertList.values())
+        r_ iter(vertList.v..
 
 # Code for buildGraph function:
 

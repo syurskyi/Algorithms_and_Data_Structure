@@ -17,7 +17,7 @@ Fll out your solution below:
 # %%
 ___ pair_sum(arr,k
     counter _ 0
-    lookup _ set()
+    lookup _ s..
     ___ num __ arr:
         __ k-num __ lookup:
             counter+_1

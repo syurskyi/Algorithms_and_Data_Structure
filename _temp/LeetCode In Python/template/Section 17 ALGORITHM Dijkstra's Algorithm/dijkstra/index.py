@@ -8,7 +8,7 @@ c_ Solution:
 
         # cost,node
         min_heap _ [(0, K)]
-        visited _ set()
+        visited _ s..
         distance _ {i: float('inf') ___ i __ r..(1, N+1)}
         distance[K] _ 0
 

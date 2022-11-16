@@ -11,7 +11,7 @@ c_ Graph:
         graph[u].a..(v)
 
     ___ bfs s
-        visited _ set()
+        visited _ s..
 
         queue _    # list
         queue.a..(s)

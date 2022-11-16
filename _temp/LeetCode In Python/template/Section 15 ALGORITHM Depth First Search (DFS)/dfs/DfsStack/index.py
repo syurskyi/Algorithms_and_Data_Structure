@@ -10,7 +10,7 @@ c_ Graph:
         graph[v1].a..(v2)
 
     ___ DFS startNode
-        visited _ set()
+        visited _ s..
         st _    # list
         st.a..(startNode)
 

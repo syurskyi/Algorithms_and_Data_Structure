@@ -10,7 +10,7 @@ c_ Queue:
     
     ___ __str__
         values _ [str(x) ___ x __ items]
-        r_ ' '.join(values)
+        r_ ' '.j..(values)
     
     ___ isFull
         __ top + 1 __ start:

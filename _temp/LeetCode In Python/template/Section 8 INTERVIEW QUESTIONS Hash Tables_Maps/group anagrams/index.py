@@ -1,6 +1,6 @@
 c_ Solution:
     ___ findHashs
-        r_ ''.join(s..(s))
+        r_ ''.j..(s..(s))
     ___ groupAnagrams strs: List[str]) -> List[List[str]]:
         answers _    # list
         m _     # dict

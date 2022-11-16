@@ -27,7 +27,7 @@ c_ Queue:
     
     ___ __str__ 
         values _ [str(x) ___ x __ linkedList]
-        r_ ' '.join(values)
+        r_ ' '.j..(values)
     
     ___ enqueue value
         newNode _ Node(value)

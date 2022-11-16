@@ -32,6 +32,6 @@ g.setEdge(5, 8)
 g.setEdge(6, 9)
 
 
-visited _ set()
+visited _ s..
 
 g.DFS(2, visited)

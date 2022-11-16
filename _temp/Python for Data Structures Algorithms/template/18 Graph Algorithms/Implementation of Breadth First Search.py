@@ -22,7 +22,7 @@ graph _ {'A': set(['B', 'C']),
 # the beginning of the list structure instead of the stacks last.
 
 ___ bfs(graph, start
-    visited, queue _ set(), [start]
+    visited, queue _ s.., [start]
     _____ queue:
         vertex _ queue.pop(0)
         __ vertex n.. __ visited:

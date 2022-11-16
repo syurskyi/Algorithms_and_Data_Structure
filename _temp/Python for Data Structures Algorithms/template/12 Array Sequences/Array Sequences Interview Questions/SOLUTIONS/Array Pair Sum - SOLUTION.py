@@ -28,8 +28,8 @@ ___ pair_sum(arr, k
         r_
 
     # Sets for tracking
-    seen _ set()
-    output _ set()
+    seen _ s..
+    output _ s..
 
     # For every number in array
     ___ num __ arr:

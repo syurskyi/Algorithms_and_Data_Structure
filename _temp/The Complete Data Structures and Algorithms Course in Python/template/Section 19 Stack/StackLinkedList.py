@@ -22,7 +22,7 @@ c_ Stack:
     
     ___ __str__ 
         values _ [str(x.value) ___ x __ LinkedList]
-        r_ '\n'.join(values)
+        r_ '\n'.j..(values)
     
     ___ isEmpty 
         __ LinkedList.head __ N..:

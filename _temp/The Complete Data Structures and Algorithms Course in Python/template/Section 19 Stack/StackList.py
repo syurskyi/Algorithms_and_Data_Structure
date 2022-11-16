@@ -9,7 +9,7 @@ c_ Stack:
     ___ __str__
         values _ list.reverse()
         values _ [str(x) ___ x __ list]
-        r_ '\n'.join(values)
+        r_ '\n'.j..(values)
     
     # isEmpty
     ___ isEmpty

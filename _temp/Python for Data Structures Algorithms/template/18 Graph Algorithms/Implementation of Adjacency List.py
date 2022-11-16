@@ -71,7 +71,7 @@ c_ Graph:
         r_ vertList.keys()
 
     ___ __iter__ 
-        r_ iter(vertList.values())
+        r_ iter(vertList.v..
 
 # Let's see a simple example of how to use this:
 

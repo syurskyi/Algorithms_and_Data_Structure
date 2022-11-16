@@ -12,7 +12,7 @@ ___ uni_char(s
     r_ l..(set(s)) __ l..(s)
 
 ___ uni_char2(s
-    chars _ set()
+    chars _ s..
     ___ let __ s:
         # Check if in set
         __ let __ chars:

@@ -22,7 +22,7 @@
 # to remove items from a set, we are able to add only the unvisited adjacent vertices.
 
 ___ dfs(graph, start
-    visited, stack _ set(), [start]
+    visited, stack _ s.., [start]
     _____ stack:
         vertex _ stack.p.. 
         __ vertex n.. __ visited:
@@ -41,7 +41,7 @@ dfs(graph, 'A')
 
 ___ dfs(graph, start, visited_None
     __ visited __ N..:
-        visited _ set()
+        visited _ s..
     visited.add(start)
     ___ nxt __ graph[start] - visited:
         dfs(graph, nxt, visited)

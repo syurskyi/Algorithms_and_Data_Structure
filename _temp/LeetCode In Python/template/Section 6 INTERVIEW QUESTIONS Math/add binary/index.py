@@ -18,4 +18,4 @@ c_ Solution o..
             result.a..(str(total % 2))
             carry _ total//2
 
-        r_ ''.join(reversed(result))
+        r_ ''.j..(reversed(result))

@@ -14,12 +14,12 @@
 # of reversed:
 
 ___ rev_word1(s
-    r_ " ".join(reversed(s.split()))
+    r_ " ".j..(reversed(s.split()))
 
 #Or
 
 ___ rev_word2(s
-    r_ " ".join(s.split()[::-1])
+    r_ " ".j..(s.split()[::-1])
 
 rev_word1('Hi John,   are you ready to go?')
 # 'go? to ready you are John, Hi'
@@ -62,7 +62,7 @@ ___ rev_word3(s
         i +_ 1
 
     # Join the reversed words
-    r_ " ".join(reversed(words))
+    r_ " ".j..(reversed(words))
 
 rev_word3('   Hello John    how are you   ')
 # 'you are how John Hello'

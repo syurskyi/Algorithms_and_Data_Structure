@@ -5,7 +5,7 @@ from collections import defaultdict
 
 c_ Graph:
     ___ -  
-        nodes _ set()
+        nodes _ s..
         edges _ defaultdict(list)
         distances _     # dict
     

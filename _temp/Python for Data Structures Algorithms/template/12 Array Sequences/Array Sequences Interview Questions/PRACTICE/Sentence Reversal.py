@@ -17,7 +17,7 @@ Fill out your solution below:
 
 # %%
 ___ rev_word(s
-    r_ " ".join(reversed(s.split()))
+    r_ " ".j..(reversed(s.split()))
     pass
 
 # %%

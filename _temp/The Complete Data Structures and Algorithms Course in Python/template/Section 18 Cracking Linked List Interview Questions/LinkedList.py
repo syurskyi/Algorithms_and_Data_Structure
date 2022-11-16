@@ -24,7 +24,7 @@ c_ LinkedList:
     
     ___ __str__
         values _ [str(x.value) ___ x __ self]
-        r_ ' -> '.join(values)
+        r_ ' -> '.j..(values)
     
     ___ __len__
         result _ 0
