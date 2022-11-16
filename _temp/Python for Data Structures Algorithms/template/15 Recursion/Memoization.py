@@ -10,7 +10,7 @@
 # A simple example for computing factorials using memoization in Python would be something like this:
 #
 # # Create cache for known results
-factorial_memo _ {}
+factorial_memo _     # dict
 
 ___ factorial(k
 
@@ -33,7 +33,7 @@ factorial(4)
 c_ Memoize:
     ___ -  f
         f _ f
-        memo _ {}
+        memo _     # dict
     ___ __call__ *args
         __ n.. args __ memo:
             memo[args] _ f(*args)

@@ -22,7 +22,7 @@ c_ Node:
 ___ clone(node
 	queue _    # list
 
-	visited _ {}
+	visited _     # dict
 
 	queue.a..(node)
 

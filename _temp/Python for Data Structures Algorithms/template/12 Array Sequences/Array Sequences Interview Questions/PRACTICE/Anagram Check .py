@@ -26,7 +26,7 @@ ___ anagram(s, t
     
     __(l..(s)!_len(t
         r_ F..
-    counter _ {}
+    counter _     # dict
     ___ letter __ s:
         __ letter __ counter:
             counter[letter] +_ 1

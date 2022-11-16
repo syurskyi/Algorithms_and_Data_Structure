@@ -1,6 +1,6 @@
 c_ Solution:
     ___ fourSumCount A: List[int], B: List[int], C: List[int], D: List[int]) -> int:
-      m _ {}
+      m _     # dict
       ans _ 0
 
       ___ i __ r..(0,l..(A

@@ -8,7 +8,7 @@ c_ TreeNode:
 
 c_ Solution:
     ___ buildTree preorder, inorder
-        memory _ {}
+        memory _     # dict
         ___ i, e __ enumerate(inorder
             memory[e] _ i
 

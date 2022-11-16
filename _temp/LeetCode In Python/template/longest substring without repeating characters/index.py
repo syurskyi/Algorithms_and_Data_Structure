@@ -1,6 +1,6 @@
 c_ Solution:
     ___ lengthOfLongestSubstring s: str) -> int:
-        m _ {}
+        m _     # dict
         left _ 0
         right _ 0
         ans _ 0

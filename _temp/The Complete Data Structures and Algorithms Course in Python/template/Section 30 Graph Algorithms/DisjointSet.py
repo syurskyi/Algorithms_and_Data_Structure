@@ -6,7 +6,7 @@
 c_ DisjointSet:
     ___ -  vertices
         vertices _ vertices
-        parent _ {}
+        parent _     # dict
         ___ v __ vertices:
             parent[v] _ v
         rank _ dict.fromkeys(vertices, 0)

@@ -7,7 +7,7 @@ c_ Graph:
     ___ -  
         nodes _ set()
         edges _ defaultdict(list)
-        distances _ {}
+        distances _     # dict
     
     ___ addNodevalue
         nodes.add(value)

@@ -6,8 +6,8 @@ c_ Solution:
         __(len1 < len2
             r_ ""
 
-        hashPat _ {}
-        hashStr _ {}
+        hashPat _     # dict
+        hashStr _     # dict
 
         ___ i __ r..(0, len2
             __(hashPat.get(t[i]) __ N..

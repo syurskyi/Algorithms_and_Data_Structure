@@ -3,7 +3,7 @@
 
 c_ TrieNode:
     ___ -  
-        children _ {}
+        children _     # dict
         endOfString _ F..
 
 c_ Trie:

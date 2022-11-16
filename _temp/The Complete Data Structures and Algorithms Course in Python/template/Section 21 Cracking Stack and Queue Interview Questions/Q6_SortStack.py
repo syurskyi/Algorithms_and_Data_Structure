@@ -17,7 +17,7 @@ ___ sort_stack(stack
       current _ stack.p.. 
     __ current __ N.. ___ previous: temp.push(previous)
        
-  sorted _ T..
+  s.. _ T..
   previous _ temp.p.. 
   current _ temp.p.. 
   _____ current:
@@ -28,9 +28,9 @@ ___ sort_stack(stack
     ____
       stack.push(current)
       current _ temp.p.. 
-      sorted _ F..
+      s.. _ F..
     __ current __ N.. ___ previous: stack.push(previous)
-  __ sorted: r_ stack
+  __ s..: r_ stack
   ____ r_ sort_stack(stack)
 
 c_ Stack(

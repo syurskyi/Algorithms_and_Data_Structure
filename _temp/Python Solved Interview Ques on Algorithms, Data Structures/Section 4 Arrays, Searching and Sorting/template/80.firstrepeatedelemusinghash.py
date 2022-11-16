@@ -1,7 +1,7 @@
 
 ___ firstrepeatedeleinalistofrepeatednumbersusinghash(myarray
         print "Given array:",myarray
-	tab _ {}  # hash
+	tab _     # dict  # hash
         #print "Created the tab:",tab
 	m__ _ 0
 	___ ele __ myarray:

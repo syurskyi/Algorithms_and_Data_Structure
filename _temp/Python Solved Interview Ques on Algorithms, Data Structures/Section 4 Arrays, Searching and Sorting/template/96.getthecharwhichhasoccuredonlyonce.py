@@ -1,7 +1,7 @@
 
 ___ getelemwhichhassingleoccurence(myarray
         print "Given array:", myarray
-	hashTable _ {}
+	hashTable _     # dict
 	___ elem __ myarray.lower(
 		__ elem __ hashTable:
 			hashTable[elem] +_ 1

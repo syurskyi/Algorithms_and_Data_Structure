@@ -16,7 +16,7 @@ c_ Graph:
     '''
     ___ -
 #         self.nodes = set() # all the vertexes in the graph -- could be done in the edges part
-        connections _ {} # all the connections start_vertex:{end_vertex:weigth}
+        connections _     # dict # all the connections start_vertex:{end_vertex:weigth}
 
 #     def add_node(self, node):
 #         self.nodes.add(node)
@@ -32,7 +32,7 @@ c_ Graph:
             connections[start][end] _ weight
 
         __ end n.. __ connections:
-            connections[end] _ {}
+            connections[end] _     # dict
 
     ___ get_nodes
         r_ connections.keys()

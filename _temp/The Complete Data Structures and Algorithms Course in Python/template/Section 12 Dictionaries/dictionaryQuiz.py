@@ -27,7 +27,7 @@ a _ {'a':1,'b':2,'c':3}
 
 # Q-3. What will be the output of the following code block?
 
-fruit _ {}
+fruit _     # dict
 
 ___ addone(index
     __ index __ fruit:
@@ -48,7 +48,7 @@ print (l..(fruit))
 
 # Q-4. What will be the output of the following code block?
 
-arr _ {}
+arr _     # dict
 arr[1] _ 1
 arr['1'] _ 2
 arr[1] +_ 1
@@ -67,7 +67,7 @@ print(sum)
 
 # Q-5. What will be the output of the following code snippet?
 
-my_dict _ {}
+my_dict _     # dict
 my_dict[1] _ 1
 my_dict['1'] _ 2
 my_dict[1.0] _ 4
@@ -86,7 +86,7 @@ print (sum)
 
 # Q-6. What will be the output of the following code snippet?
 
-my_dict _ {}
+my_dict _     # dict
 my_dict[(1,2,4)] _ 8
 my_dict[(4,2,1)] _ 10
 my_dict[(1,2)] _ 12
@@ -109,9 +109,9 @@ print(my_dict)
 
 # Q-7. What will be the output of the following code snippet?
 
-box _ {}
-jars _ {}
-crates _ {}
+box _     # dict
+jars _     # dict
+crates _     # dict
 box['biscuit'] _ 1
 box['cake'] _ 3
 jars['jam'] _ 4
@@ -129,7 +129,7 @@ crates['jars'] _ jars
 
 dict _ {'c': 97, 'a': 96, 'b': 98}
 
-___ _ __ sorted(dict
+___ _ __ s..(dict
     print (dict[_])
 # A. 96 98 97
 # B. 96 97 98

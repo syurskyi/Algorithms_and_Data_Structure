@@ -1,7 +1,7 @@
 
 ___ getfirstnonrepeated(myarray
         print "Given array:", myarray
-	tab _ {}  # hash
+	tab _     # dict  # hash
         #print "tab created:", tab
 	___ ele __ myarray.lower(
 		__ ele __ tab:

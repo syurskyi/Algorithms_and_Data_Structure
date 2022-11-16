@@ -1,6 +1,6 @@
 c_ Solution:
     ___ twoSum nums: List[int], target: int) -> List[int]:
-        m _ {}
+        m _     # dict
         n _ l..(nums)
         ___ i __ r..(0,n
             goal _ target - nums[i]

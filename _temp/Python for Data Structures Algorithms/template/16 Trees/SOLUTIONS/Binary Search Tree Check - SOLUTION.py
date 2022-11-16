@@ -16,7 +16,7 @@ ___ inorder(tree
         inorder(tree.getRightChild())
 
 ___ sort_check(tree_vals
-    r_ tree_vals __ sorted(tree_vals)
+    r_ tree_vals __ s..(tree_vals)
 
 inorder(tree)
 sort_check(tree_vals)

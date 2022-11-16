@@ -5,7 +5,7 @@
 c_ Graph:
     ___ -  gdict_None
         __ gdict __ N..:
-            gdict _ {}
+            gdict _     # dict
         gdict _ gdict
     
     ___ bfs start, end

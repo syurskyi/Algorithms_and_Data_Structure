@@ -19,7 +19,7 @@ c_ Solution:
         __(l..(digits) __ 0
             r_ ans
 
-        m _ {}
+        m _     # dict
 
         m['2'] _ "abc"
         m['3'] _ "def"

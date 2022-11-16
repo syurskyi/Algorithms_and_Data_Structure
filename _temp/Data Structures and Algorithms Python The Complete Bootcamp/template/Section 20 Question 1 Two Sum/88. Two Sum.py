@@ -1,6 +1,6 @@
 c_ Solution:
     ___ twoSum nums, target
-        store _ {}
+        store _     # dict
 
         ___ i __ r..(l..(nums
             __ nums[i] __ store:

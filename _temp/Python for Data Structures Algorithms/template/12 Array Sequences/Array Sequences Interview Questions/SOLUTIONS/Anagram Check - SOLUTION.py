@@ -25,7 +25,7 @@ ___ anagram(s1,s2
     s2 _ s2.replace(' ','').lower()
     
     # Return boolean for sorted match.
-    r_ sorted(s1) __ sorted(s2)
+    r_ s..(s1) __ s..(s2)
 
 # %%
 anagram('dog','god')
@@ -55,7 +55,7 @@ ___ anagram2(s1,s2
         r_ F..
     
     # Create counting dictionary (Note could use DefaultDict from Collections module)
-    count _ {}
+    count _     # dict
     
     
         

@@ -1,7 +1,7 @@
 
 ___ getthefrequencyofeverynumber(myarray
         print "Given array:",myarray
-	hashTable _ {}  
+	hashTable _     # dict  
         #print "created hash:",hashTable
 	___ ele __ myarray:
 		__ ele __ hashTable:

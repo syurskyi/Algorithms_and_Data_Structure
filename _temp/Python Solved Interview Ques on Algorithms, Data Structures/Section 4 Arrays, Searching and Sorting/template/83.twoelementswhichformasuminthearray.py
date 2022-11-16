@@ -1,7 +1,7 @@
 
 ___ gettwoeleswhichformasum(myarray, Sum
         print "Find the sum",Sum,"in the Given array:",myarray
-	tab _ {}  # hash
+	tab _     # dict  # hash
         #print "Created tab:",tab
 	#print "In the first loop"
 	___ ele __ myarray:

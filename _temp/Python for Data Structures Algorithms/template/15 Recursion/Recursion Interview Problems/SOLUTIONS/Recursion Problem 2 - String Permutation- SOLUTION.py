@@ -52,8 +52,8 @@ c_ TestPerm o..
 
     ___ testsolution
 
-        assert_equal(sorted(solution('abc')),sorted(['abc', 'acb', 'bac', 'bca', 'cab', 'cba']))
-        assert_equal(sorted(solution('dog')),sorted(['dog', 'dgo', 'odg', 'ogd', 'gdo', 'god']) )
+        assert_equal(s..(solution('abc')),s..(['abc', 'acb', 'bac', 'bca', 'cab', 'cba']))
+        assert_equal(s..(solution('dog')),s..(['dog', 'dgo', 'odg', 'ogd', 'gdo', 'god']) )
 
         print 'All test cases passed.'
 

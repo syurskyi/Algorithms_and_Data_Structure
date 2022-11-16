@@ -2,7 +2,7 @@ from doublyLinkedList import Node, LinkedList
 
 ___ removeDuplicate(linkedList
     # 13->5->13->2->13->None
-    nodeCount _ {}
+    nodeCount _     # dict
     # {13: 1, 5:1, 2:1}
     currentNode _ linkedList.head
     _____ T..:

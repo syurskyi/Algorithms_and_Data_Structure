@@ -1,7 +1,7 @@
 
 ___ elementwhichappearsmaxtime(myarray
         print "Given array:",myarray
-	tab _ {}  # hash
+	tab _     # dict  # hash
         #print "Created tab:",tab
 	m__ _ 0
 	___ element __ myarray:

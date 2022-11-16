@@ -9,10 +9,10 @@
 # O(n * mlogm)
 
 ___ group_anagrams(strs
-	dic _ {}
+	dic _     # dict
 
 	___ i __ r..(l..(strs
-		sorted_anagram _ "".join(sorted(strs[i]))
+		sorted_anagram _ "".join(s..(strs[i]))
 		group_strs _ dic.get(sorted_anagram,    # list)
 		group_strs.a..(strs[i])
 

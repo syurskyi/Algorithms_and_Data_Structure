@@ -1,7 +1,7 @@
 
 ___ findtworepeatedelesusinghash(myarray
         print "Given array:", myarray
-	tab _ {}  # hash
+	tab _     # dict  # hash
         #print "Created tab:", tab
 	___ ele __ myarray:
 		__ ele __ tab:

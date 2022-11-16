@@ -1,6 +1,6 @@
 c_ Solution:
     ___ majorityElement nums: List[int]) -> int:
-        m _ {}
+        m _     # dict
         ___ num __ nums:
             m[num] _ m.get(num,0)+1
         ___ num __ nums:

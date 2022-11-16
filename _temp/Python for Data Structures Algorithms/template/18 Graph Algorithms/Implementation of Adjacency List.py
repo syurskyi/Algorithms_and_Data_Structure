@@ -12,7 +12,7 @@
 c_ Vertex:
     ___ - key
         id _ key
-        connectedTo _ {}
+        connectedTo _     # dict
 
     ___ addNeighbornbr,weight_0
         connectedTo[nbr] _ weight
@@ -42,7 +42,7 @@ c_ Vertex:
 
 c_ Graph:
     ___ -  
-        vertList _ {}
+        vertList _     # dict
         numVertices _ 0
 
     ___ addVertexkey

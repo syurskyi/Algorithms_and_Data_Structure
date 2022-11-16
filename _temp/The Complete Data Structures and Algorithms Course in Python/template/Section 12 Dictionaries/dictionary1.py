@@ -35,4 +35,4 @@ myDict.pop('name')
 # sorted method
 myDict _ {'eooooa': 1, 'aas': 2, 'udd': 3, 'sseo': 4, 'werwi': 5}
 
-print(sorted(myDict, key_len))
+print(s..(myDict, key_len))

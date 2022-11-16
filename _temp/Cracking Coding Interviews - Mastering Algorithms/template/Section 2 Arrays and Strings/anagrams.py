@@ -6,8 +6,8 @@
 
 # O(nlogn)
 
-___ anagram(word1, word2
-	r_ sorted(word1) __ sorted(word2)
+___ anagram word1, word2
+	r_ s..(word1) __ s..(word2)
 
 # O(n) O(n)
 
@@ -15,8 +15,8 @@ ___ anagram2(word1, word2
 	__ l..(word1) !_ l..(word2
 		r_ F..
 
-	dict1 _ {}
-	dict2 _ {}
+	dict1 _     # dict
+	dict2 _     # dict
 
 	___ i __ r..(l..(word1
 		__ word1[i] n.. __ dict1.keys(

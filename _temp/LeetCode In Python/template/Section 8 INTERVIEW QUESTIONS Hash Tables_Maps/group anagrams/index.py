@@ -1,9 +1,9 @@
 c_ Solution:
     ___ findHashs
-        r_ ''.join(sorted(s))
+        r_ ''.join(s..(s))
     ___ groupAnagrams strs: List[str]) -> List[List[str]]:
         answers _    # list
-        m _ {}
+        m _     # dict
 
         ___ s __ strs:
             hashed _ findHash(s)

@@ -1,7 +1,7 @@
 
 ___ getrepeatedelement(A
         print "given array:",A
-	tab _ {}  # hash
+	tab _     # dict  # hash
         #print "created a new tab:", tab
 	___ element __ A.lower(
 		__ element __ tab:

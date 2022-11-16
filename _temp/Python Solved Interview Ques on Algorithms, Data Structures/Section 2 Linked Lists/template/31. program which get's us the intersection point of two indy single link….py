@@ -60,7 +60,7 @@ ___ returnEnd(l
   r_ l1
 
 ___ nodeJoiningPoint(list1, list2
-  joiningPoint _ {}
+  joiningPoint _     # dict
   t _ list1.head
 
   w__ t !_ N..:

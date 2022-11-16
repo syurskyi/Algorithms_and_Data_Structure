@@ -22,7 +22,7 @@ ___ solution(A
     discs _    # list
     ___ i __ r..(l..(A
         discs.a..(Disc(i - A[i], i + A[i]))
-    discs _ sorted(discs, key_lambda d: d.low_x)
+    discs _ s..(discs, key_lambda d: d.low_x)
     total _ 0
     ___ i __ r..(l..(discs
         total +_ index_less_than(discs, discs[i].high_x + 0.5, 0, l..(discs) - 1) - i
