@@ -9,7 +9,7 @@ ___ binary_search(a, n, searchValue
         mid _ (first + last)//2
         __ searchValue < a[mid]:
             last _ mid-1     # Search in left half
-        elif searchValue > a[mid]:
+        ____ searchValue > a[mid]:
             first _ mid+1    # Search in right half
         ____
             r_ mid	     # searchValue present at index mid
@@ -21,7 +21,7 @@ n _ int(input("Enter the number of elements : "))
 a _ [N..]*n
 
 print("Enter the elements in sorted order  - ")
-___ i __ range(n
+___ i __ r..(n
     a[i] _ int(input("Enter element : "))
 
 searchValue _ int(input("Enter the search value : "))

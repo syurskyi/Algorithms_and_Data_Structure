@@ -29,7 +29,7 @@ c_ LinkedList:
 
     ___ insertAt newNode, position
         # head =>10->20->None || newNode => 15 -> None || position=>1
-        __ position < 0 or position > listLength(
+        __ position < 0 __ position > listLength(
             print("Invalid position")
             r_
         __ position __ 0:
@@ -37,7 +37,7 @@ c_ LinkedList:
             r_
         currentNode _ head # 10, 20
         currentPosition _ 0 # 0, 1
-        _____ True:
+        _____ T..:
             __ currentPosition __ position:
                 previousNode.next _ newNode
                 newNode.next _ currentNode
@@ -52,7 +52,7 @@ c_ LinkedList:
             head _ newNode
         ____
             lastNode _ head
-            _____ True:
+            _____ T..:
                 __ lastNode.next __ N..:
                     break
                 lastNode _ lastNode.next
@@ -64,7 +64,7 @@ c_ LinkedList:
             print("List is empty")
             r_
         currentNode _ head
-        _____ True:
+        _____ T..:
             __ currentNode __ N..:
                 break
             print(currentNode.data)

@@ -14,9 +14,9 @@ c_ LinkedList:
 
     ___ isListEmpty
         __ head __ N..:
-            r_ True
+            r_ T..
         ____
-            r_ False
+            r_ F..
 
     ___ insertHead newNode
         # data = > Matthew, next => None
@@ -35,7 +35,7 @@ c_ LinkedList:
 
     ___ insertAt newNode, position
         # head =>10->20->None || newNode => 15 -> None || position=>1
-        __ position < 0 or position > listLength(
+        __ position < 0 __ position > listLength(
             print("Invalid position")
             r_
         __ position __ 0:
@@ -43,7 +43,7 @@ c_ LinkedList:
             r_
         currentNode _ head # 10, 20
         currentPosition _ 0 # 0, 1
-        _____ True:
+        _____ T..:
             __ currentPosition __ position:
                 previousNode.next _ newNode
                 newNode.next _ currentNode
@@ -58,14 +58,14 @@ c_ LinkedList:
             head _ newNode
         ____
             lastNode _ head
-            _____ True:
+            _____ T..:
                 __ lastNode.next __ N..:
                     break
                 lastNode _ lastNode.next
             lastNode.next _ newNode
 
     ___ deleteHead
-        __ isListEmpty() __ False:
+        __ isListEmpty() __ F..:
             # head => 10 -> 15 -> 20 || 15->20->10-> None
             previousHead _ head
             head _ head.next
@@ -75,7 +75,7 @@ c_ LinkedList:
 
     ___ deleteEnd
         # head => John -> Ben -> Mattew -> None
-        __ isListEmpty() __ False:
+        __ isListEmpty() __ F..:
             __ head.next __ N..:
                 deleteHead()
                 r_
@@ -93,7 +93,7 @@ c_ LinkedList:
             print("List is empty")
             r_
         currentNode _ head
-        _____ True:
+        _____ T..:
             __ currentNode __ N..:
                 break
             print(currentNode.data)

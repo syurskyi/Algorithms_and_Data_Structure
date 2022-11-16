@@ -11,15 +11,15 @@
 ___ unique_characters(word
 	visited_chars _ set()
 
-	___ i __ range(l..(word)):
+	___ i __ r..(l..(word
 		letter _ word[i]
 
 		__ letter __ visited_chars:
-			r_ False
+			r_ F..
 
 		visited_chars.add(letter)
 
-	r_ True
+	r_ T..
 
 print(unique_characters("abc"))
 print(unique_characters(""))

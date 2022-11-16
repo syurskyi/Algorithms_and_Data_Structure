@@ -12,7 +12,7 @@ c_ Solution:
         carry _ 0
         sum _ 0
 
-        _____(l1!_None or l2!_None
+        _____(l1!_None __ l2!_None
             sum _ carry
             __(l1!_None
                 sum+_l1.val

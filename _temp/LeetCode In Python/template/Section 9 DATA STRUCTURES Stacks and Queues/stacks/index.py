@@ -8,7 +8,7 @@ c_ PlateStack:
 
     ___ pop ) -> N..:
         __(l..(st) > 0
-            st.pop()
+            st.p.. 
 
     ___ top ) -> int:
         __(l..(st) __ 0

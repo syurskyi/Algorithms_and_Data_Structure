@@ -11,9 +11,9 @@ c_ Queue:
     
     ___ isEmpty 
         __ items __    # list:
-            r_ True
+            r_ T..
         ____
-            r_ False
+            r_ F..
     
     ___ enqueue value
         items.a..(value)

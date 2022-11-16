@@ -21,9 +21,9 @@
 # ]
 
 ___ unique_paths_rec(m, n, i, j, memo
-	__ m - 1 __ i and n - 1 __ j:
+	__ m - 1 __ i ___ n - 1 __ j:
 		r_ 1
-	elif i >_ m or j >_ n:
+	____ i >_ m __ j >_ n:
 		r_ 0
 
 	key _ str(i) + "," + str(j)

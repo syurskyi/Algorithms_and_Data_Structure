@@ -4,7 +4,7 @@ ___ myShellSort(myarray
     sublistcount _ l..(myarray) // 2
     _____ sublistcount > 0:
         #print "sublistcount in myshellsort function:",sublistcount
-        ___ spos __ range(sublistcount
+        ___ spos __ r..(sublistcount
             #print "in myshellsort function:",spos
             myinsertionsort(myarray, spos, sublistcount)
 
@@ -15,13 +15,13 @@ ___ myinsertionsort(myarray, s, g
     #print "In myinsertionsort function:","myarray:",myarray,"s:",s,"g:",g
     #for j in range(s + g, len(myarray), g):
         #print "array for range(s:",s,"+ g:",g,"len(myarray):",len(myarray),"g:",g,") is:", myarray[j]
-    ___ i __ range(s + g, l..(myarray), g
+    ___ i __ r..(s + g, l..(myarray), g
         cv _ myarray[i]
         pos _ i
         #print "in outer loop:",myarray
         #print "cv:",cv
         #print "pos:",i
-        _____ pos >_ g and myarray[pos - g] > cv:
+        _____ pos >_ g ___ myarray[pos - g] > cv:
             #print "in while loop where pos >=g and myarray[pos - g] > cv:",pos,">=",g,"and myarray[",pos - g,"] >",cv
             #print "copying myarray[",pos-g,"] to myarray [",pos,"]"
             myarray[pos] _ myarray[pos - g]

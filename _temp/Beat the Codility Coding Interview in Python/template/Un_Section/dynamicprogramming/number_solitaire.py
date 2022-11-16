@@ -13,9 +13,9 @@ ___ max_sum_six_distances(a, position
     ____
         max_forward _ min(l..(a) - position, 6)
         current_max _ -100000
-        ___ i __ range(1, max_forward
+        ___ i __ r..(1, max_forward
             local_max _ max_sum_six_distances(a, position + i)
-            current_max _ max(current_max, local_max)
+            current_max _ m__(current_max, local_max)
         r_ current_max + a[position]
 
 
@@ -30,9 +30,9 @@ ___ max_sum_six_distancesMem(a, position, values
     __ values[position] __ -100000:
         max_forward _ min(l..(a) - position, 6)
         current_max _ -100000
-        ___ i __ range(1, max_forward
+        ___ i __ r..(1, max_forward
             local_max _ max_sum_six_distancesMem(a, position + i, values)
-            current_max _ max(current_max, local_max)
+            current_max _ m__(current_max, local_max)
         values[position] _ current_max + a[position]
     r_ values[position]
 
@@ -40,18 +40,18 @@ ___ max_sum_six_distancesMem(a, position, values
 ___ solution(A
     values _ [0] * l..(A)
     values[l..(A) - 1] _ A[l..(A) - 1]
-    ___ i __ range(l..(A) - 2, -1, -1
+    ___ i __ r..(l..(A) - 2, -1, -1
         values[i] _ A[i] + find_max_between(values, i + 1, 6)
     r_ values[0]
 
 
 ___ find_max_between(values, start, length
-    max _ values[start]
+    m__ _ values[start]
     upto _ min(start + length, l..(values))
-    ___ i __ range(start, upto
-        __ values[i] > max:
-            max _ values[i]
-    r_ max
+    ___ i __ r..(start, upto
+        __ values[i] > m__:
+            m__ _ values[i]
+    r_ m__
 
 
 print(solutionRecursive([1, -2, 0, 9, -1, -2, 5, -4]))

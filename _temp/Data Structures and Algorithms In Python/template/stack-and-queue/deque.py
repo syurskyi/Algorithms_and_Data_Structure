@@ -28,7 +28,7 @@ c_ Deque:
     ___ delete_rear
         __ is_empty(
             raise EmptyQueueError("Queue is Empty")
-        r_ items.pop()
+        r_ items.p.. 
 
     ___ first
         __ is_empty(
@@ -47,7 +47,7 @@ c_ Deque:
 __ __name__ __ "__main__":
     qu _ Deque()
 
-    _____ True:
+    _____ T..:
         print("1.Insert at the front end")
         print("2.Insert at the rear end")
         print("3.Delete from front end")
@@ -63,24 +63,24 @@ __ __name__ __ "__main__":
         __ choice __ 1:
             x_int(input("Enter the element : "))
             qu.insert_front(x)
-        elif choice__ 2:
+        ____ choice__ 2:
             x_int(input("Enter the element : "))
             qu.insert_rear(x)
-        elif choice __ 3:
+        ____ choice __ 3:
             x _ qu.delete_front()
             print("Element deleted from front end is  ", x)
-        elif choice __ 4:
+        ____ choice __ 4:
             x _ qu.delete_rear()
             print("Element deleted from rear end is  ", x)
-        elif choice __ 5:
+        ____ choice __ 5:
             print("First element is  ", qu.first())
-        elif choice __ 6:
+        ____ choice __ 6:
             print("Last element is  ", qu.last())
-        elif choice __ 7:
+        ____ choice __ 7:
             qu.display()
-        elif choice __ 8:
+        ____ choice __ 8:
             print("Size of queue " , qu.size())
-        elif choice __ 9:
+        ____ choice __ 9:
             break
         ____
             print("Wrong choice")

@@ -46,7 +46,7 @@ ___ levelOrderTraversal(rootNode
     ____
         customQueue _ queue.Queue()
         customQueue.enqueue(rootNode)
-        _____ n..(customQueue.isEmpty()):
+        _____ n..(customQueue.isEmpty(
             root _ customQueue.dequeue()
             print(root.value.data)
             __ (root.value.leftChild __ n.. N..
@@ -61,7 +61,7 @@ ___ searchBT(rootNode, nodeValue
     ____
         customQueue _ queue.Queue()
         customQueue.enqueue(rootNode)
-        _____ n..(customQueue.isEmpty()):
+        _____ n..(customQueue.isEmpty(
             root _ customQueue.dequeue()
             __ root.value.data __ nodeValue:
                 r_ "Success"
@@ -78,7 +78,7 @@ ___ insertNodeBT(rootNode, newNode
     ____
         customQueue _ queue.Queue()
         customQueue.enqueue(rootNode)
-        _____ n..(customQueue.isEmpty()):
+        _____ n..(customQueue.isEmpty(
             root _ customQueue.dequeue()
             __ root.value.leftChild __ n.. N..:
                 customQueue.enqueue(root.value.leftChild)
@@ -97,7 +97,7 @@ ___ getDeepestNode(rootNode
     ____
         customQueue _ queue.Queue()
         customQueue.enqueue(rootNode)
-        _____ n..(customQueue.isEmpty()):
+        _____ n..(customQueue.isEmpty(
             root _ customQueue.dequeue()
             __ (root.value.leftChild __ n.. N..
                 customQueue.enqueue(root.value.leftChild)
@@ -113,7 +113,7 @@ ___ deleteDeepestNode(rootNode, dNode
     ____
         customQueue _ queue.Queue()
         customQueue.enqueue(rootNode)
-        _____ n..(customQueue.isEmpty()):
+        _____ n..(customQueue.isEmpty(
             root _ customQueue.dequeue()
             __ root.value __ dNode:
                 root.value _ N..
@@ -137,7 +137,7 @@ ___ deleteNodeBT(rootNode, node
     ____
         customQueue _ queue.Queue()
         customQueue.enqueue(rootNode)
-        _____ n..(customQueue.isEmpty()):
+        _____ n..(customQueue.isEmpty(
             root _ customQueue.dequeue()
             __ root.value.data __ node:
                 dNode _ getDeepestNode(rootNode)

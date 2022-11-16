@@ -26,7 +26,7 @@ c_ BinaryTree:
         _display(p.rchild, level+1)
         print()
 
-        ___ i __ range(level
+        ___ i __ r..(level
             print("    ", end_'')
         print(p.info)
         _display(p.lchild, level+1)

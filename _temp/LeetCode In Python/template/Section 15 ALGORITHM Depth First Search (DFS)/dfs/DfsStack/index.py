@@ -14,9 +14,9 @@ c_ Graph:
         st _    # list
         st.a..(startNode)
 
-        _____(l..(st)):
+        _____(l..(st
             cur _ st[-1]
-            st.pop()
+            st.p.. 
 
             __(cur n.. __ visited
                 print(cur, end_" ")

@@ -8,7 +8,7 @@ ___ binarySearch(my_array, target
 
         __ target __ middle_element:
             r_ middle
-        elif target < middle_element:
+        ____ target < middle_element:
             right _ middle - 1
         ____
             left _ middle + 1

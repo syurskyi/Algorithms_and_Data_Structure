@@ -24,8 +24,8 @@ ___ anagram(s, t
     s_s.replace(' ','').lower()
     t_t.replace(' ','').lower()
     
-    __(l..(s)!_len(t)):
-        r_ False
+    __(l..(s)!_len(t
+        r_ F..
     counter _ {}
     ___ letter __ s:
         __ letter __ counter:
@@ -37,13 +37,13 @@ ___ anagram(s, t
         __ letter __ counter:
             counter[letter] -_ 1
         ____
-            r_ False
+            r_ F..
 
     ___ k __ counter:
         __ counter[k]!_0:
-          r_ False
+          r_ F..
     
-    r_ True
+    r_ T..
     pass
 
 # %%
@@ -70,11 +70,11 @@ from nose.tools import assert_equal
 c_ AnagramTest o..
     
     ___ testsol
-        assert_equal(sol('go go go','gggooo'),True)
-        assert_equal(sol('abc','cba'),True)
-        assert_equal(sol('hi man','hi     man'),True)
-        assert_equal(sol('aabbcc','aabbc'),False)
-        assert_equal(sol('123','1 2'),False)
+        assert_equal(sol('go go go','gggooo'),T..)
+        assert_equal(sol('abc','cba'),T..)
+        assert_equal(sol('hi man','hi     man'),T..)
+        assert_equal(sol('aabbcc','aabbc'),F..)
+        assert_equal(sol('123','1 2'),F..)
         print('ALL TEST CASES PASSED')
 
 # Run Tests

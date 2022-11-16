@@ -22,19 +22,19 @@ For example:
 # %%
 ___ method1(
     l _    # list
-    ___ n __ range(10000
+    ___ n __ r..(10000
         l _ l + [n]
 
 ___ method2(
     l _    # list
-    ___ n __ range(10000
+    ___ n __ r..(10000
         l.a..(n)
 
 ___ method3(
-    l _ [n ___ n __ range(10000)]
+    l _ [n ___ n __ r..(10000)]
 
 ___ method4(
-    l _ range(10000) # Python 3: list(range(10000))
+    l _ r..(10000) # Python 3: list(range(10000))
 
 # %%
 '''

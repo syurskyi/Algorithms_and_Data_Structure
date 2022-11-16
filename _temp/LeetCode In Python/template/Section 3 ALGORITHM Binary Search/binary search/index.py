@@ -12,7 +12,7 @@ ___ binarySearch(arr, target
             r_ mid
 
         # If x is greater, ignore left half
-        elif arr[mid] < target:
+        ____ arr[mid] < target:
             left _ mid + 1
 
         # If x is smaller, ignore right half

@@ -6,7 +6,7 @@ ___ findtworepeatedelesusinghash(myarray
 	___ ele __ myarray:
 		__ ele __ tab:
 			tab[ele] +_ 1
-		elif ele !_ " ":
+		____ ele !_ " ":
 			tab[ele] _ 1
 		____
 			tab[ele] _ 0

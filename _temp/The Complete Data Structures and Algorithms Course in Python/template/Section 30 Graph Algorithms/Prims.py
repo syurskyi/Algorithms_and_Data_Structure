@@ -21,16 +21,16 @@ c_ Graph:
         visited[0]_True
         _____ edgeNum<vertexNum-1:
             min _ sys.maxsize
-            ___ i __ range(vertexNum
+            ___ i __ r..(vertexNum
                 __ visited[i]:
-                    ___ j __ range(vertexNum
-                        __ ((n.. visited[j]) and edges[i][j]
+                    ___ j __ r..(vertexNum
+                        __ ((n.. visited[j]) ___ edges[i][j]
                             __ min > edges[i][j]:
                                 min _ edges[i][j]
                                 s _ i
                                 d _ j
             MST.a..([nodes[s], nodes[d], edges[s][d]])
-            visited[d] _ True
+            visited[d] _ T..
             edgeNum +_ 1
         printSolution()
 

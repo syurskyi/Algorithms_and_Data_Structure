@@ -8,7 +8,7 @@ c_ Node:
 ___ convert(root
 	__ root __ N..:
 		r_ N..
-	elif root.left __ N.. and root.right __ N..:
+	____ root.left __ N.. ___ root.right __ N..:
 		r_ [root, root]
 
 	left _ convert(root.left)

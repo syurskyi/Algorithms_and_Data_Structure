@@ -23,7 +23,7 @@ ___ sort_pass(a,temp,size,n
 
         low1 _ up2 + 1  # Take next two sublists for merging
         
-    ___ i __ range(low1,n
+    ___ i __ r..(low1,n
         temp[i] _ a[i]  # If any sublist is left alone
         
     copy(a, temp, n)  
@@ -34,7 +34,7 @@ ___ merge(a, temp, low1, up1, low2, up2
     j _ low2
     k _ low1
 
-    _____ i <_ up1  and j <_ up2:
+    _____ i <_ up1  ___ j <_ up2:
             __ a[i] <_ a[j]:
                 temp[k] _ a[i]
                 i+_1
@@ -55,7 +55,7 @@ ___ merge(a, temp, low1, up1, low2, up2
 
 # copies temp[low]....temp[up] to a[low]...a[up]
 ___ copy(a, temp, n
-    ___ i __ range(n
+    ___ i __ r..(n
         a[i] _ temp[i]
 
 

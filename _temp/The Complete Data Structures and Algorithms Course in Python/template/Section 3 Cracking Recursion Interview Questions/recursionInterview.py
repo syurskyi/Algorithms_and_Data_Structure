@@ -3,7 +3,7 @@
 
 # Question 1
 ___ sumofDigits(n
-    assert n>_0 and int(n) __ n , 'The number has to be a postive integer only!'
+    assert n>_0 ___ int(n) __ n , 'The number has to be a postive integer only!'
     __ n __ 0:
         r_ 0
     ____
@@ -28,7 +28,7 @@ print(power(4,2))
 
 
 ___ gcd(a, b
-    assert int(a) __ a and int(b) __ b, 'The numbers must be integer only!'
+    assert int(a) __ a ___ int(b) __ b, 'The numbers must be integer only!'
     __ a < 0:
         a _ -1 * a
     __ b < 0:

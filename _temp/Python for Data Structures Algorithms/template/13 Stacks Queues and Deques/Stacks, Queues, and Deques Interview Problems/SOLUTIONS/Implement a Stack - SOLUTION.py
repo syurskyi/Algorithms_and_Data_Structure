@@ -17,7 +17,7 @@ c_ Stack o..
         items.a..(item)
 
     ___ pop
-        r_ items.pop()
+        r_ items.p.. 
 
     ___ peek
         r_ items[l..(items)-1]

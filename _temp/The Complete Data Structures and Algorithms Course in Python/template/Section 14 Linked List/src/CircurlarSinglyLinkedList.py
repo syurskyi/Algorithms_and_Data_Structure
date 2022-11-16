@@ -39,7 +39,7 @@ c_ CircularSinglyLinkedList:
                 newNode.next _ head
                 head _ newNode
                 tail.next _ newNode
-            elif location __ 1:
+            ____ location __ 1:
                 newNode.next _ tail.next
                 tail.next _ newNode
                 tail _ newNode
@@ -92,7 +92,7 @@ c_ CircularSinglyLinkedList:
                 ____
                     head _ head.next
                     tail.next _ head
-            elif location __ 1:
+            ____ location __ 1:
                 __ head __ tail:
                     head.next _ N..
                     head _ N..

@@ -38,12 +38,12 @@ c_ SingleLinkedList:
         _____ p __ n.. N..:
             __ p.info __ x:
                 print(x , " is at position ", position)
-                r_ True
+                r_ T..
             position+_1
             p _ p.link
         ____
             print(x," not found in list")
-            r_ False
+            r_ F..
 
     ___ insert_in_beginning data
         temp _ Node(data)
@@ -65,7 +65,7 @@ c_ SingleLinkedList:
         n _ int(input("Enter the number of nodes : "))
         __ n __ 0:
             r_
-        ___ i __ range(n
+        ___ i __ r..(n
             data _ int(input("Enter the element to be inserted : "))
             insert_at_end(data)
            
@@ -130,7 +130,7 @@ list _ SingleLinkedList()
 
 list.create_list() 
 		
-_____ True:
+_____ T..:
     print("1.Display list") 
     print("2.Count the number of nodes") 
     print("3.Search for an element")
@@ -155,55 +155,55 @@ _____ True:
 
     __ option __ 1:
         list.display_list()
-    elif option __ 2:
+    ____ option __ 2:
         list.count_nodes()
-    elif option __ 3:
+    ____ option __ 3:
         data _ int(input("Enter the element to be searched : "))
         list.search(data)
-    elif option __ 4:
+    ____ option __ 4:
         data _ int(input("Enter the element to be inserted : "))
         list.insert_in_beginning(data)
-    elif option __ 5:
+    ____ option __ 5:
         data _ int(input("Enter the element to be inserted : "))
         list.insert_at_end(data)
-    elif option __ 6:
+    ____ option __ 6:
         data _ int(input("Enter the element to be inserted : "))
         x _ int(input("Enter the element after which to insert : "))
         list.insert_after(data,x)
-    elif option __ 7:
+    ____ option __ 7:
         data _ int(input("Enter the element to be inserted : "))
         x _ int(input("Enter the element before which to insert : "))
         list.insert_before(data,x)
-    elif option __ 8:
+    ____ option __ 8:
         data _ int(input("Enter the element to be inserted : "))
         k _ int(input("Enter the position at which to insert : "))
         list.insert_at_position(data,k)
-    elif option __ 9:
+    ____ option __ 9:
         list.delete_first_node() 
-    elif option __ 10:
+    ____ option __ 10:
         list.delete_last_node() 
-    elif option __ 11:
+    ____ option __ 11:
         data _ int(input("Enter the element to be deleted : "))
         list.delete_node(data)             
-    elif option __ 12:
+    ____ option __ 12:
         list.reverse_list()
-    elif option __ 13:
+    ____ option __ 13:
         list.bubble_sort_exdata() 
-    elif option __ 14:
+    ____ option __ 14:
         list.bubble_sort_exlinks() 
-    elif option __ 15:
+    ____ option __ 15:
         list.merge_sort() 
-    elif option __ 16:
+    ____ option __ 16:
         data _ int(input("Enter the element at which the cycle has to be inserted : "))
         list.insert_cycle(data) 
-    elif option __ 17:
+    ____ option __ 17:
         __ list.has_cycle(
             print("List has a cycle")
         ____
             print("List does not have a cycle") 
-    elif option __ 18:
+    ____ option __ 18:
         list.remove_cycle() 
-    elif option __ 19:
+    ____ option __ 19:
         break
     ____
         print("Wrong option") 

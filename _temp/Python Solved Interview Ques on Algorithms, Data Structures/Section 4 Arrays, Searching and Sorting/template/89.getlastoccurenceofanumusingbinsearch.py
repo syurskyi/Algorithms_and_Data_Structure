@@ -1,6 +1,6 @@
 
 ___ getfirstoccurenceofanumusingbinsearch(myarray, value
-	__ myarray __ N.. or l..(myarray) __ 0:
+	__ myarray __ N.. __ l..(myarray) __ 0:
 	    r_ -1;
 	h _ l..(myarray) - 1
         l _ 0

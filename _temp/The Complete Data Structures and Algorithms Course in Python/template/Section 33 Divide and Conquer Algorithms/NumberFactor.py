@@ -6,7 +6,7 @@
 ___ numberFactor(n
     __ n __ (0,1,2
         r_ 1
-    elif n __ 3:
+    ____ n __ 3:
         r_ 2
     ____
         subP1 _ numberFactor(n-1)

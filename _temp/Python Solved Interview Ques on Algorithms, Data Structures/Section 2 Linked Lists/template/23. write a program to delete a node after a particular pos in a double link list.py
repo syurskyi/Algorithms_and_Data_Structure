@@ -102,7 +102,7 @@ c_ LinkedList :
                  r_
 
              # Find previous node of the node to be deleted
-             ___ i __ range(position -1 
+             ___ i __ r..(position -1 
                  temp _ temp.next
                  __ temp __ N..:
                      break

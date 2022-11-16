@@ -53,7 +53,7 @@ c_ DoubleLinkedList o..
         data _ int(input("Enter the first element to be inserted : "))
         insert_in_empty_list(data)
 
-        ___ i __ range(n-1
+        ___ i __ r..(n-1
             data _ int(input("Enter the next element to be inserted : "))
             insert_at_end(data)
             
@@ -176,7 +176,7 @@ c_ DoubleLinkedList o..
 list _ DoubleLinkedList()
 list.create_list() 
 		
-_____ True:
+_____ T..:
     print("1.Display list") 
     print("2.Insert in empty list")
     print("3.Insert a node in the beginning of the list")
@@ -193,33 +193,33 @@ _____ True:
 
     __ option __ 1:
         list.display_list()
-    elif option __ 2:
+    ____ option __ 2:
         data _ int(input("Enter the element to be inserted : "))
         list.insert_in_empty_list(data)
-    elif option __ 3:
+    ____ option __ 3:
         data _ int(input("Enter the element to be inserted : "))
         list.insert_in_beginning(data)
-    elif option __ 4:
+    ____ option __ 4:
         data _ int(input("Enter the element to be inserted : "))
         list.insert_at_end(data)
-    elif option __ 5:
+    ____ option __ 5:
         data _ int(input("Enter the element to be inserted : "))
         x _ int(input("Enter the element after which to insert : "))
         list.insert_after(data,x)
-    elif option __ 6:
+    ____ option __ 6:
         data _ int(input("Enter the element to be inserted : "))
         x _ int(input("Enter the element before which to insert : "))
         list.insert_before(data,x)
-    elif option __ 7:
+    ____ option __ 7:
         list.delete_first_node() 
-    elif option __ 8:
+    ____ option __ 8:
         list.delete_last_node() 
-    elif option __ 9:
+    ____ option __ 9:
         data _ int(input("Enter the element to be deleted : "))
         list.delete_node(data)             
-    elif option __ 10:
+    ____ option __ 10:
         list.reverse_list()
-    elif option __ 11:
+    ____ option __ 11:
         break
     ____
         print("Wrong option") 

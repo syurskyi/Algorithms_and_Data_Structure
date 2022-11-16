@@ -28,18 +28,18 @@ c_ Node:
 # => False
 
 ___ sym_tree_helper(root1, root2
-	__ root1 __ N.. and root2 __ N..:
-		r_ True
-	elif root1 __ N.. or root2 __ N..:
-		r_ False
-	elif root1.val !_ root2.val:
-		r_ False
+	__ root1 __ N.. ___ root2 __ N..:
+		r_ T..
+	____ root1 __ N.. __ root2 __ N..:
+		r_ F..
+	____ root1.val !_ root2.val:
+		r_ F..
 
-	r_ sym_tree_helper(root1.right, root2.left) and sym_tree_helper(root1.left, root2.right)
+	r_ sym_tree_helper(root1.right, root2.left) ___ sym_tree_helper(root1.left, root2.right)
 
 ___ sym_tree(root
 	__ root __ N..:
-		r_ True
+		r_ T..
 
 	r_ sym_tree_helper(root.left, root.right)
 

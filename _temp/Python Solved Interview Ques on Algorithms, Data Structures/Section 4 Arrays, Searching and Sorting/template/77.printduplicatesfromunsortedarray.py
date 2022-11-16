@@ -1,7 +1,7 @@
 
 ___ checkdup(myarray
         print "given array:",myarray
-	___ i __ range(0, l..(myarray)):
+	___ i __ r..(0, l..(myarray
                 #print "myarray[",i,"] is",myarray[i]
 		__(myarray[abs(myarray[i])] < 0
 			print("Duplicates present:", abs(myarray[i]))

@@ -11,7 +11,7 @@ ___ sumList(llA, llB
     carry _ 0
     ll _ LinkedList()
 
-    _____ n1 or n2:
+    _____ n1 __ n2:
         result _ carry
         __ n1:
             result +_ n1.value

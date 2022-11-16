@@ -16,7 +16,7 @@ c_ Stack(
   ___ pop 
     __ l..(list) __ 0:
       r_ N..
-    r_ list.pop()
+    r_ list.p.. 
 
 c_ QueueviaStack(
   ___ -  
@@ -29,7 +29,7 @@ c_ QueueviaStack(
   ___ dequeue 
     _____ l..(inStack
       outStack.push(inStack.pop())
-    result _ outStack.pop()
+    result _ outStack.p.. 
     _____ l..(outStack
       inStack.push(outStack.pop())
     r_ result

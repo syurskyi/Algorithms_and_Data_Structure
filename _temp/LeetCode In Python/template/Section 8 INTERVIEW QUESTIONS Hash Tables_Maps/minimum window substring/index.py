@@ -9,7 +9,7 @@ c_ Solution:
         hashPat _ {}
         hashStr _ {}
 
-        ___ i __ range(0, len2
+        ___ i __ r..(0, len2
             __(hashPat.get(t[i]) __ N..
                 hashPat[t[i]] _ 0
             hashPat[t[i]] +_ 1
@@ -19,7 +19,7 @@ c_ Solution:
         startIndex _ -1
         minLen _ float("inf")
 
-        ___ right __ range(0, len1
+        ___ right __ r..(0, len1
 
             __(hashStr.get(s[right]) __ N..
                 hashStr[s[right]] _ 0
@@ -28,7 +28,7 @@ c_ Solution:
                 hashPat[s[right]] _ 0
             __ (
 
-                hashPat.get(s[right]) !_ 0 and
+                hashPat.get(s[right]) !_ 0 ___
                 hashStr.get(s[right]) <_ hashPat.get(s[right])
 
                 count +_ 1  # keep incrementing the count if string hash is less then pattern hash
@@ -40,12 +40,12 @@ c_ Solution:
                 __(hashPat.get(s[left]) __ N..
                     hashPat[s[right]] _ 0
                 _____ (
-                    hashStr.get(s[left]) > hashPat.get(s[left]) or
+                    hashStr.get(s[left]) > hashPat.get(s[left]) __
                     hashPat.get(s[left]) __ 0
 
                     #minimizing the windows range from left side
 
-                    __ (hashStr.get(s[left]) > hashPat.get(s[left])):
+                    __ (hashStr.get(s[left]) > hashPat.get(s[left]
                         hashStr[s[left]] -_ 1
                     left +_ 1  # incrementing the left pointer
 

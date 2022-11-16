@@ -19,7 +19,7 @@ c_ Heap o..
 
         parentIndex _ int((index - 1) / 2)
 
-        _____ parentIndex >_ 0 and heap[parentIndex] < heap[index]:
+        _____ parentIndex >_ 0 ___ heap[parentIndex] < heap[index]:
             temp _ heap[index]
             heap[index] _ heap[parentIndex]
             heap[parentIndex] _ temp
@@ -28,7 +28,7 @@ c_ Heap o..
 
     ___ heapsort
 
-        ___ i __ range(0, currentPosition + 1
+        ___ i __ r..(0, currentPosition + 1
             temp _ heap[0]
             print("%d " % temp)
             heap[0] _ heap[currentPosition - i]
@@ -66,9 +66,9 @@ c_ Heap o..
 
     ___ isFull
         __ currentPosition __ Heap.HEAP_SIZE:
-            r_ True
+            r_ T..
         ____
-            r_ False
+            r_ F..
 
 
 __ __name__ __ "__main__":

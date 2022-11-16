@@ -65,7 +65,7 @@ c_ BinHeap:
         retval _ heapList[1]
         heapList[1] _ heapList[currentSize]
         currentSize _ currentSize - 1
-        heapList.pop()
+        heapList.p.. 
         percDown(1)
         r_ retval
 

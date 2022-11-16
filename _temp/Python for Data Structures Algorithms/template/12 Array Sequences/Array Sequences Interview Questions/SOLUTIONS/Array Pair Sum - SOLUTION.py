@@ -43,7 +43,7 @@ ___ pair_sum(arr, k
 
         ____
             # Add a tuple with the corresponding pair
-            output.add((min(num, target), max(num, target)))
+            output.add((min(num, target), m__(num, target)))
 
     # FOR TESTING
     r_ l..(output)

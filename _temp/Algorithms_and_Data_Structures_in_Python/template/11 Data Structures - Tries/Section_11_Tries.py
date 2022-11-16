@@ -25,9 +25,9 @@ c_ TST o..
 
         __ c < node.character:
             node.leftNode _ putItem(node.leftNode, key, value, index)
-        elif c > node.character:
+        ____ c > node.character:
             node.rightNode _ putItem(node.rightNode, key, value, index)
-        elif index < l..(key) - 1:
+        ____ index < l..(key) - 1:
             node.middleNode _ putItem(node.middleNode, key, value, index + 1)
         ____
             node.value _ value
@@ -52,9 +52,9 @@ c_ TST o..
 
         __ c < node.character:
             r_ getItem(node.leftNode, key, index)
-        elif c > node.character:
+        ____ c > node.character:
             r_ getItem(node.rightNode, key, index)
-        elif index < l..(key) - 1:
+        ____ index < l..(key) - 1:
             r_ getItem(node.middleNode, key, index + 1)
         ____
             r_ node

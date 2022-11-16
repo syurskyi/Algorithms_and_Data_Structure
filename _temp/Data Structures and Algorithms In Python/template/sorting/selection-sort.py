@@ -2,9 +2,9 @@
 # This code is part of DSA course available on CourseGalaxy.com  
 
 ___ selection_sort(a
-    ___ i __ range(l..(a)-1   
+    ___ i __ r..(l..(a)-1   
         minIndex _ i
-        ___ j __ range(i+1,l..(a)):
+        ___ j __ r..(i+1,l..(a
             __ a[j] < a[minIndex]:
                     minIndex _ j
         __ i!_minIndex:

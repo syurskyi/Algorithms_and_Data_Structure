@@ -15,7 +15,7 @@ ___ Search(a, n, searchValue
 n _ int(input("Enter the number of elements : "))
 a _ [N..]*(n+1)
 print("Enter the elements - ")
-___ i __ range(n
+___ i __ r..(n
     a[i] _ int(input("Enter element : "))
 
 searchValue _ int(input("Enter the search value : "))

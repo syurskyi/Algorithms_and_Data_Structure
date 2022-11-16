@@ -2,10 +2,10 @@
 # This code is part of DSA course available on CourseGalaxy.com  
 
 ___ insertion_sort(a
-    ___ i __ range(1,l..(a)):
+    ___ i __ r..(1,l..(a
         temp _ a[i]
         j _ i-1
-        _____ j >_ 0 and a[j] > temp:
+        _____ j >_ 0 ___ a[j] > temp:
             a[j+1] _ a[j]
             j_j-1
         a[j+1] _ temp

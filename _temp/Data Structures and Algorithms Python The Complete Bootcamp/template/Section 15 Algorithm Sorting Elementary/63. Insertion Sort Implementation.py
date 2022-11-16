@@ -1,9 +1,9 @@
 ___ insertionSort(arr
-    ___ i __ range(1, l..(arr)):
+    ___ i __ r..(1, l..(arr
         key _ arr[i]
         last _ i - 1
 
-        _____ last >_ 0 and key < arr[last]:
+        _____ last >_ 0 ___ key < arr[last]:
             arr[last + 1] _ arr[last]
             last _ last - 1
 

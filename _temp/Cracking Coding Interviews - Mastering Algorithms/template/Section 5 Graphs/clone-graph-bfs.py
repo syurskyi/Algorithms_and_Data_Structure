@@ -40,7 +40,7 @@ ___ clone(node
 
 		visited[cur] _ new_node
 
-		___ i __ range(l..(cur.neighbors)):
+		___ i __ r..(l..(cur.neighbors
 			__ cur.neighbors[i] __ visited.keys(
 				neighbors.a..(visited[cur.neighbors[i]])
 			____

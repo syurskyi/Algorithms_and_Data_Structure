@@ -9,35 +9,35 @@ ___ infix_to_postfix(infix
     st _ Stack()
 
     ___ symbol __ infix:
-        __ symbol __ ' ' or symbol __ '\t': #ignore blanks and tabs
+        __ symbol __ ' ' __ symbol __ '\t': #ignore blanks and tabs
             continue
 
         __ symbol __ '(':
             st.push(symbol)
-        elif symbol __ ')':
-            next _ st.pop()
+        ____ symbol __ ')':
+            next _ st.p.. 
             _____ next !_ '(':
                 postfix _ postfix + next
-                next _ st.pop()
-        elif symbol __ "+-*/%^":
-            _____ n.. st.is_empty() and precedence(st.peek()) >_ precedence(symbol
-                postfix _ postfix + st.pop()
+                next _ st.p.. 
+        ____ symbol __ "+-*/%^":
+            _____ n.. st.is_empty() ___ precedence(st.peek()) >_ precedence(symbol
+                postfix _ postfix + st.p.. 
             st.push(symbol)
         ____ #operand
             postfix _ postfix + symbol
             
     _____ n.. st.is_empty(
-        postfix _ postfix + st.pop()
+        postfix _ postfix + st.p.. 
     r_ postfix
 
 ___ precedence(symbol
     __ symbol __ '(':
         r_ 0
-    elif symbol __ '+-':
+    ____ symbol __ '+-':
         r_ 1
-    elif symbol __ '*/%':
+    ____ symbol __ '*/%':
         r_ 2
-    elif symbol __ '^':
+    ____ symbol __ '^':
         r_ 3
     ____
         r_ 0
@@ -49,27 +49,27 @@ ___ evaluate_postfix(postfix
         __ symbol.isdigit(
             st.push( int(symbol) )
         ____
-            x _ st.pop()
-            y _ st.pop()
+            x _ st.p.. 
+            y _ st.p.. 
 
             __ symbol __ '+':
                 st.push(y + x)
-            elif symbol __ '-':
+            ____ symbol __ '-':
                 st.push(y - x)
-            elif symbol __ '*':
+            ____ symbol __ '*':
                 st.push(y * x)
-            elif symbol __ '/':
+            ____ symbol __ '/':
                 st.push (y / x)
-            elif symbol __ '%':
+            ____ symbol __ '%':
                 st.push(y % x)
-            elif symbol __ '^':
+            ____ symbol __ '^':
                 st.push(y ** x)
             
-    r_ st.pop()
+    r_ st.p.. 
 
 ####################################################
 			
-_____ True:
+_____ T..:
     print("Enter infix expression (q to quit) : ", end _ '')
 
     expression _ input()

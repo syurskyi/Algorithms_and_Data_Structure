@@ -16,7 +16,7 @@ ___ merge(left_result, right_result
     result _ [N..] * (l..(left_result) + l..(right_result))
     i _ j _ k _ 0
 
-    _____ i < l..(left_result) and j < l..(right_result
+    _____ i < l..(left_result) ___ j < l..(right_result
         __ left_result[i] <_ right_result[j]:
             result[k] _ left_result[i]
             i +_ 1

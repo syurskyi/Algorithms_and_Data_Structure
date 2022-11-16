@@ -13,7 +13,7 @@ ___ sum1(n
     Take an input of n and return the sum of the numbers from 0 to n
     '''
     final_sum _ 0
-    ___ x __ range(n+1
+    ___ x __ r..(n+1
         final_sum +_ x
     
     r_ final_sum
@@ -110,7 +110,7 @@ big_o _ [np.ones(n.shape),np.log(n),n,n*np.log(n),n**2,n**3,2**n]
 plt.figure(figsize_(12,10))
 plt.ylim(0,50)
 
-___ i __ range(l..(big_o)):
+___ i __ r..(l..(big_o
     plt.plot(n,big_o[i],label _ labels[i])
 
 

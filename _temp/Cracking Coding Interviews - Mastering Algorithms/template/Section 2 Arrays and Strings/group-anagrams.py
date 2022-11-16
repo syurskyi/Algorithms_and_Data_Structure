@@ -11,7 +11,7 @@
 ___ group_anagrams(strs
 	dic _ {}
 
-	___ i __ range(l..(strs)):
+	___ i __ r..(l..(strs
 		sorted_anagram _ "".join(sorted(strs[i]))
 		group_strs _ dic.get(sorted_anagram,    # list)
 		group_strs.a..(strs[i])

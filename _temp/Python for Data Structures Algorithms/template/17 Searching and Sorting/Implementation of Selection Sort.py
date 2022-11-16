@@ -15,11 +15,11 @@
 ___ selection_sort(arr
 
     # For every slot in array
-    ___ fillslot __ range(l..(arr)-1,0,-1
+    ___ fillslot __ r..(l..(arr)-1,0,-1
         positionOfMax_0
 
         # For every set of 0 to fillslot+1
-        ___ location __ range(1,fillslot+1
+        ___ location __ r..(1,fillslot+1
             # Set maximum's location
             __ arr[location]>arr[positionOfMax]:
                 positionOfMax _ location

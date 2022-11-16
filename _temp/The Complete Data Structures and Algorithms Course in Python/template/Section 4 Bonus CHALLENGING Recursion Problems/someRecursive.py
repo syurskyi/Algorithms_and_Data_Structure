@@ -5,16 +5,16 @@
 
 ___ someRecursive(arr, cb
     __ l..(arr) __ 0:
-        r_ False
-    __ n..(cb(arr[0])):
+        r_ F..
+    __ n..(cb(arr[0]
         r_ someRecursive(arr[1:], cb)
-    r_ True
+    r_ T..
 
 ___ isOdd(num
     __ num%2__0:
-        r_ False
+        r_ F..
     ____
-        r_ True
+        r_ T..
 
 
 print(someRecursive([1,2,3,4], isOdd)) # true

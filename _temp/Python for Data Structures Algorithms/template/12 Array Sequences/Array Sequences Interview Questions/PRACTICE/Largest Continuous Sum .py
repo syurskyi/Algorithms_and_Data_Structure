@@ -15,8 +15,8 @@ ___ large_cont_sum(arr
     max_num _ sum _ arr[0]# max=sum=arr[0] bug: TypeError: 'int' object is not callable. (Do not use the keyword!)
     
     ___ n __ arr[1:]:
-        sum _ max(sum+n, n)
-        max_num _ max(sum, max_num)
+        sum _ m__(sum+n, n)
+        max_num _ m__(sum, max_num)
     r_ max_num
     pass
 

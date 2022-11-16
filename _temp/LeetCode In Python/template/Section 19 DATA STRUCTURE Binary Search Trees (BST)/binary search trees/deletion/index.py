@@ -46,7 +46,7 @@ ___ deleteNode(node, key
         node.left _ deleteNode(node.left, key)
     # If the kye to be delete is greater than the node's key
     # then it lies in right subtree
-    elif(key > node.data
+    ____(key > node.data
         node.right _ deleteNode(node.right, key)
     # If key is same as node's key, then this is the node
     # to be deleted
@@ -56,7 +56,7 @@ ___ deleteNode(node, key
             temp _ node.right
             node _ N..
             r_ temp
-        elif node.right __ N..:
+        ____ node.right __ N..:
             temp _ node.left
             node _ N..
             r_ temp

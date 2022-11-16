@@ -43,7 +43,7 @@ c_ CircularDoublyLinkedList:
                 head.prev _ newNode
                 head _ newNode
                 tail.next _ newNode
-            elif location __ 1:
+            ____ location __ 1:
                 newNode.next _ head
                 newNode.prev _ tail
                 head.prev _ newNode
@@ -113,7 +113,7 @@ c_ CircularDoublyLinkedList:
                     head _ head.next
                     head.prev _ tail
                     tail.next _ head
-            elif location __ 1:
+            ____ location __ 1:
                 __ head __ tail:
                     head.prev _ N..
                     head.next _ N..

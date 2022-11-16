@@ -8,7 +8,7 @@ ___ coinChange(totalNumber, coins
     N _ totalNumber
     coins.sort()
     index _ l..(coins)-1
-    _____ True:
+    _____ T..:
         coinValue _ coins[index]
         __ N >_ coinValue:
             print(coinValue)

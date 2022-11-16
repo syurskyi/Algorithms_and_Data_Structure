@@ -3,7 +3,7 @@ c_ Node(
     ___ -  value
         value _ value
         adjacentlist _    # list
-        visited _ False
+        visited _ F..
 
 
 c_ Graph(
@@ -12,7 +12,7 @@ c_ Graph(
 
         queue _    # list
         queue.a..(node)
-        node.visited _ True
+        node.visited _ T..
 
         traversal _    # list
 
@@ -21,9 +21,9 @@ c_ Graph(
             traversal.a..(actualNode.value)
 
             ___ element __ actualNode.adjacentlist:
-                __ element.visited __ False:
+                __ element.visited __ F..:
                     queue.a..(element)
-                    element.visited _ True
+                    element.visited _ T..
 
         r_ traversal
 

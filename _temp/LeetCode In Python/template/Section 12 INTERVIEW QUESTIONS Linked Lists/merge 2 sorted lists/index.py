@@ -9,7 +9,7 @@ c_ Solution:
 		cur _ ListNode(0)
 		ans _ cur
 		
-		_____(l1 and l2
+		_____(l1 ___ l2
 			__(l1.val>l2.val
 				cur.next _ l2
 				l2 _ l2.next

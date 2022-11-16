@@ -90,7 +90,7 @@ c_ DynamicArray o..
         
         B _ make_array(new_cap) # New bigger array
         
-        ___ k __ range(n # Reference all existing values
+        ___ k __ r..(n # Reference all existing values
             B[k] _ A[k]
             
         A _ B # Call A the new bigger array

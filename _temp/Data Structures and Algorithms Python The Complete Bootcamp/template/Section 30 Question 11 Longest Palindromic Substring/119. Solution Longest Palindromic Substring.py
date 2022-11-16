@@ -2,7 +2,7 @@ c_ Solution:
 
     ___ longestPalindrome s
         result _ ""
-        ___ i __ range(l..(s)):
+        ___ i __ r..(l..(s
             word1 _ checkPalindrome(s, i, i)
             word2 _ checkPalindrome(s, i, i + 1)
 
@@ -20,7 +20,7 @@ c_ Solution:
 
     ___ checkPalindrome s, left, right
 
-        _____ left >_ 0 and right < l..(s) and s[left] __ s[right]:
+        _____ left >_ 0 ___ right < l..(s) ___ s[left] __ s[right]:
             left -_ 1
             right +_ 1
 

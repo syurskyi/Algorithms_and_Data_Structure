@@ -5,7 +5,7 @@ ___ getelemwhichhassingleoccurence(myarray
 	___ elem __ myarray.lower(
 		__ elem __ hashTable:
 			hashTable[elem] +_ 1
-		elif elem !_ " ":
+		____ elem !_ " ":
 			hashTable[elem] _ 1
 		____
 			hashTable[elem] _ 0

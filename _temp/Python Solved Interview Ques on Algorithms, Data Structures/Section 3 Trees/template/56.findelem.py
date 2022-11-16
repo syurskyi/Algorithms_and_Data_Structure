@@ -42,9 +42,9 @@ c_ binTree:
     ___ _find data, node
         __(data __ node.v
             r_ node
-        elif(data < node.v and node.l !_ N..
+        ____(data < node.v ___ node.l !_ N..
             _find(data, node.l)
-        elif(data > node.v and node.r !_ N..
+        ____(data > node.v ___ node.r !_ N..
             _find(data, node.r)
 
     ___ deleteTree 

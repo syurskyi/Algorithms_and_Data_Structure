@@ -14,16 +14,16 @@ c_ Stack:
     # isEmpty
     ___ isEmpty 
         __ list __    # list:
-            r_ True
+            r_ T..
         ____
-            r_ False
+            r_ F..
     
     # isFull
     ___ isFull 
         __ l..(list) __ maxSize:
-            r_ True
+            r_ T..
         ____
-            r_ False
+            r_ F..
     
     #  Push
     ___ push value
@@ -37,7 +37,7 @@ c_ Stack:
         __ isEmpty(
             r_ "There is not any element in the stack"
         ____
-            r_ list.pop()
+            r_ list.p.. 
     
     # peek
     ___ peek 

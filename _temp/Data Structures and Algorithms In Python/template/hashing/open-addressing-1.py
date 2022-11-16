@@ -32,8 +32,8 @@ c_ HashTable:
     ___ rehash new_size
         temp _ HashTable(new_size)
 
-        ___ i __ range(m
-            __ array[i] !_ N.. and array[i].get_student_id() !_ -1:
+        ___ i __ r..(m
+            __ array[i] !_ N.. ___ array[i].get_student_id() !_ -1:
                 temp.insert(array[i])
         array _ temp.array
         m _ new_size
@@ -50,8 +50,8 @@ c_ HashTable:
 
         location _ h
 
-        ___ i __ range(1,m
-            __ array[location] __ N.. or array[location].get_student_id() __ -1:
+        ___ i __ r..(1,m
+            __ array[location] __ N.. __ array[location].get_student_id() __ -1:
                 array[location] _ newRecord
                 n+_1
                 r_
@@ -63,21 +63,21 @@ c_ HashTable:
 
             
     ___ next_primex
-        _____ is_prime(x) __ n.. True:
+        _____ is_prime(x) __ n.. T..:
             x_x+1
         r_ x
       
     ___ is_prime x
-        ___ i __ range(2,x
+        ___ i __ r..(2,x
             __ x % i __ 0:
-                r_ False
-        r_ True
+                r_ F..
+        r_ T..
     
     ___ searchkey
         h _ hash1(key)
         location _ h
 
-        ___ i __ range(1,m
+        ___ i __ r..(1,m
             __ array[location] __ N.. :
                 r_ N..
             __ array[location].get_student_id() __ key:
@@ -87,10 +87,10 @@ c_ HashTable:
     
     ___ display_table 
     
-        ___ i __ range(m
+        ___ i __ r..(m
             print("[",end_''); print(i,end_''); print("]",end_''); 
 
-            __ array[i] __ n.. N.. and array[i].get_student_id() !_ -1:
+            __ array[i] __ n.. N.. ___ array[i].get_student_id() !_ -1:
                 print(array[i])
             ____
                 print("___")
@@ -99,14 +99,14 @@ c_ HashTable:
         h _ hash1(key)
         location _ h
 
-        ___ i __ range(1,m
+        ___ i __ r..(1,m
             __ array[location] __ N..:
                 r_
             
             __ array[location].get_student_id() __ key:
                 array[location].set_student_id(-1)
                 n-_1
-                __ n > 0 and n <_ m/8:
+                __ n > 0 ___ n <_ m/8:
                     rehash(next_prime(m//2))
                     print( "New Table Size is : " ,m )
 
@@ -119,7 +119,7 @@ c_ HashTable:
 size _ int(input("Enter initial size of table : "))
 table _ HashTable(size)
 
-_____ True:
+_____ T..:
     print("1.Insert a record")
     print("2.search a record")
     print("3.delete a record")
@@ -132,19 +132,19 @@ _____ True:
         name _ input("Enter student name : ")
         aRecord _ studentRecord(id,name)
         table.insert1(aRecord)
-    elif option __ 2:
+    ____ option __ 2:
         idd _ int(input("Enter a key to be searched : "))
         aRecord _ table.search(id)
         __ aRecord __ N..:
             print("Key not found")
         ____
             print(aRecord)
-    elif option __ 3:
+    ____ option __ 3:
         id _ int(input("Enter a key to be deleted :"))
         table.delete(id)
-    elif option __ 4:
+    ____ option __ 4:
         table.display_table()
-    elif option __ 5:
+    ____ option __ 5:
         break
     ____
         print("Wrong option") 

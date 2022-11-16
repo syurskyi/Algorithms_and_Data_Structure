@@ -29,7 +29,7 @@ c_ Stack:
         items.a..(item)
 
     ___ pop 
-        r_ items.pop()
+        r_ items.p.. 
 
     ___ peek 
         r_ items[l..(items) - 1]
@@ -49,23 +49,23 @@ s.push('two')
 s.peek()
 # 'two'
 
-s.push(True)
+s.push(T..)
 s.size()
 # 3
 
 # s.isEmpty()
-False
+F..
 
-s.pop()
+s.p.. 
 # True
 
-s.pop()
+s.p.. 
 # two
 
 s.size()
 # 1
 
-s.pop()
+s.p.. 
 # 1
 
 s.isEmpty()

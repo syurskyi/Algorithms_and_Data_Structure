@@ -31,17 +31,17 @@ ___ partition(arr,first,last
     leftmark _ first+1
     rightmark _ last
 
-    done _ False
+    done _ F..
     _____ n.. done:
 
-        _____ leftmark <_ rightmark and arr[leftmark] <_ pivotvalue:
+        _____ leftmark <_ rightmark ___ arr[leftmark] <_ pivotvalue:
             leftmark _ leftmark + 1
 
-        _____ arr[rightmark] >_ pivotvalue and rightmark >_ leftmark:
+        _____ arr[rightmark] >_ pivotvalue ___ rightmark >_ leftmark:
             rightmark _ rightmark -1
 
         __ rightmark < leftmark:
-            done _ True
+            done _ T..
         ____
             temp _ arr[leftmark]
             arr[leftmark] _ arr[rightmark]

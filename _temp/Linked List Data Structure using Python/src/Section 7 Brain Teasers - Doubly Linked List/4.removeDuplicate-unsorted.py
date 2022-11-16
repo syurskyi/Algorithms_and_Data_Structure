@@ -5,13 +5,13 @@ ___ removeDuplicate(linkedList
     nodeCount _ {}
     # {13: 1, 5:1, 2:1}
     currentNode _ linkedList.head
-    _____ True:
+    _____ T..:
         __ currentNode.data n.. __ nodeCount.keys(
             nodeCount[currentNode.data] _ 1
         ____
             nodeCount[currentNode.data] +_ 1
         __ currentNode.next __ N..:
-            _____ True:
+            _____ T..:
                 __ currentNode.previous __ N..:
                     break
                 previousNode _ currentNode.previous

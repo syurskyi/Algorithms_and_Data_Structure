@@ -4,32 +4,32 @@
 # Sort a stack with the smallest on top using only a single temporary stack.
 
 ___ sort_stack(stack
-  previous _ stack.pop()
-  current _ stack.pop()
+  previous _ stack.p.. 
+  current _ stack.p.. 
   temp _ Stack()
   _____ current:
     __ previous < current:
       temp.push(previous)
       previous _ current
-      current _ stack.pop()
+      current _ stack.p.. 
     ____
       temp.push(current)
-      current _ stack.pop()
-    __ current __ N.. and previous: temp.push(previous)
+      current _ stack.p.. 
+    __ current __ N.. ___ previous: temp.push(previous)
        
-  sorted _ True
-  previous _ temp.pop()
-  current _ temp.pop()
+  sorted _ T..
+  previous _ temp.p.. 
+  current _ temp.p.. 
   _____ current:
     __ previous > current:
       stack.push(previous)
       previous _ current
-      current _ temp.pop()
+      current _ temp.p.. 
     ____
       stack.push(current)
-      current _ temp.pop()
-      sorted _ False
-    __ current __ N.. and previous: stack.push(previous)
+      current _ temp.p.. 
+      sorted _ F..
+    __ current __ N.. ___ previous: stack.push(previous)
   __ sorted: r_ stack
   ____ r_ sort_stack(stack)
 
@@ -55,7 +55,7 @@ c_ current(
     data, next _ data, next
   
   ___ __str__
-    r_ str  and data) + ',' + str  and next)
+    r_ str  ___ data) + ',' + str  ___ next)
 
 import unittest
 

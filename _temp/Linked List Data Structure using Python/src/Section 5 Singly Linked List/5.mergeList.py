@@ -4,7 +4,7 @@ ___ mergeLists(firstList, secondList, mergedList
     # 1->3->4 || 2->7->9 || 1->2->3->4->7->9->None
     currentFirst _ firstList.head
     currentSecond _ secondList.head
-    _____ True:
+    _____ T..:
         __ currentFirst __ N..:
             mergedList.insertEnd(currentSecond)
             break

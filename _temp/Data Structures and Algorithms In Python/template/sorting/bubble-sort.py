@@ -2,8 +2,8 @@
 # This code is part of DSA course available on CourseGalaxy.com  
 
 ___ bubble_sort(a
-    ___ x __ range(l..(a)-1,0,-1
-        ___ j __ range(x
+    ___ x __ r..(l..(a)-1,0,-1
+        ___ j __ r..(x
               __ a[j]>a[j+1]:
                   a[j],a[j+1] _ a[j+1],a[j]
 

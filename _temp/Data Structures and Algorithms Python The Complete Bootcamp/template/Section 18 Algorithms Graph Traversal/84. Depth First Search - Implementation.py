@@ -3,17 +3,17 @@ c_ Node(
     ___ -  value
         value _ value
         adjacentlist _    # list
-        visited _ False
+        visited _ F..
 
 
 c_ Graph(
 
     ___ DFS node, traversal
-        node.visited _ True
+        node.visited _ T..
         traversal.a..(node.value)
 
         ___ element __ node.adjacentlist:
-            __ element.visited __ False:
+            __ element.visited __ F..:
                 DFS(element, traversal)
 
         r_ traversal

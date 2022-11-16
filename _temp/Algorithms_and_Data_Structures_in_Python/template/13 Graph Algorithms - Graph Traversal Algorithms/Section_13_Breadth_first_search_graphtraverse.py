@@ -4,7 +4,7 @@ c_ Node o..
 	___ -  name
 		name _ name;
 		adjacencyList _    # list;
-		visited _ False;
+		visited _ F..;
 		predecessor _ N..;
 		
 c_ BreadthFirstSearch o..
@@ -13,7 +13,7 @@ c_ BreadthFirstSearch o..
 	
 		queue _    # list;
 		queue.a..(startNode);
-		startNode.visited _ True;
+		startNode.visited _ T..;
 		
 		# BFS -> queue      DFS --> stack BUT usually we implement it with 001_recursion !!!
 		_____ queue:
@@ -23,7 +23,7 @@ c_ BreadthFirstSearch o..
 			
 			___ n __ actualNode.adjacencyList:
 				__ n.. n.visited:
-					n.visited _ True;
+					n.visited _ T..;
 					queue.a..(n);
 					
 node1 _ Node("A");

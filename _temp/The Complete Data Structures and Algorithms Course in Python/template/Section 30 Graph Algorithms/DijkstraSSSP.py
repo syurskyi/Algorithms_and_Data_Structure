@@ -29,7 +29,7 @@ ___ dijkstra(graph, initial
             __ node __ visited:
                 __ minNode __ N..:
                     minNode _ node
-                elif visited[node] < visited[minNode]:
+                ____ visited[node] < visited[minNode]:
                     minNode _ node
         __ minNode __ N..:
             break
@@ -39,7 +39,7 @@ ___ dijkstra(graph, initial
 
         ___ edge __ graph.edges[minNode]:
             weight _ currentWeight + graph.distances[(minNode, edge)]
-            __ edge n.. __ visited or weight < visited[edge]:
+            __ edge n.. __ visited __ weight < visited[edge]:
                 visited[edge] _ weight
                 path[edge].a..(minNode)
     

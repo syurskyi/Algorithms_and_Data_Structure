@@ -20,7 +20,7 @@ c_ BinarySearchTree:
     ___ _insertp, x
         __ p __ N..:
             p _ Node(x)
-        elif x < p.info :
+        ____ x < p.info :
             p.lchild _ _insert(p.lchild, x)
         ____
             p.rchild _ _insert(p.rchild, x)
@@ -42,7 +42,7 @@ c_ BinarySearchTree:
 n _ int(input("Enter the number of elements to be sorted : "))
 
 tree _ BinarySearchTree()
-___ i __ range(n
+___ i __ r..(n
     x _ int(input("Enter element : "))
     tree.insert(x)
     

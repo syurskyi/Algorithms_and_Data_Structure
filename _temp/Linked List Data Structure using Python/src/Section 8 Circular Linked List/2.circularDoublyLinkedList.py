@@ -50,7 +50,7 @@ c_ LinkedList:
             print("Empty List")
             r_
         currentNode _ head
-        _____ True:
+        _____ T..:
             __ currentNode.next.next __ head:
                 break
             currentNode _ currentNode.next
@@ -62,7 +62,7 @@ c_ LinkedList:
     ___ printList 
         __ head __ n.. N..:
             currentNode _ head
-            _____ True:
+            _____ T..:
                 print(currentNode.data)
                 currentNode _ currentNode.next
                 __ currentNode __ head:

@@ -5,11 +5,11 @@ ___ findmissingnumberusingxor(myarray
 	arraylen _ l..(myarray)
 	xorval _ 0
         #print "In the First loop"
-	___ i __ range(1, arraylen + 2
+	___ i __ r..(1, arraylen + 2
                 #print xorval,"^",i,"is",xorval^i
 		xorval _ xorval ^ i
         #print "In the Next loop"
-	___ i __ range(0, arraylen
+	___ i __ r..(0, arraylen
                 #print xorval,"^",myarray[i],"is",xorval^myarray[i]
 		xorval _ xorval ^ myarray[i]
 	print "Missing number is ", xorval

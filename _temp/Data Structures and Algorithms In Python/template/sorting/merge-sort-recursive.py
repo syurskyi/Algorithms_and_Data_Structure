@@ -29,7 +29,7 @@ ___ merge(a, temp, low1, up1, low2, up2
     j _ low2
     k _ low1
 
-    _____ i <_ up1  and j <_ up2:
+    _____ i <_ up1  ___ j <_ up2:
             __ a[i] <_ a[j]:
                 temp[k] _ a[i]
                 i+_1
@@ -50,7 +50,7 @@ ___ merge(a, temp, low1, up1, low2, up2
 
 # copies temp[low]....temp[up] to a[low]...a[up]
 ___ copy(a, temp, low, up
-    ___ i __ range(low,up+1
+    ___ i __ r..(low,up+1
         a[i] _ temp[i]
 
 

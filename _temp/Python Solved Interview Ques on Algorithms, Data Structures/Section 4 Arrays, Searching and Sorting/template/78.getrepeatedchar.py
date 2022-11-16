@@ -9,7 +9,7 @@ ___ getrepeatedelement(A
 			print("the first repeated element is: %s" % (element))
                         #print "in loop: tab",tab,"for element '",element,"' in array ",A
 			r_ element
-		elif element !_ " ":
+		____ element !_ " ":
 			tab[element] _ 1
 		____
 			tab[element] _ 0

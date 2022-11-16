@@ -14,7 +14,7 @@
 ___ fib_rec(n
 
     # Base Case
-    __ n __ 0 or n __ 1:
+    __ n __ 0 __ n __ 1:
         r_ n
 
     # Recursion
@@ -38,7 +38,7 @@ cache _ [N..] * (n + 1)
 ___ fib_dyn(n
 
     # Base Case
-    __ n __ 0 or n __ 1:
+    __ n __ 0 __ n __ 1:
         r_ n
 
     # Check cache
@@ -63,7 +63,7 @@ ___ fib_iter(n
     b _ 1
 
     # Follow algorithm
-    ___ i __ range(n
+    ___ i __ r..(n
 
         a, b _ b, a + b
 

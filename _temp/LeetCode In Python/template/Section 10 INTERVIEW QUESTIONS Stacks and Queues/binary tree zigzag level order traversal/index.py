@@ -13,14 +13,14 @@ c_ Solution:
         res _    # list
         q _ collections.deque()
 
-        zigzag _ False
+        zigzag _ F..
         q.a..(root)
 
         _____ q:
             level _    # list
-            ___ _ __ range(l..(q)):
+            ___ _ __ r..(l..(q
                 __ zigzag:
-                    node _ q.pop()
+                    node _ q.p.. 
                     level.a..(node.val)
                     __ node.right:
                         q.appendleft(node.right)

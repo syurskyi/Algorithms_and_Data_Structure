@@ -28,7 +28,7 @@ ___ combos(digits
 
 	remaining_combos _ combos(digits[1:])
 
-	___ i __ range(l..(letters)):
+	___ i __ r..(l..(letters
 		letter _ letters[i]
 
 		___ word __ remaining_combos:

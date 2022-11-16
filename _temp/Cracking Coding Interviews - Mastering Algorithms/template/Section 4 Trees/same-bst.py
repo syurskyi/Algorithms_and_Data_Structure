@@ -46,14 +46,14 @@ root5 _ Node(1, Node(2), Node(1))
 root6 _ Node(1, Node(1), Node(2))
 
 ___ same_tree(root1, root2
-	__ root1 __ N.. and root2 __ N..:
-		r_ True
-	elif root1 __ Node or root2 __ N..:
-		r_ False
-	elif root1.val !_ root2.val:
-		r_ False
+	__ root1 __ N.. ___ root2 __ N..:
+		r_ T..
+	____ root1 __ Node __ root2 __ N..:
+		r_ F..
+	____ root1.val !_ root2.val:
+		r_ F..
 
-	r_ same_tree(root1.left, root2.left) and same_tree(root1.right, root2.right)
+	r_ same_tree(root1.left, root2.left) ___ same_tree(root1.right, root2.right)
 
 
 print(same_tree(root1, root2))

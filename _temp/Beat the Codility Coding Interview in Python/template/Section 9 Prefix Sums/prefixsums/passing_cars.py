@@ -4,11 +4,11 @@
 
 ___ solution(A
     suffix_sum _ [0] * (l..(A) + 1)
-    ___ i __ range(l..(A) - 1, -1, -1
+    ___ i __ r..(l..(A) - 1, -1, -1
         suffix_sum[i] _ A[i] + suffix_sum[i + 1]
 
     count _ 0
-    ___ i __ range(l..(A)):
+    ___ i __ r..(l..(A
         __ A[i] __ 0:
             count +_ suffix_sum[i]
         __ count > 1000000000:

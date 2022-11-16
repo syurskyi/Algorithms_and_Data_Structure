@@ -87,7 +87,7 @@ arr _ [[1, 2, 3, 4],
        [4, 5, 6, 7],
        [8, 9, 10, 11],
        [12, 13, 14, 15]]
-___ i __ range(0, 4
+___ i __ r..(0, 4
     print(arr[i].pop())
 # A. 1 2 3 4
 # B. 1 4 8 12
@@ -117,9 +117,9 @@ f(3)
 # Q-9. What will be the output of the following code snippet?
 
 arr _ [1, 2, 3, 4, 5, 6]
-___ i __ range(1, 6
+___ i __ r..(1, 6
     arr[i - 1] _ arr[i]
-___ i __ range(0, 6
+___ i __ r..(0, 6
     print(arr[i], end _ " ")
 # A. 1 2 3 4 5 6
 # B. 2 3 4 5 6 1

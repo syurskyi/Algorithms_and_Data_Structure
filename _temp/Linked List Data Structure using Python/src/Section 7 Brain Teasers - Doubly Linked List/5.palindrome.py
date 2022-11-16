@@ -6,7 +6,7 @@ ___ palindrome(linkedList
     endPointer _ linkedList.head
     _____ endPointer.next __ n.. N..:
         endPointer _ endPointer.next
-    _____ True:
+    _____ T..:
         __ startPointer __ endPointer:
             print("List is palindrome")
             r_

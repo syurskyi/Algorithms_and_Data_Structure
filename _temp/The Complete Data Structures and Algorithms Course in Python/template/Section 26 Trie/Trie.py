@@ -4,7 +4,7 @@
 c_ TrieNode:
     ___ -  
         children _ {}
-        endOfString _ False
+        endOfString _ F..
 
 c_ Trie:
     ___ -  
@@ -19,7 +19,7 @@ c_ Trie:
                 node _ TrieNode()
                 current.children.update({ch:node})
             current _ node
-        current.endOfString _ True
+        current.endOfString _ T..
         print("Successfully inserted")
     
     ___ searchString word
@@ -27,42 +27,42 @@ c_ Trie:
         ___ i __ word:
             node _ currentNode.children.get(i)
             __ node __ N..:
-                r_ False
+                r_ F..
             currentNode _ node
 
-        __ currentNode.endOfString __ True:
-            r_ True
+        __ currentNode.endOfString __ T..:
+            r_ T..
         ____
-            r_ False
+            r_ F..
         
 
 ___ deleteString(root, word, index
     ch _ word[index]
     currentNode _ root.children.get(ch)
-    canThisNodeBeDeleted _ False
+    canThisNodeBeDeleted _ F..
 
     __ l..(currentNode.children) > 1:
         deleteString(currentNode, word, index+1)
-        r_ False
+        r_ F..
     
     __ index __ l..(word) - 1:
         __ l..(currentNode.children) >_ 1:
-            currentNode.endOfString _ False
-            r_ False
+            currentNode.endOfString _ F..
+            r_ F..
         ____
             root.children.pop(ch)
-            r_ True
+            r_ T..
     
-    __ currentNode.endOfString __ True:
+    __ currentNode.endOfString __ T..:
         deleteString(currentNode, word, index+1)
-        r_ False
+        r_ F..
 
     canThisNodeBeDeleted _ deleteString(currentNode, word, index+1)
-    __ canThisNodeBeDeleted __ True:
+    __ canThisNodeBeDeleted __ T..:
         root.children.pop(ch)
-        r_ True
+        r_ T..
     ____
-        r_ False
+        r_ F..
 
 
 

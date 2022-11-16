@@ -76,7 +76,7 @@ c_ Graph:
 # Let's see a simple example of how to use this:
 
 g _ Graph()
-___ i __ range(6
+___ i __ r..(6
     g.addVertex(i)
 
 g.vertList

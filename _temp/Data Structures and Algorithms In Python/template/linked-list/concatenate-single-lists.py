@@ -41,7 +41,7 @@ c_ SingleLinkedList:
         n _ int(input("Enter the number of nodes : "))
         __ n __ 0:
             r_
-        ___ i __ range(n
+        ___ i __ r..(n
             data _ int(input("Enter the element to be inserted : "))
             insert_at_end(data)
 

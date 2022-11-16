@@ -21,7 +21,7 @@ c_ Deque o..
     ___ remove_front
         r_ items.pop(0)
     ___ remove_rear
-        r_ items.pop()
+        r_ items.p.. 
     ___ size
         r_ l..(items)
     pass

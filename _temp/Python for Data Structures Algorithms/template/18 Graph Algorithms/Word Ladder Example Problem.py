@@ -66,7 +66,7 @@ ___ buildGraph(wordFile
         print line
         word _ line[:-1]
         print word
-        ___ i __ range(l..(word)):
+        ___ i __ r..(l..(word
             bucket _ word[:i] + '_' + word[i+1:]
             __ bucket __ d:
                 d[bucket].a..(word)

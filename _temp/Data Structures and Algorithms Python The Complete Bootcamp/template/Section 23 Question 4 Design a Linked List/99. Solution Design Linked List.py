@@ -13,7 +13,7 @@ c_ MyLinkedList:
         size _ 0
 
     ___ get index
-        __ index < 0 or index >_ size:
+        __ index < 0 __ index >_ size:
             r_ -1
 
         cur _ head
@@ -51,11 +51,11 @@ c_ MyLinkedList:
         size +_ 1
 
     ___ addAtIndex index, val
-        __ index < 0 or index > size:
+        __ index < 0 __ index > size:
             r_
-        elif index __ 0:
+        ____ index __ 0:
             addAtHead(val)
-        elif index __ size:
+        ____ index __ size:
             addAtTail(val)
         ____
             cur _ head
@@ -73,9 +73,9 @@ c_ MyLinkedList:
             size +_ 1
 
     ___ deleteAtIndex index
-        __ index < 0 or index >_ size:
+        __ index < 0 __ index >_ size:
             r_
-        elif index __ 0:
+        ____ index __ 0:
             cur _ head.next
             __ cur:
                 cur.prev _ N..
@@ -85,7 +85,7 @@ c_ MyLinkedList:
 
             __ size __ 0:
                 tail _ N..
-        elif index __ size - 1:
+        ____ index __ size - 1:
             cur _ tail.prev
             __ cur:
                 cur.next _ N..

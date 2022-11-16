@@ -2,7 +2,7 @@
 # This code is part of DSA course available on CourseGalaxy.com  
 
 ___ build_heap_top_down(a, n
-    ___ i __ range(2, n+1
+    ___ i __ r..(2, n+1
         restore_up(i, a)
 
 ___ build_heap_bottom_up(a, n
@@ -27,10 +27,10 @@ ___ restore_down(i, a, n
     rchild _ lchild + 1
 
     _____ rchild <_ n:
-        __ k >_ a[lchild] and k >_ a[rchild]:
+        __ k >_ a[lchild] ___ k >_ a[rchild]:
             a[i] _ k
             r_
-        elif a[lchild] > a[rchild]:
+        ____ a[lchild] > a[rchild]:
             a[i] _ a[lchild]
             i _ lchild
         ____
@@ -42,7 +42,7 @@ ___ restore_down(i, a, n
              
 
         # If number of nodes is even
-        __ lchild __ n and k < a[lchild]:
+        __ lchild __ n ___ k < a[lchild]:
             a[i] _ a[lchild]
             i _ lchild
         a[i] _ k
@@ -54,7 +54,7 @@ n1 _ l..(a1)-1
 
 build_heap_bottom_up(a1,n1)
 
-___ i __ range(1,n1+1
+___ i __ r..(1,n1+1
     print(a1[i], " ",end_'')
 print()
 
@@ -63,7 +63,7 @@ n2 _ l..(a2)-1
 
 build_heap_top_down(a2,n2) 
 
-___ i __ range(1,n2+1
+___ i __ r..(1,n2+1
     print(a2[i], " ",end_'')
 print()
 

@@ -23,7 +23,7 @@ ___ levelOrderTraversal(rootNode
     __ n.. rootNode:
         r_
     ____
-        ___ i __ range(1, rootNode.heapSize+1
+        ___ i __ r..(1, rootNode.heapSize+1
             print(rootNode.customList[i])
 
 ___ heapifyTreeInsert(rootNode, index, heapType
@@ -36,7 +36,7 @@ ___ heapifyTreeInsert(rootNode, index, heapType
             rootNode.customList[index] _ rootNode.customList[parentIndex]
             rootNode.customList[parentIndex] _ temp
         heapifyTreeInsert(rootNode, parentIndex, heapType)
-    elif heapType __ "Max":
+    ____ heapType __ "Max":
         __ rootNode.customList[index] > rootNode.customList[parentIndex]:
             temp _ rootNode.customList[index]
             rootNode.customList[index] _ rootNode.customList[parentIndex]
@@ -58,7 +58,7 @@ ___ heapifyTreeExtract(rootNode, index, heapType
 
     __ rootNode.heapSize < leftIndex:
         r_
-    elif rootNode.heapSize __ leftIndex:
+    ____ rootNode.heapSize __ leftIndex:
         __ heapType __ "Min":
             __ rootNode.customList[index] > rootNode.customList[leftIndex]:
                 temp _ rootNode.customList[index]

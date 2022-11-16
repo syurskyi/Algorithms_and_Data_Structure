@@ -45,7 +45,7 @@ print(my_array)
 
 # 8. Remove last array element using pop() method
 print("Step 8")
-my_array.pop()
+my_array.p.. 
 print(my_array)
 
 # 9. Fetch any element through its index using index() method

@@ -25,7 +25,7 @@ c_ Stack(
         r_ minNode.value
     
     ___ push item
-        __ minNode and (minNode.value < item
+        __ minNode ___ (minNode.value < item
             minNode _ Node(value _ minNode.value, next_self.minNode)
         ____
             minNode _ Node(value _ item, next_self.minNode)
@@ -46,6 +46,6 @@ customStack.push(6)
 print(customStack.min())
 customStack.push(3)
 print(customStack.min())
-customStack.pop()
+customStack.p.. 
 print(customStack.min())
 

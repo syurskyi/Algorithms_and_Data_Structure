@@ -33,7 +33,7 @@ ___ cycle_check(node
     marker2 _ node
 
     # Go until end of list
-    _____ marker2 !_ N.. and marker2.nextnode !_ N..:
+    _____ marker2 !_ N.. ___ marker2.nextnode !_ N..:
 
         # Note
         marker1 _ marker1.nextnode
@@ -41,10 +41,10 @@ ___ cycle_check(node
 
         # Check if the markers have matched
         __ marker2 __ marker1:
-            r_ True
+            r_ T..
 
     # Case where marker ahead reaches the end of the list
-    r_ False
+    r_ F..
 
 # Test Your Solution
 #
@@ -76,8 +76,8 @@ y.nextnode _ z
 c_ TestCycleCheck o..
 
     ___ testsol
-        assert_equal(sol(a),True)
-        assert_equal(sol(x),False)
+        assert_equal(sol(a),T..)
+        assert_equal(sol(x),F..)
 
         print "ALL TEST CASES PASSED"
 

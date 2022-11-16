@@ -23,10 +23,10 @@ ___ retsore_down(i, a, n
     rchild _ lchild + 1
 
     _____ rchild <_ n:
-        __ k >_ a[lchild] and k >_ a[rchild]:
+        __ k >_ a[lchild] ___ k >_ a[rchild]:
             a[i] _ k
             r_
-        elif a[lchild] > a[rchild]:
+        ____ a[lchild] > a[rchild]:
             a[i] _ a[lchild]
             i _ lchild
         ____
@@ -38,7 +38,7 @@ ___ retsore_down(i, a, n
              
 
     # If number of nodes is even
-    __ lchild __ n and k < a[lchild]:
+    __ lchild __ n ___ k < a[lchild]:
         a[i] _ a[lchild]
         i _ lchild
     a[i] _ k
@@ -47,12 +47,12 @@ ___ retsore_down(i, a, n
       
 n _ int(input("Enter the number of elements : "))
 a _ [N..]*(n+1)
-___ i __ range(1,n+1
+___ i __ r..(1,n+1
     a[i] _ int(input("Enter element : "))
 
 heap_sort(a,n)
 
-___ i __ range(1,n+1
+___ i __ r..(1,n+1
     print(a[i], " ",end_'')
 print()
 

@@ -9,7 +9,7 @@ c_ DiscLog(
 
 ___ solution(A
     discHistory _    # list
-    ___ i __ range(l..(A)):
+    ___ i __ r..(l..(A
         discHistory.a..(DiscLog(i - A[i], 1))
         discHistory.a..(DiscLog(i + A[i], -1))
     discHistory.sort(key_lambda d: (d.x, -d.start_end))

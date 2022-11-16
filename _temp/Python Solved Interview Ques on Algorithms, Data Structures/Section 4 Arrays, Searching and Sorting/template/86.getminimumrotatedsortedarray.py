@@ -17,11 +17,11 @@ ___ getMinVal(myarray
             __ myarray[midindex] __ myarray[lowerindex]:
                 lowerindex +_ 1
                 #print "myarray[midindex] is equal to myarray[lowerindex]",myarray[midindex],"is equal to",myarray[lowerindex-1],"so lowerindex value changed from",lowerindex-1,"to",lowerindex
-            elif myarray[midindex] > myarray[lowerindex]:
+            ____ myarray[midindex] > myarray[lowerindex]:
                 temp _ lowerindex
                 lowerindex _ midindex
                 #print "myarray[midindex] is greater then myarray[lowerindex]",myarray[midindex],"is greater then",myarray[temp],"so lowerindex value changed to midindex",midindex
-            elif myarray[midindex] __ myarray[highindex]:
+            ____ myarray[midindex] __ myarray[highindex]:
                 highindex -_ 1
                 #print "myarray[midindex] is equal then myarray[highindex]",myarray[midindex],"is equal to",myarray[highindex],"so highindex changed from",highindex+1,"to",highindex
             ____

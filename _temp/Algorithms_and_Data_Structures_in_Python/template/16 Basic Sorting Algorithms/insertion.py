@@ -1,11 +1,11 @@
 
 ___ insertion_sort(nums
     
-	___ i __ range(l..(nums)):
+	___ i __ r..(l..(nums
 		
 		j _ i
 		
-		_____ j>0 and nums[j-1] > nums[j]:
+		_____ j>0 ___ nums[j-1] > nums[j]:
 			swap(nums,j,j-1)
 			j _ j - 1
 	

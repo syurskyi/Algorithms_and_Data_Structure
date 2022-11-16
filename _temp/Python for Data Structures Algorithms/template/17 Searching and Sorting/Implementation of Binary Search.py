@@ -10,16 +10,16 @@ ___ binary_search(arr,ele
     first _ 0
     last _ l..(arr) - 1
 
-    found _ False
+    found _ F..
 
 
-    _____ first <_ last and n.. found:
+    _____ first <_ last ___ n.. found:
 
         mid _ (first+last)/2 # or // for Python 3
 
         # Match found
         __ arr[mid] __ ele:
-            found _ True
+            found _ T..
 
         # Set new midpoints up or down depending on comparison
         ____
@@ -47,7 +47,7 @@ ___ rec_bin_search(arr,ele
 
     # Base Case!
     __ l..(arr) __ 0:
-        r_ False
+        r_ F..
 
     # Recursive Case
     ____
@@ -56,7 +56,7 @@ ___ rec_bin_search(arr,ele
 
         # If match found
         __ arr[mid]__ele:
-            r_ True
+            r_ T..
 
         ____
 

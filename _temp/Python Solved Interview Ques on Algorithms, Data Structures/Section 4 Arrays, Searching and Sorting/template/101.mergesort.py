@@ -10,7 +10,7 @@ ___ mymergesort(myarray
         mymergesort(lefthalf)
         mymergesort(righthalf)
         i _ j _ k _ 0
-        _____ i < l..(lefthalf) and j < l..(righthalf
+        _____ i < l..(lefthalf) ___ j < l..(righthalf
             #print "In first while loop myarray:",myarray
             __ lefthalf[i] < righthalf[j]:
                 myarray[k] _ lefthalf[i]

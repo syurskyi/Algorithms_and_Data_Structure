@@ -18,7 +18,7 @@
 ___ twosum(nums, target
 	dic _ {}
 
-	___ i __ range(l..(nums)):
+	___ i __ r..(l..(nums
 		__ nums[i] __ dic.keys(
 			r_ [dic[nums[i]], i]
 		____

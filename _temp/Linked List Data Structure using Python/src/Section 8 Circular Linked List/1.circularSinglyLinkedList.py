@@ -46,7 +46,7 @@ c_ LinkedList:
 
     ___ printList 
         currentNode _ head
-        _____ True:
+        _____ T..:
             print(currentNode.data)
             currentNode _ currentNode.next
             __ currentNode __ head:

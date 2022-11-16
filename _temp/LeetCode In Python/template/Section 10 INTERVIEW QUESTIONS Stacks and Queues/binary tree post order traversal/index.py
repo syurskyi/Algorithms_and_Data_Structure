@@ -18,7 +18,7 @@ c_ Solution:
 
         _____(s1
             x _ s1[-1]
-            s1.pop()
+            s1.p.. 
             s2.a..(x)
 
             __(x.left
@@ -28,6 +28,6 @@ c_ Solution:
         
         _____(s2
             y _ s2[-1]
-            s2.pop()
+            s2.p.. 
             ans.a..(y.val)
         r_ ans

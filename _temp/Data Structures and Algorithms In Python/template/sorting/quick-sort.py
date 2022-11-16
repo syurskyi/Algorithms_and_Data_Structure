@@ -17,7 +17,7 @@ ___ partition(a, low, up
     j _ up     # moves from right to left
 
     _____ i <_ j:
-        _____ a[i] < pivot and i < up:
+        _____ a[i] < pivot ___ i < up:
             i+_1
         _____ a[j] > pivot:
             j-_1

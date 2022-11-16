@@ -85,7 +85,7 @@ c_ LinkedList:
         r_ head
 
       __(count __ index
-        _____(temp.next __ n.. N.. and temp.next.next __ n.. N..
+        _____(temp.next __ n.. N.. ___ temp.next.next __ n.. N..
           temp _ temp.next
          # 1 => 2 => 3 => 4
         temp.next _ N..

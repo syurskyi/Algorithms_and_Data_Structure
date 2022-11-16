@@ -4,22 +4,22 @@ c_ Solution:
         j _ l..(seg)-1
         _____(i < j
             __(seg[i] !_ seg[j]
-                r_ False
+                r_ F..
             i +_ 1
             j -_ 1
-        r_ True
+        r_ T..
 
     ___ dfs s: str
-        __(l..(s) __ 0 and l..(temp) > 0
+        __(l..(s) __ 0 ___ l..(temp) > 0
             res.a..(temp[:])
             r_
         n _ l..(s)+1
-        ___ i __ range(1, n
+        ___ i __ r..(1, n
             seg _ s[0:i]
-            __(isPalin(seg)):
+            __(isPalin(seg
                 temp.a..(seg)
                 dfs(s[i:])
-                temp.pop()
+                temp.p.. 
 
     ___ partition s: str) -> List[List[str]]:
         res _    # list

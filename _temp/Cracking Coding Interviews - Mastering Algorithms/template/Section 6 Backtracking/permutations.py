@@ -20,7 +20,7 @@ ___ permutation_recursive(nums, path
 
 	output _    # list
 
-	___ i __ range(l..(nums)):
+	___ i __ r..(l..(nums
 		copy_path _ copy.deepcopy(path)
 		copy_path.a..(nums[i])
 		permutations _ permutation_recursive(nums[:i] + nums[i + 1:], copy_path)

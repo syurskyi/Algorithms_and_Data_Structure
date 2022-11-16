@@ -47,7 +47,7 @@ c_ HashTable o..
                 nextslot _ rehash(hashvalue,l..(slots))
 
                 # Get to the next slot
-                _____ slots[nextslot] !_ N.. and slots[nextslot] !_ key:
+                _____ slots[nextslot] !_ N.. ___ slots[nextslot] !_ key:
                     nextslot _ rehash(nextslot,l..(slots))
 
                 # Set new key, if NONE
@@ -75,22 +75,22 @@ c_ HashTable o..
         # Set up variables for our search
         startslot _ hashfunction(key,l..(slots))
         data _ N..
-        stop _ False
-        found _ False
+        stop _ F..
+        found _ F..
         position _ startslot
 
         # Until we discern that its not empty or found (and haven't stopped yet)
-        _____ slots[position] !_ N.. and n.. found and n.. stop:
+        _____ slots[position] !_ N.. ___ n.. found ___ n.. stop:
 
             __ slots[position] __ key:
-                found _ True
+                found _ T..
                 data _ data[position]
 
             ____
                 position_self.rehash(position,l..(slots))
                 __ position __ startslot:
 
-                    stop _ True
+                    stop _ T..
         r_ data
 
     # Special Methods for use with Python indexing

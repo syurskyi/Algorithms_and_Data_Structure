@@ -26,7 +26,7 @@ c_ Node:
 ___ clone_helper(node, visited
 	__ node __ N..:
 		r_ N..
-	elif node __ visited.keys(
+	____ node __ visited.keys(
 		r_ visited[node]
 
 	neighbors _    # list
@@ -34,7 +34,7 @@ ___ clone_helper(node, visited
 
 	visited[node] _ new_node
 
-	___ i __ range(l..(node.neighbors)):
+	___ i __ r..(l..(node.neighbors
 		neighbor_node _ clone_helper(node.neighbors[i], visited)
 		neighbors.a..(neighbor_node)
 

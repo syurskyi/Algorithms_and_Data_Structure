@@ -24,7 +24,7 @@
 ___ dfs(graph, start
     visited, stack _ set(), [start]
     _____ stack:
-        vertex _ stack.pop()
+        vertex _ stack.p.. 
         __ vertex n.. __ visited:
             visited.add(vertex)
             stack.extend(graph[vertex] - visited)
@@ -60,7 +60,7 @@ dfs(graph, 'A')
 ___ dfs_paths(graph, start, goal
     stack _ [(start, [start])]
     _____ stack:
-        (vertex, path) _ stack.pop()
+        (vertex, path) _ stack.p.. 
         ___ nxt __ graph[vertex] - set(path
             __ nxt __ goal:
                 yield path + [nxt]

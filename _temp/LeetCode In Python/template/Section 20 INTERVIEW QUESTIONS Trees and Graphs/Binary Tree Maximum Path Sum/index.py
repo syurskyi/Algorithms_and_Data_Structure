@@ -14,9 +14,9 @@ c_ Solution:
         left _ solution(node.left)
         right _ solution(node.right)
 
-        mxSide _ max(node.val,max(left,right)+node.val)
-        mxTop _ max(mxSide,left+right+node.val)
-        ans _ max(ans,mxTop)
+        mxSide _ m__(node.val,m__(left,right)+node.val)
+        mxTop _ m__(mxSide,left+right+node.val)
+        ans _ m__(ans,mxTop)
         r_ mxSide
 
     ___ maxPathSum root: TreeNode) -> int:

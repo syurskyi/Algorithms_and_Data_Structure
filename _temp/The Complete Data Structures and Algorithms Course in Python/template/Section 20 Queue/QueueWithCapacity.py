@@ -14,17 +14,17 @@ c_ Queue:
     
     ___ isFull
         __ top + 1 __ start:
-            r_ True
-        elif start __ 0 and top + 1 __ maxSize:
-            r_ True
+            r_ T..
+        ____ start __ 0 ___ top + 1 __ maxSize:
+            r_ T..
         ____
-            r_ False
+            r_ F..
     
     ___ isEmpty
         __ top __ -1:
-            r_ True
+            r_ T..
         ____
-            r_ False
+            r_ F..
     
     ___ enqueue value
         __ isFull(
@@ -48,7 +48,7 @@ c_ Queue:
             __ start __ top:
                 start _ -1
                 top _ -1
-            elif start + 1 __ maxSize:
+            ____ start + 1 __ maxSize:
                 start _ 0
             ____
                 start +_ 1

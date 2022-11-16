@@ -12,7 +12,7 @@ c_ Node o..
 
 	___ -  name
 		name _ name;
-		visited _ False;
+		visited _ F..;
 		predecessor _ N..;
 		adjacenciesList _    # list;
 		minDistance _ sys.maxsize;

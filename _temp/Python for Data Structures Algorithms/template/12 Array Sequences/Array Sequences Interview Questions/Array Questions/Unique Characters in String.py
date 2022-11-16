@@ -31,9 +31,9 @@ from nose.tools import assert_equal
 c_ TestUnique o..
 
     ___ test sol
-        assert_equal(sol(''), True)
-        assert_equal(sol('goo'), False)
-        assert_equal(sol('abcdefg'), True)
+        assert_equal(sol(''), T..)
+        assert_equal(sol('goo'), F..)
+        assert_equal(sol('abcdefg'), T..)
         print('ALL TEST CASES PASSED')
         
 # Run Tests

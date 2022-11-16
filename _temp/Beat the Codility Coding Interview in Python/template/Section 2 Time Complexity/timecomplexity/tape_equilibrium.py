@@ -6,7 +6,7 @@ ___ solution(A
     sum_left _ A[0]
     sum_right _ sum(A) - A[0]
     diff _ abs(sum_left - sum_right)
-    ___ i __ range(1, l..(A)-1
+    ___ i __ r..(1, l..(A)-1
         sum_left +_ A[i]
         sum_right -_ A[i]
         current_diff _ abs(sum_left - sum_right)

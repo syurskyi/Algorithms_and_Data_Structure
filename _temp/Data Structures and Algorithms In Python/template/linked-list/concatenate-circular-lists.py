@@ -20,7 +20,7 @@ c_ CircularLinkedList o..
 
         p _ last.link
 
-        _____ True:
+        _____ T..:
             print(p.info , " ",end_'')
             p _ p.link
             __  p __ last.link:
@@ -48,7 +48,7 @@ c_ CircularLinkedList o..
         insert_in_empty_list(data)
         
         # for(i = 2  i <= n  i++)
-        ___ i __ range(n-1
+        ___ i __ r..(n-1
             data _ int(input("Enter the element to be inserted : "))
             insert_at_end(data)
             

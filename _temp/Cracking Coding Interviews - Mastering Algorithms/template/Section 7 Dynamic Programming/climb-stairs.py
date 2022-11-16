@@ -27,7 +27,7 @@
 ___ climb(n, i, memo
 	__ n __ i:
 		r_ 1
-	elif i > n:
+	____ i > n:
 		r_ 0
 
 	__ i __ memo:

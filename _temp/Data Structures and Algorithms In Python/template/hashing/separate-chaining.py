@@ -90,7 +90,7 @@ c_ HashTable:
         r_ (key % m)
 
     ___ display_table 
-        ___ i __ range(m
+        ___ i __ r..(m
             print( "[" , i , "]  -->  ", end _'' )
             __ array[i]!_ N..:
                 array[i].display_list()
@@ -130,7 +130,7 @@ c_ HashTable:
 size _ int(input("Enter size of table : "))
 table _ HashTable(size)
 
-_____ True:
+_____ T..:
     print("1.Insert a record")
     print("2.Search a record")
     print("3.Delete a record")
@@ -143,19 +143,19 @@ _____ True:
         name _ input("Enter student name : ")
         aRecord _ studentRecord(id,name)
         table.insert(aRecord)
-    elif choice __ 2:
+    ____ choice __ 2:
         id _ int(input("Enter a key to be searched : "))
         aRecord _ table.search(id)
         __  aRecord __ N..:
             print("Key not found")
         ____
             print(aRecord)
-    elif choice __ 3:
+    ____ choice __ 3:
           id _ int(input("Enter a key to be deleted :"))
           table.delete(id)
-    elif choice __ 4:
+    ____ choice __ 4:
           table.display_table()
-    elif choice __ 5:
+    ____ choice __ 5:
           break
     ____
           print("Wrong option") 

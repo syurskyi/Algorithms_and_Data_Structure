@@ -53,7 +53,7 @@ ___ rev_word3(s
             # The word starts at this index
             word_start _ i
 
-            _____ i < length and s[i] n.. __ spaces:
+            _____ i < length ___ s[i] n.. __ spaces:
                 # Get index where word ends
                 i +_ 1
             # Append that word to the list

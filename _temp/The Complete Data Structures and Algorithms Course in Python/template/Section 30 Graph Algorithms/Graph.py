@@ -25,7 +25,7 @@ c_ Graph:
         visited _ [vertex]
         stack _ [vertex]
         _____ stack:
-            popVertex _ stack.pop()
+            popVertex _ stack.p.. 
             print(popVertex)
             ___ adjacentVertex __ gdict[popVertex]:
                 __ adjacentVertex n.. __ visited:

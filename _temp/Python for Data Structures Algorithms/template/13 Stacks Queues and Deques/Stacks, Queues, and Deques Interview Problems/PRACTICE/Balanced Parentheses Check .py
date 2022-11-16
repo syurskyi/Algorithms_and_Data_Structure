@@ -16,8 +16,8 @@ ___ balance_check(s
     matches _ {')':'(',']':'[','}':'{'}
     ___ c __ s:
         __ c __ matches:
-            __ chars.pop() !_ matches[c]:
-                r_ False
+            __ chars.p..  !_ matches[c]:
+                r_ F..
         ____
             chars.a..(c)
     r_ chars __    # list
@@ -42,9 +42,9 @@ from nose.tools import assert_equal
 c_ TestBalanceCheck o..
 
     ___ test sol
-        assert_equal(sol('[](){([[[]]])}('), False)
-        assert_equal(sol('[{{{(())}}}]((()))'), True)
-        assert_equal(sol('[[[]])]'), False)
+        assert_equal(sol('[](){([[[]]])}('), F..)
+        assert_equal(sol('[{{{(())}}}]((()))'), T..)
+        assert_equal(sol('[[[]])]'), F..)
         print ('ALL TEST CASES PASSED')
 
 

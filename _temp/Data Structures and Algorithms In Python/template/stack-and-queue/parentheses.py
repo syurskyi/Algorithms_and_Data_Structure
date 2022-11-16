@@ -12,33 +12,33 @@ ___ is_valid(expr
         __ ch __ ')}]':
             __ st.is_empty(
                 print("Right parentheses are more than left parentheses")
-                r_ False
+                r_ F..
             ____
-                char _ st.pop()
+                char _ st.p.. 
                 __ n.. match_parentheses(char,ch
                     print("Mismatched parentheses are ", char , " and " , ch)
-                    r_ False
+                    r_ F..
                 
     __ st.is_empty(
         print("Balanced Parentheses")
-        r_ True
+        r_ T..
     ____
         print("Left parentheses are more than right parentheses")
-        r_ False 
+        r_ F.. 
 	  	    
 ___ match_parentheses(left_par, right_par
-    __  left_par __ '[' and right_par __ ']':
-        r_ True 
-    __  left_par __ '{' and right_par __ '}':
-        r_ True 
-    __  left_par __ '(' and right_par __ ')':
-        r_ True 
-    r_ False 
+    __  left_par __ '[' ___ right_par __ ']':
+        r_ T..
+    __  left_par __ '{' ___ right_par __ '}':
+        r_ T..
+    __  left_par __ '(' ___ right_par __ ')':
+        r_ T..
+    r_ F.. 
 
 
 #############################################################################
 
-_____ True:
+_____ T..:
     print("Enter an expression with parentheses (q to quit) : ", end _ ' ')
     expression _ input()
 

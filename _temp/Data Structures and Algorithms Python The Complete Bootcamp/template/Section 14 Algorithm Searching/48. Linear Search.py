@@ -1,5 +1,5 @@
 ___ linearSearch(my_array, target
-    ___ i __ range(l..(my_array)):
+    ___ i __ r..(l..(my_array
         __ my_array[i] __ target:
             r_ i
 

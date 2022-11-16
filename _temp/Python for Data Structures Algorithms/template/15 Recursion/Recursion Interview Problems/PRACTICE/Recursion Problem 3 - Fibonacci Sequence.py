@@ -59,7 +59,7 @@ ___ fib_iter(n
     b _ 1
 
     # Follow algorithm
-    ___ i __ range(n
+    ___ i __ r..(n
         a, b _ b, a + b
     r_ a
 

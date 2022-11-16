@@ -7,10 +7,10 @@ c_ Solution:
         ___ move __ moves:
             __(move__'U'
                 y+_1
-            elif(move__'R'
+            ____(move__'R'
                 x+_1
-            elif(move__'D'
+            ____(move__'D'
                 y-_1
-            elif(move__'L'
+            ____(move__'L'
                 x-_1
-        r_ x__0 and y__0
+        r_ x__0 ___ y__0

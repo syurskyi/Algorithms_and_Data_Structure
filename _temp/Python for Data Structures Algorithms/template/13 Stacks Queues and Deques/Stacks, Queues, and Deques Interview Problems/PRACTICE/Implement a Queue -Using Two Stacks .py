@@ -37,7 +37,7 @@ c_ Queue2Stacks o..
         __ n.. out_stack:
             _____ in_stack:
                 out_stack.a..(in_stack.pop())
-        r_ out_stack.pop()
+        r_ out_stack.p.. 
         pass
 
 # %%
@@ -53,10 +53,10 @@ RUN THIS CELL TO CHECK THAT YOUR SOLUTION OUTPUT MAKES SENSE AND BEHAVES AS A QU
 """
 q _ Queue2Stacks()
 
-___ i __ range(5
+___ i __ r..(5
     q.enqueue(i)
     
-___ i __ range(5
+___ i __ r..(5
     print (q.dequeue())
 
 # %%

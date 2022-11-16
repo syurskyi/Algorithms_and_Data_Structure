@@ -37,7 +37,7 @@ c_ HashTable o..
 
     ___ hashfunction key
         sum _ 0
-        ___ pos __ range(l..(key)):
+        ___ pos __ r..(l..(key
             sum _ sum + ord(key[pos])
 
         r_ sum % size

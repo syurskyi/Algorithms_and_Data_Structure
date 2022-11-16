@@ -13,18 +13,18 @@ ___ anagram(word1, word2
 
 ___ anagram2(word1, word2
 	__ l..(word1) !_ l..(word2
-		r_ False
+		r_ F..
 
 	dict1 _ {}
 	dict2 _ {}
 
-	___ i __ range(l..(word1)):
+	___ i __ r..(l..(word1
 		__ word1[i] n.. __ dict1.keys(
 			dict1[word1[i]] _ 1
 		____
 			dict1[word1[i]] +_ 1
 
-	___ i __ range(l..(word2)):
+	___ i __ r..(l..(word2
 		__ word2[i] n.. __ dict2.keys(
 			dict2[word2[i]] _ 1
 		____
@@ -32,9 +32,9 @@ ___ anagram2(word1, word2
 
 	___ key, value __ dict1.items(
 		__ dict2[key] !_ value:
-			r_ False
+			r_ F..
 
-	r_ True
+	r_ T..
 
 print(anagram2("abc", "cba"))
 print(anagram2("cinema", "iceman"))

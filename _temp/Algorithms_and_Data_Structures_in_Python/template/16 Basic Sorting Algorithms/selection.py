@@ -1,11 +1,11 @@
 
 ___ selection_sort(nums
     
-	___ i __ range(l..(nums)-1
+	___ i __ r..(l..(nums)-1
 		
 		index _ i
 		
-		___ j __ range(i+1,l..(nums),1
+		___ j __ r..(i+1,l..(nums),1
 			__ nums[j] < nums[index]:
 				index _ j
 			

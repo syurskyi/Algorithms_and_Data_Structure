@@ -2,7 +2,7 @@
 ___ checkdupsorting(myarray
 	myarray.sort()
         print myarray
-	___ i __ range(0, l..(myarray) - 1
+	___ i __ r..(0, l..(myarray) - 1
                 #print "in for loop:", myarray
                 #print "comparing", myarray[i],"and",myarray[i + 1]  
 		__(myarray[i] __ myarray[i + 1]

@@ -21,7 +21,7 @@ c_ Stack o..
     ___ push e
         items.a..(e)
     ___ pop 
-        r_ items.pop()
+        r_ items.p.. 
     ___ size 
         r_ l..(items)
     ___ peek 
@@ -44,10 +44,10 @@ stack.push(2)
 stack.push('Three')
 
 # %%
-stack.pop()
+stack.p.. 
 
 # %%
-stack.pop()
+stack.p.. 
 
 # %%
 stack.size()

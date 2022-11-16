@@ -2,34 +2,34 @@ c_ MaxStack:
 
     ___ -  
         stack _    # list
-        max _    # list
+        m__ _    # list
 
     ___ push x
         stack.a..(x)
 
-        __ max:
-            __ x >_ max[-1]:
-                max.a..(x)
+        __ m__:
+            __ x >_ m__[-1]:
+                m__.a..(x)
         ____
-            max.a..(x)
+            m__.a..(x)
 
     ___ pop 
-        __ stack[-1] __ max[-1]:
-            max.pop()
-        stack.pop()
+        __ stack[-1] __ m__[-1]:
+            m__.p.. 
+        stack.p.. 
 
     ___ top 
         r_ stack[-1]
 
     ___ getMax 
-        r_ max[-1]
+        r_ m__[-1]
 
 
 ## Example Execution ##
 obj _ MaxStack()
 obj.push(10)
 obj.push(5)
-obj.pop()
+obj.p.. 
 obj.push(20)
 obj.push(15)
 

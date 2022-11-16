@@ -35,8 +35,8 @@ c_ HashTable:
 
         location _ h
 
-        ___ i __ range(1,m
-            __ array[location] __ N.. or array[location].get_student_id() __ -1:
+        ___ i __ r..(1,m
+            __ array[location] __ N.. __ array[location].get_student_id() __ -1:
                 array[location] _ newRecord
                 n+_1
                 r_
@@ -53,7 +53,7 @@ c_ HashTable:
         h _ hash1(key)
         location _ h
 
-        ___ i __ range(1,m
+        ___ i __ r..(1,m
             __ array[location] __ N.. :
                 r_ N..
             __ array[location].get_student_id() __ key:
@@ -64,10 +64,10 @@ c_ HashTable:
 
     ___ display_table 
     
-        ___ i __ range(m
+        ___ i __ r..(m
             print("[",end_''); print(i,end_''); print("]",end_'');
 
-            __ array[i] __ n.. N.. and array[i].get_student_id() !_ -1:
+            __ array[i] __ n.. N.. ___ array[i].get_student_id() !_ -1:
                 print(array[i])
             ____
                 print("___")
@@ -76,7 +76,7 @@ c_ HashTable:
         h _ hash1(key)
         location _ h
 
-        ___ i __ range(1,m
+        ___ i __ r..(1,m
             __ array[location] __ N..:
                 r_ N..
             
@@ -96,7 +96,7 @@ c_ HashTable:
 size _ int(input("Enter initial size of table : "))
 table _ HashTable(size)
 
-_____ True:
+_____ T..:
     print("1.Insert a record")
     print("2.Search a record")
     print("3.Delete a record")
@@ -109,19 +109,19 @@ _____ True:
         name _ input("Enter student name : ")
         aRecord _ studentRecord(id,name)
         table.insert(aRecord)
-    elif option __ 2:
+    ____ option __ 2:
         id _ int(input("Enter a key to be searched : "))
         aRecord _ table.search(id)
         __  aRecord __ N..:
             print("Key not found")
         ____
             print(aRecord)
-    elif option __ 3:
+    ____ option __ 3:
         id _ int(input("Enter a key to be deleted :"))
         table.delete(id)
-    elif option __ 4:
+    ____ option __ 4:
         table.display_table()
-    elif option __ 5:
+    ____ option __ 5:
         break
     ____
         print("Wrong option") 

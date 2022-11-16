@@ -6,13 +6,13 @@ c_ Solution:
         left _ 0
         right _ 0
 
-        palindrome _ [[0]*n ___ _ __ range(n)]
+        palindrome _ [[0]*n ___ _ __ r..(n)]
 
-        ___ j __ range(1,n
-            ___ i __ range(0,j
-                innerIsPalindrome _ palindrome[i+1][j-1] or j-i<_2
-                __(s[i] __ s[j] and innerIsPalindrome
-                    palindrome[i][j] _ True
+        ___ j __ r..(1,n
+            ___ i __ r..(0,j
+                innerIsPalindrome _ palindrome[i+1][j-1] __ j-i<_2
+                __(s[i] __ s[j] ___ innerIsPalindrome
+                    palindrome[i][j] _ T..
                     __(j-i>right-left
                         left _ i
                         right _ j

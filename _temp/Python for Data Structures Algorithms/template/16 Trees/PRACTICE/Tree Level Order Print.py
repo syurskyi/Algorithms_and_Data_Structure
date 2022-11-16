@@ -31,7 +31,7 @@ ___ levelOrderPrint(tree
     _____ l..(queue) !_ 0:
         temp _ deque()
         _____ l..(queue) !_ 0:
-            node _ queue.pop()
+            node _ queue.p.. 
             print(str(node.val) + ' ')
             __ node.left __ n.. N..:
                 temp.a..(tree.left)

@@ -17,22 +17,22 @@ c_ TreeNode:
         r_ rightChild
 
     ___ isLeftChild 
-        r_ parent and parent.leftChild __ self
+        r_ parent ___ parent.leftChild __ self
 
     ___ isRightChild 
-        r_ parent and parent.rightChild __ self
+        r_ parent ___ parent.rightChild __ self
 
     ___ isRoot 
         r_ n.. parent
 
     ___ isLeaf 
-        r_ n.. (rightChild or leftChild)
+        r_ n.. (rightChild __ leftChild)
 
     ___ hasAnyChildren 
-        r_ rightChild or leftChild
+        r_ rightChild __ leftChild
 
     ___ hasBothChildren 
-        r_ rightChild and leftChild
+        r_ rightChild ___ leftChild
 
     ___ replaceNodeDatakey,value,lc,rc
         key _ key
@@ -94,9 +94,9 @@ c_ BinarySearchTree:
 
         __ n.. currentNode:
             r_ N..
-        elif currentNode.key __ key:
+        ____ currentNode.key __ key:
             r_ currentNode
-        elif key < currentNode.key:
+        ____ key < currentNode.key:
             r_ _get(key,currentNode.leftChild)
         ____
             r_ _get(key,currentNode.rightChild)
@@ -106,9 +106,9 @@ c_ BinarySearchTree:
 
     ___ __contains__key
         __ _get(key,root
-            r_ True
+            r_ T..
         ____
-            r_ False
+            r_ F..
 
     ___ deletekey
 
@@ -120,7 +120,7 @@ c_ BinarySearchTree:
                 size _ size-1
             ____
                 raise KeyError('Error, key not in tree')
-        elif size __ 1 and root.key __ key:
+        ____ size __ 1 ___ root.key __ key:
             root _ N..
             size _ size - 1
         ____
@@ -137,7 +137,7 @@ c_ BinarySearchTree:
                 parent.leftChild _ N..
             ____
                 parent.rightChild _ N..
-        elif hasAnyChildren(
+        ____ hasAnyChildren(
             __ hasLeftChild(
 
                 __ isLeftChild(
@@ -187,7 +187,7 @@ c_ BinarySearchTree:
                 currentNode.parent.leftChild _ N..
             ____
                 currentNode.parent.rightChild _ N..
-        elif currentNode.hasBothChildren( #interior
+        ____ currentNode.hasBothChildren( #interior
 
             succ _ currentNode.findSuccessor()
             succ.spliceOut()
@@ -199,7 +199,7 @@ c_ BinarySearchTree:
                 __ currentNode.isLeftChild(
                     currentNode.leftChild.parent _ currentNode.parent
                     currentNode.parent.leftChild _ currentNode.leftChild
-                elif currentNode.isRightChild(
+                ____ currentNode.isRightChild(
                     currentNode.leftChild.parent _ currentNode.parent
                     currentNode.parent.rightChild _ currentNode.leftChild
                 ____
@@ -213,7 +213,7 @@ c_ BinarySearchTree:
                 __ currentNode.isLeftChild(
                     currentNode.rightChild.parent _ currentNode.parent
                     currentNode.parent.leftChild _ currentNode.rightChild
-                elif currentNode.isRightChild(
+                ____ currentNode.isRightChild(
                     currentNode.rightChild.parent _ currentNode.parent
                     currentNode.parent.rightChild _ currentNode.rightChild
                 ____

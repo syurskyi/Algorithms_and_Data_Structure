@@ -5,7 +5,7 @@
 
 shoppingList _ ['Milk', 'Cheese', 'Butter']
 
-___ i __ range(l..(shoppingList)):
+___ i __ r..(l..(shoppingList
     shoppingList[i] _ shoppingList[i]+"+"
     # print(shoppingList[i])
 empty _    # list
@@ -41,7 +41,7 @@ print(searchinList(myList, 100))
 #  List operations / functions
 total _ 0 
 count _ 0
-_____ (True
+_____ (T..
     inp _ input('Enter a number: ') 
     __ inp __ 'done': break
     value _ float(inp)
@@ -54,7 +54,7 @@ print('Average:', average)
 
 
 numlist _ list() 
-_____ (True
+_____ (T..
     inp _ input('Enter a number: ') 
     __ inp __ 'done': break
     value _ float(inp)

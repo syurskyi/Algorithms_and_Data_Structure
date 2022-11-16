@@ -40,9 +40,9 @@ c_ binTree:
     ___ _find data, node
         __(data __ node.v
             r_ node
-        elif(data < node.v and node.l !_ N..
+        ____(data < node.v ___ node.l !_ N..
             _find(data, node.l)
-        elif(data > node.v and node.r !_ N..
+        ____(data > node.v ___ node.r !_ N..
             _find(data, node.r)
 
     ___ deleteTree 
@@ -64,15 +64,15 @@ ___ checkwhetheritsabintree(root
         __ root __ N..:
                   r_ 1
         # false if left is > than root
-        __ root.l !_ N.. and root.l.v > root.v:
+        __ root.l !_ N.. ___ root.l.v > root.v:
                   r_ 0
 
         # false if right is < than root
-        __ root.r !_ N.. and root.r.v < root.v:
+        __ root.r !_ N.. ___ root.r.v < root.v:
                   r_ 0
 
         # false if, recursively, the left or right is not a BST
-        __ n.. checkwhetheritsabintree(root.l) or n.. checkwhetheritsabintree(root.r
+        __ n.. checkwhetheritsabintree(root.l) __ n.. checkwhetheritsabintree(root.r
                   r_ 0
 
         # passing all that, it's a BST
@@ -85,7 +85,7 @@ ___ levelOrder(root
     items.insert(count,root)
     elements _""
     _____ items !_    # list:
-        temp _ items.pop()
+        temp _ items.p.. 
         elements_ elements+str(temp.v)+ " "
         __ temp.l!_None:
             items.insert(0,temp.l)
@@ -100,7 +100,7 @@ ___ findsizeusingiteration(root
     items.insert(count,root)
     elements _""
     _____ items !_    # list:
-        temp _ items.pop()
+        temp _ items.p.. 
         count +_ 1
         __ temp.l!_None:
             items.insert(0,temp.l)
@@ -121,7 +121,7 @@ ___ printReverse(root
     items.insert(count,root)
     elements _""
     _____ items !_    # list:
-        temp _ items.pop()
+        temp _ items.p.. 
         elements_ str(temp.v)+ " " + elements
         __ temp.l!_None:
             items.insert(0,temp.l)
@@ -133,7 +133,7 @@ ___ printReverse(root
 ___ maximumDepthOfTree(root
         __ root __ N..:
             r_ 0
-        r_ max(maximumDepthOfTree(root.l), maximumDepthOfTree(root.r)) + 1
+        r_ m__(maximumDepthOfTree(root.l), maximumDepthOfTree(root.r)) + 1
 
 
 ___ deepestNode(root
@@ -142,7 +142,7 @@ ___ deepestNode(root
     items.insert(count,root)
     elements _""
     _____ items !_    # list:
-        temp _ items.pop()
+        temp _ items.p.. 
         elements_ str(temp.v)+ " " + elements
         __ temp.l!_None:
             items.insert(0,temp.l)
@@ -160,8 +160,8 @@ ___ countLeaves(root
     items.insert(count,root)
     elements _""
     _____ items !_    # list:
-        temp _ items.pop()
-        __ temp.l __ N.. and temp.r __ N..:
+        temp _ items.p.. 
+        __ temp.l __ N.. ___ temp.r __ N..:
             count +_ 1
         __ temp.l!_None:
             items.insert(0,temp.l)
@@ -176,8 +176,8 @@ ___ countFullNodes(root
     count_0
     items.insert(count,root)
     _____ items !_    # list:
-        temp _ items.pop()
-        __ temp.l __ n.. N.. and temp.r __ n.. N..:
+        temp _ items.p.. 
+        __ temp.l __ n.. N.. ___ temp.r __ n.. N..:
             count +_ 1
         __ temp.l!_None:
             items.insert(0,temp.l)
@@ -193,9 +193,9 @@ ___ countHalfNodes(root
     count_0
     items.insert(count,root)
     _____ items !_    # list:
-        temp _ items.pop()
-        __ (temp.l __ N.. and temp.r __ n.. N..) or \
-                        (temp.l __ n.. N.. and temp.r __ N..
+        temp _ items.p.. 
+        __ (temp.l __ N.. ___ temp.r __ n.. N..) __ \
+                        (temp.l __ n.. N.. ___ temp.r __ N..
             count +_ 1
         __ temp.l!_None:
             items.insert(0,temp.l)
@@ -214,7 +214,7 @@ ___ diaTree(root
 
         __(left + right > ptr
               ptr _ left + right
-        r_ max(left, right) + 1
+        r_ m__(left, right) + 1
 
 
 
@@ -246,19 +246,19 @@ ___ getthepath(root, val, path, paths
     print "paths", paths
 
     __ n.. root:
-        r_ False
+        r_ F..
 
-    __ n.. root.l and n.. root.r:
+    __ n.. root.l ___ n.. root.r:
         __ root.v __ val:
             path.a..(root.v)
             paths.a..(path)
-            r_ True
+            r_ T..
         ____
-            r_ False
+            r_ F..
 
     left _ getthepath(root.l, val - root.v, path + [root.v], paths)
     right _ getthepath(root.r, val - root.v, path + [root.v], paths)
-    r_ left or right
+    r_ left __ right
 
 
 ___ checkwhetherpathhassum(root, val
@@ -274,7 +274,7 @@ ___ sumOfNodes(root
     items.insert(count,root)
     sum_0
     _____ items !_    # list:
-        temp _ items.pop()
+        temp _ items.p.. 
         sum +_ temp.v
         __ temp.l!_None:
             items.insert(0,temp.l)
@@ -286,18 +286,18 @@ ___ sumOfNodes(root
     print "Total sum of all nodes is ",sum
 
 ___ compareTrees(r1, r2
-        __ n.. (r1.l) and n.. (r1.r) and n.. (r2.l) and \
-                n.. (r2.r) and r1.v __ r2.v:
-                r_ True
+        __ n.. (r1.l) ___ n.. (r1.r) ___ n.. (r2.l) ___ \
+                n.. (r2.r) ___ r1.v __ r2.v:
+                r_ T..
 
-        __ (r1.v !_ r2.v) or (r1.l and n.. r2.l) or \
-                (n.. r1.l and r2.l) or (r1.r and n.. r2.r) \
-                or (n.. r1.r and r2.r
-                r_ False
+        __ (r1.v !_ r2.v) __ (r1.l ___ n.. r2.l) __ \
+                (n.. r1.l ___ r2.l) __ (r1.r ___ n.. r2.r) \
+                __ (n.. r1.r ___ r2.r
+                r_ F..
 
-        l _ compareTrees(r1.l, r2.l) __ r1.l and r2.l else True
-        r _ compareTrees(r1.r, r2.r) __ r1.r and r2.r else True
-        r_ l and r
+        l _ compareTrees(r1.l, r2.l) __ r1.l ___ r2.l ____ T..
+        r _ compareTrees(r1.r, r2.r) __ r1.r ___ r2.r ____ T..
+        r_ l ___ r
 
 
 

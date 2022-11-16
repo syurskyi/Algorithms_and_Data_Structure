@@ -5,7 +5,7 @@ num_list _ [1, 2, 3, 4, 5, 6, 7]
 
 ___ rondomFunction(num_list
     total _ 0  # O(1)
-    all_integer _ True  # O(1)
+    all_integer _ T..  # O(1)
 
     ___ num __ num_list:
         print(num)  # O(n)

@@ -16,7 +16,7 @@ c_ Queue:
         items.insert(0,item)
 
     ___ dequeue
-        r_ items.pop()
+        r_ items.p.. 
 
     ___ size
         r_ l..(items)

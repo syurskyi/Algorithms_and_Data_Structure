@@ -7,7 +7,7 @@
 ___ solution(A, B
     last_end_segment _ -1
     chosen_count _ 0
-    ___ i __ range(l..(A)):
+    ___ i __ r..(l..(A
         __ A[i] > last_end_segment:
             chosen_count +_ 1
             last_end_segment _ B[i]

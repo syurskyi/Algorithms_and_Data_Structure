@@ -19,7 +19,7 @@ ___ i __ newTuple:
     print(i)
 
 
-___ index __ range(l..(newTuple)):
+___ index __ r..(l..(newTuple
     print(newTuple[index])
 
 

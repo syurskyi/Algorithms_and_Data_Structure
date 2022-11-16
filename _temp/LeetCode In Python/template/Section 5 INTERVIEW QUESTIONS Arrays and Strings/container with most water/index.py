@@ -5,7 +5,7 @@ c_ Solution:
 		r _ l..(height)-1
 
 		_____(l<r
-			maxarea _ max(maxarea, min(height[l],height[r])*(r-l))
+			maxarea _ m__(maxarea, min(height[l],height[r])*(r-l))
 			__(height[l]<height[r]
 				l+_1
 			____

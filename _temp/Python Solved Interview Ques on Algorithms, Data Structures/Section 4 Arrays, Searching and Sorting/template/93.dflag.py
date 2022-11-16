@@ -16,7 +16,7 @@ ___ dflag(myarray
                 currentIndex +_ 1
                 zeroIndex +_ 1
         
-        elif myarray[currentIndex] __ 2:
+        ____ myarray[currentIndex] __ 2:
             __ currentIndex < twoIndex:
                 #print "currentIndex:",currentIndex,"is < then twoIndex:",twoIndex
                 #print "myarray[currentIndex:",currentIndex,"] is 2, so exchanging myarray[",twoIndex,"] and myarray[",currentIndex,"]:",myarray[twoIndex], "with", myarray[currentIndex]

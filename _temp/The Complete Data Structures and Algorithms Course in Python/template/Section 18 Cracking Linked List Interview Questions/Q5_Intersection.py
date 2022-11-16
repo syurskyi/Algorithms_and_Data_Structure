@@ -7,19 +7,19 @@ from LinkedList import LinkedList, Node
 
 ___ intersection(llA, llB
     __ llA.tail __ n.. llB.tail:
-        r_ False
+        r_ F..
     
     lenA _ l..(llA)
     lenB _ l..(llB)
 
-    shorter _ llA __ lenA < lenB else llB
-    longer _ llB __ lenA < lenB else llA
+    shorter _ llA __ lenA < lenB ____ llB
+    longer _ llB __ lenA < lenB ____ llA
 
     diff _ l..(longer) - l..(shorter)
     longerNode _ longer.head
     shorterNode _ shorter.head
 
-    ___ i __ range(diff
+    ___ i __ r..(diff
         longerNode _ longerNode.next
     
     _____ shorterNode __ n.. longerNode:

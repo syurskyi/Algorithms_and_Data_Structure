@@ -7,11 +7,11 @@ c_ Solution:
         dp _ [0] * n
         dp[0] _ nums[0]
 
-        ___ i __ range(1,n
+        ___ i __ r..(1,n
             __(i__1
-                dp[i] _ max(nums[0],nums[1])
+                dp[i] _ m__(nums[0],nums[1])
             ____
-                dp[i] _ max(dp[i-1], dp[i-2]+nums[i])
+                dp[i] _ m__(dp[i-1], dp[i-2]+nums[i])
             
         r_ dp[-1]
 

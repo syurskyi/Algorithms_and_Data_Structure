@@ -1,16 +1,16 @@
 c_ Solution:
 
     ___ backtracking ans, m, digits, combination, index
-        __(index > l..(digits)):
+        __(index > l..(digits
             r_
-        __(l..(combination) __ l..(digits)):
+        __(l..(combination) __ l..(digits
             ans.a..(combination[:])
             r_
 
         currentDigit _ digits[index]
         curString _ m[currentDigit]
 
-        ___ i __ range(l..(curString)):
+        ___ i __ r..(l..(curString
             backtracking(ans, m, digits, combination +
                               curString[i], index+1)
 

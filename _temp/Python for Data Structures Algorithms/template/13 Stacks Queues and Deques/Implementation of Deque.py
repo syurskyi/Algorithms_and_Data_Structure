@@ -29,7 +29,7 @@ c_ Deque:
         items.insert(0,item)
 
     ___ removeFront 
-        r_ items.pop()
+        r_ items.p.. 
 
     ___ removeRear 
         r_ items.pop(0)

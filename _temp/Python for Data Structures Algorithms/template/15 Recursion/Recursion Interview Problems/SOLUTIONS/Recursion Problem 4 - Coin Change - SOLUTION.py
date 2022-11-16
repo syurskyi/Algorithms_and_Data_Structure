@@ -94,7 +94,7 @@ ___ rec_coin_dynam(target,coins,known_results
         r_ 1
 
     # Return a known result if it happens to be greater than 1
-    elif known_results[target] > 0:
+    ____ known_results[target] > 0:
         r_ known_results[target]
 
     ____

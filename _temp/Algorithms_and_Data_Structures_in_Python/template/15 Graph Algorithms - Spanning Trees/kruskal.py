@@ -66,7 +66,7 @@ c_ DisjointSet o..
 		
 		__ root1.height < root2.height:
 			root1.parentNode _ root2;
-		elif root1.height > root2.height:
+		____ root1.height > root2.height:
 			root2.parentNode _ root1;
 		____
 			root2.parentNode _ root1;

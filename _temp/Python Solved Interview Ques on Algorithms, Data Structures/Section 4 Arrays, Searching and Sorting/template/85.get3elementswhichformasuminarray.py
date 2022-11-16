@@ -4,7 +4,7 @@ ___ getthreeelementswithsum(myarray, sum
 	n _ l..(myarray)
 	leftindex _ 0
 	rightindex _ n - 1
-	___ i __ range(0, n - 2
+	___ i __ r..(0, n - 2
                 #print "start for loop>>"
                 #print "array:", myarray
 		leftindex _ i + 1
@@ -24,7 +24,7 @@ ___ getthreeelementswithsum(myarray, sum
 				print myarray[i], " + ", myarray[leftindex], " + ", myarray[rightindex], " = ", sum	
                                 #print "exiting" 	
 				r_ 1
-			elif(myarray[i] + myarray[leftindex] + myarray[rightindex] < sum
+			____(myarray[i] + myarray[leftindex] + myarray[rightindex] < sum
 				leftindex +_ 1
                                 #print "sum is lesser then",sum,"so move leftindex index from",leftindex-1,"to",leftindex 
 			____

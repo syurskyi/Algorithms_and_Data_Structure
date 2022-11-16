@@ -12,7 +12,7 @@ c_ BSTNode:
 ___ insertNode(rootNode, nodeValue
     __ rootNode.data __ N..:
         rootNode.data _ nodeValue
-    elif nodeValue <_ rootNode.data:
+    ____ nodeValue <_ rootNode.data:
         __ rootNode.leftChild __ N..:
             rootNode.leftChild _ BSTNode(nodeValue)
         ____
@@ -51,7 +51,7 @@ ___ levelOrderTraversal(rootNode
     ____
         customQueue _ queue.Queue()
         customQueue.enqueue(rootNode)
-        _____ n..(customQueue.isEmpty()):
+        _____ n..(customQueue.isEmpty(
             root _ customQueue.dequeue()
             print(root.value.data)
             __ root.value.leftChild __ n.. N..:
@@ -63,7 +63,7 @@ ___ levelOrderTraversal(rootNode
 ___ searchNode(rootNode, nodeValue
     __ rootNode.data __ nodeValue:
         print("The value is found")
-    elif nodeValue < rootNode.data:
+    ____ nodeValue < rootNode.data:
         __ rootNode.leftChild.data __ nodeValue:
             print("The value is found")
         ____
@@ -87,7 +87,7 @@ ___ deleteNode(rootNode, nodeValue
         r_ rootNode
     __ nodeValue < rootNode.data:
         rootNode.leftChild _ deleteNode(rootNode.leftChild, nodeValue)
-    elif nodeValue > rootNode.data:
+    ____ nodeValue > rootNode.data:
         rootNode.rightChild _ deleteNode(rootNode.rightChild, nodeValue)
     ____
         __ rootNode.leftChild __ N..:

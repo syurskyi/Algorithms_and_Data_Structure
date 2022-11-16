@@ -12,15 +12,15 @@ c_ MultiStack:
     
     ___ isFull stacknum
         __ sizes[stacknum] __ stacksize:
-            r_ True
+            r_ T..
         ____
-            r_ False
+            r_ F..
     
     ___ isEmpty stacknum
         __ sizes[stacknum] __ 0:
-            r_ True
+            r_ T..
         ____
-            r_ False
+            r_ F..
     
     ___ indexOfTop stacknum
         offset _ stacknum * stacksize

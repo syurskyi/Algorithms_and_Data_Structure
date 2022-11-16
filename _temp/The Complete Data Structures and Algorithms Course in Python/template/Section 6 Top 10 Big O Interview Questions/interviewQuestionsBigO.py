@@ -25,8 +25,8 @@ ___ printPairs(array
 
 #Question3
 ___ printUnorderedPairs(array
-    ___ i __ range(0,l..(array)):
-        ___ j __ range(i+1,l..(array)):
+    ___ i __ r..(0,l..(array
+        ___ j __ r..(i+1,l..(array
             print(array[i] + "," + array[j])
 
 
@@ -35,8 +35,8 @@ ___ printUnorderedPairs(array
 
 #Question4
 ___ printUnorderedPairs(arrayA, arrayB
-    ___ i __ range(l..(arrayA)):
-        ___ j __ range(l..(arrayB)):
+    ___ i __ r..(l..(arrayA
+        ___ j __ r..(l..(arrayB
             __ arrayA[i] < arrayB[j]:
                 print(str(arrayA[i]) + "," + str(arrayB[j]))
 
@@ -47,9 +47,9 @@ arrayB _ [2,6,7,8]
 
 #Question5
 ___ printUnorderedPairs(arrayA, arrayB
-    ___ i __ range(l..(arrayA)):
-        ___ j __ range(l..(arrayB)):
-            ___ k __ range(0,100000
+    ___ i __ r..(l..(arrayA
+        ___ j __ r..(l..(arrayB
+            ___ k __ r..(0,100000
                 print(str(arrayA[i]) + "," + str(arrayB[j]))
 
 # printUnorderedPairss(arrayA,arrayB)
@@ -57,7 +57,7 @@ ___ printUnorderedPairs(arrayA, arrayB
 
 #Question6
 ___ reverse(array
-    ___ i __ range(0,int(l..(array)/2)):
+    ___ i __ r..(0,int(l..(array)/2
         other _ l..(array)-i-1
         temp _ array[i]
         array[i] _ array[other]
@@ -71,7 +71,7 @@ reverse(arrayA)
 ___ factorial(n
     __ n < 0:
         r_ -1
-    elif n __ 0:
+    ____ n __ 0:
         r_ 1
     ____
         r_ n * factorial(n-1)
@@ -80,13 +80,13 @@ print(factorial(3))
 
 #Question9
 ___ allFib(n
-    ___ i __ range(n
+    ___ i __ r..(n
         print(str(i)+":, " + str(fib(i)))
 
 ___ fib(n
     __ n <_ 0:
         r_ 0
-    elif n __ 1:
+    ____ n __ 1:
         r_ 1
     r_ fib(n-1) + fib(n-2)
 
@@ -98,7 +98,7 @@ ___ powersOf2(n
     # print("n:"+str(n))
     __ n < 1:
         r_ 0
-    elif n __ 1:
+    ____ n __ 1:
         print(1)
         r_ 1
     ____

@@ -23,9 +23,9 @@ c_ BinarySearchTree:
     ___ _insertp, x
         __ p __ N..:
             p _ Node(x)
-        elif x < p.info :
+        ____ x < p.info :
             p.lchild _ _insert(p.lchild, x) 
-        elif x > p.info :
+        ____ x > p.info :
             p.rchild _ _insert(p.rchild, x)   
         ____
             print(x, " already present in the tree") 
@@ -38,7 +38,7 @@ c_ BinarySearchTree:
             par _ p
             __ x < p.info :
                 p _ p.lchild
-            elif x > p.info:
+            ____ x > p.info:
                 p _ p.rchild
             ____
                 print(x, " already present in the tree")
@@ -48,7 +48,7 @@ c_ BinarySearchTree:
 
         __ par __ N..:
             root _ temp 
-        elif x < par.info:
+        ____ x < par.info:
             par.lchild _ temp 
         ____
             par.rchild _ temp 
@@ -70,7 +70,7 @@ c_ BinarySearchTree:
         _____ p __ n.. N..:
             __ x < p.info :
                 p _ p.lchild  # Move to left child
-            elif x > p.info:
+            ____ x > p.info:
                 p _ p.rchild  # Move to right child 
             ____   # x found
                 r_ true 
@@ -86,11 +86,11 @@ c_ BinarySearchTree:
          
         __ x < p.info:  # delete from left subtree
             p.lchild _ _delete(p.lchild, x) 
-        elif x > p.info: # delete from right subtree
+        ____ x > p.info: # delete from right subtree
             p.rchild _ _delete(p.rchild, x)
         ____
             # key to be deleted is found
-            __ p.lchild __ n.. N..  and p.rchild __ n.. N..:  # 2 children
+            __ p.lchild __ n.. N..  ___ p.rchild __ n.. N..:  # 2 children
                 s _ p.rchild
                 _____ s.lchild __ n.. N..:
                     s _ s.lchild
@@ -125,7 +125,7 @@ c_ BinarySearchTree:
         # Case C: 2 children 
         # Find inorder successor and its parent 
 
-        __ p.lchild __ n.. N.. and p.rchild __ n.. N..:
+        __ p.lchild __ n.. N.. ___ p.rchild __ n.. N..:
             ps _ p
             s _ p.rchild
 
@@ -144,7 +144,7 @@ c_ BinarySearchTree:
 
         __ par __ N..:   # node to be deleted is root node
             root _ ch
-        elif p __ par.lchild: # node is left child of its parent
+        ____ p __ par.lchild: # node is left child of its parent
             par.lchild _ ch
         ____       # node is right child of its parent
             par.rchild _ ch 
@@ -196,7 +196,7 @@ c_ BinarySearchTree:
         _display(p.rchild, level+1)
         print()
 
-        ___ i __ range(level
+        ___ i __ r..(level
             print("    ", end_'')
         print(p.info)
         _display(p.lchild, level+1) 
@@ -253,7 +253,7 @@ c_ BinarySearchTree:
             
 bst _ BinarySearchTree()
 
-_____ True:
+_____ T..:
     print("1.Display Tree") 
     print("2.Search(Iterative)")
     print("3.Search(Recursive)")
@@ -274,47 +274,47 @@ _____ True:
     
     __ choice __ 1:
         bst.display()
-    elif choice __ 2:
+    ____ choice __ 2:
         x _ int(input("Enter the key to be searched : "))
         __ bst.search1(x
             print("Key found")
         ____
             print("Key not found")
-    elif choice __ 3:
+    ____ choice __ 3:
         x _ int(input("Enter the key to be searched : "))
         __ bst.search(x
             print("Key found")
         ____
             print("Key not found")
-    elif choice __ 4:
+    ____ choice __ 4:
         x _ int(input("Enter the key to be inserted : "))
         bst.insert1(x)
-    elif choice __ 5:
+    ____ choice __ 5:
         x _ int(input("Enter the key to be inserted : "))
         bst.insert(x)
-    elif choice __ 6:
+    ____ choice __ 6:
         x _ int(input("Enter the element to be deleted : ")) 
         bst.delete1(x)
-    elif choice __ 7:
+    ____ choice __ 7:
         x _ int(input("Enter the element to be deleted : ")) 
         bst.delete(x)
-    elif choice __ 8:
+    ____ choice __ 8:
         print("Minimum key is " , bst.min1())
-    elif choice __ 9:
+    ____ choice __ 9:
         print("Minimum key is " , bst.min2())
-    elif choice __ 10:
+    ____ choice __ 10:
         print("Maximum key is " , bst.max1())
-    elif choice __ 11:
+    ____ choice __ 11:
         print("Maximum key is " , bst.max2())
-    elif choice __ 12:
+    ____ choice __ 12:
         bst.preorder()
-    elif choice __ 13:
+    ____ choice __ 13:
         bst.inorder()
-    elif choice __ 14:
+    ____ choice __ 14:
         bst.postorder()
-    elif choice __ 15:
+    ____ choice __ 15:
         print("Height of tree is " , bst.height())
-    elif choice __ 16:
+    ____ choice __ 16:
         break
     ____
         print("Wrong choice") 

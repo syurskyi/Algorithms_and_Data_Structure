@@ -3,7 +3,7 @@ c_ Node(
     ___ -  value
         value _ value
         adjacentlist _    # list
-        visited _ False
+        visited _ F..
 
 c_ Graph(
     pass

@@ -3,12 +3,12 @@ c_ Solution:
         
         __ n<2:
             r_ 0
-        isPrime _ [True]*n
-        isPrime[0] _ isPrime[1] _ False
+        isPrime _ [T..]*n
+        isPrime[0] _ isPrime[1] _ F..
         
-        ___ i __ range(2,math.ceil(math.sqrt(n))):
+        ___ i __ r..(2,math.ceil(math.sqrt(n))):
             __ isPrime[i]:
-                ___ multiples_of_i __ range(i*i,n,i
-                    isPrime[multiples_of_i] _ False
+                ___ multiples_of_i __ r..(i*i,n,i
+                    isPrime[multiples_of_i] _ F..
         
         r_ sum(isPrime)

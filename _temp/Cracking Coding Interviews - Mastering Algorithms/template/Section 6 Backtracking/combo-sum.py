@@ -31,12 +31,12 @@ import copy
 ___ combos(candidates, target, path, cur_sum, candidate_index
 	__ cur_sum __ target:
 		r_ [path]
-	elif cur_sum > target:
+	____ cur_sum > target:
 		r_    # list
 
 	output _    # list
 
-	___ i __ range(candidate_index, l..(candidates)):
+	___ i __ r..(candidate_index, l..(candidates
 		cur _ candidates[i]
 		copy_path _ copy.deepcopy(path)
 		copy_path.a..(cur)

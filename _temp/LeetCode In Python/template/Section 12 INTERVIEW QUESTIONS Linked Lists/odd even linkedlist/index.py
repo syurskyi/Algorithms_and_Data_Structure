@@ -13,7 +13,7 @@ c_ Solution:
         even _ odd.next
         evenList _ even
 
-        _____(even and even.next
+        _____(even ___ even.next
             odd.next _ even.next
             odd _ odd.next
 

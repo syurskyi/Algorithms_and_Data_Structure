@@ -6,6 +6,6 @@ c_ Solution:
 
         ___ num __ nums:
             __ m[num]:
-                r_ True
+                r_ T..
             m[num]+_1
-        r_ False
+        r_ F..

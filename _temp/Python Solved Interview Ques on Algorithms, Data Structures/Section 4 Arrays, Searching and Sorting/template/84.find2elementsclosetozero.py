@@ -21,7 +21,7 @@ ___ gettwoelementsclosesttozero(myarray
                 #print "Left index:", left
                 #print "Right index:", right
                 #print "Sum:", sum, "of", myarray[left],"+",myarray[right]
-		__(abs(minimumSum) > abs(sum)):
+		__(abs(minimumSum) > abs(sum
 			minimumSum _ sum
 			minimumLeft _ left
 			minimumRight _ right

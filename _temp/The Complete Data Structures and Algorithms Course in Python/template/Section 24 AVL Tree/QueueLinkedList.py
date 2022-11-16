@@ -36,9 +36,9 @@ c_ Queue:
     
     ___ isEmpty
         __ linkedList.head __ N..:
-            r_ True
+            r_ T..
         ____
-            r_ False
+            r_ F..
     
     ___ dequeue
         __ isEmpty(

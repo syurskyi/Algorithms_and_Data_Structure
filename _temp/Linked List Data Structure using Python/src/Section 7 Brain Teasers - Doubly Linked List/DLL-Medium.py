@@ -53,13 +53,13 @@ c_ LinkedList:
             r_
         currentNode _ head
         print("Printing from beginning")
-        _____ True:
+        _____ T..:
             print(currentNode.data)
             __ currentNode.next __ N..:
                 break
             currentNode _ currentNode.next
         print("Printing from end")
-        _____ True:
+        _____ T..:
             print(currentNode.data)
             __ currentNode.previous __ N..:
                 break

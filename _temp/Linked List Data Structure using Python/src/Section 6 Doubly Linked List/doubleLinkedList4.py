@@ -25,7 +25,7 @@ c_ LinkedList:
 
     ___ insertAt newNode, position
         # 10->30->20 || position +> 1
-        __ position < 0 or position > listLength(
+        __ position < 0 __ position > listLength(
             print("Invalid position")
         __ position __ listLength(
             insertEnd(newNode)
@@ -35,7 +35,7 @@ c_ LinkedList:
             r_
         currentNode _ head
         currentPosition _ 0
-        _____ True:
+        _____ T..:
             __ currentPosition __ position:
                 currentNode.previous.next _ newNode
                 newNode.previous _ currentNode.previous
@@ -51,7 +51,7 @@ c_ LinkedList:
             head _ newNode
             r_
         currentNode _ head
-        _____ True:
+        _____ T..:
             __ currentNode.next __ N..:
                 break
             currentNode _ currentNode.next
@@ -66,7 +66,7 @@ c_ LinkedList:
     ___ deleteAt position
         currentNode _ head
         currentPosition _ 0
-        _____ True:
+        _____ T..:
             __ currentPosition __ position:
                 currentNode.previous.next _ currentNode.next
                 currentNode.next.previous _ currentNode.previous
@@ -78,7 +78,7 @@ c_ LinkedList:
 
     ___ deleteEnd
         currentNode _ head
-        _____ True:
+        _____ T..:
             __ currentNode.next.next __ N..:
                 currentNode.next.previous _ N..
                 currentNode.next.next _ N..
@@ -92,7 +92,7 @@ c_ LinkedList:
             r_
         currentNode _ head
         print("Printing from the beginning")
-        _____ True:
+        _____ T..:
             __ currentNode __ N..:
                 break
             print(currentNode.data)
@@ -100,7 +100,7 @@ c_ LinkedList:
                 reverseTraversalNode _ currentNode
             currentNode _ currentNode.next
         print("Printing form end")
-        _____ True:
+        _____ T..:
             __ reverseTraversalNode __ N..:
                 break
             print(reverseTraversalNode.data)

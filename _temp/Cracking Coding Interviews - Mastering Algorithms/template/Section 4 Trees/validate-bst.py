@@ -31,11 +31,11 @@ root2 _ Node(5, Node(1), Node(4, Node(3), Node(6)))
 
 ___ is_valid_bst_helper(root, low, high
 	__ root __ N..:
-		r_ True
-	elif high !_ N.. and root.val >_ high or low !_ N.. and root.val <_ low:
-		r_ False
+		r_ T..
+	____ high !_ N.. ___ root.val >_ high __ low !_ N.. ___ root.val <_ low:
+		r_ F..
 
-	r_ is_valid_bst_helper(root.left, low, root.val) and is_valid_bst_helper(root.right, root.val, high)
+	r_ is_valid_bst_helper(root.left, low, root.val) ___ is_valid_bst_helper(root.right, root.val, high)
 
 ___ is_valid_bst(root
 	r_ is_valid_bst_helper(root, N.., N..)

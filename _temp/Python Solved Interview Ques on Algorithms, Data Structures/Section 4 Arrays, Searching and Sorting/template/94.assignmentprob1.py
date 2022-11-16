@@ -4,7 +4,7 @@ ___ func(numArray, value
     _____ l <_ h:
         m _ (l + h) // 2
         __ numArray[m] > value: h _ m - 1
-        elif numArray[m] < value: l _ m + 1
+        ____ numArray[m] < value: l _ m + 1
         ____ r_ m
     r_ -1
 	

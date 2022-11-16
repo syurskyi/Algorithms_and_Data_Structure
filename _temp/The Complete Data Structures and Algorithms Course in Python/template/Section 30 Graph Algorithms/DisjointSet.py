@@ -22,7 +22,7 @@ c_ DisjointSet:
         yroot _ find(y)
         __ rank[xroot] < rank[yroot]:
             parent[xroot] _ yroot
-        elif rank[xroot] > rank[yroot]:
+        ____ rank[xroot] > rank[yroot]:
             parent[yroot] _ xroot
         ____
             parent[yroot] _ xroot

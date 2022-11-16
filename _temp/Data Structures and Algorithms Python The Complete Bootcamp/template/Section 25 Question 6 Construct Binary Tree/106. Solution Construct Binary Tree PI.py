@@ -19,7 +19,7 @@ c_ Solution:
         __ leftPointer >_ rightPointer:
             r_ N..
 
-        num _ preorder.pop()
+        num _ preorder.p.. 
         root _ TreeNode(num)
         idx _ memory.get(num)
 

@@ -37,7 +37,7 @@ ___ levelOrderTraversal(rootNode
     ____
         customQueue _ queue.Queue()
         customQueue.enqueue(rootNode)
-        _____ n..(customQueue.isEmpty()):
+        _____ n..(customQueue.isEmpty(
             root _ customQueue.dequeue()
             print(root.value.data)
             __ root.value.leftChild __ n.. N..:
@@ -49,7 +49,7 @@ ___ levelOrderTraversal(rootNode
 ___ searchNode(rootNode, nodeValue
     __ rootNode.data __ nodeValue:
         print("The value is found")
-    elif nodeValue < rootNode.data:
+    ____ nodeValue < rootNode.data:
         __ rootNode.leftChild.data __ nodeValue:
             print("The value is found")
         ____
@@ -69,16 +69,16 @@ ___ rightRotate(disbalanceNode
     newRoot _ disbalanceNode.leftChild
     disbalanceNode.leftChild _ disbalanceNode.leftChild.rightChild
     newRoot.rightChild _ disbalanceNode
-    disbalanceNode.height _ 1 + max(getHeight(disbalanceNode.leftChild), getHeight(disbalanceNode.rightChild))
-    newRoot.height _ 1 + max(getHeight(newRoot.leftChild), getHeight(newRoot.rightChild))
+    disbalanceNode.height _ 1 + m__(getHeight(disbalanceNode.leftChild), getHeight(disbalanceNode.rightChild))
+    newRoot.height _ 1 + m__(getHeight(newRoot.leftChild), getHeight(newRoot.rightChild))
     r_ newRoot
 
 ___ leftRotate(disbalanceNode
     newRoot _ disbalanceNode.rightChild
     disbalanceNode.rightChild _ disbalanceNode.rightChild.leftChild
     newRoot.leftChild _ disbalanceNode
-    disbalanceNode.height _ 1 + max(getHeight(disbalanceNode.leftChild), getHeight(disbalanceNode.rightChild))
-    newRoot.height _ 1 + max(getHeight(newRoot.leftChild), getHeight(newRoot.rightChild))
+    disbalanceNode.height _ 1 + m__(getHeight(disbalanceNode.leftChild), getHeight(disbalanceNode.rightChild))
+    newRoot.height _ 1 + m__(getHeight(newRoot.leftChild), getHeight(newRoot.rightChild))
     r_ newRoot
 
 ___ getBalance(rootNode
@@ -89,43 +89,43 @@ ___ getBalance(rootNode
 ___ insertNode(rootNode, nodeValue
     __ n.. rootNode:
         r_ AVLNode(nodeValue)
-    elif nodeValue < rootNode.data:
+    ____ nodeValue < rootNode.data:
         rootNode.leftChild _ insertNode(rootNode.leftChild, nodeValue)
     ____
         rootNode.rightChild _ insertNode(rootNode.rightChild, nodeValue)
     
-    rootNode.height _ 1 + max(getHeight(rootNode.leftChild), getHeight(rootNode.rightChild))
+    rootNode.height _ 1 + m__(getHeight(rootNode.leftChild), getHeight(rootNode.rightChild))
     balance _ getBalance(rootNode)
-    __ balance > 1 and nodeValue < rootNode.leftChild.data:
+    __ balance > 1 ___ nodeValue < rootNode.leftChild.data:
         r_ rightRotate(rootNode)
-    __ balance > 1 and nodeValue > rootNode.leftChild.data:
+    __ balance > 1 ___ nodeValue > rootNode.leftChild.data:
         rootNode.leftChild _ leftRotate(rootNode.leftChild)
         r_ rightRotate(rootNode)
-    __ balance < -1 and nodeValue > rootNode.rightChild.data:
+    __ balance < -1 ___ nodeValue > rootNode.rightChild.data:
         r_ leftRotate(rootNode)
-    __ balance < -1 and nodeValue < rootNode.rightChild.data:
+    __ balance < -1 ___ nodeValue < rootNode.rightChild.data:
         rootNode.rightChild _ rightRotate(rootNode.rightChild)
         r_ leftRotate(rootNode)
     r_ rootNode
 
 ___ getMinValueNode(rootNode
-    __ rootNode __ N.. or rootNode.leftChild __ N..:
+    __ rootNode __ N.. __ rootNode.leftChild __ N..:
         r_ rootNode
     r_ getMinValueNode(rootNode.leftChild)
 
 ___ deleteNode(rootNode, nodeValue
     __ n.. rootNode:
         r_ rootNode
-    elif nodeValue < rootNode.data:
+    ____ nodeValue < rootNode.data:
         rootNode.leftChild _ deleteNode(rootNode.leftChild, nodeValue)
-    elif nodeValue > rootNode.data:
+    ____ nodeValue > rootNode.data:
         rootNode.rightChild _ deleteNode(rootNode.rightChild, nodeValue)
     ____
         __ rootNode.leftChild __ N..:
             temp _ rootNode.rightChild
             rootNode _ N..
             r_ temp
-        elif rootNode.rightChild __ N..:
+        ____ rootNode.rightChild __ N..:
             temp _ rootNode.leftChild
             rootNode _ N..
             r_ temp
@@ -133,14 +133,14 @@ ___ deleteNode(rootNode, nodeValue
         rootNode.data _ temp.data
         rootNode.rightChild _ deleteNode(rootNode.rightChild, temp.data)
     balance _ getBalance(rootNode)
-    __ balance > 1 and getBalance(rootNode.leftChild) >_ 0:
+    __ balance > 1 ___ getBalance(rootNode.leftChild) >_ 0:
         r_ rightRotate(rootNode)
-    __ balance < -1 and getBalance(rootNode.rightChild) <_ 0:
+    __ balance < -1 ___ getBalance(rootNode.rightChild) <_ 0:
         r_ leftRotate(rootNode)
-    __ balance > 1 and getBalance(rootNode.leftChild) < 0:
+    __ balance > 1 ___ getBalance(rootNode.leftChild) < 0:
         rootNode.leftChild _ leftRotate(rootNode.leftChild)
         r_ rightRotate(rootNode)
-    __ balance < -1 and getBalance(rootNode.rightChild) > 0:
+    __ balance < -1 ___ getBalance(rootNode.rightChild) > 0:
         rootNode.rightChild _ rightRotate(rootNode.rightChild)
         r_ leftRotate(rootNode)
     

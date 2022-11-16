@@ -62,7 +62,7 @@ c_ Queue:
 __ __name__ __ "__main__":
     qu _ Queue()
 
-    _____ True:
+    _____ T..:
         print("1.Enqueue") 
         print("2.Dequeue")
         print("3.Peek")
@@ -75,16 +75,16 @@ __ __name__ __ "__main__":
         __ choice __ 1:
             x_int(input("Enter the element : "))
             qu.enqueue(x) 
-        elif choice __ 2:
+        ____ choice __ 2:
             x_qu.dequeue()
             print("Element deleted from the queue is : " , x) 
-        elif choice __ 3:
+        ____ choice __ 3:
             print("Element at the front end is " , qu.peek()) 
-        elif choice __ 4:
+        ____ choice __ 4:
             print("Size of queue ", qu.size()) 
-        elif choice __ 5:
+        ____ choice __ 5:
             qu.display() 
-        elif choice __ 6:
+        ____ choice __ 6:
           break;
         ____
           print("Wrong choice") 

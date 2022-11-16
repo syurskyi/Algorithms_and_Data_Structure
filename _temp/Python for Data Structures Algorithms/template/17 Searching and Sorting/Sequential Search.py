@@ -11,14 +11,14 @@ ___ seq_search(arr,ele
     # Start at position 0
     pos _ 0
     # Target becomes true if ele is in the list
-    found _ False
+    found _ F..
 
     # go until end of list
-    _____ pos < l..(arr) and n.. found:
+    _____ pos < l..(arr) ___ n.. found:
 
         # If match
         __ arr[pos] __ ele:
-            found _ True
+            found _ T..
 
         # Else move one down
         ____
@@ -47,23 +47,23 @@ ___ ordered_seq_search(arr,ele
     pos _ 0
 
     # Target becomes true if ele is in the list
-    found _ False
+    found _ F..
 
     # Stop marker
-    stopped _ False
+    stopped _ F..
 
     # go until end of list
-    _____ pos < l..(arr) and n.. found and n.. stopped:
+    _____ pos < l..(arr) ___ n.. found ___ n.. stopped:
 
         # If match
         __ arr[pos] __ ele:
-            found _ True
+            found _ T..
 
         ____
 
             # Check if element is greater
             __ arr[pos] > ele:
-                stopped _ True
+                stopped _ T..
 
             # Otherwise move on
             ____

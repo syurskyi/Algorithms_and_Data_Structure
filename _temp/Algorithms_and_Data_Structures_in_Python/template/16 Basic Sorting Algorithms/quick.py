@@ -16,7 +16,7 @@ ___ partition(nums,low,high
 	
 	i _ low
 	
-	___ j __ range(low,high,1
+	___ j __ r..(low,high,1
 		__ nums[j] <_ nums[high]:
 			swap(nums,i,j)
 			i _ i + 1

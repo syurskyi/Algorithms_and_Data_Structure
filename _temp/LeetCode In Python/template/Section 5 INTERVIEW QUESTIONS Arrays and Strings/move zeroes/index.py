@@ -6,5 +6,5 @@ c_ Solution:
                 nums[j] _ num
                 j +_ 1
 
-        ___ x __ range(j, l..(nums)):
+        ___ x __ r..(j, l..(nums
             nums[x] _ 0

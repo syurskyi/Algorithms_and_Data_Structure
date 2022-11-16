@@ -138,7 +138,7 @@ ___ comp(lst
     ___ val __ lst[:midpoint]:
         print(val)
         
-    ___ x __ range(10
+    ___ x __ r..(10
         print('number')
 
 # %%
@@ -169,8 +169,8 @@ ___ matcher(lst,match
     '''
     ___ item __ lst:
         __ item __ match:
-            r_ True
-    r_ False
+            r_ T..
+    r_ F..
 
 # %%
 lst
@@ -198,7 +198,7 @@ ___ printer(n_10
     '''
     Prints "hello world!" n times
     '''
-    ___ x __ range(n
+    ___ x __ r..(n
         print('Hello World!')
 
 # %%
@@ -215,7 +215,7 @@ Let's see an example of O(n) **space** complexity:
 ___ create_list(n
     new_list _    # list
     
-    ___ num __ range(n
+    ___ num __ r..(n
         new_list.a..('new')
     
     r_ new_list

@@ -24,7 +24,7 @@
 ___ balance_check(s
     # Check is even number of brackets
     __ l..(s) % 2 !_ 0:
-        r_ False
+        r_ F..
 
     # Set of opening brackets
     opening _ set('([{')
@@ -46,14 +46,14 @@ ___ balance_check(s
 
             # Check that there are parentheses in Stack
             __ l..(stack) __ 0:
-                r_ False
+                r_ F..
 
             # Check the last open parenthesis
-            last_open _ stack.pop()
+            last_open _ stack.p.. 
 
             # Check if it has a closing match
             __ (last_open, paren) n.. __ matches:
-                r_ False
+                r_ F..
 
     r_ l..(stack) __ 0
 
@@ -77,9 +77,9 @@ from nose.tools import assert_equal
 c_ TestBalanceCheck o..
 
     ___ test sol
-        assert_equal(sol('[](){([[[]]])}('), False)
-        assert_equal(sol('[{{{(())}}}]((()))'), True)
-        assert_equal(sol('[[[]])]'), False)
+        assert_equal(sol('[](){([[[]]])}('), F..)
+        assert_equal(sol('[{{{(())}}}]((()))'), T..)
+        assert_equal(sol('[[[]])]'), F..)
         print 'ALL TEST CASES PASSED'
 
 

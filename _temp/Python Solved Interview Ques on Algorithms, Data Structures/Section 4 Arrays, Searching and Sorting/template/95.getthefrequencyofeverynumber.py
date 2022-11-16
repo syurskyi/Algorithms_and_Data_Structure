@@ -6,7 +6,7 @@ ___ getthefrequencyofeverynumber(myarray
 	___ ele __ myarray:
 		__ ele __ hashTable:
 			hashTable[ele] +_ 1
-		elif ele !_ " ":
+		____ ele !_ " ":
 			hashTable[ele] _ 1
 		____
 			hashTable[ele] _ 0

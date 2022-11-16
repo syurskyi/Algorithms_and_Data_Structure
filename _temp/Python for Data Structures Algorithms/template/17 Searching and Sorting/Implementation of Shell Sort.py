@@ -15,7 +15,7 @@ ___ shell_sort(arr
 
     # While we still have sub lists
     _____ sublistcount > 0:
-        ___ start __ range(sublistcount
+        ___ start __ r..(sublistcount
             # Use a gap insertion
             gap_insertion_sort(arr,start,sublistcount)
 
@@ -24,13 +24,13 @@ ___ shell_sort(arr
         sublistcount _ sublistcount / 2
 
 ___ gap_insertion_sort(arr,start,gap
-    ___ i __ range(start+gap,l..(arr),gap
+    ___ i __ r..(start+gap,l..(arr),gap
 
         currentvalue _ arr[i]
         position _ i
 
         # Using the Gap
-        _____ position>_gap and arr[position-gap]>currentvalue:
+        _____ position>_gap ___ arr[position-gap]>currentvalue:
             arr[position]_arr[position-gap]
             position _ position-gap
 

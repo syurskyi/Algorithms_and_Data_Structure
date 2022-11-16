@@ -6,7 +6,7 @@ ___ getfirstnonrepeated(myarray
 	___ ele __ myarray.lower(
 		__ ele __ tab:
 			tab[ele] +_ 1
-		elif ele !_ " ":
+		____ ele !_ " ":
 			tab[ele] _ 1
 		____
 			tab[ele] _ 0

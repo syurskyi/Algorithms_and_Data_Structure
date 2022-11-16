@@ -46,7 +46,7 @@ ___ ladder(begin, end, word_list
 		__ cur_word __ end:
 			r_ path
 
-		___ i __ range(l..(cur_word)):
+		___ i __ r..(l..(cur_word
 			___ c __ ascii_lowercase:
 				potential_word _ cur_word[:i] + c + cur_word[i+1:]
 

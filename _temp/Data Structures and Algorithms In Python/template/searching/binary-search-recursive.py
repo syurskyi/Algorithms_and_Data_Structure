@@ -10,7 +10,7 @@ ___ _search(a, first, last, searchValue
     mid _ (first + last) // 2
     __ searchValue > a[mid]:	 #Search in right half
         r_ _search(a, mid+1, last, searchValue)
-    elif searchValue < a[mid]:	 #Search in left half
+    ____ searchValue < a[mid]:	 #Search in left half
         r_ _search(a, first, mid-1, searchValue)
     ____
         r_ mid
@@ -20,7 +20,7 @@ ___ _search(a, first, last, searchValue
 n _ int(input("Enter the number of elements : "))
 a _ [N..]*n
 print("Enter the elements in sorted order  - ")
-___ i __ range(n
+___ i __ r..(n
     a[i] _ int(input("Enter element : "))
 
 searchValue _ int(input("Enter the search value : "))

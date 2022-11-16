@@ -14,9 +14,9 @@
 
 ___ bubble_sort(arr
     # For every element (arranged backwards)
-    ___ n __ range(l..(arr)-1,0,-1
+    ___ n __ r..(l..(arr)-1,0,-1
         #
-        ___ k __ range(n
+        ___ k __ r..(n
             # If we come to a point to switch
             __ arr[k]>arr[k+1]:
                 temp _ arr[k]

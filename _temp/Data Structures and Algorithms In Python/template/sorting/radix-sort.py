@@ -14,9 +14,9 @@ ___ radix_sort(start
     leastSigPos _ 1
     mostSigPos _ DigitsInLargest(start)
 
-    ___ k __ range(leastSigPos, mostSigPos+1
+    ___ k __ r..(leastSigPos, mostSigPos+1
         #Making all the queues empty at the beginning of each pass
-        ___ i __ range(10
+        ___ i __ r..(10
             rear[i] _ N..
             front[i] _ N..
 
@@ -69,7 +69,7 @@ ___ DigitsInLargest(start
 #Returns kth digit from right in n
 ___ Digit(n, k
     d _ 0
-    ___ i __ range(1,k+1
+    ___ i __ r..(1,k+1
         d _ n%10
         n//_10
     r_ d
@@ -80,7 +80,7 @@ start _ N..
 
 n _ int(input("Enter the number of elements : "))
 
-___ i __ range(n  #Inserting elements in linked list
+___ i __ r..(n  #Inserting elements in linked list
     data _ int(input("Enter element : "))
 
     temp _ Node(data)

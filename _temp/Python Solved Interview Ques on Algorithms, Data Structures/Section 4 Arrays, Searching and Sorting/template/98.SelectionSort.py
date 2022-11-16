@@ -1,11 +1,11 @@
 
 ___ mySelectionSort(myarray
   print "myarray:",myarray
-  ___ i __ range(l..(myarray)):
+  ___ i __ r..(l..(myarray
     least _ i
     #print "outerloop:",myarray
     #print "I and Least element in outerloop:",i
-    ___ k __ range(i + 1 , l..(myarray)):
+    ___ k __ r..(i + 1 , l..(myarray
       #print "innerloop:",myarray
       #print "K:",k
       #print "comparing myarray[",k,"] with element at least pos myarray[",least,"]",myarray[k],myarray[least]

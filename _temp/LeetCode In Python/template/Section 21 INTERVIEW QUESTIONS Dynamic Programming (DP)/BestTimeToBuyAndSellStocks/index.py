@@ -7,6 +7,6 @@ c_ Solution:
             __(buyPrice > price
                 buyPrice _ price
             ____
-                profit _ max(profit, price-buyPrice)
+                profit _ m__(profit, price-buyPrice)
 
         r_ profit

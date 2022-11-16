@@ -7,10 +7,10 @@
 
 c_ Solution:
     ___ isMirrort1,t2
-        __(t1 __ N.. and t2 __ N..
-            r_ True
-        __(t1 __ N.. or t2 __ N..
-            r_ False
-        r_ (t1.val__t2.val) and isMirror(t1.right,t2.left) and isMirror(t1.left,t2.right)
+        __(t1 __ N.. ___ t2 __ N..
+            r_ T..
+        __(t1 __ N.. __ t2 __ N..
+            r_ F..
+        r_ (t1.val__t2.val) ___ isMirror(t1.right,t2.left) ___ isMirror(t1.left,t2.right)
     ___ isSymmetric root: TreeNode) -> bool:
         r_ isMirror(root,root)

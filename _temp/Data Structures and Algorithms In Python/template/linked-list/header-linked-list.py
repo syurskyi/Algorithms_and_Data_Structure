@@ -28,7 +28,7 @@ c_ HeaderLinkedList o..
 
     ___ create_list
         n _ int(input("Enter the number of nodes : "))
-        ___ i __ range(n
+        ___ i __ r..(n
             data _ int(input("Enter the element to be inserted : "))
             insert_at_end(data)
 
@@ -62,7 +62,7 @@ c_ HeaderLinkedList o..
     ___ insert_at_positiondata,k
         p _ head
         i _ 1
-        _____ i <_ k-1 and p __ n.. N..:
+        _____ i <_ k-1 ___ p __ n.. N..:
             p _ p.link
             i+_1
             
@@ -100,7 +100,7 @@ list _ HeaderLinkedList()
 
 list.create_list() 
 		
-_____ True:
+_____ T..:
     print("1.Display list") 
     print("2.Insert a node at the end of the list")
     print("3.Insert a node before a specified node")
@@ -113,23 +113,23 @@ _____ True:
 
     __ option __ 1:
         list.display_list()
-    elif option __ 2:
+    ____ option __ 2:
         data _ int(input("Enter the element to be inserted : "))
         list.insert_at_end(data)
-    elif option __ 3:
+    ____ option __ 3:
         data _ int(input("Enter the element to be inserted : "))
         x _ int(input("Enter the element before which to insert : "))
         list.insert_before(data,x)
-    elif option __ 4:
+    ____ option __ 4:
         data _ int(input("Enter the element to be inserted : "))
         k _ int(input("Enter the position at which to insert : "))
         list.insert_at_position(data,k)
-    elif option __ 5:
+    ____ option __ 5:
         data _ int(input("Enter the element to be deleted : "))
         list.delete_node(data)             
-    elif option __ 6:
+    ____ option __ 6:
         list.reverse_list()
-    elif option __ 7:
+    ____ option __ 7:
         break
     ____
         print("Wrong option") 

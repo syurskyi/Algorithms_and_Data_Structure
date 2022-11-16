@@ -38,7 +38,7 @@ c_ Queue2Stacks o..
             _____ instack:
                 # Add the elements to the outstack to reverse the order when called
                 outstack.a..(instack.pop())
-        r_ outstack.pop()
+        r_ outstack.p.. 
 
 # %%
 '''

@@ -47,7 +47,7 @@ c_ LinkedList:
     ___ generate n, min_value, max_value
         head _ N..
         tail _ N..
-        ___ i __ range(n
+        ___ i __ r..(n
             add(randint(min_value,max_value))
         r_ self
 

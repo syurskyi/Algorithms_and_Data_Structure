@@ -26,9 +26,9 @@ c_ Stack:
     
     ___ isEmpty 
         __ LinkedList.head __ N..:
-            r_ True
+            r_ T..
         ____
-            r_ False
+            r_ F..
 
     ___ push value
         node _ Node(value)

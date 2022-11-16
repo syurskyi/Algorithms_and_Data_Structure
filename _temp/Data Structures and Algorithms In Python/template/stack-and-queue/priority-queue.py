@@ -21,12 +21,12 @@ c_ PriorityQueue:
         temp _ Node(data, data_priority)
         
         #If queue is empty or element to be added has priority more than first element
-        __ is_empty() or data_priority < front.priority:
+        __ is_empty() __ data_priority < front.priority:
             temp.link _ front
             front _ temp
         ____
             p _ front
-            _____ p.link !_ N.. and p.link.priority <_ data_priority:
+            _____ p.link !_ N.. ___ p.link.priority <_ data_priority:
                 p _ p.link
             temp.link _ p.link
             p.link _ temp
@@ -68,7 +68,7 @@ c_ PriorityQueue:
 __ __name__ __ "__main__":
     qu _ PriorityQueue()
 
-    _____ True:
+    _____ T..:
         print("1.Enqueue") 
         print("2.Dequeue") 
         print("3.Display all queue elements") 
@@ -81,14 +81,14 @@ __ __name__ __ "__main__":
             x _ int(input("Enter the element : "))
             pr _ int(input("Enter its priority : "))
             qu.enqueue(x,pr) 
-        elif choice __ 2:
+        ____ choice __ 2:
             x_qu.dequeue()
             print("Element is : " , x) 
-        elif choice __ 3:
+        ____ choice __ 3:
             qu.display() 
-        elif choice __ 4:
+        ____ choice __ 4:
             print("Size of queue " , qu.size()) 
-        elif choice __ 5:
+        ____ choice __ 5:
           break;
         ____
           print("Wrong choice") 

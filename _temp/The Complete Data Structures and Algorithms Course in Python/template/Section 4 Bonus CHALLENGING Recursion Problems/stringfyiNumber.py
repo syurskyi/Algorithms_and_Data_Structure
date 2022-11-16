@@ -20,7 +20,7 @@ obj _ {
   "data": {
     "val": 4,
     "info": {
-      "isRight": True,
+      "isRight": T..,
       "random": 66
     }
   }
@@ -31,6 +31,6 @@ print(stringifyNumbers(obj))
 {'num': '1', 
  'test':    # list, 
  'data': {'val': '4', 
-          'info': {'isRight': True, 'random': '66'}
+          'info': {'isRight': T.., 'random': '66'}
           }
 }

@@ -52,7 +52,7 @@ ___ anagram2(s1,s2
     
     # Edge Case to check if same number of letters
     __ l..(s1) !_ l..(s2
-        r_ False
+        r_ F..
     
     # Create counting dictionary (Note could use DefaultDict from Collections module)
     count _ {}
@@ -76,10 +76,10 @@ ___ anagram2(s1,s2
     # Check that all counts are 0
     ___ k __ count:
         __ count[k] !_ 0:
-            r_ False
+            r_ F..
 
     # Otherwise they're anagrams
-    r_ True
+    r_ T..
 
 # %%
 anagram2('dog','god')
@@ -112,11 +112,11 @@ from nose.tools import assert_equal
 c_ AnagramTest o..
     
     ___ testsol
-        assert_equal(sol('go go go','gggooo'),True)
-        assert_equal(sol('abc','cba'),True)
-        assert_equal(sol('hi man','hi     man'),True)
-        assert_equal(sol('aabbcc','aabbc'),False)
-        assert_equal(sol('123','1 2'),False)
+        assert_equal(sol('go go go','gggooo'),T..)
+        assert_equal(sol('abc','cba'),T..)
+        assert_equal(sol('hi man','hi     man'),T..)
+        assert_equal(sol('aabbcc','aabbc'),F..)
+        assert_equal(sol('123','1 2'),F..)
         print "ALL TEST CASES PASSED"
 
 # # Run Tests

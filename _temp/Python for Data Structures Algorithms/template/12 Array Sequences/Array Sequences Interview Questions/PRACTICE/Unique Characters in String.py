@@ -18,10 +18,10 @@ ___ uni_char(s
     u _ set()
     ___ c __ s:
         __ c __ u:
-            r_ False
+            r_ F..
         ____
             u.add(c)
-    r_ True
+    r_ T..
     pass
 
 # %%
@@ -50,9 +50,9 @@ from nose.tools import assert_equal
 c_ TestUnique o..
 
     ___ test sol
-        assert_equal(sol(''), True)
-        assert_equal(sol('goo'), False)
-        assert_equal(sol('abcdefg'), True)
+        assert_equal(sol(''), T..)
+        assert_equal(sol('goo'), F..)
+        assert_equal(sol('abcdefg'), T..)
         print('ALL TEST CASES PASSED')
         
 # Run Tests

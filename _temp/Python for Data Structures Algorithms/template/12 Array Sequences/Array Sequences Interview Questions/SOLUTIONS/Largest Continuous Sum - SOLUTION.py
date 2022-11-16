@@ -23,10 +23,10 @@ ___ large_cont_sum(arr
     # For every element in array
     ___ num __ arr[1:]:
         # Set current sum as the higher of the two
-        current_sum _ max(current_sum + num, num)
+        current_sum _ m__(current_sum + num, num)
 
         # Set max as the higher between the currentSum and the current max
-        max_sum _ max(current_sum, max_sum)
+        max_sum _ m__(current_sum, max_sum)
 
     r_ max_sum
 

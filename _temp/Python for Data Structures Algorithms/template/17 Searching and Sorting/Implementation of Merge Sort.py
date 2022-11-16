@@ -19,7 +19,7 @@ ___ merge_sort(arr
         i_0
         j_0
         k_0
-        _____ i < l..(lefthalf) and j < l..(righthalf
+        _____ i < l..(lefthalf) ___ j < l..(righthalf
             __ lefthalf[i] < righthalf[j]:
                 arr[k]_lefthalf[i]
                 i_i+1

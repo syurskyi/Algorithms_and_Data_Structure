@@ -3,18 +3,18 @@ from singlyLinkedList import Node, LinkedList
 c_ NewNode(Node
     ___ -  data
         super().- (data)
-        isVisited _ False
+        isVisited _ F..
 
 ___ detectCycle(linkedList
     # John(True)->Ben(True)->Matthew(True)->Ben(True)
     currentNode _ linkedList.head
-    currentNode.isVisited _ True
-    _____ True:
-        __ currentNode.next.isVisited __ True:
+    currentNode.isVisited _ T..
+    _____ T..:
+        __ currentNode.next.isVisited __ T..:
             currentNode.next _ N..
             break
         currentNode _ currentNode.next
-        currentNode.isVisited _ True
+        currentNode.isVisited _ T..
 
 
 # John->Ben->Matthew->Ben->(Matthew->Ben...)

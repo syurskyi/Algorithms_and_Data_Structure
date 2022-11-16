@@ -6,9 +6,9 @@
 
 ___ isPalindrome(strng
     __ l..(strng) __ 0:
-        r_ True
+        r_ T..
     __ strng[0] !_ strng[l..(strng)-1]:
-        r_ False
+        r_ F..
     r_ isPalindrome(strng[1:-1])
 
 print(isPalindrome('awesome')) # false

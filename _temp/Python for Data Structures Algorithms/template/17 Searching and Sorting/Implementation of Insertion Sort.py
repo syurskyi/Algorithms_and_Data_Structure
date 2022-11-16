@@ -12,14 +12,14 @@
 ___ insertion_sort(arr
 
     # For every index in array
-    ___ i __ range(1,l..(arr)):
+    ___ i __ r..(1,l..(arr
 
         # Set current values and position
         currentvalue _ arr[i]
         position _ i
 
         # Sorted Sublist
-        _____ position>0 and arr[position-1]>currentvalue:
+        _____ position>0 ___ arr[position-1]>currentvalue:
 
             arr[position]_arr[position-1]
             position _ position-1

@@ -40,11 +40,11 @@ from nose.tools import assert_equal
 c_ AnagramTest o..
 
     ___ test sol
-        assert_equal(sol('go go go','gggooo'),True)
-        assert_equal(sol('abc','cba'),True)
-        assert_equal(sol('hi man','hi     man'),True)
-        assert_equal(sol('aabbcc','aabbc'),False)
-        assert_equal(sol('123','1 2'),False)
+        assert_equal(sol('go go go','gggooo'),T..)
+        assert_equal(sol('abc','cba'),T..)
+        assert_equal(sol('hi man','hi     man'),T..)
+        assert_equal(sol('aabbcc','aabbc'),F..)
+        assert_equal(sol('123','1 2'),F..)
         print("ALL TEST CASES PASSED")
 
 # Run Tests

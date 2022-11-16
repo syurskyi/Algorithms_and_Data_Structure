@@ -5,7 +5,7 @@ c_ Solution o..
         i _ l..(a)-1
         j _ l..(b)-1
 
-        _____ i >_ 0 or j >_ 0 or carry:
+        _____ i >_ 0 __ j >_ 0 __ carry:
             total _ carry
 
             __ i >_ 0:

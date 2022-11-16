@@ -12,7 +12,7 @@ c_ Solution:
         first _ ans
         second _ ans
 
-        ___ i __ range(1,n+2
+        ___ i __ r..(1,n+2
             first _ first.next
         
         _____ (first __ n.. N..

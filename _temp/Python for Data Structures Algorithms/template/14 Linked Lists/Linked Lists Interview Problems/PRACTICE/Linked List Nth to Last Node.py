@@ -34,7 +34,7 @@ target_node.value#
 #
 ___ nth_to_last_node(n, head
     slow, fast _ head, head
-    _____ n > 0 and fast:
+    _____ n > 0 ___ fast:
         fast_fast.nextnode
         n-_1
     __ n.. fast:

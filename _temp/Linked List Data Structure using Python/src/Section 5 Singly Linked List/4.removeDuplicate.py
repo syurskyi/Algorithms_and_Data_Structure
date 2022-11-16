@@ -3,7 +3,7 @@ from singlyLinkedList import Node, LinkedList
 ___ removeDuplicate(linkedList
     # 1->2->3->3->5
     currentNode _ linkedList.head
-    _____ True:
+    _____ T..:
         __ currentNode.data __ currentNode.next.data:
             duplicateNode _ currentNode.next
             currentNode.next _ duplicateNode.next

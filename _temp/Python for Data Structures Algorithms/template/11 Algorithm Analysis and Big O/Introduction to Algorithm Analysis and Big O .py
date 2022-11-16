@@ -19,7 +19,7 @@ ___ sum1(n
     Take an input of n and return the sum of the numbers from 0 to n
     '''
     final_sum _ 0
-    ___ x __ range(n+1
+    ___ x __ r..(n+1
         final_sum +_ x
     
     r_ final_sum

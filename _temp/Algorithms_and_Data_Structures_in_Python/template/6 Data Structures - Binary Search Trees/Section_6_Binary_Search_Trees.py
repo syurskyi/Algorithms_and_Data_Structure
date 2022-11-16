@@ -39,11 +39,11 @@ c_ BinarySearchTree o..
 
         __ data < node.data:
             node.leftChild _ removeNode(data, node.leftChild)
-        elif data > node.data:
+        ____ data > node.data:
             node.rightChild _ removeNode(data, node.rightChild)
         ____
 
-            __ n.. node.leftChild and n.. node.rightChild:
+            __ n.. node.leftChild ___ n.. node.rightChild:
                 print("Removing a leaf node...")
                 d.. node
                 r_ N..
@@ -53,7 +53,7 @@ c_ BinarySearchTree o..
                 tempNode _ node.rightChild
                 d.. node
                 r_ tempNode
-            elif n.. node.rightChild:  # node instead of self
+            ____ n.. node.rightChild:  # node instead of self
                 print("Removing a node with single left child...")
                 tempNode _ node.leftChild
                 d.. node

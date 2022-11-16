@@ -19,13 +19,13 @@ c_ Node o..
 ___ cycle_check(node
 #     Use fast and slow pointer
     fast, slow _ node, node
-    _____ fast and fast.nextnode:
+    _____ fast ___ fast.nextnode:
         fast _ fast.nextnode
         __ fast __ slow:
-            r_ True
+            r_ T..
         fast _ fast.nextnode
         slow _ slow.nextnode
-    r_ False
+    r_ F..
     pass #Your function should return a boolean
 
 # Test Your Solution
@@ -58,8 +58,8 @@ y.nextnode _ z
 c_ TestCycleCheck o..
 
     ___ testsol
-        assert_equal(sol(a),True)
-        assert_equal(sol(x),False)
+        assert_equal(sol(a),T..)
+        assert_equal(sol(x),F..)
 
         print ("ALL TEST CASES PASSED")
 

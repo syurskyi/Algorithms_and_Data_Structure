@@ -19,7 +19,7 @@ c_ Solution:
         _____(q
             n _ l..(q)
             temp _    # list
-            ___ i __ range(0,n
+            ___ i __ r..(0,n
                 f _ q.popleft()
                 temp.a..(f.val)
 

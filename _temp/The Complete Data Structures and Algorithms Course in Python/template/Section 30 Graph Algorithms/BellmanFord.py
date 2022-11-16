@@ -24,13 +24,13 @@ c_ Graph:
         dist _ {i : float("Inf") ___ i __ nodes}
         dist[src] _ 0
 
-        ___ _ __ range(V-1
+        ___ _ __ r..(V-1
             ___ s, d, w __ graph:
-                __ dist[s] !_ float("Inf") and dist[s] + w < dist[d]:
+                __ dist[s] !_ float("Inf") ___ dist[s] + w < dist[d]:
                     dist[d] _ dist[s] + w
         
         ___ s, d, w __ graph:
-            __ dist[s] !_ float("Inf") and dist[s] + w < dist[d]:
+            __ dist[s] !_ float("Inf") ___ dist[s] + w < dist[d]:
                 print("Graph contains negative cycle")
                 r_
         

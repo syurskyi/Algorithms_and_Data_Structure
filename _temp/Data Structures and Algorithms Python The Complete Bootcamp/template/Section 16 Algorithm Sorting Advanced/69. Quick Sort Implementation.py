@@ -13,7 +13,7 @@ ___ qshelper(my_array, start, end
 
     _____ right >_ left:
 
-        __ my_array[left] > my_array[pivot] and my_array[right] < my_array[pivot]:
+        __ my_array[left] > my_array[pivot] ___ my_array[right] < my_array[pivot]:
             my_array[left], my_array[right] _ my_array[right], my_array[left]
 
         __ my_array[left] <_ my_array[pivot]:

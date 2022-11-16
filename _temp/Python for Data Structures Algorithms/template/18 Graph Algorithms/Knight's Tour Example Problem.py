@@ -4,8 +4,8 @@
 
 ___ knightGraph(bdSize
     ktGraph _ Graph()
-    ___ row __ range(bdSize
-        ___ col __ range(bdSize
+    ___ row __ r..(bdSize
+        ___ col __ r..(bdSize
             nodeId _ posToNodeId(row,col,bdSize)
             newPositions _ genLegalMoves(row,col,bdSize)
             ___ e __ newPositions:
@@ -23,16 +23,16 @@ ___ genLegalMoves(x,y,bdSize
     ___ i __ moveOffsets:
         newX _ x + i[0]
         newY _ y + i[1]
-        __ legalCoord(newX,bdSize) and \
+        __ legalCoord(newX,bdSize) ___ \
                         legalCoord(newY,bdSize
             newMoves.a..((newX,newY))
     r_ newMoves
 
 ___ legalCoord(x,bdSize
-    __ x >_ 0 and x < bdSize:
-        r_ True
+    __ x >_ 0 ___ x < bdSize:
+        r_ T..
     ____
-        r_ False
+        r_ F..
 
 ___ knightTour(n,path,u,limit
         u.setColor('gray')
@@ -40,14 +40,14 @@ ___ knightTour(n,path,u,limit
         __ n < limit:
             nbrList _ list(u.getConnections())
             i _ 0
-            done _ False
-            _____ i < l..(nbrList) and n.. done:
+            done _ F..
+            _____ i < l..(nbrList) ___ n.. done:
                 __ nbrList[i].getColor() __ 'white':
                     done _ knightTour(n+1, path, nbrList[i], limit)
                 i _ i + 1
             __ n.. done:  # prepare to backtrack
-                path.pop()
+                path.p.. 
                 u.setColor('white')
         ____
-            done _ True
+            done _ T..
         r_ done

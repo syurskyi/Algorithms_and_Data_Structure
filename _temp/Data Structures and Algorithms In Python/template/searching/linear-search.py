@@ -2,7 +2,7 @@
 # This code is part of DSA course available on CourseGalaxy.com  
 
 ___ Search(a, n, searchValue
-    ___ i __ range(n
+    ___ i __ r..(n
         __ a[i] __ searchValue:
             r_ i
     r_ -1
@@ -13,7 +13,7 @@ ___ Search(a, n, searchValue
 n _ int(input("Enter the number of elements : "))
 a _ [N..]*n
 print("Enter the elements - ")
-___ i __ range(n
+___ i __ r..(n
     a[i] _ int(input("Enter element : "))
 
 searchValue _ int(input("Enter the search value : "))

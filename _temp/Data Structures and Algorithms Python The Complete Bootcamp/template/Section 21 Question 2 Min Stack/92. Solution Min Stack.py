@@ -15,8 +15,8 @@ c_ MinStack:
 
     ___ pop 
         __ stack[-1] __ min[-1]:
-            min.pop()
-        stack.pop()
+            min.p.. 
+        stack.p.. 
 
     ___ top 
         r_ stack[-1]
@@ -30,7 +30,7 @@ obj _ MinStack()
 obj.push(10)
 obj.push(5)
 obj.push(15)
-obj.pop()
+obj.p.. 
 obj.push(20)
 
 result_top _ obj.top()

@@ -29,7 +29,7 @@ c_ AVL o..
         ____
             node.rightChild _ insertNode(data, node.rightChild)
 
-        node.height _ max(calcHeight(node.leftChild), calcHeight(node.rightChild)) + 1
+        node.height _ m__(calcHeight(node.leftChild), calcHeight(node.rightChild)) + 1
 
         r_ settleViolation(data, node)
 
@@ -40,11 +40,11 @@ c_ AVL o..
 
         __ data < node.data:
             node.leftChild _ removeNode(data, node.leftChild)
-        elif data > node.data:
+        ____ data > node.data:
             node.rightChild _ removeNode(data, node.rightChild)
         ____
 
-            __ n.. node.leftChild and n.. node.rightChild:
+            __ n.. node.leftChild ___ n.. node.rightChild:
                 print("Removing a leaf node...")
                 d.. node
                 r_ N..
@@ -54,7 +54,7 @@ c_ AVL o..
                 tempNode _ node.rightChild
                 d.. node
                 r_ tempNode
-            elif n.. node.rightChild:
+            ____ n.. node.rightChild:
                 print("Removing a node with a left child...")
                 tempNode _ node.leftChild
                 d.. node
@@ -68,25 +68,25 @@ c_ AVL o..
         __ n.. node:
             r_ node;  # if the tree had just a single node
 
-        node.height _ max(calcHeight(node.leftChild), calcHeight(node.rightChild)) + 1;
+        node.height _ m__(calcHeight(node.leftChild), calcHeight(node.rightChild)) + 1;
 
         balance _ calcBalance(node);
 
         # doubly left heavy situation
-        __ balance > 1 and calcBalance(node.leftChild) >_ 0:
+        __ balance > 1 ___ calcBalance(node.leftChild) >_ 0:
             r_ rotateRight(node);
 
         # left right case
-        __ balance > 1 and calcBalance(node.leftChild) < 0:
+        __ balance > 1 ___ calcBalance(node.leftChild) < 0:
             node.leftChild _ rotateLeft(node.leftChild);
             r_ rotateRight(node);
 
         # right right case
-        __ balance < -1 and calcBalance(node.rightChild) <_ 0:
+        __ balance < -1 ___ calcBalance(node.rightChild) <_ 0:
             r_ rotateLeft(node);
 
         # right left case
-        __ balance < -1 and calcBalance(node.rightChild) > 0:
+        __ balance < -1 ___ calcBalance(node.rightChild) > 0:
             node.rightChild _ rotateRight(node.rightChild);
             r_ rotateLeft(node);
 
@@ -104,23 +104,23 @@ c_ AVL o..
         balance _ calcBalance(node);
 
         # this is the Case I !!!! left-left heavy situation
-        __ balance > 1 and data < node.leftChild.data:
+        __ balance > 1 ___ data < node.leftChild.data:
             print("Left left heavy tree...")
             r_ rotateRight(node);
 
         # this is the Case II right-right !!!!
-        __ balance < -1 and data > node.rightChild.data:
+        __ balance < -1 ___ data > node.rightChild.data:
             print("Right right heavy tree...")
             r_ rotateLeft(node);
 
         # left-right situation
-        __ balance > 1 and data > node.leftChild.data:
+        __ balance > 1 ___ data > node.leftChild.data:
             print("Tree is leaft right heavy...");
             node.leftChild _ rotateLeft(node.leftChild);
             r_ rightRotation(node);
 
         # right-left situation
-        __ balance < -1 and data < node.rightChild.data:
+        __ balance < -1 ___ data < node.rightChild.data:
             node.rightChild _ rotateRight(node.rightChild);
             r_ rotateLeft(node);
 
@@ -131,21 +131,21 @@ c_ AVL o..
         balance _ calcBalance(node);
 
         # case 1  -> left left heavy situation
-        __ balance > 1 and data < node.leftChild.data:
+        __ balance > 1 ___ data < node.leftChild.data:
             print("Left left heavy situation...");
             r_ rotateRight(node);
 
         # case 2 --> right right heavy situation --> single left rotation
-        __ balance < - 1 and data > node.rightChild.data:
+        __ balance < - 1 ___ data > node.rightChild.data:
             print("Right right heavy situation...");
             r_ rotateLeft(node);
 
-        __ balance > 1 and data > node.leftChild.data:
+        __ balance > 1 ___ data > node.leftChild.data:
             print("Left right heavy situation...");
             node.leftChild _ rotateLeft(node.leftChild);
             r_ rotateRight(node);
 
-        __ balance < - 1 and data < node.rightChild.data:
+        __ balance < - 1 ___ data < node.rightChild.data:
             print("Right left heavy situation...");
             node.rightChild _ rotateRight(node.rightChild);
             r_ rotateLeft(node);
@@ -192,8 +192,8 @@ c_ AVL o..
         tempLeftChild.rightChild _ node;
         node.leftChild _ t;
 
-        node.height _ max(calcHeight(node.leftChild), calcHeight(node.rightChild)) + 1;
-        tempLeftChild.height _ max(calcHeight(tempLeftChild.leftChild),
+        node.height _ m__(calcHeight(node.leftChild), calcHeight(node.rightChild)) + 1;
+        tempLeftChild.height _ m__(calcHeight(tempLeftChild.leftChild),
                                    calcHeight(tempLeftChild.rightChild)) + 1;
 
         r_ tempLeftChild;
@@ -208,8 +208,8 @@ c_ AVL o..
         tempRightChild.leftChild _ node;
         node.rightChild _ t;
 
-        node.height _ max(calcHeight(node.leftChild), calcHeight(node.rightChild)) + 1;
-        tempRightChild.height _ max(calcHeight(tempRightChild.leftChild),
+        node.height _ m__(calcHeight(node.leftChild), calcHeight(node.rightChild)) + 1;
+        tempRightChild.height _ m__(calcHeight(tempRightChild.leftChild),
                                     calcHeight(tempRightChild.rightChild)) + 1;
 
         r_ tempRightChild;

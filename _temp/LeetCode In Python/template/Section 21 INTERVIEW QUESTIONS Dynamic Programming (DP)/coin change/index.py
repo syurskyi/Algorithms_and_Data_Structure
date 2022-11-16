@@ -11,9 +11,9 @@ c_ Solution:
         
         dp[0] _ 0
         
-        ___ i __ range(1, amount + 1
+        ___ i __ r..(1, amount + 1
             ___ coin __ coins:
                 __ coin <_ i:
                     dp[i] _ min((dp[i-coin] + 1), dp[i])
                     
-        r_ dp[amount] __ dp[amount] !_ INT_MAX else -1
+        r_ dp[amount] __ dp[amount] !_ INT_MAX ____ -1

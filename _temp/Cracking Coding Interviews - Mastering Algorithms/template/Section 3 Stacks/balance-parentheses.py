@@ -27,15 +27,15 @@
 ___ balanced(s
 	stack _    # list
 
-	___ i __ range(l..(s)):
-		__ s[i] __ "(" or s[i] __ "{" or s[i] __ "[":
+	___ i __ r..(l..(s
+		__ s[i] __ "(" __ s[i] __ "{" __ s[i] __ "[":
 			stack.a..(s[i])
-		elif s[i] __ ")" and (l..(stack) __ 0 or stack.pop() !_ "("
-			r_ False
-		elif s[i] __ "]" and (l..(stack) __ 0 or stack.pop() !_ "["
-			r_ False
-		elif s[i] __ "}" and (l..(stack) __ 0 or stack.pop() !_ "{"
-			r_ False
+		____ s[i] __ ")" ___ (l..(stack) __ 0 __ stack.p..  !_ "("
+			r_ F..
+		____ s[i] __ "]" ___ (l..(stack) __ 0 __ stack.p..  !_ "["
+			r_ F..
+		____ s[i] __ "}" ___ (l..(stack) __ 0 __ stack.p..  !_ "{"
+			r_ F..
 
 	r_ l..(stack) __ 0
 

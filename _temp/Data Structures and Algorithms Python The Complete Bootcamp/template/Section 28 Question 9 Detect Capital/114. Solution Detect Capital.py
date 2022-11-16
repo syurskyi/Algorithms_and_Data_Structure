@@ -3,15 +3,15 @@ c_ Solution:
         count _ 0
         length _ l..(word)
 
-        ___ i __ range(length
-            __ word[i] >_ chr(65) and word[i] < chr(91
+        ___ i __ r..(length
+            __ word[i] >_ chr(65) ___ word[i] < chr(91
                 count +_ 1
 
         __ count __ length:
-            r_ True
-        elif count __ 0:
-            r_ True
-        elif count __ 1 and word[0] >_ chr(65) and word[0] < chr(91
-            r_ True
+            r_ T..
+        ____ count __ 0:
+            r_ T..
+        ____ count __ 1 ___ word[0] >_ chr(65) ___ word[0] < chr(91
+            r_ T..
         ____
-            r_ False
+            r_ F..

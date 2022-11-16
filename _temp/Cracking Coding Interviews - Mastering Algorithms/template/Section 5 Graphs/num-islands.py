@@ -20,7 +20,7 @@
 # Output: 3
 
 ___ mark_island(grid, i, j
-	__ i < 0 or i >_ l..(grid) or j < 0 or j >_ l..(grid[0]) or grid[i][j] __ 0:
+	__ i < 0 __ i >_ l..(grid) __ j < 0 __ j >_ l..(grid[0]) __ grid[i][j] __ 0:
 		r_
 
 	grid[i][j] _ 0
@@ -31,13 +31,13 @@ ___ mark_island(grid, i, j
 		mark_island(grid, i + d[0], j + d[1])
 
 ___ num_islands(grid
-	__ l..(grid) __ 0 or l..(grid[0]) __ 0:
+	__ l..(grid) __ 0 __ l..(grid[0]) __ 0:
 		r_ 0
 
 	count _ 0
 
-	___ i __ range(l..(grid)):
-		___ j __ range(l..(grid[0])):
+	___ i __ r..(l..(grid
+		___ j __ r..(l..(grid[0]
 			__ grid[i][j] __ 1:
 				mark_island(grid, i, j)
 				count +_ 1

@@ -4,7 +4,7 @@ c_ Node o..
 
 	___ -  name
 		name _ name;
-		visited _ False;
+		visited _ F..;
 		predecessor _ N..;
 		adjacenciesList _    # list;
 		minDistance _ sys.maxsize;
@@ -18,13 +18,13 @@ c_ Edge o..
 		
 c_ BellmanFord o..
 
-	HAS_CYCLE _ False;
+	HAS_CYCLE _ F..;
 	
 	___ calculateShortestPath vertexList, edgeList, startVertex
 	
 		startVertex.minDistance _ 0;
 		
-		___ i __ range(0,l..(vertexList)-1
+		___ i __ r..(0,l..(vertexList)-1
 			___ edge __ edgeList:
 			
 				u _ edge.startVertex;
@@ -39,14 +39,14 @@ c_ BellmanFord o..
 		___ edge __ edgeList:
 			__ hasCycle(edge
 				print("Negative cycle detected...");
-				BellmanFord.HAS_CYCLE _ True;
+				BellmanFord.HAS_CYCLE _ T..;
 				r_;
 				
 	___ hasCycle edge
 		__ (edge.startVertex.minDistance + edge.weight) < edge.targetVertex.minDistance:
-			r_ True;
+			r_ T..;
 		____
-			r_ False;
+			r_ F..;
 			
 	___ getShortestPathTo targetVertex
 

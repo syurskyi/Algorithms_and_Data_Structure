@@ -24,7 +24,7 @@ c_ LinkedList:
             head _ newNode
         ____
             lastNode _ head
-            _____ True:
+            _____ T..:
                 __ lastNode.next __ N..:
                     break
                 lastNode _ lastNode.next
@@ -36,7 +36,7 @@ c_ LinkedList:
             print("List is empty")
             r_
         currentNode _ head
-        _____ True:
+        _____ T..:
             __ currentNode __ N..:
                 break
             print(currentNode.data)
