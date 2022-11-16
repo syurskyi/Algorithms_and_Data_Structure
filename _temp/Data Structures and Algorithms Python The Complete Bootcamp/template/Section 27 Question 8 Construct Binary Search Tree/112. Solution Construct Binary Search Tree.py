@@ -1,0 +1,27 @@
+# Definition for a binary tree node.
+c_ TreeNode:
+    ___ -  val_0, left_None, right_None
+        val _ val
+        left _ left
+        right _ right
+
+
+c_ Solution:
+    ___ bstFromPreorder preorder
+
+        root _ TreeNode(preorder[0])
+        stack _ [root]
+
+        ___ i __ range(1, len(preorder)):
+            __ preorder[i] < stack[-1].val:
+                node _ TreeNode(preorder[i])
+                stack[-1].left _ node
+                stack.append(node)
+            ____
+                _____ stack and stack[-1].val < preorder[i]:
+                    pop _ stack.pop()
+                node _ TreeNode(preorder[i])
+                pop.right _ node
+                stack.append(node)
+
+        r_ root

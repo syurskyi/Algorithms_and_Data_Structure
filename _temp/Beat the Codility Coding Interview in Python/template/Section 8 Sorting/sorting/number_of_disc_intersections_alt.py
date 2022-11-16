@@ -1,0 +1,36 @@
+# This is the solution for Sorting > NumberOfDiscIntersections
+#
+# This is marked as RESPECTABLE difficulty
+
+c_ Disc(
+    ___ -  low_x, high_x
+        low_x _ low_x
+        high_x _ high_x
+
+___ index_less_than(sortedDiscList, i, start, last
+    mid _ start + (last - start) // 2
+    __ last <_ start and sortedDiscList[mid].low_x > i:
+        r_ mid - 1
+    elif last <_ start:
+        r_ mid
+    elif sortedDiscList[mid].low_x > i:
+        r_ index_less_than(sortedDiscList, i, start, mid - 1)
+    ____
+        r_ index_less_than(sortedDiscList, i, mid + 1, last)
+
+___ solution(A
+    discs _ []
+    ___ i __ range(len(A)):
+        discs.append(Disc(i - A[i], i + A[i]))
+    discs _ sorted(discs, key_lambda d: d.low_x)
+    total _ 0
+    ___ i __ range(len(discs)):
+        total +_ index_less_than(discs, discs[i].high_x + 0.5, 0, len(discs) - 1) - i
+        __ total > 10000000:
+            total _ -1
+            break
+    r_ total
+
+print(solution([1, 5, 2, 1, 4, 0]))
+
+print(solution([0] * 100000))
