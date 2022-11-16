@@ -28,9 +28,9 @@
 #                 p..
 #             r_ T..
 #         r_ F..
-#
-#     ___ remove_vertex ? v..
-#         __ v.. __ ?.k..
+# # other_vertex
+#     ___ remove_vertex  v..
+#         __ ? __ ?.k..
 #             ___ ? __ ? ?
 #                 ? ?.r.. ?
 #             d__ ? ?
