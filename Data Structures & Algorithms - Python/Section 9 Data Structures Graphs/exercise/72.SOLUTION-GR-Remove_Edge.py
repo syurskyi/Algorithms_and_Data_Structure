@@ -1,69 +1,69 @@
-# c_ Graph
-#     ___  -
-#         adj_list _  # dict
-#
-#     ___ print_graph
-#         ___ v.. __ ?
-#             print ? ':' ? ?
-#
-#     ___ add_vertex v..
-#         __ ? n.. __ ?.k..
-#             ? ?_  # lsit
-#             r_ T..
-#         r_ F..
-#
-#     ___ add_edge  v1, v2
-#         __ ? __ ?.k.. ___ ? __ ?.k..
-#             ? ?.a.. ?
-#             ? ?.a.. ?
-#             r_ T..
-#         r_ F..
-#
-#     ___ remove_edge  v1, v2
-#         __ ? __ ?.k.. ___ ? __ ?.k..
-#             ___
-#                 ? ?.r.. ?
-#                 ? ?.r.. ?
-#             e.. V..
-#                 p..
-#             r_ T..
-#         r_ F..
-#
-#
-#
-#
-# my_graph = ?
-# ?.a..'A'
-# ?.a..'B'
-# ?.a..'C'
-#
-# ?.a..'A','B'
-# ?.a..'B','C'
-# ?.a..'C','A'
-#
-# print('Graph before remove_edge():')
-# ?.p..
-#
-#
-# ?.r.. 'A','C'
-#
-#
-# print('\nGraph after remove_edge():')
-# ?.p..
-#
-#
-#
-# """
-#     EXPECTED OUTPUT:
-#     ----------------
-#     Graph before remove_edge():
-#     A : ['B', 'C']
-#     B : ['A', 'C']
-#     C : ['B', 'A']
-#
-#     Graph after remove_edge():
-#     A : ['B']
-#     B : ['A', 'C']
-#     C : ['B']
-#
-# """
+class Graph:
+    def __init__(self):
+        self.adj_list = {} # dict
+
+    def print_graph(self):
+        for vertex in self.adj_list:
+            print(vertex, ':', self.adj_list[vertex])
+
+    def add_vertex(self, vertex):
+        if vertex not in self.adj_list.keys():
+            self.adj_list[vertex] = []  # lsit
+            return True
+        return False
+
+    def add_edge(self, v1, v2):
+        if v1 in self.adj_list.keys() and v2 in self.adj_list.keys():
+            self.adj_list[v1].append(v2)
+            self.adj_list[v2].append(v1)
+            return True
+        return False
+
+    def remove_edge(self, v1, v2):
+        if v1 in self.adj_list.keys() and v2 in self.adj_list.keys():
+            try:
+                self.adj_list[v1].remove(v2)
+                self.adj_list[v2].remove(v1)
+            except ValueError:
+                pass
+            return True
+        return False
+
+
+
+
+my_graph = Graph()
+my_graph.add_vertex('A')
+my_graph.add_vertex('B')
+my_graph.add_vertex('C')
+
+my_graph.add_edge('A','B')
+my_graph.add_edge('B','C')
+my_graph.add_edge('C','A')
+
+print('Graph before remove_edge():')
+my_graph.print_graph()
+
+
+my_graph.remove_edge('A','C')
+
+
+print('\nGraph after remove_edge():')
+my_graph.print_graph()
+
+
+
+"""
+    EXPECTED OUTPUT:
+    ----------------
+    Graph before remove_edge():
+    A : ['B', 'C']
+    B : ['A', 'C']
+    C : ['B', 'A']
+
+    Graph after remove_edge():
+    A : ['B']
+    B : ['A', 'C']
+    C : ['B']
+
+"""
