@@ -1,19 +1,19 @@
-c_ PlateStack:
-
-    ___ -  
-        st _    # list
-
-    ___ push x: i..) -> N..:
-        st.a..(x)
-
-    ___ pop ) -> N..:
-        __(l..(st) > 0
-            st.p.. 
-
-    ___ top ) -> i..:
-        __(l..(st) __ 0
-            r_ N..
-        r_ st[-1]
-
-    ___ getLen ) -> i..:
-      r_ l..(st)
+# c_ PlateStack:
+#
+#     ___ -
+#         st _    # list
+#
+#     ___ push x i.. __ N..
+#         ?.a.. ?
+#
+#     ___ pop  __ N..
+#         __(l.. ? > 0
+#             ?.p..
+#
+#     ___ top  __ i..
+#         __(l.. ? __ 0
+#             r_ N..
+#         r_ ? -1
+#
+#     ___ getLen  __ i..
+#       r_ l.. ?
