@@ -30,7 +30,7 @@ ___ clone_helper(node, visited
 		r_ visited[node]
 
 	neighbors _    # list
-	new_node _ Node(node.val, neighbors)
+	new_node _ Node(node.v.., neighbors)
 
 	visited[node] _ new_node
 

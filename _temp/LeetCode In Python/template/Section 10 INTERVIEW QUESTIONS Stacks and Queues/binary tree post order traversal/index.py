@@ -29,5 +29,5 @@ c_ Solution
         _____(s2
             y _ s2[-1]
             s2.p.. 
-            ans.a..(y.val)
+            ans.a..(y.v..)
         r_ ans

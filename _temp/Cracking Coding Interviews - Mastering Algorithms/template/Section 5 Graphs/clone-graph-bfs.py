@@ -34,20 +34,20 @@ ___ clone(node
 		__ cur __ visited.keys(
 			new_node _ visited[cur]
 		____
-			new_node _ Node(cur.val,    # list)
+			new_node _ Node(?.v..,    # list)
 
 		neighbors _ new_node.neighbors
 
 		visited[cur] _ new_node
 
-		___ i __ r..(l..(cur.neighbors
-			__ cur.neighbors[i] __ visited.keys(
-				neighbors.a..(visited[cur.neighbors[i]])
+		___ i __ r..(l..(?.neighbors
+			__ ?.neighbors[i] __ visited.keys(
+				neighbors.a..(visited[?.neighbors[i]])
 			____
-				queue.a..(cur.neighbors[i])
-				new_neighbor_node _ Node(cur.neighbors[i].val,    # list)
+				queue.a..(?.neighbors[i])
+				new_neighbor_node _ Node(?.neighbors[i].v..,    # list)
 				neighbors.a..(new_neighbor_node)
-				visited[cur.neighbors[i]] _ new_neighbor_node
+				visited[?.neighbors[i]] _ new_neighbor_node
 
 	r_ visited[node]
 

@@ -5,9 +5,9 @@ c_ Solution
         ____(sum<target
             n _ l..(candidates)
             ___ i __ r..(index,n
-                cur.a..(candidates[i])
+                ?.a..(candidates[i])
                 solution(candidates,ans,cur,target,i,sum+candidates[i])
-                cur.p.. 
+                ?.p.. 
         r_
     ___ combinationSum candidates: List[i..], target: i..) __ List[List[i..]]:
         ans _    # list

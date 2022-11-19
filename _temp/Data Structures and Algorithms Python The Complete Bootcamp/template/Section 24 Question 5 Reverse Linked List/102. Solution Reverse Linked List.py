@@ -12,8 +12,8 @@ c_ Solution
         suc _ N..
 
         _____ cur:
-            suc _ cur.n..
-            cur.n.. _ pre
+            suc _ ?.n..
+            ?.n.. _ pre
             pre _ cur
             cur _ suc
 

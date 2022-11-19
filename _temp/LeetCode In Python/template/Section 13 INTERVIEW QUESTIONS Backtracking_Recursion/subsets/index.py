@@ -5,9 +5,9 @@ c_ Solution
         ans.a..(cur[:])
         ___ i __ r..(index,l..(nums
             __(nums[i] n.. __ cur
-                cur.a..(nums[i])
+                ?.a..(nums[i])
                 solution(nums,ans,cur,i)
-                cur.p.. 
+                ?.p.. 
         r_ 
     ___ subsets nums: List[i..]) __ List[List[i..]]:
         ans _    # list

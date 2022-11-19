@@ -12,6 +12,6 @@ c_ Solution
         
         k -_ 1
         __ k __ 0:
-            res _ root.val
+            res _ root.v..
             r_
         helper(root.right)

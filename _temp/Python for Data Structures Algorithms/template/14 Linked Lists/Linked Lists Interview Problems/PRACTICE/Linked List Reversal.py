@@ -20,8 +20,8 @@ ___ reverse(head
     cur _ head
     pre, nxt _ N.., N..
     _____ cur:# watch out
-        nxt _ cur.nextnode
-        cur.nextnode _ pre
+        nxt _ ?.nextnode
+        ?.nextnode _ pre
         pre _ cur
         cur _ nxt
     r_ pre #watch out

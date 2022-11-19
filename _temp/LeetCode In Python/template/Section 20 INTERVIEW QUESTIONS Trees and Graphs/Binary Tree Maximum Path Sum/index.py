@@ -14,8 +14,8 @@ c_ Solution
         left _ solution(node.left)
         right _ solution(node.right)
 
-        mxSide _ m__(node.val,m__(left,right)+node.val)
-        mxTop _ m__(mxSide,left+right+node.val)
+        mxSide _ m__(node.v..,m__(left,right)+node.v..)
+        mxTop _ m__(mxSide,left+right+node.v..)
         ans _ m__(ans,mxTop)
         r_ mxSide
 

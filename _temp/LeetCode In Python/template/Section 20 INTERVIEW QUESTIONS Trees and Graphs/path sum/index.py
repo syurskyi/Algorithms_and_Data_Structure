@@ -9,7 +9,7 @@ c_ Solution
     ___ hasSumroot,sum,cur
         __(root __ N..
             r_ F..
-        cur+_root.val
+        cur+_root.v..
         __(cur__sum ___ root.left __ N.. ___ root.right __ N..
             r_ T..
         r_ (hasSum(root.right,sum,cur) __ hasSum(root.left,sum,cur))

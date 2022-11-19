@@ -10,21 +10,21 @@ c_ Solution
 		ans _ cur
 		
 		_____(l1 ___ l2
-			__(l1.val>l2.val
-				cur.n.. _ l2
-				l2 _ l2.n..
+			__(?.v..>?.v..
+				?.n.. _ l2
+				l2 _ ?.n..
 			____
-				cur.n.. _ l1
-				l1 _ l1.n..
-			cur _ cur.n..
+				?.n.. _ l1
+				l1 _ ?.n..
+			cur _ ?.n..
 			
 		_____(l1
-			cur.n.. _ l1
-			l1 _ l1.n..
-			cur _ cur.n..
+			?.n.. _ l1
+			l1 _ ?.n..
+			cur _ ?.n..
 		
 		_____(l2
-			cur.n.. _ l2
-			l2 _ l2.n..
-			cur _ cur.n..
+			?.n.. _ l2
+			l2 _ ?.n..
+			cur _ ?.n..
 		r_ ans.n..

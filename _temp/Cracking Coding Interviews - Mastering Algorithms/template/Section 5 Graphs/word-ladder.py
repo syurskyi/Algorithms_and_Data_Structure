@@ -40,8 +40,8 @@ ___ ladder(begin, end, word_list
 	_____ l..(queue) > 0:
 		cur _ queue.p.. 0)
 
-		cur_word _ cur.word
-		path _ cur.path
+		cur_word _ ?.word
+		path _ ?.path
 
 		__ cur_word __ end:
 			r_ path

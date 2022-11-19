@@ -21,7 +21,7 @@ c_ Solution
             ___ _ __ r..(l..(q
                 __ zigzag:
                     node _ q.p.. 
-                    level.a..(node.val)
+                    level.a..(node.v..)
                     __ node.right:
                         q.appendleft(node.right)
                     __ node.left:
@@ -29,7 +29,7 @@ c_ Solution
 
                 ____
                     node _ q.popleft()
-                    level.a..(node.val)
+                    level.a..(node.v..)
                     __ node.left:
                         q.a..(node.left)
                     __ node.right:

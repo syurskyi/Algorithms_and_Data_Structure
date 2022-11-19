@@ -21,7 +21,7 @@ c_ Solution
             temp _    # list
             ___ i __ r..(0,n
                 f _ q.popleft()
-                ?.a..(f.val)
+                ?.a..(f.v..)
 
                 __(f.left __ n.. N..
                     q.a..(f.left)

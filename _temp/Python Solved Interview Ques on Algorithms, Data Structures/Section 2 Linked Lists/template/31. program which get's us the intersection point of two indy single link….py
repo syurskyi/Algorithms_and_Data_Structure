@@ -55,7 +55,7 @@ c_ LinkedList o..
 
 ___ returnEnd(l
   l1_l.head 
-  w__ l1.next_node !_ N..
+  w__ ?.next_node !_ N..
     l1_l1.next_node
   r_ l1
 
@@ -79,16 +79,16 @@ ___ nodeJoiningPoint(list1, list2
 l1 _ LinkedList()
 l2 _ LinkedList()
 
-l1.i.. ( 'a' )
-l1.i.. ( 'b' )
-l1.i.. ( 'c' )
+?.i.. ( 'a' )
+?.i.. ( 'b' )
+?.i.. ( 'c' )
 print "list1:", l1
-l2.i.. ( '111' )
-l2.i.. ( '222' )
-l2.i.. ( '333' )
-l2.i.. ( '444' )
-l2.i.. ( '555' )
-l2.i.. ( '666' )
+?.i.. ( '111' )
+?.i.. ( '222' )
+?.i.. ( '333' )
+?.i.. ( '444' )
+?.i.. ( '555' )
+?.i.. ( '666' )
 print "list2:", l2
 l1lastNode_returnEnd(l1)
 l2lastNode_returnEnd(l2)

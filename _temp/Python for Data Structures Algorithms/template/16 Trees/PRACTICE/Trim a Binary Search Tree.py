@@ -21,9 +21,9 @@ c_ Solution
         """
         __ n.. root:
             r_ N..
-        __ root.val < min_val:
+        __ root.v.. < min_val:
             r_ trimBST(root.right, min_val, max_val)
-        __ root.val > max_val:
+        __ root.v.. > max_val:
             r_ trimBST(root.left, min_val, max_val)
         root.left _ trimBST(root.left, min_val, max_val)
         root.right _ trimBST(root.right, min_val, max_val)

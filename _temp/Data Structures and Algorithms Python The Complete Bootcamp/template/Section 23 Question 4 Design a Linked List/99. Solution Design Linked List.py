@@ -19,10 +19,10 @@ c_ MyLinkedList:
         cur _ head
 
         _____ index !_ 0:
-            cur _ cur.n..
+            cur _ ?.n..
             index _ index - 1
 
-        r_ cur.val
+        r_ ?.v..
 
     ___ addAtHead val
         new_node _ ListNode(val)
@@ -60,14 +60,14 @@ c_ MyLinkedList:
         ____
             cur _ head
             _____ index - 1 !_ 0:
-                cur _ cur.n..
+                cur _ ?.n..
                 index -_ 1
 
             new_node _ ListNode(val)
 
-            new_node.n.. _ cur.n..
-            cur.n...prev _ new_node
-            cur.n.. _ new_node
+            new_node.n.. _ ?.n..
+            ?.n...prev _ new_node
+            ?.n.. _ new_node
             new_node.p.. _ cur
 
             size +_ 1
@@ -78,7 +78,7 @@ c_ MyLinkedList:
         ____ index __ 0:
             cur _ head.n..
             __ cur:
-                cur.p.. _ N..
+                ?.p.. _ N..
 
             head _ head.n..
             size -_ 1
@@ -88,7 +88,7 @@ c_ MyLinkedList:
         ____ index __ size - 1:
             cur _ tail.p..
             __ cur:
-                cur.n.. _ N..
+                ?.n.. _ N..
             tail _ tail.p..
 
             size -_ 1
@@ -98,11 +98,11 @@ c_ MyLinkedList:
         ____
             cur _ head
             _____ index - 1 !_ 0:
-                cur _ cur.n..
+                cur _ ?.n..
                 index -_ 1
 
-            cur.n.. _ cur.n...next
-            cur.n...prev _ cur
+            ?.n.. _ ?.n...next
+            ?.n...prev _ cur
 
             size -_ 1
 

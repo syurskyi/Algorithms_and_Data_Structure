@@ -42,13 +42,13 @@ ___ trimBST(tree, minVal, maxVal
     tree.left_trimBST(tree.left, minVal, maxVal)
     tree.right_trimBST(tree.right, minVal, maxVal)
 
-    __ minVal<_tree.val<_maxVal:
+    __ minVal<_tree.v..<_maxVal:
         r_ tree
 
-    __ tree.val<minVal:
+    __ tree.v..<minVal:
         r_ tree.right
 
-    __ tree.val>maxVal:
+    __ tree.v..>maxVal:
         r_ tree.left
 
 # The complexity of this algorithm is O(N), where N is the number of nodes in the tree. Because we basically perform

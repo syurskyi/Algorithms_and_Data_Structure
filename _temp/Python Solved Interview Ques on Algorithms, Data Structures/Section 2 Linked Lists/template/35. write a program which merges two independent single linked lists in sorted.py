@@ -59,7 +59,7 @@ ___ joinListsInSortedOrder(l1, l2
   tempo_thirdList
 
   w__ l1 !_ N.. a__ l2 !_ N..
-    __ l1.data < l2.data:
+    __ ?.data < ?.data:
       tempo.next_node_l1
       l1_l1.next_node
     ____
@@ -82,14 +82,14 @@ ___ joinListsInSortedOrder(l1, l2
 l1 _ LinkedList()
 l2 _ LinkedList()
 
-l1.i.. ( '3' )
-l1.i.. ( '2' )
-l1.i.. ( '1' )
+?.i.. ( '3' )
+?.i.. ( '2' )
+?.i.. ( '1' )
 print "list1:", l1
-l2.i.. ( '6' )
-l2.i.. ( '5' )
-l2.i.. ( '4' )
+?.i.. ( '6' )
+?.i.. ( '5' )
+?.i.. ( '4' )
 print "list2:", l2
 
-joinListsInSortedOrder(l1.head, l2.head)
+joinListsInSortedOrder(?.head, ?.head)
 

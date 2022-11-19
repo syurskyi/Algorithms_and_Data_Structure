@@ -13,12 +13,12 @@ c_ Solution
         stack _ [root]
 
         ___ i __ r..(1, l..(preorder
-            __ preorder[i] < stack[-1].val:
+            __ preorder[i] < stack[-1].v..:
                 node _ TreeNode(preorder[i])
                 stack[-1].left _ node
                 stack.a..(node)
             ____
-                _____ stack ___ stack[-1].val < preorder[i]:
+                _____ stack ___ stack[-1].v.. < preorder[i]:
                     pop _ stack.p.. 
                 node _ TreeNode(preorder[i])
                 pop.right _ node
