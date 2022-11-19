@@ -36,9 +36,9 @@ c_ LinkedList:
                 temp _ start
 
             ____
-                temp.next _ newNode
+                ?.next _ newNode
                 newNode.prev _ temp
-                temp _ temp.next
+                temp _ ?.next
             i _ i + 1
         head _ start
         r_ start
@@ -47,8 +47,8 @@ c_ LinkedList:
         temp _ head
         linked_list _ ""
         _____(temp
-            linked_list +_ (str(temp.data) + " ")
-            temp _ temp.next
+            linked_list +_ (str(?.data) + " ")
+            temp _ ?.next
         print(linked_list)
 
     # Function to count nunmber of
@@ -65,7 +65,7 @@ c_ LinkedList:
 
         # Iterate the list and increment the count
         _____ (temp __ n.. N..
-            temp _ temp.next
+            temp _ ?.next
             count _ count + 1
 
         r_ count
@@ -80,26 +80,26 @@ c_ LinkedList:
         r_ temp
 
       __(index __ 1
-        temp _ temp.next
+        temp _ ?.next
         head _ temp
         r_ head
 
       __(count __ index
-        _____(temp.next __ n.. N.. ___ temp.next.next __ n.. N..
-          temp _ temp.next
+        _____(?.next __ n.. N.. ___ ?.next.next __ n.. N..
+          temp _ ?.next
          # 1 => 2 => 3 => 4
-        temp.next _ N..
+        ?.next _ N..
         r_ head
       
 
       i _ 1
       _____(i<index-1
-        temp _ temp.next
+        temp _ ?.next
         i+_1
       
 
       prevNode _ temp
-      nodeAtTarget _ temp.next
+      nodeAtTarget _ ?.next
       nextNode _ nodeAtTarget.next
 
       # 1 => 2 => 3 => 4

@@ -21,20 +21,20 @@ c_ SingleLinkedList:
             print("List is :   ")
             p _ start
             _____ p __ n.. N..:
-                print(p.info , " ", end_'')
-                p _ p.link
+                print(?.i.. , " ", end_'')
+                p _ ?.l..
             print()
    
     ___ insert_at_end data
-        temp _ Node(data)
+        temp _ ? ?
         __ start __ N..:
             start _ temp
             r_
         
         p _ start
-        _____ p.link __ n.. N..:
-            p _ p.link
-        p.link _ temp
+        _____ ?.l.. __ n.. N..:
+            p _ ?.l..
+        ?.l.. _ temp
 
 
     ___ create_list 
@@ -48,14 +48,14 @@ c_ SingleLinkedList:
 
     ___ bubble_sort_exdata 
         end _ N..
-        _____ end !_ start.link:
+        _____ end !_ start.l..:
 
             p _ start
-            _____  p.link !_ end:
-                q _ p.link
-                __ p.info > q.info:
-                    p.info,q.info _ q.info,p.info
-                p _ p.link
+            _____  ?.l.. !_ end:
+                q _ ?.l..
+                __ ?.i.. > q.i..:
+                    ?.i..,q.i.. _ q.i..,?.i..
+                p _ ?.l..
             end _ p
 
     ___ merge1 list2
@@ -64,36 +64,36 @@ c_ SingleLinkedList:
         r_ merge_list
     
     ___ _merge1 p1, p2
-        __ p1.info <_ p2.info:
-            startM _ Node(p1.info)
-            p1 _ p1.link
+        __ p1.i.. <_ p2.i..:
+            startM _ Node(p1.i..)
+            p1 _ p1.l..
         ____
-            startM _ Node(p2.info)
-            p2 _ p2.link;
+            startM _ Node(p2.i..)
+            p2 _ p2.l..;
         
         pM _ startM
 
         _____ p1 __ n.. N.. ___ p2 __ n.. N..:
-            __ p1.info <_ p2.info :
-                pM.link _ Node(p1.info)
-                p1 _ p1.link
+            __ p1.i.. <_ p2.i.. :
+                pM.l.. _ Node(p1.i..)
+                p1 _ p1.l..
             ____
-                pM.link _ Node(p2.info);
-                p2 _ p2.link;
-            pM _ pM.link;
+                pM.l.. _ Node(p2.i..);
+                p2 _ p2.l..;
+            pM _ pM.l..;
             
 
         #If second list has finished and elements left in first list
         _____ p1 __ n.. N..:
-            pM.link _ Node(p1.info)
-            p1 _ p1.link
-            pM _ pM.link
+            pM.l.. _ Node(p1.i..)
+            p1 _ p1.l..
+            pM _ pM.l..
         
         #If first list has finished and elements left in second list
         _____ p2 __ n.. N..:
-            pM.link _ Node(p2.info)
-            p2 _ p2.link
-            pM _ pM.link
+            pM.l.. _ Node(p2.i..)
+            p2 _ p2.l..
+            pM _ pM.l..
 
         r_ startM
 
@@ -105,29 +105,29 @@ c_ SingleLinkedList:
         
     ___ _merge2 p1, p2
 
-        __ p1.info <_ p2.info:
+        __ p1.i.. <_ p2.i..:
             startM _ p1
-            p1 _ p1.link
+            p1 _ p1.l..
         ____
             startM _ p2
-            p2 _ p2.link
+            p2 _ p2.l..
             
         pM _ startM
 
         _____ p1 __ n.. N.. ___ p2 __ n.. N..:
-            __ p1.info <_ p2.info :
-                pM.link _ p1
-                pM _ pM.link
-                p1 _ p1.link
+            __ p1.i.. <_ p2.i.. :
+                pM.l.. _ p1
+                pM _ pM.l..
+                p1 _ p1.l..
             ____
-                pM.link _ p2
-                pM _ pM.link
-                p2 _ p2.link
+                pM.l.. _ p2
+                pM _ pM.l..
+                p2 _ p2.l..
             
         __ p1 __ N..:
-            pM.link _ p2
+            pM.l.. _ p2
         ____
-            pM.link _ p1
+            pM.l.. _ p1
 
         r_ startM
         

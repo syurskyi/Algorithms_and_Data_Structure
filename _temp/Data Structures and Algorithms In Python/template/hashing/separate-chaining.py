@@ -36,22 +36,22 @@ c_ SingleLinkedList:
             r_
         p _ start 
         _____ p __ n.. N..:
-            print(p.info , " ", end_'')
-            p _ p.link 
+            print(?.i.. , " ", end_'')
+            p _ ?.l.. 
         print()
     
     ___ searchx
         p _ start
         _____ p __ n.. N..:
-            __ p.info.get_student_id() __ x:
-                r_ p.info
-            p _ p.link
+            __ ?.i...get_student_id() __ x:
+                r_ ?.i..
+            p _ ?.l..
         ____
             r_ N..
 
     ___ insert_in_beginning data
-        temp _ Node(data)
-        temp.link _ start
+        temp _ ? ?
+        ?.l.. _ start
         start _ temp
     
     ___ delete_nodex
@@ -60,21 +60,21 @@ c_ SingleLinkedList:
             r_ 
 
         # Deletion of first node
-        __ start.info.get_student_id() __ x:
-            start _ start.link   
+        __ start.i...get_student_id() __ x:
+            start _ start.l..   
             r_ 
 
         # Deletion in between or at the end
         p _ start 
-        _____ p.link __ n.. N..:
-            __ p.link.info.get_student_id() __ x:
+        _____ ?.l.. __ n.. N..:
+            __ ?.l...info.get_student_id() __ x:
                 b.. 	
-            p _ p.link 
+            p _ ?.l.. 
 
-        __ p.link __ N..:
+        __ ?.l.. __ N..:
             print("Element ", x ,"not in list") 
         ____
-            p.link _ p.link.link
+            ?.l.. _ ?.l...link
             
 ##################################################################
    

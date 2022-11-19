@@ -59,10 +59,10 @@ c_ LinkedList o..
         s _ ""
         p _ head
         __ p !_ N.. :
-                w__ p.next_node !_ N.. :
-                        s +_ p.data
-                        p _ p.next_node
-                s +_ p.data
+                w__ ?.next_node !_ N.. :
+                        s +_ ?.data
+                        p _ ?.next_node
+                s +_ ?.data
         r_ s
 
 

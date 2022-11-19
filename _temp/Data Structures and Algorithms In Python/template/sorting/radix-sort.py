@@ -23,16 +23,16 @@ ___ radix_sort(start
         p _ start
         _____ p __ n.. N..:
             #Find kth digit from right in the number
-            dig _ Digit(p.info, k)
+            dig _ Digit(?.i.., k)
 
             #Insert the node in Queue(dig)
             __ front[dig] __ N..:
                 front[dig] _ p
             ____
-                rear[dig].link _ p
+                rear[dig].l.. _ p
             rear[dig] _ p
 
-            p_p.link
+            p_p.l..
                
         #Join all queues to form new linked list
         i _ 0
@@ -42,11 +42,11 @@ ___ radix_sort(start
         start _ front[i]
         _____ i <_ 8:
             __ rear[i+1] __ n.. N..:   #if (i+1)th  queue is not empty
-                rear[i].link _ front[i+1] #join end of ith queue to start of (i+1)th queue
+                rear[i].l.. _ front[i+1] #join end of ith queue to start of (i+1)th queue
             ____
                 rear[i+1] _ rear[i]  #continue with rear[i]
             i_i+1
-        rear[9].link _ N..
+        rear[9].l.. _ N..
     r_ start
 
 #Returns number of digits in the largest element of the list
@@ -55,9 +55,9 @@ ___ DigitsInLargest(start
     large _ 0
     p _ start
     _____ p __ n.. N..:
-        __ p.info > large:
-            large _ p.info
-        p _ p.link
+        __ ?.i.. > large:
+            large _ ?.i..
+        p _ ?.l..
         
     #Find number of digits in largest element
     ndigits _ 0
@@ -83,22 +83,22 @@ n _ i..(i..("Enter the number of elements : "))
 ___ i __ r..(n  #Inserting elements in linked list
     data _ i..(i..("Enter element : "))
 
-    temp _ Node(data)
+    temp _ ? ?
     __ start __ N..:
         start _ temp
     ____
         p _ start
-        _____ p.link __ n.. N..:
-            p _ p.link
-        p.link _ temp
+        _____ ?.l.. __ n.. N..:
+            p _ ?.l..
+        ?.l.. _ temp
             
 start _ radix_sort(start)
 
 print("Sorted list is : ") 
 p _ start
 _____ p __ n.. N.. :
-    print(p.info , " ")
-    p _ p.link
+    print(?.i.. , " ")
+    p _ ?.l..
 print 
 
 ##################################################

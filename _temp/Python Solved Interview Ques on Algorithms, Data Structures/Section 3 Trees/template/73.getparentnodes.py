@@ -15,7 +15,7 @@ c_ binTree:
 
     ___ addnode data
         __(root __ N..
-            root _ Node(data)
+            root _ ? ?
         ____
             _add(data, root)
 
@@ -24,12 +24,12 @@ c_ binTree:
             __(node.l !_ N..
                 _add(data, node.l)
             ____
-                node.l _ Node(data)
+                node.l _ ? ?
         ____
             __(node.r !_ N..
                 _add(data, node.r)
             ____
-                node.r _ Node(data)
+                node.r _ ? ?
 
     ___ findnode data
         __(root !_ N..
@@ -82,30 +82,30 @@ ___ checkwhetheritsabintree(root
 ___ levelOrder(root
     items _    # list
     count_0
-    items.i.. (count,root)
+    ?.i.. (count,root)
     elements _""
     _____ items !_    # list:
-        temp _ items.p.. 
-        elements_ elements+str(temp.v)+ " "
-        __ temp.l!_None:
-            items.i.. (0,temp.l)
-        __ temp.r!_None:
-            items.i.. (0,temp.r)
+        temp _ ?.p.. 
+        elements_ elements+str(?.v)+ " "
+        __ ?.l!_None:
+            ?.i.. (0,?.l)
+        __ ?.r!_None:
+            ?.i.. (0,?.r)
     print "Level order traversal of BST: "+ elements
 
 
 ___ findsizeusingiteration(root
     items _    # list
     count_0
-    items.i.. (count,root)
+    ?.i.. (count,root)
     elements _""
     _____ items !_    # list:
-        temp _ items.p.. 
+        temp _ ?.p.. 
         count +_ 1
-        __ temp.l!_None:
-            items.i.. (0,temp.l)
-        __ temp.r!_None:
-            items.i.. (0,temp.r)
+        __ ?.l!_None:
+            ?.i.. (0,?.l)
+        __ ?.r!_None:
+            ?.i.. (0,?.r)
     print "size of the tree is : ", count
 
 
@@ -118,15 +118,15 @@ ___ findsize(tree
 ___ printReverse(root
     items _    # list
     count_0
-    items.i.. (count,root)
+    ?.i.. (count,root)
     elements _""
     _____ items !_    # list:
-        temp _ items.p.. 
-        elements_ str(temp.v)+ " " + elements
-        __ temp.l!_None:
-            items.i.. (0,temp.l)
-        __ temp.r!_None:
-            items.i.. (0,temp.r)
+        temp _ ?.p.. 
+        elements_ str(?.v)+ " " + elements
+        __ ?.l!_None:
+            ?.i.. (0,?.l)
+        __ ?.r!_None:
+            ?.i.. (0,?.r)
     print "Level order traversal of BST: "+ elements
 
 
@@ -139,34 +139,34 @@ ___ maximumDepthOfTree(root
 ___ deepestNode(root
     items _    # list
     count_0
-    items.i.. (count,root)
+    ?.i.. (count,root)
     elements _""
     _____ items !_    # list:
-        temp _ items.p.. 
-        elements_ str(temp.v)+ " " + elements
-        __ temp.l!_None:
-            items.i.. (0,temp.l)
-        __ temp.r!_None:
-            items.i.. (0,temp.r)
-        ___ p __ items: print p.v
+        temp _ ?.p.. 
+        elements_ str(?.v)+ " " + elements
+        __ ?.l!_None:
+            ?.i.. (0,?.l)
+        __ ?.r!_None:
+            ?.i.. (0,?.r)
+        ___ p __ items: print ?.v
         print "####"
 
-    print "Deepest node is ",temp.v
+    print "Deepest node is ",?.v
 
 
 ___ countLeaves(root
     items _    # list
     count_0
-    items.i.. (count,root)
+    ?.i.. (count,root)
     elements _""
     _____ items !_    # list:
-        temp _ items.p.. 
-        __ temp.l __ N.. ___ temp.r __ N..:
+        temp _ ?.p.. 
+        __ ?.l __ N.. ___ ?.r __ N..:
             count +_ 1
-        __ temp.l!_None:
-            items.i.. (0,temp.l)
-        __ temp.r!_None:
-            items.i.. (0,temp.r)
+        __ ?.l!_None:
+            ?.i.. (0,?.l)
+        __ ?.r!_None:
+            ?.i.. (0,?.r)
 
     print "number of leafs in the tree ",count
 
@@ -174,15 +174,15 @@ ___ countLeaves(root
 ___ countFullNodes(root
     items _    # list
     count_0
-    items.i.. (count,root)
+    ?.i.. (count,root)
     _____ items !_    # list:
-        temp _ items.p.. 
-        __ temp.l __ n.. N.. ___ temp.r __ n.. N..:
+        temp _ ?.p.. 
+        __ ?.l __ n.. N.. ___ ?.r __ n.. N..:
             count +_ 1
-        __ temp.l!_None:
-            items.i.. (0,temp.l)
-        __ temp.r!_None:
-            items.i.. (0,temp.r)
+        __ ?.l!_None:
+            ?.i.. (0,?.l)
+        __ ?.r!_None:
+            ?.i.. (0,?.r)
 
     print "number of full nodes in the tree ",count
 
@@ -191,16 +191,16 @@ ___ countFullNodes(root
 ___ countHalfNodes(root
     items _    # list
     count_0
-    items.i.. (count,root)
+    ?.i.. (count,root)
     _____ items !_    # list:
-        temp _ items.p.. 
-        __ (temp.l __ N.. ___ temp.r __ n.. N..) __ \
-                        (temp.l __ n.. N.. ___ temp.r __ N..
+        temp _ ?.p.. 
+        __ (?.l __ N.. ___ ?.r __ n.. N..) __ \
+                        (?.l __ n.. N.. ___ ?.r __ N..
             count +_ 1
-        __ temp.l!_None:
-            items.i.. (0,temp.l)
-        __ temp.r!_None:
-            items.i.. (0,temp.r)
+        __ ?.l!_None:
+            ?.i.. (0,?.l)
+        __ ?.r!_None:
+            ?.i.. (0,?.r)
 
     print "number of half nodes in the tree ",count
 
@@ -271,15 +271,15 @@ ___ checkwhetherpathhassum(root, val
 ___ sumOfNodes(root
     items _    # list
     count_0
-    items.i.. (count,root)
+    ?.i.. (count,root)
     sum_0
     _____ items !_    # list:
-        temp _ items.p.. 
-        sum +_ temp.v
-        __ temp.l!_None:
-            items.i.. (0,temp.l)
-        __ temp.r!_None:
-            items.i.. (0,temp.r)
+        temp _ ?.p.. 
+        sum +_ ?.v
+        __ ?.l!_None:
+            ?.i.. (0,?.l)
+        __ ?.r!_None:
+            ?.i.. (0,?.r)
 
     print "Total sum of all nodes is ",sum
 

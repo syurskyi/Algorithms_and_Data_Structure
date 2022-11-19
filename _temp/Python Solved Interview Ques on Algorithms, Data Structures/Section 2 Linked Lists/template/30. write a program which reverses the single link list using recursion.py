@@ -39,7 +39,7 @@ c_ LinkedList o..
            r_
        reverse(node.next_node)
        temp _ node.next_node
-       temp.next_node_node
+       ?.next_node_node
        node.next_node_None
 
     ___ size
@@ -55,10 +55,10 @@ c_ LinkedList o..
         s _ ""
         p _ head
         __ p !_ N.. :
-                w__ p.next_node !_ N.. :
-                        s +_ p.data
-                        p _ p.next_node
-                s +_ p.data
+                w__ ?.next_node !_ N.. :
+                        s +_ ?.data
+                        p _ ?.next_node
+                s +_ ?.data
         r_ s
 
 

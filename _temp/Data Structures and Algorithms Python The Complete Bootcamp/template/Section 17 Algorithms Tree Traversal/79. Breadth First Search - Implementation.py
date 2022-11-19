@@ -3,11 +3,11 @@ c_ Queue(
         items _    # list
 
     ___ enqueue item
-        items.a..(item)
+        ?.a..(item)
 
     ___ dequeue
         __ l..(items
-            r_ items.p.. 0)
+            r_ ?.p.. 0)
 
     ___ peek
         __ l..(items

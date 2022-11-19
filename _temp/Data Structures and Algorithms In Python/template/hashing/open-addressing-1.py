@@ -34,8 +34,8 @@ c_ HashTable:
 
         ___ i __ r..(m
             __ array[i] !_ N.. ___ array[i].get_student_id() !_ -1:
-                temp.i.. (array[i])
-        array _ temp.array
+                ?.i.. (array[i])
+        array _ ?.array
         m _ new_size
 
     ___ insert1 newRecord

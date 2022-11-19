@@ -10,7 +10,7 @@ ___ is_valid(expr
         __ ch __ '({[':
             st.push(ch)
         __ ch __ ')}]':
-            __ st.is_empty(
+            __ st.?
                 print("Right parentheses are more than left parentheses")
                 r_ F..
             ____
@@ -19,7 +19,7 @@ ___ is_valid(expr
                     print("Mismatched parentheses are ", char , " and " , ch)
                     r_ F..
                 
-    __ st.is_empty(
+    __ st.?
         print("Balanced Parentheses")
         r_ T..
     ____

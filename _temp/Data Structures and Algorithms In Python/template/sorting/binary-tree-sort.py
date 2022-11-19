@@ -20,10 +20,10 @@ c_ BinarySearchTree:
     ___ _insertp, x
         __ p __ N..:
             p _ Node(x)
-        ____ x < p.info :
-            p.lchild _ _insert(p.lchild, x)
+        ____ x < ?.i.. :
+            ?.lchild _ _insert(?.lchild, x)
         ____
-            p.rchild _ _insert(p.rchild, x)
+            ?.rchild _ _insert(?.rchild, x)
         r_ p
 
     ___ inorder
@@ -33,9 +33,9 @@ c_ BinarySearchTree:
     ___ _inorder p
         __ p __ N.. :
             r_
-        _inorder(p.lchild)
-        print(p.info, " ")
-        _inorder(p.rchild)
+        _inorder(?.lchild)
+        print(?.i.., " ")
+        _inorder(?.rchild)
 
     
 ####################################

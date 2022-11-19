@@ -65,9 +65,9 @@ ___ deleteNode(node, key
         # (smallest in the right subtree)
         temp _ minValueNode(node.right)
         # Copy the inorder successor's content to this node
-        node.data _ temp.data
+        node.data _ ?.data
         # Delete the inorder successor
-        node.right _ deleteNode(node.right, temp.data)
+        node.right _ deleteNode(node.right, ?.data)
 
     r_ node
 

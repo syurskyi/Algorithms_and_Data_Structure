@@ -66,19 +66,19 @@ c_ LinkedList :
         ___ search  k
                p _ head
                __ p __ n.. N..:
-                   __ p.data __ k:
+                   __ ?.data __ k:
                        r_ p
-                   w__ p.next __ n.. N..:
-                       __ p.data __ k:
+                   w__ ?.next __ n.. N..:
+                       __ ?.data __ k:
                            r_ p
-                       p _ p.next
+                       p _ ?.next
                r_ N..
 
 
 	___ remove( self, p ) :
-		tmp _ p.prev
-		p.prev.next _ p.next
-		p.prev _ tmp
+		tmp _ ?.prev
+		?.prev.next _ ?.next
+		?.prev _ tmp
 
 
         ___ deleteatbeg
@@ -97,27 +97,27 @@ c_ LinkedList :
 
              # If head needs to be removed
              __ position __ 0:
-                 head _ temp.next
+                 head _ ?.next
                  temp _ N..
                  r_
 
              # Find previous node of the node to be deleted
              ___ i __ r..(position -1 
-                 temp _ temp.next
+                 temp _ ?.next
                  __ temp __ N..:
                      b..
 
              # If position is more than number of nodes
              __ temp __ N..:
                  r_
-             __ temp.next __ N..:
+             __ ?.next __ N..:
                  r_
 
              # Node temp.next is the node to be deleted
              # store pointer to the next of node to be deleted
 			 
-	     temp.prev.next _ temp.next
-	     temp.next.prev _ temp.prev
+	     ?.prev.next _ ?.next
+	     ?.next.prev _ ?.prev
 	     temp _ N..
 			 
         ___ deleteatend
@@ -153,10 +153,10 @@ c_ LinkedList :
 		s _ ""
 		p _ head
 		__ p !_ N.. :		
-			w__ p.next !_ N.. :
-				s +_ p.data
-				p _ p.next
-			s +_ p.data
+			w__ ?.next !_ N.. :
+				s +_ ?.data
+				p _ ?.next
+			s +_ ?.data
 		r_ s
 
 # example code

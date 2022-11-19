@@ -34,9 +34,9 @@ ___ levelOrderPrint(tree
             node _ queue.p.. 
             print(str(node.val) + ' ')
             __ node.left __ n.. N..:
-                temp.a..(tree.left)
+                ?.a..(tree.left)
             __ node.right __ n.. N..:
-                temp.a..(tree.right)
+                ?.a..(tree.right)
             queue _ temp
 
 root _ Node(2)

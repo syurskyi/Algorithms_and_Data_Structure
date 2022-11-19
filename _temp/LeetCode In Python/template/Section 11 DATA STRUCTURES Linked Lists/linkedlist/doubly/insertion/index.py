@@ -22,9 +22,9 @@ c_ LinkedList:
                 start _ newNode
                 temp _ start
             ____
-                temp.next _ newNode
+                ?.next _ newNode
                 newNode.prev _ temp
-                temp _ temp.next
+                temp _ ?.next
             i +_ 1
         head _ start
         r_ start
@@ -33,8 +33,8 @@ c_ LinkedList:
         temp _ head
         linked_list _ ""
         _____(temp
-            linked_list +_ (str(temp.data) + " ")
-            temp _ temp.next
+            linked_list +_ (str(?.data) + " ")
+            temp _ ?.next
 
         print(linked_list)
 
@@ -42,7 +42,7 @@ c_ LinkedList:
         temp _ head
         count _ 0
         _____(temp __ n.. N..
-            temp _ temp.next
+            temp _ ?.next
             count +_ 1
         r_ count
 
@@ -61,29 +61,29 @@ c_ LinkedList:
 
         __(index __ 1
             newNode.next _ temp
-            temp.prev _ newNode
+            ?.prev _ newNode
             head _ newNode
             r_ head
         
         __(index __ count +1
-            _____(temp.next __ n.. N..
-                temp _ temp.next
+            _____(?.next __ n.. N..
+                temp _ ?.next
 
-            temp.next _ newNode
+            ?.next _ newNode
             newNode.prev _ temp
             r_ head
         
         i _ 1
         _____(i < index-1
-            temp _ temp.next
+            temp _ ?.next
             i+_1
         
-        nodeAtTarget _ temp.next
+        nodeAtTarget _ ?.next
 
         newNode.next _ nodeAtTarget
         nodeAtTarget.prev _ newNode
 
-        temp.next _ newNode
+        ?.next _ newNode
         newNode.prev _ temp
 
         r_ head

@@ -14,8 +14,8 @@ c_ LinkedList:
         temp _ head
         linked_list _ ""
         _____(temp
-            linked_list +_ (str(temp.data) + " ")
-            temp _ temp.next
+            linked_list +_ (str(?.data) + " ")
+            temp _ ?.next
         print(linked_list)
 
     # list start at 0
@@ -30,7 +30,7 @@ c_ LinkedList:
             temp _ head
             count _ 1
             _____(count < pos
-                temp _ temp.next
+                temp _ ?.next
                 count +_ 1
             r_ temp
 

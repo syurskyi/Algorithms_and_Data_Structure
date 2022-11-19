@@ -20,13 +20,13 @@ ___ infix_to_postfix(infix
                 postfix _ postfix + next
                 next _ st.p.. 
         ____ symbol __ "+-*/%^":
-            _____ n.. st.is_empty() ___ precedence(st.peek()) >_ precedence(symbol
+            _____ n.. st.?) ___ precedence(st.peek()) >_ precedence(symbol
                 postfix _ postfix + st.p.. 
             st.push(symbol)
         ____ #operand
             postfix _ postfix + symbol
             
-    _____ n.. st.is_empty(
+    _____ n.. st.?
         postfix _ postfix + st.p.. 
     r_ postfix
 

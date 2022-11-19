@@ -17,9 +17,9 @@ c_ Solution:
         ___ i __ r..(1, n
             seg _ s[0:i]
             __(isPalin(seg
-                temp.a..(seg)
+                ?.a..(seg)
                 dfs(s[i:])
-                temp.p.. 
+                ?.p.. 
 
     ___ partition s: str) -> List[List[str]]:
         res _    # list

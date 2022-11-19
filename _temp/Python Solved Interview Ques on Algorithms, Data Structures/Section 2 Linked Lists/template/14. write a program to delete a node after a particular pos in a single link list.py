@@ -87,39 +87,39 @@ c_ LinkedList o..
       
              # If head needs to be removed
              __ position __ 0:
-                 head _ temp.next_node
+                 head _ ?.next_node
                  temp _ N..
                  r_
       
              # Find previous node of the node to be deleted
              ___ i __ r..(position -1
-                 temp _ temp.next_node
+                 temp _ ?.next_node
                  __ temp __ N..:
                      b..
       
              # If position is more than number of nodes
              __ temp __ N..:
                  r_
-             __ temp.next_node __ N..:
+             __ ?.next_node __ N..:
                  r_
       
              # Node temp.next is the node to be deleted
              # store pointer to the next of node to be deleted
-             next _ temp.next_node.next_node
+             next _ ?.next_node.next_node
       
              # Unlink the node from linked list
-             temp.next_node _ N..
+             ?.next_node _ N..
       
-             temp.next_node _ next
+             ?.next_node _ next
 
     ___ -s
         s _ ""
         p _ head
         __ p !_ N.. :
-                w__ p.next_node !_ N.. :
-                        s +_ p.data
-                        p _ p.next_node
-                s +_ p.data
+                w__ ?.next_node !_ N.. :
+                        s +_ ?.data
+                        p _ ?.next_node
+                s +_ ?.data
         r_ s
 
 

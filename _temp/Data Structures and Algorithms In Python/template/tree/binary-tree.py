@@ -23,13 +23,13 @@ c_ BinaryTree:
     ___ _displayp,level
         __ p __ N..:
             r_
-        _display(p.rchild, level+1)
+        _display(?.rchild, level+1)
         print()
 
         ___ i __ r..(level
             print("    ", end_'')
-        print(p.info)
-        _display(p.lchild, level+1)
+        print(?.i..)
+        _display(?.lchild, level+1)
         
     ___ preorder 
         _preorder(root)
@@ -38,9 +38,9 @@ c_ BinaryTree:
     ___ _preorderp
         __ p __ N..:
             r_
-        print(p.info, " ", end _'')
-        _preorder(p.lchild)
-        _preorder(p.rchild)
+        print(?.i.., " ", end _'')
+        _preorder(?.lchild)
+        _preorder(?.rchild)
         
     ___ inorder 
         _inorder(root)
@@ -49,9 +49,9 @@ c_ BinaryTree:
     ___ _inorder p
         __ p __ N.. :
             r_
-        _inorder(p.lchild)
-        print(p.info, " ", end _'')
-        _inorder(p.rchild)
+        _inorder(?.lchild)
+        print(?.i.., " ", end _'')
+        _inorder(?.rchild)
 
     ___ postorder 
         _postorder(root)
@@ -60,9 +60,9 @@ c_ BinaryTree:
     ___ _postorder p
         __ p __ N..:
             r_
-        _postorder(p.lchild)
-        _postorder(p.rchild)
-        print(p.info, " ", end _'')
+        _postorder(?.lchild)
+        _postorder(?.rchild)
+        print(?.i.., " ", end _'')
 
     ___ level_order 
         __ root __ N..:
@@ -74,11 +74,11 @@ c_ BinaryTree:
 
         _____ l..(qu)!_0:
             p _ qu.popleft()
-            print(p.info + " ",end_'')
-            __ p.lchild __ n.. N..:
-                qu.a..(p.lchild)
-            __ p.rchild __ n.. N..:
-                qu.a..(p.rchild)
+            print(?.i.. + " ",end_'')
+            __ ?.lchild __ n.. N..:
+                qu.a..(?.lchild)
+            __ ?.rchild __ n.. N..:
+                qu.a..(?.rchild)
     	     
     
     ___ height 
@@ -88,8 +88,8 @@ c_ BinaryTree:
         __ p __ N..:
             r_ 0
 
-        hL _ _height(p.lchild)
-        hR _ _height(p.rchild)
+        hL _ _height(?.lchild)
+        hR _ _height(?.rchild)
 
         __ hL > hR:
             r_ 1 + hL

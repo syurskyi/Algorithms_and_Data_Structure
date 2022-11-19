@@ -12,8 +12,8 @@ c_ LinkedList:
         temp _ head
         linked_list _ ""
         _____(temp
-            linked_list +_ (str(temp.data) + " ")
-            temp _ temp.next
+            linked_list +_ (str(?.data) + " ")
+            temp _ ?.next
         print(linked_list)
 
 # Node strucutre: 5 => 1 => 3 => 7

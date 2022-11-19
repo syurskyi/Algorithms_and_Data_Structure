@@ -48,17 +48,17 @@ c_ LinkedList o..
         s _ ""
         p _ head
         __ p !_ N.. :
-                w__ p.next_node !_ N.. :
-                        s +_ p.data
-                        p _ p.next_node
-                s +_ p.data
+                w__ ?.next_node !_ N.. :
+                        s +_ ?.data
+                        p _ ?.next_node
+                s +_ ?.data
         r_ s
 
 
 ___ findLengthOfListEvenOdd(list1
   temp_list1
-  w__ temp !_ N.. a__ temp.next_node !_ N..:
-    temp _ temp.next_node.next_node
+  w__ temp !_ N.. a__ ?.next_node !_ N..:
+    temp _ ?.next_node.next_node
   __ temp __ N..:
     r_ 1
   r_ 0 

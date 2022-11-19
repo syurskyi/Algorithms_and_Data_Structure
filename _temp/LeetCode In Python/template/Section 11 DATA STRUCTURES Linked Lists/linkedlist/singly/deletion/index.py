@@ -14,24 +14,24 @@ c_ LinkedList:
         temp _ head
         linked_list _ ""
         _____(temp
-            linked_list +_ (str(temp.data) + " ")
-            temp _ temp.next
+            linked_list +_ (str(?.data) + " ")
+            temp _ ?.next
         print(linked_list)
 
     ___ deleteNode key
         temp _ head
         __(temp __ N..
             r_
-        __(temp.data __ key
-            head _ temp.next
+        __(?.data __ key
+            head _ ?.next
             temp _ N..
             r_
 
-        _____(temp.next.data !_ key
-            temp _ temp.next
+        _____(?.next.data !_ key
+            temp _ ?.next
 
-        target_node _ temp.next
-        temp.next _ target_node.next
+        target_node _ ?.next
+        ?.next _ target_node.next
         target_node.next _ N..
 
 

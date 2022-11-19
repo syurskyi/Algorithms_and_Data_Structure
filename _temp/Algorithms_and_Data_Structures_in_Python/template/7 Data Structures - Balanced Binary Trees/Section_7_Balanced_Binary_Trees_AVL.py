@@ -22,7 +22,7 @@ c_ AVL o..
     ___ insertNode data, node
 
         __ n.. node:
-            r_ Node(data)
+            r_ ? ?
 
         __ data < node.data:
             node.leftChild _ insertNode(data, node.leftChild)

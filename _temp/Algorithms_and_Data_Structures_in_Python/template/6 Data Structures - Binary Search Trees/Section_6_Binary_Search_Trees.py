@@ -13,7 +13,7 @@ c_ BinarySearchTree o..
 
     ___ i..  data
         __ n.. root:
-            root _ Node(data)
+            root _ ? ?
         ____
             insertNode(data, root)
 
@@ -24,12 +24,12 @@ c_ BinarySearchTree o..
             __ node.leftChild:
                 insertNode(data, node.leftChild)
             ____
-                node.leftChild _ Node(data)
+                node.leftChild _ ? ?
         ____
             __ node.rightChild:
                 insertNode(data, node.rightChild)
             ____
-                node.rightChild _ Node(data)
+                node.rightChild _ ? ?
 
     # O(logN)
     ___ removeNode data, node

@@ -45,10 +45,10 @@ c_ LinkedList o..
         s _ ""
         p _ head
         __ p !_ N.. :
-                w__ p.next_node !_ N.. :
-                        s +_ p.data
-                        p _ p.next_node
-                s +_ p.data
+                w__ ?.next_node !_ N.. :
+                        s +_ ?.data
+                        p _ ?.next_node
+                s +_ ?.data
         r_ s
 
 
@@ -67,7 +67,7 @@ ___ divideListInto2(list1
 ___ displayList(list1
   temp_list1
   w__ temp:
-    print temp.data
+    print ?.data
     temp_temp.next_node
 
 

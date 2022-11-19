@@ -130,8 +130,8 @@ ___ deleteNode(rootNode, nodeValue
             rootNode _ N..
             r_ temp
         temp _ getMinValueNode(rootNode.rightChild)
-        rootNode.data _ temp.data
-        rootNode.rightChild _ deleteNode(rootNode.rightChild, temp.data)
+        rootNode.data _ ?.data
+        rootNode.rightChild _ deleteNode(rootNode.rightChild, ?.data)
     balance _ getBalance(rootNode)
     __ balance > 1 ___ getBalance(rootNode.leftChild) >_ 0:
         r_ rightRotate(rootNode)

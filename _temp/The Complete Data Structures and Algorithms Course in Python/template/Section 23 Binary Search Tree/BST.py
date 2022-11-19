@@ -101,8 +101,8 @@ ___ deleteNode(rootNode, nodeValue
             r_ temp
         
         temp _ minValueNode(rootNode.rightChild)
-        rootNode.data _ temp.data
-        rootNode.rightChild _ deleteNode(rootNode.rightChild, temp.data)
+        rootNode.data _ ?.data
+        rootNode.rightChild _ deleteNode(rootNode.rightChild, ?.data)
     r_ rootNode
 
 ___ deleteBST(rootNode

@@ -16,14 +16,14 @@ c_ Queue:
             r_ F..
     
     ___ enqueue value
-        items.a..(value)
+        ?.a..(value)
         r_ "The element is inserted at the end of Queue"
     
     ___ dequeue 
         __ isEmpty(
             r_ "The is not any element in the Queue"
         ____
-            r_ items.p.. 0)
+            r_ ?.p.. 0)
     
     ___ peek 
         __ isEmpty(

@@ -21,7 +21,7 @@ c_ Solution:
             temp _    # list
             ___ i __ r..(0,n
                 f _ q.popleft()
-                temp.a..(f.val)
+                ?.a..(f.val)
 
                 __(f.left __ n.. N..
                     q.a..(f.left)
@@ -30,6 +30,6 @@ c_ Solution:
 
             __(l..(temp)>0
                 ans.a..(temp[:])
-                temp.clear()
+                ?.clear()
         r_ ans
         
