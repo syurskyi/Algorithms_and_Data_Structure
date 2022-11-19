@@ -21,7 +21,7 @@ c_ BinaryTree:
         print()
         
     ___ _displayp,level
-        __ p __ N..:
+        __ p __ N..
             r_
         _display(?.rchild, level+1)
         print()
@@ -36,7 +36,7 @@ c_ BinaryTree:
         print()
     
     ___ _preorderp
-        __ p __ N..:
+        __ p __ N..
             r_
         print(?.i.., " ", end _'')
         _preorder(?.lchild)
@@ -58,14 +58,14 @@ c_ BinaryTree:
         print() 
          
     ___ _postorder p
-        __ p __ N..:
+        __ p __ N..
             r_
         _postorder(?.lchild)
         _postorder(?.rchild)
         print(?.i.., " ", end _'')
 
     ___ level_order 
-        __ root __ N..:
+        __ root __ N..
             print("Tree is empty")
             r_
               	     
@@ -75,9 +75,9 @@ c_ BinaryTree:
         _____ l..(qu)!_0:
             p _ qu.popleft()
             print(?.i.. + " ",end_'')
-            __ ?.lchild __ n.. N..:
+            __ ?.lchild __ n.. N..
                 qu.a..(?.lchild)
-            __ ?.rchild __ n.. N..:
+            __ ?.rchild __ n.. N..
                 qu.a..(?.rchild)
     	     
     
@@ -85,7 +85,7 @@ c_ BinaryTree:
         r_ _height(root)
 
     ___ _heightp
-        __ p __ N..:
+        __ p __ N..
             r_ 0
 
         hL _ _height(?.lchild)

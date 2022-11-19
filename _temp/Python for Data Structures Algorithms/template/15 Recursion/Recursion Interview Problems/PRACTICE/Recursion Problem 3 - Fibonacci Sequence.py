@@ -35,7 +35,7 @@ cache _ [N..] * (n + 1)
 print(cache)
 
 ___ fib_dyn(n
-    __ cache[n] __ n.. N..:
+    __ cache[n] __ n.. N..
          r_ cache[n]
     __ n <_2:
         cache[n] _ i..((n+1)/2)

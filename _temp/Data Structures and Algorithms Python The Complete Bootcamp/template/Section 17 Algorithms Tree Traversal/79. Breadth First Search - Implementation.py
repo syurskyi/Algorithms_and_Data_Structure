@@ -23,10 +23,10 @@ c_ Node(
 
 c_ BinaryTree(
     ___ -  value
-        root _ Node(value)
+        root _ ? ?
 
     ___ levelorder start
-        __ start __ N..:
+        __ start __ N..
             r_
 
         queue _ Queue()

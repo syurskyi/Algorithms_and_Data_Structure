@@ -20,7 +20,7 @@ c_ Codec:
         leftSerialized _ serialize(root.left)
         rightSerialized _ serialize(root.right)
 
-        r_ str(root.val)+"#"+leftSerialized+rightSerialized
+        r_ s..(root.val)+"#"+leftSerialized+rightSerialized
 
     ___ deserialize data
         """Decodes your encoded data to tree.

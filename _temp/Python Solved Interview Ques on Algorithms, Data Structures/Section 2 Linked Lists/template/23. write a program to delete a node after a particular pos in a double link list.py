@@ -1,8 +1,8 @@
 c_ Node :
 	___  -( self, data ) :
-		data _ data
-		next _ N.. 
-		prev _ N..  
+		? _ ?
+		n.. _ N.. 
+		p.. _ N..  
 
 c_ LinkedList :
 	___  -
@@ -25,8 +25,8 @@ c_ LinkedList :
                  head _ node 
               ____
                  current _ head
-                 w__ (?.next !_ N..
-                       current_current.next
+                 w__ (?.n.. !_ N..
+                       current_current.n..
                  ?.next_node
                  node.prev_current
 
@@ -45,10 +45,10 @@ c_ LinkedList :
                        count _ 0
                        w__ count <_ pos - 1:
                            count +_ 1
-                           current _ ?.next
-                       newNode.prev_current.prev
-                       ?.prev.next_newNode 
-                       newNode.next_current
+                           current _ ?.n..
+                       ?.prev_current.p..
+                       ?.p...next_newNode 
+                       ?.next_current
                        ?.prev_newNode
 
 
@@ -65,31 +65,31 @@ c_ LinkedList :
 
         ___ search  k
                p _ head
-               __ p __ n.. N..:
+               __ p __ n.. N..
                    __ ?.data __ k:
                        r_ p
-                   w__ ?.next __ n.. N..:
+                   w__ ?.n.. __ n.. N..
                        __ ?.data __ k:
                            r_ p
-                       p _ ?.next
+                       p _ ?.n..
                r_ N..
 
 
 	___ remove( self, p ) :
-		tmp _ ?.prev
-		?.prev.next _ ?.next
-		?.prev _ tmp
+		tmp _ ?.p..
+		?.p...n.. _ ?.n..
+		?.p.. _ tmp
 
 
         ___ deleteatbeg
-              __ head __ n.. N..:
+              __ head __ n.. N..
                  current _ head
-                 head _ ?.next
+                 head _ ?.n..
 
         ___ deleteatpos  position
 
              # If linked list is empty
-             __ head __ N..:
+             __ head __ N..
                  r_
 
              # Store head node
@@ -97,47 +97,47 @@ c_ LinkedList :
 
              # If head needs to be removed
              __ position __ 0:
-                 head _ ?.next
+                 head _ ?.n..
                  temp _ N..
                  r_
 
              # Find previous node of the node to be deleted
              ___ i __ r..(position -1 
-                 temp _ ?.next
-                 __ temp __ N..:
+                 temp _ ?.n..
+                 __ temp __ N..
                      b..
 
              # If position is more than number of nodes
-             __ temp __ N..:
+             __ temp __ N..
                  r_
-             __ ?.next __ N..:
+             __ ?.n.. __ N..
                  r_
 
              # Node temp.next is the node to be deleted
              # store pointer to the next of node to be deleted
 			 
-	     ?.prev.next _ ?.next
-	     ?.next.prev _ ?.prev
+	     ?.p...n.. _ ?.n..
+	     ?.n...prev _ ?.p..
 	     temp _ N..
 			 
         ___ deleteatend
-             __ head __ N..:
+             __ head __ N..
                 r_
 
              current _ head
-             w__ (?.next !_ N..
-                   current_current.next
+             w__ (?.n.. !_ N..
+                   current_current.n..
              
-             ?.prev.next_None
+             ?.p...next_None
              current_None  
 
         ___ deleteatbeg
-             __ head __ N..:
+             __ head __ N..
                 r_
 
              current _ head
-             head _ head.next
-             head.prev _ N..
+             head _ head.n..
+             head.p.. _ N..
              current _ N.. 
 
         ___ size
@@ -145,7 +145,7 @@ c_ LinkedList :
                count _ 0
                w__ ?
                  count +_ 1
-                 current _ ?.next
+                 current _ ?.n..
                r_ count
 
 
@@ -153,9 +153,9 @@ c_ LinkedList :
 		s _ ""
 		p _ head
 		__ p !_ N.. :		
-			w__ ?.next !_ N.. :
+			w__ ?.n.. !_ N.. :
 				s +_ ?.data
-				p _ ?.next
+				p _ ?.n..
 			s +_ ?.data
 		r_ s
 

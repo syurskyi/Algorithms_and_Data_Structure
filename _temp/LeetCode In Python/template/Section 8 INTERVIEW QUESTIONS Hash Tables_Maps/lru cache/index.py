@@ -8,7 +8,7 @@ c_ LRUCache:
         m _ dict()
         deq _ deque()
 
-    ___ get key: i..) -> i..:
+    ___ get key: i..) __ i..:
         __ key __ m:
             value _ m[key]
             deq.remove(key)
@@ -17,7 +17,7 @@ c_ LRUCache:
         ____
             r_ -1
 
-    ___ put key: i.., value: i..) -> N..:
+    ___ put key: i.., value: i..) __ N..
 
         # Your LRUCache object will be instantiated and called as such:
         # obj = LRUCache(capacity)

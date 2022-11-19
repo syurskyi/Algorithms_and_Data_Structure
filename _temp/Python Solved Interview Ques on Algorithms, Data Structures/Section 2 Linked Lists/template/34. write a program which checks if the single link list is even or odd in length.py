@@ -4,7 +4,7 @@ from pprint import pprint
 c_ Node o..
 
     ___  -  data_N.. next_node_None
-        data _ data
+        ? _ ?
         next_node _ N.. 
 
     ___ get_data
@@ -28,7 +28,7 @@ c_ LinkedList o..
     ___ insertatEnd item
         current _ head
         __ ?
-            w__ ?.g.. !_ N..:
+            w__ ?.g.. !_ N..
                 current _ ?.g..
             ?.s.. ? ?
         ____
@@ -57,9 +57,9 @@ c_ LinkedList o..
 
 ___ findLengthOfListEvenOdd(list1
   temp_list1
-  w__ temp !_ N.. a__ ?.next_node !_ N..:
+  w__ temp !_ N.. a__ ?.next_node !_ N..
     temp _ ?.next_node.next_node
-  __ temp __ N..:
+  __ temp __ N..
     r_ 1
   r_ 0 
    

@@ -1,5 +1,5 @@
-c_ Solution:
-    ___ numRescueBoats people: List[i..], limit: i..) -> i..:
+c_ Solution
+    ___ numRescueBoats people: List[i..], limit: i..) __ i..:
         people.sort()
 
         left _ 0

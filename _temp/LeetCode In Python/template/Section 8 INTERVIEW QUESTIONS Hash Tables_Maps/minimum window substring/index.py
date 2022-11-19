@@ -1,5 +1,5 @@
-c_ Solution:
-    ___ minWindow s: str, t: str) -> str:
+c_ Solution
+    ___ minWindow s: s.., t: s..) __ s..:
         len1 _ l..(s)
         len2 _ l..(t)
 

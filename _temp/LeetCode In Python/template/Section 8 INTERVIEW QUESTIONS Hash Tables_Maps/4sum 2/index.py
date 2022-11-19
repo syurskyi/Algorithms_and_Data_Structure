@@ -1,5 +1,5 @@
-c_ Solution:
-    ___ fourSumCount A: List[i..], B: List[i..], C: List[i..], D: List[i..]) -> i..:
+c_ Solution
+    ___ fourSumCount A: List[i..], B: List[i..], C: List[i..], D: List[i..]) __ i..:
       m _     # dict
       ans _ 0
 

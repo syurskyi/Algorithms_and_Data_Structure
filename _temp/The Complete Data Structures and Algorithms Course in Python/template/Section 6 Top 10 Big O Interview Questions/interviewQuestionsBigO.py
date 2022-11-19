@@ -10,7 +10,7 @@ ___ foo(array
         sum +_ i
     ___ i __ array:
         product *_ i
-    print("Sum = "+str(sum)+", Product = "+str(product))
+    print("Sum = "+s..(sum)+", Product = "+s..(product))
 
 ar1 _ [1,2,3,4]
 foo(ar1)
@@ -20,7 +20,7 @@ foo(ar1)
 ___ printPairs(array
     ___ i __ array:
         ___ j __ array:
-            print(str(i)+","+str(j))
+            print(s..(i)+","+s..(j))
 
 
 #Question3
@@ -38,7 +38,7 @@ ___ printUnorderedPairs(arrayA, arrayB
     ___ i __ r..(l..(arrayA
         ___ j __ r..(l..(arrayB
             __ arrayA[i] < arrayB[j]:
-                print(str(arrayA[i]) + "," + str(arrayB[j]))
+                print(s..(arrayA[i]) + "," + s..(arrayB[j]))
 
 arrayA _ [1,2,3,4,5]
 arrayB _ [2,6,7,8]
@@ -50,7 +50,7 @@ ___ printUnorderedPairs(arrayA, arrayB
     ___ i __ r..(l..(arrayA
         ___ j __ r..(l..(arrayB
             ___ k __ r..(0,100000
-                print(str(arrayA[i]) + "," + str(arrayB[j]))
+                print(s..(arrayA[i]) + "," + s..(arrayB[j]))
 
 # printUnorderedPairss(arrayA,arrayB)
 
@@ -81,7 +81,7 @@ print(factorial(3))
 #Question9
 ___ allFib(n
     ___ i __ r..(n
-        print(str(i)+":, " + str(fib(i)))
+        print(s..(i)+":, " + s..(fib(i)))
 
 ___ fib(n
     __ n <_ 0:

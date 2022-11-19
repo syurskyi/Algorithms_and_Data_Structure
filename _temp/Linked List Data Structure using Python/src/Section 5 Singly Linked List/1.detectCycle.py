@@ -10,10 +10,10 @@ ___ detectCycle(linkedList
     currentNode _ linkedList.head
     currentNode.isVisited _ T..
     _____ T..:
-        __ currentNode.next.isVisited __ T..:
-            currentNode.next _ N..
+        __ currentNode.n...isVisited __ T..:
+            currentNode.n.. _ N..
             b..
-        currentNode _ currentNode.next
+        currentNode _ currentNode.n..
         currentNode.isVisited _ T..
 
 
@@ -25,6 +25,6 @@ linkedList _ LinkedList()
 linkedList.insertEnd(nodeOne)
 linkedList.insertEnd(nodeTwo)
 linkedList.insertEnd(nodeThree)
-nodeThree.next _ nodeTwo
+nodeThree.n.. _ nodeTwo
 detectCycle(linkedList)
 linkedList.printList()

@@ -5,7 +5,7 @@ import QueueLinkedList as queue
 
 c_ TreeNode:
     ___ -  data
-        data _ data
+        ? _ ?
         leftChild _ N..
         rightChild _ N..
 
@@ -80,12 +80,12 @@ ___ insertNodeBT(rootNode, newNode
         customQueue.enqueue(rootNode)
         _____ n..(customQueue.isEmpty(
             root _ customQueue.dequeue()
-            __ root.value.leftChild __ n.. N..:
+            __ root.value.leftChild __ n.. N..
                 customQueue.enqueue(root.value.leftChild)
             ____
                 root.value.leftChild _ newNode
                 r_ "Successfully Inserted"
-            __ root.value.rightChild __ n.. N..:
+            __ root.value.rightChild __ n.. N..
                 customQueue.enqueue(root.value.rightChild)
             ____
                 root.value.rightChild _ newNode

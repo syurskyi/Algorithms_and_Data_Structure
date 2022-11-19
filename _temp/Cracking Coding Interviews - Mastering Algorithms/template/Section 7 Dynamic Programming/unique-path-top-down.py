@@ -26,7 +26,7 @@ ___ unique_paths_rec(m, n, i, j, memo
 	____ i >_ m __ j >_ n:
 		r_ 0
 
-	key _ str(i) + "," + str(j)
+	key _ s..(i) + "," + s..(j)
 
 	__ key __ memo:
 		r_ memo[key]

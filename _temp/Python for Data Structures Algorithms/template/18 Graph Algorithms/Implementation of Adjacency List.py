@@ -18,7 +18,7 @@ c_ Vertex:
         connectedTo[nbr] _ weight
 
     ___ __str__ 
-        r_ str(id) + ' connectedTo: ' + str([x.id ___ x __ connectedTo])
+        r_ s..(id) + ' connectedTo: ' + s..([x.id ___ x __ connectedTo])
 
     ___ getConnections 
         r_ connectedTo.keys()

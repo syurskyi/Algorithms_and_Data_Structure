@@ -2,42 +2,42 @@
 
 c_ Node:
     ___ -  data
-        data _ data
-        next _ N..
+        ? _ ?
+        n.. _ N..
         previous _ N..
 
-c_ LinkedList:
+c_ LinkedList
     ___ -  
         head _ N..
 
     ___ insertEnd newNode
-        __ head __ N..:
+        __ head __ N..
             head _ newNode
             r_
         currentNode _ head
-        _____ currentNode.next __ n.. N..:
-            currentNode _ currentNode.next
-        currentNode.next _ newNode
-        newNode.previous _ currentNode
+        _____ currentNode.n.. __ n.. N..
+            currentNode _ currentNode.n..
+        currentNode.n.. _ newNode
+        ?.previous _ currentNode
 
     ___ printList 
-        __ head __ N..:
+        __ head __ N..
             print("Empty list")
             r_
         currentNode _ head
         _____ T..:
             print(currentNode.data)
-            __ currentNode.next __ N..:
+            __ currentNode.n.. __ N..
                 b..
-            currentNode _ currentNode.next
+            currentNode _ currentNode.n..
 
 ___ isDuplicate(currentNode, mergedList
     currentMerge _ mergedList.head
     # Check if data already exists in list
-    _____ currentMerge __ n.. N..:
+    _____ currentMerge __ n.. N..
         __ currentNode.data __ currentMerge.data:
             r_ T..
-        currentMerge _ currentMerge.next
+        currentMerge _ currentMerge.n..
     r_ F..
 
 ___ sortNodeOrder(currentNode, mergedList
@@ -47,36 +47,36 @@ ___ sortNodeOrder(currentNode, mergedList
         __ currentNode.data < currentMerge.data:
             # Check if currentNode is to be made the new head node
             __ currentMerge __ mergedList.head:
-                currentNode.next _ currentMerge
+                currentNode.n.. _ currentMerge
                 currentMerge.previous _ currentNode
                 mergedList.head _ currentNode
             ____
                 currentNode.previous _ currentMerge.previous
-                currentNode.next _ currentMerge
-                currentMerge.previous.next _ currentNode
+                currentNode.n.. _ currentMerge
+                currentMerge.previous.n.. _ currentNode
                 currentMerge.previous _ currentNode
             r_
         ____
-            __ currentMerge.next __ N..:
-                currentMerge.next _ currentNode
+            __ currentMerge.n.. __ N..
+                currentMerge.n.. _ currentNode
                 currentNode.previous _ currentMerge
                 r_
-            currentMerge _ currentMerge.next
+            currentMerge _ currentMerge.n..
 
 ___ mergeList(linkedListOne, linkedListTwo, mergedList
     currentFirst _ linkedListOne.head
     currentSecond _ linkedListTwo.head
     # Insert list one into merged list
     _____ T..:
-        __ currentFirst __ N..:
+        __ currentFirst __ N..
             b..
-        currentFirstNext _ currentFirst.next
-        currentFirst.next _ N..
+        currentFirstNext _ currentFirst.n..
+        currentFirst.n.. _ N..
         currentFirst.previous _ N..
-        __ mergedList.head __ N..:
+        __ mergedList.head __ N..
             mergedList.head _ currentFirst
             currentFirst _ currentFirstNext
-            continue
+            c..
         # Check if node already exists
         __ isDuplicate(currentFirst, mergedList) __ F..:
             # Place the node in sorted order
@@ -84,15 +84,15 @@ ___ mergeList(linkedListOne, linkedListTwo, mergedList
         currentFirst _ currentFirstNext
     # Insert list two into merged list
     _____ T..:
-        __ currentSecond __ N..:
+        __ currentSecond __ N..
             b..
-        currentSecondNext _ currentSecond.next
-        currentSecond.next _ N..
+        currentSecondNext _ currentSecond.n..
+        currentSecond.n.. _ N..
         currentSecond.previous _ N..
-        __ mergedList.head __ N..:
+        __ mergedList.head __ N..
             mergedList.head _ currentSecond
             currentSecond _ currentSecondNext
-            continue
+            c..
         # Check if node already exists
         __ isDuplicate(currentSecond, mergedList) __ F..:
             # Place the node in sorted order

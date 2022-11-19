@@ -1,5 +1,5 @@
-c_ Solution:
-    ___ judgeCircle moves: str) -> bool:
+c_ Solution
+    ___ judgeCircle moves: s..) __ b..:
         
         x _ 0
         y _ 0

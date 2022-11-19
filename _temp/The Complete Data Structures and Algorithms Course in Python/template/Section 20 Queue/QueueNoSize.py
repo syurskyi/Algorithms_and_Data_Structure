@@ -6,7 +6,7 @@ c_ Queue:
         items _    # list
     
     ___ __str__ 
-        values _ [str(x) ___ x __ items]
+        values _ [s..(x) ___ x __ items]
         r_ ' '.j..(values)
     
     ___ isEmpty 

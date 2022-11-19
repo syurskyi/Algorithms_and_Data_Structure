@@ -1,11 +1,11 @@
-c_ Solution:
-    ___ hasCycle head: ListNode) -> bool:
+c_ Solution
+    ___ hasCycle head: ListNode) __ b..:
         hare _ head
         turtle _ head
 
-        _____ turtle ___ hare ___ hare.next:
-            hare _ hare.next.next
-            turtle _ turtle.next
+        _____ turtle ___ hare ___ hare.n..:
+            hare _ hare.n...next
+            turtle _ turtle.n..
             __(turtle __ hare
                 r_ T..
         r_ F..

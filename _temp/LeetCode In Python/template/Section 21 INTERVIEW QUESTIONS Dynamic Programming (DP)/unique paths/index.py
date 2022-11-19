@@ -1,5 +1,5 @@
-c_ Solution:
-    ___ uniquePaths m: i.., n: i..) -> i..:
+c_ Solution
+    ___ uniquePaths m: i.., n: i..) __ i..:
         
         dp _ [[0 ___ x __ r..(m)] ___ y __ r..(n)]
         ___ i __ r..(m

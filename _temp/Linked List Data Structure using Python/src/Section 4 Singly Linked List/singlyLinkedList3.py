@@ -5,10 +5,10 @@
 
 c_ Node:
     ___ -  data
-        data _ data
-        next _ N..
+        ? _ ?
+        n.. _ N..
 
-c_ LinkedList:
+c_ LinkedList
     ___ -  
         head _ N..
 
@@ -16,15 +16,15 @@ c_ LinkedList:
         # data = > Matthew, next => None
         temporaryNode _ head # John
         head _ newNode # Matthew
-        head.next _ temporaryNode
+        head.n.. _ temporaryNode
         d.. temporaryNode
 
     ___ listLength 
         currentNode _ head
         length _ 0
-        _____ currentNode __ n.. N..:
+        _____ currentNode __ n.. N..
             length +_ 1
-            currentNode _ currentNode.next
+            currentNode _ currentNode.n..
         r_ length
 
     ___ insertAt newNode, position
@@ -39,36 +39,36 @@ c_ LinkedList:
         currentPosition _ 0 # 0, 1
         _____ T..:
             __ currentPosition __ position:
-                previousNode.next _ newNode
-                newNode.next _ currentNode
+                previousNode.n.. _ newNode
+                ?.n.. _ currentNode
                 b..
             previousNode _ currentNode
-            currentNode _ currentNode.next
+            currentNode _ currentNode.n..
             currentPosition +_ 1
 
 
     ___ insertEnd newNode
-        __ head __ N..:
+        __ head __ N..
             head _ newNode
         ____
             lastNode _ head
             _____ T..:
-                __ lastNode.next __ N..:
+                __ lastNode.n.. __ N..
                     b..
-                lastNode _ lastNode.next
-            lastNode.next _ newNode
+                lastNode _ lastNode.n..
+            lastNode.n.. _ newNode
 
     ___ printList 
         # head => John -> Ben -> Matthew -> None
-        __ head __ N..:
+        __ head __ N..
             print("List is empty")
             r_
         currentNode _ head
         _____ T..:
-            __ currentNode __ N..:
+            __ currentNode __ N..
                 b..
             print(currentNode.data)
-            currentNode _ currentNode.next
+            currentNode _ currentNode.n..
 
 
 # Node => data, next

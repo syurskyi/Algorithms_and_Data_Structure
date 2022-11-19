@@ -20,21 +20,21 @@ ___ intersection(llA, llB
     shorterNode _ shorter.head
 
     ___ i __ r..(diff
-        longerNode _ longerNode.next
+        longerNode _ longerNode.n..
     
     _____ shorterNode __ n.. longerNode:
-        shorterNode _ shorterNode.next
-        longerNode _ longerNode.next
+        shorterNode _ shorterNode.n..
+        longerNode _ longerNode.n..
     
     r_ longerNode
 
 
 # Helper addition method
 ___ addSameNode(llA, llB, value
-    tempNode _ Node(value)
-    llA.tail.next _ tempNode
+    tempNode _ ? ?
+    llA.tail.n.. _ tempNode
     llA.tail _ tempNode
-    llB.tail.next _ tempNode
+    llB.tail.n.. _ tempNode
     llB.tail _ tempNode
 
 llA _ LinkedList()

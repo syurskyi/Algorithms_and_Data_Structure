@@ -4,7 +4,7 @@
 # def isBadVersion(version):
 
 
-c_ Solution:
+c_ Solution
     ___ firstBadVersion n
         left _ 1
         right _ n

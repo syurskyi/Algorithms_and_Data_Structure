@@ -1,5 +1,5 @@
-c_ Solution:
-    ___ majorityElement nums: List[i..]) -> i..:
+c_ Solution
+    ___ majorityElement nums: List[i..]) __ i..:
         m _     # dict
         ___ num __ nums:
             m[num] _ m.get(num,0)+1

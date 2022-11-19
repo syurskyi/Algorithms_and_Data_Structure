@@ -57,12 +57,12 @@ c_ binTree:
     ___ _printTree node
         __(node !_ N..
             _printTree(node.l)
-            print str(node.v) + ' '
+            print s..(node.v) + ' '
             _printTree(node.r)
 
 
 ___ maxusingloops(root
-  __ root __ N..:
+  __ root __ N..
      r_
 
   q _ Queue.Queue()
@@ -77,10 +77,10 @@ ___ maxusingloops(root
     __ maxElem < node.v:
        maxElem_node.v
 
-    __ node.l __ n.. N..:
+    __ node.l __ n.. N..
        q.put(node.l)
 
-    __ node.r __ n.. N..:
+    __ node.r __ n.. N..
        q.put(node.r)
         
   print maxElem

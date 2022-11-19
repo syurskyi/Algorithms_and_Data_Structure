@@ -52,11 +52,11 @@ ___ deleteNode(node, key
     # to be deleted
     ____
         # Node with only one child or no child
-        __ node.left __ N..:
+        __ node.left __ N..
             temp _ node.right
             node _ N..
             r_ temp
-        ____ node.right __ N..:
+        ____ node.right __ N..
             temp _ node.left
             node _ N..
             r_ temp

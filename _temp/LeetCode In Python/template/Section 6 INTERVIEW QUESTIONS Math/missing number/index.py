@@ -1,5 +1,5 @@
-c_ Solution:
-    ___ missingNumber nums: List[i..]) -> i..:
+c_ Solution
+    ___ missingNumber nums: List[i..]) __ i..:
         currentSum _ sum(nums)
         n _ l..(nums)
         intendedSum _ n*(n+1)/2

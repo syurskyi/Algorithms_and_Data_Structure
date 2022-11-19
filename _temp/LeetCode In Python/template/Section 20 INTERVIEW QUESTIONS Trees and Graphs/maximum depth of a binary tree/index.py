@@ -5,8 +5,8 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution:
-    ___ maxDepth root: TreeNode) -> i..:
+c_ Solution
+    ___ maxDepth root: TreeNode) __ i..:
         __(root __ N..
             r_ 0
         __(root.left __ N.. ___  root.right __ N..

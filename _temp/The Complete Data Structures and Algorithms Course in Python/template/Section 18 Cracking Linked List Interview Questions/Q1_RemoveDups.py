@@ -7,32 +7,32 @@
 from LinkedList import LinkedList
 
 ___ removeDups(ll
-    __ ll.head __ N..:
+    __ ll.head __ N..
         r_
     ____
         currentNode _ ll.head
         visited _ s..([currentNode.value])
-        _____ currentNode.next:
-            __ currentNode.next.value __ visited:
-                currentNode.next _ currentNode.next.next
+        _____ currentNode.n..:
+            __ currentNode.n...value __ visited:
+                currentNode.n.. _ currentNode.n...next
             ____
-                visited.add(currentNode.next.value)
-                currentNode _ currentNode.next
+                visited.add(currentNode.n...value)
+                currentNode _ currentNode.n..
         r_ ll
 
 ___ removeDups1(ll
-    __ ll.head __ N..:
+    __ ll.head __ N..
         r_
     
     currentNode _ ll.head
     _____ currentNode:
         runner _ currentNode
-        _____ runner.next:
-            __ runner.next.value __ currentNode.value:
-                runner.next _ runner.next.next
+        _____ runner.n..:
+            __ runner.n...value __ currentNode.value:
+                runner.n.. _ runner.n...next
             ____
-                runner _ runner.next
-        currentNode _ currentNode.next
+                runner _ runner.n..
+        currentNode _ currentNode.n..
     r_ ll.head
 
 

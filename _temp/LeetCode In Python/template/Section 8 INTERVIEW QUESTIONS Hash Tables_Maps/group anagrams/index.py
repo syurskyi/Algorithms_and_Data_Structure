@@ -1,7 +1,7 @@
-c_ Solution:
+c_ Solution
     ___ findHashs
         r_ ''.j..(s..(s))
-    ___ groupAnagrams strs: List[str]) -> List[List[str]]:
+    ___ groupAnagrams strs: List[s..]) __ List[List[s..]]:
         answers _    # list
         m _     # dict
 

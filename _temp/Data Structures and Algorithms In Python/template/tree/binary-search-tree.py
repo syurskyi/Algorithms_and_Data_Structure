@@ -21,7 +21,7 @@ c_ BinarySearchTree:
         root _ _insert(root, x)
                  
     ___ _insertp, x
-        __ p __ N..:
+        __ p __ N..
             p _ Node(x)
         ____ x < ?.i.. :
             ?.lchild _ _insert(?.lchild, x) 
@@ -34,7 +34,7 @@ c_ BinarySearchTree:
     ___ insert1x
         p _ root
         par _ N..
-        _____ p __ n.. N..:
+        _____ p __ n.. N..
             par _ p
             __ x < ?.i.. :
                 p _ ?.lchild
@@ -46,7 +46,7 @@ c_ BinarySearchTree:
 
         temp _ Node(x) 
 
-        __ par __ N..:
+        __ par __ N..
             root _ temp 
         ____ x < par.i..:
             par.lchild _ temp 
@@ -57,7 +57,7 @@ c_ BinarySearchTree:
         r_ _search(root, x) __ n.. N..
 
     ___ _search p, x
-        __ p __ N..:
+        __ p __ N..
             r_ N..  # key not found
         __ x < ?.i..: # search in left subtree
             r_ _search(?.lchild, x) 
@@ -67,7 +67,7 @@ c_ BinarySearchTree:
 
     ___ search1x
         p _ root 
-        _____ p __ n.. N..:
+        _____ p __ n.. N..
             __ x < ?.i.. :
                 p _ ?.lchild  # Move to left child
             ____ x > ?.i..:
@@ -80,7 +80,7 @@ c_ BinarySearchTree:
         root _ _delete(root, x) 
 
     ___ _delete p, x
-        __ p __ N..:
+        __ p __ N..
             print(x , "  not found")
             r_ p 
          
@@ -90,15 +90,15 @@ c_ BinarySearchTree:
             ?.rchild _ _delete(?.rchild, x)
         ____
             # key to be deleted is found
-            __ ?.lchild __ n.. N..  ___ ?.rchild __ n.. N..:  # 2 children
+            __ ?.lchild __ n.. N..  ___ ?.rchild __ n.. N..  # 2 children
                 s _ ?.rchild
-                _____ s.lchild __ n.. N..:
+                _____ s.lchild __ n.. N..
                     s _ s.lchild
                 ?.i.. _ s.i..
                 ?.rchild _ _delete(?.rchild,s.i..) 
                  
             ____   # 1 child or no child
-                __ ?.lchild __ n.. N..: # only left child
+                __ ?.lchild __ n.. N.. # only left child
                     ch _ ?.lchild
                 ____  # only right child or no child 
                      ch _ ?.rchild
@@ -109,7 +109,7 @@ c_ BinarySearchTree:
         p _ root
         par _ N..
 
-        _____ p __ n.. N..:
+        _____ p __ n.. N..
             __ x __ ?.i..:
                 b..
             par _ p
@@ -118,18 +118,18 @@ c_ BinarySearchTree:
             ____
                 p _ ?.rchild
             
-        __ p __ N..:
+        __ p __ N..
             print(x , " not found")
             r_
 
         # Case C: 2 children 
         # Find inorder successor and its parent 
 
-        __ ?.lchild __ n.. N.. ___ ?.rchild __ n.. N..:
+        __ ?.lchild __ n.. N.. ___ ?.rchild __ n.. N..
             ps _ p
             s _ ?.rchild
 
-            _____ s.lchild __ n.. N..:
+            _____ s.lchild __ n.. N..
                 ps _ s
                 s _ s.lchild
             ?.i.. _ s.i..  
@@ -137,12 +137,12 @@ c_ BinarySearchTree:
             par _ ps 
                     
         # Case B and Case A : 1 or no child 
-        __ ?.lchild __ n.. N..: # node to be deleted has left child
+        __ ?.lchild __ n.. N.. # node to be deleted has left child
             ch _ ?.lchild 
         ____                # node to be deleted has right child or no child
             ch _ ?.rchild
 
-        __ par __ N..:   # node to be deleted is root node
+        __ par __ N..   # node to be deleted is root node
             root _ ch
         ____ p __ par.lchild: # node is left child of its parent
             par.lchild _ ch
@@ -154,7 +154,7 @@ c_ BinarySearchTree:
         __ ?
             r... TreeEmptyError("Tree is empty")
         p _ root 
-        _____ ?.lchild __ n.. N..:
+        _____ ?.lchild __ n.. N..
             p _ ?.lchild 
         r_ ?.i..
     
@@ -162,7 +162,7 @@ c_ BinarySearchTree:
         __ ?
             r... TreeEmptyError("Tree is empty")
         p _ root 
-        _____ ?.rchild __ n.. N..:
+        _____ ?.rchild __ n.. N..
             p _ ?.rchild 
         r_ ?.i..
     
@@ -172,7 +172,7 @@ c_ BinarySearchTree:
         r_ _min(root).i.. 
 
     ___ _minp
-        __ ?.lchild __ N..:
+        __ ?.lchild __ N..
             r_ p 
         r_ _min(?.lchild) 
 
@@ -182,7 +182,7 @@ c_ BinarySearchTree:
         r_ _max(root).i.. 
 
     ___ _maxp
-        __ ?.rchild __ N..:
+        __ ?.rchild __ N..
             r_ p 
         r_ _max(?.rchild) 
 
@@ -191,7 +191,7 @@ c_ BinarySearchTree:
         print()
         
     ___ _displayp,level
-        __ p __ N..:
+        __ p __ N..
             r_
         _display(?.rchild, level+1)
         print()
@@ -206,7 +206,7 @@ c_ BinarySearchTree:
         print()
     
     ___ _preorderp
-        __ p __ N..:
+        __ p __ N..
             r_
         print(?.i.., " ")
         _preorder(?.lchild)
@@ -228,7 +228,7 @@ c_ BinarySearchTree:
         print() 
  
     ___ _postorder p
-        __ p __ N..:
+        __ p __ N..
             r_
         _postorder(?.lchild)
         _postorder(?.rchild) 
@@ -238,7 +238,7 @@ c_ BinarySearchTree:
         r_ _height(root) 
 
     ___ _heightp
-        __ p __ N..:
+        __ p __ N..
             r_ 0 
 
         hL _ _height(?.lchild) 

@@ -15,7 +15,7 @@ c_ Solution o..
                 total +_ i..(b[j])
                 j -_ 1
 
-            result.a..(str(total % 2))
+            result.a..(s..(total % 2))
             carry _ total//2
 
         r_ ''.j..(reversed(result))

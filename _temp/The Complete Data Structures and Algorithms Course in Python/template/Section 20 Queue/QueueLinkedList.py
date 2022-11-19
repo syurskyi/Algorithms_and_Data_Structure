@@ -5,12 +5,12 @@
 c_ Node:
     ___ -  value_None
         value _ value
-        next _ N..
+        n.. _ N..
     
     ___ __str__ 
-        r_ str(value)
+        r_ s..(value)
 
-c_ LinkedList:
+c_ LinkedList
     ___ -  
         head _ N..
         tail _ N..
@@ -19,27 +19,27 @@ c_ LinkedList:
         curNode _ head
         _____ curNode:
             yield curNode
-            curNode _ curNode.next
+            curNode _ curNode.n..
 
 c_ Queue:
     ___ -  
         linkedList _ LinkedList()
     
     ___ __str__ 
-        values _ [str(x) ___ x __ linkedList]
+        values _ [s..(x) ___ x __ linkedList]
         r_ ' '.j..(values)
     
     ___ enqueue value
-        newNode _ Node(value)
-        __ linkedList.head __ N..:
+        newNode _ ? ?
+        __ linkedList.head __ N..
             linkedList.head _ newNode
             linkedList.tail _ newNode
         ____
-            linkedList.tail.next _ newNode
+            linkedList.tail.n.. _ newNode
             linkedList.tail _ newNode
     
     ___ isEmpty 
-        __ linkedList.head __ N..:
+        __ linkedList.head __ N..
             r_ T..
         ____
             r_ F..
@@ -53,7 +53,7 @@ c_ Queue:
                 linkedList.head _ N..
                 linkedList.tail _ N..
             ____
-                linkedList.head _ linkedList.head.next
+                linkedList.head _ linkedList.head.n..
             r_ tempNode
     
     ___ peek 

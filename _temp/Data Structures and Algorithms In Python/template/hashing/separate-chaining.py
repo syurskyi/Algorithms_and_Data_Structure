@@ -15,7 +15,7 @@ c_ studentRecord:
         studentId _ i
         
     ___ __str__ 
-        r_ str(studentId) + " "  + studentName 
+        r_ s..(studentId) + " "  + studentName 
 
 ##################################################################
     
@@ -31,18 +31,18 @@ c_ SingleLinkedList:
         start _ N..
 
     ___ display_list 
-        __ start __ N..:
+        __ start __ N..
             print("___")
             r_
         p _ start 
-        _____ p __ n.. N..:
+        _____ p __ n.. N..
             print(?.i.. , " ", end_'')
             p _ ?.l.. 
         print()
     
     ___ searchx
         p _ start
-        _____ p __ n.. N..:
+        _____ p __ n.. N..
             __ ?.i...get_student_id() __ x:
                 r_ ?.i..
             p _ ?.l..
@@ -55,7 +55,7 @@ c_ SingleLinkedList:
         start _ temp
     
     ___ delete_nodex
-        __ start __ N..:
+        __ start __ N..
             print("List is empty") 
             r_ 
 
@@ -66,12 +66,12 @@ c_ SingleLinkedList:
 
         # Deletion in between or at the end
         p _ start 
-        _____ ?.l.. __ n.. N..:
+        _____ ?.l.. __ n.. N..
             __ ?.l...info.get_student_id() __ x:
                 b.. 	
             p _ ?.l.. 
 
-        __ ?.l.. __ N..:
+        __ ?.l.. __ N..
             print("Element ", x ,"not in list") 
         ____
             ?.l.. _ ?.l...link
@@ -92,7 +92,7 @@ c_ HashTable:
     ___ display_table 
         ___ i __ r..(m
             print( "[" , i , "]  -->  ", end _'' )
-            __ array[i]!_ N..:
+            __ array[i]!_ N..
                 array[i].display_list()
             ____
                print("___")
@@ -100,7 +100,7 @@ c_ HashTable:
     
     ___ search key
         h _ hash(key)
-        __ array[h] !_ N..:
+        __ array[h] !_ N..
             r_ array[h].search(key)
         r_ N..        
                
@@ -108,7 +108,7 @@ c_ HashTable:
         key _ newRecord.get_student_id()
         h _ hash(key)
 
-        __ array[h] __ N..:
+        __ array[h] __ N..
             array[h] _ SingleLinkedList()
         array[h].insert_in_beginning(newRecord)
         n+_1
@@ -117,7 +117,7 @@ c_ HashTable:
    
     ___ delete key
         h _ hash(key)
-        __ array[h] !_ N..:
+        __ array[h] !_ N..
             array[h].delete_node(key)
             n-_1
         ____
@@ -146,7 +146,7 @@ _____ T..:
     ____ choice __ 2:
         id _ i..(i..("Enter a key to be searched : "))
         aRecord _ table.search(id)
-        __  aRecord __ N..:
+        __  aRecord __ N..
             print("Key not found")
         ____
             print(aRecord)

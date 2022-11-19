@@ -5,15 +5,15 @@
 
 c_ Node:
     ___ -  data
-        data _ data
-        next _ N..
+        ? _ ?
+        n.. _ N..
 
-c_ LinkedList:
+c_ LinkedList
     ___ -  
         head _ N..
 
     ___ isListEmpty 
-        __ head __ N..:
+        __ head __ N..
             r_ T..
         ____
             r_ F..
@@ -22,15 +22,15 @@ c_ LinkedList:
         # data = > Matthew, next => None
         temporaryNode _ head # John
         head _ newNode # Matthew
-        head.next _ temporaryNode
+        head.n.. _ temporaryNode
         d.. temporaryNode
 
     ___ listLength 
         currentNode _ head
         length _ 0
-        _____ currentNode __ n.. N..:
+        _____ currentNode __ n.. N..
             length +_ 1
-            currentNode _ currentNode.next
+            currentNode _ currentNode.n..
         r_ length
 
     ___ insertAt newNode, position
@@ -45,31 +45,31 @@ c_ LinkedList:
         currentPosition _ 0 # 0, 1
         _____ T..:
             __ currentPosition __ position:
-                previousNode.next _ newNode
-                newNode.next _ currentNode
+                previousNode.n.. _ newNode
+                ?.n.. _ currentNode
                 b..
             previousNode _ currentNode
-            currentNode _ currentNode.next
+            currentNode _ currentNode.n..
             currentPosition +_ 1
 
 
     ___ insertEnd newNode
-        __ head __ N..:
+        __ head __ N..
             head _ newNode
         ____
             lastNode _ head
             _____ T..:
-                __ lastNode.next __ N..:
+                __ lastNode.n.. __ N..
                     b..
-                lastNode _ lastNode.next
-            lastNode.next _ newNode
+                lastNode _ lastNode.n..
+            lastNode.n.. _ newNode
 
     ___ deleteHead 
         __ isListEmpty() __ F..:
             # head => 10 -> 15 -> 20 || 15->20->10-> None
             previousHead _ head
-            head _ head.next
-            previousHead.next _ N..
+            head _ head.n..
+            previousHead.n.. _ N..
         ____
             print("Linked List is empty. Delete failed")
 
@@ -85,39 +85,39 @@ c_ LinkedList:
             currentPosition _ 0
             _____ T..:
                 __ currentPosition __ position:
-                    previousNode.next _ currentNode.nect
-                    currentNode.next _ N..
+                    previousNode.n.. _ currentNode.nect
+                    currentNode.n.. _ N..
                     b..
                 previousNode _ currentNode
-                currentNode _ currentNode.next
+                currentNode _ currentNode.n..
                 currentPosition +_ 1
 
 
     ___ deleteEnd 
         # head => John -> Ben -> Mattew -> None
         __ isListEmpty() __ F..:
-            __ head.next __ N..:
+            __ head.n.. __ N..
                 deleteHead()
                 r_
             lastNode _ head
-            _____ lastNode.next __ n.. N..:
+            _____ lastNode.n.. __ n.. N..
                 previousNode _ lastNode
-                lastNode _ lastNode.next
-            previousNode.next _ N..
+                lastNode _ lastNode.n..
+            previousNode.n.. _ N..
         ____
             print("Linked List is empty. Delete failed")
 
     ___ printList 
         # head => John -> Ben -> Matthew -> None
-        __ head __ N..:
+        __ head __ N..
             print("List is empty")
             r_
         currentNode _ head
         _____ T..:
-            __ currentNode __ N..:
+            __ currentNode __ N..
                 b..
             print(currentNode.data)
-            currentNode _ currentNode.next
+            currentNode _ currentNode.n..
 
 # Node => data, next
 # firstNode.data => John, firstNode.next => None

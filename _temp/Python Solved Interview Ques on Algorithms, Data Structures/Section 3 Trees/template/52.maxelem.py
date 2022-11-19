@@ -55,14 +55,14 @@ c_ binTree:
     ___ _printTree node
         __(node !_ N..
             _printTree(node.l)
-            print str(node.v) + ' '
+            print s..(node.v) + ' '
             _printTree(node.r)
 
 
 ___ maxNodeLoop(root
    __ n.. root:
       r_ 0
-   _____ root.r !_ N..:
+   _____ root.r !_ N..
          root_root.r
    print root.v 
         

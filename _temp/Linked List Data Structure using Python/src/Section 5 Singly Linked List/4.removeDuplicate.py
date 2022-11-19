@@ -4,12 +4,12 @@ ___ removeDuplicate(linkedList
     # 1->2->3->3->5
     currentNode _ linkedList.head
     _____ T..:
-        __ currentNode.data __ currentNode.next.data:
-            duplicateNode _ currentNode.next
-            currentNode.next _ duplicateNode.next
-            duplicateNode.next _ N..
+        __ currentNode.data __ currentNode.n...data:
+            duplicateNode _ currentNode.n..
+            currentNode.n.. _ duplicateNode.n..
+            duplicateNode.n.. _ N..
             b..
-        currentNode _ currentNode.next
+        currentNode _ currentNode.n..
 
 
 nodeOne _ Node(1)

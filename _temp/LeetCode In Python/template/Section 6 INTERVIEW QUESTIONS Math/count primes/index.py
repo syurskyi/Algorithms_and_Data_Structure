@@ -1,5 +1,5 @@
-c_ Solution:
-    ___ countPrimes n: i..) -> i..:
+c_ Solution
+    ___ countPrimes n: i..) __ i..:
         
         __ n<2:
             r_ 0

@@ -27,11 +27,11 @@ ___ dijkstra(graph, initial
         minNode _ N..
         ___ node __ nodes:
             __ node __ visited:
-                __ minNode __ N..:
+                __ minNode __ N..
                     minNode _ node
                 ____ visited[node] < visited[minNode]:
                     minNode _ node
-        __ minNode __ N..:
+        __ minNode __ N..
             b..
 
         nodes.remove(minNode)

@@ -1,4 +1,4 @@
-c_ Solution:
+c_ Solution
     dx _ [0, 0, -1, 1]
     dy _ [1, -1, 0, 0]
 
@@ -24,7 +24,7 @@ c_ Solution:
         board[x][y] _ temp
         r_ F..
 
-    ___ exist board: List[List[str]], word: str) -> bool:
+    ___ exist board: List[List[s..]], word: s..) __ b..:
         __(l..(word) __ 0
             r_ T..
         n _ l..(board)

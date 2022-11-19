@@ -4,7 +4,7 @@
 
 c_ Graph:
     ___ -  gdict_None
-        __ gdict __ N..:
+        __ gdict __ N..
             gdict _     # dict
         gdict _ gdict
     

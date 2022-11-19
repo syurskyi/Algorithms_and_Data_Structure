@@ -1,7 +1,7 @@
 c_ Node o..
 
     ___  -  data_N.. next_node_None
-        data _ data
+        ? _ ?
         next_node _ N..
 
     ___ get_data
@@ -27,7 +27,7 @@ c_ LinkedList o..
     ___ insertatEnd item
         current _ head
         __ ?
-            w__ ?.g.. !_ N..:
+            w__ ?.g.. !_ N..
                 current _ ?.g..
             ?.s.. ? ?
         ____
@@ -55,7 +55,7 @@ c_ LinkedList o..
 
 ___ returnEnd(l
   l1_l.head 
-  w__ l1.next_node !_ N..:
+  w__ l1.next_node !_ N..
     l1_l1.next_node
   r_ l1
 
@@ -63,14 +63,14 @@ ___ nodeJoiningPoint(list1, list2
   joiningPoint _     # dict
   t _ list1.head
 
-  w__ t !_ N..:
+  w__ t !_ N..
        joiningPoint[t]_True
        t_t.next_node
 
   t _ list2.head
   
-  w__ t !_ N..:
-        __ joiningPoint.get(t) !_ N..:
+  w__ t !_ N..
+        __ joiningPoint.get(t) !_ N..
            r_ t
         t_t.next_node
 

@@ -42,7 +42,7 @@ ___ findMaxProduct(array
         ___ j __ r..(i+1,l..(array
             __ array[i]*array[j] > maxProduct:
                 maxProduct _ array[i]*array[j]
-                pairs _ str(array[i])+ "," + str(array[j])
+                pairs _ s..(array[i])+ "," + s..(array[j])
     print(pairs)
     print(maxProduct)
 

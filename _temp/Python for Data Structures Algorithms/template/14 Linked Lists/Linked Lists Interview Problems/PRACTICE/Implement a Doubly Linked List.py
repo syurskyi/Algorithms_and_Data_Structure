@@ -4,9 +4,9 @@
 #
 c_ Node o..
     ___ -  value
-        prev _ N..
+        p.. _ N..
         val _ value
-        next _ N..
+        n.. _ N..
     p..
 #
 # # Create a Doubly Linked List here

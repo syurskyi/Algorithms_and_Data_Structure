@@ -1,7 +1,7 @@
 c_ Node o..
 
     ___  -  data_N.. next_node_None
-        data _ data
+        ? _ ?
         next_node _ N..
 
     ___ get_data
@@ -27,7 +27,7 @@ c_ LinkedList o..
     ___ insertatEnd item
         current _ head
         __ ?
-            w__ ?.g.. !_ N..:
+            w__ ?.g.. !_ N..
                 current _ ?.g..
             ?.s.. ? ?
         ____
@@ -55,7 +55,7 @@ c_ LinkedList o..
 ___ divideListInto2(list1
   first_list1
   second_list1
-  w__ first !_ N.. a__ first.next_node !_ N..:
+  w__ first !_ N.. a__ first.next_node !_ N..
     second_second.next_node
     first_first.next_node
     first_first.next_node

@@ -1,6 +1,6 @@
 # network delay time - leetcode
-c_ Solution:
-    ___ networkDelayTime times: List[List[i..]], N: i.., K: i..) -> i..:
+c_ Solution
+    ___ networkDelayTime times: List[List[i..]], N: i.., K: i..) __ i..:
 
         g _ collections.defaultdict(list)
         ___ u, v, cost __ times:
@@ -15,7 +15,7 @@ c_ Solution:
         _____ min_heap:
             cur_dist, u _ heapq.heappop(min_heap)
             __ u __ visited:
-                continue
+                c..
             visited.add(u)
             __ l..(visited) __ N:
                 r_ cur_dist

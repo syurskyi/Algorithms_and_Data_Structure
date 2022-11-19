@@ -15,10 +15,10 @@ ___ sumList(llA, llB
         result _ carry
         __ n1:
             result +_ n1.value
-            n1 _ n1.next
+            n1 _ n1.n..
         __ n2:
             result +_ n2.value
-            n2 _ n2.next
+            n2 _ n2.n..
         ll.add(i..(result % 10))
         carry _ result / 10
     

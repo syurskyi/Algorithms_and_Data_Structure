@@ -4,8 +4,8 @@
 c_ Node:
     ___ -  value_None
         value _ value
-        next _ N..
-        prev _ N..
+        n.. _ N..
+        p.. _ N..
 
 c_ CircularDoublyLinkedList:
     ___ -  
@@ -17,8 +17,8 @@ c_ CircularDoublyLinkedList:
         node _ head
         _____ node:
             yield node
-            node _ node.next
-            __ node __ tail.next:
+            node _ node.n..
+            __ node __ tail.n..:
                 b..
     
     #  Creation of Circular Doubly Linked List
@@ -26,44 +26,44 @@ c_ CircularDoublyLinkedList:
         newNode _ Node(nodeValue)
         head _ newNode
         tail _ newNode
-        newNode.prev _ newNode
-        newNode.next _ newNode
+        ?.p.. _ newNode
+        ?.n.. _ newNode
         r_ "The CDLL is created successfully"
 
 
     # Insertion Method in Circular Doubly Linked List
     ___ insertCDLL value, location
-        __ head __ N..:
+        __ head __ N..
             r_ "The CDLL does not exist"
         ____
-            newNode _ Node(value)
+            newNode _ ? ?
             __ location __ 0:
-                newNode.next _ head
-                newNode.prev _ tail
-                head.prev _ newNode
+                ?.n.. _ head
+                ?.p.. _ tail
+                head.p.. _ newNode
                 head _ newNode
-                tail.next _ newNode
+                tail.n.. _ newNode
             ____ location __ 1:
-                newNode.next _ head
-                newNode.prev _ tail
-                head.prev _ newNode
-                tail.next _ newNode
+                ?.n.. _ head
+                ?.p.. _ tail
+                head.p.. _ newNode
+                tail.n.. _ newNode
                 tail _ newNode
             ____
                 tempNode _ head
                 index _ 0
                 _____ index < location - 1:
-                    tempNode _ tempNode.next
+                    tempNode _ tempNode.n..
                     index +_ 1
-                newNode.next _ tempNode.next
-                newNode.prev _ tempNode
-                newNode.next.prev _ newNode
-                tempNode.next _ newNode
+                ?.n.. _ tempNode.n..
+                ?.p.. _ tempNode
+                ?.n...prev _ newNode
+                tempNode.n.. _ newNode
             r_ "The node has been successfully inserted"
 
     # Traversal of Circular Doubly Linked List
     ___ traversalCDLL 
-        __ head __ N..:
+        __ head __ N..
             print("There is not any node for traversal")
         ____
             tempNode _ head
@@ -71,11 +71,11 @@ c_ CircularDoublyLinkedList:
                 print(tempNode.value)
                 __ tempNode __ tail:
                     b..
-                tempNode _ tempNode.next
+                tempNode _ tempNode.n..
 
     # Reverse traversal of Circular Doubly Linked List
     ___ reverseTraversalCDLL 
-        __ head __ N..:
+        __ head __ N..
             print("There is not any node for reverse traversal")
         ____
             tempNode _ tail
@@ -83,11 +83,11 @@ c_ CircularDoublyLinkedList:
                 print(tempNode.value)
                 __ tempNode __ head:
                     b..
-                tempNode _ tempNode.prev
+                tempNode _ tempNode.p..
     
     # Search Circular Doubly Linked List
     ___ searchCDLL nodeValue
-        __ head __ N..:
+        __ head __ N..
             r_ "There is not any node in CDLL"
         ____
             tempNode _ head
@@ -96,53 +96,53 @@ c_ CircularDoublyLinkedList:
                     r_ tempNode.value
                 __ tempNode __ tail:
                     r_ "The value does not exist in CDLL"
-                tempNode _ tempNode.next
+                tempNode _ tempNode.n..
     
     # Delete a node from Circular Doubly Linked List
     ___ deleteNode location
-        __ head __ N..:
+        __ head __ N..
             print("There is not any node to delete")
         ____
             __ location __ 0:
                 __ head __ tail:
-                    head.prev _ N..
-                    head.next _ N..
+                    head.p.. _ N..
+                    head.n.. _ N..
                     head _ N..
                     tail _ N..
                 ____
-                    head _ head.next
-                    head.prev _ tail
-                    tail.next _ head
+                    head _ head.n..
+                    head.p.. _ tail
+                    tail.n.. _ head
             ____ location __ 1:
                 __ head __ tail:
-                    head.prev _ N..
-                    head.next _ N..
+                    head.p.. _ N..
+                    head.n.. _ N..
                     head _ N..
                     tail _ N..
                 ____
-                    tail _ tail.prev
-                    tail.next _ head
-                    head.prev _ tail
+                    tail _ tail.p..
+                    tail.n.. _ head
+                    head.p.. _ tail
             ____
                 curNode _ head
                 index _ 0
                 _____ index < location - 1:
-                    curNode _ curNode.next
+                    curNode _ curNode.n..
                     index +_ 1
-                curNode.next _ curNode.next.next
-                curNode.next.prev _ curNode
+                curNode.n.. _ curNode.n...next
+                curNode.n...prev _ curNode
             print("The node has been successfully deleted")
     
     # Delete entire Circular Doubly Linked List
     ___ deleteCDLL 
-        __ head __ N..:
+        __ head __ N..
             print("There is not any element to delete")
         ____
-            tail.next _ N..
+            tail.n.. _ N..
             tempNode _ head
             _____ tempNode:
-                tempNode.prev _ N..
-                tempNode _ tempNode.next
+                tempNode.p.. _ N..
+                tempNode _ tempNode.n..
             head _ N..
             tail _ N..
             print("The CDLL has been successfully deleted")

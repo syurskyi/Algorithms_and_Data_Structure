@@ -7,11 +7,11 @@ c_ Node(
 
 c_ BinaryTree(
     ___ -  value
-        root _ Node(value)
+        root _ ? ?
 
     ___ preorder start, traversal
         # Root -> Left -> Right
-        __ start __ N..:
+        __ start __ N..
             r_
 
         traversal.a..(start.value)
@@ -22,7 +22,7 @@ c_ BinaryTree(
 
     ___ inorder start, traversal
         # Left -> Root -> Right
-        __ start __ N..:
+        __ start __ N..
             r_
 
         inorder(start.left, traversal)
@@ -33,7 +33,7 @@ c_ BinaryTree(
 
     ___ postorder start, traversal
         # Left -> Right -> Root
-        __ start __ N..:
+        __ start __ N..
             r_
 
         postorder(start.left, traversal)

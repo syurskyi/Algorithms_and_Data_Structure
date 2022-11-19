@@ -11,7 +11,7 @@
 # the logic of your function. In which case your function should be in the form:**
 #
 # # 669. Trim a Binary Search Tree
-c_ Solution:
+c_ Solution
     ___ trimBST root, min_val, max_val
         """
         :type root: TreeNode

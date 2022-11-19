@@ -5,8 +5,8 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution:
-    ___ postorderTraversal root: TreeNode) -> List[i..]:
+c_ Solution
+    ___ postorderTraversal root: TreeNode) __ List[i..]:
         __(n.. root
             r_
         

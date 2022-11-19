@@ -1,7 +1,7 @@
 c_ Node o..
 
     ___  -  data_N.. next_node_None
-        data _ data
+        ? _ ?
         next_node _ N..
 
     ___ get_data
@@ -27,7 +27,7 @@ c_ LinkedList o..
     ___ insertatEnd item
         current _ head
         __ ?
-            w__ ?.g.. !_ N..:
+            w__ ?.g.. !_ N..
                 current _ ?.g..
             ?.s.. ? ?
         ____
@@ -51,7 +51,7 @@ c_ LinkedList o..
                 found _ T..
             ____
                 current _ ?.g..
-        __ current __ N..:
+        __ current __ N..
             r_ V..("Data not in list")
         r_ ?
 
@@ -66,9 +66,9 @@ c_ LinkedList o..
             ____
                 previous _ current
                 current _ ?.g..
-        __ current __ N..:
+        __ current __ N..
             r_ V..("Data not in list")
-        __ previous __ N..:
+        __ previous __ N..
             head _ ?.g..
         ____
             previous.set_next(?.get_next())
@@ -98,7 +98,7 @@ c_ LinkedList o..
         r_ N..
     
       second_head
-      w__ first.next_node !_ N..:
+      w__ first.next_node !_ N..
         first_first.next_node
         second_second.next_node
  

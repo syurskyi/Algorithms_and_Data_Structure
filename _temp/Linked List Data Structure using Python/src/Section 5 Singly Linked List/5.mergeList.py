@@ -5,20 +5,20 @@ ___ mergeLists(firstList, secondList, mergedList
     currentFirst _ firstList.head
     currentSecond _ secondList.head
     _____ T..:
-        __ currentFirst __ N..:
+        __ currentFirst __ N..
             mergedList.insertEnd(currentSecond)
             b..
-        __ currentSecond __ N..:
+        __ currentSecond __ N..
             mergedList.insertEnd(currentFirst)
             b..
         __ currentFirst.data < currentSecond.data:
-            currentFirstNext _ currentFirst.next
-            currentFirst.next _ N..
+            currentFirstNext _ currentFirst.n..
+            currentFirst.n.. _ N..
             mergedList.insertEnd(currentFirst)
             currentFirst _ currentFirstNext
         ____
-            currentSeconNext _ currentSecond.next
-            currentSecond.next _ N..
+            currentSeconNext _ currentSecond.n..
+            currentSecond.n.. _ N..
             mergedList.insertEnd(currentSecond)
             currentSecond _ currentSeconNext
 

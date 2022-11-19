@@ -4,7 +4,7 @@
 c_ Node:
     ___ -  value_None
         value _ value
-        next _ N..
+        n.. _ N..
 
 c_ SLinkedList:
     ___ -  
@@ -14,55 +14,55 @@ c_ SLinkedList:
         node _ head
         _____ node:
             yield node
-            node _ node.next
+            node _ node.n..
     # insert in Linked List
     ___ insertSLL value, location
-        newNode _ Node(value)
-        __ head __ N..:
+        newNode _ ? ?
+        __ head __ N..
             head _ newNode
             tail _ newNode
         ____
             __ location __ 0:
-                newNode.next _ head
+                ?.n.. _ head
                 head _ newNode
             ____ location __ 1:
-                newNode.next _ N..
-                tail.next _ newNode
+                ?.n.. _ N..
+                tail.n.. _ newNode
                 tail _ newNode
             ____
                 tempNode _ head
                 index _ 0
                 _____ index < location - 1:
-                    tempNode _ tempNode.next
+                    tempNode _ tempNode.n..
                     index +_ 1
-                nextNode _ tempNode.next
-                tempNode.next _ newNode
-                newNode.next _ nextNode
+                nextNode _ tempNode.n..
+                tempNode.n.. _ newNode
+                ?.n.. _ nextNode
 
     # Traverse Singly Linked List
     ___ traverseSLL 
-        __ head __ N..:
+        __ head __ N..
             print("The Singly Linked List does not exist")
         ____
             node _ head
-            _____ node __ n.. N..:
+            _____ node __ n.. N..
                 print(node.value)
-                node _ node.next
+                node _ node.n..
     # Search for a node in Singly Linked List
     ___ searchSLL nodeValue
-        __ head __ N..:
+        __ head __ N..
            r_ "The list does not exist"
         ____
             node _ head
-            _____ node __ n.. N..:
+            _____ node __ n.. N..
                 __ node.value __ nodeValue:
                     r_ node.value
-                node _ node.next
+                node _ node.n..
             r_ "The value does not exist in this list"
 
     #  Delete a node from Singly Linked List
     ___ deleteNode location
-        __ head __ N..:
+        __ head __ N..
             print("The SLL does not exist")
         ____
             __ location __ 0:
@@ -70,30 +70,30 @@ c_ SLinkedList:
                     head _ N..
                     tail _ N..
                 ____
-                    head _ head.next
+                    head _ head.n..
             ____ location __ 1:
                 __ head __ tail:
                     head _ N..
                     tail _ N..
                 ____
                     node _ head
-                    _____ node __ n.. N..:
-                        __ node.next __ tail:
+                    _____ node __ n.. N..
+                        __ node.n.. __ tail:
                             b..
-                        node _ node.next
-                    node.next _ N..
+                        node _ node.n..
+                    node.n.. _ N..
                     tail _ node
             ____
                 tempNode _ head
                 index _ 0
                 _____ index < location - 1:
-                    tempNode _ tempNode.next
+                    tempNode _ tempNode.n..
                     index +_ 1
-                nextNode _ tempNode.next
-                tempNode.next _ nextNode.next
+                nextNode _ tempNode.n..
+                tempNode.n.. _?.n..
     # Delete entire SLL
     ___ deleteEntireSLL 
-        __ head __ N..:
+        __ head __ N..
             print("The SLL does not exist")
         ____
             head _ N..

@@ -5,20 +5,20 @@ import QueueLinkedList as queue
 
 c_ BSTNode:
     ___ -  data
-        data _ data
+        ? _ ?
         leftChild _ N..
         rightChild _ N..
 
 ___ insertNode(rootNode, nodeValue
-    __ rootNode.data __ N..:
+    __ rootNode.data __ N..
         rootNode.data _ nodeValue
     ____ nodeValue <_ rootNode.data:
-        __ rootNode.leftChild __ N..:
+        __ rootNode.leftChild __ N..
             rootNode.leftChild _ BSTNode(nodeValue)
         ____
             insertNode(rootNode.leftChild, nodeValue)
     ____
-        __ rootNode.rightChild __ N..:
+        __ rootNode.rightChild __ N..
             rootNode.rightChild _ BSTNode(nodeValue)
         ____
             insertNode(rootNode.rightChild, nodeValue)
@@ -54,9 +54,9 @@ ___ levelOrderTraversal(rootNode
         _____ n..(customQueue.isEmpty(
             root _ customQueue.dequeue()
             print(root.value.data)
-            __ root.value.leftChild __ n.. N..:
+            __ root.value.leftChild __ n.. N..
                 customQueue.enqueue(root.value.leftChild)
-            __ root.value.rightChild __ n.. N..:
+            __ root.value.rightChild __ n.. N..
                 customQueue.enqueue(root.value.rightChild)
             
 
@@ -83,19 +83,19 @@ ___ minValueNode(bstNode
 
 
 ___ deleteNode(rootNode, nodeValue
-    __ rootNode __ N..:
+    __ rootNode __ N..
         r_ rootNode
     __ nodeValue < rootNode.data:
         rootNode.leftChild _ deleteNode(rootNode.leftChild, nodeValue)
     ____ nodeValue > rootNode.data:
         rootNode.rightChild _ deleteNode(rootNode.rightChild, nodeValue)
     ____
-        __ rootNode.leftChild __ N..:
+        __ rootNode.leftChild __ N..
             temp _ rootNode.rightChild
             rootNode _ N..
             r_ temp
         
-        __ rootNode.rightChild __ N..:
+        __ rootNode.rightChild __ N..
             temp _ rootNode.leftChild
             rootNode _ N..
             r_ temp

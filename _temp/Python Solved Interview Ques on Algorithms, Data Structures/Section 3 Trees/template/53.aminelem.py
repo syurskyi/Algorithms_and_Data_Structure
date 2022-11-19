@@ -55,14 +55,14 @@ c_ binTree:
     ___ _printTree node
         __(node !_ N..
             _printTree(node.l)
-            print str(node.v) + ' '
+            print s..(node.v) + ' '
             _printTree(node.r)
 
 
 ___ minNode(root
    __ n.. root:
       r_ 0
-   _____ root.l !_ N..:
+   _____ root.l !_ N..
          root_root.l
    print root.v 
         

@@ -1,8 +1,8 @@
 c_ ListNode:
     ___ -  val
         val _ val
-        prev _ N..
-        next _ N..
+        p.. _ N..
+        n.. _ N..
 
 
 c_ MyLinkedList:
@@ -19,7 +19,7 @@ c_ MyLinkedList:
         cur _ head
 
         _____ index !_ 0:
-            cur _ cur.next
+            cur _ cur.n..
             index _ index - 1
 
         r_ cur.val
@@ -27,12 +27,12 @@ c_ MyLinkedList:
     ___ addAtHead val
         new_node _ ListNode(val)
 
-        __ head __ N..:
+        __ head __ N..
             head _ new_node
             tail _ new_node
         ____
-            new_node.next _ head
-            head.prev _ new_node
+            new_node.n.. _ head
+            head.p.. _ new_node
             head _ new_node
 
         size +_ 1
@@ -40,12 +40,12 @@ c_ MyLinkedList:
     ___ addAtTail val
         new_node _ ListNode(val)
 
-        __ head __ N..:
+        __ head __ N..
             head _ new_node
             tail _ new_node
         ____
-            new_node.prev _ tail
-            tail.next _ new_node
+            new_node.p.. _ tail
+            tail.n.. _ new_node
             tail _ new_node
 
         size +_ 1
@@ -60,15 +60,15 @@ c_ MyLinkedList:
         ____
             cur _ head
             _____ index - 1 !_ 0:
-                cur _ cur.next
+                cur _ cur.n..
                 index -_ 1
 
             new_node _ ListNode(val)
 
-            new_node.next _ cur.next
-            cur.next.prev _ new_node
-            cur.next _ new_node
-            new_node.prev _ cur
+            new_node.n.. _ cur.n..
+            cur.n...prev _ new_node
+            cur.n.. _ new_node
+            new_node.p.. _ cur
 
             size +_ 1
 
@@ -76,20 +76,20 @@ c_ MyLinkedList:
         __ index < 0 __ index >_ size:
             r_
         ____ index __ 0:
-            cur _ head.next
+            cur _ head.n..
             __ cur:
-                cur.prev _ N..
+                cur.p.. _ N..
 
-            head _ head.next
+            head _ head.n..
             size -_ 1
 
             __ size __ 0:
                 tail _ N..
         ____ index __ size - 1:
-            cur _ tail.prev
+            cur _ tail.p..
             __ cur:
-                cur.next _ N..
-            tail _ tail.prev
+                cur.n.. _ N..
+            tail _ tail.p..
 
             size -_ 1
 
@@ -98,11 +98,11 @@ c_ MyLinkedList:
         ____
             cur _ head
             _____ index - 1 !_ 0:
-                cur _ cur.next
+                cur _ cur.n..
                 index -_ 1
 
-            cur.next _ cur.next.next
-            cur.next.prev _ cur
+            cur.n.. _ cur.n...next
+            cur.n...prev _ cur
 
             size -_ 1
 

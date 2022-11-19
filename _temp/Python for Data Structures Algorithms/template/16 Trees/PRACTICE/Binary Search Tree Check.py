@@ -17,7 +17,7 @@ c_ Solution o..
         r_ is_valid(root, -math.inf, math.inf)
 
     ___ is_valid root, min_val, max_val
-        __ root __ N..:
+        __ root __ N..
             r_ T..
         ____
             r_ ( root.val > min_val ___ root.val < max_val ___

@@ -6,7 +6,7 @@ c_ TreeNode:
         right _ right
 
 
-c_ Solution:
+c_ Solution
     ___ buildTree preorder, inorder
         memory _     # dict
         ___ i, e __ enumerate(inorder

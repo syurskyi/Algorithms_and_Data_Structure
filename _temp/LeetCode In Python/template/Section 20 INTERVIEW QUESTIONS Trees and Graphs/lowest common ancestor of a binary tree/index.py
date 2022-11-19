@@ -5,8 +5,8 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution:
-    ___ lowestCommonAncestor root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
+c_ Solution
+    ___ lowestCommonAncestor root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') __ 'TreeNode':
         __(root __ N..
             r_ N..
         __(root.val__p.val __ root.val__q.val

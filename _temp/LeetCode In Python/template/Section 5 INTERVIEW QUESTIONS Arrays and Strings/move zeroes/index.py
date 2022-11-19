@@ -1,5 +1,5 @@
-c_ Solution:
-    ___ moveZeroes nums: List[i..]) -> N..:
+c_ Solution
+    ___ moveZeroes nums: List[i..]) __ N..
         j _ 0
         ___ num __ nums:
             __(num !_ 0

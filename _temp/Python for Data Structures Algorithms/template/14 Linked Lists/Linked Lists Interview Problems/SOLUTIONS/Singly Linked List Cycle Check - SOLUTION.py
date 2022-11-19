@@ -33,7 +33,7 @@ ___ cycle_check(node
     marker2 _ node
 
     # Go until end of list
-    _____ marker2 !_ N.. ___ marker2.nextnode !_ N..:
+    _____ marker2 !_ N.. ___ marker2.nextnode !_ N..
 
         # Note
         marker1 _ marker1.nextnode

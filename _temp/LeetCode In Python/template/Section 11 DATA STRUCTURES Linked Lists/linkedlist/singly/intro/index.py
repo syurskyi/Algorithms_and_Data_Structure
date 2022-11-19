@@ -1,10 +1,10 @@
 c_ Node:
     ___ -  data
-        data _ data
-        next _ N..
+        ? _ ?
+        n.. _ N..
 
 
-c_ LinkedList:
+c_ LinkedList
     ___ -
         head _ N..
 
@@ -12,8 +12,8 @@ c_ LinkedList:
         temp _ head
         linked_list _ ""
         _____(temp
-            linked_list +_ (str(?.data) + " ")
-            temp _ ?.next
+            linked_list +_ (s..(?.data) + " ")
+            temp _ ?.n..
         print(linked_list)
 
 # Node strucutre: 5 => 1 => 3 => 7
@@ -26,8 +26,8 @@ second_node _ Node(1)
 third_node _ Node(3)
 fourth_node _ Node(7)
 
-linked_list.head.next _ second_node
-second_node.next _ third_node
-third_node.next _ fourth_node
+linked_list.head.n.. _ second_node
+second_node.n.. _ third_node
+third_node.n.. _ fourth_node
 
 linked_list.printList()

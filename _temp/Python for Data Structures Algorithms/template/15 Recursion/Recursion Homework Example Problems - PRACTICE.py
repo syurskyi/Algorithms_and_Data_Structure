@@ -65,7 +65,7 @@ word_split('themanran',['clown','ran','man'])
 # []
 #
 ___ word_split(phrase,list_of_words, output _ N..
-    __ output __ N..:
+    __ output __ N..
         output _    # list
 
     ___ word __ list_of_words:

@@ -1,5 +1,5 @@
-c_ Solution:
-    ___ longestPalindrome s: str) -> str:
+c_ Solution
+    ___ longestPalindrome s: s..) __ s..:
         n _ l..(s)
         __(n<2
             r_ s

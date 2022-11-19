@@ -18,7 +18,7 @@ c_ BinarySearchTree:
         root _ _insert(root, x)
                  
     ___ _insertp, x
-        __ p __ N..:
+        __ p __ N..
             p _ Node(x)
         ____ x < ?.i.. :
             ?.lchild _ _insert(?.lchild, x)

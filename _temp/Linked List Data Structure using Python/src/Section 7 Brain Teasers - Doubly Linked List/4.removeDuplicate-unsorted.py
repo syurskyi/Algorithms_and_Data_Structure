@@ -10,21 +10,21 @@ ___ removeDuplicate(linkedList
             nodeCount[currentNode.data] _ 1
         ____
             nodeCount[currentNode.data] +_ 1
-        __ currentNode.next __ N..:
+        __ currentNode.n.. __ N..
             _____ T..:
-                __ currentNode.previous __ N..:
+                __ currentNode.previous __ N..
                     b..
                 previousNode _ currentNode.previous
                 __ nodeCount[currentNode.data] > 1:
-                    currentNode.previous.next _ currentNode.next
-                    __ currentNode.next __ n.. N..:
-                        currentNode.next.previous _ currentNode.previous
-                    currentNode.next _ N..
+                    currentNode.previous.n.. _ currentNode.n..
+                    __ currentNode.n.. __ n.. N..
+                        currentNode.n...previous _ currentNode.previous
+                    currentNode.n.. _ N..
                     currentNode.previous _ N..
                     nodeCount[currentNode.data] -_ 1
                 currentNode _ previousNode
             b..    
-        currentNode _ currentNode.next
+        currentNode _ currentNode.n..
 
 
 nodeOne _ Node(13)

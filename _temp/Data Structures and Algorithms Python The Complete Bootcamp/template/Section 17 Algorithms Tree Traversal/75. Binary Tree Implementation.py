@@ -7,7 +7,7 @@ c_ Node(
 
 c_ BinaryTree(
     ___ -  value
-        root _ Node(value)
+        root _ ? ?
 
 
 tree _ BinaryTree(3)

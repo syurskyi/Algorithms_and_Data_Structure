@@ -4,7 +4,7 @@ from pprint import pprint
 c_ Node o..
 
     ___  -  data_N.. next_node_None
-        data _ data
+        ? _ ?
         next_node _ N.. 
 
     ___ get_data
@@ -28,7 +28,7 @@ c_ LinkedList o..
     ___ insertatEnd item
         current _ head
         __ ?
-            w__ ?.g.. !_ N..:
+            w__ ?.g.. !_ N..
                 current _ ?.g..
             ?.s.. ? ?
         ____
@@ -52,7 +52,7 @@ c_ LinkedList o..
                 found _ T..
             ____
                 current _ ?.g..
-        __ current __ N..:
+        __ current __ N..
             r_ V..("Data not in list")
         r_ ?
 
@@ -67,9 +67,9 @@ c_ LinkedList o..
             ____
                 previous _ current
                 current _ ?.g..
-        __ current __ N..:
+        __ current __ N..
             r_ V..("Data not in list")
-        __ previous __ N..:
+        __ previous __ N..
             head _ ?.g..
         ____
             previous.set_next(?.get_next())
@@ -79,7 +79,7 @@ c_ LinkedList o..
     ___ deleteNode  position
       
              # If linked list is empty
-             __ head __ N..:
+             __ head __ N..
                  r_
       
              # Store head node
@@ -94,13 +94,13 @@ c_ LinkedList o..
              # Find previous node of the node to be deleted
              ___ i __ r..(position -1
                  temp _ ?.next_node
-                 __ temp __ N..:
+                 __ temp __ N..
                      b..
       
              # If position is more than number of nodes
-             __ temp __ N..:
+             __ temp __ N..
                  r_
-             __ ?.next_node __ N..:
+             __ ?.next_node __ N..
                  r_
       
              # Node temp.next is the node to be deleted

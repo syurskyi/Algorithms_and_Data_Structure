@@ -5,37 +5,37 @@
 
 c_ Node:
     ___ -  data
-        data _ data
-        next _ N..
+        ? _ ?
+        n.. _ N..
 
-c_ LinkedList:
+c_ LinkedList
     ___ -  
         head _ N..
 
     ___ i..  newNode
         # head=>John->None
-        __ head __ N..:
+        __ head __ N..
             head _ newNode
         ____
             # head=>John->Ben->None || John -> Matthew
             lastNode _ head
             _____ T..:
-                __ lastNode.next __ N..:
+                __ lastNode.n.. __ N..
                     b..
-                lastNode _ lastNode.next
-            lastNode.next _ newNode
+                lastNode _ lastNode.n..
+            lastNode.n.. _ newNode
 
     ___ printList 
         # head => John -> Ben -> Matthew -> None
-        __ head __ N..:
+        __ head __ N..
             print("List is empty")
             r_
         currentNode _ head
         _____ T..:
-            __ currentNode __ N..:
+            __ currentNode __ N..
                 b..
             print(currentNode.data)
-            currentNode _ currentNode.next
+            currentNode _ currentNode.n..
 
 
 # Node => data, next

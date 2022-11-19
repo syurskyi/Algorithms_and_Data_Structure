@@ -40,7 +40,7 @@ dfs(graph, 'A')
 # call.
 
 ___ dfs(graph, start, visited_None
-    __ visited __ N..:
+    __ visited __ N..
         visited _ s..
     visited.add(start)
     ___ nxt __ graph[start] - visited:

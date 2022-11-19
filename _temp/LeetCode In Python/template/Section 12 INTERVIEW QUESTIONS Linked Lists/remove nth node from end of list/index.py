@@ -4,22 +4,22 @@
 #         self.val = x
 #         self.next = None
 
-c_ Solution:
-    ___ removeNthFromEnd head: ListNode, n: i..) -> ListNode:
+c_ Solution
+    ___ removeNthFromEnd head: ListNode, n: i..) __ ListNode:
         ans _ ListNode(0)
-        ans.next _ head
+        ans.n.. _ head
 
         first _ ans
         second _ ans
 
         ___ i __ r..(1,n+2
-            first _ first.next
+            first _ first.n..
         
         _____ (first __ n.. N..
-            first _ first.next
-            second _ second.next
+            first _ first.n..
+            second _ second.n..
 
-        second.next _ second.next.next
+        second.n.. _ second.n...next
         
 
-        r_ ans.next
+        r_ ans.n..

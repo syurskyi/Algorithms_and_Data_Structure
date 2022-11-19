@@ -3,11 +3,11 @@
 
 c_ TreeNode:
     ___ -  data, children _    # list
-        data _ data
+        ? _ ?
         children _ children
     
     ___ __str__ level_0
-        ret _ "  " * level + str(data)  + "\n"
+        ret _ "  " * level + s..(data)  + "\n"
         ___ child __ children:
             ret +_ child.__str__(level + 1)
         r_ ret

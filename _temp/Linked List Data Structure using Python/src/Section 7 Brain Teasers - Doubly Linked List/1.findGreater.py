@@ -9,12 +9,12 @@ ___ findGreater(linkedList
         currentPosition _ 0
         _____ T..:
             __ currentPosition __ middlePosition:
-                __ currentNode.previous.data > currentNode.next.data:
+                __ currentNode.previous.data > currentNode.n...data:
                     print("Previous node has a greater value than next node")
                 ____
                     print("Next node has a greater value than the previous node")
                 b..
-            currentNode _ currentNode.next
+            currentNode _ currentNode.n..
             currentPosition +_ 1
     ____
         print("Not enough nodes")

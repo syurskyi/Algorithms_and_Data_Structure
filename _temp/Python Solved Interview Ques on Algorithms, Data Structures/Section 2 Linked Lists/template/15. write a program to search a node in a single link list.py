@@ -4,7 +4,7 @@ from pprint import pprint
 c_ Node o..
 
     ___  -  data_N.. next_node_None
-        data _ data
+        ? _ ?
         next_node _ N.. 
 
     ___ getData
@@ -28,7 +28,7 @@ c_ LinkedList o..
     ___ insertatEnd item
         current _ head
         __ ?
-            w__ ?.getNext() !_ N..:
+            w__ ?.getNext() !_ N..
                 current _ ?.getNext()
             ?.setNext(Node(item))
         ____
@@ -52,7 +52,7 @@ c_ LinkedList o..
                 found _ T..
             ____
                 current _ ?.getNext()
-        __ current __ N..:
+        __ current __ N..
             r_ V..("Data not in list")
         r_ ?
 
@@ -67,9 +67,9 @@ c_ LinkedList o..
             ____
                 previous _ current
                 current _ ?.getNext()
-        __ current __ N..:
+        __ current __ N..
             r_ V..("Data not in list")
-        __ previous __ N..:
+        __ previous __ N..
             head _ ?.getNext()
         ____
             previous.setNext(?.getNext())

@@ -2,11 +2,11 @@ from doublyLinkedList import Node, LinkedList
 
 ___ divideByTwo(linkedList
     # 2->13->5->10->15->None
-    currentNode _ linkedList.head.next
-    _____ currentNode __ n.. N..:
+    currentNode _ linkedList.head.n..
+    _____ currentNode __ n.. N..
         __ currentNode.previous.data % 2 __ n.. 0:
             currentNode.data _ currentNode.data // 2
-        currentNode _ currentNode.next
+        currentNode _ currentNode.n..
 
 nodeOne _ Node(2)
 nodeTwo _ Node(13)

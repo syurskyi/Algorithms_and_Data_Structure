@@ -38,7 +38,7 @@ ___ searchTDArray(array, value
     ___ i __ r..(l..(array
         ___ j __ r..(l..(array[0]
             __ array[i][j] __ value:
-                r_ 'The value is located index '+str(i)+" "+str(j)
+                r_ 'The value is located index '+s..(i)+" "+s..(j)
     r_ 'The element no found'
 
 

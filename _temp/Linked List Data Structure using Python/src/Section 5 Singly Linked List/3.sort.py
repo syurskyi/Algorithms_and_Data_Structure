@@ -2,12 +2,12 @@ from singlyLinkedList import Node, LinkedList
 
 ___ swapNext(linkedList, previousNode, largestNode, nextNode
     # 4->3->5->1 || 3->4->5->1 || 4->|1->5->None
-    largestNode.next _ nextNode.next
-    nextNode.next _ largestNode
+    largestNode.n.. _?.n..
+    nextNode.n.. _ largestNode
     __ largestNode __ linkedList.head:
         linkedList.head _ nextNode
         r_
-    previousNode.next _  nextNode
+    previousNode.n.. _  nextNode
 
 ___ sort(linkedList
     # number of iterations = number of nodes - 1
@@ -17,11 +17,11 @@ ___ sort(linkedList
         previousNode _ N..
         numberOfComparisons _ numberOfIterations
         _____ numberOfComparisons !_ 0:
-            __ largestNode.data > largestNode.next.data:
-                swapNext(linkedList, previousNode, largestNode, largestNode.next)
+            __ largestNode.data > largestNode.n...data:
+                swapNext(linkedList, previousNode, largestNode, largestNode.n..)
             ____
                 previousNode _ largestNode
-                largestNode _ largestNode.next
+                largestNode _ largestNode.n..
             numberOfComparisons -_ 1
 
         numberOfIterations -_ 1

@@ -1,4 +1,4 @@
-c_ Solution:
+c_ Solution
     ___ isPalin seg
         i _ 0
         j _ l..(seg)-1
@@ -9,7 +9,7 @@ c_ Solution:
             j -_ 1
         r_ T..
 
-    ___ dfs s: str
+    ___ dfs s: s..
         __(l..(s) __ 0 ___ l..(temp) > 0
             res.a..(temp[:])
             r_
@@ -21,7 +21,7 @@ c_ Solution:
                 dfs(s[i:])
                 ?.p.. 
 
-    ___ partition s: str) -> List[List[str]]:
+    ___ partition s: s..) __ List[List[s..]]:
         res _    # list
         temp _    # list
         dfs(s)

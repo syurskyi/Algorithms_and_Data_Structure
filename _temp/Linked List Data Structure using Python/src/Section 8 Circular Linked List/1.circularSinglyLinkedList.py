@@ -1,54 +1,54 @@
 c_ Node:
     ___ -  data
-        data _ data
-        next _ N..
+        ? _ ?
+        n.. _ N..
 
-c_ LinkedList:
+c_ LinkedList
     ___ -  
         head _ N..
 
     ___ insertEnd newNode
-        __ head __ N..:
+        __ head __ N..
             head _ newNode
-            newNode.next _ head
+            ?.n.. _ head
             r_
         currentNode _ head
-        _____(currentNode.next __ n.. head
-            currentNode _ currentNode.next
-        currentNode.next _ newNode
-        newNode.next _ head
+        _____(currentNode.n.. __ n.. head
+            currentNode _ currentNode.n..
+        currentNode.n.. _ newNode
+        ?.n.. _ head
 
     ___ insertHead newNode
         lastNode _ head
-        _____(lastNode.next __ n.. head
-            lastNode _ lastNode.next
+        _____(lastNode.n.. __ n.. head
+            lastNode _ lastNode.n..
         previousHead _ head
         head _ newNode
-        newNode.next _ previousHead
-        lastNode.next _ head
+        ?.n.. _ previousHead
+        lastNode.n.. _ head
 
     ___ deleteEnd 
         lastNode _ head
-        _____(lastNode.next __ n.. head
+        _____(lastNode.n.. __ n.. head
             previousNode _ lastNode
-            lastNode _ lastNode.next
-        lastNode.next _ N..
-        previousNode.next _ head
+            lastNode _ lastNode.n..
+        lastNode.n.. _ N..
+        previousNode.n.. _ head
 
     ___ deleteHead 
         lastNode _ head
-        _____(lastNode.next __ n.. head
-            lastNode _ lastNode.next
+        _____(lastNode.n.. __ n.. head
+            lastNode _ lastNode.n..
         previousHead _ head
-        head _ head.next
-        lastNode.next _ head
-        previousHead.next _ N..
+        head _ head.n..
+        lastNode.n.. _ head
+        previousHead.n.. _ N..
 
     ___ printList 
         currentNode _ head
         _____ T..:
             print(currentNode.data)
-            currentNode _ currentNode.next
+            currentNode _ currentNode.n..
             __ currentNode __ head:
                 b..
         print(currentNode.data)

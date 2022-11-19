@@ -25,7 +25,7 @@ c_ Node:
         adjacent _ OrderedDict()  # key = node, val = weight
 
     ___ __str__ 
-        r_ str(num)
+        r_ s..(num)
 
 # Then finally the Graph:
 

@@ -42,7 +42,7 @@ ___ fib_dyn(n
         r_ n
 
     # Check cache
-    __ cache[n] !_ N..:
+    __ cache[n] !_ N..
         r_ cache[n]
 
     # Keep setting cache

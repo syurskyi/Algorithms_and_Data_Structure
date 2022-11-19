@@ -6,7 +6,7 @@ c_ TreeNode:
         right _ right
 
 
-c_ Solution:
+c_ Solution
     ___ bstFromPreorder preorder
 
         root _ TreeNode(preorder[0])

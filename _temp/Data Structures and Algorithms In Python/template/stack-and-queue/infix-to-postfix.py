@@ -10,7 +10,7 @@ ___ infix_to_postfix(infix
 
     ___ symbol __ infix:
         __ symbol __ ' ' __ symbol __ '\t': #ignore blanks and tabs
-            continue
+            c..
 
         __ symbol __ '(':
             st.push(symbol)

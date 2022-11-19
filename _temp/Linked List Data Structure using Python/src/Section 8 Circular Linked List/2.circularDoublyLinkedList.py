@@ -1,70 +1,70 @@
 c_ Node:
     ___ -  data
-        data _ data
-        next _ N..
+        ? _ ?
+        n.. _ N..
         previous _ N..
 
-c_ LinkedList:
+c_ LinkedList
     ___ -  
         head _ N..
 
     ___ insertHead newNode
-        __ head __ N..:
+        __ head __ N..
             head _ newNode
             head.previous _ head
             r_
         lastNode _ head.previous
-        newNode.previous _ lastNode
-        newNode.next _ head
+        ?.previous _ lastNode
+        ?.n.. _ head
         head.previous _ newNode
         head _ newNode
-        lastNode.next _ head
+        lastNode.n.. _ head
 
     ___ insertEnd newNode
-        __ head __ N..:
+        __ head __ N..
             head _ newNode
-            head.next _ head
+            head.n.. _ head
             head.previous _ head
             r_
         currentNode _ head
-        _____ currentNode.next __ n.. head:
-            currentNode _ currentNode.next
-        currentNode.next _ newNode
-        newNode.previous _ currentNode
-        newNode.next _ head
+        _____ currentNode.n.. __ n.. head:
+            currentNode _ currentNode.n..
+        currentNode.n.. _ newNode
+        ?.previous _ currentNode
+        ?.n.. _ head
         head.previous_newNode
 
     ___ deleteHead 
-        __ head __ N..:
+        __ head __ N..
             print("Empty list")
             r_
         previousHead _ head
-        head _ head.next
+        head _ head.n..
         head.previous _ previousHead.previous
-        previousHead.previous.next _ head
+        previousHead.previous.n.. _ head
         previousHead.previous _ N..
-        previousHead.next _ N..
+        previousHead.n.. _ N..
 
     ___ deleteEnd 
-        __ head __ N..:
+        __ head __ N..
             print("Empty List")
             r_
         currentNode _ head
         _____ T..:
-            __ currentNode.next.next __ head:
+            __ currentNode.n...next __ head:
                 b..
-            currentNode _ currentNode.next
+            currentNode _ currentNode.n..
         head.previous _ currentNode
-        currentNode.next.previous _ N..
-        currentNode.next.next _ N..
-        currentNode.next _ head
+        currentNode.n...previous _ N..
+        currentNode.n...n.. _ N..
+        currentNode.n.. _ head
 
     ___ printList 
-        __ head __ n.. N..:
+        __ head __ n.. N..
             currentNode _ head
             _____ T..:
                 print(currentNode.data)
-                currentNode _ currentNode.next
+                currentNode _ currentNode.n..
                 __ currentNode __ head:
                     b..
             # Print previous of head node to verify the connection to last node

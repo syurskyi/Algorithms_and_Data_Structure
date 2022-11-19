@@ -6,9 +6,9 @@ c_ TreeNode:
         right _ right
 
 
-c_ Solution:
+c_ Solution
     ___ invertTree root
-        __ root __ N..:
+        __ root __ N..
             r_ N..
 
         root.left, root.right _ root.right, root.left

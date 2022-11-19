@@ -52,7 +52,7 @@ c_ Algorithm o..
 		
 		node _ targetVertex;
 		
-		_____ node __ n.. N..:
+		_____ node __ n.. N..
 			print("%s " % node.name);
 			node _ node.predecessor;
 			

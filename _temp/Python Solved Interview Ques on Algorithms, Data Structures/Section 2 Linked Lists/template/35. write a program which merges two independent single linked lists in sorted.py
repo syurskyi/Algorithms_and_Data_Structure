@@ -1,7 +1,7 @@
 c_ Node o..
 
     ___  -  data_N.. next_node_None
-        data _ data
+        ? _ ?
         next_node _ N..
 
     ___ get_data
@@ -27,7 +27,7 @@ c_ LinkedList o..
     ___ insertatEnd item
         current _ head
         __ ?
-            w__ ?.g.. !_ N..:
+            w__ ?.g.. !_ N..
                 current _ ?.g..
             ?.s.. ? ?
         ____
@@ -58,7 +58,7 @@ ___ joinListsInSortedOrder(l1, l2
   parse_thirdList
   tempo_thirdList
 
-  w__ l1 !_ N.. a__ l2 !_ N..:
+  w__ l1 !_ N.. a__ l2 !_ N..
     __ l1.data < l2.data:
       tempo.next_node_l1
       l1_l1.next_node
@@ -67,10 +67,10 @@ ___ joinListsInSortedOrder(l1, l2
       l2_l2.next_node
     tempo_tempo.next_node
 
-  __ l1 __ N..:
+  __ l1 __ N..
      tempo.next_node_l2
 
-  __ l2 __ N..:
+  __ l2 __ N..
      tempo.next_node_l1
 
   w__ thirdList:

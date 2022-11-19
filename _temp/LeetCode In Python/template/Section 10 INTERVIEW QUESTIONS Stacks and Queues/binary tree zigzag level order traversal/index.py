@@ -6,8 +6,8 @@
 #         self.right = None
 
 
-c_ Solution:
-    ___ zigzagLevelOrder root: TreeNode) -> List[List[i..]]:
+c_ Solution
+    ___ zigzagLevelOrder root: TreeNode) __ List[List[i..]]:
         __ n.. root:
             r_    # list
         res _    # list

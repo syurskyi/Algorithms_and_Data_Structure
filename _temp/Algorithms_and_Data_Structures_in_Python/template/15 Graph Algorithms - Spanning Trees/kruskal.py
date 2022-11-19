@@ -40,7 +40,7 @@ c_ DisjointSet o..
 	
 		currentNode _ node;
 		
-		_____ currentNode.parentNode __ n.. N..:
+		_____ currentNode.parentNode __ n.. N..
 			currentNode _ currentNode.parentNode;
 			
 		root _ currentNode;

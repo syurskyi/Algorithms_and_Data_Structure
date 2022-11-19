@@ -1,4 +1,4 @@
-c_ Solution:
+c_ Solution
     ___ twoSum nums, target
         store _     # dict
 

@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution:
+c_ Solution
     ___ hasSumroot,sum,cur
         __(root __ N..
             r_ F..
@@ -13,5 +13,5 @@ c_ Solution:
         __(cur__sum ___ root.left __ N.. ___ root.right __ N..
             r_ T..
         r_ (hasSum(root.right,sum,cur) __ hasSum(root.left,sum,cur))
-    ___ hasPathSum root: TreeNode, sum: i..) -> bool:
+    ___ hasPathSum root: TreeNode, sum: i..) __ b..:
         r_ hasSum(root,sum, 0)

@@ -5,15 +5,15 @@ c_ ListNode:
         next _ next
 
 
-c_ Solution:
+c_ Solution
     ___ reverseList head
         pre _ N..
         cur _ head
         suc _ N..
 
         _____ cur:
-            suc _ cur.next
-            cur.next _ pre
+            suc _ cur.n..
+            cur.n.. _ pre
             pre _ cur
             cur _ suc
 

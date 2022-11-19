@@ -1,5 +1,5 @@
-c_ Solution:
-    ___ twoSum nums: List[i..], target: i..) -> List[i..]:
+c_ Solution
+    ___ twoSum nums: List[i..], target: i..) __ List[i..]:
         m _     # dict
         n _ l..(nums)
         ___ i __ r..(0,n

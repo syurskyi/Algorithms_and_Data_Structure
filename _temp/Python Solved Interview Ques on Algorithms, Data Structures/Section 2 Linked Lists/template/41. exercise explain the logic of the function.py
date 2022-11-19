@@ -4,7 +4,7 @@ from pprint import pprint
 c_ Node o..
 
     ___  -  data_N.. next_node_None
-        data _ data
+        ? _ ?
         next_node _ N.. 
 
     ___ get_data
@@ -28,7 +28,7 @@ c_ LinkedList o..
     ___ insertatEnd item
         current _ head
         __ ?
-            w__ ?.g.. !_ N..:
+            w__ ?.g.. !_ N..
                 current _ ?.g..
             ?.s.. ? ?
         ____
@@ -49,9 +49,9 @@ c_ LinkedList o..
         current_head
         i _ j _ 1
         
-        w__ current !_ N..:
+        w__ current !_ N..
             __ i __ j * j:
-                __ fNode __ N..:
+                __ fNode __ N..
                    fNode _ head
                 ____
                    fNode _ fNode.next_node

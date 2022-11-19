@@ -14,25 +14,25 @@ c_ SingleLinkedList:
         start _ N..
     
     ___ display_list 
-        __ start __ N..:
+        __ start __ N..
             print("List is empty")
             r_
         ____
             print("List is :   ")
             p _ start
-            _____ p __ n.. N..:
+            _____ p __ n.. N..
                 print(?.i.. , " ", end_'')
                 p _ ?.l..
             print()
    
     ___ insert_at_end data
         temp _ ? ?
-        __ start __ N..:
+        __ start __ N..
             start _ temp
             r_
         
         p _ start
-        _____ ?.l.. __ n.. N..:
+        _____ ?.l.. __ n.. N..
             p _ ?.l..
         ?.l.. _ temp
 
@@ -73,7 +73,7 @@ c_ SingleLinkedList:
         
         pM _ startM
 
-        _____ p1 __ n.. N.. ___ p2 __ n.. N..:
+        _____ p1 __ n.. N.. ___ p2 __ n.. N..
             __ p1.i.. <_ p2.i.. :
                 pM.l.. _ Node(p1.i..)
                 p1 _ p1.l..
@@ -84,13 +84,13 @@ c_ SingleLinkedList:
             
 
         #If second list has finished and elements left in first list
-        _____ p1 __ n.. N..:
+        _____ p1 __ n.. N..
             pM.l.. _ Node(p1.i..)
             p1 _ p1.l..
             pM _ pM.l..
         
         #If first list has finished and elements left in second list
-        _____ p2 __ n.. N..:
+        _____ p2 __ n.. N..
             pM.l.. _ Node(p2.i..)
             p2 _ p2.l..
             pM _ pM.l..
@@ -114,7 +114,7 @@ c_ SingleLinkedList:
             
         pM _ startM
 
-        _____ p1 __ n.. N.. ___ p2 __ n.. N..:
+        _____ p1 __ n.. N.. ___ p2 __ n.. N..
             __ p1.i.. <_ p2.i.. :
                 pM.l.. _ p1
                 pM _ pM.l..
@@ -124,7 +124,7 @@ c_ SingleLinkedList:
                 pM _ pM.l..
                 p2 _ p2.l..
             
-        __ p1 __ N..:
+        __ p1 __ N..
             pM.l.. _ p2
         ____
             pM.l.. _ p1

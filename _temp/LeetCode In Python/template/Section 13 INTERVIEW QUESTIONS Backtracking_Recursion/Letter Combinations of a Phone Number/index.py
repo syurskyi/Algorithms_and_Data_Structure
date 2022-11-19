@@ -1,4 +1,4 @@
-c_ Solution:
+c_ Solution
 
     ___ backtracking ans, m, digits, combination, index
         __(index > l..(digits
@@ -14,7 +14,7 @@ c_ Solution:
             backtracking(ans, m, digits, combination +
                               curString[i], index+1)
 
-    ___ letterCombinations digits: str) -> List[str]:
+    ___ letterCombinations digits: s..) __ List[s..]:
         ans _    # list
         __(l..(digits) __ 0
             r_ ans

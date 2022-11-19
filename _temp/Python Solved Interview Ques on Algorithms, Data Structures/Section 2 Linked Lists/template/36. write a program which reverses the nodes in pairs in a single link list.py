@@ -1,7 +1,7 @@
 c_ Node o..
 
     ___  -  data_N.. next_node_None
-        data _ data
+        ? _ ?
         next_node _ N..
 
     ___ get_data
@@ -27,7 +27,7 @@ c_ LinkedList o..
     ___ insertatEnd item
         current _ head
         __ ?
-            w__ ?.g.. !_ N..:
+            w__ ?.g.. !_ N..
                 current _ ?.g..
             ?.s.. ? ?
         ____
@@ -41,7 +41,7 @@ c_ LinkedList o..
 
     ___ reverseList
         current_head
-        w__ current !_ N.. a__ ?.next_node !_ N..:
+        w__ current !_ N.. a__ ?.next_node !_ N..
            exchangeData(current, ?.next_node)
            current_current.next_node.next_node
 

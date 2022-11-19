@@ -6,7 +6,7 @@
 #         self.right = None
 
 
-c_ Solution:
+c_ Solution
     ans _ -float("inf")
     ___ solutionnode
         __(node __ N..
@@ -19,6 +19,6 @@ c_ Solution:
         ans _ m__(ans,mxTop)
         r_ mxSide
 
-    ___ maxPathSum root: TreeNode) -> i..:
+    ___ maxPathSum root: TreeNode) __ i..:
         solution(root)
         r_ ans

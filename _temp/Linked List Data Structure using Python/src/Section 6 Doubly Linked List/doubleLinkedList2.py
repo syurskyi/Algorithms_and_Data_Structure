@@ -1,48 +1,48 @@
 c_ Node:
     ___ -  data
-        data _ data
-        next _ N..
+        ? _ ?
+        n.. _ N..
         previous _ N..
 
-c_ LinkedList:
+c_ LinkedList
     ___ -
         head _ N..
 
     ___ insertHead newNode
         previousHead _ head
         head _ newNode
-        head.next _ previousHead
+        head.n.. _ previousHead
         previousHead.previous _ head
 
     ___ insertEnd newNode
         # (head=> Joe->Mary->Grace->None || head=>None <-Joe<-Mary<-Grace
-        __ head __ N..:
+        __ head __ N..
             head _ newNode
             r_
         currentNode _ head
         _____ T..:
-            __ currentNode.next __ N..:
+            __ currentNode.n.. __ N..
                 b..
-            currentNode _ currentNode.next
-        currentNode.next _ newNode
-        newNode.previous _ currentNode
+            currentNode _ currentNode.n..
+        currentNode.n.. _ newNode
+        ?.previous _ currentNode
 
     ___ printList
-        __ head __ N..:
+        __ head __ N..
             print("List is empty")
             r_
         currentNode _ head
         print("Printing from the beginning")
         _____ T..:
-            __ currentNode __ N..:
+            __ currentNode __ N..
                 b..
             print(currentNode.data)
-            __ currentNode.next __ N..:
+            __ currentNode.n.. __ N..
                 reverseTraversalNode _ currentNode
-            currentNode _ currentNode.next
+            currentNode _ currentNode.n..
         print("Printing form end")
         _____ T..:
-            __ reverseTraversalNode __ N..:
+            __ reverseTraversalNode __ N..
                 b..
             print(reverseTraversalNode.data)
             reverseTraversalNode _ reverseTraversalNode.previous

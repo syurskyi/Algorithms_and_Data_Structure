@@ -3,11 +3,11 @@ from doublyLinkedList import Node, LinkedList
 ___ reverse(linkedList
     # (2->13->10->20->None | None<-2<-13<-10<-20) || (20->10->13->2->None | None<-20<-10<-13<-2)
     currentNode _ linkedList.head
-    _____ currentNode __ n.. N..:
-        nextNode _ currentNode.next # 13, 10, 20, None
-        currentNode.next _ currentNode.previous
+    _____ currentNode __ n.. N..
+        nextNode _ currentNode.n.. # 13, 10, 20, None
+        currentNode.n.. _ currentNode.previous
         currentNode.previous _ nextNode
-        __ currentNode.previous __ N..:
+        __ currentNode.previous __ N..
             linkedList.head _ currentNode
         currentNode _ nextNode
 

@@ -9,7 +9,7 @@ c_ Queue:
         top _ -1
     
     ___ __str__
-        values _ [str(x) ___ x __ items]
+        values _ [s..(x) ___ x __ items]
         r_ ' '.j..(values)
     
     ___ isFull

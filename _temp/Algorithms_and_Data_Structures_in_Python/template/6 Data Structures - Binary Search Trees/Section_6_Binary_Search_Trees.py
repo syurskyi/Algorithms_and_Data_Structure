@@ -1,7 +1,7 @@
 c_ Node o..
 
     ___ -  data
-        data _ data
+        ? _ ?
         leftChild _ N..
         rightChild _ N..
 

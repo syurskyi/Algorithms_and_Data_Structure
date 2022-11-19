@@ -55,13 +55,13 @@ c_ binTree:
     ___ _printTree node
         __(node !_ N..
             _printTree(node.l)
-            print str(node.v) + ' '
+            print s..(node.v) + ' '
             _printTree(node.r)
 
 
 
 ___ checkwhetheritsabintree(root
-        __ root __ N..:
+        __ root __ N..
                   r_ 1
         # false if left is > than root
         __ root.l !_ N.. ___ root.l.v > root.v:
@@ -86,7 +86,7 @@ ___ levelOrder(root
     elements _""
     _____ items !_    # list:
         temp _ ?.p.. 
-        elements_ elements+str(?.v)+ " "
+        elements_ elements+s..(?.v)+ " "
         __ ?.l!_None:
             ?.i.. (0,?.l)
         __ ?.r!_None:
@@ -122,7 +122,7 @@ ___ printReverse(root
     elements _""
     _____ items !_    # list:
         temp _ ?.p.. 
-        elements_ str(?.v)+ " " + elements
+        elements_ s..(?.v)+ " " + elements
         __ ?.l!_None:
             ?.i.. (0,?.l)
         __ ?.r!_None:
@@ -131,7 +131,7 @@ ___ printReverse(root
 
 
 ___ maximumDepthOfTree(root
-        __ root __ N..:
+        __ root __ N..
             r_ 0
         r_ m__(maximumDepthOfTree(root.l), maximumDepthOfTree(root.r)) + 1
 
@@ -143,7 +143,7 @@ ___ deepestNode(root
     elements _""
     _____ items !_    # list:
         temp _ ?.p.. 
-        elements_ str(?.v)+ " " + elements
+        elements_ s..(?.v)+ " " + elements
         __ ?.l!_None:
             ?.i.. (0,?.l)
         __ ?.r!_None:
@@ -159,7 +159,7 @@ ___ countLeaves(root
     elements _""
     _____ items !_    # list:
         temp _ ?.p.. 
-        __ ?.l __ N.. ___ ?.r __ N..:
+        __ ?.l __ N.. ___ ?.r __ N..
             count +_ 1
         __ ?.l!_None:
             ?.i.. (0,?.l)
@@ -175,7 +175,7 @@ ___ countFullNodes(root
     ?.i.. (count,root)
     _____ items !_    # list:
         temp _ ?.p.. 
-        __ ?.l __ n.. N.. ___ ?.r __ n.. N..:
+        __ ?.l __ n.. N.. ___ ?.r __ n.. N..
             count +_ 1
         __ ?.l!_None:
             ?.i.. (0,?.l)

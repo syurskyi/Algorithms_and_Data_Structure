@@ -15,7 +15,7 @@ c_ Trie:
         ___ i __ word:
             ch _ i
             node _ current.children.get(ch)
-            __ node __ N..:
+            __ node __ N..
                 node _ TrieNode()
                 current.children.update({ch:node})
             current _ node
@@ -26,7 +26,7 @@ c_ Trie:
         currentNode _ root
         ___ i __ word:
             node _ currentNode.children.get(i)
-            __ node __ N..:
+            __ node __ N..
                 r_ F..
             currentNode _ node
 

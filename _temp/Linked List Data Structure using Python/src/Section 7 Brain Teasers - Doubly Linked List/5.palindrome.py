@@ -4,14 +4,14 @@ ___ palindrome(linkedList
     # L, E, V, E, L
     startPointer _ linkedList.head
     endPointer _ linkedList.head
-    _____ endPointer.next __ n.. N..:
-        endPointer _ endPointer.next
+    _____ endPointer.n.. __ n.. N..
+        endPointer _ endPointer.n..
     _____ T..:
         __ startPointer __ endPointer:
             print("List is palindrome")
             r_
         __ startPointer.data __ endPointer.data:
-            startPointer _ startPointer.next
+            startPointer _ startPointer.n..
             endPointer _ endPointer.previous
         ____
             print("List is not palindrome")

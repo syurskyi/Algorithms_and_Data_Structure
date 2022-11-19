@@ -1,5 +1,5 @@
-c_ Solution:
-    ___ rob nums: List[i..]) -> i..:
+c_ Solution
+    ___ rob nums: List[i..]) __ i..:
         n _ l..(nums)
         __(n__0
             r_ 0

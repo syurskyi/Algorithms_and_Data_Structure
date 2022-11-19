@@ -23,7 +23,7 @@ c_ Node:
 
 from collections import deque
 ___ levelOrderPrint(tree
-    __ tree __ N..:
+    __ tree __ N..
         r_
 
     queue _ deque()
@@ -32,10 +32,10 @@ ___ levelOrderPrint(tree
         temp _ deque()
         _____ l..(queue) !_ 0:
             node _ queue.p.. 
-            print(str(node.val) + ' ')
-            __ node.left __ n.. N..:
+            print(s..(node.val) + ' ')
+            __ node.left __ n.. N..
                 ?.a..(tree.left)
-            __ node.right __ n.. N..:
+            __ node.right __ n.. N..
                 ?.a..(tree.right)
             queue _ temp
 

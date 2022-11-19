@@ -2,28 +2,28 @@
 
 c_ Node:
     ___ -  data
-        data _ data
-        next _ N..
+        ? _ ?
+        n.. _ N..
 
-c_ LinkedList:
+c_ LinkedList
     ___ -
         head _ N..
 
     ___ insertEnd newNode
-        __ head __ N..:
+        __ head __ N..
             head _ newNode
             r_
         lastNode _ head
-        _____ lastNode.next __ n.. N..:
-            lastNode _ lastNode.next
-        lastNode.next _ newNode
+        _____ lastNode.n.. __ n.. N..
+            lastNode _ lastNode.n..
+        lastNode.n.. _ newNode
 
     ___ listLength
         length _ 0
         currentNode _ head
-        _____ currentNode __ n.. N..:
+        _____ currentNode __ n.. N..
             length +_ 1
-            currentNode _ currentNode.next
+            currentNode _ currentNode.n..
         r_ length
 
     ___ printMiddle
@@ -35,7 +35,7 @@ c_ LinkedList:
             middlePosition _ length // 2
             middleNode _ head
             _____ middlePosition !_ 0:
-                middleNode _ middleNode.next
+                middleNode _ middleNode.n..
                 middlePosition -_ 1
             print("Middle Node: ",middleNode.data)
 

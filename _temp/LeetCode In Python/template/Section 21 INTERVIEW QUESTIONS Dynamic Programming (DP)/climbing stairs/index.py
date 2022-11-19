@@ -1,5 +1,5 @@
-c_ Solution:
-    ___ climbStairs n: i..) -> i..:
+c_ Solution
+    ___ climbStairs n: i..) __ i..:
         __(n __ 1
             r_ 1
         dp _ [0]*(n+1)

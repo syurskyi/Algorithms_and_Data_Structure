@@ -31,7 +31,7 @@ c_ HashTable o..
         hashvalue _ hashfunction(key,l..(slots))
 
         # If Slot is Empty
-        __ slots[hashvalue] __ N..:
+        __ slots[hashvalue] __ N..
             slots[hashvalue] _ key
             data[hashvalue] _ data
 
@@ -51,7 +51,7 @@ c_ HashTable o..
                     nextslot _ rehash(nextslot,l..(slots))
 
                 # Set new key, if NONE
-                __ slots[nextslot] __ N..:
+                __ slots[nextslot] __ N..
                     slots[nextslot]_key
                     data[nextslot]_data
 
@@ -84,7 +84,7 @@ c_ HashTable o..
 
             __ slots[position] __ key:
                 found _ T..
-                data _ data[position]
+                ? _ ?[position]
 
             ____
                 position_self.rehash(position,l..(slots))

@@ -1,5 +1,5 @@
-c_ Solution:
-    ___ lengthOfLongestSubstring s: str) -> i..:
+c_ Solution
+    ___ lengthOfLongestSubstring s: s..) __ i..:
         m _     # dict
         left _ 0
         right _ 0

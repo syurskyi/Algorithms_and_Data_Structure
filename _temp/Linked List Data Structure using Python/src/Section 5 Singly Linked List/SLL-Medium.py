@@ -2,32 +2,32 @@
 
 c_ Node:
     ___ -  data
-        data _ data
-        next _ N..
+        ? _ ?
+        n.. _ N..
 
-c_ LinkedList:
+c_ LinkedList
     ___ -
         head _ N..
 
     ___ insertEnd newNode
-        __ head __ N..:
+        __ head __ N..
             head _ newNode
             r_
         lastNode _ head
-        _____ lastNode.next __ n.. N..:
-            lastNode _ lastNode.next
-        lastNode.next _ newNode
+        _____ lastNode.n.. __ n.. N..
+            lastNode _ lastNode.n..
+        lastNode.n.. _ newNode
 
     ___ countNodes
         currentNode _ head
         evenCount _ 0
         oddCount _ 0
-        _____ currentNode __ n.. N..:
+        _____ currentNode __ n.. N..
             __ currentNode.data % 2 __ 0:
                 evenCount +_ 1
             ____
                 oddCount +_ 1
-            currentNode _ currentNode.next
+            currentNode _ currentNode.n..
         print("Even Nodes: ",evenCount)
         print("Odd Nodes: ", oddCount)
 

@@ -5,13 +5,13 @@ from random import randint
 c_ Node:
     ___ -  value_None
         value _ value
-        next _ N..
-        prev _ N..
+        n.. _ N..
+        p.. _ N..
     
     ___ __str__
-        r_ str(value)
+        r_ s..(value)
 
-c_ LinkedList:
+c_ LinkedList
     ___ -  values _ N..
         head _ N..
         tail _ N..
@@ -20,10 +20,10 @@ c_ LinkedList:
         curNode _ head
         _____ curNode:
             yield curNode
-            curNode _ curNode.next
+            curNode _ curNode.n..
     
     ___ __str__
-        values _ [str(x.value) ___ x __ self]
+        values _ [s..(x.value) ___ x __ self]
         r_ ' -> '.j..(values)
     
     ___ __len__
@@ -31,17 +31,17 @@ c_ LinkedList:
         node _ head
         _____ node:
             result +_ 1
-            node _ node.next
+            node _ node.n..
         r_ result
     
     ___ add value
-        __ head __ N..:
-            newNode _ Node(value)
+        __ head __ N..
+            newNode _ ? ?
             head _ newNode
             tail _ newNode
         ____
-            tail.next _ Node(value)
-            tail _ tail.next
+            tail.n.. _ ? ?
+            tail _ tail.n..
         r_ tail
     
     ___ generate n, min_value, max_value

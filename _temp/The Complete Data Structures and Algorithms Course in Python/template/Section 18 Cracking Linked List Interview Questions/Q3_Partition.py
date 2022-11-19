@@ -11,18 +11,18 @@ ___ partition(ll, x
     ll.tail _ ll.head
 
     _____ curNode:
-        nextNode _ curNode.next
-        curNode.next _ N..
+        nextNode _ curNode.n..
+        curNode.n.. _ N..
         __ curNode.value < x:
-            curNode.next _ ll.head
+            curNode.n.. _ ll.head
             ll.head _ curNode
         ____
-            ll.tail.next _ curNode
+            ll.tail.n.. _ curNode
             ll.tail _ curNode
         curNode _ nextNode
     
-    __ ll.tail.next __ n.. N..:
-        ll.tail.next _ N..
+    __ ll.tail.n.. __ n.. N..
+        ll.tail.n.. _ N..
 
 customLL _ LinkedList()
 customLL.generate(10,0,99)

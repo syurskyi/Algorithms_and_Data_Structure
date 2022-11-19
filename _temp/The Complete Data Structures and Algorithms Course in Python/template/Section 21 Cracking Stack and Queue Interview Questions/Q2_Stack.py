@@ -4,14 +4,14 @@
 #   Create Stack with min method
 
 c_ Node(
-    ___ -  value_None, next _ N..
+    ___ -  value_None, n.. _ N..
         value _ value
         next _ next
     
     ___ __str__ 
-        string _ str(value)
+        string _ s..(value)
         __ next:
-            string +_ ',' + str(next)
+            string +_ ',' + s..(next)
         r_ string
 
 c_ Stack(
@@ -34,9 +34,9 @@ c_ Stack(
     ___ pop 
         __ n.. top:
             r_ N..
-        minNode _ minNode.next
+        minNode _ minNode.n..
         item _ top.value
-        top _ top.next
+        top _ top.n..
         r_ item
 
 customStack _ Stack()

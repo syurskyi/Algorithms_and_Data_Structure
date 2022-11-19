@@ -1,4 +1,4 @@
-c_ Solution:
+c_ Solution
 
     ___ longestPalindrome s
         result _ ""

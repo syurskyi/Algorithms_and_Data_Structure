@@ -10,7 +10,7 @@ c_ HashTable o..
         index _ hashfunction(key)
 
         # not None -> it is a collision !!!
-        _____ keys[index] __ n.. N..:
+        _____ keys[index] __ n.. N..
             __ keys[index] __ key:
                 values[index] _ data  # update
                 r_
@@ -26,7 +26,7 @@ c_ HashTable o..
 
         index _ hashfunction(key)
 
-        _____ keys[index] __ n.. N..:
+        _____ keys[index] __ n.. N..
             __ keys[index] __ key:
                 r_ values[index]
 

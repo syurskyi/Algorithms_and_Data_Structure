@@ -10,7 +10,7 @@
 tree_vals _    # list
 
 ___ inorder(tree
-    __ tree !_ N..:
+    __ tree !_ N..
         inorder(tree.getLeftChild())
         tree_vals.a..(tree.getRootVal())
         inorder(tree.getRightChild())

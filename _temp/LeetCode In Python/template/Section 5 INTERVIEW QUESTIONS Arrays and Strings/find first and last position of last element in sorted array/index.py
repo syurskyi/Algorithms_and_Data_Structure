@@ -1,4 +1,4 @@
-c_ Solution:
+c_ Solution
     ___ getLeftPosition nums, target
         left _ 0
         right _ l..(nums)-1
@@ -33,7 +33,7 @@ c_ Solution:
 
         r_ -1
 
-    ___ searchRange nums: List[i..], target: i..) -> List[i..]:
+    ___ searchRange nums: List[i..], target: i..) __ List[i..]:
         left _ getLeftPosition(nums, target)
         right _ getRightPosition(nums, target)
 

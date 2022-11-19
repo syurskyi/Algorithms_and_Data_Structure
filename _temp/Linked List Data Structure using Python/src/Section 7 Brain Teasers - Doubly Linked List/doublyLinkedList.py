@@ -1,10 +1,10 @@
 c_ Node:
     ___ -  data
-        data _ data
-        next _ N..
+        ? _ ?
+        n.. _ N..
         previous _ N..
 
-c_ LinkedList:
+c_ LinkedList
     ___ -  
         head _ N..
 
@@ -12,15 +12,15 @@ c_ LinkedList:
         # 10->20->None
         length _ 0
         currentNode _ head
-        _____ currentNode __ n.. N..:
-            currentNode _ currentNode.next
+        _____ currentNode __ n.. N..
+            currentNode _ currentNode.n..
             length +_ 1
         r_ length
 
     ___ insertHead newNode
         previousHead _ head
         head _ newNode
-        head.next _ previousHead
+        head.n.. _ previousHead
         previousHead.previous _ head
 
     ___ insertAt newNode, position
@@ -38,30 +38,30 @@ c_ LinkedList:
         currentPosition _ 0
         _____ T..:
             __ currentPosition __ position:
-                currentNode.previous.next _ newNode
-                newNode.previous _ currentNode.previous
-                newNode.next _ currentNode
+                currentNode.previous.n.. _ newNode
+                ?.previous _ currentNode.previous
+                ?.n.. _ currentNode
                 currentNode.previous _ newNode
                 b..
-            currentNode _ currentNode.next
+            currentNode _ currentNode.n..
             currentPosition +_ 1
 
     ___ insertEnd newNode
         # (head=> Joe->Mary->Grace->None || head=>None <-Joe<-Mary<-Grace
-        __ head __ N..:
+        __ head __ N..
             head _ newNode
             r_
         currentNode _ head
         _____ T..:
-            __ currentNode.next __ N..:
+            __ currentNode.n.. __ N..
                 b..
-            currentNode _ currentNode.next
-        currentNode.next _ newNode
-        newNode.previous _ currentNode
+            currentNode _ currentNode.n..
+        currentNode.n.. _ newNode
+        ?.previous _ currentNode
 
     ___ deleteHead 
-        head _ head.next
-        head.previous.next _ N..
+        head _ head.n..
+        head.previous.n.. _ N..
         head.previous _ N..
 
     ___ deleteAt position
@@ -69,40 +69,40 @@ c_ LinkedList:
         currentPosition _ 0
         _____ T..:
             __ currentPosition __ position:
-                currentNode.previous.next _ currentNode.next
-                currentNode.next.previous _ currentNode.previous
-                currentNode.next _ N..
+                currentNode.previous.n.. _ currentNode.n..
+                currentNode.n...previous _ currentNode.previous
+                currentNode.n.. _ N..
                 currentNode.previous _ N..
                 b..
-            currentNode _ currentNode.next
+            currentNode _ currentNode.n..
             currentPosition +_ 1
 
     ___ deleteEnd 
         currentNode _ head
         _____ T..:
-            __ currentNode.next.next __ N..:
-                currentNode.next.previous _ N..
-                currentNode.next.next _ N..
-                currentNode.next _ N..
+            __ currentNode.n...next __ N..
+                currentNode.n...previous _ N..
+                currentNode.n...n.. _ N..
+                currentNode.n.. _ N..
                 b..
-            currentNode _ currentNode.next
+            currentNode _ currentNode.n..
 
     ___ printList 
-        __ head __ N..:
+        __ head __ N..
             print("List is empty")
             r_
         currentNode _ head
         print("Printing from the beginning")
         _____ T..:
-            __ currentNode __ N..:
+            __ currentNode __ N..
                 b..
             print(currentNode.data)
-            __ currentNode.next __ N..:
+            __ currentNode.n.. __ N..
                 reverseTraversalNode _ currentNode
-            currentNode _ currentNode.next
+            currentNode _ currentNode.n..
         print("Printing form end")
         _____ T..:
-            __ reverseTraversalNode __ N..:
+            __ reverseTraversalNode __ N..
                 b..
             print(reverseTraversalNode.data)
             reverseTraversalNode _ reverseTraversalNode.previous

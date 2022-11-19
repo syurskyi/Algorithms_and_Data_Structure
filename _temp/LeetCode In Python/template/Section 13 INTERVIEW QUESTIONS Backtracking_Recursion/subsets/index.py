@@ -1,4 +1,4 @@
-c_ Solution:
+c_ Solution
     ___ solutionnums,ans,cur,index
         __(index>l..(nums
             r_
@@ -9,7 +9,7 @@ c_ Solution:
                 solution(nums,ans,cur,i)
                 cur.p.. 
         r_ 
-    ___ subsets nums: List[i..]) -> List[List[i..]]:
+    ___ subsets nums: List[i..]) __ List[List[i..]]:
         ans _    # list
         cur _    # list
         solution(nums,ans,cur,0)

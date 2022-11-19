@@ -41,14 +41,14 @@ ___ compress(s
             cnt +_ 1
         ____
             # Otherwise store the previous data
-            r _ r + s[i - 1] + str(cnt)
+            r _ r + s[i - 1] + s..(cnt)
             cnt _ 1
 
         # Add to index count to terminate while loop
         i +_ 1
 
     # Put everything back into run
-    r _ r + s[i - 1] + str(cnt)
+    r _ r + s[i - 1] + s..(cnt)
 
     r_ r
 

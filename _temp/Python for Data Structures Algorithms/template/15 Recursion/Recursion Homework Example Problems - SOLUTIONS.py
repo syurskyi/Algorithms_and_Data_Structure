@@ -33,7 +33,7 @@ rec_sum(4)
 
 ___ sum_func(n
     # Base case
-    __ l..(str(n)) __ 1:
+    __ l..(s..(n)) __ 1:
         r_ n
 
     # Recursion
@@ -76,7 +76,7 @@ ___ word_split(phrase,list_of_words, output _ N..
 
     # Checks to see if any output has been initiated.
     # If you default output=[], it would be overwritten for every 001_recursion!
-    __ output __ N..:
+    __ output __ N..
         output _    # list
 
     # For every word in list

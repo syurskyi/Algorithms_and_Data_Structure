@@ -8,13 +8,13 @@ ___ nthToLast(ll, n
     pointer2 _ ll.head
 
     ___ i __ r..(n
-        __ pointer2 __ N..:
+        __ pointer2 __ N..
             r_ N..
-        pointer2 _ pointer2.next
+        pointer2 _ pointer2.n..
 
     _____ pointer2:
-        pointer1 _ pointer1.next
-        pointer2 _ pointer2.next
+        pointer1 _ pointer1.n..
+        pointer2 _ pointer2.n..
     r_ pointer1
 
 customLL _ LinkedList()

@@ -1,4 +1,4 @@
-c_ Solution:
+c_ Solution
     ___ detectCapitalUse word
         count _ 0
         length _ l..(word)

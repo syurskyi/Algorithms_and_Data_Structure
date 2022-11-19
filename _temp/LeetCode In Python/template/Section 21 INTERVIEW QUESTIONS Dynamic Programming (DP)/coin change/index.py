@@ -1,5 +1,5 @@
-c_ Solution:
-    ___ coinChange coins: List[i..], amount: i..) -> i..:
+c_ Solution
+    ___ coinChange coins: List[i..], amount: i..) __ i..:
         __ amount <_ 0:
             r_ 0
         

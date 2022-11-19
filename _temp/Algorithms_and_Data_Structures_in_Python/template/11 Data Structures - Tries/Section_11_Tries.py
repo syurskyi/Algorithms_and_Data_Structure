@@ -20,7 +20,7 @@ c_ TST o..
 
         c _ key[index]
 
-        __ node __ N..:
+        __ node __ N..
             node _ Node(c)
 
         __ c < node.character:
@@ -38,14 +38,14 @@ c_ TST o..
 
         node _ getItem(rootNode, key, 0)
 
-        __ node __ N..:
+        __ node __ N..
             r_ -1
 
         r_ node.value
 
     ___ getItem node, key, index
 
-        __ node __ N..:
+        __ node __ N..
             r_ N..
 
         c _ key[index]

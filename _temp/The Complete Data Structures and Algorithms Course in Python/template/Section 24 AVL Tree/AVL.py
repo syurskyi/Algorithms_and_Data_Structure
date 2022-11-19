@@ -5,7 +5,7 @@ import QueueLinkedList as queue
 
 c_ AVLNode:
     ___ -  data
-        data _ data
+        ? _ ?
         leftChild _ N..
         rightChild _ N..
         height _ 1
@@ -40,9 +40,9 @@ ___ levelOrderTraversal(rootNode
         _____ n..(customQueue.isEmpty(
             root _ customQueue.dequeue()
             print(root.value.data)
-            __ root.value.leftChild __ n.. N..:
+            __ root.value.leftChild __ n.. N..
                 customQueue.enqueue(root.value.leftChild)
-            __ root.value.rightChild __ n.. N..:
+            __ root.value.rightChild __ n.. N..
                 customQueue.enqueue(root.value.rightChild)
 
 
@@ -109,7 +109,7 @@ ___ insertNode(rootNode, nodeValue
     r_ rootNode
 
 ___ getMinValueNode(rootNode
-    __ rootNode __ N.. __ rootNode.leftChild __ N..:
+    __ rootNode __ N.. __ rootNode.leftChild __ N..
         r_ rootNode
     r_ getMinValueNode(rootNode.leftChild)
 
@@ -121,11 +121,11 @@ ___ deleteNode(rootNode, nodeValue
     ____ nodeValue > rootNode.data:
         rootNode.rightChild _ deleteNode(rootNode.rightChild, nodeValue)
     ____
-        __ rootNode.leftChild __ N..:
+        __ rootNode.leftChild __ N..
             temp _ rootNode.rightChild
             rootNode _ N..
             r_ temp
-        ____ rootNode.rightChild __ N..:
+        ____ rootNode.rightChild __ N..
             temp _ rootNode.leftChild
             rootNode _ N..
             r_ temp

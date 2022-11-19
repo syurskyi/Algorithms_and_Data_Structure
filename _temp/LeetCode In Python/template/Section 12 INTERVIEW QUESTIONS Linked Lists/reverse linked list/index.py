@@ -5,12 +5,12 @@
 #         self.next = None
 
 
-c_ Solution:
-    ___ reverseList head: ListNode) -> ListNode:
+c_ Solution
+    ___ reverseList head: ListNode) __ ListNode:
         node _ N..
         _____(head __ n.. N..
-            next _ head.next
-            head.next _ node
+            next _ head.n..
+            head.n.. _ node
             node _ head
             head _ next
         r_ node

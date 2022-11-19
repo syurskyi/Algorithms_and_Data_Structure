@@ -16,7 +16,7 @@ c_ studentRecord:
         studentId _ i
         
     ___ __str__ 
-        r_ str(studentId) + " "  + studentName 
+        r_ s..(studentId) + " "  + studentName 
 
 
 c_ HashTable:
@@ -100,7 +100,7 @@ c_ HashTable:
         location _ h
 
         ___ i __ r..(1,m
-            __ array[location] __ N..:
+            __ array[location] __ N..
                 r_
             
             __ array[location].get_student_id() __ key:
@@ -135,7 +135,7 @@ _____ T..:
     ____ option __ 2:
         idd _ i..(i..("Enter a key to be searched : "))
         aRecord _ table.search(id)
-        __ aRecord __ N..:
+        __ aRecord __ N..
             print("Key not found")
         ____
             print(aRecord)

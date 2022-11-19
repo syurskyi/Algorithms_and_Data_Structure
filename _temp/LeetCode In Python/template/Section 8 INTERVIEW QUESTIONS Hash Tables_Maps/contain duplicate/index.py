@@ -1,7 +1,7 @@
 from collections import defaultdict
 
-c_ Solution:
-    ___ containsDuplicate nums: List[i..]) -> bool:
+c_ Solution
+    ___ containsDuplicate nums: List[i..]) __ b..:
         m _ defaultdict(i..)
 
         ___ num __ nums:
