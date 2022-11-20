@@ -3,7 +3,7 @@
 
 c_ Node:
     ___ -  value _ N..
-        value _ value
+        ? _ ?
         n.. _ N..
 
 c_ LinkedList

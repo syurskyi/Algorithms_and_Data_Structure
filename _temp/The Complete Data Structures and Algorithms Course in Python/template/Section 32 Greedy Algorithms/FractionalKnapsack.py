@@ -6,7 +6,7 @@
 c_ Item:
     ___ -  weight, value
         weight _ weight
-        value _ value
+        ? _ ?
         ratio _ value / weight
 
 ___ knapsackMethod(items, capacity

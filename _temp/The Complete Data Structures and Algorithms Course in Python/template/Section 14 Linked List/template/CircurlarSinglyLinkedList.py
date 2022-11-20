@@ -3,7 +3,7 @@
 
 c_ Node:
     ___ -  value_None
-        value _ value
+        ? _ ?
         n.. _ N..
 
 c_ CircularSinglyLinkedList:

@@ -1,6 +1,6 @@
 c_ Node(
     ___ -  value
-        value _ value
+        ? _ ?
         left _ N..
         right _ N..
 

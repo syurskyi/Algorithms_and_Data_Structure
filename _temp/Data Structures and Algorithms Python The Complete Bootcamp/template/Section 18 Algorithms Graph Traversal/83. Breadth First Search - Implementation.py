@@ -1,7 +1,7 @@
 c_ Node(
 
     ___ -  value
-        value _ value
+        ? _ ?
         adjacentlist _    # list
         visited _ F..
 

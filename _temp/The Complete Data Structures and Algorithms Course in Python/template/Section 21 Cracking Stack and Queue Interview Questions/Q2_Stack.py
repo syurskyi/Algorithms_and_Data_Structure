@@ -5,7 +5,7 @@
 
 c_ Node(
     ___ -  value_None, n.. _ N..
-        value _ value
+        ? _ ?
         next _ next
     
     ___ __str__ 
