@@ -133,15 +133,15 @@ rec_coin_dynam(target,coins,known_results)#
 # NOTE: NON-DYNAMIC FUNCTIONS WILL TAKE A LONG TIME TO TEST. IF YOU BELIEVE YOU HAVE A SOLUTION
 # """
 
-from nose.tools import assert_equal
+____ n___.t.. ______ assert_equal
 
 c_ TestCoins o..
 
     ___ checksolution
         coins _ [1,5,10,25]
-        assert_equal(solution(45,coins),3)
-        assert_equal(solution(23,coins),5)
-        assert_equal(solution(74,coins),8)
+        ? solution(45,coins),3)
+        ? solution(23,coins),5)
+        ? solution(74,coins),8)
 
         print 'Passed all tests.'
 

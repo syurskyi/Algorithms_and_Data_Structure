@@ -18,4 +18,4 @@ c_ Solution o..
             result.a..(s..(total % 2))
             carry _ total//2
 
-        r_ ''.j..(reversed(result))
+        r_ ''.j..(r..(result))

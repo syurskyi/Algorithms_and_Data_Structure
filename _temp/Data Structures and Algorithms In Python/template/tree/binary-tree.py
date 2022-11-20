@@ -1,7 +1,7 @@
 # Copyright (C) Deepali Srivastava - All Rights Reserved
 # This code is part of DSA course available on CourseGalaxy.com  
 
-from collections import deque
+____ collections ______ deque
 
 c_ Node:
     ___ - value

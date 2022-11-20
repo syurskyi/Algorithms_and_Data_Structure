@@ -21,5 +21,5 @@ ___ gettwoeleswhichformasum(myarray, Sum
 			print ele, "+", Sum - ele, " = ", Sum		
 	
 myarray _ [10, 4, 45, 16, 12, 7]
-myarray.sort()
+myarray.s..
 gettwoeleswhichformasum(myarray, 26)

@@ -3,7 +3,7 @@
 
 # How to use multiprocessing.Queue as a FIFO queue:
 
-from multiprocessing import Queue
+____ multiprocessing ______ Queue
 
 customQueue _ Queue(maxsize_ 3)
 customQueue.put(1)

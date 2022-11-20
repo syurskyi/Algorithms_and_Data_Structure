@@ -1,5 +1,5 @@
 ___ elementwhichappearsmaxtimes(myarray
-	myarray.sort()
+	myarray.s..
 	print "sorted array:", myarray
 	j _ 0
 	count _ m__ _ 1

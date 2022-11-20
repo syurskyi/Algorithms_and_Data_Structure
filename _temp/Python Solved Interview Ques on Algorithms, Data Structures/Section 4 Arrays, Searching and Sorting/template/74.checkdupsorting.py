@@ -1,6 +1,6 @@
 
 ___ checkdupsorting(myarray
-	myarray.sort()
+	myarray.s..
         print myarray
 	___ i __ r..(0, l..(myarray) - 1
                 #print "in for loop:", myarray

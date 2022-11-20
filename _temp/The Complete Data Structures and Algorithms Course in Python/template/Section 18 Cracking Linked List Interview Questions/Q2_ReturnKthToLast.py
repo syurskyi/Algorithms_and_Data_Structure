@@ -1,7 +1,7 @@
 #   Created by Elshad Karimov on 18/05/2020.
 #   Copyright © 2020 AppMillers. All rights reserved.
 
-from LinkedList import LinkedList
+____ LinkedList ______ LinkedList
 
 ___ nthToLast(ll, n
     pointer1 _ ll.head

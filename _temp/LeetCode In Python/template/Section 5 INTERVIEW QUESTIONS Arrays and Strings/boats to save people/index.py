@@ -1,6 +1,6 @@
 c_ Solution
     ___ numRescueBoats people: List[i..], limit: i..) __ i..:
-        people.sort()
+        people.s..
 
         left _ 0
         right _ l..(people)-1

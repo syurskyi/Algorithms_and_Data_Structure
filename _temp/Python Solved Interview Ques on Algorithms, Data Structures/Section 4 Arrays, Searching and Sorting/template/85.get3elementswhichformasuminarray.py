@@ -35,5 +35,5 @@ ___ getthreeelementswithsum(myarray, sum
 	r_ 0
     
 myarray _ [22, 6, 45, 40, 10, 18]
-myarray.sort()
+myarray.s..
 getthreeelementswithsum(myarray, 72)

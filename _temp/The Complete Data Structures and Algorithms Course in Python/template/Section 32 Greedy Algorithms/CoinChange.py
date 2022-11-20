@@ -6,7 +6,7 @@
 
 ___ coinChange(totalNumber, coins
     N _ totalNumber
-    coins.sort()
+    coins.s..
     index _ l..(coins)-1
     _____ T..:
         coinValue _ coins[index]

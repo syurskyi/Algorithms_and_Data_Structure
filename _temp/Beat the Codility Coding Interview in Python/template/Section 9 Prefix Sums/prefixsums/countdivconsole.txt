@@ -2,7 +2,7 @@
 3.0
 >>> 7 / 2
 3.5
->>> from math import ceil, floor
+>>> ____ math ______ ceil, floor
 >>> ceil(7 / 2)
 4
 >>> 11 / 2

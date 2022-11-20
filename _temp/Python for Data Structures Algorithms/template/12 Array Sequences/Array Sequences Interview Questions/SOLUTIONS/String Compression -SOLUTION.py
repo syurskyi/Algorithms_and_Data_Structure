@@ -59,14 +59,14 @@ compress('AAAAABBBBCCCC')
 """
 RUN THIS CELL TO TEST YOUR SOLUTION
 """
-from nose.tools import assert_equal
+____ n___.t.. ______ assert_equal
 
 c_ TestCompress o..
 
     ___ test sol
-        assert_equal(sol(''), '')
-        assert_equal(sol('AABBCC'), 'A2B2C2')
-        assert_equal(sol('AAABCCDDDDD'), 'A3B1C2D5')
+        ? ? ''), '')
+        ? ? 'AABBCC'), 'A2B2C2')
+        ? ? 'AAABCCDDDDD'), 'A3B1C2D5')
         print('ALL TEST CASES PASSED')
 
 # Run Tests

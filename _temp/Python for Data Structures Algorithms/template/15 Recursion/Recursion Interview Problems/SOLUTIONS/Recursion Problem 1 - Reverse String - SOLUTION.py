@@ -32,14 +32,14 @@ string _ '123456789'
 # RUN THIS CELL TO TEST YOUR FUNCTION AGAINST SOME TEST CASES
 # '''
 
-from nose.tools import assert_equal
+____ n___.t.. ______ assert_equal
 
 c_ TestReverse o..
 
     ___ test_revsolution
-        assert_equal(solution('hello'),'olleh')
-        assert_equal(solution('hello world'),'dlrow olleh')
-        assert_equal(solution('123456789'),'987654321')
+        ? solution('hello'),'olleh')
+        ? solution('hello world'),'dlrow olleh')
+        ? solution('123456789'),'987654321')
 
         print 'PASSED ALL TEST CASES!'
 

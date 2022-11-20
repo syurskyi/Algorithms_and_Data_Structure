@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-import Queue
+______ Queue
 
 c_ Node:
     ___ -  data

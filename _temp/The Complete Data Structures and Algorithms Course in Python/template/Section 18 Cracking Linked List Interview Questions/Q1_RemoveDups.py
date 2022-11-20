@@ -4,7 +4,7 @@
 # Question 1 - Remove Dups : Write a code to remove duplicates from an unsorted linked list. 
 
 
-from LinkedList import LinkedList
+____ LinkedList ______ LinkedList
 
 ___ removeDups(ll
     __ ll.head __ N..

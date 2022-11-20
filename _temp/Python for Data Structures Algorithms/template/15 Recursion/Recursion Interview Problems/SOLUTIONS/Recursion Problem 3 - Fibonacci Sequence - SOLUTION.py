@@ -81,14 +81,14 @@ fib_iter(23)
 # THEN RUN THE CELL.
 # """
 
-from nose.tools import assert_equal
+____ n___.t.. ______ assert_equal
 
 c_ TestFib o..
 
     ___ testsolution
-        assert_equal(solution(10),55)
-        assert_equal(solution(1),1)
-        assert_equal(solution(23),28657)
+        ? solution(10),55)
+        ? solution(1),1)
+        ? solution(23),28657)
         print 'Passed all tests.'
 # UNCOMMENT FOR CORRESPONDING FUNCTION
 t _ TestFib()

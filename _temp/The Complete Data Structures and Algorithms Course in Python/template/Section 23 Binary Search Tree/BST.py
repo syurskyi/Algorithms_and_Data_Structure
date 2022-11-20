@@ -1,7 +1,7 @@
 #   Created by Elshad Karimov 
 #   Copyright © 2020 AppMillers. All rights reserved.
 
-import QueueLinkedList as queue
+______ QueueLinkedList as queue
 
 c_ BSTNode:
     ___ -  data

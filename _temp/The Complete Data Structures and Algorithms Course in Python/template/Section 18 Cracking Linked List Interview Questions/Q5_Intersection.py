@@ -3,7 +3,7 @@
 
 # Question 5 - Intersection
 
-from LinkedList import LinkedList, Node
+____ LinkedList ______ LinkedList, Node
 
 ___ intersection(llA, llB
     __ llA.tail __ n.. llB.tail:

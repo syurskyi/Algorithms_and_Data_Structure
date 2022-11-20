@@ -1,10 +1,10 @@
 
-import sys
+______ sys
 ___ gettwoelementsclosesttozero(myarray
         print "Given Array:", myarray
         #print "Length of the Array:", len(myarray) 
 	arrayLen _ l..(myarray)
-	myarray.sort()
+	myarray.s..
         #print "Array sorted:", myarray
 	__(arrayLen < 2
 		#print "Invalid Input"

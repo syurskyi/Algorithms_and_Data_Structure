@@ -26,15 +26,15 @@ ___ uni_char2(s
 """
 RUN THIS CELL TO TEST YOUR CODE>
 """
-from nose.tools import assert_equal
+____ n___.t.. ______ assert_equal
 
 
 c_ TestUnique o..
 
     ___ test sol
-        assert_equal(sol(''), T..)
-        assert_equal(sol('goo'), F..)
-        assert_equal(sol('abcdefg'), T..)
+        ? ? ''), T..)
+        ? ? 'goo'), F..)
+        ? ? 'abcdefg'), T..)
         print('ALL TEST CASES PASSED')
 
 

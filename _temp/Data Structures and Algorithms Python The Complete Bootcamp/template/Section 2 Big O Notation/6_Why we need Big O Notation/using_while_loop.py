@@ -1,4 +1,4 @@
-import time
+______ time
 time.time()
 
 timestamp1 _ time.time()

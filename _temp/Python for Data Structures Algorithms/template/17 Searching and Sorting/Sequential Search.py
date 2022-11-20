@@ -71,7 +71,7 @@ ___ ordered_seq_search(arr,ele
 
     r_ found
 
-arr.sort()
+arr.s..
 
 ordered_seq_search(arr,3)
 # True

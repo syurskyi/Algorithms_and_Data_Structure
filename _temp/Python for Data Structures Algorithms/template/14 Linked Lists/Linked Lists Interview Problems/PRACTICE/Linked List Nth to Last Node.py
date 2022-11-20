@@ -53,7 +53,7 @@ ___ nth_to_last_node(n, head
 # PLEASE NOTE THIS IS JUST ONE CASE
 # """
 #
-from nose.tools import assert_equal
+____ n___.t.. ______ assert_equal
 
 a _ Node(1)
 b _ Node(2)
@@ -72,7 +72,7 @@ c_ TestNLast o..
 
     ___ testsol
 
-        assert_equal(sol(2,a),d)
+        ? ? 2,a),d)
         print ('ALL TEST CASES PASSED')
 
 # Run tests

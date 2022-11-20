@@ -46,14 +46,14 @@ permute('abc')
 # RUN THIS CELL TO TEST YOUR SOLUTION.
 # """
 
-from nose.tools import assert_equal
+____ n___.t.. ______ assert_equal
 
 c_ TestPerm o..
 
     ___ testsolution
 
-        assert_equal(s..(solution('abc')),s..(['abc', 'acb', 'bac', 'bca', 'cab', 'cba']))
-        assert_equal(s..(solution('dog')),s..(['dog', 'dgo', 'odg', 'ogd', 'gdo', 'god']) )
+        ? s..(solution('abc')),s..(['abc', 'acb', 'bac', 'bca', 'cab', 'cba']))
+        ? s..(solution('dog')),s..(['dog', 'dgo', 'odg', 'ogd', 'gdo', 'god']) )
 
         print 'All test cases passed.'
 

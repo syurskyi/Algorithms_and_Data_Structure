@@ -42,7 +42,7 @@ __ __name__ __ "__main__":
 # 1.4) Reverse a String using join() and reversed()
 
 ___ reverse_join_reversed_iter(s
-    s1 _ ''.j..(reversed(s))
+    s1 _ ''.j..(r..(s))
     r_ s1
 
 # 1.5) Python Reverse String using List reverse()

@@ -33,7 +33,7 @@ ___ cycle_check(node
 """
 RUN THIS CELL TO TEST YOUR SOLUTION
 """
-from nose.tools import assert_equal
+____ n___.t.. ______ assert_equal
 
 # CREATE CYCLE LIST
 a _ Node(1)
@@ -58,8 +58,8 @@ y.nextnode _ z
 c_ TestCycleCheck o..
 
     ___ testsol
-        assert_equal(sol(a),T..)
-        assert_equal(sol(x),F..)
+        ? ? a),T..)
+        ? ? x),F..)
 
         print ("ALL TEST CASES PASSED")
 

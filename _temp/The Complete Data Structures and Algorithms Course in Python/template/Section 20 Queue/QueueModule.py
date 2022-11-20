@@ -1,7 +1,7 @@
 #   Created by Elshad Karimov on 31/05/2020.
 #   Copyright © 2020 AppMillers. All rights reserved.
 
-import queue as q
+______ queue as q
 
 customQueue _ q.Queue(maxsize_3)
 print(customQueue.empty())

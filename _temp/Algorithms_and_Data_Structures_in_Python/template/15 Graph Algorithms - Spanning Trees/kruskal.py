@@ -90,7 +90,7 @@ c_ KruskalAlgorithm o..
 		disjointSet _ DisjointSet(vertexList);
 		spanningTree _    # list;
 		
-		edgeList.sort();
+		edgeList.s..;
 		
 		___ edge __ edgeList:
 		

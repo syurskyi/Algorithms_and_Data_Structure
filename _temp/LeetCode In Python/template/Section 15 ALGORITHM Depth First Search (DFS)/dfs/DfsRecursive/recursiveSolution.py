@@ -1,5 +1,5 @@
 
-from collections import defaultdict
+____ collections ______ defaultdict
 
 # This class represents a directed graph using adjacency list representation
 

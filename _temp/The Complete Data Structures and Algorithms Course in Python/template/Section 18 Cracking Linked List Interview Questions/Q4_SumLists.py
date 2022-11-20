@@ -3,7 +3,7 @@
 
 # Question 4 - Sum Lists
 
-from LinkedList import LinkedList
+____ LinkedList ______ LinkedList
 
 ___ sumList(llA, llB
     n1 _ llA.head
