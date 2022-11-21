@@ -11,26 +11,26 @@ c_ MultiStack:
         stacksize _ stacksize
     
     ___ isFull stacknum
-        __ sizes[stacknum] __ stacksize:
+        __ ? ? __ stacksize:
             r_ T..
         ____
             r_ F..
     
     ___ isEmpty stacknum
-        __ sizes[stacknum] __ 0:
+        __ ? ? __ 0:
             r_ T..
         ____
             r_ F..
     
     ___ indexOfTop stacknum
         offset _ stacknum * stacksize
-        r_ offset + sizes[stacknum]- 1
+        r_ offset + ? ?- 1
     
     ___ push item, stacknum
         __ isFull(stacknum
             r_ "The stack is full"
         ____
-            sizes[stacknum] +_ 1
+            ? ? +_ 1
             custList[indexOfTop(stacknum)] _ item
     
     ___ pop stacknum
@@ -39,7 +39,7 @@ c_ MultiStack:
         ____
             value _ custList[indexOfTop(stacknum)]
             custList[indexOfTop(stacknum)] _ 0
-            sizes[stacknum] -_ 1
+            ? ? -_ 1
             r_ value
     
     ___ peek stacknum
