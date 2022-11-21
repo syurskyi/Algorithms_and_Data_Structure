@@ -83,7 +83,7 @@ c_ HashTable o..
         _____ slots[position] !_ N.. ___ n.. found ___ n.. stop:
 
             __ slots[position] __ key:
-                found _ T..
+                f.. _ T..
                 ? _ ?[position]
 
             ____

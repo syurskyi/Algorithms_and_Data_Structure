@@ -1,50 +1,50 @@
 c_ Node :
-	___  -( self, data ) :
+	___  - ? data )
 		? _ ?
 		n.. _ N.. 
 		p.. _ N..  
 
-c_ LinkedList :
+c_ LinkedList
 	___  -
 		head _ N..		
 
         ___ insertAtBeg data
-               node _ Node( data )
-               __ (head __ N..
-                  head _ node 
+               node _ ? ?
+               __ head __ N..
+                  h.. _ ?
                ____
-                  node.prev_None
-                  node.next_head
-                  head.prev_node
-                  head_node
+                  ?.p___N..
+                  ?.n..
+                  ?.p..
+                  h.._n..
 
 
         ___ insertAtEnd data
               node_ ? ?
-              __ (head __ N..
-                 head _ node 
+              __ h.. __ N..
+                 h.. _ ?
               ____
-                 current _ head
-                 w__ (?.n.. !_ N..
+                 current _ ?
+                 w__ ?.n.. !_ N..
                        current_current.n..
-                 ?.next_node
-                 node.prev_current
+                 ?.n...
+                 ?.p..
 
 
         ___ insertAtPos  pos, item
-               __ pos > size() __ pos < 0:
+               __ ? > size() __ ? < 0
                    r_ N..
-               __ pos __ 0:
-                   insertAtBeg(item)
+               __ ? __ 0
+                   i.. ?
                ____
                    __ pos __ size(
                        insertatEnd(item)
                    ____
                        newNode _ ? ?
-                       current _ head
+                       current _ ?
                        count _ 0
                        w__ count <_ pos - 1:
-                           count +_ 1
+                           ? +_ 1
                            current _ ?.n..
                        ?.prev_current.p..
                        ?.p...next_newNode 
@@ -75,7 +75,7 @@ c_ LinkedList :
                r_ N..
 
 
-	___ remove( self, p ) :
+	___ remove ? p ) :
 		tmp _ ?.p..
 		?.p...n.. _ ?.n..
 		?.p.. _ tmp
@@ -83,7 +83,7 @@ c_ LinkedList :
 
         ___ deleteatbeg
               __ head __ n.. N..
-                 current _ head
+                 current _ ?
                  head _ ?.n..
 
         ___ deleteatpos  position
@@ -93,22 +93,22 @@ c_ LinkedList :
                  r_
 
              # Store head node
-             temp _ head
+             t.. _ ?
 
              # If head needs to be removed
              __ position __ 0:
                  head _ ?.n..
-                 temp _ N..
+                 t.. _ N..
                  r_
 
              # Find previous node of the node to be deleted
-             ___ i __ r..(position -1 
+             ___ i __ r.. ? -1 
                  temp _ ?.n..
-                 __ temp __ N..
+                 __ ? __ N..
                      b..
 
              # If position is more than number of nodes
-             __ temp __ N..
+             __ ? __ N..
                  r_
              __ ?.n.. __ N..
                  r_
@@ -118,13 +118,13 @@ c_ LinkedList :
 			 
 	     ?.p...n.. _ ?.n..
 	     ?.n...prev _ ?.p..
-	     temp _ N..
+	     t.. _ N..
 			 
         ___ deleteatend
              __ head __ N..
                 r_
 
-             current _ head
+             current _ ?
              w__ (?.n.. !_ N..
                    current_current.n..
              
@@ -135,16 +135,16 @@ c_ LinkedList :
              __ head __ N..
                 r_
 
-             current _ head
+             current _ ?
              head _ head.n..
              head.p.. _ N..
              current _ N.. 
 
         ___ size
-               current _ head
+               current _ ?
                count _ 0
                w__ ?
-                 count +_ 1
+                 ? +_ 1
                  current _ ?.n..
                r_ count
 
@@ -152,11 +152,11 @@ c_ LinkedList :
 	___ -s
 		s _ ""
 		p _ head
-		__ p !_ N.. :		
+		__ ? !_ N.. 		
 			w__ ?.n.. !_ N.. :
-				s +_ ?.data
+				? +_ ?.d..
 				p _ ?.n..
-			s +_ ?.data
+			? +_ ?.d..
 		r_ s
 
 # example code

@@ -18,7 +18,7 @@ ___ seq_search(arr,ele
 
         # If match
         __ arr[pos] __ ele:
-            found _ T..
+            f.. _ T..
 
         # Else move one down
         ____
@@ -57,7 +57,7 @@ ___ ordered_seq_search(arr,ele
 
         # If match
         __ arr[pos] __ ele:
-            found _ T..
+            f.. _ T..
 
         ____
 

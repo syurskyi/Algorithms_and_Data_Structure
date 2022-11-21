@@ -9,7 +9,7 @@ ___ elementwhichappearsmaxtimes(myarray
                 #print "comparing", myarray[i],"and", element   
 		__ (myarray[i] __ element
                         #print myarray[i],"and", element,"are same"   
-			count +_ 1
+			? +_ 1
                         #print myarray[i],"appeared", count,"times"
 			__ count > m__:
                                 #print count,"greater then", max

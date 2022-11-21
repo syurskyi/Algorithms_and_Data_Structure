@@ -1,86 +1,86 @@
 c_ Node o..
 
-    ___  -  data_N.. next_node_None
+    ___  -  data_N.. next_node_N..
         ? _ ?
-        next_node _ N..
+        ? _ N..
 
     ___ get_data
         r_  ?
 
     ___ get_next
-        r_ next_node
+        r_ ?
 
     ___ set_next new_next
-        next_node _ new_next
+        next_node _ ?
 
 
 
 c_ LinkedList o..
-    ___  -  head_None
-        head _ head
+    ___  -  head_N...
+        ? _ ?
 
     ___ i..  data
         new_node _ ? ?
         ?.s.. h..
-        head _ new_node
+        h.. _ ?
 
     ___ insertatEnd item
-        current _ head
+        current _ ?
         __ ?
             w__ ?.g.. !_ N..
-                current _ ?.g..
+                c.. _ ?.g..
             ?.s.. ? ?
         ____
-            head _ ? ?
+            h.. _ ? ?
 
 
     ___ size
-        current _ head
+        current _ ?
         count _ 0
         w__ ?
-          count +_ 1
-          current _ ?.g..
+          ? +_ 1
+          c.. _ ?.g..
         r_ count
 
 
     ___ search data
-        current _ head
+        current _ ?
         found _ F...
-        w__ current a__ found __ F...:
-            __ ?.g.. __ data:
-                found _ T..
+        w__ ? a__ ? __ F...
+            __ ?.g.. __ ?
+                f.. _ T..
             ____
-                current _ ?.g..
-        __ current __ N..
+                c.. _ ?.g..
+        __ c.. __ N..
             r_ V..("Data not in list")
         r_ ?
 
 
     ___ delete data
-        current _ head
+        current _ ?
         previous _ N..
         found _ F...
-        w__ current a__ found __ F...:
-            __ ?.g.. __ data:
-                found _ T..
+        w__ ? a__ ? __ F...
+            __ ?.g.. __ ?
+                f.. _ T..
             ____
-                previous _ current
-                current _ ?.g..
-        __ current __ N..
+                p.. _ ?
+                c.. _ ?.g..
+        __ c.. __ N..
             r_ V..("Data not in list")
-        __ previous __ N..
-            head _ ?.g..
+        __ ? __ N..
+            h.. _ ?.g..
         ____
             previous.set_next(?.get_next())
 
     ___ -s
         s _ ""
         p _ head
-        __ p !_ N.. :
-                w__ ?.next_node !_ N.. :
-                        s +_ ?.data
-                        p _ ?.next_node
-                s +_ ?.data
+        __ ? !_ N.. 
+                w__ ?.n... !_ N.. :
+                        ? +_ ?.d..
+                        p _ ?.n...
+                ? +_ ?.d..
         r_ s
 
 

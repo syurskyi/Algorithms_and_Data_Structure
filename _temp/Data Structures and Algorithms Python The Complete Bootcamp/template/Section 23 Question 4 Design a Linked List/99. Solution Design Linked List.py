@@ -28,12 +28,12 @@ c_ MyLinkedList:
         new_node _ ListNode(val)
 
         __ head __ N..
-            head _ new_node
+            h.. _ ?
             tail _ new_node
         ____
             new_node.n.. _ head
             head.p.. _ new_node
-            head _ new_node
+            h.. _ ?
 
         size +_ 1
 
@@ -41,7 +41,7 @@ c_ MyLinkedList:
         new_node _ ListNode(val)
 
         __ head __ N..
-            head _ new_node
+            h.. _ ?
             tail _ new_node
         ____
             new_node.p.. _ tail

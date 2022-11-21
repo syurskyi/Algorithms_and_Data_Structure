@@ -40,7 +40,7 @@ ___ num_islands(grid
 		___ j __ r..(l..(grid[0]
 			__ grid[i][j] __ 1:
 				mark_island(grid, i, j)
-				count +_ 1
+				? +_ 1
 
 	r_ count
 

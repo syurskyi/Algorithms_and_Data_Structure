@@ -24,7 +24,7 @@ c_ CircularSinglyLinkedList:
     ___ createCSLL nodeValue
         node _ Node(nodeValue)
         node.n.. _ node
-        head _ node
+        h.. _ ?
         tail _ node
         r_ "The CSLL has been created"
     

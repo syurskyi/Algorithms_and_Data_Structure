@@ -24,7 +24,7 @@ c_ DoublyLinkedList:
         node _ Node(nodeValue)
         node.p.. _ N..
         node.n.. _ N..
-        head _ node
+        h.. _ ?
         tail _ node
         r_ "The DLL is created Successfully"
     

@@ -1,61 +1,61 @@
 c_ Node o..
 
-    ___  -  data_N.. next_node_None
+    ___  -  data_N.. next_node_N..
         ? _ ?
-        next_node _ N..
+        ? _ N..
 
     ___ get_data
         r_  ?
 
     ___ get_next
-        r_ next_node
+        r_ ?
 
     ___ set_next new_next
-        next_node _ new_next
+        next_node _ ?
 
 
 
 c_ LinkedList o..
-    ___  -  head_None
-        head _ head
+    ___  -  head_N...
+        ? _ ?
 
     ___ i..  data
         new_node _ ? ?
         ?.s.. h..
-        head _ new_node
+        h.. _ ?
 
     ___ insertatEnd item
-        current _ head
+        current _ ?
         __ ?
             w__ ?.g.. !_ N..
-                current _ ?.g..
+                c.. _ ?.g..
             ?.s.. ? ?
         ____
-            head _ ? ?
+            h.. _ ? ?
 
     ___ size
-        current _ head
+        current _ ?
         count _ 0
         w__ ?
-          count +_ 1
-          current _ ?.g..
+          ? +_ 1
+          c.. _ ?.g..
         r_ count
 
 
     ___ -s
         s _ ""
         p _ head
-        __ p !_ N.. :
-                w__ ?.next_node !_ N.. :
-                        s +_ ?.data
-                        p _ ?.next_node
-                s +_ ?.data
+        __ ? !_ N.. 
+                w__ ?.n... !_ N.. :
+                        ? +_ ?.d..
+                        p _ ?.n...
+                ? +_ ?.d..
         r_ s
 
 
 ___ returnEnd(l
   l1_l.head 
-  w__ ?.next_node !_ N..
+  w__ ?.n... !_ N..
     l1_l1.next_node
   r_ l1
 

@@ -10,12 +10,12 @@ ___ sort_stack(stack
   _____ current:
     __ previous < current:
       ?.push(previous)
-      previous _ current
+      p.. _ ?
       current _ stack.p.. 
     ____
       ?.push(current)
       current _ stack.p.. 
-    __ current __ N.. ___ previous: ?.push(previous)
+    __ c.. __ N.. ___ previous: ?.push(previous)
        
   s.. _ T..
   previous _ ?.p.. 
@@ -23,13 +23,13 @@ ___ sort_stack(stack
   _____ current:
     __ previous > current:
       stack.push(previous)
-      previous _ current
+      p.. _ ?
       current _ ?.p.. 
     ____
       stack.push(current)
       current _ ?.p.. 
       s.. _ F..
-    __ current __ N.. ___ previous: stack.push(previous)
+    __ c.. __ N.. ___ previous: stack.push(previous)
   __ s..: r_ stack
   ____ r_ sort_stack(stack)
 

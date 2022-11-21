@@ -31,7 +31,7 @@ c_ Solution
                 hashPat.get(s[right]) !_ 0 ___
                 hashStr.get(s[right]) <_ hashPat.get(s[right])
 
-                count +_ 1  # keep incrementing the count if string hash is less then pattern hash
+                ? +_ 1  # keep incrementing the count if string hash is less then pattern hash
             # count==len2 means a window is found that contains all character of pattern string
             __ (count __ len2
 

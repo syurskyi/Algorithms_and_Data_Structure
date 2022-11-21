@@ -19,7 +19,7 @@ ___ binary_search(arr,ele
 
         # Match found
         __ arr[mid] __ ele:
-            found _ T..
+            f.. _ T..
 
         # Set new midpoints up or down depending on comparison
         ____

@@ -1,97 +1,97 @@
-____ pprint ______ pprint
-
-
-c_ Node o..
-
-    ___  -  data_N.. next_node_None
-        ? _ ?
-        next_node _ N.. 
-
-    ___ getData
-        r_  ?
-
-    ___ getNext
-        r_ next_node
-
-    ___ setNext new_next
-        next_node _ new_next
-
-c_ LinkedList o..
-    ___  -  head_None
-        head _ head
-
-    ___ i..  data
-        new_node _ ? ?
-        ?.setNext(head)
-        head _ new_node
-
-    ___ insertatEnd item
-        current _ head
-        __ ?
-            w__ ?.getNext() !_ N..
-                current _ ?.getNext()
-            ?.setNext(Node(item))
-        ____
-            head _ ? ?
-
-
-    ___ size
-        current _ head
-        count _ 0
-        w__ ?
-          count +_ 1
-          current _ ?.getNext()
-        r_ count 
-
-
-    ___ search data
-        current _ head
-        found _ F...
-        w__ current a__ found __ F...:
-            __ ?.getData() __ data:
-                found _ T..
-            ____
-                current _ ?.getNext()
-        __ current __ N..
-            r_ V..("Data not in list")
-        r_ ?
-
-
-    ___ delete data
-        current _ head
-        previous _ N..
-        found _ F...
-        w__ current a__ found __ F...:
-            __ ?.getData() __ data:
-                found _ T..
-            ____
-                previous _ current
-                current _ ?.getNext()
-        __ current __ N..
-            r_ V..("Data not in list")
-        __ previous __ N..
-            head _ ?.getNext()
-        ____
-            previous.setNext(?.getNext())
-
-    ___ -s
-        s _ ""
-        p _ head
-        __ p !_ N.. :
-                w__ ?.next_node !_ N.. :
-                        s +_ ?.data
-                        p _ ?.next_node
-                s +_ ?.data
-        r_ s
-
-
-l_ ?
-
-l.i.. ( 'a' )
-l.i.. ( 'b' )
-l.i.. ( 'c' )
-
-
-print l
-print(l.size())
- 
+# ____ pprint ______ pprint
+#
+#
+# c_ Node o..
+#
+#     ___  -  data_N.. next_node_N..
+#         ? _ ?
+#         ? _ N..
+#
+#     ___ getData
+#         r_  ?
+#
+#     ___ getNext
+#         r_ ?
+#
+#     ___ setNext new_next
+#         next_node _ ?
+#
+# c_ LinkedList o..
+#     ___  -  head_N...
+#         ? _ ?
+#
+#     ___ i..  data
+#         new_node _ ? ?
+#         ?.s.. ?
+#         h.. _ ?
+#
+#     ___ insertatEnd item
+#         current _ ?
+#         __ ?
+#             w__ ?.g.. !_ N..
+#                 c.. _ ?.g..
+#             ?.s.. ? ?
+#         ____
+#             h.. _ ? ?
+#
+#
+#     ___ size
+#         current _ ?
+#         count _ 0
+#         w__ ?
+#           ? +_ 1
+#           c.. _ ?.g..
+#         r_ ?
+#
+#
+#     ___ search data
+#         current _ ?
+#         found _ F...
+#         w__ ? a__ ? __ F...
+#             __ ?.g.. __ ?
+#                 f.. _ T..
+#             ____
+#                 c.. _ ?.g..
+#         __ c.. __ N..
+#             r_ V..("Data not in list")
+#         r_ ?
+#
+#
+#     ___ delete data
+#         current _ ?
+#         previous _ N..
+#         found _ F...
+#         w__ ? a__ ? __ F...
+#             __ ?.g.. __ ?
+#                 f.. _ T..
+#             ____
+#                 p.. _ ?
+#                 c.. _ ?.g..
+#         __ c.. __ N..
+#             r_ V..("Data not in list")
+#         __ ? __ N..
+#             h.. _ ?.g..
+#         ____
+#             p__.s.. ?.g..
+#
+#     ___ -s
+#         s _ ""
+#         p _ head
+#         __ ? !_ N..
+#                 w__ ?.n... !_ N..
+#                         ? +_ ?.d..
+#                         p _ ?.n...
+#                 ? +_ ?.d..
+#         r_ s
+#
+#
+# l_ ?
+#
+# l.i.. ( 'a' )
+# l.i.. ( 'b' )
+# l.i.. ( 'c' )
+#
+#
+# print l
+# print(l.size())
+#

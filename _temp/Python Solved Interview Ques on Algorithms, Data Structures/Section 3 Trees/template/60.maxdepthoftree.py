@@ -101,7 +101,7 @@ ___ findsizeusingiteration(root
     elements _""
     _____ items !_    # list:
         temp _ ?.p.. 
-        count +_ 1 
+        ? +_ 1 
         __ ?.l!_None:
             ?.i.. (0,?.l)
         __ ?.r!_None:
@@ -162,7 +162,7 @@ ___ countLeaves(root
     _____ items !_    # list:
         temp _ ?.p.. 
         __ ?.l __ N.. ___ ?.r __ N..
-            count +_ 1
+            ? +_ 1
         __ ?.l!_None:
             ?.i.. (0,?.l)
         __ ?.r!_None:
@@ -178,7 +178,7 @@ ___ countFullNodes(root
     _____ items !_    # list:
         temp _ ?.p.. 
         __ ?.l __ n.. N.. ___ ?.r __ n.. N..
-            count +_ 1
+            ? +_ 1
         __ ?.l!_None:
             ?.i.. (0,?.l)
         __ ?.r!_None:
@@ -196,7 +196,7 @@ ___ countHalfNodes(root
         temp _ ?.p.. 
         __ (?.l __ N.. ___ ?.r __ n.. N..) __ \
                         (?.l __ n.. N.. ___ ?.r __ N..
-            count +_ 1
+            ? +_ 1
         __ ?.l!_None:
             ?.i.. (0,?.l)
         __ ?.r!_None:

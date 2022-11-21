@@ -5,7 +5,7 @@ c_ Solution
 
         ___ i __ r..(length
             __ word[i] >_ chr(65) ___ word[i] < chr(91
-                count +_ 1
+                ? +_ 1
 
         __ count __ length:
             r_ T..
