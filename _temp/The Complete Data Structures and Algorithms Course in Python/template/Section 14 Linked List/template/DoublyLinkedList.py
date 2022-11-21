@@ -2,26 +2,26 @@
 #   Copyright © 2020 AppMillers. All rights reserved.
 
 c_ Node:
-    ___ -  value_None
+    ___ -  value_N..
         ? _ ?
         n.. _ N..
         p.. _ N..
 
 c_ DoublyLinkedList:
     ___ -
-        head _ N..
-        tail _ N..
+        h.. _ N..
+        t.. _ N..
 
     
-    ___ __iter__
-        node _ head
-        _____ node:
-            yield node
-            node _ node.n..
+    ___ -i..
+        node _ ?
+        _____ ?
+            y.. ?
+            node _ ?.n..
     
     #  Creation of Doubly Linked List
     ___ createDLL nodeValue
-        node _ Node(nodeValue)
+        node _ ? ?
         node.p.. _ N..
         node.n.. _ N..
         h.. _ ?
@@ -32,103 +32,103 @@ c_ DoublyLinkedList:
     
     #  Insertion Method in Doubly Linked List
     ___ insertNode nodeValue, location
-        __ head __ N..
+        __ h.. __ N..
             print("The node cannot be inserted")
         ____
-            newNode _ Node(nodeValue)
-            __ location __ 0:
+            newNode _ ? ?
+            __ l.. __ 0
                 ?.p.. _ N..
-                ?.n.. _ head
-                head.p.. _ newNode
-                head _ newNode
-            ____ location __ 1:
+                ?.n.. _ ?
+                ?.p.. _ ?
+                h.. _ ?
+            ____ l.. __ 1
                 ?.n.. _ N..
-                ?.p.. _ tail
-                tail.n.. _ newNode
-                tail _ newNode
+                ?.p.. _ t..
+                ?.n.. _ ?
+                tail _ ?
             ____
-                tempNode _ head
-                index _ 0
-                _____ index < location - 1:
-                    tempNode _ tempNode.n..
-                    index +_ 1
-                ?.n.. _ tempNode.n..
+                tempNode _ ?
+                ? _ 0
+                _____ ? < l.. - 1
+                    t.. _ ?.n..
+                    ? +_ 
+                ?.n.. _ ?.n..
                 ?.p.. _ tempNode
                 ?.n...prev _ newNode
-                tempNode.n.. _ newNode
+                ?.n.. _ newNode
     
     #  Traversal Method in Doubly Linked List
     ___ traverseDLL
-        __ head __ N..
+        __ h.. __ N..
             print("There is not any element to traverse")
         ____
-            tempNode _ head
-            _____ tempNode:
-                print(tempNode.value)
-                tempNode _ tempNode.n..
+            tempNode _ ?
+            _____ ?
+                print ?.v..
+                t.. _ ?.n..
     
     #  Reverse Traversal Method in Doubly Linked List
     ___ reverseTraversalDLL
-        __ head __ N..
+        __ h.. __ N..
             print("There is not any element to traverse")
         ____
             tempNode _ tail
-            _____ tempNode:
-                print(tempNode.value)
+            _____ ?
+                print ?.v..
                 tempNode _ tempNode.p..
 
     # Search Method in Doubly Linked List
     ___ searchDLL nodeValue
-        __ head __ N..
+        __ h.. __ N..
             r_ "There is not any element in the list"
         ____
-            tempNode _ head
-            _____ tempNode:
-                __ tempNode.value __ nodeValue:
-                    r_ tempNode.value
-                tempNode _ tempNode.n..
+            tempNode _ ?
+            _____ ?
+                __ ?.v.. __ n..
+                    r_ ?.v..
+                t.. _ ?.n..
             r_ "The node does not exist in this list"
 
     # Delete a node from Doubly Linked List
     ___ deleteNodelocation
-        __ head __ N..
+        __ h.. __ N..
             print("There is not any element in DLL")
         ____
-            __ location __ 0:
-                __ head __ tail:
-                    head _ N..
-                    tail _ N..
+            __ l.. __ 0
+                __ ? __ t..
+                    h.. _ N..
+                    t.. _ N..
                 ____
-                    head _ head.n..
-                    head.p.. _ N..
-            ____ location __ 1:
-                __ head __ tail:
-                    head _ N..
-                    tail _ N..
+                    h.. _ ?.n..
+                    ?.p.. _ N..
+            ____ l.. __ 1
+                __ ? __ t..
+                    h.. _ N..
+                    t.. _ N..
                 ____
-                    tail _ tail.p..
+                    t.. _ ?.p..
                     tail.n.. _ N..
             ____
-                curNode _ head
-                index _ 0
-                _____ index < location - 1:
-                    curNode _ curNode.n..
-                    index +_ 1
-                curNode.n.. _ curNode.n...next
+                curNode _ ?
+                ? _ 0
+                _____ ? < l.. - 1
+                    c.. _ ?.n..
+                    ? +_ 
+                ?.n.. _ curNode.n...next
                 curNode.n...prev _ curNode
             print("The node has been successfully deleted")
 
     # Delete entire Doubly Linked List
     ___ deleteDLL
-        __ head __ N..
+        __ h.. __ N..
             print("There is not any node in DLL")
         ____
-            tempNode _ head
-            _____ tempNode:
+            tempNode _ ?
+            _____ ?
                 tempNode.p.. _ N..
-                tempNode _ tempNode.n..
-            head _ N..
-            tail _ N..
+                t.. _ ?.n..
+            h.. _ N..
+            t.. _ N..
             print("The DLL has been successfully deleted")
     
 

@@ -3,7 +3,7 @@
 
 ____ random ______ randint
 c_ Node:
-    ___ -  value_None
+    ___ -  value_N..
         ? _ ?
         n.. _ N..
         p.. _ N..
@@ -13,14 +13,14 @@ c_ Node:
 
 c_ LinkedList
     ___ -  values _ N..
-        head _ N..
-        tail _ N..
+        h.. _ N..
+        t.. _ N..
 
-    ___ __iter__
-        curNode _ head
+    ___ -i..
+        curNode _ ?
         _____ curNode:
             yield curNode
-            curNode _ curNode.n..
+            c.. _ ?.n..
     
     ___ __str__
         values _ [s..(x.value) ___ x __ self]
@@ -28,25 +28,25 @@ c_ LinkedList
     
     ___ __len__
         result _ 0
-        node _ head
-        _____ node:
+        node _ ?
+        _____ ?
             result +_ 1
-            node _ node.n..
+            node _ ?.n..
         r_ result
     
     ___ add value
-        __ head __ N..
+        __ h.. __ N..
             newNode _ ? ?
-            head _ newNode
-            tail _ newNode
+            h.. _ ?
+            tail _ ?
         ____
             tail.n.. _ ? ?
             tail _ tail.n..
         r_ tail
     
     ___ generate n, min_value, max_value
-        head _ N..
-        tail _ N..
+        h.. _ N..
+        t.. _ N..
         ___ i __ r..(n
             add(randint(min_value,max_value))
         r_ self

@@ -70,7 +70,7 @@ c_ Graph:
     ___ getVertices 
         r_ vertList.keys()
 
-    ___ __iter__ 
+    ___ -i.. 
         r_ iter(vertList.v..
 
 # Let's see a simple example of how to use this:

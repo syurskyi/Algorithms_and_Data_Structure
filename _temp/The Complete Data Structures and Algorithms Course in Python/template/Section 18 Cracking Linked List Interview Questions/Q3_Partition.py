@@ -11,10 +11,10 @@ ___ partition(ll, x
     ll.tail _ ll.head
 
     _____ curNode:
-        nextNode _ curNode.n..
-        curNode.n.. _ N..
+        nextNode _ ?.n..
+        ?.n.. _ N..
         __ curNode.value < x:
-            curNode.n.. _ ll.head
+            ?.n.. _ ll.head
             ll.head _ curNode
         ____
             ll.tail.n.. _ curNode

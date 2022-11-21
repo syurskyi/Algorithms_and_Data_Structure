@@ -3,7 +3,7 @@
 
 
 c_ Node:
-    ___ -  value_None
+    ___ -  value_N..
         ? _ ?
         n.. _ N..
     
@@ -12,14 +12,14 @@ c_ Node:
 
 c_ LinkedList
     ___ -  
-        head _ N..
-        tail _ N..
+        h.. _ N..
+        t.. _ N..
     
-    ___ __iter__ 
-        curNode _ head
+    ___ -i.. 
+        curNode _ ?
         _____ curNode:
             yield curNode
-            curNode _ curNode.n..
+            c.. _ ?.n..
 
 c_ Queue:
     ___ -  
@@ -32,11 +32,11 @@ c_ Queue:
     ___ enqueue value
         newNode _ ? ?
         __ linkedList.head __ N..
-            linkedList.head _ newNode
-            linkedList.tail _ newNode
+            linkedList.h.. _ ?
+            linkedList.tail _ ?
         ____
-            linkedList.tail.n.. _ newNode
-            linkedList.tail _ newNode
+            linkedList.?.n.. _ ?
+            linkedList.tail _ ?
     
     ___ isEmpty 
         __ linkedList.head __ N..
@@ -50,10 +50,10 @@ c_ Queue:
         ____
             tempNode _ linkedList.head
             __ linkedList.head __ linkedList.tail:
-                linkedList.head _ N..
-                linkedList.tail _ N..
+                linkedList.h.. _ N..
+                linkedList.t.. _ N..
             ____
-                linkedList.head _ linkedList.head.n..
+                linkedList.head _ linkedList.?.n..
             r_ tempNode
     
     ___ peek 
@@ -63,8 +63,8 @@ c_ Queue:
             r_ linkedList.head
     
     ___ delete 
-        linkedList.head _ N..
-        linkedList.tail _ N..
+        linkedList.h.. _ N..
+        linkedList.t.. _ N..
 
 
 

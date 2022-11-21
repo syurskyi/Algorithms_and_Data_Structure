@@ -8,13 +8,13 @@ c_ Node:
 
 c_ LinkedList
     ___ -  
-        head _ N..
+        h.. _ N..
     
-    ___ __iter__ 
-        curNode _ head
+    ___ -i.. 
+        curNode _ ?
         _____ curNode:
             yield curNode
-            curNode _ curNode.n..
+            c.. _ ?.n..
 
 c_ Stack:
     ___ -  
@@ -40,7 +40,7 @@ c_ Stack:
             r_ "There is not any element in the stack"
         ____
             nodeValue _ LinkedList.head.value
-            LinkedList.head _ LinkedList.head.n..
+            LinkedList.head _ LinkedList.?.n..
             r_ nodeValue
     
     ___ peek 
@@ -51,7 +51,7 @@ c_ Stack:
             r_ nodeValue
     
     ___ delete 
-        LinkedList.head _ N..
+        LinkedList.h.. _ N..
     
 
 

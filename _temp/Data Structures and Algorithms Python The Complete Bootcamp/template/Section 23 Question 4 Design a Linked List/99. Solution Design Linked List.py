@@ -8,8 +8,8 @@ c_ ListNode:
 c_ MyLinkedList:
 
     ___ -
-        head _ N..
-        tail _ N..
+        h.. _ N..
+        t.. _ N..
         size _ 0
 
     ___ get index
@@ -27,12 +27,12 @@ c_ MyLinkedList:
     ___ addAtHead val
         new_node _ ListNode(val)
 
-        __ head __ N..
+        __ h.. __ N..
             h.. _ ?
             tail _ new_node
         ____
             new_node.n.. _ head
-            head.p.. _ new_node
+            ?.p.. _ new_node
             h.. _ ?
 
         size +_ 1
@@ -40,7 +40,7 @@ c_ MyLinkedList:
     ___ addAtTail val
         new_node _ ListNode(val)
 
-        __ head __ N..
+        __ h.. __ N..
             h.. _ ?
             tail _ new_node
         ____
@@ -76,25 +76,25 @@ c_ MyLinkedList:
         __ index < 0 __ index >_ size:
             r_
         ____ index __ 0:
-            cur _ head.n..
+            cur _ ?.n..
             __ cur:
                 ?.p.. _ N..
 
-            head _ head.n..
+            h.. _ ?.n..
             size -_ 1
 
             __ size __ 0:
-                tail _ N..
+                t.. _ N..
         ____ index __ size - 1:
             cur _ tail.p..
             __ cur:
                 ?.n.. _ N..
-            tail _ tail.p..
+            t.. _ ?.p..
 
             size -_ 1
 
             __ size __ 0:
-                head _ N..
+                h.. _ N..
         ____
             cur _ head
             _____ index - 1 !_ 0:

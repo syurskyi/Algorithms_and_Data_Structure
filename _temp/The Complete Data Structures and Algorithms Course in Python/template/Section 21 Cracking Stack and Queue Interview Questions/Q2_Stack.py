@@ -4,7 +4,7 @@
 #   Create Stack with min method
 
 c_ Node(
-    ___ -  value_None, n.. _ N..
+    ___ -  value_N.., n.. _ N..
         ? _ ?
         next _ next
     
