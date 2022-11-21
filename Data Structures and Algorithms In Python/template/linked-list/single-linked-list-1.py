@@ -1,465 +1,465 @@
-# Copyright (C) Deepali Srivastava - All Rights Reserved
-# This code is part of DSA course available on CourseGalaxy.com  
-
-class Node:
-
-    def __init__(self,value):
-        self.info = value 
-        self.link = None 
-        
-
-class SingleLinkedList:
-
-    def __init__(self):
-        self.start = None
-     
-
-    def display_list(self):
-        if self.start is None:
-            print("List is empty")
-            return
-        else:
-            print("List is :   ")
-            p = self.start 
-            while p is not None:
-                print(p.info , " ", end='')
-                p = p.link 
-            print()
-    
-
-    def count_nodes(self):
-        p = self.start 
-        n = 0        
-        while p is not None:
-            n+=1
-            p = p.link
-        print("Number of nodes in the list = " ,n)
-
-    def search(self,x):
-        position = 1
-        p = self.start
-        while p is not None:
-            if p.info == x:
-                print(x , " is at position ", position)
-                return True
-            position+=1
-            p = p.link
-        else:
-            print(x," not found in list")
-            return False
-
-    def insert_in_beginning(self, data):
-        temp = Node(data)
-        temp.link = self.start
-        self.start = temp
-    
-
-    def insert_at_end(self, data):
-        temp = Node(data)
-        if self.start is None:
-            self.start = temp
-            return
-        
-        p = self.start
-        while p.link is not None:
-            p = p.link
-        p.link = temp
-
-
-    def create_list(self):
-        n = int(input("Enter the number of nodes : "))
-        if n == 0:
-            return
-        for i in range(n):
-            data = int(input("Enter the element to be inserted : "))
-            self.insert_at_end(data)
-           
-    def insert_after(self,data,x):
-        p = self.start
-        while p is not None:
-            if p.info == x:
-                break
-            p = p.link
-
-        if p is None:
-            print(x, "not present in the list")
-        else:
-            temp = Node(data)
-            temp.link = p.link
-            p.link = temp
-            
-     
-            
-    def insert_before(self, data, x):
-        # If list is empty
-        if self.start is None:
-            print("List is empty") 
-            return 
-    
-        # x is in first node,new node is to be inserted before first node
-        if x == self.start.info:
-            temp = Node(data) 
-            temp.link = self.start 
-            self.start = temp 
-            return 
-        
-        # Find reference to predecessor of node containing x
-        p = self.start 
-        while p.link is not None: 
-            if p.link.info == x:
-                break 	
-            p = p.link 
-
-
-        if p.link is None:
-             print(x , " not present in the list") 
-        else:
-            temp = Node(data) 
-            temp.link = p.link 
-            p.link = temp
-    
-     
-
-    def insert_at_position(self, data, k):
-        if k == 1:
-            temp = Node(data) 
-            temp.link = self.start  
-            self.start = temp 
-            return 
-                    
-        p = self.start
-        i = 1
-        while i<k-1 and p is not None: # find a reference to k-1 node
-            p = p.link
-            i+=1
-
-        if p is None:
-            print("You can insert only upto position",i) 
-        else:
-            temp = Node(data) 
-            temp.link = p.link
-            p.link = temp 
-
-    def delete_node(self,x):
-      
-            if self.start is None:
-                print("List is empty") 
-                return 
-
-            # Deletion of first node
-            if self.start.info == x:
-                self.start = self.start.link   
-                return 
-
-            # Deletion in between or at the end
-            p = self.start 
-            while p.link is not None:
-                if p.link.info == x:
-                    break 	
-                p = p.link 
-
-            if p.link is None:
-                print("Element ", x ,"not in list") 
-            else:
-                p.link = p.link.link 
-       
-                 
-    def delete_first_node(self):
-      
-        if self.start is None:
-            return 
-        self.start = self.start.link 
-       
-
-    def delete_last_node(self):
-      
-        if self.start is None:
-            return 
-
-        if self.start.link is None:
-            self.start = None 
-            return 
-           
-        p = self.start 
-        while p.link.link is not None:
-            p = p.link 
-        p.link = None 
-
-    def reverse_list(self):
-      
-        prev = None 
-        p = self.start 
-        while p is not None:
-            next = p.link 
-            p.link = prev 
-            prev = p 
-            p = next 
-           
-        self.start = prev 
-           
-
-
-    def bubble_sort_exdata(self):
-        end=None
-
-        while end != self.start.link:
-
-            p = self.start
-            while  p.link != end:
-                q = p.link 
-                if p.info > q.info:
-                    p.info,q.info = q.info,p.info 
-                p = p.link     
-            end = p  
-
-    
-    def bubble_sort_exlinks(self):
-        end = None  
-        while end != self.start.link:
-            r = p = self.start
-            while p.link != end:
-                q = p.link 
-                if p.info > q.info :
-                    p.link = q.link 
-                    q.link = p 
-                    if p!=self.start:
-                        r.link = q 
-                    else:
-                        self.start = q 
-                    p,q = q,p 
-                r = p
-                p = p.link
-            end = p
-   
-           
-    def has_cycle(self):
-      
-        if self.find_cycle() is None:
-            return False 
-        else:
-            return True 
-       
-
-    def find_cycle(self):
-
-        if self.start is None or self.start.link is None:
-            return None 
-
-        slowR = self.start
-        fastR = self.start 
-
-        while fastR is not None and fastR.link is not None:
-            slowR = slowR.link 
-            fastR = fastR.link.link 
-            if slowR == fastR:
-                return slowR 
-        return None 
-
-
-    def remove_cycle(self):
-          
-        c = self.find_cycle() 
-        if c is None:
-            return
-        print("Node at which the cycle was detected is " , c.info) 
-        
-        p = c
-        q = c 	
-        lenCycle = 0 
-
-        while True:
-            lenCycle+=1
-            q = q.link 
-            if p == q:
-                break;
-
-        print("Length of cycle is :", lenCycle) 
-
-        lenRemList = 0 
-        p = self.start 
-        while p != q:
-            lenRemList+=1
-            p = p.link 
-            q = q.link
-        
-        print("Number of nodes not included in the cycle are : ", lenRemList) 
-
-        length_list = lenCycle + lenRemList
-        print("Length of the list is : " , length_list) 
-
-        p = self.start 
-        for i in range(length_list-1):
-                p = p.link 
-        p.link = None 
-           
-
-    def insert_cycle(self,x):
-        if self.start is None:
-            return
-        p = self.start
-        px = None
-        prev = None 		
-
-        while p is not None:
-            if p.info == x:
-                px = p
-            prev = p
-            p = p.link
-                           
-        if px is not None:
-            prev.link = px 
-        else:
-            print(x , " not present in list")
-
-    
-    def merge2(self,list2):
-        merge_list = SingleLinkedList()
-        merge_list.start = self._merge2(self.start, list2.start)
-        return merge_list
-        
-    def _merge2(self, p1, p2):
-
-        if p1.info <= p2.info:
-            startM = p1
-            p1 = p1.link
-        else:
-            startM = p2
-            p2 = p2.link
-            
-        pM = startM
-
-        while p1 is not None and p2 is not None:
-            if p1.info <= p2.info :
-                pM.link = p1
-                pM = pM.link
-                p1 = p1.link
-            else:
-                pM.link = p2
-                pM = pM.link
-                p2 = p2.link
-            
-        if p1 is None:
-            pM.link = p2
-        else:
-            pM.link = p1
-
-        return startM
-        
-
-
-    def merge_sort(self):
-        self.start = self._merge_sort_rec(self.start)
-        
-
-    def _merge_sort_rec(self,list_start):
-
-        #if list empty or has one element
-        if list_start is None or list_start.link is None: 
-                return list_start
-
-        #if more than one element
-        start1 = list_start
-        start2 = self._divide_list(list_start)
-        start1 = self._merge_sort_rec(start1)
-        start2 = self._merge_sort_rec(start2)
-        startM = self._merge2(start1, start2)
-        return startM
-        
-
-    def _divide_list(self, p):
-        q = p.link.link
-        while q is not None and q.link is not None:
-            p = p.link
-            q = q.link.link
-        start2 = p.link
-        p.link = None
-        return start2
-        
-        
-
-########################################################################################
-            
-list = SingleLinkedList() 
-
-list.create_list() 
-		
-while True:
-    print("1.Display list") 
-    print("2.Count the number of nodes") 
-    print("3.Search for an element")
-    print("4.Insert in empty list/Insert in beginning of the list")
-    print("5.Insert a node at the end of the list")
-    print("6.Insert a node after a specified node")
-    print("7.Insert a node before a specified node")
-    print("8.Insert a node at a given position")
-    print("9.Delete first node")
-    print("10.Delete last node")
-    print("11.Delete any node")
-    print("12.Reverse the list")
-    print("13.Bubble sort by exchanging data")
-    print("14.Bubble sort by exchanging links")
-    print("15.MergeSort")
-    print("16.Insert Cycle")
-    print("17.Detect Cycle")
-    print("18.Remove cycle")
-    print("19.Quit")
-        
-    option = int(input("Enter your choice : " ))
-
-    if option == 1:
-        list.display_list()
-    elif option == 2:
-        list.count_nodes()
-    elif option == 3:
-        data = int(input("Enter the element to be searched : "))
-        list.search(data)
-    elif option == 4:
-        data = int(input("Enter the element to be inserted : "))
-        list.insert_in_beginning(data)
-    elif option == 5:
-        data = int(input("Enter the element to be inserted : "))
-        list.insert_at_end(data)
-    elif option == 6:
-        data = int(input("Enter the element to be inserted : "))
-        x = int(input("Enter the element after which to insert : ")) 
-        list.insert_after(data,x)
-    elif option == 7:
-        data = int(input("Enter the element to be inserted : "))
-        x = int(input("Enter the element before which to insert : ")) 
-        list.insert_before(data,x)
-    elif option == 8:
-        data = int(input("Enter the element to be inserted : "))
-        k = int(input("Enter the position at which to insert : ")) 
-        list.insert_at_position(data,k)
-    elif option == 9:
-        list.delete_first_node() 
-    elif option == 10:
-        list.delete_last_node() 
-    elif option == 11:
-        data = int(input("Enter the element to be deleted : ")) 
-        list.delete_node(data)             
-    elif option == 12:
-        list.reverse_list()
-    elif option == 13:
-        list.bubble_sort_exdata() 
-    elif option == 14:
-        list.bubble_sort_exlinks() 
-    elif option == 15:
-        list.merge_sort() 
-    elif option == 16:
-        data = int(input("Enter the element at which the cycle has to be inserted : "))
-        list.insert_cycle(data) 
-    elif option == 17:
-        if list.has_cycle():
-            print("List has a cycle")
-        else:
-            print("List does not have a cycle") 
-    elif option == 18:
-        list.remove_cycle() 
-    elif option == 19:
-        break
-    else:
-        print("Wrong option") 
-    print() 
-
-   
+# # Copyright (C) Deepali Srivastava - All Rights Reserved
+# # This code is part of DSA course available on CourseGalaxy.com
+#
+# c_ Node:
+#
+#     ___ - value
+#         info _ ?
+#         link _ N..
+#
+#
+# c_ SingleLinkedList
+#
+#     ___ -
+#         start _ N..
+#
+#
+#     ___ display_list
+#         __ ? __ N..
+#             print("List is empty")
+#             r_
+#         ____
+#             print("List is :   ")
+#             p _ s..
+#             _____ ? __ n.. N..
+#                 print ?.i.. " ", end_'')
+#                 p _ ?.l..
+#             print()
+#
+#
+#     ___ count_nodes
+#         p _ s..
+#         n _ 0
+#         _____ ? __ n.. N..
+#             ?+_1
+#             p _ ?.l..
+#         print("Number of nodes in the list = " ?
+#
+#     ___ search x
+#         position _ 1
+#         p _ s..
+#         _____ p __ n.. N..
+#             __ ?.i.. __ ?
+#                 print ? " is at position " ?
+#                 r_ T..
+#             ?+_1
+#             p _ ?.l..
+#         ____
+#             print ?" not found in list")
+#             r_ F..
+#
+#     ___ insert_in_beginning data
+#         t.. _ ? ?
+#         ?.l.. _ s..
+#         s.. _ ?
+#
+#
+#     ___ insert_at_end data
+#         t.. _ ? ?
+#         __ s.. __ N..
+#             s.. _ t..
+#             r_
+#
+#         p _ s..
+#         _____ ?.l.. __ n.. N..
+#             p _ ?.l..
+#         ?.l.. _ t..
+#
+#
+#     ___ create_list
+#         n _ i..(i..("Enter the number of nodes : "))
+#         __ n __ 0:
+#             r_
+#         ___ i __ r.. ?
+#             data _ i..(i..("Enter the element to be inserted : "))
+#             ? ?
+#
+#     ___ insert_after data x
+#         p _ s..
+#         _____ p __ n.. N..
+#             __ ?.i.. __ ?
+#                 b..
+#             p _ ?.l..
+#
+#         __ p __ N..
+#             print(x, "not present in the list")
+#         ____
+#             t.. _ ? ?
+#             ?.l.. _ ?.l..
+#             ?.l.. _ ?
+#
+#
+#
+#     ___ insert_before data, x
+#         # If list is empty
+#         __ s.. __ N..
+#             print("List is empty")
+#             r_
+#
+#         # x is in first node,new node is to be inserted before first node
+#         __ x __ s__.i..
+#             t.. _ ? ?
+#             ?.l.. _ s..
+#             s.. _ ?
+#             r_
+#
+#         # Find reference to predecessor of node containing x
+#         p _ s..
+#         _____ ?.l.. __ n.. N..
+#             __ ?.l...i.. __ ?
+#                 b..
+#             p _ ?.l..
+#
+#
+#         __ ?.l.. __ N..
+#              print ? " not present in the list")
+#         ____
+#             t.. _ ? ?
+#             ?.l.. _ ?.l..
+#             ?.l.. _ ?
+#
+#
+#
+#     ___ insert_at_position data, k
+#         __ ? __ 1
+#             t.. _ ? ?
+#             ?.l.. _ s..
+#             s.. _ ?
+#             r_
+#
+#         p _ s..
+#         i _ 1
+#         _____ i<?-1 ___ p __ n.. N.. # find a reference to k-1 node
+#             p _ ?.l..
+#             ?+_1
+#
+#         __ p __ N..
+#             print("You can insert only upto position",i)
+#         ____
+#             t.. _ ? ?
+#             ?.l.. _ ?.l..
+#             ?.l.. _ ?
+#
+#     ___ delete_node x
+#
+#             __ s.. __ N..
+#                 print("List is empty")
+#                 r_
+#
+#             # Deletion of first node
+#             __ s__.i.. __ ?
+#                 s.. _ s...l..
+#                 r_
+#
+#             # Deletion in between or at the end
+#             p _ s..
+#             _____ ?.l.. __ n.. N..
+#                 __ ?.l...i.. __ ?
+#                     b..
+#                 p _ ?.l..
+#
+#             __ ?.l.. __ N..
+#                 print("Element ", x ,"not in list")
+#             ____
+#                 ?.l.. _ ?.l...l..
+#
+#
+#     ___ delete_first_node
+#
+#         __ s.. __ N..
+#             r_
+#         s.. _ s...l..
+#
+#
+#     ___ delete_last_node
+#
+#         __ s.. __ N..
+#             r_
+#
+#         __ s...l.. __ N..
+#             s.. _ N..
+#             r_
+#
+#         p _ s..
+#         _____ ?.l...l.. __ n.. N..
+#             p _ ?.l..
+#         ?.l.. _ N..
+#
+#     ___ reverse_list
+#
+#         prev _ N..
+#         p _ s..
+#         _____ ? __ n.. N..
+#             next _ ?.l..
+#             ?.l.. _ p..
+#             p.. _ ?
+#             p _ n..
+#
+#         s.. _ p..
+#
+#
+#
+#     ___ bubble_sort_exdata
+#         end_N..
+#
+#         _____ ? !_ s...l..
+#
+#             p _ s..
+#             _____  ?.l.. !_ ?
+#                 q _ ?.l..
+#                 __ ?.i.. > ?.i..
+#                     ?.i..,?.i.. _ ?.i..,?.i..
+#                 p _ ?.l..
+#             end _ ?
+#
+#
+#     ___ bubble_sort_exlinks
+#         end _ N..
+#         _____ ? !_ s...l..
+#             r _ p _ s..
+#             _____ ?.l.. !_ ?
+#                 q _ ?.l..
+#                 __ ?.i.. > ?.i..
+#                     ?.l.. _ ?.l..
+#                     ?.l.. _ p
+#                     __ p!_self.s..
+#                         ?.l.. _ ?
+#                     ____
+#                         s.. _ ?
+#                     ? ? _ ? ?
+#                 ? _ ?
+#                 p _ ?.l..
+#             end _ ?
+#
+#
+#     ___ has_cycle
+#
+#         __ ? __ N..
+#             r_ F..
+#         ____
+#             r_ T..
+#
+#
+#     ___ find_cycle
+#
+#         __ s.. __ N.. __ s...l.. __ N..
+#             r_ N..
+#
+#         slowR _ s..
+#         fastR _ s..
+#
+#         _____ f..__ n.. N.. ___ f__.l.. __ n.. N..
+#             slowR _ ?.l..
+#             fastR _ ?.l...l..
+#             __ s.. __ f..
+#                 r_ s..
+#         r_ N..
+#
+#
+#     ___ remove_cycle
+#
+#         c _ ?
+#         __ ? __ N..
+#             r_
+#         print("Node at which the cycle was detected is " , ?.i..)
+#
+#         p _ c
+#         q _ c
+#         lenCycle _ 0
+#
+#         _____ T..
+#             ?+_1
+#             q _ ?.l..
+#             __ ? __ ?
+#                 b..
+#
+#         print("Length of cycle is :" ?
+#
+#         lenRemList _ 0
+#         p _ s..
+#         _____ ? !_ ?
+#             l.. +_1
+#             p _ ?.l..
+#             q _ ?.l..
+#
+#         print("Number of nodes not included in the cycle are : " ?
+#
+#         length_list _ ? + ?
+#         print("Length of the list is : " ?
+#
+#         p _ s..
+#         ___ i __ r.. ?-1
+#                 p _ ?.l..
+#         ?.l.. _ N..
+#
+#
+#     ___ insert_cyclex
+#         __ s.. __ N..
+#             r_
+#         p _ s..
+#         px _ N..
+#         prev _ N..
+#
+#         _____ p __ n.. N..
+#             __ ?.i.. __ ?
+#                 px _ p
+#             p.. _ p
+#             p _ ?.l..
+#
+#         __ px __ n.. N..
+#             p__.l.. _ px
+#         ____
+#             print ? " not present in list")
+#
+#
+#     ___ merge2list2
+#         merge_list _ S..
+#         ?.s.. _ ? s.. ?.s..
+#         r_ ?
+#
+#     ___ _merge2 p1, p2
+#
+#         __ ?.i.. <_ ?.i..
+#             startM _ p1
+#             p1 _ ?.l..
+#         ____
+#             startM _ p2
+#             p2 _ p2.l..
+#
+#         pM _ startM
+#
+#         _____ p1 __ n.. N.. ___ p2 __ n.. N..
+#             __ p1.i.. <_ p2.i.. :
+#                 pM.l.. _ p1
+#                 pM _ pM.l..
+#                 p1 _ p1.l..
+#             ____
+#                 pM.l.. _ p2
+#                 pM _ pM.l..
+#                 p2 _ p2.l..
+#
+#         __ p1 __ N..
+#             pM.l.. _ p2
+#         ____
+#             pM.l.. _ p1
+#
+#         r_ startM
+#
+#
+#
+#     ___ merge_sort
+#         s.. _ _merge_sort_rec(s..)
+#
+#
+#     ___ _merge_sort_reclist_start
+#
+#         #if list empty or has one element
+#         __ list_start __ N.. __ list_start.l.. __ N..
+#                 r_ list_start
+#
+#         #if more than one element
+#         start1 _ list_start
+#         start2 _ _divide_list(list_start)
+#         start1 _ _merge_sort_rec(start1)
+#         start2 _ _merge_sort_rec(start2)
+#         startM _ _merge2(start1, start2)
+#         r_ startM
+#
+#
+#     ___ _divide_list p
+#         q _ ?.l...l..
+#         _____ q __ n.. N.. ___ q.l.. __ n.. N..
+#             p _ ?.l..
+#             q _ q.l...l..
+#         start2 _ ?.l..
+#         ?.l.. _ N..
+#         r_ start2
+#
+#
+#
+# ########################################################################################
+#
+# list _ SingleLinkedList()
+#
+# list.create_list()
+#
+# _____ T..:
+#     print("1.Display list")
+#     print("2.Count the number of nodes")
+#     print("3.Search for an element")
+#     print("4.Insert in empty list/Insert in beginning of the list")
+#     print("5.Insert a node at the end of the list")
+#     print("6.Insert a node after a specified node")
+#     print("7.Insert a node before a specified node")
+#     print("8.Insert a node at a given position")
+#     print("9.Delete first node")
+#     print("10.Delete last node")
+#     print("11.Delete any node")
+#     print("12.Reverse the list")
+#     print("13.Bubble sort by exchanging data")
+#     print("14.Bubble sort by exchanging links")
+#     print("15.MergeSort")
+#     print("16.Insert Cycle")
+#     print("17.Detect Cycle")
+#     print("18.Remove cycle")
+#     print("19.Quit")
+#
+#     option _ i..(i..("Enter your choice : " ))
+#
+#     __ option __ 1:
+#         list.display_list()
+#     ____ option __ 2:
+#         list.count_nodes()
+#     ____ option __ 3:
+#         data _ i..(i..("Enter the element to be searched : "))
+#         list.search(data)
+#     ____ option __ 4:
+#         data _ i..(i..("Enter the element to be inserted : "))
+#         list.insert_in_beginning(data)
+#     ____ option __ 5:
+#         data _ i..(i..("Enter the element to be inserted : "))
+#         list.insert_at_end(data)
+#     ____ option __ 6:
+#         data _ i..(i..("Enter the element to be inserted : "))
+#         x _ i..(i..("Enter the element after which to insert : "))
+#         list.insert_after(data,x)
+#     ____ option __ 7:
+#         data _ i..(i..("Enter the element to be inserted : "))
+#         x _ i..(i..("Enter the element before which to insert : "))
+#         list.insert_before(data,x)
+#     ____ option __ 8:
+#         data _ i..(i..("Enter the element to be inserted : "))
+#         k _ i..(i..("Enter the position at which to insert : "))
+#         list.insert_at_position(data,k)
+#     ____ option __ 9:
+#         list.delete_first_node()
+#     ____ option __ 10:
+#         list.delete_last_node()
+#     ____ option __ 11:
+#         data _ i..(i..("Enter the element to be deleted : "))
+#         list.delete_node(data)
+#     ____ option __ 12:
+#         list.reverse_list()
+#     ____ option __ 13:
+#         list.bubble_sort_exdata()
+#     ____ option __ 14:
+#         list.bubble_sort_exlinks()
+#     ____ option __ 15:
+#         list.merge_sort()
+#     ____ option __ 16:
+#         data _ i..(i..("Enter the element at which the cycle has to be inserted : "))
+#         list.insert_cycle(data)
+#     ____ option __ 17:
+#         __ list.has_cycle(
+#             print("List has a cycle")
+#         ____
+#             print("List does not have a cycle")
+#     ____ option __ 18:
+#         list.remove_cycle()
+#     ____ option __ 19:
+#         b..
+#     ____
+#         print("Wrong option")
+#     print()
+#
+#

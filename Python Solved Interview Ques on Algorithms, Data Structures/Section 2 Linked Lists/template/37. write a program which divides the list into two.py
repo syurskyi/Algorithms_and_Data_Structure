@@ -1,89 +1,89 @@
-c_ Node o..
-
-    ___  -  data_N.. next_node_None
-        data _ data
-        next_node _ N..
-
-    ___ get_data
-        r_  ?
-
-    ___ get_next
-        r_ next_node
-
-    ___ set_next new_next
-        next_node _ new_next
-
-
-
-c_ LinkedList o..
-    ___  -  head_None
-        head _ head
-
-    ___ insert data
-        new_node _ ? ?
-        ?.s.. h..
-        head _ new_node
-
-    ___ insertatEnd item
-        current _ head
-        __ ?
-            w__ ?.g.. !_ N..:
-                current _ ?.g..
-            ?.s.. ? ?
-        ____
-            head _ ? ?
-
-    ___ size
-        current _ head
-        count _ 0
-        w__ ?
-          count +_ 1
-          current _ ?.g..
-        r_ count
-
-    ___ -s
-        s _ ""
-        p _ head
-        __ p !_ N.. :
-                w__ p.next_node !_ N.. :
-                        s +_ p.data
-                        p _ p.next_node
-                s +_ p.data
-        r_ s
-
-
-___ divideListInto2(list1
-  first_list1
-  second_list1
-  w__ first !_ N.. a__ first.next_node !_ N..:
-    second_second.next_node
-    first_first.next_node
-    first_first.next_node
-
-  third _second.next_node
-  second.next_node_None
-  r_ list1, third
-
-___ displayList(list1
-  temp_list1
-  w__ temp:
-    print temp.data
-    temp_temp.next_node
-
-
-l_ ?
-
-l.insert( 'a' )
-l.insert( 'b' )
-l.insert( 'c' )
-l.insert( 'd' )
-l.insert( 'e' )
-l.insert( 'f' )
-l.insert( 'g' )
-print l
-l1,l2_divideListInto2(l.head)
-print "List1:"
-displayList(l1)
-print "List2:"
-displayList(l2)
-print "#####"
+# c_ Node o..
+#
+#     ___  -  data_N.. next_node_N..
+#         ? _ ?
+#         ? _ N..
+#
+#     ___ get_data
+#         r_  ?
+#
+#     ___ get_next
+#         r_ ?
+#
+#     ___ set_next new_next
+#         next_node _ ?
+#
+#
+#
+# c_ LinkedList o..
+#     ___  -  head_N...
+#         ? _ ?
+#
+#     ___ i..  data
+#         new_node _ ? ?
+#         ?.s.. h..
+#         h.. _ ?
+#
+#     ___ insertatEnd item
+#         current _ ?
+#         __ ?
+#             w__ ?.g.. !_ N..
+#                 c.. _ ?.g..
+#             ?.s.. ? ?
+#         ____
+#             h.. _ ? ?
+#
+#     ___ size
+#         current _ ?
+#         count _ 0
+#         w__ ?
+#           ? +_ 1
+#           c.. _ ?.g..
+#         r_ ?
+#
+#     ___ -s
+#         s _ ""
+#         p _ head
+#         __ ? !_ N..
+#                 w__ ?.n... !_ N..
+#                         ? +_ ?.d..
+#                         p _ ?.n...
+#                 ? +_ ?.d..
+#         r_ s
+#
+#
+# ___ divideListInto2 list1
+#   first_?
+#   second_?
+#   w__ ? !_ N.. a__ ?.n.. !_ N..
+#     second_second.n..
+#     first_first.n..
+#     first_first.n..
+#
+#   third _second.n..
+#   ?.next_node_N..
+#   r_ ? ?
+#
+# ___ displayList list1
+#   temp_?
+#   w__ ?
+#     print ?.d..
+#     temp_temp.n..
+#
+#
+# l_ ?
+#
+# l.i.. ( 'a' )
+# l.i.. ( 'b' )
+# l.i.. ( 'c' )
+# l.i.. ( 'd' )
+# l.i.. ( 'e' )
+# l.i.. ( 'f' )
+# l.i.. ( 'g' )
+# print l
+# l1,l2_divideListInto2(l.head)
+# print "List1:"
+# displayList(l1)
+# print "List2:"
+# displayList(l2)
+# print "#####"

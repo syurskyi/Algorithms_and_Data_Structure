@@ -1,139 +1,139 @@
-from pprint import pprint
-
-
-c_ Node o..
-
-    ___  -  data_N.. next_node_None
-        data _ data
-        next_node _ N.. 
-
-    ___ get_data
-        r_  ?
-
-    ___ get_next
-        r_ next_node
-
-    ___ set_next new_next
-        next_node _ new_next
-
-c_ LinkedList o..
-    ___  -  head_None
-        head _ head
-
-    ___ insert data
-        new_node _ ? ?
-        ?.s.. h..
-        head _ new_node
-
-    ___ insertatEnd item
-        current _ head
-        __ ?
-            w__ ?.g.. !_ N..:
-                current _ ?.g..
-            ?.s.. ? ?
-        ____
-            head _ ? ?
-
-
-    ___ size
-        current _ head
-        count _ 0
-        w__ ?
-          count +_ 1
-          current _ ?.g..
-        r_ count 
-
-
-    ___ search data
-        current _ head
-        found _ F...
-        w__ current a__ found __ F...:
-            __ ?.g.. __ data:
-                found _ T..
-            ____
-                current _ ?.g..
-        __ current __ N..:
-            r_ V..("Data not in list")
-        r_ ?
-
-
-    ___ delete data
-        current _ head
-        previous _ N..
-        found _ F...
-        w__ current a__ found __ F...:
-            __ ?.g.. __ data:
-                found _ T..
-            ____
-                previous _ current
-                current _ ?.g..
-        __ current __ N..:
-            r_ V..("Data not in list")
-        __ previous __ N..:
-            head _ ?.g..
-        ____
-            previous.set_next(?.get_next())
-
-
-
-    ___ deleteNode  position
-      
-             # If linked list is empty
-             __ head __ N..:
-                 r_
-      
-             # Store head node
-             temp _ head
-      
-             # If head needs to be removed
-             __ position __ 0:
-                 head _ temp.next_node
-                 temp _ N..
-                 r_
-      
-             # Find previous node of the node to be deleted
-             for i in range(position -1 
-                 temp _ temp.next_node
-                 __ temp __ N..:
-                     break
-      
-             # If position is more than number of nodes
-             __ temp __ N..:
-                 r_
-             __ temp.next_node __ N..:
-                 r_
-      
-             # Node temp.next is the node to be deleted
-             # store pointer to the next of node to be deleted
-             next _ temp.next_node.next_node
-      
-             # Unlink the node from linked list
-             temp.next_node _ N..
-      
-             temp.next_node _ next
-
-    ___ -s
-        s _ ""
-        p _ head
-        __ p !_ N.. :
-                w__ p.next_node !_ N.. :
-                        s +_ p.data
-                        p _ p.next_node
-                s +_ p.data
-        r_ s
-
-
-l_ ?
-
-l.insert( 'a' )
-l.insert( 'b' )
-l.insert( 'c' )
-
-print l
-
-l.deleteNode(2)
-print l
-l.deleteNode(1)
-print l
-l.deleteNode(0)
-print l
+# ____ pprint ______ pprint
+#
+#
+# c_ Node o..
+#
+#     ___  -  data_N.. next_node_N..
+#         ? _ ?
+#         next_node _ N..
+#
+#     ___ get_data
+#         r_  ?
+#
+#     ___ get_next
+#         r_ ?
+#
+#     ___ set_next new_next
+#         next_node _ ?
+#
+# c_ LinkedList o..
+#     ___  -  head_N...
+#         ? _ ?
+#
+#     ___ i..  data
+#         new_node _ ? ?
+#         ?.s.. h..
+#         h.. _ ?
+#
+#     ___ insertatEnd item
+#         current _ ?
+#         __ ?
+#             w__ ?.g.. !_ N..
+#                 c.. _ ?.g..
+#             ?.s.. ? ?
+#         ____
+#             h.. _ ? ?
+#
+#
+#     ___ size
+#         current _ ?
+#         count _ 0
+#         w__ ?
+#           ? +_ 1
+#           c.. _ ?.g..
+#         r_ ?
+#
+#
+#     ___ search data
+#         current _ ?
+#         found _ F...
+#         w__ ? a__ ? __ F...
+#             __ ?.g.. __ ?
+#                 f.. _ T..
+#             ____
+#                 c.. _ ?.g..
+#         __ c.. __ N..
+#             r_ V..("Data not in list")
+#         r_ ?
+#
+#
+#     ___ delete data
+#         current _ ?
+#         previous _ N..
+#         found _ F...
+#         w__ ? a__ ? __ F...
+#             __ ?.g.. __ ?
+#                 f.. _ T..
+#             ____
+#                 p.. _ ?
+#                 c.. _ ?.g..
+#         __ c.. __ N..
+#             r_ V..("Data not in list")
+#         __ ? __ N..
+#             h.. _ ?.g..
+#         ____
+#             p__.s.. ?.g..
+#
+#
+#
+#     ___ deleteNode  position
+#
+#              # If linked list is empty
+#              __ head __ N..
+#                  r_
+#
+#              # Store head node
+#              t.. _ ?
+#
+#              # If head needs to be removed
+#              __ ? __ 0
+#                  head _ ?.n...
+#                  t.. _ N..
+#                  r_
+#
+#              # Find previous node of the node to be deleted
+#              ___ i __ r.. ? -1
+#                  t.. _ ?.n...
+#                  __ ? __ N..
+#                      b..
+#
+#              # If position is more than number of nodes
+#              __ ? __ N..
+#                  r_
+#              __ ?.n... __ N..
+#                  r_
+#
+#              # Node temp.next is the node to be deleted
+#              # store pointer to the next of node to be deleted
+#              next _ ?.n....n...
+#
+#              # Unlink the node from linked list
+#              ?.n... _ N..
+#
+#              ?.n... _ ?
+#
+#     ___ -s
+#         s _ ""
+#         p _ head
+#         __ ? !_ N..
+#                 w__ ?.n... !_ N..
+#                         s +_ ?.d..
+#                         p _ ?.n...
+#                 ? +_ ?.d..
+#         r_ ?
+#
+#
+# l_ ?
+#
+# l.i.. ( 'a' )
+# l.i.. ( 'b' )
+# l.i.. ( 'c' )
+#
+# print l
+#
+# l.deleteNode(2)
+# print l
+# l.deleteNode(1)
+# print l
+# l.deleteNode(0)
+# print l

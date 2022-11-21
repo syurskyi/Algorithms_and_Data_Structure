@@ -1,24 +1,24 @@
-# This is the solution for Stacks And Queues > Fish
+# # This is the solution for Stacks And Queues > Fish
+# #
+# # This is marked as PAINLESS difficulty
 #
-# This is marked as PAINLESS difficulty
-
-def solution(A, B):
-    stack = []
-    survivors = 0
-    for i in range(len(A)):
-        weight = A[i]
-        if B[i] == 1:
-            stack.append(weight)
-        else:
-            weightdown = stack.pop() if stack else -1
-            while weightdown != -1 and weightdown < weight:
-                weightdown = stack.pop() if stack else -1
-            if weightdown == -1:
-                survivors += 1
-            else:
-                stack.append(weightdown)
-    return survivors + len(stack)
-
-print(solution([4, 8, 2, 6, 7], [0, 1, 1, 0, 0]))
-
-print(solution([4, 3, 2, 1, 5], [0, 1, 0, 0, 0]))
+# ___ solution A, B
+#     stack _    # list
+#     survivors _ 0
+#     ___ i __ r..(l.. ?
+#         weight _ ? ?
+#         __ ? ? __ 1
+#             s__.a.. w..
+#         ____
+#             weightdown _ ?.p..  __ ? ____ -1
+#             _____ ? !_ -1 ___ ? < w..
+#                 ? _ ?.p..  __ ? ____ -1
+#             __ ? __ -1:
+#                 s.. +_ 1
+#             ____
+#                 ?.a.. ?
+#     r_ s.. + l.. ?
+#
+# print(solution([4, 8, 2, 6, 7], [0, 1, 1, 0, 0]))
+#
+# print(solution([4, 3, 2, 1, 5], [0, 1, 0, 0, 0]))

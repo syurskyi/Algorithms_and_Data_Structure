@@ -1,45 +1,45 @@
-#   Created by Elshad Karimov on 29/05/2020.
-#   Copyright © 2020 AppMillers. All rights reserved.
-
-class Queue:
-    def __init__(self):
-        self.items = []
-    
-    def __str__(self):
-        values = [str(x) for x in self.items]
-        return ' '.join(values)
-    
-    def isEmpty(self):
-        if self.items == []:
-            return True
-        else:
-            return False
-    
-    def enqueue(self, value):
-        self.items.append(value)
-        return "The element is inserted at the end of Queue"
-    
-    def dequeue(self):
-        if self.isEmpty():
-            return "The is not any element in the Queue"
-        else:
-            return self.items.pop(0)
-    
-    def peek(self):
-        if self.isEmpty():
-            return "The is not any element in the Queue"
-        else:
-            return self.items[0]
-    
-    def delete(self):
-        self.items = None
-
-
-
-
-customQueue = Queue()
-customQueue.enqueue(1)
-customQueue.enqueue(2)
-customQueue.enqueue(3)
-print(customQueue.peek())
-customQueue.delete()
+# #   Created by Elshad Karimov on 29/05/2020.
+# #   Copyright © 2020 AppMillers. All rights reserved.
+#
+# c_ Queue
+#     ___ -
+#         items _    # list
+#
+#     ___ -s
+#         values _ s..(x ___ ? __ ?
+#         r_ ' '.j.. ?
+#
+#     ___ isEmpty
+#         __ items __    # list:
+#             r_ T..
+#         ____
+#             r_ F..
+#
+#     ___ enqueue value
+#         ?.a.. ?
+#         r_ "The element is inserted at the end of Queue"
+#
+#     ___ dequeue
+#         __ ?
+#             r_ "The is not any element in the Queue"
+#         ____
+#             r_ ?.p.. 0
+#
+#     ___ peek
+#         __ ?
+#             r_ "The is not any element in the Queue"
+#         ____
+#             r_ ? 0
+#
+#     ___ delete
+#         items _ N..
+#
+#
+#
+#
+# customQueue _ Queue()
+# customQueue.enqueue(1)
+# customQueue.enqueue(2)
+# customQueue.enqueue(3)
+# print(customQueue.peek())
+# customQueue.delete()

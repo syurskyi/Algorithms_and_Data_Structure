@@ -1,78 +1,78 @@
-#   Created by Elshad Karimov on 30/05/2020.
-#   Copyright © 2020 AppMillers. All rights reserved.
-
-
-class Node:
-    def __init__(self, value=None):
-        self.value = value
-        self.next = None
-    
-    def __str__(self):
-        return str(self.value)
-
-class LinkedList:
-    def __init__(self):
-        self.head = None
-        self.tail = None
-    
-    def __iter__(self):
-        curNode = self.head
-        while curNode:
-            yield curNode
-            curNode = curNode.next
-
-class Queue:
-    def __init__(self):
-        self.linkedList = LinkedList()
-    
-    def __str__(self):
-        values = [str(x) for x in self.linkedList]
-        return ' '.join(values)
-    
-    def enqueue(self, value):
-        newNode = Node(value)
-        if self.linkedList.head == None:
-            self.linkedList.head = newNode
-            self.linkedList.tail = newNode
-        else:
-            self.linkedList.tail.next = newNode
-            self.linkedList.tail = newNode
-    
-    def isEmpty(self):
-        if self.linkedList.head == None:
-            return True
-        else:
-            return False
-    
-    def dequeue(self):
-        if self.isEmpty():
-            return "There is not any node in the Queue"
-        else:
-            tempNode = self.linkedList.head
-            if self.linkedList.head == self.linkedList.tail:
-                self.linkedList.head = None
-                self.linkedList.tail = None
-            else:
-                self.linkedList.head = self.linkedList.head.next
-            return tempNode
-    
-    def peek(self):
-        if self.isEmpty():
-            return "There is not any node in the Queue"
-        else:
-            return self.linkedList.head
-    
-    def delete(self):
-        self.linkedList.head = None
-        self.linkedList.tail = None
-
-
-
-
-custQueue = Queue()
-custQueue.enqueue(1)
-custQueue.enqueue(2)
-custQueue.enqueue(3)
-print(custQueue)
-print(custQueue.peek())
-print(custQueue)
+# #   Created by Elshad Karimov on 30/05/2020.
+# #   Copyright © 2020 AppMillers. All rights reserved.
+#
+#
+# c_ Node
+#     ___ -  value_N..
+#         ? _ ?
+#         n.. _ N..
+#
+#     ___ -s
+#         r_ s.. ?
+#
+# c_ LinkedList
+#     ___ -
+#         h.. _ N..
+#         t.. _ N..
+#
+#     ___ -i..
+#         curNode _ ?
+#         _____ ?
+#             y.. ?
+#             c.. _ ?.n..
+#
+# c_ Queue
+#     ___ -
+#         linkedList _ ?
+#
+#     ___ -s
+#         values _ s..(x) ___ ? __ ?
+#         r_ ' '.j.. ?
+#
+#     ___ enqueue value
+#         newNode _ ? ?
+#         __ ?.h.. __ N..
+#             ?.h.. _ ?
+#             ?.t.. _ ?
+#         ____
+#             ?.?.n.. _ ?
+#             ?.t.. _ ?
+#
+#     ___ isEmpty
+#         __ ?.h.. __ N..
+#             r_ T..
+#         ____
+#             r_ F..
+#
+#     ___ dequeue
+#         __ ?
+#             r_ "There is not any node in the Queue"
+#         ____
+#             tempNode _ ?.h..
+#             __ ?.h.. __ ?.t..
+#                 ?.h.. _ N..
+#                 ?.t.. _ N..
+#             ____
+#                 ?.h.. _ ?.?.n..
+#             r_ ?
+#
+#     ___ peek
+#         __ ?
+#             r_ "There is not any node in the Queue"
+#         ____
+#             r_ ?.h..
+#
+#     ___ delete
+#         ?.h.. _ N..
+#         ?.t.. _ N..
+#
+#
+#
+#
+# custQueue _ Queue()
+# custQueue.enqueue(1)
+# custQueue.enqueue(2)
+# custQueue.enqueue(3)
+# print(custQueue)
+# print(custQueue.peek())
+# print(custQueue)

@@ -5,31 +5,31 @@
 #         self.left = None
 #         self.right = None
 
-from collections import deque
+____ collections ______ deque
 
-class Solution:
-    def levelOrder(self, root: TreeNode) -> List[List[int]]:
-        ans = []
+c_ Solution
+    ___ levelOrder root: TreeNode) __ List[List[i..]]:
+        ans _    # list
 
-        if(root is None):
-            return ans
+        __(root __ N..
+            r_ ans
         
-        q = deque([root])
+        q _ deque([root])
 
-        while(q):
-            n = len(q)
-            temp = []
-            for i in range(0,n):
-                f = q.popleft()
-                temp.append(f.val)
+        _____(q
+            n _ l..(q)
+            temp _    # list
+            ___ i __ r..(0,n
+                f _ q.popleft()
+                ?.a..(f.v..)
 
-                if(f.left is not None):
-                    q.append(f.left)
-                if(f.right is not None):
-                    q.append(f.right)
+                __(f.left __ n.. N..
+                    q.a..(f.left)
+                __(f.right __ n.. N..
+                    q.a..(f.right)
 
-            if(len(temp)>0):
-                ans.append(temp[:])
-                temp.clear()
-        return ans
+            __(l..(temp)>0
+                ans.a..(temp[:])
+                ?.clear()
+        r_ ans
         

@@ -1,10 +1,10 @@
-class Solution:
-    def moveZeroes(self, nums: List[int]) -> None:
-        j = 0
-        for num in nums:
-            if(num != 0):
-                nums[j] = num
-                j += 1
-
-        for x in range(j, len(nums)):
-            nums[x] = 0
+# c_ Solution
+#     ___ moveZeroes nums L.. i.. __ N..
+#         j _ 0
+#         ___ num __ ?
+#             __ ? !_ 0
+#                 ? ? _ ?
+#                 ? +_ 1
+#
+#         ___ x __ r.. ? l.. ?
+#             ? ? _ 0

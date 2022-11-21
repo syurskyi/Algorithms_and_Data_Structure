@@ -1,38 +1,38 @@
-class Node:
-    def __init__(self, value=None, next=None, prev=None):
-        self.value = value
-        self.next = next
-        self.prev = prev
-
-
-class LinkedList:
-    def __init__(self):
-        self.head = None
-
-    def insert(self):
-        pass
-
-    def delete(self):
-        pass
-
-    # Traverse Method To Print All Elements #
-    def traverse(self):
-        node = self.head
-        while node is not None:
-            print(node.value)
-            node = node.next
-
-
-n1 = Node(3)
-n2 = Node(7)
-n3 = Node(2)
-n4 = Node(9)
-
-LL = LinkedList()
-LL.head = n1
-n1.next = n2
-n2.next = n3
-n3.next = n4
-
-# Traverse Method To Print All Elements #
-LL.traverse()
+# c_ Node:
+#     ___ -  value_N.. next_N.. prev_N..
+#         ? _ ?
+#         ? _ ?
+#         ? _ ?
+#
+#
+# c_ LinkedList
+#     ___ -
+#         head _ N..
+#
+#     ___ i..
+#         p..
+#
+#     ___ delete
+#         p..
+#
+#     # Traverse Method To Print All Elements #
+#     ___ traverse
+#         node _ ?
+#         _____ ? __ n.. N..?
+#             print ?.v..
+#             ? _ ?.n..
+#
+#
+# n1 _ Node(3)
+# n2 _ Node(7)
+# n3 _ Node(2)
+# n4 _ Node(9)
+#
+# LL _ LinkedList()
+# LL.head _ n1
+# n1.next _ n2
+# n2.next _ n3
+# n3.next _ n4
+#
+# # Traverse Method To Print All Elements #
+# LL.traverse()

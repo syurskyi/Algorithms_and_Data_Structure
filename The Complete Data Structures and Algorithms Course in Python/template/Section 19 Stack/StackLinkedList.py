@@ -1,65 +1,65 @@
-#   Created by Elshad Karimov on 23/05/2020.
-#   Copyright © 2020 AppMillers. All rights reserved.
-
-class Node:
-    def __init__(self, value = None):
-        self.value = value
-        self.next = None
-
-class LinkedList:
-    def __init__(self):
-        self.head = None
-    
-    def __iter__(self):
-        curNode = self.head
-        while curNode:
-            yield curNode
-            curNode = curNode.next
-
-class Stack:
-    def __init__(self):
-        self.LinkedList = LinkedList()
-    
-    def __str__(self):
-        values = [str(x.value) for x in self.LinkedList]
-        return '\n'.join(values)
-    
-    def isEmpty(self):
-        if self.LinkedList.head == None:
-            return True
-        else:
-            return False
-
-    def push(self, value):
-        node = Node(value)
-        node.next = self.LinkedList.head
-        self.LinkedList.head = node
-    
-    def pop(self):
-        if self.isEmpty():
-            return "There is not any element in the stack"
-        else:
-            nodeValue = self.LinkedList.head.value
-            self.LinkedList.head = self.LinkedList.head.next
-            return nodeValue
-    
-    def peek(self):
-        if self.isEmpty():
-            return "There is not any element in the stack"
-        else:
-            nodeValue = self.LinkedList.head.value
-            return nodeValue
-    
-    def delete(self):
-        self.LinkedList.head = None
-    
-
-
-
-customStack = Stack()
-customStack.push(1)
-customStack.push(2)
-customStack.push(3)
-
-print(customStack.peek())
-
+# #   Created by Elshad Karimov on 23/05/2020.
+# #   Copyright © 2020 AppMillers. All rights reserved.
+#
+# c_ Node:
+#     ___ -  value _ N..
+#         ? _ ?
+#         n.. _ N..
+#
+# c_ LinkedList
+#     ___ -
+#         h.. _ N..
+#
+#     ___ -i..
+#         curNode _ ?
+#         _____ ?
+#             y.. ?
+#             c.. _ ?.n..
+#
+# c_ Stack
+#     ___ -
+#         LinkedList _ ?
+#
+#     ___ -s
+#         values _  s.. x.v.. ___ ? __ ?
+#         r_ '\n'.j.. ?
+#
+#     ___ isEmpty
+#         __ ?.h.. __ N..
+#             r_ T..
+#         ____
+#             r_ F..
+#
+#     ___ push value
+#         node _ ? ?
+#         ?.n.. _ ?.h..
+#         ?.h.. _ ?
+#
+#     ___ pop
+#         __ ?
+#             r_ "There is not any element in the stack"
+#         ____
+#             nodeValue _ ?.h__.v..
+#             ?.h.. _ ?.?.n..
+#             r_ n?
+#
+#     ___ peek
+#         __ ?
+#             r_ "There is not any element in the stack"
+#         ____
+#             nodeValue _ ?.h__.v..
+#             r_ ?
+#
+#     ___ delete
+#         ?.h.. _ N..
+#
+#
+#
+#
+# customStack _ Stack()
+# customStack.push(1)
+# customStack.push(2)
+# customStack.push(3)
+#
+# print(customStack.peek())
+#

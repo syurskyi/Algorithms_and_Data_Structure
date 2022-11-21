@@ -1,53 +1,53 @@
 # Copyright (C) Deepali Srivastava - All Rights Reserved
 # This code is part of DSA course available on CourseGalaxy.com  
 
-from StackArray import Stack
+____ StackArray ______ Stack
 
-def is_valid(expr):
-    st = Stack()
+___ is_valid(expr
+    st _ Stack()
        
-    for ch in expr:
-        if ch in '({[':
+    ___ ch __ expr:
+        __ ch __ '({[':
             st.push(ch)
-        if ch in ')}]':
-            if st.is_empty():
+        __ ch __ ')}]':
+            __ st.?
                 print("Right parentheses are more than left parentheses")
-                return False
-            else:
-                char = st.pop()
-                if not match_parentheses(char,ch):
+                r_ F..
+            ____
+                char _ st.p.. 
+                __ n.. match_parentheses(char,ch
                     print("Mismatched parentheses are ", char , " and " , ch)
-                    return False
+                    r_ F..
                 
-    if st.is_empty():
+    __ st.?
         print("Balanced Parentheses")
-        return True
-    else:
+        r_ T..
+    ____
         print("Left parentheses are more than right parentheses")
-        return False 
+        r_ F.. 
 	  	    
-def match_parentheses(left_par, right_par):
-    if  left_par == '[' and right_par == ']':
-        return True 
-    if  left_par == '{' and right_par == '}':
-        return True 
-    if  left_par == '(' and right_par == ')':
-        return True 
-    return False 
+___ match_parentheses(left_par, right_par
+    __  left_par __ '[' ___ right_par __ ']':
+        r_ T..
+    __  left_par __ '{' ___ right_par __ '}':
+        r_ T..
+    __  left_par __ '(' ___ right_par __ ')':
+        r_ T..
+    r_ F.. 
 
 
 #############################################################################
 
-while True:
-    print("Enter an expression with parentheses (q to quit) : ", end = ' ')
-    expression = input()
+_____ T..:
+    print("Enter an expression with parentheses (q to quit) : ", end _ ' ')
+    expression _ i..()
 
-    if expression == "q":
-        break
+    __ expression __ "q":
+        b..
 
-    if is_valid(expression):
+    __ is_valid(expression
         print("Valid expression")
-    else:
+    ____
         print("Invalid expression")
 
 

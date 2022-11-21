@@ -1,124 +1,124 @@
-
-
-# Node class
-
-
-class Node:
-
-    def __init__(self, data):
-        self.data = data
-        self.prev = None
-        self.next = None
-
-
-# Linked List class
-class LinkedList:
-
-    def __init__(self):
-        self.head = None
-
-    def createList(self, arr):
-        start = self.head
-        n = len(arr)
-        # Declare newNode and temporary pointer
-        temp = start
-        i = 0
-
-        # Iterate the loop until array length
-        while (i < n):
-
-            # Create new node
-            newNode = Node(arr[i])
-
-            if (i == 0):
-                start = newNode
-                newNode.prev = start
-                temp = start
-
-            else:
-                temp.next = newNode
-                newNode.prev = temp
-                temp = temp.next
-            i = i + 1
-        self.head = start
-        return start
-
-    def printList(self):
-        temp = self.head
-        linked_list = ""
-        while(temp):
-            linked_list += (str(temp.data) + " ")
-            temp = temp.next
-        print(linked_list)
-
-    # Function to count nunmber of
-    # elements in the list
-
-    def countList(self):
-
-        # Declare temp pointer to
-        # traverse the list
-        temp = self.head
-
-        # Variable to store the count
-        count = 0
-
-        # Iterate the list and increment the count
-        while (temp is not None):
-            temp = temp.next
-            count = count + 1
-
-        return count
-
-    # we will consider that the index begin at 1
-    def deleteAtLocation(self, index):
-      temp = self.head
-
-      count = self.countList()
-
-      if(count < index):
-        return temp
-
-      if(index == 1):
-        temp = temp.next
-        self.head = temp
-        return self.head
-
-      if(count == index):
-        while(temp.next is not None and temp.next.next is not None):
-          temp = temp.next
-         # 1 => 2 => 3 => 4
-        temp.next = None
-        return self.head
-      
-
-      i = 1 
-      while(i<index-1):
-        temp = temp.next
-        i+=1
-      
-
-      prevNode = temp
-      nodeAtTarget = temp.next
-      nextNode = nodeAtTarget.next
-
-      # 1 => 2 => 3 => 4
-
-      nextNode.prev = prevNode
-      prevNode.next = nextNode
-
-      return self.head
-
-        
-# create an empty list
-
-arr = [1, 2, 3, 4, 5]
-llist = LinkedList()
-
-llist.createList(arr)
-
-
-llist.deleteAtLocation(2)
-
-# print(llist.head)
-llist.printList()
+#
+#
+# # Node class
+#
+#
+# c_ Node:
+#
+#     ___ -  data
+#         ? _ ?
+#         p.. _ N..
+#         n.. _ N..
+#
+#
+# # Linked List class
+# c_ LinkedList
+#
+#     ___ -
+#         head _ N..
+#
+#     ___ createList arr
+#         start _ ?
+#         n _ l.. ?
+#         # Declare newNode and temporary pointer
+#         t.. _ ?
+#         i _ 0
+#
+#         # Iterate the loop until array length
+#         _____ ? < ?
+#
+#             # Create new node
+#             newNode _ ? ? ?
+#
+#             __ ? __ 0
+#                 s.. _ ?
+#                 ?.p.. _ s..
+#                 ? _ ?
+#
+#             ____
+#                 ?.n.. _ ?
+#                 ?.p.. _ ?
+#                 ? _ ?.n..
+#             i _ ? + 1
+#         ? _ ?
+#         r_ ?
+#
+#     ___ printList
+#         t.. _ ?
+#         linked_list _ ""
+#         _____ ?
+#             ? +_ s.. ?.d.. + " "
+#             t.. _ ?.n..
+#         print ?
+#
+#     # Function to count nunmber of
+#     # elements in the list
+#
+#     ___ countList
+#
+#         # Declare temp pointer to
+#         # traverse the list
+#         t.. _ ?
+#
+#         # Variable to store the count
+#         c.. _ 0
+#
+#         # Iterate the list and increment the count
+#         _____ ? __ n.. N..
+#             t.. _ ?.n..
+#             c.. _ ? + 1
+#
+#         r_ ?
+#
+#     # we will consider that the index begin at 1
+#     ___ deleteAtLocation index
+#       t.. _ ?
+#
+#       c.. _ ?
+#
+#       __ ? < ?
+#         r_ ?
+#
+#       __ ? __ 1
+#         t.. _ ?.n..
+#         h.. _ ?
+#         r_ ?
+#
+#       __ ? __ ?
+#         _____ ?.n.. __ n.. N.. ___ ?.n...n.. __ n.. N..
+#           t.. _ ?.n..
+#          # 1 => 2 => 3 => 4
+#         ?.n.. _ N..
+#         r_ ?
+#
+#
+#       i _ 1
+#       _____ ?<?-1
+#         t.. _ ?.n..
+#         ?+_1
+#
+#
+#       prevNode _ t..
+#       nodeAtTarget _ ?.n..
+#       nextNode _ ?.n..
+#
+#       # 1 => 2 => 3 => 4
+#
+#       ?.p.. _ ?
+#       ?.n.. _ ?
+#
+#       r_ ?
+#
+#
+# # create an empty list
+#
+# arr _ [1, 2, 3, 4, 5]
+# llist _ LinkedList()
+#
+# llist.createList(arr)
+#
+#
+# llist.deleteAtLocation(2)
+#
+# # print(llist.head)
+# llist.printList()

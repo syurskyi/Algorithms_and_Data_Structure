@@ -1,18 +1,18 @@
-class MinStack:
-    def __init__(self):
-        self.st = []
-
-    def push(self, x: int) -> None:
-        curMin = self.getMin()
-        if curMin == None or curMin > x:
-            curMin = x
-        self.st.append((x, curMin))
-
-    def pop(self) -> None:
-        self.st.pop()
-
-    def top(self) -> int:
-        return self.st[-1][0] if self.st else None
-
-    def getMin(self) -> int:
-        return self.st[-1][1] if self.st else None
+# c_ MinStack:
+#     ___ -
+#         st _    # list
+#
+#     ___ push x i.. __ N..
+#         curMin _ g..
+#         __ ? __ N.. __ ? > ?
+#             ? _ ?
+#         ?.a.. ? ?
+#
+#     ___ pop  __ N..
+#         ?.p..
+#
+#     ___ top  __ i..
+#         r_ ? -1 0 __ ? ____ N..
+#
+#     ___ getMin  __ i..
+#         r_ ? -1 1 __ ? ____ N..

@@ -1,33 +1,33 @@
-
-#FIFO - first -> first
-
-class Queue:
-
-	def __init__(self):
-		self.queue = []
-		
-	def isEmpty(self):
-		return self.queue == []
-		
-	def enqueue(self, data):
-		self.queue.append(data)
-		
-	def dequeue(self):
-		data = self.queue[0]
-		del self.queue[0]
-		return data
-		
-	def peek(self):
-		return self.queue[0]
-		
-	def sizeQueue(self):
-		return len(self.queue)
-	
-queue = Queue()
-queue.enqueue(10)
-queue.enqueue(20)
-queue.enqueue(30)
-print(queue.sizeQueue())
-print("Dequeue: ", queue.dequeue())
-print("Dequeue: ", queue.dequeue())
-print(queue.sizeQueue())
+#
+# #FIFO - first -> first
+#
+# c_ Queue
+#
+# 	___ -
+# 		queue _    # list
+#
+# 	___ isEmpty
+# 		r_ queue __    # list
+#
+# 	___ enqueue data
+# 		?.a.. ?
+#
+# 	___ dequeue
+# 		data _ ? 0
+# 		d.. ? 0
+# 		r_ ?
+#
+# 	___ peek
+# 		r_ ? 0
+#
+# 	___ sizeQueue
+# 		r_ l.. ?
+#
+# queue _ Queue()
+# queue.enqueue(10)
+# queue.enqueue(20)
+# queue.enqueue(30)
+# print(queue.sizeQueue())
+# print("Dequeue: ", queue.dequeue())
+# print("Dequeue: ", queue.dequeue())
+# print(queue.sizeQueue())

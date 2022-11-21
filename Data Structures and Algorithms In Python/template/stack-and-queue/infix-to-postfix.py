@@ -1,82 +1,82 @@
 # Copyright (C) Deepali Srivastava - All Rights Reserved
 # This code is part of DSA course available on CourseGalaxy.com  
 
-from StackArray import Stack
+____ StackArray ______ Stack
 
-def infix_to_postfix(infix):
-    postfix = ""
+___ infix_to_postfix(infix
+    postfix _ ""
 
-    st = Stack()
+    st _ Stack()
 
-    for symbol in infix:
-        if symbol == ' ' or symbol == '\t': #ignore blanks and tabs
-            continue
+    ___ symbol __ infix:
+        __ symbol __ ' ' __ symbol __ '\t': #ignore blanks and tabs
+            c..
 
-        if symbol == '(':
+        __ symbol __ '(':
             st.push(symbol)
-        elif symbol == ')':
-            next = st.pop()
-            while next != '(':
-                postfix = postfix + next
-                next = st.pop()
-        elif symbol in "+-*/%^":
-            while not st.is_empty() and precedence(st.peek()) >= precedence(symbol):
-                postfix = postfix + st.pop()
+        ____ symbol __ ')':
+            next _ st.p.. 
+            _____ next !_ '(':
+                postfix _ postfix + next
+                next _ st.p.. 
+        ____ symbol __ "+-*/%^":
+            _____ n.. st.?) ___ precedence(st.peek()) >_ precedence(symbol
+                postfix _ postfix + st.p.. 
             st.push(symbol)
-        else: #operand
-            postfix = postfix + symbol
+        ____ #operand
+            postfix _ postfix + symbol
             
-    while not st.is_empty():
-        postfix = postfix + st.pop()
-    return postfix
+    _____ n.. st.?
+        postfix _ postfix + st.p.. 
+    r_ postfix
 
-def precedence(symbol):
-    if symbol == '(':
-        return 0
-    elif symbol in '+-':
-        return 1
-    elif symbol in '*/%':
-        return 2
-    elif symbol == '^':
-        return 3
-    else:
-        return 0
+___ precedence(symbol
+    __ symbol __ '(':
+        r_ 0
+    ____ symbol __ '+-':
+        r_ 1
+    ____ symbol __ '*/%':
+        r_ 2
+    ____ symbol __ '^':
+        r_ 3
+    ____
+        r_ 0
             
-def evaluate_postfix(postfix):
-    st = Stack()
+___ evaluate_postfix(postfix
+    st _ Stack()
     
-    for symbol in postfix:
-        if symbol.isdigit():
-            st.push( int(symbol) )
-        else:
-            x = st.pop()
-            y = st.pop()
+    ___ symbol __ postfix:
+        __ symbol.isdigit(
+            st.push( i..(symbol) )
+        ____
+            x _ st.p.. 
+            y _ st.p.. 
 
-            if symbol == '+':
+            __ symbol __ '+':
                 st.push(y + x)
-            elif symbol == '-':
+            ____ symbol __ '-':
                 st.push(y - x)
-            elif symbol == '*':
+            ____ symbol __ '*':
                 st.push(y * x)
-            elif symbol == '/':
+            ____ symbol __ '/':
                 st.push (y / x)
-            elif symbol == '%':
+            ____ symbol __ '%':
                 st.push(y % x)
-            elif symbol == '^':
+            ____ symbol __ '^':
                 st.push(y ** x)
             
-    return st.pop()
+    r_ st.p.. 
 
 ####################################################
 			
-while True:
-    print("Enter infix expression (q to quit) : ", end = '')
+_____ T..:
+    print("Enter infix expression (q to quit) : ", end _ '')
 
-    expression = input()
-    if expression == 'q':
-        break
+    expression _ i..()
+    __ expression __ 'q':
+        b..
     
-    postfix = infix_to_postfix(expression)
+    postfix _ infix_to_postfix(expression)
     print("Postfix expression is : " ,postfix)
     print("Value of expression : " , evaluate_postfix(postfix) )
 		

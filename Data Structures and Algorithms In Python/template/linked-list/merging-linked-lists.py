@@ -1,141 +1,141 @@
 # Copyright (C) Deepali Srivastava - All Rights Reserved
 # This code is part of DSA course available on CourseGalaxy.com  
 
-class Node:
+c_ Node:
 
-    def __init__(self,value):
-        self.info = value 
-        self.link = None 
+    ___ - value
+        info _ value
+        link _ N..
         
 
-class SingleLinkedList:
+c_ SingleLinkedList:
 
-    def __init__(self):
-        self.start = None
+    ___ -  
+        start _ N..
     
-    def display_list(self):
-        if self.start is None:
+    ___ display_list 
+        __ start __ N..
             print("List is empty")
-            return
-        else:
+            r_
+        ____
             print("List is :   ")
-            p = self.start 
-            while p is not None:
-                print(p.info , " ", end='')
-                p = p.link 
+            p _ start
+            _____ p __ n.. N..
+                print(?.i.. , " ", end_'')
+                p _ ?.l..
             print()
    
-    def insert_at_end(self, data):
-        temp = Node(data)
-        if self.start is None:
-            self.start = temp
-            return
+    ___ insert_at_end data
+        temp _ ? ?
+        __ start __ N..
+            start _ temp
+            r_
         
-        p = self.start
-        while p.link is not None:
-            p = p.link
-        p.link = temp
+        p _ start
+        _____ ?.l.. __ n.. N..
+            p _ ?.l..
+        ?.l.. _ temp
 
 
-    def create_list(self):
-        n = int(input("Enter the number of nodes : "))
-        if n == 0:
-            return
-        for i in range(n):
-            data = int(input("Enter the element to be inserted : "))
-            self.insert_at_end(data)
+    ___ create_list 
+        n _ i..(i..("Enter the number of nodes : "))
+        __ n __ 0:
+            r_
+        ___ i __ r..(n
+            data _ i..(i..("Enter the element to be inserted : "))
+            insert_at_end(data)
     
 
-    def bubble_sort_exdata(self):
-        end = None
-        while end != self.start.link:
+    ___ bubble_sort_exdata 
+        end _ N..
+        _____ end !_ start.l..:
 
-            p = self.start
-            while  p.link != end:
-                q = p.link 
-                if p.info > q.info:
-                    p.info,q.info = q.info,p.info 
-                p = p.link     
-            end = p
+            p _ start
+            _____  ?.l.. !_ end:
+                q _ ?.l..
+                __ ?.i.. > q.i..:
+                    ?.i..,q.i.. _ q.i..,?.i..
+                p _ ?.l..
+            end _ p
 
-    def merge1(self, list2):
-        merge_list = SingleLinkedList()
-        merge_list.start = self._merge1(self.start, list2.start)
-        return merge_list
+    ___ merge1 list2
+        merge_list _ SingleLinkedList()
+        merge_list.start _ _merge1(start, list2.start)
+        r_ merge_list
     
-    def _merge1(self, p1, p2):
-        if p1.info <= p2.info:
-            startM = Node(p1.info)
-            p1 = p1.link
-        else:
-            startM = Node(p2.info)
-            p2 = p2.link;
+    ___ _merge1 p1, p2
+        __ p1.i.. <_ p2.i..:
+            startM _ Node(p1.i..)
+            p1 _ p1.l..
+        ____
+            startM _ Node(p2.i..)
+            p2 _ p2.l..;
         
-        pM = startM
+        pM _ startM
 
-        while p1 is not None and p2 is not None:
-            if p1.info <= p2.info :
-                pM.link = Node(p1.info)
-                p1 = p1.link
-            else:
-                pM.link = Node(p2.info);
-                p2 = p2.link;
-            pM = pM.link;
+        _____ p1 __ n.. N.. ___ p2 __ n.. N..
+            __ p1.i.. <_ p2.i.. :
+                pM.l.. _ Node(p1.i..)
+                p1 _ p1.l..
+            ____
+                pM.l.. _ Node(p2.i..);
+                p2 _ p2.l..;
+            pM _ pM.l..;
             
 
         #If second list has finished and elements left in first list
-        while p1 is not None:
-            pM.link = Node(p1.info)
-            p1 = p1.link
-            pM = pM.link
+        _____ p1 __ n.. N..
+            pM.l.. _ Node(p1.i..)
+            p1 _ p1.l..
+            pM _ pM.l..
         
         #If first list has finished and elements left in second list
-        while p2 is not None:
-            pM.link = Node(p2.info)
-            p2 = p2.link
-            pM = pM.link
+        _____ p2 __ n.. N..
+            pM.l.. _ Node(p2.i..)
+            p2 _ p2.l..
+            pM _ pM.l..
 
-        return startM
+        r_ startM
 
         
-    def merge2(self,list2):
-        merge_list = SingleLinkedList()
-        merge_list.start = self._merge2(self.start, list2.start)
-        return merge_list
+    ___ merge2list2
+        merge_list _ SingleLinkedList()
+        merge_list.start _ _merge2(start, list2.start)
+        r_ merge_list
         
-    def _merge2(self, p1, p2):
+    ___ _merge2 p1, p2
 
-        if p1.info <= p2.info:
-            startM = p1
-            p1 = p1.link
-        else:
-            startM = p2
-            p2 = p2.link
+        __ p1.i.. <_ p2.i..:
+            startM _ p1
+            p1 _ p1.l..
+        ____
+            startM _ p2
+            p2 _ p2.l..
             
-        pM = startM
+        pM _ startM
 
-        while p1 is not None and p2 is not None:
-            if p1.info <= p2.info :
-                pM.link = p1
-                pM = pM.link
-                p1 = p1.link
-            else:
-                pM.link = p2
-                pM = pM.link
-                p2 = p2.link
+        _____ p1 __ n.. N.. ___ p2 __ n.. N..
+            __ p1.i.. <_ p2.i.. :
+                pM.l.. _ p1
+                pM _ pM.l..
+                p1 _ p1.l..
+            ____
+                pM.l.. _ p2
+                pM _ pM.l..
+                p2 _ p2.l..
             
-        if p1 is None:
-            pM.link = p2
-        else:
-            pM.link = p1
+        __ p1 __ N..
+            pM.l.. _ p2
+        ____
+            pM.l.. _ p1
 
-        return startM
+        r_ startM
         
 
 #########################################################################################
 
-list1 = SingleLinkedList()
-list2 = SingleLinkedList()
+list1 _ SingleLinkedList()
+list2 _ SingleLinkedList()
 
 list1.create_list() 
 list2.create_list()
@@ -146,13 +146,13 @@ list2.bubble_sort_exdata()
 print("First List - "); list1.display_list()
 print("Second List - "); list2.display_list()
 
-list3 = list1.merge1(list2)
+list3 _ list1.merge1(list2)
 print("Merged List - "); list3.display_list()
 		
 print("First List - "); list1.display_list()
 print("Second List - "); list2.display_list()
 		
-list3 = list1.merge2(list2)
+list3 _ list1.merge2(list2)
 print("Merged List - "); list3.display_list()
 print("First List - ");  list1.display_list()
 print("Second List - "); list2.display_list()

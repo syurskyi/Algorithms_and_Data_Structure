@@ -1,212 +1,212 @@
-# Copyright (C) Deepali Srivastava - All Rights Reserved
-# This code is part of DSA course available on CourseGalaxy.com  
-
-class Node:
-
-    def __init__(self,value):
-        self.info = value 
-        self.link = None 
-        
-class SingleLinkedList:
-
-    def __init__(self):
-        self.start = None
-     
-    def display_list(self):
-        if self.start is None:
-            print("List is empty")
-            return
-        else:
-            print("List is :   ")
-            p = self.start 
-            while p is not None:
-                print(p.info , " ", end='')
-                p = p.link 
-            print()
-
-    def count_nodes(self):
-        p = self.start 
-        n = 0        
-        while p is not None:
-            n+=1
-            p = p.link
-        print("Number of nodes in the list = " ,n)
-    
-    def search(self,x):
-        position = 1
-        p = self.start
-        while p is not None:
-            if p.info == x:
-                print(x , " is at position ", position)
-                return True
-            position+=1
-            p = p.link
-        else:
-            print(x," not found in list")
-            return False
-
-    def insert_in_beginning(self, data):
-        temp = Node(data)
-        temp.link = self.start
-        self.start = temp
-   
-    def insert_at_end(self, data):
-        temp = Node(data)
-        if self.start is None:
-            self.start = temp
-            return
-        
-        p = self.start
-        while p.link is not None:
-            p = p.link
-        p.link = temp
-
-    def create_list(self):
-        n = int(input("Enter the number of nodes : "))
-        if n == 0:
-            return
-        for i in range(n):
-            data = int(input("Enter the element to be inserted : "))
-            self.insert_at_end(data)
-           
-    def insert_after(self,data,x):
-        pass    
-           
-    def insert_before(self, data, x):
-        pass
-     
-    def insert_at_position(self, data, k):
-        pass
-    
-    def delete_node(self,x):
-        pass   
-                 
-    def delete_first_node(self):
-        pass
-
-    def delete_last_node(self):
-        pass
-    
-    def reverse_list(self):
-        pass   
-
-    def bubble_sort_exdata(self):
-        pass
-    
-    def bubble_sort_exlinks(self):
-        pass
-           
-    def has_cycle(self):
-        pass
-
-    def find_cycle(self):
-        pass
-
-    def remove_cycle(self):
-        pass   
-
-    def insert_cycle(self,x):
-        pass
-    
-    def merge2(self,list2):
-        pass
-    
-    def _merge2(self, p1, p2):
-        pass
-
-    def merge_sort(self):
-        pass    
-
-    def _merge_sort_rec(self,listStart):
-        pass
-
-    def _divide_list(self, p):
-        pass
-        
-
-#######################################################################################
-            
-list = SingleLinkedList() 
-
-list.create_list() 
-		
-while True:
-    print("1.Display list") 
-    print("2.Count the number of nodes") 
-    print("3.Search for an element")
-    print("4.Insert in empty list/Insert in beginning of the list")
-    print("5.Insert a node at the end of the list")
-    print("6.Insert a node after a specified node")
-    print("7.Insert a node before a specified node")
-    print("8.Insert a node at a given position")
-    print("9.Delete first node")
-    print("10.Delete last node")
-    print("11.Delete any node")
-    print("12.Reverse the list")
-    print("13.Bubble sort by exchanging data")
-    print("14.Bubble sort by exchanging links")
-    print("15.MergeSort")
-    print("16.Insert Cycle")
-    print("17.Detect Cycle")
-    print("18.Remove cycle")
-    print("19.Quit")
-        
-    option = int(input("Enter your choice : " ))
-
-    if option == 1:
-        list.display_list()
-    elif option == 2:
-        list.count_nodes()
-    elif option == 3:
-        data = int(input("Enter the element to be searched : "))
-        list.search(data)
-    elif option == 4:
-        data = int(input("Enter the element to be inserted : "))
-        list.insert_in_beginning(data)
-    elif option == 5:
-        data = int(input("Enter the element to be inserted : "))
-        list.insert_at_end(data)
-    elif option == 6:
-        data = int(input("Enter the element to be inserted : "))
-        x = int(input("Enter the element after which to insert : ")) 
-        list.insert_after(data,x)
-    elif option == 7:
-        data = int(input("Enter the element to be inserted : "))
-        x = int(input("Enter the element before which to insert : ")) 
-        list.insert_before(data,x)
-    elif option == 8:
-        data = int(input("Enter the element to be inserted : "))
-        k = int(input("Enter the position at which to insert : ")) 
-        list.insert_at_position(data,k)
-    elif option == 9:
-        list.delete_first_node() 
-    elif option == 10:
-        list.delete_last_node() 
-    elif option == 11:
-        data = int(input("Enter the element to be deleted : ")) 
-        list.delete_node(data)             
-    elif option == 12:
-        list.reverse_list()
-    elif option == 13:
-        list.bubble_sort_exdata() 
-    elif option == 14:
-        list.bubble_sort_exlinks() 
-    elif option == 15:
-        list.merge_sort() 
-    elif option == 16:
-        data = int(input("Enter the element at which the cycle has to be inserted : "))
-        list.insert_cycle(data) 
-    elif option == 17:
-        if list.has_cycle():
-            print("List has a cycle")
-        else:
-            print("List does not have a cycle") 
-    elif option == 18:
-        list.remove_cycle() 
-    elif option == 19:
-        break
-    else:
-        print("Wrong option") 
-    print() 
-
-   
+# # Copyright (C) Deepali Srivastava - All Rights Reserved
+# # This code is part of DSA course available on CourseGalaxy.com
+#
+# c_ Node:
+#
+#     ___ - value
+#         info _ ?
+#         link _ N..
+#
+# c_ SingleLinkedList
+#
+#     ___ -
+#         start _ N..
+#
+#     ___ display_list
+#         __ ? __ N..
+#             print("List is empty")
+#             r_
+#         ____
+#             print("List is :   ")
+#             p _ s..
+#             _____ p __ n.. N..
+#                 print(?.i.. " ", end_'')
+#                 p _ ?.l..
+#             print()
+#
+#     ___ count_nodes
+#         p _ s..
+#         n _ 0
+#         _____ p __ n.. N..
+#             ?+_1
+#             p _ ?.l..
+#         print("Number of nodes in the list = " ?
+#
+#     ___ searchx
+#         position _ 1
+#         p _ s..
+#         _____ ? __ n.. N..
+#             __ ?.i.. __ ?
+#                 print ? " is at position " ?
+#                 r_ T..
+#             ?+_1
+#             p _ ?.l..
+#         ____
+#             print ? " not found in list")
+#             r_ F..
+#
+#     ___ insert_in_beginning data
+#         temp _ ? ?
+#         ?.l.. _ s..
+#         s.. _ ?
+#
+#     ___ insert_at_end data
+#         temp _ ? ?
+#         __ s.. __ N..
+#             s.. _ ?
+#             r_
+#
+#         p _ s..
+#         _____ ?.l.. __ n.. N..
+#             p _ ?.l..
+#         ?.l.. _ ?
+#
+#     ___ create_list
+#         n _ i..(i..("Enter the number of nodes : "))
+#         __ n __ 0
+#             r_
+#         ___ i __ r.. ?
+#             data _ i..(i..("Enter the element to be inserted : "))
+#             ? ?
+#
+#     ___ insert_after data x
+#         p..
+#
+#     ___ insert_before data, x
+#         p..
+#
+#     ___ insert_at_position data, k
+#         p..
+#
+#     ___ delete_node x
+#         p..
+#
+#     ___ delete_first_node
+#         p..
+#
+#     ___ delete_last_node
+#         p..
+#
+#     ___ reverse_list
+#         p..
+#
+#     ___ bubble_sort_exdata
+#         p..
+#
+#     ___ bubble_sort_exlinks
+#         p..
+#
+#     ___ has_cycle
+#         p..
+#
+#     ___ find_cycle
+#         p..
+#
+#     ___ remove_cycle
+#         p..
+#
+#     ___ insert_cyclex
+#         p..
+#
+#     ___ merge2list2
+#         p..
+#
+#     ___ _merge2 p1, p2
+#         p..
+#
+#     ___ merge_sort
+#         p..
+#
+#     ___ _merge_sort_reclistStart
+#         p..
+#
+#     ___ _divide_list p
+#         p..
+#
+#
+# #######################################################################################
+#
+# list _ SingleLinkedList()
+#
+# list.create_list()
+#
+# _____ T..:
+#     print("1.Display list")
+#     print("2.Count the number of nodes")
+#     print("3.Search for an element")
+#     print("4.Insert in empty list/Insert in beginning of the list")
+#     print("5.Insert a node at the end of the list")
+#     print("6.Insert a node after a specified node")
+#     print("7.Insert a node before a specified node")
+#     print("8.Insert a node at a given position")
+#     print("9.Delete first node")
+#     print("10.Delete last node")
+#     print("11.Delete any node")
+#     print("12.Reverse the list")
+#     print("13.Bubble sort by exchanging data")
+#     print("14.Bubble sort by exchanging links")
+#     print("15.MergeSort")
+#     print("16.Insert Cycle")
+#     print("17.Detect Cycle")
+#     print("18.Remove cycle")
+#     print("19.Quit")
+#
+#     option _ i..(i..("Enter your choice : " ))
+#
+#     __ option __ 1:
+#         list.display_list()
+#     ____ option __ 2:
+#         list.count_nodes()
+#     ____ option __ 3:
+#         data _ i..(i..("Enter the element to be searched : "))
+#         list.search(data)
+#     ____ option __ 4:
+#         data _ i..(i..("Enter the element to be inserted : "))
+#         list.insert_in_beginning(data)
+#     ____ option __ 5:
+#         data _ i..(i..("Enter the element to be inserted : "))
+#         list.insert_at_end(data)
+#     ____ option __ 6:
+#         data _ i..(i..("Enter the element to be inserted : "))
+#         x _ i..(i..("Enter the element after which to insert : "))
+#         list.insert_after(data,x)
+#     ____ option __ 7:
+#         data _ i..(i..("Enter the element to be inserted : "))
+#         x _ i..(i..("Enter the element before which to insert : "))
+#         list.insert_before(data,x)
+#     ____ option __ 8:
+#         data _ i..(i..("Enter the element to be inserted : "))
+#         k _ i..(i..("Enter the position at which to insert : "))
+#         list.insert_at_position(data,k)
+#     ____ option __ 9:
+#         list.delete_first_node()
+#     ____ option __ 10:
+#         list.delete_last_node()
+#     ____ option __ 11:
+#         data _ i..(i..("Enter the element to be deleted : "))
+#         list.delete_node(data)
+#     ____ option __ 12:
+#         list.reverse_list()
+#     ____ option __ 13:
+#         list.bubble_sort_exdata()
+#     ____ option __ 14:
+#         list.bubble_sort_exlinks()
+#     ____ option __ 15:
+#         list.merge_sort()
+#     ____ option __ 16:
+#         data _ i..(i..("Enter the element at which the cycle has to be inserted : "))
+#         list.insert_cycle(data)
+#     ____ option __ 17:
+#         __ list.has_cycle(
+#             print("List has a cycle")
+#         ____
+#             print("List does not have a cycle")
+#     ____ option __ 18:
+#         list.remove_cycle()
+#     ____ option __ 19:
+#         b..
+#     ____
+#         print("Wrong option")
+#     print()
+#
+#

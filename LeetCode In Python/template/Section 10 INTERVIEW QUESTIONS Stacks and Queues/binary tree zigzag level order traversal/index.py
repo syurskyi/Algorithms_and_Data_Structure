@@ -6,35 +6,35 @@
 #         self.right = None
 
 
-class Solution:
-    def zigzagLevelOrder(self, root: TreeNode) -> List[List[int]]:
-        if not root:
-            return []
-        res = []
-        q = collections.deque()
+c_ Solution
+    ___ zigzagLevelOrder root: TreeNode) __ List[List[i..]]:
+        __ n.. root:
+            r_    # list
+        res _    # list
+        q _ collections.deque()
 
-        zigzag = False
-        q.append(root)
+        zigzag _ F..
+        q.a..(root)
 
-        while q:
-            level = []
-            for _ in range(len(q)):
-                if zigzag:
-                    node = q.pop()
-                    level.append(node.val)
-                    if node.right:
+        _____ q:
+            level _    # list
+            ___ _ __ r..(l..(q
+                __ zigzag:
+                    node _ q.p.. 
+                    level.a..(node.v..)
+                    __ node.right:
                         q.appendleft(node.right)
-                    if node.left:
+                    __ node.left:
                         q.appendleft(node.left)
 
-                else:
-                    node = q.popleft()
-                    level.append(node.val)
-                    if node.left:
-                        q.append(node.left)
-                    if node.right:
-                        q.append(node.right)
-            res.append(level)
-            zigzag = not zigzag
+                ____
+                    node _ q.popleft()
+                    level.a..(node.v..)
+                    __ node.left:
+                        q.a..(node.left)
+                    __ node.right:
+                        q.a..(node.right)
+            res.a..(level)
+            zigzag _ n.. zigzag
 
-        return res
+        r_ res

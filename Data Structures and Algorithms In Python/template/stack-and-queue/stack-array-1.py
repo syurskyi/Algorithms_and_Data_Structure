@@ -1,82 +1,82 @@
-# Copyright (C) Deepali Srivastava - All Rights Reserved
-# This code is part of DSA course available on CourseGalaxy.com  
-
-class StackEmptyError(Exception):
-    pass
-
-class StackFullError(Exception):
-    pass
-
-class Stack:
-    
-    def __init__(self,max_size=10):
-        self.items = [None] * max_size
-        self.count = 0 
-
-    def size(self):
-        return self.count 
-
-    def is_empty(self):
-        return self.count == 0
-
-    def is_full(self):
-        return self.count == len(self.items)
-    
-    def push(self,x):
-        if self.is_full():
-            raise StackFullError("Stack is full, can't push")
-
-        self.items[self.count] = x
-        self.count+=1
-            
-    def pop(self):
-        if self.is_empty():
-            raise StackEmptyError("Stack is empty, can't pop")
-             
-        x = self.items[self.count-1]
-        self.items[self.count-1] = None
-        self.count-=1
-        return x          
-
-    def peek(self):
-        if self.is_empty():
-            raise StackEmptyError("Stack is empty, can't peek")
-
-        return self.items[self.count-1] 
-    
-    def display(self):
-        print(self.items)
-     
-##########################################################
-
-if __name__ == "__main__":
-
-    st = Stack(8)
-    
-    while True:
-        print("1.Push") 
-        print("2.Pop") 
-        print("3.Peek") 
-        print("4.Size")
-        print("4.Display") 
-        print("6.Quit") 
-         
-        choice = int(input("Enter your choice : "))
-
-        if choice == 1:
-            x=int(input("Enter the element to be pushed : "))
-            st.push(x) 
-        elif choice == 2:
-            x=st.pop() 
-            print("Popped element is : " , x) 
-        elif choice == 3:
-            print("Element at the top is : " , st.peek()) 
-        elif choice == 4:
-            print("Size of stack " , st.size()) 
-        elif choice == 5:
-            st.display() 
-        elif choice == 6:
-          break
-        else:
-          print("Wrong choice") 
-        print()
+# # Copyright (C) Deepali Srivastava - All Rights Reserved
+# # This code is part of DSA course available on CourseGalaxy.com
+#
+# c_ StackEmptyError E..
+#     p..
+#
+# c_ S... E..
+#     p..
+#
+# c_ Stack
+#
+#     ___ - max_size_10
+#         items _ [N..] * ?
+#         count _ 0
+#
+#     ___ size
+#         r_ ?
+#
+#     ___ is_empty
+#         r_ ? __ 0
+#
+#     ___ is_full
+#         r_ ? __ l.. ?
+#
+#     ___ pushx
+#         __ ?
+#             r... S...("Stack is full, can't push")
+#
+#         ? ? _ x
+#         ?+_1
+#
+#     ___ pop
+#         __ ?
+#             r... S..("Stack is empty, can't pop")
+#
+#         x _ ? ?-1
+#         ? ?-1 _ N..
+#         ?-_1
+#         r_ ?
+#
+#     ___ peek
+#         __ ?
+#             r... S.. "Stack is empty, can't peek"
+#
+#         r_ ? ? -1
+#
+#     ___ display
+#         print ?
+#
+# ##########################################################
+#
+# __ __name__ __ "__main__":
+#
+#     st _ Stack(8)
+#
+#     _____ T..:
+#         print("1.Push")
+#         print("2.Pop")
+#         print("3.Peek")
+#         print("4.Size")
+#         print("4.Display")
+#         print("6.Quit")
+#
+#         choice _ i..(i..("Enter your choice : "))
+#
+#         __ choice __ 1:
+#             x_int(i..("Enter the element to be pushed : "))
+#             st.push(x)
+#         ____ choice __ 2:
+#             x_st.p..
+#             print("Popped element is : " , x)
+#         ____ choice __ 3:
+#             print("Element at the top is : " , st.peek())
+#         ____ choice __ 4:
+#             print("Size of stack " , st.size())
+#         ____ choice __ 5:
+#             st.display()
+#         ____ choice __ 6:
+#           b..
+#         ____
+#           print("Wrong choice")
+#         print()

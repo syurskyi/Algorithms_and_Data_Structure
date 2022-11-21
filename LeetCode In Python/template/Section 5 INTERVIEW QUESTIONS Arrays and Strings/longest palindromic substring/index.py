@@ -1,21 +1,21 @@
-class Solution:
-    def longestPalindrome(self, s: str) -> str:
-        n = len(s)
-        if(n<2):
-            return s
-        left = 0
-        right = 0
-
-        palindrome = [[0]*n for _ in range(n)]
-
-        for j in range(1,n):
-            for i in range(0,j):
-                innerIsPalindrome = palindrome[i+1][j-1] or j-i<=2
-                if(s[i] == s[j] and innerIsPalindrome):
-                    palindrome[i][j] = True
-                    if(j-i>right-left):
-                        left = i
-                        right = j
-
-        return s[left:right+1] 
-        
+# c_ Solution
+#     ___ longestPalindrome s s.. __ s..
+#         n _ l.. ?
+#         __ ?<2
+#             r_ ?
+#         left _ 0
+#         right _ 0
+#
+#         palindrome _ 0 *? ___ _ __ r.. ?
+#
+#         ___ j __ r.. 1,?
+#             ___ i __ r.. 0 ?
+#                 innerIsPalindrome _ ? ?+1 ?-1] __ ?-?<_2
+#                 __ ? ? __ ? ? ___ ?
+#                     ? ? ? _ T..
+#                     __ j-?>?-?
+#                         l.. _ ?
+#                         r.. _ ?
+#
+#         r_ ? ?|?+1
+#

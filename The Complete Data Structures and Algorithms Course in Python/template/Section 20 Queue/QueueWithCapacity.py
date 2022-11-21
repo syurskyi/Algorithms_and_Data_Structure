@@ -1,77 +1,77 @@
 #   Created by Elshad Karimov on 29/05/2020.
 #   Copyright © 2020 AppMillers. All rights reserved.
 
-class Queue:
-    def __init__(self, maxSize):
-        self.items = maxSize * [None]
-        self.maxSize = maxSize
-        self.start = -1
-        self.top = -1 
+c_ Queue:
+    ___ -  maxSize
+        items _ maxSize * [N..]
+        maxSize _ maxSize
+        start _ -1
+        top _ -1
     
-    def __str__(self):
-        values = [str(x) for x in self.items]
-        return ' '.join(values)
+    ___ -s
+        values _ [s..(x) ___ x __ items]
+        r_ ' '.j..(values)
     
-    def isFull(self):
-        if self.top + 1 == self.start:
-            return True
-        elif self.start == 0 and self.top + 1 == self.maxSize:
-            return True
-        else:
-            return False
+    ___ isFull
+        __ top + 1 __ start:
+            r_ T..
+        ____ start __ 0 ___ top + 1 __ maxSize:
+            r_ T..
+        ____
+            r_ F..
     
-    def isEmpty(self):
-        if self.top == -1:
-            return True
-        else:
-            return False
+    ___ isEmpty
+        __ top __ -1:
+            r_ T..
+        ____
+            r_ F..
     
-    def enqueue(self, value):
-        if self.isFull():
-            return "The queue is full"
-        else:
-            if self.top + 1 == self.maxSize:
-                self.top = 0
-            else:
-                self.top += 1
-                if self.start == -1:
-                    self.start = 0
-            self.items[self.top] = value
-            return "The element is inserted at the end of Queue"
+    ___ enqueue value
+        __ isFull(
+            r_ "The queue is full"
+        ____
+            __ top + 1 __ maxSize:
+                top _ 0
+            ____
+                top +_ 1
+                __ start __ -1:
+                    start _ 0
+            items[top] _ value
+            r_ "The element is inserted at the end of Queue"
     
-    def dequeue(self):
-        if self.isEmpty():
-            return "There is not any element in the Queue"
-        else:
-            firstElement = self.items[self.start]
-            start = self.start
-            if self.start == self.top:
-                self.start = -1
-                self.top = -1
-            elif self.start + 1 == self.maxSize:
-                self.start = 0
-            else:
-                self.start += 1
-            self.items[start] = None
-            return firstElement
+    ___ dequeue
+        __ isEmpty(
+            r_ "There is not any element in the Queue"
+        ____
+            firstElement _ items[start]
+            start _ start
+            __ start __ top:
+                start _ -1
+                top _ -1
+            ____ start + 1 __ maxSize:
+                start _ 0
+            ____
+                start +_ 1
+            items[start] _ N..
+            r_ firstElement
     
-    def peek(self):
-        if self.isEmpty():
-            return "There is not any element in the Queue"
-        else:
-            return self.items[self.start]
+    ___ peek
+        __ isEmpty(
+            r_ "There is not any element in the Queue"
+        ____
+            r_ items[start]
     
-    def delete(self):
-        self.items = self.maxSize * [None]
-        self.top = -1
-        self.start = -1
+    ___ delete
+        items _ maxSize * [N..]
+        top _ -1
+        start _ -1
 
 
 
 
 
 
-customQueue = Queue(3)
+customQueue _ Queue(3)
 customQueue.enqueue(1)
 customQueue.enqueue(2)
 customQueue.enqueue(3)

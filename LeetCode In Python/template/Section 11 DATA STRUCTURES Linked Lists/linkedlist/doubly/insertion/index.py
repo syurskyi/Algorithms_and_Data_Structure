@@ -1,100 +1,100 @@
-class Node:
-    def __init__(self, data):
-        self.data = data
-        self.prev = None
-        self.next = None
-
-
-class LinkedList:
-    def __init__(self):
-        self.head = None
-
-    def createList(self, arr):
-        start = self.head
-        n = len(arr)
-
-        temp = start
-        i = 0
-
-        while(i < n):
-            newNode = Node(arr[i])
-            if(i == 0):
-                start = newNode
-                temp = start
-            else:
-                temp.next = newNode
-                newNode.prev = temp
-                temp = temp.next
-            i += 1
-        self.head = start
-        return start
-
-    def printList(self):
-        temp = self.head
-        linked_list = ""
-        while(temp):
-            linked_list += (str(temp.data) + " ")
-            temp = temp.next
-
-        print(linked_list)
-
-    def countList(self):
-        temp = self.head
-        count = 0
-        while(temp is not None):
-            temp = temp.next
-            count += 1
-        return count
-
-    # we will consider that the index begin at 1
-    def insertAtLocation(self, value, index):
-        temp = self.head
-
-        count = self.countList()
-
-        #index is 6, count is 5, valid 
-        #index is 7, count is 5, 
-        if(count+1<index):
-            return temp
-        
-        newNode = Node(value)
-
-        if(index == 1):
-            newNode.next = temp
-            temp.prev = newNode
-            self.head = newNode
-            return self.head
-        
-        if(index == count +1):
-            while(temp.next is not None):
-                temp = temp.next
-
-            temp.next = newNode
-            newNode.prev = temp 
-            return self.head
-        
-        i = 1
-        while(i < index-1):
-            temp = temp.next
-            i+=1
-        
-        nodeAtTarget = temp.next
-
-        newNode.next = nodeAtTarget
-        nodeAtTarget.prev = newNode
-
-        temp.next = newNode
-        newNode.prev = temp
-
-        return self.head
-
-
-arr = [1, 2, 3, 4, 5]
-
-llist = LinkedList()
-
-llist.createList(arr)
-
-llist.insertAtLocation(5,6)
-
-llist.printList()
+# c_ Node:
+#     ___ -  data
+#         ? _ ?
+#         p.. _ N..
+#         n.. _ N..
+#
+#
+# c_ LinkedList
+#     ___ -
+#         head _ N..
+#
+#     ___ createList arr
+#         start _ ?
+#         n _ l.. ?
+#
+#         t.. _ ?
+#         i _ 0
+#
+#         _____ ? < ?
+#             newNode _ ? ? ?
+#             __ ? __ 0
+#                 s.. _ ?
+#                 ? _ ?
+#             ____
+#                 ?.n.. _ ?
+#                 ?.p.. _ ?
+#                 t.. _ ?.n..
+#             ? +_ 1
+#         h.. _ s..
+#         r_ ?
+#
+#     ___ printList
+#         t.. _ ?
+#         linked_list _ ""
+#         _____ ?
+#             ? +_ s.. ?.d.. + " "
+#             t.. _ ?.n..
+#
+#         print ?
+#
+#     ___ countList
+#         t.. _ ?
+#         c.. _ 0
+#         _____ ? __ n.. N..
+#             t.. _ ?.n..
+#             ? +_ 1
+#         r_ ?
+#
+#     # we will consider that the index begin at 1
+#     ___ insertAtLocation value, index
+#         t.. _ ?
+#
+#         c.. _ ?
+#
+#         #index is 6, count is 5, valid
+#         #index is 7, count is 5,
+#         __ ?+1<?
+#             r_ ?
+#
+#         newNode _ ? ?
+#
+#         __ ? __ 1
+#             ?.n.. _ t..
+#             ?.p.. _ ?
+#             h.. _ ?
+#             r_ ?
+#
+#         __ ? __ ? +1
+#             _____ ?.n.. __ n.. N..
+#                 t.. _ ?.n..
+#
+#             ?.n.. _ ?
+#             ?.p.. _ ?
+#             r_ ?
+#
+#         i _ 1
+#         _____ ? < ?-1
+#             t.. _ ?.n..
+#             ?+_1
+#
+#         nodeAtTarget _ ?.n..
+#
+#         ?.n.. _ ?
+#         ?.p.. _ ?
+#
+#         ?.n.. _ ?
+#         ?.p.. _ ?
+#
+#         r_ head
+#
+#
+# arr _ [1, 2, 3, 4, 5]
+#
+# llist _ LinkedList()
+#
+# llist.createList(arr)
+#
+# llist.insertAtLocation(5,6)
+#
+# llist.printList()
