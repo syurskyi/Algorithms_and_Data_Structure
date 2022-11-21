@@ -55,7 +55,7 @@ c_ BellmanFord o..
 			
 			node _ targetVertex;
 			
-			_____ node __ n.. N..
+			_____ ? __ n.. N..
 				print("%s " % node.name);
 				node _ node.predecessor;
 		____
