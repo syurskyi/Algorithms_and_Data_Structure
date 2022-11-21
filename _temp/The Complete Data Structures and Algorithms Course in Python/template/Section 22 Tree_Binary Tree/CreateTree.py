@@ -6,10 +6,10 @@ c_ TreeNode:
         ? _ ?
         children _ children
     
-    ___ __str__ level_0
+    ___ -s level_0
         ret _ "  " * level + s..(data)  + "\n"
         ___ child __ children:
-            ret +_ child.__str__(level + 1)
+            ret +_ child.-s(level + 1)
         r_ ret
     
     ___ addChild TreeNode

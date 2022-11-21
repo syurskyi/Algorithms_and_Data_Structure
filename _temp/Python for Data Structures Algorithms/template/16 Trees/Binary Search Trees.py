@@ -54,7 +54,7 @@ c_ BinarySearchTree:
     ___ length 
         r_ size
 
-    ___ __len__ 
+    ___ -l 
         r_ size
 
     ___ putkey,val
@@ -65,16 +65,16 @@ c_ BinarySearchTree:
         size _ size + 1
 
     ___ _putkey,val,currentNode
-        __ key < currentNode.key:
-            __ currentNode.hasLeftChild(
-                   _put(key,val,currentNode.leftChild)
+        __ key < ?.key:
+            __ ?.hasLeftChild(
+                   _put(key,val,?.leftChild)
             ____
-                   currentNode.leftChild _ TreeNode(key,val,parent_currentNode)
+                   ?.leftChild _ TreeNode(key,val,parent_currentNode)
         ____
-            __ currentNode.hasRightChild(
-                   _put(key,val,currentNode.rightChild)
+            __ ?.hasRightChild(
+                   _put(key,val,?.rightChild)
             ____
-                   currentNode.rightChild _ TreeNode(key,val,parent_currentNode)
+                   ?.rightChild _ TreeNode(key,val,parent_currentNode)
 
     ___ __setitem__k,v
         put(k,v)
@@ -94,12 +94,12 @@ c_ BinarySearchTree:
 
         __ n.. currentNode:
             r_ N..
-        ____ currentNode.key __ key:
+        ____ ?.key __ key:
             r_ currentNode
-        ____ key < currentNode.key:
-            r_ _get(key,currentNode.leftChild)
+        ____ key < ?.key:
+            r_ _get(key,?.leftChild)
         ____
-            r_ _get(key,currentNode.rightChild)
+            r_ _get(key,?.rightChild)
 
     ___ __getitem__key
         r_ get(key)
@@ -182,45 +182,45 @@ c_ BinarySearchTree:
 
     ___ removecurrentNode
 
-        __ currentNode.isLeaf( #leaf
-            __ currentNode __ currentNode.parent.leftChild:
-                currentNode.parent.leftChild _ N..
+        __ ?.isLeaf( #leaf
+            __ currentNode __ ?.parent.leftChild:
+                ?.parent.leftChild _ N..
             ____
-                currentNode.parent.rightChild _ N..
-        ____ currentNode.hasBothChildren( #interior
+                ?.parent.rightChild _ N..
+        ____ ?.hasBothChildren( #interior
 
-            succ _ currentNode.findSuccessor()
+            succ _ ?.findSuccessor()
             succ.spliceOut()
-            currentNode.key _ succ.key
-            currentNode.payload _ succ.payload
+            ?.key _ succ.key
+            ?.payload _ succ.payload
 
         ____ # this node has one child
-            __ currentNode.hasLeftChild(
-                __ currentNode.isLeftChild(
-                    currentNode.leftChild.parent _ currentNode.parent
-                    currentNode.parent.leftChild _ currentNode.leftChild
-                ____ currentNode.isRightChild(
-                    currentNode.leftChild.parent _ currentNode.parent
-                    currentNode.parent.rightChild _ currentNode.leftChild
+            __ ?.hasLeftChild(
+                __ ?.isLeftChild(
+                    ?.leftChild.parent _ ?.parent
+                    ?.parent.leftChild _ ?.leftChild
+                ____ ?.isRightChild(
+                    ?.leftChild.parent _ ?.parent
+                    ?.parent.rightChild _ ?.leftChild
                 ____
 
-                    currentNode.replaceNodeData(currentNode.leftChild.key,
-                                    currentNode.leftChild.payload,
-                                    currentNode.leftChild.leftChild,
-                                    currentNode.leftChild.rightChild)
+                    ?.replaceNodeData(?.leftChild.key,
+                                    ?.leftChild.payload,
+                                    ?.leftChild.leftChild,
+                                    ?.leftChild.rightChild)
             ____
 
-                __ currentNode.isLeftChild(
-                    currentNode.rightChild.parent _ currentNode.parent
-                    currentNode.parent.leftChild _ currentNode.rightChild
-                ____ currentNode.isRightChild(
-                    currentNode.rightChild.parent _ currentNode.parent
-                    currentNode.parent.rightChild _ currentNode.rightChild
+                __ ?.isLeftChild(
+                    ?.rightChild.parent _ ?.parent
+                    ?.parent.leftChild _ ?.rightChild
+                ____ ?.isRightChild(
+                    ?.rightChild.parent _ ?.parent
+                    ?.parent.rightChild _ ?.rightChild
                 ____
-                    currentNode.replaceNodeData(currentNode.rightChild.key,
-                                    currentNode.rightChild.payload,
-                                    currentNode.rightChild.leftChild,
-                                    currentNode.rightChild.rightChild)
+                    ?.replaceNodeData(?.rightChild.key,
+                                    ?.rightChild.payload,
+                                    ?.rightChild.leftChild,
+                                    ?.rightChild.rightChild)
 
 
 mytree _ BinarySearchTree()

@@ -8,7 +8,7 @@ c_ Queue:
         start _ -1
         top _ -1
     
-    ___ __str__
+    ___ -s
         values _ [s..(x) ___ x __ items]
         r_ ' '.j..(values)
     

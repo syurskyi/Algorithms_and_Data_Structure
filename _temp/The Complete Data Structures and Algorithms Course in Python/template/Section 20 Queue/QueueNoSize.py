@@ -5,7 +5,7 @@ c_ Queue:
     ___ -  
         items _    # list
     
-    ___ __str__ 
+    ___ -s 
         values _ [s..(x) ___ x __ items]
         r_ ' '.j..(values)
     

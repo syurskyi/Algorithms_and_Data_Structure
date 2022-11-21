@@ -40,15 +40,15 @@ c_ DisjointSet o..
 	
 		currentNode _ node;
 		
-		_____ currentNode.parentNode __ n.. N..
-			currentNode _ currentNode.parentNode;
+		_____ ?.parentNode __ n.. N..
+			currentNode _ ?.parentNode;
 			
 		root _ currentNode;
 		currentNode _ node;
 		
 		_____ currentNode __ n.. root:
-			temp _ currentNode.parentNode;
-			currentNode.parentNode _ root;
+			temp _ ?.parentNode;
+			?.parentNode _ root;
 			currentNode _ temp;
 			
 		r_ root.nodeId;

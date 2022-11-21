@@ -6,7 +6,7 @@ c_ Stack:
     ___ -
         list _    # list
     
-    ___ __str__
+    ___ -s
         values _ list.reverse()
         values _ [s..(x) ___ x __ list]
         r_ '\n'.j..(values)

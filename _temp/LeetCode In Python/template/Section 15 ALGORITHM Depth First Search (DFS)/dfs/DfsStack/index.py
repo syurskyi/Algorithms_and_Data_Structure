@@ -20,7 +20,7 @@ c_ Graph:
 
             __(cur n.. __ visited
                 print(cur, end_" ")
-                visited.add(cur)
+                ?.a..cur)
 
             ___ vertex __ graph[cur]:
                 __(vertex n.. __ visited

@@ -8,7 +8,7 @@
 # Q-1. What will be the output of the following code block?
 
 init_tuple _ ()
-print (init_tuple.__len__())
+print (init_tuple.-l())
 # A. None
 # B.  1
 # C. 0
@@ -77,7 +77,7 @@ print(result)
 # Q-7. What will be the output of the following code block?
 
 l _ [1, 2, 3]
-init_tuple _ ('Python',) * (l.__len__() - l[::-1][0])
+init_tuple _ ('Python',) * (l.-l() - l[::-1][0])
 
 print(init_tuple)
 # A. ()

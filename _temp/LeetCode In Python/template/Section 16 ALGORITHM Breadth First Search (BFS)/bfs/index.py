@@ -16,7 +16,7 @@ c_ Graph:
         queue _    # list
         queue.a..(s)
 
-        visited.add(s)
+        ?.a..s)
 
         _____ queue:
             u _ queue.p.. 0)
@@ -25,7 +25,7 @@ c_ Graph:
             ___ v __ graph[u]:
                 __ v n.. __ visited:
                     queue.a..(v)
-                    visited.add(v)
+                    ?.a..v)
 
 
 g _ Graph()

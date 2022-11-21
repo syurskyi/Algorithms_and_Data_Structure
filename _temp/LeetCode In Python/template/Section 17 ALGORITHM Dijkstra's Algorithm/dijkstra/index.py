@@ -16,7 +16,7 @@ c_ Solution
             cur_dist, u _ heapq.heappop(min_heap)
             __ u __ visited:
                 c..
-            visited.add(u)
+            ?.a..u)
             __ l..(visited) __ N:
                 r_ cur_dist
 

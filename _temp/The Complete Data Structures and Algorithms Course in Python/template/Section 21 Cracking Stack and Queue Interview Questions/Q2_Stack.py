@@ -8,7 +8,7 @@ c_ Node(
         ? _ ?
         next _ next
     
-    ___ __str__ 
+    ___ -s 
         string _ s..(value)
         __ next:
             string +_ ',' + s..(next)

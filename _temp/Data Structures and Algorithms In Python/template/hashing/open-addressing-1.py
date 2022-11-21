@@ -15,7 +15,7 @@ c_ studentRecord:
     ___ set_student_idi
         studentId _ i
         
-    ___ __str__ 
+    ___ -s 
         r_ s..(studentId) + " "  + studentName 
 
 

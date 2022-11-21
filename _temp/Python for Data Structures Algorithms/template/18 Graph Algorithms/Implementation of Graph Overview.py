@@ -24,7 +24,7 @@ c_ Node:
         visit_state _ State.unvisited
         adjacent _ OrderedDict()  # key = node, val = weight
 
-    ___ __str__ 
+    ___ -s 
         r_ s..(num)
 
 # Then finally the Graph:

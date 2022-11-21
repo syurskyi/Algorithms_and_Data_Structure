@@ -37,7 +37,7 @@ c_ Stack(
   ___ -
     top _ N..
   
-  ___ __str__
+  ___ -s
     r_ s..(top)
   
   ___ push item
@@ -54,7 +54,7 @@ c_ current(
   ___ -  data_None, next_None
     data, next _ data, next
   
-  ___ __str__
+  ___ -s
     r_ s..  ___ data) + ',' + s..  ___ next)
 
 ______ unittest

@@ -8,7 +8,7 @@ c_ PlateStack(
         capacity _ capacity
         stacks _    # list
     
-    ___ __str__ 
+    ___ -s 
         r_ stacks
     
     ___ push item

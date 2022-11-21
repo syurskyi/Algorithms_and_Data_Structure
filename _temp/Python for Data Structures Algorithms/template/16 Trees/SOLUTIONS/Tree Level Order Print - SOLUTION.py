@@ -38,12 +38,12 @@ ___ levelOrderPrint(tree
     _____ l..(nodes)!_0:
         currentNode_nodes.popleft()
         currentCount-_1
-        print currentNode.v..,
-        __ currentNode.left:
-            nodes.a..(currentNode.left)
+        print ?.v..,
+        __ ?.left:
+            nodes.a..(?.left)
             nextCount+_1
-        __ currentNode.right:
-            nodes.a..(currentNode.right)
+        __ ?.right:
+            nodes.a..(?.right)
             nextCount+_1
         __ currentCount__0:
             #finished printing current level

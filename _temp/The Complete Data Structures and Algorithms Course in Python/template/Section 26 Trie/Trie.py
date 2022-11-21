@@ -25,12 +25,12 @@ c_ Trie:
     ___ searchString word
         currentNode _ root
         ___ i __ word:
-            node _ currentNode.children.get(i)
+            node _ ?.children.get(i)
             __ node __ N..
                 r_ F..
             currentNode _ node
 
-        __ currentNode.endOfString __ T..:
+        __ ?.endOfString __ T..:
             r_ T..
         ____
             r_ F..
@@ -41,19 +41,19 @@ ___ deleteString(root, word, index
     currentNode _ root.children.get(ch)
     canThisNodeBeDeleted _ F..
 
-    __ l..(currentNode.children) > 1:
+    __ l..(?.children) > 1:
         deleteString(currentNode, word, index+1)
         r_ F..
     
     __ index __ l..(word) - 1:
-        __ l..(currentNode.children) >_ 1:
-            currentNode.endOfString _ F..
+        __ l..(?.children) >_ 1:
+            ?.endOfString _ F..
             r_ F..
         ____
             root.children.p.. ch)
             r_ T..
     
-    __ currentNode.endOfString __ T..:
+    __ ?.endOfString __ T..:
         deleteString(currentNode, word, index+1)
         r_ F..
 

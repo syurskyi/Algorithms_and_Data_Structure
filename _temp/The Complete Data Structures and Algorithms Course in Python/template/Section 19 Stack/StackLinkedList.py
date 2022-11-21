@@ -12,15 +12,15 @@ c_ LinkedList
     
     ___ -i.. 
         curNode _ ?
-        _____ curNode:
-            yield curNode
+        _____ ?
+            y.. ?
             c.. _ ?.n..
 
 c_ Stack:
     ___ -  
         LinkedList _ LinkedList()
     
-    ___ __str__ 
+    ___ -s 
         values _ [s..(x.value) ___ x __ LinkedList]
         r_ '\n'.j..(values)
     

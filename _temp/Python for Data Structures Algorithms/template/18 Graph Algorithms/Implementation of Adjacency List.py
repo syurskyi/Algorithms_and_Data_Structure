@@ -17,7 +17,7 @@ c_ Vertex:
     ___ addNeighbornbr,weight_0
         connectedTo[nbr] _ weight
 
-    ___ __str__ 
+    ___ -s 
         r_ s..(id) + ' connectedTo: ' + s..([x.id ___ x __ connectedTo])
 
     ___ getConnections 

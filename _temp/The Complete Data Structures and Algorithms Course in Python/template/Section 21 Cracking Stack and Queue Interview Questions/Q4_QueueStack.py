@@ -7,7 +7,7 @@ c_ Stack(
   ___ -  
     list _    # list
   
-  ___ __len__ 
+  ___ -l 
     r_ l..(list)
   
   ___ push item

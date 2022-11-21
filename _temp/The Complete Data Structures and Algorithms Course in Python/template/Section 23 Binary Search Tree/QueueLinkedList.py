@@ -7,8 +7,8 @@ c_ Node:
         ? _ ?
         n.. _ N..
     
-    ___ __str__ 
-        r_ s..(value)
+    ___ -s 
+        r_ s.. ?
 
 c_ LinkedList
     ___ -  
@@ -21,7 +21,7 @@ c_ Queue:
     ___ -  
         linkedList _ LinkedList()
     
-    ___ __str__ 
+    ___ -s 
         values _ [s..(x) ___ x __ linkedList]
         r_ ' '.j..(values)
     
