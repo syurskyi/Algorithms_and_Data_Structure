@@ -36,7 +36,7 @@ ___ clone(node
 		____
 			new_node _ Node(?.v..,    # list)
 
-		neighbors _ new_node.neighbors
+		neighbors _ ?.neighbors
 
 		visited[cur] _ new_node
 

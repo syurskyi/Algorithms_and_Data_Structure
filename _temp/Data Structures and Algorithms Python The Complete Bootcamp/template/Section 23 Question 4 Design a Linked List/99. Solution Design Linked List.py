@@ -31,7 +31,7 @@ c_ MyLinkedList:
             h.. _ ?
             tail _ new_node
         ____
-            new_node.n.. _ head
+            ?.n.. _ head
             ?.p.. _ new_node
             h.. _ ?
 
@@ -44,8 +44,8 @@ c_ MyLinkedList:
             h.. _ ?
             tail _ new_node
         ____
-            new_node.p.. _ tail
-            tail.n.. _ new_node
+            ?.p.. _ tail
+            ?.n.. _ new_node
             tail _ new_node
 
         size +_ 1
@@ -65,10 +65,10 @@ c_ MyLinkedList:
 
             new_node _ ListNode(val)
 
-            new_node.n.. _ ?.n..
+            ?.n.. _ ?.n..
             ?.n...prev _ new_node
             ?.n.. _ new_node
-            new_node.p.. _ cur
+            ?.p.. _ cur
 
             size +_ 1
 
@@ -86,7 +86,7 @@ c_ MyLinkedList:
             __ size __ 0:
                 t.. _ N..
         ____ index __ size - 1:
-            cur _ tail.p..
+            cur _ ?.p..
             __ cur:
                 ?.n.. _ N..
             t.. _ ?.p..
