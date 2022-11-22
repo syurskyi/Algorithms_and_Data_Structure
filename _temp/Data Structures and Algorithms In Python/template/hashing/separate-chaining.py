@@ -19,7 +19,7 @@ c_ studentRecord:
 
 ##################################################################
     
-c_ Node:
+c_ Node
     ___ - value
         info _ value 
         link _ N.. 

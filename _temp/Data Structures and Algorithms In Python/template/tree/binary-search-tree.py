@@ -4,7 +4,7 @@
 c_ TreeEmptyError E..
     p..
 
-c_ Node:
+c_ Node
     ___ - value
         info _ value 
         lchild _ N..

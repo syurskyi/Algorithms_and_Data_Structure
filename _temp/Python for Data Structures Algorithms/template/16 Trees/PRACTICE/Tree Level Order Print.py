@@ -15,7 +15,7 @@
 #
 # Fill out your solution below:
 
-c_ Node:
+c_ Node
     ___ -  val_None
         left _ N..
         right _ N..

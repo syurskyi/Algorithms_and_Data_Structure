@@ -24,7 +24,7 @@
 # the next level by counting the number of children of the nodes in the current level. Understanding the code is easier
 # than its explanation:
 
-c_ Node:
+c_ Node
     ___ -  val_None
         left _ N..
         right _ N..

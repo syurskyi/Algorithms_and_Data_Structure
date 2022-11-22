@@ -17,7 +17,7 @@ c_ State(Enum
 
 ____ collections ______ OrderedDict
 
-c_ Node:
+c_ Node
 
     ___ -  num
         num _ num

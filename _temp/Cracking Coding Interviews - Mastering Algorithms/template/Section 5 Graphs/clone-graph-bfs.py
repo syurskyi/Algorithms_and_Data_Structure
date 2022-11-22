@@ -1,4 +1,4 @@
-c_ Node:
+c_ Node
 	___ -  val, neighbors
 		val _ val
 		neighbors _ neighbors

@@ -25,7 +25,7 @@
 ____ string ______ ascii_lowercase
 ______ copy
 
-c_ Node:
+c_ Node
 	___ -  word, path
 		word _ word
 		path _ path

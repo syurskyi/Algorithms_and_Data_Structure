@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-c_ Node:
+c_ Node
     ___ -  data
         l _ N..
         r _ N..

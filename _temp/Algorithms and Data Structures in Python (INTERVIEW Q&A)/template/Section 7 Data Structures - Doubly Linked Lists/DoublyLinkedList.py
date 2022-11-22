@@ -1,51 +1,51 @@
 
-class Node:
+c_ Node
 
-    ? ? __init__(self, data):
-        self.data _ data
-        self.next _ None
-        self.previous _ None
+    ? ? -  data
+        ? _ ?
+        next _ N..
+        previous _ N..
 
 
-class DoublyLinkedList:
+c_ DoublyLinkedList:
 
-    ? ? __init__(self):
-        self.head _ None
-        self.tail _ None
+    ? ? - 
+        head _ N..
+        tail _ N..
 
     # this operation inserts items at the end of the linked list
     # so we have to manipulate the tail node in O(1) running time
-    ? ? insert(self, data):
+    ? ? insert data
 
-        new_node _ Node(data)
+        new_node _ ? ?
 
         # when the list is empty
-        __ self.head is None:
-            self.head _ new_node
-            self.tail _ new_node
+        __ head __ N..:
+            ? _ ?
+            tail _ new_node
         # there is at least 1 item in the data structure
         # we keep inserting items at the end of the linked list
         ____
-            new_node.previous _ self.tail
-            self.tail.next _ new_node
-            self.tail _ new_node
+            new_node.previous _ tail
+            tail.next _ new_node
+            tail _ new_node
 
     # we can traverse a doubly linked list in both directions
-    ? ? traverse_forward(self):
+    ? ? traverse_forward
 
-        actual_node _ self.head
+        actual_node _ head
 
-        _____ actual_node is not None:
-            print("%d" % actual_node.data)
-            actual_node _ actual_node.next
+        _____ ? __ n.. N..
+            print("%d" % ?.data)
+            actual_node _ ?.next
 
-    ? ? traverse_backward(self):
+    ? ? traverse_backward
 
-        actual_node _ self.tail
+        actual_node _ tail
 
-        _____ actual_node is not None:
-            print("%d" % actual_node.data)
-            actual_node _ actual_node.previous
+        _____ ? __ n.. N..
+            print("%d" % ?.data)
+            actual_node _ ?.previous
 
 
 __ _____ __ ____

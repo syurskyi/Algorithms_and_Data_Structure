@@ -29,7 +29,7 @@ sort_check(tree_vals)
 # the current value as the new max to our left child and send the min as it is without changing. And to the right child,
 # we send the current value as the new min and send the max without changing.
 
-c_ Node:
+c_ Node
     ___ -  k, val
         key _ k
         value _ val

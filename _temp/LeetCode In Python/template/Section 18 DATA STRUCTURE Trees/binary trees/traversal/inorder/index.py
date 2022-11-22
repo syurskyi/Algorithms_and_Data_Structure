@@ -1,6 +1,6 @@
 
 
-c_ Node:
+c_ Node
     ___ -  value
         left _ N..
         right _ N..

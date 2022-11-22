@@ -1,7 +1,7 @@
 # Copyright (C) Deepali Srivastava - All Rights Reserved
 # This code is part of DSA course available on CourseGalaxy.com  
 
-c_ Node:
+c_ Node
     ___ - value
         info _ value
         lchild _ N..
