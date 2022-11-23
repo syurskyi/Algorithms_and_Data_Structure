@@ -3,7 +3,7 @@ ___ insertionsort(A):
         value _ A[i]
         position _ i
 
-        while position > 0 and A[position - 1] > value:
+        _____ position > 0 and A[position - 1] > value:
             A[position] _ A[position-1]
             position _ position - 1
     A[position] _ value

@@ -17,7 +17,7 @@ c_ Graph:
 
     ___ DFS u, visited
         ?.a..u)
-        print(u, end_' ')
+        print(u, e.._' ')
 
         ___ v __ graph[u]:
             __ v n.. __ visited:

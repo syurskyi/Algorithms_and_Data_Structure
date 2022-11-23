@@ -16,28 +16,28 @@ c_ ArrayHeap:
 
     ___ maxh
         __ _currentsize __ 0:
-            r_ Empty('Heap is empty')
+            r_ ? 'Heap is empty')
         r_ _data[1]
 
     ___ insert e
         __ _currentsize __ _maxsize:
-            r_ Empty('No Space')
+            r_ ? 'No Space')
         _currentsize +_ 1
         i _ _currentsize
-        while i!_ 1 and e > _data[i//2]:
+        _____ i!_ 1 and e > _data[i//2]:
             _data[i] _ _data[i//2]
             i _ i // 2
         _data[i] _ e
 
     ___ deletemax
         __ _currentsize __ 0:
-            r_ Empty('Heap is Empty')
+            r_ ? 'Heap is Empty')
         x _ _data[1]
         y _ _data[_currentsize]
         _currentsize -_ 1
         i _ 1
         ci _ 2
-        while ci <_ _currentsize:
+        _____ ci <_ _currentsize:
             __ ci < _currentsize and _data[ci] < _data[ci+1]:
                 ci +_ 1
             __ y >_ _data[ci]:
@@ -49,12 +49,12 @@ c_ ArrayHeap:
 
 
 h _ ArrayHeap()
-h.insert(25)
-h.insert(14)
-h.insert(2)
-h.insert(20)
-h.insert(10)
-h.insert(12)
+h.i.. (25)
+h.i.. (14)
+h.i.. (2)
+h.i.. (20)
+h.i.. (10)
+h.i.. (12)
 print(h._data)
 h.deletemax()
 print(h._data)

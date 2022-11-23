@@ -65,7 +65,7 @@ c_ HashTable:
     ___ display_table 
     
         ___ i __ r..(m
-            print("[",end_''); print(i,end_''); print("]",end_'');
+            print("[",e.._''); print(i,e.._''); print("]",e.._'');
 
             __ array[i] __ n.. N.. ___ array[i].get_student_id() !_ -1:
                 print(array[i])

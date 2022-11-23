@@ -11,21 +11,21 @@ ___ mergesort(A):
         i _ 0
         j _ 0
         k _ 0
-        while i < l..(left) and j < l..(right):
+        _____ i < l..(left) and j < l..(right):
             __ left[i] < right[j]:
                 A[k] _ left[i]
                 i _ i + 1
-            else:
+            ____
                 A[k] _ right[j]
                 j _ j + 1
             k _ k + 1
 
-        while i < l..(left):
+        _____ i < l..(left):
             A[k] _ left[i]
             i _ i + 1
             k _ k + 1
 
-        while j < l..(right):
+        _____ j < l..(right):
             A[k] _ right[j]
             j _ j + 1
             k _ k + 1

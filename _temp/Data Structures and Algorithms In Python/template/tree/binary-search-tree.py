@@ -197,7 +197,7 @@ c_ BinarySearchTree:
         print()
 
         ___ i __ r..(level
-            print("    ", end_'')
+            print("    ", e.._'')
         print(?.i..)
         _display(?.lchild, level+1) 
         

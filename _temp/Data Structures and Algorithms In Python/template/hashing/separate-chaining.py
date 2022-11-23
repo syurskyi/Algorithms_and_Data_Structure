@@ -36,7 +36,7 @@ c_ SingleLinkedList:
             r_
         p _ start 
         _____ p __ n.. N..
-            print(?.i.. , " ", end_'')
+            print(?.i.. , " ", e.._'')
             p _ ?.l.. 
         print()
     

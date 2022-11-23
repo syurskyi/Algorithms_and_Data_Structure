@@ -3,52 +3,52 @@ ____ e.. _______ E..
 c_ LinkedQueue:
 
     c_ Node:
-        __slots__ _ '_element', '_next'
+         - s _ '_element', '_next'
 
-        ___ -(self, element, next):
-            _element _ element
-            _next _ next
+        ___ -  element, next):
+            _? _ ?
+            _? _ ?
 
     ___ -
-        _head _ None
-        _tail _ None
+        _head _ N..
+        _tail _ N..
         _size _ 0
 
     ___ -l
-        r_ _size
+        r_ ?
 
     ___ is_empty
-        r_ _size
+        r_ ?
 
     ___ enqueue e
-        newNode _ _Node(e, None)
+        newNode _  ? ? N..)
         __ ?
             _head _ newNode
-        else:
-            _tail._next _ newNode
+        ____
+            _tail._n.. _ newNode
         _tail _ newNode
-        _size _ _size + 1
+        _? _ ? + 1
 
     ___ dequeue
         __ ?
-            r_ Empty('Queue is Empty')
+            r_ ? 'Queue is Empty'
         value _ _head._element
-        _head _ _head._next
+        _head _ _head._n..
         _size _ _size - 1
         __ ?
-            _tail _ None
-        r_ value
+            _tail _ N..
+        r_ ?
 
     ___ first
         __ ?
-            r_ Empty('Queue is Empty')
+            r_ ? 'Queue is Empty'
         r_ _head._element
 
     ___ display
         temp _ _head
-        while temp:
-            print(temp._element, end_'-->')
-            temp _ temp._next
+        _____ temp:
+            print(temp._e.. e.._'-->')
+            temp _ temp._n..
         print()
 
 

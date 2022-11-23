@@ -13,7 +13,7 @@ c_ LRUCache:
             value _ m[key]
             deq.remove(key)
             deq.a..(key)
-            r_ value
+            r_ ?
         ____
             r_ -1
 

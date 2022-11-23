@@ -1,18 +1,18 @@
 _______ numpy as np
 
 c_ Graph:
-    ___ - (self, vertices):
+    ___ -   vertices):
         _adjMat _ np.zeros((vertices, vertices))
         _vertices _ vertices
         _visited _ [0] * vertices
 
-    ___ insert_edge(self, u, v, w_1):
+    ___ insert_edge  u, v, w_1):
         _adjMat[u][v] _ w
 
-    ___ delete_edge(self, u, v):
+    ___ delete_edge  u, v):
         _adjMat[u][v] _ 0
 
-    ___ get_edge(self, u, v):
+    ___ get_edge  u, v):
         r_ _adjMat[u][v]
 
     ___ vertices_count
@@ -22,30 +22,30 @@ c_ Graph:
         count _ 0
         for i in range(_vertices):
             for j in range(_vertices):
-                __ not _adjMat[i][j] __ 0:
+                __ n.. _adjMat[i][j] __ 0:
                     count +_ 1
         r_ count
 
-    ___ indegree(self, u):
+    ___ indegree  u):
         count _ 0
         for i in range(_vertices):
-            __ not _adjMat[i][u] __ 0:
+            __ n.. _adjMat[i][u] __ 0:
                 count +_ 1
         r_ count
 
-    ___ outdegree(self, u):
+    ___ outdegree  u):
         count _ 0
         for i in range(_vertices):
-            __ not _adjMat[u][i] __ 0:
+            __ n.. _adjMat[u][i] __ 0:
                 count +_ 1
         r_ count
 
     ___ display
         print(_adjMat)
 
-    ___ DFS(self, source):
+    ___ DFS  source):
         __ _visited[source] __ 0:
-            print(source, end_' - ')
+            print(source, e.._' - ')
             _visited[source] _ 1
             for j in range(_vertices):
                 __ _adjMat[source][j] __ 1 and visited[j] __ 0:

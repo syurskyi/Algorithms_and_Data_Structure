@@ -1,2 +1,2 @@
-c_ Empty(Exception):
-    pass
+c_ Empty E..
+    p..

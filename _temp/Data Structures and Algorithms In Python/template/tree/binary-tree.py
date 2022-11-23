@@ -27,7 +27,7 @@ c_ BinaryTree:
         print()
 
         ___ i __ r..(level
-            print("    ", end_'')
+            print("    ", e.._'')
         print(?.i..)
         _display(?.lchild, level+1)
         
@@ -74,7 +74,7 @@ c_ BinaryTree:
 
         _____ l..(qu)!_0:
             p _ qu.popleft()
-            print(?.i.. + " ",end_'')
+            print(?.i.. + " ",e.._'')
             __ ?.lchild __ n.. N..
                 qu.a..(?.lchild)
             __ ?.rchild __ n.. N..
