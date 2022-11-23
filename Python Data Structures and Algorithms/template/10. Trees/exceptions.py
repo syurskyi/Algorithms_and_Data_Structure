@@ -1,2 +1,2 @@
-class Empty(Exception):
-    pass
+# c_ Empty E..
+#     p..

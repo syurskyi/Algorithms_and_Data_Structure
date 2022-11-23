@@ -1,99 +1,99 @@
-from queuelinked import LinkedQueue
-
-class BinarySearchTree:
-    class Node:
-        __slots__ = '_etement', '_teft', '_right'
-
-        def __init__ (self, element, left=None, right=None):
-            self._element = element
-            self._left = left
-            self._right = right
-
-        def __init__(self):
-            self. root = None
-            self._size = 0
-
-        def insert(self, e):
-            troot = self._root
-            ttroot = None
-            while troot:
-                ttroot = troot
-                if e < troot._element:
-                    troot = troot._left
-                elif e > troot._element:
-                    troot = troot._right
-            node = self._Node(e)
-            if self._root:
-                if e < ttroot._element:
-                    ttroot._left = node
-                else :
-                    ttroot._right = node
-            else:
-                self._root = node
-
-        def recurinsert(self, troot, e):
-            if troot == None:
-                node = self._Node(e)
-                return node
-
-            if e < troot._element:
-                troot._left = self.recurinsert(troot._left, e)
-            elif e > troot._element:
-                troot._right = self.recurinsert(troot._right, e)
-            return troot
-
-        def search(self, k):
-            troot = self._root
-            while troot:
-                if k < troot._element:
-                    troot = troot._left
-                elif k > troot._element:
-                    troot = troot._right
-                else :
-                    return True
-            return False
-
-        def levelorder(self):
-            Q = LinkedQueue()
-            t = self._root
-            print(t._element,end='--')
-            Q.enqueue(t)
-            while not Q.is_empty():
-                t = Q. dequeue()
-                if t._left:
-                    print(t._left._element, end='--')
-                    Q.enqueue(t._left)
-                if t._right:
-                    print(t._right._element, end='--')
-                    Q.enqueue(t._right)
-
-        def inorder(self, troot):
-            if troot:
-                self.inorder(troot._left)
-                print(troot._element, end='--')
-                self.inorder(troot._right)
-
-        def preorder(self,troot):
-            if troot:
-                print(troot._element,end='--')
-                self.preorder(troot._left)
-                self.preorder(troot._right)
-
-        def postorder(self, troot):
-            if troot:
-                self.postorder(troot._left)
-                self.postorder(troot._right)
-                print(troot._element, end='--')
-
-
-B = BinarySearchTree()
-
-B._root = B.recurinsert( None , 70 )
-B.recurinsert(B._root, 30)
-B.recurinsert(B._root, 90)
-B.recurinsert(B._root, 40)
-B.recurinsert(B._root, 50)
-B.recurinsert(B._root, 110)
-B.inorder(B._root)
-print()
-print(B.search( 25 ))
+# ____ ? _______ ?
+#
+#
+# c_ BinarySearchTree
+#     c_ _Node
+#          - s _ '_etement' '_teft' '_right'
+#
+#         ___ -  element, left_N.. right_N..
+#             _? _ ?
+#             _? _ ?
+#             _r.. _ ?
+#
+#     ___ -
+#          root _ N..
+#         _size _ 0
+#
+#     ___ insert e
+#         troot _ _r..
+#         ttroot _ N..
+#         _____ ?
+#             ? _ ?
+#             __ e < ?._e..
+#                 t.. _ ?._l..
+#             ____ ? > ?._e..
+#                 t.. _ ?._r..
+#         node _ ? ?
+#         __ _root
+#             __ ? < ?._e..
+#                 ?._l.. _ ?
+#             ____
+#                 ?._r.. _ ?
+#         ____
+#             _r.. _ ?
+#
+#     ___ recurinsert  troot e
+#         __ troot __ N..
+#             node _ ? ?
+#             r_ ?
+#         __ ? < ?._e..
+#             ?._left _ ? ?._l.. ?
+#         ____ ? > ?._e..
+#             ?._r.. _ ? ?._r.. ?
+#         r_ ?
+#
+#     ___ search  k
+#         troot _ ?
+#         _____ ?
+#             __ k < ?._e..
+#                 t.. _ ?._l..
+#             ____ ? > ?._e..
+#                 t.. _ ?._r..
+#             ____
+#                 r_ T..
+#         r_ F..
+#
+#     ___ levelorder
+#         Q _ ?
+#         t _ _r..
+#         print t._e.. e.._'--'
+#         ?.e.. ?
+#         _____ n.. ?.iss
+#             t _ ?.d..
+#             __ ?._l..
+#                 print ?._left._e.. e.._'--'
+#                 ?.e.. ?._l..
+#             __ ?._r..
+#                 print ?._r__._e.. e.._'--'
+#                 ?.e.. ?._r..
+#
+#     ___ inorder  troot
+#         __ ?
+#             ? ?._l..
+#             print ?._e.. e.._'--'
+#             ? ?._r..
+#
+#     ___ preorder troot
+#         __ ?
+#             print ?._e..e.._'--'
+#             ? ?._l..
+#             ? ?._r..
+#
+#     ___ postorder  troot
+#         __ ?
+#             ? ?._l..
+#             ? ?._r..
+#             print(?._e.. e.._'--'
+#
+#
+# B _ BinarySearchTree()
+#
+# B._root _ B.recurinsert( N.. , 70 )
+# B.recurinsert(B._root, 30)
+# B.recurinsert(B._root, 90)
+# B.recurinsert(B._root, 40)
+# B.recurinsert(B._root, 50)
+# B.recurinsert(B._root, 110)
+# B.inorder(B._root)
+# print()
+# print(B.search( 25 ))
