@@ -30,7 +30,7 @@ c_ Heap o..
 
         ___ i __ r..(0, currentPosition + 1
             temp _ heap[0]
-            print("%d " % temp)
+            print("%d " _ temp)
             heap[0] _ heap[currentPosition - i]
             heap[currentPosition - i] _ temp
             fixDown(0, currentPosition - i - 1)

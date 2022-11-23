@@ -37,10 +37,10 @@ c_ BinaryTree(
             traversal.a..(queue.peek())
             node _ queue.dequeue()
 
-            __ node.left:
-                queue.enqueue(node.left)
-            __ node.right:
-                queue.enqueue(node.right)
+            __ ?.left:
+                queue.enqueue(?.left)
+            __ ?.right:
+                queue.enqueue(?.right)
 
         r_ traversal
 

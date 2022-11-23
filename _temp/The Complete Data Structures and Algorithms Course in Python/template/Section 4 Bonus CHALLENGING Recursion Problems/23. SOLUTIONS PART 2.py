@@ -30,7 +30,7 @@ ___ someRecursive(arr, cb
 
 
 ___ isOdd(num
-    __ num % 2 __ 0:
+    __ num _ 2 __ 0:
         r_ F..
     ____
         r_ T..

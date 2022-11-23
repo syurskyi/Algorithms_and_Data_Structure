@@ -34,8 +34,8 @@ c_ Codec:
                 r_ N..
             node _ TreeNode(i..(val))
 
-            node.left _ dfs()
-            node.right _ dfs()
+            ?.left _ dfs()
+            ?.right _ dfs()
 
             r_ node
 

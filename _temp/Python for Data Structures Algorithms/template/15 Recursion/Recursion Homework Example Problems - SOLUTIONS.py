@@ -38,7 +38,7 @@ ___ sum_func(n
 
     # Recursion
     ____
-        r_ n%10 + sum_func(n/10)
+        r_ n_10 + sum_func(n/10)
 
 sum_func(4321)
 # 10

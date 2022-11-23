@@ -39,22 +39,22 @@ c_ Node
 ___ tree_max(node
     __ n.. node:
         r_ float("-inf")
-    maxleft  _ tree_max(node.left)
-    maxright _ tree_max(node.right)
-    r_ m__(node.key, maxleft, maxright)
+    maxleft  _ tree_max(?.left)
+    maxright _ tree_max(?.right)
+    r_ m__(?.key, maxleft, maxright)
 
 ___ tree_min(node
     __ n.. node:
         r_ float("inf")
-    minleft  _ tree_min(node.left)
-    minright _ tree_min(node.right)
-    r_ min(node.key, minleft, minright)
+    minleft  _ tree_min(?.left)
+    minright _ tree_min(?.right)
+    r_ min(?.key, minleft, minright)
 
 ___ verify(node
     __ n.. node:
         r_ T..
-    __ (tree_max(node.left) <_ node.key <_ tree_min(node.right) ___
-        verify(node.left) ___ verify(node.right
+    __ (tree_max(?.left) <_ ?.key <_ tree_min(?.right) ___
+        verify(?.left) ___ verify(?.right
         r_ T..
     ____
         r_ F..

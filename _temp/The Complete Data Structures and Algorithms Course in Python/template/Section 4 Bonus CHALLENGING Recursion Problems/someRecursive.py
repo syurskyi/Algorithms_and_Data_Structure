@@ -11,7 +11,7 @@ ___ someRecursive(arr, cb
     r_ T..
 
 ___ isOdd(num
-    __ num%2__0:
+    __ num_2__0:
         r_ F..
     ____
         r_ T..

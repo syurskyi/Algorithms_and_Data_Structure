@@ -23,14 +23,14 @@ c_ TST o..
         __ node __ N..
             node _ Node(c)
 
-        __ c < node.character:
-            node.leftNode _ putItem(node.leftNode, key, value, index)
-        ____ c > node.character:
-            node.rightNode _ putItem(node.rightNode, key, value, index)
+        __ c < ?.character:
+            ?.leftNode _ putItem(?.leftNode, key, value, index)
+        ____ c > ?.character:
+            ?.rightNode _ putItem(?.rightNode, key, value, index)
         ____ index < l..(key) - 1:
-            node.middleNode _ putItem(node.middleNode, key, value, index + 1)
+            ?.middleNode _ putItem(?.middleNode, key, value, index + 1)
         ____
-            node.value _ value
+            ?.value _ value
 
         r_ node;
 
@@ -41,7 +41,7 @@ c_ TST o..
         __ node __ N..
             r_ -1
 
-        r_ node.value
+        r_ ?.value
 
     ___ getItem node, key, index
 
@@ -50,12 +50,12 @@ c_ TST o..
 
         c _ key[index]
 
-        __ c < node.character:
-            r_ getItem(node.leftNode, key, index)
-        ____ c > node.character:
-            r_ getItem(node.rightNode, key, index)
+        __ c < ?.character:
+            r_ getItem(?.leftNode, key, index)
+        ____ c > ?.character:
+            r_ getItem(?.rightNode, key, index)
         ____ index < l..(key) - 1:
-            r_ getItem(node.middleNode, key, index + 1)
+            r_ getItem(?.middleNode, key, index + 1)
         ____
             r_ node
 

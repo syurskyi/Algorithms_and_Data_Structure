@@ -20,16 +20,16 @@ c_ binTree:
             _add(data, root)
 
     ___ _add data, node
-        __(data < node.v
-            __(node.l !_ N..
-                _add(data, node.l)
+        __(data < ?.v
+            __(?.l !_ N..
+                _add(data, ?.l)
             ____
-                node.l _ ? ?
+                ?.l _ ? ?
         ____
-            __(node.r !_ N..
-                _add(data, node.r)
+            __(?.r !_ N..
+                _add(data, ?.r)
             ____
-                node.r _ ? ?
+                ?.r _ ? ?
 
     ___ findnode data
         __(root !_ N..
@@ -38,12 +38,12 @@ c_ binTree:
             r_ N..
 
     ___ _find data, node
-        __(data __ node.v
+        __(data __ ?.v
             r_ node
-        ____(data < node.v ___ node.l !_ N..
-            _find(data, node.l)
-        ____(data > node.v ___ node.r !_ N..
-            _find(data, node.r)
+        ____(data < ?.v ___ ?.l !_ N..
+            _find(data, ?.l)
+        ____(data > ?.v ___ ?.r !_ N..
+            _find(data, ?.r)
 
     ___ deleteTree 
         root _ N..
@@ -54,9 +54,9 @@ c_ binTree:
 
     ___ _printTree node
         __(node !_ N..
-            _printTree(node.l)
-            print s..(node.v) + ' '
-            _printTree(node.r)
+            _printTree(?.l)
+            print s..(?.v) + ' '
+            _printTree(?.r)
 
 
 

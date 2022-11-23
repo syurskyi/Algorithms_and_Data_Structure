@@ -13,7 +13,7 @@ c_ Graph:
     ___ printSolution 
         print("Edge : Weight")
         ___ s, d, w __ MST:
-            print("%s -> %s: %s" % (s, d, w))
+            print("%s -> %s: %s" _ (s, d, w))
     
     ___ primsAlgo 
         visited _ [0]*vertexNum

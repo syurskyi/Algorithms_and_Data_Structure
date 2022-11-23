@@ -53,8 +53,8 @@ c_ Algorithm o..
 		node _ targetVertex;
 		
 		_____ ? __ n.. N..
-			print("%s " % node.name);
-			node _ node.predecessor;
+			print("%s " _ ?.name);
+			node _ ?.predecessor;
 			
 node1 _ Node("A");
 node2 _ Node("B");

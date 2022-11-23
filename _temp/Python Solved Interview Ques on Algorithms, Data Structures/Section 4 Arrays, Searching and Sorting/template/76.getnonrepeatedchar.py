@@ -14,7 +14,7 @@ ___ getfirstnonrepeated(myarray
 
 	___ ele __ myarray.lower(
 		__ tab[ele] __ 1:
-			print("the first non repeated character is: %s" % (ele))
+			print("the first non repeated character is: %s" _ (ele))
 			r_ ele
 
 	r_

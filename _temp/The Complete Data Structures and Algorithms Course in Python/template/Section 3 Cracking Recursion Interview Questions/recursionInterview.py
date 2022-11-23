@@ -7,7 +7,7 @@ ___ sumofDigits(n
     __ n __ 0:
         r_ 0
     ____
-        r_ i..(n%10) + sumofDigits(i..(n/10))
+        r_ i..(n_10) + sumofDigits(i..(n/10))
 
 print(sumofDigits(11111))
 
@@ -36,7 +36,7 @@ ___ gcd(a, b
     __ b __ 0:
         r_ a
     ____
-        r_ gcd(b, a%b)
+        r_ gcd(b, a_b)
 
 print(gcd(12,1.2))
 
@@ -45,7 +45,7 @@ ___ binaryToDemical(n
     __ n __ 0:
         r_ 1
     ____
-        r_ n%2 + 10*binaryToDemical(i..(n/2))
+        r_ n_2 + 10*binaryToDemical(i..(n/2))
 
 
 print(binaryToDemical(1))

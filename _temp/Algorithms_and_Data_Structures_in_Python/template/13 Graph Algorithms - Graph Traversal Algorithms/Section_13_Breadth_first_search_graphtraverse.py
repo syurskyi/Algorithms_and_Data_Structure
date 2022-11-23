@@ -19,7 +19,7 @@ c_ BreadthFirstSearch o..
 		_____ queue:
 		
 			actualNode _ queue.p.. 0);
-			print("%s " % actualNode.name);
+			print("%s " _ actualNode.name);
 			
 			___ n __ actualNode.adjacencyList:
 				__ n.. n.visited:

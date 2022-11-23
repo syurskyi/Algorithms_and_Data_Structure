@@ -27,7 +27,7 @@ c_ HashTable:
         n _ 0  
 
     ___ hash1 key
-        r_ (key % m)
+        r_ (key _ m)
 
     ___ rehash new_size
         temp _ HashTable(new_size)
@@ -59,7 +59,7 @@ c_ HashTable:
             __ array[location].get_student_id() __ key:
                 r... InvalidOperationException("Duplicate key")
 
-            location _ (h + i) % m
+            location _ (h + i) _ m
 
             
     ___ next_primex
@@ -69,7 +69,7 @@ c_ HashTable:
       
     ___ is_prime x
         ___ i __ r..(2,x
-            __ x % i __ 0:
+            __ x _ i __ 0:
                 r_ F..
         r_ T..
     
@@ -82,7 +82,7 @@ c_ HashTable:
                 r_ N..
             __ array[location].get_student_id() __ key:
                 r_ array[location]
-            location _ (h + i) % m
+            location _ (h + i) _ m
         r_ N..
     
     ___ display_table 
@@ -110,7 +110,7 @@ c_ HashTable:
                     rehash(next_prime(m//2))
                     print( "New Table Size is : " ,m )
 
-            location _ (h + i) % m
+            location _ (h + i) _ m
         
         
 #################################################################################

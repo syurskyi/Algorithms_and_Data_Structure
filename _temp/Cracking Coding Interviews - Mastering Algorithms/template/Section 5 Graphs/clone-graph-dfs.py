@@ -30,12 +30,12 @@ ___ clone_helper(node, visited
 		r_ visited[node]
 
 	neighbors _    # list
-	new_node _ Node(node.v.., neighbors)
+	new_node _ Node(?.v.., neighbors)
 
 	visited[node] _ new_node
 
-	___ i __ r..(l..(node.neighbors
-		neighbor_node _ clone_helper(node.neighbors[i], visited)
+	___ i __ r..(l..(?.neighbors
+		neighbor_node _ clone_helper(?.neighbors[i], visited)
 		neighbors.a..(neighbor_node)
 
 	r_ new_node
@@ -49,8 +49,8 @@ node2 _ Node(2,    # list)
 node3 _ Node(3,    # list)
 node4 _ Node(4,    # list)
 
-node.neighbors.a..(node2)
-node.neighbors.a..(node4)
+?.neighbors.a..(node2)
+?.neighbors.a..(node4)
 
 node2.neighbors.a..(node)
 node2.neighbors.a..(node3)

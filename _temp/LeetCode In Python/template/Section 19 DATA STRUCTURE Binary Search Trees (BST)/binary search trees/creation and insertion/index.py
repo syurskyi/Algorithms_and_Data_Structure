@@ -12,7 +12,7 @@ ___ i.. (root, node
         root _ node
         r_
 
-    __(root.data < node.data
+    __(root.data < ?.data
         __(root.right __ N..
             root.right _ node
         ____
@@ -26,9 +26,9 @@ ___ i.. (root, node
 
 ___ preorder(node
     __(node __ n.. N..
-        print(node.data)
-        preorder(node.left)
-        preorder(node.right)
+        print(?.data)
+        preorder(?.left)
+        preorder(?.right)
 
 
 #	         5

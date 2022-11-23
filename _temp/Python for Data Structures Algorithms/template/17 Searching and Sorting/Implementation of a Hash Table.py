@@ -61,11 +61,11 @@ c_ HashTable o..
 
     ___ hashfunctionkey,size
         # Remainder Method
-        r_ key%size
+        r_ key_size
 
     ___ rehasholdhash,size
         # For finding next possible positions
-        r_ (oldhash+1)%size
+        r_ (oldhash+1)_size
 
 
     ___ getkey

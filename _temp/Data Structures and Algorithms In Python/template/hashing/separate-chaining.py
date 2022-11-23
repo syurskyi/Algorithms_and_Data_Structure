@@ -87,7 +87,7 @@ c_ HashTable:
         n _ 0  
 
     ___ hash key
-        r_ (key % m)
+        r_ (key _ m)
 
     ___ display_table 
         ___ i __ r..(m

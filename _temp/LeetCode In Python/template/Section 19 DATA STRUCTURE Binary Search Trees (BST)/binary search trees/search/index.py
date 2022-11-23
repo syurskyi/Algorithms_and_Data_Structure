@@ -12,7 +12,7 @@ ___ i.. (root, node
         root _ node
         r_
 
-    __(root.data < node.data
+    __(root.data < ?.data
         __(root.right __ N..
             root.right _ node
         ____
@@ -25,18 +25,18 @@ ___ i.. (root, node
 
 
 ___ search(node, key
-    print("Current Node is: ", node.data)
+    print("Current Node is: ", ?.data)
     __(node __ N..
         print("No node found")
         r_ N..
-    __(node.data __ key
+    __(?.data __ key
         print("Node found !")
         r_ node
 
-    __(node.data < key
-        r_ search(node.right, key)
+    __(?.data < key
+        r_ search(?.right, key)
 
-    r_ search(node.left, key)
+    r_ search(?.left, key)
 
 
 #	           5

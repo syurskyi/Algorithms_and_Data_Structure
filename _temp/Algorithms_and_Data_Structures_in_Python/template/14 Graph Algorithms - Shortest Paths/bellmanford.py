@@ -56,8 +56,8 @@ c_ BellmanFord o..
 			node _ targetVertex;
 			
 			_____ ? __ n.. N..
-				print("%s " % node.name);
-				node _ node.predecessor;
+				print("%s " _ ?.name);
+				node _ ?.predecessor;
 		____
 			print("Negative cycle detected...");
 			

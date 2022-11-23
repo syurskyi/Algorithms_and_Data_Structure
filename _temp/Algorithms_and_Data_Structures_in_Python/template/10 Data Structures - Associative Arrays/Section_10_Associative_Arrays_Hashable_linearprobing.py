@@ -16,7 +16,7 @@ c_ HashTable o..
                 r_
 
             # rehash try to find another slot
-            index _ (index + 1) % size
+            index _ (index + 1) _ size
 
         # insert
         keys[index] _ key
@@ -30,7 +30,7 @@ c_ HashTable o..
             __ keys[index] __ key:
                 r_ values[index]
 
-            index _ (index + 1) % size
+            index _ (index + 1) _ size
 
         # it means the key is not present in the associative array
         r_ N..
@@ -40,7 +40,7 @@ c_ HashTable o..
         ___ pos __ r..(l..(key
             sum _ sum + ord(key[pos])
 
-        r_ sum % size
+        r_ sum _ size
 
 
 __ __name__ __ "__main__":

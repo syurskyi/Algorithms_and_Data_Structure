@@ -29,6 +29,6 @@ target _ 6
 result _ binarySearch(arr, target)
 
 __ result !_ -1:
-    print("Element is present at index %d" % result)
+    print("Element is present at index %d" _ result)
 ____
     print("Element is not present in array")

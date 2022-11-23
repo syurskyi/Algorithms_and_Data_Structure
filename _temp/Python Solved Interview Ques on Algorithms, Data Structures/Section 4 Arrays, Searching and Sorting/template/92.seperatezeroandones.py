@@ -9,11 +9,11 @@ ___ seperateonezero(myarray
                 #print "left:",l
                 #print "right:",r
 		
-                _____(myarray[l] % 2 __ 0 ___ l < r
+                _____(myarray[l] _ 2 __ 0 ___ l < r
 			l +_ 1
                 #print "Found 1",myarray[l],"so move left from",l-1,"to",l
 
-		_____(myarray[r] % 2 __ 1 ___ l < r
+		_____(myarray[r] _ 2 __ 1 ___ l < r
 			r -_ 1
                 #print "Found 0",myarray[r],"so move right from",r+1,"to",r
 

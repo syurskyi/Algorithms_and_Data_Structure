@@ -13,23 +13,23 @@ c_ AVL o..
         root _ N..
 
     ___ remove data
-        __ root:
-            root _ removeNode(data, root)
+        __ root
+            r.. _ ? ? ?
 
     ___ i..  data
-        root _ insertNode(data, root)
+        r.. _ ? ?  ?
 
-    ___ insertNode data, node
+    ___ insertNode data node
 
-        __ n.. node:
+        __ n.. ?
             r_ ? ?
 
-        __ data < node.data:
-            node.leftChild _ insertNode(data, node.leftChild)
+        __ d.. < ?.d..
+            ?.l.. _ ? ?  ?.l..
         ____
-            node.rightChild _ insertNode(data, node.rightChild)
+            ?.r.. _ ? ?  ?.r..
 
-        node.height _ m__(calcHeight(node.leftChild), calcHeight(node.rightChild)) + 1
+        ?.h.. _ m__(calcHeight(?.l.., calcHeight(?.r..)) + 1
 
         r_ settleViolation(data, node)
 
@@ -38,64 +38,64 @@ c_ AVL o..
         __ n.. node:
             r_ node
 
-        __ data < node.data:
-            node.leftChild _ removeNode(data, node.leftChild)
-        ____ data > node.data:
-            node.rightChild _ removeNode(data, node.rightChild)
+        __ data < ?.d..
+            ?.l.. _ ? ? ?.l..
+        ____ data > ?.d..
+            ?.r.. _ ? ? ?.r..
         ____
 
-            __ n.. node.leftChild ___ n.. node.rightChild:
+            __ n.. ?.l.. ___ n.. ?.r..
                 print("Removing a leaf node...")
                 d.. node
                 r_ N..
 
-            __ n.. node.leftChild:
+            __ n.. ?.l..
                 print("Removing a node with a right child...")
-                tempNode _ node.rightChild
+                tempNode _ ?.r..
                 d.. node
                 r_ tempNode
-            ____ n.. node.rightChild:
+            ____ n.. ?.r..
                 print("Removing a node with a left child...")
-                tempNode _ node.leftChild
+                tempNode _ ?.l..
                 d.. node
                 r_ tempNode
 
             print("Removing node with two children...")
-            tempNode _ getPredecessor(node.leftChild);
-            node.data _ tempNode.data;
-            node.leftChild _ removeNode(tempNode.data, node.leftChild);
+            tempNode _ getPredecessor(?.l..;
+            ?.data _ tempNode.data;
+            ?.l.. _ removeNode(tempNode.data, ?.l..;
 
         __ n.. node:
             r_ node;  # if the tree had just a single node
 
-        node.height _ m__(calcHeight(node.leftChild), calcHeight(node.rightChild)) + 1;
+        ?.height _ m__(calcHeight(?.l.., calcHeight(?.r..)) + 1;
 
         balance _ calcBalance(node);
 
         # doubly left heavy situation
-        __ balance > 1 ___ calcBalance(node.leftChild) >_ 0:
+        __ balance > 1 ___ calcBalance(?.l.. >_ 0:
             r_ rotateRight(node);
 
         # left right case
-        __ balance > 1 ___ calcBalance(node.leftChild) < 0:
-            node.leftChild _ rotateLeft(node.leftChild);
+        __ balance > 1 ___ calcBalance(?.l.. < 0:
+            ?.l.. _ rotateLeft(?.l..;
             r_ rotateRight(node);
 
         # right right case
-        __ balance < -1 ___ calcBalance(node.rightChild) <_ 0:
+        __ balance < -1 ___ calcBalance(?.r.. <_ 0:
             r_ rotateLeft(node);
 
         # right left case
-        __ balance < -1 ___ calcBalance(node.rightChild) > 0:
-            node.rightChild _ rotateRight(node.rightChild);
+        __ balance < -1 ___ calcBalance(?.r.. > 0:
+            ?.r.. _ rotateRight(?.r..;
             r_ rotateLeft(node);
 
         r_ node;
 
     ___ getPredecessor node
 
-        __ node.rightChild:
-            r_ getPredecessor(node.rightChild);
+        __ ?.r..
+            r_ getPredecessor(?.r..;
 
         r_ node;
 
@@ -104,24 +104,24 @@ c_ AVL o..
         balance _ calcBalance(node);
 
         # this is the Case I !!!! left-left heavy situation
-        __ balance > 1 ___ data < node.leftChild.data:
+        __ balance > 1 ___ data < ?.l...data:
             print("Left left heavy tree...")
             r_ rotateRight(node);
 
         # this is the Case II right-right !!!!
-        __ balance < -1 ___ data > node.rightChild.data:
+        __ balance < -1 ___ data > ?.r...data:
             print("Right right heavy tree...")
             r_ rotateLeft(node);
 
         # left-right situation
-        __ balance > 1 ___ data > node.leftChild.data:
+        __ balance > 1 ___ data > ?.l...data:
             print("Tree is leaft right heavy...");
-            node.leftChild _ rotateLeft(node.leftChild);
+            ?.l.. _ rotateLeft(?.l..;
             r_ rightRotation(node);
 
         # right-left situation
-        __ balance < -1 ___ data < node.rightChild.data:
-            node.rightChild _ rotateRight(node.rightChild);
+        __ balance < -1 ___ data < ?.r...data:
+            ?.r.. _ rotateRight(?.r..;
             r_ rotateLeft(node);
 
         r_ node;
@@ -131,23 +131,23 @@ c_ AVL o..
         balance _ calcBalance(node);
 
         # case 1  -> left left heavy situation
-        __ balance > 1 ___ data < node.leftChild.data:
+        __ balance > 1 ___ data < ?.l...data:
             print("Left left heavy situation...");
             r_ rotateRight(node);
 
         # case 2 --> right right heavy situation --> single left rotation
-        __ balance < - 1 ___ data > node.rightChild.data:
+        __ balance < - 1 ___ data > ?.r...data:
             print("Right right heavy situation...");
             r_ rotateLeft(node);
 
-        __ balance > 1 ___ data > node.leftChild.data:
+        __ balance > 1 ___ data > ?.l...data:
             print("Left right heavy situation...");
-            node.leftChild _ rotateLeft(node.leftChild);
+            ?.l.. _ rotateLeft(?.l..;
             r_ rotateRight(node);
 
-        __ balance < - 1 ___ data < node.rightChild.data:
+        __ balance < - 1 ___ data < ?.r...data:
             print("Right left heavy situation...");
-            node.rightChild _ rotateRight(node.rightChild);
+            ?.r.. _ rotateRight(?.r..;
             r_ rotateLeft(node);
 
         r_ node;
@@ -157,7 +157,7 @@ c_ AVL o..
         __ n.. node:
             r_ -1;
 
-        r_ node.height;
+        r_ ?.height;
 
     # if it returns value > 1  it means it is a left heavy tree --> right rotation
     #  ......             < -1   right heavy tree -> left rotation
@@ -166,7 +166,7 @@ c_ AVL o..
         __ n.. node:
             r_ 0;
 
-        r_ calcHeight(node.leftChild) - calcHeight(node.rightChild);
+        r_ calcHeight(?.l.. - calcHeight(?.r..;
 
     ___ traverse 
         __ root:
@@ -174,43 +174,43 @@ c_ AVL o..
 
     ___ traverseInorder node
 
-        __ node.leftChild:
-            traverseInorder(node.leftChild);
+        __ ?.l..
+            traverseInorder(?.l..;
 
-        print("%s " % node.data);
+        print("%s " _ ?.data);
 
-        __ node.rightChild:
-            traverseInorder(node.rightChild);
+        __ ?.r..
+            traverseInorder(?.r..;
 
     ___ rotateRight node
 
-        print("Rotating to the right on node ", node.data);
+        print("Rotating to the right on node ", ?.data);
 
-        tempLeftChild _ node.leftChild;
-        t _ tempLeftChild.rightChild;
+        tempLeftChild _ ?.l..;
+        t _ tempLeftChild.r..;
 
-        tempLeftChild.rightChild _ node;
-        node.leftChild _ t;
+        tempLeftChild.r.. _ node;
+        ?.l.. _ t;
 
-        node.height _ m__(calcHeight(node.leftChild), calcHeight(node.rightChild)) + 1;
-        tempLeftChild.height _ m__(calcHeight(tempLeftChild.leftChild),
-                                   calcHeight(tempLeftChild.rightChild)) + 1;
+        ?.height _ m__(calcHeight(?.l.., calcHeight(?.r..)) + 1;
+        tempLeftChild.height _ m__(calcHeight(tempLeftChild.l..,
+                                   calcHeight(tempLeftChild.r..)) + 1;
 
         r_ tempLeftChild;
 
     ___ rotateLeft node
 
-        print("Rotating to the left on node ", node.data);
+        print("Rotating to the left on node ", ?.data);
 
-        tempRightChild _ node.rightChild;
-        t _ tempRightChild.leftChild;
+        tempRightChild _ ?.r..;
+        t _ tempRightChild.l..;
 
-        tempRightChild.leftChild _ node;
-        node.rightChild _ t;
+        tempRightChild.l.. _ node;
+        ?.r.. _ t;
 
-        node.height _ m__(calcHeight(node.leftChild), calcHeight(node.rightChild)) + 1;
-        tempRightChild.height _ m__(calcHeight(tempRightChild.leftChild),
-                                    calcHeight(tempRightChild.rightChild)) + 1;
+        ?.height _ m__(calcHeight(?.l.., calcHeight(?.r..)) + 1;
+        tempRightChild.height _ m__(calcHeight(tempRightChild.l..,
+                                    calcHeight(tempRightChild.r..)) + 1;
 
         r_ tempRightChild;
 

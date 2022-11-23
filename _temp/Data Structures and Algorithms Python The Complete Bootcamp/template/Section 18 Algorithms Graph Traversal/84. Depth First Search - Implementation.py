@@ -9,10 +9,10 @@ c_ Node(
 c_ Graph(
 
     ___ DFS node, traversal
-        node.visited _ T..
-        traversal.a..(node.value)
+        ?.visited _ T..
+        traversal.a..(?.value)
 
-        ___ element __ node.adjacentlist:
+        ___ element __ ?.adjacentlist:
             __ element.visited __ F..:
                 DFS(element, traversal)
 

@@ -31,7 +31,7 @@ ___ sum_func(n
     __(n<10
         r_ n
     ____
-        r_ n%10 + sum_func(i..(n/10))
+        r_ n_10 + sum_func(i..(n/10))
     p..
 
 sum_func(4321)

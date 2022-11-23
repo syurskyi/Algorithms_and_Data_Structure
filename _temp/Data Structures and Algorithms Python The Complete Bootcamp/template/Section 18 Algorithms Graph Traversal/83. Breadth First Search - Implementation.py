@@ -12,7 +12,7 @@ c_ Graph(
 
         queue _    # list
         queue.a..(node)
-        node.visited _ T..
+        ?.visited _ T..
 
         traversal _    # list
 

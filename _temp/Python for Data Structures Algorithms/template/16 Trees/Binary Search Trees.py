@@ -17,10 +17,10 @@ c_ TreeNode:
         r_ rightChild
 
     ___ isLeftChild 
-        r_ parent ___ parent.leftChild __ self
+        r_ parent ___ parent.l.. __ self
 
     ___ isRightChild 
-        r_ parent ___ parent.rightChild __ self
+        r_ parent ___ parent.r.. __ self
 
     ___ isRoot 
         r_ n.. parent
@@ -67,14 +67,14 @@ c_ BinarySearchTree:
     ___ _putkey,val,currentNode
         __ key < ?.key:
             __ ?.hasLeftChild(
-                   _put(key,val,?.leftChild)
+                   _put(key,val,?.l..
             ____
-                   ?.leftChild _ TreeNode(key,val,parent_currentNode)
+                   ?.l.. _ TreeNode(key,val,parent_currentNode)
         ____
             __ ?.hasRightChild(
-                   _put(key,val,?.rightChild)
+                   _put(key,val,?.r..
             ____
-                   ?.rightChild _ TreeNode(key,val,parent_currentNode)
+                   ?.r.. _ TreeNode(key,val,parent_currentNode)
 
     ___ __setitem__k,v
         put(k,v)
@@ -97,9 +97,9 @@ c_ BinarySearchTree:
         ____ ?.key __ key:
             r_ currentNode
         ____ key < ?.key:
-            r_ _get(key,?.leftChild)
+            r_ _get(key,?.l..
         ____
-            r_ _get(key,?.rightChild)
+            r_ _get(key,?.r..
 
     ___ __getitem__key
         r_ get(key)
@@ -134,26 +134,26 @@ c_ BinarySearchTree:
         __ isLeaf(
             __ isLeftChild(
 
-                parent.leftChild _ N..
+                parent.l.. _ N..
             ____
-                parent.rightChild _ N..
+                parent.r.. _ N..
         ____ hasAnyChildren(
             __ hasLeftChild(
 
                 __ isLeftChild(
 
-                    parent.leftChild _ leftChild
+                    parent.l.. _ leftChild
                 ____
 
-                    parent.rightChild _ leftChild
+                    parent.r.. _ leftChild
                     leftChild.parent _ parent
         ____
 
             __ isLeftChild(
 
-                parent.leftChild _ rightChild
+                parent.l.. _ rightChild
             ____
-                parent.rightChild _ rightChild
+                parent.r.. _ rightChild
                 rightChild.parent _ parent
 
     ___ findSuccessor 
@@ -168,25 +168,25 @@ c_ BinarySearchTree:
 
                     succ _ parent
                 ____
-                    parent.rightChild _ N..
+                    parent.r.. _ N..
                     succ _ parent.findSuccessor()
-                    parent.rightChild _ self
+                    parent.r.. _ self
         r_ succ
 
     ___ findMin 
 
         current _ self
         _____ current.hasLeftChild(
-            current _ current.leftChild
+            current _ current.l..
         r_ current
 
     ___ removecurrentNode
 
         __ ?.isLeaf( #leaf
-            __ currentNode __ ?.parent.leftChild:
-                ?.parent.leftChild _ N..
+            __ currentNode __ ?.parent.l..
+                ?.parent.l.. _ N..
             ____
-                ?.parent.rightChild _ N..
+                ?.parent.r.. _ N..
         ____ ?.hasBothChildren( #interior
 
             succ _ ?.findSuccessor()
@@ -197,30 +197,30 @@ c_ BinarySearchTree:
         ____ # this node has one child
             __ ?.hasLeftChild(
                 __ ?.isLeftChild(
-                    ?.leftChild.parent _ ?.parent
-                    ?.parent.leftChild _ ?.leftChild
+                    ?.l...parent _ ?.parent
+                    ?.parent.l.. _ ?.l..
                 ____ ?.isRightChild(
-                    ?.leftChild.parent _ ?.parent
-                    ?.parent.rightChild _ ?.leftChild
+                    ?.l...parent _ ?.parent
+                    ?.parent.r.. _ ?.l..
                 ____
 
-                    ?.replaceNodeData(?.leftChild.key,
-                                    ?.leftChild.payload,
-                                    ?.leftChild.leftChild,
-                                    ?.leftChild.rightChild)
+                    ?.replaceNodeData(?.l...key,
+                                    ?.l...payload,
+                                    ?.l...leftChild,
+                                    ?.l...rightChild)
             ____
 
                 __ ?.isLeftChild(
-                    ?.rightChild.parent _ ?.parent
-                    ?.parent.leftChild _ ?.rightChild
+                    ?.r...parent _ ?.parent
+                    ?.parent.l.. _ ?.r..
                 ____ ?.isRightChild(
-                    ?.rightChild.parent _ ?.parent
-                    ?.parent.rightChild _ ?.rightChild
+                    ?.r...parent _ ?.parent
+                    ?.parent.r.. _ ?.r..
                 ____
-                    ?.replaceNodeData(?.rightChild.key,
-                                    ?.rightChild.payload,
-                                    ?.rightChild.leftChild,
-                                    ?.rightChild.rightChild)
+                    ?.replaceNodeData(?.r...key,
+                                    ?.r...payload,
+                                    ?.r...l..,
+                                    ?.r...r..
 
 
 mytree _ BinarySearchTree()

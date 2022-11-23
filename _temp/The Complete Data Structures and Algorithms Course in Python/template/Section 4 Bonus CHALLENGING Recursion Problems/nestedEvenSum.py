@@ -7,7 +7,7 @@ ___ nestedEvenSum(obj, sum_0
     ___ key __ obj:
         __ type(obj[key]) __ dict:
             sum +_ nestedEvenSum(obj[key])
-        ____ type(obj[key]) __ i.. ___ obj[key]%2__0:
+        ____ type(obj[key]) __ i.. ___ obj[key]_2__0:
             sum+_obj[key]
     r_ sum
 

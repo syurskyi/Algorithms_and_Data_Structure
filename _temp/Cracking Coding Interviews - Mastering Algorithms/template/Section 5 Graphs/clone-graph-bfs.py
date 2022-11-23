@@ -59,8 +59,8 @@ node2 _ Node(2,    # list)
 node3 _ Node(3,    # list)
 node4 _ Node(4,    # list)
 
-node.neighbors.a..(node2)
-node.neighbors.a..(node4)
+?.neighbors.a..(node2)
+?.neighbors.a..(node4)
 
 node2.neighbors.a..(node)
 node2.neighbors.a..(node3)

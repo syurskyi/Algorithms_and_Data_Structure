@@ -19,7 +19,7 @@ c_ Graph:
     
     ___ printSolutions,d,w
         ___ s, d, w __ MST:
-            print("%s - %s: %s" % (s, d, w))
+            print("%s - %s: %s" _ (s, d, w))
     
     ___ kruskalAlgo 
         i, e _ 0, 0

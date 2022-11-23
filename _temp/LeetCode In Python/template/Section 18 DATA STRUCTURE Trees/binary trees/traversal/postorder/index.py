@@ -9,9 +9,9 @@ c_ Node
 
 ___ postorder(node
     __(node __ n.. N..
-        postorder(node.left)
-        postorder(node.right)
-        print(node.data)
+        postorder(?.left)
+        postorder(?.right)
+        print(?.data)
 
 
 # create root

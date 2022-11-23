@@ -70,7 +70,7 @@ ___ DigitsInLargest(start
 ___ Digit(n, k
     d _ 0
     ___ i __ r..(1,k+1
-        d _ n%10
+        d _ n_10
         n//_10
     r_ d
         

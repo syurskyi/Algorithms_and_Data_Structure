@@ -32,10 +32,10 @@ ___ levelOrderPrint(tree
         temp _ deque()
         _____ l..(queue) !_ 0:
             node _ queue.p.. 
-            print(s..(node.v..) + ' ')
-            __ node.left __ n.. N..
+            print(s..(?.v..) + ' ')
+            __ ?.left __ n.. N..
                 ?.a..(tree.left)
-            __ node.right __ n.. N..
+            __ ?.right __ n.. N..
                 ?.a..(tree.right)
             queue _ temp
 

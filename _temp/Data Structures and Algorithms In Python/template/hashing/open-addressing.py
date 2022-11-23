@@ -27,7 +27,7 @@ c_ HashTable:
         n _ 0
 
     ___ hash1 key
-        r_ (key % m)
+        r_ (key _ m)
     
     ___ i..  newRecord
         key _ newRecord.get_student_id()
@@ -44,7 +44,7 @@ c_ HashTable:
             __ array[location].get_student_id() __ key:
                 r... InvalidOperationException("Duplicate key")
 
-            location _ (h + i) % m
+            location _ (h + i) _ m
         
         print("Table is full : Record can't be inserted ")
     
@@ -58,7 +58,7 @@ c_ HashTable:
                 r_ N..
             __ array[location].get_student_id() __ key:
                 r_ array[location]
-            location _ (h + i) % m
+            location _ (h + i) _ m
         r_ N..
     
 
@@ -86,7 +86,7 @@ c_ HashTable:
                 n-_1
                 r_ temp
             
-            location _ (h + i) % m
+            location _ (h + i) _ m
         
         r_ N..
 
