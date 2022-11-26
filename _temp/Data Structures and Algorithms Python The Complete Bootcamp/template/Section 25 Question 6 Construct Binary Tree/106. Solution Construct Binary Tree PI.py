@@ -1,7 +1,7 @@
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ -  val_0, left_None, right_None
-        val _ val
+        ? _ ?
         left _ left
         right _ right
 

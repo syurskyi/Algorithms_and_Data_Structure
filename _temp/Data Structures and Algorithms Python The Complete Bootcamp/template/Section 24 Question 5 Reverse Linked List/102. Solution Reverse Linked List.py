@@ -1,7 +1,7 @@
 # Definition for singly-linked list.
 c_ ListNode:
     ___ -  val_0, next_None
-        val _ val
+        ? _ ?
         next _ next
 
 

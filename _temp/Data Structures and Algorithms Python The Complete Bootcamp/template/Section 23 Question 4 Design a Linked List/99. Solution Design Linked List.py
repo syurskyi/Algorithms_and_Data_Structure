@@ -1,6 +1,6 @@
 c_ ListNode:
     ___ -  val
-        val _ val
+        ? _ ?
         p.. _ N..
         n.. _ N..
 
