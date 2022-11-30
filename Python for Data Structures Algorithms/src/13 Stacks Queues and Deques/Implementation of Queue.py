@@ -45,16 +45,18 @@ class Queue:
 q = Queue()
 
 # %%
-q.size()
+print(q.size())
 
 # %%
-q.isEmpty()
+print(q.isEmpty())
 
 # %%
 q.enqueue(1)
+print(q.size())
 
 # %%
 q.dequeue()
+print(q.size())
 
 # %%
 '''

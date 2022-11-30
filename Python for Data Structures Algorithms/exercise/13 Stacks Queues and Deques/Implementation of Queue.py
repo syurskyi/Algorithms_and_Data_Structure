@@ -25,38 +25,32 @@
 # '''
 #
 # # %%
-# c_ Queue
-#     ___ -
-#         items _    # list
-#
-#     ___ isEmpty
-#         r_ ? __    # list
-#
-#     ___ enqueue item
-#         ?.i..  0 ?
-#
-#     ___ dequeue
-#         r_ ?.p..
-#
-#     ___ size
-#         r_ l.. ?
-#
-# # %%
-# q _ Queue()
-#
-# # %%
-# q.size()
-#
-# # %%
-# q.isEmpty()
-#
-# # %%
-# q.enqueue(1)
-#
-# # %%
-# q.dequeue()
-#
-# # %%
-# '''
-# ## Good Job!
-# '''
+class Queue:
+    def __init__(self):
+        self.items = []    # list
+
+    def isEmpty(self):
+        return self.items == []    # list
+
+    def enqueue(self, item):
+        self.items.insert(0, item)
+
+    def dequeue(self):
+        return self.items.pop()
+
+    def size(self):
+        return len(self.items)
+
+q = Queue()
+
+# %%
+print(q.size())
+
+# %%
+q.isEmpty()
+
+# %%
+q.enqueue(1)
+
+# %%
+q.dequeue()
