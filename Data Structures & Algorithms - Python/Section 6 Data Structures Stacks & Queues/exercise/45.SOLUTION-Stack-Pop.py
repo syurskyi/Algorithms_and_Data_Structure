@@ -21,21 +21,19 @@ class Stack:
         if self.height == 0:
             self.top = new_node
         else:
-            new_node.n.. _ t..
-            ? _ ?
-        ? +_ 1
-        r.. T..
+            new_node.next = self.top
+            self.top = new_node
+        self.height += 1
+        return True
 
-    ___ pop
-        __ ? __ 0
-            r.. N..
-        t.. _ t..
-        t.. _ ?.n..
-        ?.n.. _ N..
-        ? -_ 1
-        r.. ?
-
-
+    def pop(self):
+        if self.height == 0:
+            return None
+        temp = self.top
+        self.top = self.top.next
+        temp.next = None
+        self.height -= 1
+        return  temp
 
 
 my_stack = Stack(4)
@@ -47,7 +45,7 @@ print('Stack before pop():')
 my_stack.print_stack()
 
 print('\nPopped node:')
-print(my_stack.pop().value
+print(my_stack.pop().value)
 
 print('\nStack after pop():')
 my_stack.print_stack()
