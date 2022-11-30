@@ -41,32 +41,32 @@ class Stack:
 
 s = Stack()
 
-print s.isEmpty()
+print(s.isEmpty())
 # True
 
-s.push(1)
-s.push('two')
-s.peek()
+print(s.push(1))
+print(s.push('two'))
+print(s.peek())
 # 'two'
 
 s.push(True)
-s.size()
+print(s.size())
 # 3
 
 # s.isEmpty()
 False
 
-s.pop()
+print(s.pop())
 # True
 
-s.pop()
+print(s.pop())
 # two
 
-s.size()
+print(s.size())
 # 1
 
-s.pop()
+print(s.pop())
 # 1
 
-s.isEmpty()
+print(s.isEmpty())
 # True
