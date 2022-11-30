@@ -6,8 +6,8 @@
 # '''
 #
 # # %%
-# stack1 _    # list
-# stack2 _    # list
+stack1 = []   # list
+stack2 = []    # list
 #
 # # %%
 # '''
@@ -20,26 +20,26 @@
 # '''
 #
 # # %%
-# c_ Queue2Stacks o..
-#
-#     ___ -
-#
-#         # Two Stacks
-#         instack _    # list
-#         outstack _    # list
-#
-#     ___ enqueue element
-#
-#         # Add an enqueue with the "IN" stack
-#         ?.a.. ?
-#
-#     ___ dequeue
-#         __ n.. ?
-#             _____ i..
-#                 # Add the elements to the outstack to reverse the order when called
-#                 ?.a.. ?.p..
-#         r_ ?.p..
-#
+class Queue2Stacks(object):
+
+    def __init__(self):
+
+        # Two Stacks
+        self.instack = []    # list
+        self.outstack = []    # list
+
+    def enqueue(self, element):
+
+        # Add an enqueue with the "IN" stack
+        self.instack.append(element)
+
+    def dequeue(self):
+        if not self.outstack:
+            while self.instack:
+                # Add the elements to the outstack to reverse the order when called
+                self.outstack.append(self.instack.pop())
+        return self.outstack.pop()
+
 # # %%
 # '''
 # # Test Your Solution
@@ -51,14 +51,17 @@
 # """
 # RUN THIS CELL TO CHECK THAT YOUR SOLUTION OUTPUT MAKES SENSE AND BEHAVES AS A QUEUE
 # """
-# q _ Queue2Stacks
-#
-# ___ i __ xrange(5
-#     q.enqueue(i)
-#
-# ___ i __ xrange(5
-#     print q.dequeue()
-#
+q = Queue2Stacks()
+
+for i in range(5):
+    print(q.enqueue(i))
+
+print()
+print()
+
+for i in range(5):
+    print(q.dequeue())
+
 # # %%
 # '''
 # ## Good Job!

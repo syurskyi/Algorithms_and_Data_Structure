@@ -53,11 +53,11 @@ RUN THIS CELL TO CHECK THAT YOUR SOLUTION OUTPUT MAKES SENSE AND BEHAVES AS A QU
 """
 q = Queue2Stacks()
 
-for i in xrange(5):
+for i in range(5):
     q.enqueue(i)
     
-for i in xrange(5):
-    print q.dequeue()
+for i in range(5):
+    print(q.dequeue())
 
 # %%
 '''
