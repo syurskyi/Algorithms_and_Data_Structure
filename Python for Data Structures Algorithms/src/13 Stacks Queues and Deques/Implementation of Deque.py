@@ -47,13 +47,13 @@ d.addFront('hello')
 d.addRear('world')
 
 # %%
-d.size()
+print(d.size())
 
 # %%
-print d.removeFront() + ' ' +  d.removeRear()
+print(d.removeFront() + ' ' +  d.removeRear())
 
 # %%
-d.size()
+print(d.size())
 
 # %%
 '''

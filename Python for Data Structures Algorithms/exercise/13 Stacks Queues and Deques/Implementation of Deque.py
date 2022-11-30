@@ -13,49 +13,43 @@
 #
 # ## Deque Implementation
 # '''
-#
-# # %%
-# c_ Deque
-#     ___ -
-#         items _    # list
-#
-#     ___ isEmpty
-#         r_ ? __    # list
-#
-#     ___ addFront item
-#         ?.a.. ?
-#
-#     ___ addRear item
-#         ?.i.. 0 ?
-#
-#     ___ removeFront
-#         r_ ?.p..
-#
-#     ___ removeRear
-#         r_ ?.p.. 0
-#
-#     ___ size
-#         r_ l.. ?
-#
-# # %%
-# d _ Deque()
-#
-# # %%
-# d.addFront('hello')
-#
-# # %%
-# d.addRear('world')
-#
-# # %%
-# d.size()
-#
-# # %%
-# print d.removeFront() + ' ' +  d.removeRear()
-#
-# # %%
-# d.size()
-#
-# # %%
-# '''
-# ## Good Job!
-# '''
+
+# %%
+class Deque:
+    def __init__(self):
+        self.items = []    # list
+
+    def isEmpty(self):
+        return self.items == []   # list
+
+    def addFront(self, item):
+        self.items.append(item)
+
+    def addRear(self, item):
+        self.items.insert(0, item)
+
+    def removeFront(self):
+        return self.items.pop()
+
+    def removeRear(self):
+        return self.items.pop(0)
+
+    def size(self):
+        return len(self.items)
+
+d = Deque()
+
+# %%
+d.addFront('hello')
+
+# %%
+d.addRear('world')
+
+# %%
+d.size()
+
+# %%
+print(d.removeFront() + ' ' +  d.removeRear())
+
+# %%
+d.size()
