@@ -28,7 +28,7 @@ class Stack:
         return len(self.stackArray) <= 0
 
 def isPalindrome(str):
-  print "input:", str
+  print("input:", str)
   strStack = Stack()
   palindrome = False
   for char in str:
@@ -41,5 +41,5 @@ def isPalindrome(str):
 
   return palindrome
 
-print isPalindrome("12321")
+print(isPalindrome("12321"))
 #print isPalindrome("malayalam")
