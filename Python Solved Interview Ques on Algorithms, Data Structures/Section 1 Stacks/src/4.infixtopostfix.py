@@ -1,4 +1,21 @@
 # Write a program to convert infix expression to postfix expression
+# Implementation:
+# 3 arrays\storage units:
+# Postfix array: contains the operands(ex: A, B, C)
+# Stack array: contains the operators(ex: +, *)
+# Precedence dict: contains the priority values for different operators
+# We will use this to decide whether the stack's top element(operator)
+# should be appended to the postfix array or the parsed operator
+# to be pushed to stack
+# For each element in the infix expression ( A + B * C)
+# {
+#   if the element is operand, append it in the output postfix array
+# else if the element is '(', push it on the stack
+# else if the element is ')', then get all the elements
+# from the stack and append it to the output postfix array
+# else if the element is a operator, then get the priority value
+# of this operator
+
 class Stack:
     def __init__(self):
         self.items = []
