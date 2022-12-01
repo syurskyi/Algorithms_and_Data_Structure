@@ -1,54 +1,54 @@
-# c_ Stack
-#     ___ -
-#         items _     # list
-#
-#     ___ isEmpty
-#         r_ ? __    # list
-#
-#     ___ push  item
-#         ?.i.. 0 ?
-#
-#     ___ pop
-#         r_ ?.p.. 0
-#
-#     ___ peek
-#         r_ ? 0
-#
-#     ___ size
-#         r_ le. ?
-#
-# ___ iTop infixexpr
-#     print "input:" ?
-#     prec _    # dict
-#     prec["^"] _ 4
-#     prec["*"] _ 3
-#     prec["/"] _ 3
-#     prec["+"] _ 2
-#     prec["-"] _ 2
-#     prec["("] _ 1
-#     stackObject _ ?
-#     postfixArray _   # list
-#     tokenList _ ?.sp..
-#
-#     ___ token __ tokenList
-#         __ ? __ "ABCDEFGHIJKLMNOPQRSTUVWXYZ" o. ? __ "0123456789":
-#             pA__.ap.. ?
-#         ____ ?? __ '(':
-#             sO__.pu.. ?
-#         ____ ? __ ')'
-#             topToken _ sO__.po.
-#             w___ tT.. !_ '(':
-#                 pA__.ap.. tT..
-#                 tT.. _ sO__.p..
-#         ____
-#             w___ no. sO__.iE.. an. \
-#                (p__|s..O___.pe.. >_ p__|?
-#                   pA__.ap.. sO__.po.
-#             sO__.pu.. ?
-#
-#     w___ no. sO__.iE..
-#         pA__.ap.. sO__.po.
-#     r_ " ".j.. pA..
-#
-# myarray_"A + B * C"
-# print iT..  ?
+class Stack:
+    def __init__(self):
+        self.items = []     # list
+
+    def isEmpty(self):
+        return self.items == []    # list
+
+    def push(self, item):
+        self.items.insert(0, item)
+
+    def pop(self):
+        return self.items.pop(0)
+
+    def peek(self):
+        return self.items[0]
+
+    def size(self):
+        return len(self.items)
+
+def iTop(infixexpr):
+    print("input:", infixexpr)
+    prec = {}   # dict
+    prec["^"] = 4
+    prec["*"] = 3
+    prec["/"] = 3
+    prec["+"] = 2
+    prec["-"] = 2
+    prec["("] = 1
+    stackObject = Stack()
+    postfixArray = []   # list
+    tokenList = infixexpr.split()
+
+    for token in tokenList:
+        if token in "ABCDEFGHIJKLMNOPQRSTUVWXYZ" or token in "0123456789":
+            postfixArray.append(token)
+        elif token is '(':
+            stackObject.push(token)
+        elif token is ')':
+            topToken = stackObject.pop()
+            while topToken != '(':
+                postfixArray.append(topToken)
+                topToken = stackObject.pop()
+        else:
+            while not stackObject.isEmpty() and \
+               (prec[stackObject.peek()] >= prec[token]):
+                  postfixArray.append(stackObject.pop())
+            stackObject.push(token)
+
+    while not stackObject.isEmpty():
+        postfixArray.append(stackObject.pop())
+    return " ".join(postfixArray)
+
+myarray = "A + B * C)"
+print(iTop(myarray))

@@ -18,7 +18,7 @@ class Stack:
         return len(self.items)
 
 def iTop(infixexpr):
-    print "input:",infixexpr
+    print("input:",infixexpr)
     prec = {}
     prec["^"] = 4
     prec["*"] = 3
@@ -50,5 +50,5 @@ def iTop(infixexpr):
         postfixArray.append(stackObject.pop())
     return " ".join(postfixArray)
 
-myarray="A + B * C"
+myarray="A + B * C "
 print(iTop(myarray))

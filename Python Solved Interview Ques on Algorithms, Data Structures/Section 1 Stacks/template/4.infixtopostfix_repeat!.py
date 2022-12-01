@@ -30,10 +30,10 @@
 #     postfixArray _   # list
 #     tokenList _ ?.sp..
 #
-#     ___ token __ tokenList
-#         __ ? __ "ABCDEFGHIJKLMNOPQRSTUVWXYZ" o. ? __ "0123456789":
+#     ___ token __ ?
+#         __ ? __ "ABCDEFGHIJKLMNOPQRSTUVWXYZ" o. ? __ "0123456789"
 #             pA__.ap.. ?
-#         ____ ?? __ '(':
+#         ____ ? __ '(':
 #             sO__.pu.. ?
 #         ____ ? __ ')'
 #             topToken _ sO__.po.
