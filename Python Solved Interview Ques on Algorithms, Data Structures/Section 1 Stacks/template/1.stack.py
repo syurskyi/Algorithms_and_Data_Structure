@@ -1,6 +1,6 @@
 # c_ Stack
 #
-#     ___ __init__
+#     ___ -
 #         stackArray _ li..
 #         maxLimit _ 8
 #         top _ 0
