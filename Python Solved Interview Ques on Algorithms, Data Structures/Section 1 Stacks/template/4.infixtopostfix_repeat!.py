@@ -32,14 +32,14 @@
 #
 #     ___ token __ ?
 #         __ ? __ "ABCDEFGHIJKLMNOPQRSTUVWXYZ" o. ? __ "0123456789"
-#             pA__.ap.. ?
-#         ____ ? __ '(':
-#             sO__.pu.. ?
+#             p__.a.. ?
+#         ____ ? __ '('
+#             ?.pu.. ?
 #         ____ ? __ ')'
-#             topToken _ sO__.po.
-#             w___ tT.. !_ '(':
-#                 pA__.ap.. tT..
-#                 tT.. _ sO__.p..
+#             topToken _ ?.po.
+#             w___ t.. !_ '('
+#                 p__.a.. tT..
+#                 t.. _ ?.p..
 #         ____
 #             w___ no. sO__.iE.. an. \
 #                (p__|s..O___.pe.. >_ p__|?

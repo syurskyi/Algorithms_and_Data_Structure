@@ -21,7 +21,7 @@
 # ___ symbolmatch top symbol
 #     startSymbols _ "({["
 #     closeSymbols _ ")}]"
-#     r_ sS__.in.. ? __ cS__.in.. ?
+#     r_ s__.in.. ? __ c__.in.. ?
 #
 #
 # ___ balancesymbol input
@@ -29,14 +29,14 @@
 #     stackObject _ ?
 #     balanced _ 0
 #     ___ symbols __ ?
-#         __ symbols __ ["(", "{", "["]
-#             sO__.pu.. ?
+#         __ ? __ ["(", "{", "["]
+#             ?.p.. ?
 #         ____
-#             __ sO__.iE..
+#             __ ?.i..
 #                 b.. _ 0
 #             ____
-#                 topSymbol _ sO__.po.
-#                 __ no. s.. tS.. s..
+#                 topSymbol _ ?.p..
+#                 __ no. s.. t.. s..
 #                     b.. _ 0
 #                 ____
 #                     b.. _ 1

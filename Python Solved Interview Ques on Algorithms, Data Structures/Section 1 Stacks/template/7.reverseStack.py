@@ -8,22 +8,22 @@
 #
 #     #Insert element into the Stack
 #     ___ push element
-#         r_ ?.ap.. ?
+#         r_ ?.a.. ?
 #
 #     #Remove element from the stack
 #     ___ pop
-#         r_ ?.po.
+#         r_ ?.p..
 #
 #     ___ isEmpty
-#         r_ not sA..
+#         r_ no. ?
 #
 #     ___ -r
 #         r_ "Stack @".f.. st..
 #
 # ___ reverseStack stack
 #   ___ reverseStackRecursive stack newStack _ S..
-#      __ no. ?.iE..
-#         ?.pu.. ?.po.
+#      __ no. ?.i..
+#         ?.p.. ?.po.
 #         rSR.. s.. nS..
 #      r_ nS..
 #

@@ -4,14 +4,14 @@ class Stack:
         self.maxLimit = 8
         self.top = 0
 
-    def push(self, element):
-        if self.top >= self.maxLimit:
+    def push(self,element):
+        if self.top>=self.maxLimit:
             return ("The Stack Array Is Full!")
         self.stackArray.append(element)
         self.top += 1
 
     def pop(self):
-        if self.top <= 0:
+        if self.top<=0:
             return ("The Stack Array Is Empty!")
         item = self.stackArray.pop()
         self.top -= 1
@@ -35,7 +35,7 @@ def pfEval(postfixExpr):
         else:
             operand2 = stackObject.pop()
             operand1 = stackObject.pop()
-            result = doMath(token, operand1, operand2)
+            result = doMath(token,operand1,operand2)
             stackObject.push(result)
     return stackObject.pop()
 

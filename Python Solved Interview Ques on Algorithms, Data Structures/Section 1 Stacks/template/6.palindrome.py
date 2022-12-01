@@ -9,14 +9,14 @@
 #     ___ push element
 #         __ ? >_ ?
 #             r_ ("The Stack Array Is Full!")
-#         sA__.ap.. ?
+#         ?.a.. ?
 #         ? +_ 1
 #
 #     #Remove element from the stack
 #     ___ pop
 #         __ ? <_ 0
 #             r_ ("The Stack Array Is Empty!")
-#         item _ sA__.p..
+#         item _ ?.p..
 #         ? -_ 1
 #         r_ ?
 #
@@ -25,16 +25,16 @@
 #         r_ ?
 #
 #     ___ isEmpty
-#         r_ le. sA.. <_ 0
+#         r_ l.. ? <_ 0
 #
 # ___ isPalindrome st.
 #   print "input:" ?
 #   strStack _ ?
 #   palindrome _ F..
 #   ___ char __ ?
-#     sS__.pu.. ?
-#   ___ char __ ?
-#     __ ? __ sS__.p..
+#     ?.p.. ?
+#   ___ ? __ ?
+#     __ ? __ ?.p..
 #        ? _ T..
 #     ____
 #        ? _ F..
