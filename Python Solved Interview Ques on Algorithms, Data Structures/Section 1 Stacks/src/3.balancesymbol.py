@@ -1,3 +1,4 @@
+# Write a program to balance symbols using stack
 class Stack:
     def __init__(self):
         self.items = []

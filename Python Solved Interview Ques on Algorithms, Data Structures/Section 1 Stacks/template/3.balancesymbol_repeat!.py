@@ -1,3 +1,4 @@
+# Write a program to balance symbols using stack
 # c_ Stack
 #     ___ -
 #         items _    # list
