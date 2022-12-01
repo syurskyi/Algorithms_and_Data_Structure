@@ -1,48 +1,48 @@
-# c_ Stack
-#     ___ -
-#         items _    # list
-#
-#     ___ push  item
-#         ?.ap.. ?
-#
-#     ___ pop
-#         r_ ?.po.
-#
-#     ___ isEmpty
-#         r_ ? __     # list
-#
-#     ___ peek
-#         r_ ? -1
-#
-#     ___ -s
-#         r_ st. ?
-#
-#
-# ___ symbolmatch top symbol
-#     startSymbols _ "({["
-#     closeSymbols _ ")}]"
-#     r_ sS__.in.. ? __ cS__.in.. ?
-#
-#
-# ___ balancesymbol input
-#     print("input:" ?
-#     stackObject _ ?
-#     balanced _ 0
-#     ___ symbols __ ?
-#         __ symbols __ ["(", "{", "["]
-#             sO__.pu.. ?
-#         ____
-#             __ sO__.iE..
-#                 b.. _ 0
-#             ____
-#                 topSymbol _ sO__.po.
-#                 __ no. s.. tS.. s..
-#                     b.. _ 0
-#                 ____
-#                     b.. _ 1
-#
-#     r_ ?
-#
-#
-# print(?("{([])}"))
-#
+class Stack:
+    def __init__(self):
+        self.items = []    # list
+
+    def push(self, item):
+        self.items.append(item)
+
+    def pop(self):
+        return self.items.pop()
+
+    def isEmpty(self):
+        return self.items == []     # list
+
+    def peek(self):
+        return self.items[-1]
+
+    def __str__(self):
+        return str(self.items)
+
+
+def symbolmatch(top, symbol):
+    startSymbols = "({["
+    closeSymbols = ")}]"
+    return startSymbols.index(top) == closeSymbols.index(symbol)
+
+
+def balancesymbol(input):
+    print("input:", input)
+    stackObject = Stack
+    balanced = 0
+    for symbols in input:
+        if symbols in ["(", "{", "["]:
+            stackObject.push(symbols)
+        else:
+            if stackObject.isEmpty():
+                balanced = 0
+            else:
+                topSymbol = stackObject.pop()
+                if not symbolmatch(topSymbol, symbols):
+                    balanced = 0
+                else:
+                    balanced = 1
+
+    return balanced
+
+
+print(balancesymbol("{([])}"))
+
