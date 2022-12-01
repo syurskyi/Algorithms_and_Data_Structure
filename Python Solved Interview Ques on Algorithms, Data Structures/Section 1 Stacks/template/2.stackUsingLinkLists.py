@@ -12,14 +12,14 @@
 # 	___ push  data
 # 		newnode _ N.. ?
 # 		?.n.. _ ?
-# 		root _ ?
+# 		r.. _ ?
 #
 # 	___ pop
 # 		__ isempty
 # 			print("stack is empty")
 # 			r_ "-1"
 # 		temp _ r..
-# 		root _ r__.ne..
+# 		r.. _ ?.ne..
 # 		popped _ ?.d..
 # 		r_ ?
 #

@@ -1,37 +1,36 @@
-# c_ Node
-# 	___ -  data
-# 		?  ?
-#
-# 		next _ N..
-#
-#
-# c_ Stack
-# 	___ -
-# 		root _ N..
-#
-# 	___ push  data
-# 		newnode _ N.. ?
-# 		?.n.. _ ?
-# 		root _ ?
-#
-# 	___ pop
-# 		__ isempty
-# 			print("stack is empty")
-# 			r_ "-1"
-# 		temp _ r..
-# 		root _ r__.ne..
-# 		popped _ ?.d..
-# 		r_ ?
-#
-# 	___ isempty
-# 		r_ T.. __ ? __ N.. ____ F..
-#
-#
-# stack _ ?
-# ?.pu.. 10
-# ?.pu.. 20
-# ?.pu.. 30
-# print(?.po..
-# print(?.po..
-# print(?.po..
-# print(?.po..
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+
+class Stack:
+    def __init__(self):
+        self.root = None
+
+    def push(self, data):
+        newnode = Node(data)
+        newnode.next = self.root
+        self.root = newnode
+
+    def pop(self):
+        if self.isempty():
+            print("stack is empty")
+            return "-1"
+        temp = self.root
+        self.root = self.root.next
+        popped = temp.data
+        return popped
+
+    def isempty(self):
+        return True if self.root is None else False
+
+
+stack=Stack()
+stack.push(10)
+stack.push(20)
+stack.push(30)
+print(stack.pop())
+print(stack.pop())
+print(stack.pop())
+print(stack.pop())
