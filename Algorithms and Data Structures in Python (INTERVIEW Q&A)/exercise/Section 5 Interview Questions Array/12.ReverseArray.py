@@ -12,8 +12,9 @@ def reverse(nums):
         start_index = start_index + 1
         end_index = end_index - 1
 
+
 if __name__ == '__main__':
 
-    n = [-3, 0, 3]
+    n = [5, -3, 0, 3, 1]
     reverse(n)
     print(n)
