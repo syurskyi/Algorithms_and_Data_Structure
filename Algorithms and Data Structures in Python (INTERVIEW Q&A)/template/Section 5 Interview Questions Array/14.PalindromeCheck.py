@@ -3,7 +3,7 @@
 # # of letters in the string is concerned
 # ? ? is_palindrome s
 #
-#     original_string _ s
+#     original_string _ ?
 #     # this is what we have implemented in the previous lecture in O(N)
 #     reversed_string _ r.. ?
 #

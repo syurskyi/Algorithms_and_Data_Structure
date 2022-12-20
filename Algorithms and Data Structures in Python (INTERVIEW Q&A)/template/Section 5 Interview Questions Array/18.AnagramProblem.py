@@ -13,7 +13,7 @@
 #
 #     # after that we have to check the letters with the same indexes
 #     # O(N) running time
-#     ___ i __ r..(l.. ?
+#     ___ i __ r.. l.. ?
 #         __ ? ? !_ ? ?
 #             r_ F..
 #
