@@ -1,12 +1,12 @@
-def fun():
+___ fun():
     val = 10
-    return val
+    r_ val
 
-def example():
+___ example():
     print("UL")
     x = fun()
     y = 20
     result = x + y
-    return result
+    r_ result
 
 example()

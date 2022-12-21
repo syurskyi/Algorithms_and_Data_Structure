@@ -1,25 +1,25 @@
-def quickSort(my_array):
+___ quickSort(my_array):
     qshelper(my_array, 0, len(my_array) - 1)
-    return my_array
+    r_ my_array
 
 
-def qshelper(my_array, start, end):
-    if start >= end:
-        return
+___ qshelper(my_array, start, end):
+    __ start >= end:
+        r_
 
     pivot = start
     left = start + 1
     right = end
 
-    while right >= left:
+    ______ right >= left:
 
-        if my_array[left] > my_array[pivot] and my_array[right] < my_array[pivot]:
+        __ my_array[left] > my_array[pivot] and my_array[right] < my_array[pivot]:
             my_array[left], my_array[right] = my_array[right], my_array[left]
 
-        if my_array[left] <= my_array[pivot]:
+        __ my_array[left] <= my_array[pivot]:
             left += 1
 
-        if my_array[right] >= my_array[pivot]:
+        __ my_array[right] >= my_array[pivot]:
             right -= 1
 
     my_array[pivot], my_array[right] = my_array[right], my_array[pivot]

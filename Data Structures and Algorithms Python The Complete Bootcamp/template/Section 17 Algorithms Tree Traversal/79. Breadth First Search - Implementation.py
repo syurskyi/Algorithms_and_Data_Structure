@@ -1,48 +1,48 @@
-class Queue():
-    def __init__(self):
-        self.items = []
+c_ Queue():
+    ___  -
+        items   # list
 
-    def enqueue(self, item):
-        self.items.append(item)
+    ___ enqueue  item):
+        items.a.. item)
 
-    def dequeue(self):
-        if len(self.items):
-            return self.items.pop(0)
+    ___ dequeue
+        __ len(items):
+            r_ items.pop(0)
 
-    def peek(self):
-        if len(self.items):
-            return self.items[0].value
-
-
-class Node():
-    def __init__(self, value):
-        self.value = value
-        self.left = None
-        self.right = None
+    ___ peek
+        __ len(items):
+            r_ items[0].value
 
 
-class BinaryTree():
-    def __init__(self, value):
-        self.root = Node(value)
+c_ Node():
+    ___  -  value):
+        value = value
+        left = N..
+        right = N..
 
-    def levelorder(self, start):
-        if start is None:
-            return
+
+c_ BinaryTree():
+    ___  -  value):
+        root = Node(value)
+
+    ___ levelorder  start):
+        __ start __ N..:
+            r_
 
         queue = Queue()
         queue.enqueue(start)
-        traversal = []
+        traversal   # list
 
-        while len(queue.items) > 0:
-            traversal.append(queue.peek())
+        ______ len(queue.items) > 0:
+            traversal.a.. queue.peek())
             node = queue.dequeue()
 
-            if node.left:
+            __ node.left:
                 queue.enqueue(node.left)
-            if node.right:
+            __ node.right:
                 queue.enqueue(node.right)
 
-        return traversal
+        r_ traversal
 
 
 tree = BinaryTree(3)

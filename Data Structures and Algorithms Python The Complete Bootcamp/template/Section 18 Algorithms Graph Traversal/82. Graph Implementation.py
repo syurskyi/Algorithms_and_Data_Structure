@@ -1,11 +1,11 @@
-class Node():
+c_ Node():
 
-    def __init__(self, value):
-        self.value = value
-        self.adjacentlist = []
-        self.visited = False
+    ___  -  value):
+        value = value
+        adjacentlist   # list
+        visited = False
 
-class Graph():
+c_ Graph():
     pass
 
 node1 = Node("A")
@@ -16,9 +16,9 @@ node5 = Node("E")
 node6 = Node("F")
 node7 = Node("G")
 
-node1.adjacentlist.append(node2)
-node1.adjacentlist.append(node3)
-node1.adjacentlist.append(node4)
-node2.adjacentlist.append(node5)
-node2.adjacentlist.append(node6)
-node4.adjacentlist.append(node7)
+node1.adjacentlist.a.. node2)
+node1.adjacentlist.a.. node3)
+node1.adjacentlist.a.. node4)
+node2.adjacentlist.a.. node5)
+node2.adjacentlist.a.. node6)
+node4.adjacentlist.a.. node7)

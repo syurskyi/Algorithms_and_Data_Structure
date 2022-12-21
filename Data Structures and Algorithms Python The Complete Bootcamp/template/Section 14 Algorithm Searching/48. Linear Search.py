@@ -1,9 +1,9 @@
-def linearSearch(my_array, target):
-    for i in range(len(my_array)):
-        if my_array[i] == target:
-            return i
+___ linearSearch(my_array,  target
+    ___ i __ r.. l..(my_array)):
+        __ my_array[i] __ target:
+            r_ i
 
-    return -1
+    r_ -1
 
 
 linearSearch([5, 3, 1, 9, 2], 9)

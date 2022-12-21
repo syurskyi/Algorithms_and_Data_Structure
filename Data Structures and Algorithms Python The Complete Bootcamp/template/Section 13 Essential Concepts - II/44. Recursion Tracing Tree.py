@@ -1,6 +1,6 @@
-def run(n):
-    if n == 0:
-        return
+___ run(n):
+    __ n __ 0:
+        r_
     print(n)
     run(n-1)
     print(n)

@@ -1,27 +1,27 @@
-class Solution:
+c_ Solution:
 
-    def longestPalindrome(self, s):
+    ___ longestPalindrome  s):
         result = ""
-        for i in range(len(s)):
-            word1 = self.checkPalindrome(s, i, i)
-            word2 = self.checkPalindrome(s, i, i + 1)
+        ___ i __ r.. l..(s)):
+            word1 = checkPalindrome(s, i, i)
+            word2 = checkPalindrome(s, i, i + 1)
 
-            if len(word1) >= len(word2):
+            __ len(word1) >= len(word2):
                 longest = word1
-            else:
+            ____
                 longest = word2
 
-            if len(longest) >= len(result):
+            __ len(longest) >= len(result):
                 result = longest
-            else:
+            ____
                 result = result
 
-        return result
+        r_ result
 
-    def checkPalindrome(self, s, left, right):
+    ___ checkPalindrome  s, left, right):
 
-        while left >= 0 and right < len(s) and s[left] == s[right]:
+        ______ left >= 0 and right < len(s) and s[left] __ s[right]:
             left -= 1
             right += 1
 
-        return s[left + 1:right]
+        r_ s[left + 1:right]

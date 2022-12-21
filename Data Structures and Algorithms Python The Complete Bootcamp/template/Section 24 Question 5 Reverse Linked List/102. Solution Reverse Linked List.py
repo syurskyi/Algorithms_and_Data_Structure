@@ -1,20 +1,20 @@
-# Definition for singly-linked list.
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+# Definition ___ singly-linked list.
+c_ ListNode:
+    ___  -  val=0, next=N..):
+        val = val
+        next = next
 
 
-class Solution:
-    def reverseList(self, head):
-        pre = None
+c_ Solution:
+    ___ reverseList  head):
+        pre = N..
         cur = head
-        suc = None
+        suc = N..
 
-        while cur:
+        ______ cur:
             suc = cur.next
             cur.next = pre
             pre = cur
             cur = suc
 
-        return pre
+        r_ pre

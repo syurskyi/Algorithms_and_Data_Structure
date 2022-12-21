@@ -1,9 +1,9 @@
-def selectionSort(arr):
-    for i in range(len(arr)):
+___ selectionSort(arr):
+    ___ i __ r.. l..(arr)):
         min_x = i
 
-        for item in range(i + 1, len(arr)):
-            if arr[item] < arr[min_x]:
+        ___ item __ r..(i + 1, len(arr)):
+            __ arr[item] < arr[min_x]:
                 min_x = item
 
         arr[i], arr[min_x] = arr[min_x], arr[i]

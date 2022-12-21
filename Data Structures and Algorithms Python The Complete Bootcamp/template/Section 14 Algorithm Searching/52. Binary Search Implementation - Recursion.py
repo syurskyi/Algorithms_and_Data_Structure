@@ -1,24 +1,24 @@
-def binarySearch(my_array, target):
+___ binarySearch(my_array,  target
     left = 0
     right = len(my_array) - 1
     result = helper(my_array, target, left, right)
-    return result
+    r_ result
 
 
-def helper(my_array, target, left, right):
-    if left > right:
-        return -1
+___ helper(my_array, target, left, right):
+    __ left > right:
+        r_ -1
 
     middle = (left + right) // 2
     middle_element = my_array[middle]
 
-    if target == middle_element:
-        return middle
-    elif target < middle_element:
+    __ target __ middle_element:
+        r_ middle
+    ____ target < middle_element:
         right = middle - 1
         result = helper(my_array, target, left, right)
-        return result
-    else:
+        r_ result
+    ____
         left = middle + 1
         result = helper(my_array, target, left, right)
-        return result
+        r_ result

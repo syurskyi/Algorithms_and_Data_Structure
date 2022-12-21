@@ -1,8 +1,8 @@
-def all_cubes(items):
-    result = []
+___ all_cubes(items):
+    result   # list
 
-    for item in items:
-        result.append(pow(item,3)) #O(n)
+    ___ item __ items:
+        result.a.. pow(item,3)) #O(n)
 
     print(result)
 

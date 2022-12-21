@@ -1,31 +1,31 @@
-class Node():
+c_ Node():
 
-    def __init__(self, value):
-        self.value = value
-        self.adjacentlist = []
-        self.visited = False
+    ___  -  value):
+        value = value
+        adjacentlist   # list
+        visited = False
 
 
-class Graph():
+c_ Graph():
 
-    def BFS(self, node):
+    ___ BFS  node):
 
-        queue = []
-        queue.append(node)
+        queue   # list
+        queue.a.. node)
         node.visited = True
 
-        traversal = []
+        traversal   # list
 
-        while queue:
+        ______ queue:
             actualNode = queue.pop(0)
-            traversal.append(actualNode.value)
+            traversal.a.. actualNode.value)
 
-            for element in actualNode.adjacentlist:
-                if element.visited is False:
-                    queue.append(element)
+            ___ element __ actualNode.adjacentlist:
+                __ element.visited __ False:
+                    queue.a.. element)
                     element.visited = True
 
-        return traversal
+        r_ traversal
 
 
 node1 = Node("A")
@@ -36,12 +36,12 @@ node5 = Node("E")
 node6 = Node("F")
 node7 = Node("G")
 
-node1.adjacentlist.append(node2)
-node1.adjacentlist.append(node3)
-node1.adjacentlist.append(node4)
-node2.adjacentlist.append(node5)
-node2.adjacentlist.append(node6)
-node4.adjacentlist.append(node7)
+node1.adjacentlist.a.. node2)
+node1.adjacentlist.a.. node3)
+node1.adjacentlist.a.. node4)
+node2.adjacentlist.a.. node5)
+node2.adjacentlist.a.. node6)
+node4.adjacentlist.a.. node7)
 
 graph = Graph()
 print(graph.BFS(node1))

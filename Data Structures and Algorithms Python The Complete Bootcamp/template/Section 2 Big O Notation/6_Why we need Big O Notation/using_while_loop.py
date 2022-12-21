@@ -5,12 +5,12 @@ timestamp1 = time.time()
 
 # Sum of natural numbers up to num
 num = 100
-if num < 0:
+__ num < 0:
    print("Enter a positive number")
-else:
+____
    sum = 0
    # use while loop to iterate until zero
-   while(num > 0):
+   ______(num > 0):
        sum += num
        num -= 1
    print("The sum is", sum)

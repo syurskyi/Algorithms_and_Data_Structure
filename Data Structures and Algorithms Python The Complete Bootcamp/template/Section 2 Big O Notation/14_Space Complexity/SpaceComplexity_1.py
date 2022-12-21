@@ -1,4 +1,4 @@
-def display_cube(items):
+___ display_cube(items):
     result = pow(items[0], 3)  # O(1)
     print(result)
 
