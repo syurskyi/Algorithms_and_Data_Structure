@@ -117,7 +117,7 @@ class AnagramTest(object):
         assert_equal(sol('hi man','hi     man'),True)
         assert_equal(sol('aabbcc','aabbc'),False)
         assert_equal(sol('123','1 2'),False)
-        print "ALL TEST CASES PASSED"
+        print("ALL TEST CASES PASSED")
 
 # # Run Tests
 # t = AnagramTest()
