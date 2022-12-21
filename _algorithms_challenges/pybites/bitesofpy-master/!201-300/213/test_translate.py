@@ -20,7 +20,7 @@ bite_15_it_fixed = '''<p>Iterare i <code>names</code> e le <code>countries list<
 6. Rodolfo    Mexico
 </pre></p><p>Si noti che la seconda colonna dovrebbe avere una larghezza fissa di 11 caratteri, quindi tra <i>Julian</i> e <i>Australia</i> ci sono 5 spazi, tra <i>Bob</i> e <i>Spagna</i> , ci sono 8. Questa colonna dovrebbe anche essere allineata a sinistra. </p><p>Idealmente si utilizza solo uno for loop, ma questo non è un requisito. </p><p>Buona fortuna e mantenere la calma e codice in Python! </p>'''
 
-bite_202_en = '''<p>In this Bite you will analyze complexity levels of our first 200 Bites of Py exercises.</p> <p>We loaded <a href="https://bit.ly/2MQyqXQ">this CSV file</a> with some stats that look like this:</p> <pre>
+bite_202_en = '''<p>In this Bite you will analyze complexity levels of our first 200 Bites of Py exercise.</p> <p>We loaded <a href="https://bit.ly/2MQyqXQ">this CSV file</a> with some stats that look like this:</p> <pre>
   $ head bite_levels.csv
 Bite;Difficulty
 Bite 1. Sum n numbers;3.45

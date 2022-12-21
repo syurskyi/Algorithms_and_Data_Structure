@@ -4,14 +4,14 @@
 # It is good practice to use the with keyword when dealing with file objects.
 # The advantage is that the file is properly closed after its suite finishes,
 # even if an exception is raised at some point. 
-with open('exercises.txt') as f:
+with open('exercise.txt') as f:
     read_data = f.read()
     print(read_data)
 print(f.closed)
 
 # If you’re not using the with keyword, then you should call f.close() to close
 # the file and immediately free up any system resources used by it.
-f = open('exercises.txt')
+f = open('exercise.txt')
 read_data = f.read()
 print(read_data)
 print(f.closed)
@@ -24,21 +24,21 @@ print(f.closed)
 
 # solution 1
 n = 5
-f = open('exercises.txt')
+f = open('exercise.txt')
 for i in range(n):
     print(f.readline())
 f.close()
 
 # solution 2
 n = 5
-with open('exercises.txt') as f:
+with open('exercise.txt') as f:
     lines = list(f)
     for line in lines[:n]:
         print(line)
 
 # solution 3
 n = 5
-with open('exercises.txt') as f:
+with open('exercise.txt') as f:
     lines = f.readlines()
     for line in lines[:n]:
         print(line)
@@ -46,7 +46,7 @@ with open('exercises.txt') as f:
 # solution 4
 from itertools import islice
 n = 5
-with open('exercises.txt') as f:
+with open('exercise.txt') as f:
     for line in islice(f, n):
         print(line)
         
@@ -54,10 +54,10 @@ with open('exercises.txt') as f:
 3. Write a Python program to append text to a file and display the text.
 """
 
-f = open('exercises.txt', 'a')
+f = open('exercise.txt', 'a')
 f.write('\nappending a line at the end of the file')
 f.close()
-f = open('exercises.txt', 'r')
+f = open('exercise.txt', 'r')
 print(f.read())
 f.close()
 
@@ -66,7 +66,7 @@ f.close()
 """
 
 n = 6
-f = open('exercises.txt')
+f = open('exercise.txt')
 lines = list(f)
 for line in lines[-n:]:
     print(line)
@@ -76,7 +76,7 @@ f.close()
 5. Write a Python program to read a file line by line and store it into a list.
 """
 
-with open('exercises.txt') as f:
+with open('exercise.txt') as f:
     lines = list(f)
     print(lines)
 
@@ -84,7 +84,7 @@ with open('exercises.txt') as f:
 6. Write a Python program to read a file line by line store it into a variable.
 """
 
-with open('exercises.txt') as f:
+with open('exercise.txt') as f:
     for line in f:
         my_string = line
         print(my_string)
@@ -94,7 +94,7 @@ with open('exercises.txt') as f:
 """
 
 # solution 1 (finds 1 longest word)
-with open('exercises.txt') as f:
+with open('exercise.txt') as f:
     lines = list(f)
     longest = ''
     for line in lines:
@@ -104,13 +104,13 @@ with open('exercises.txt') as f:
     print(longest)
     
 # solution 2 (finds 1 longest word)
-with open('exercises.txt') as f:
+with open('exercise.txt') as f:
     words = f.read().split()
     longest = max(words, key=len)
     print(longest)
     
 # solution 3 (finds all words with greatest length)
-with open('exercises.txt') as f:
+with open('exercise.txt') as f:
     words = f.read().split()
     max_length = len(max(words, key=len))
     all_longest = []
@@ -124,11 +124,11 @@ with open('exercises.txt') as f:
 """
 
 # solution 1
-with open('exercises.txt') as f:
+with open('exercise.txt') as f:
     print(len(list(f)))
 
 # solution 2
-with open('exercises.txt') as f:
+with open('exercise.txt') as f:
     counter = 0
     for line in f:
         counter += 1
@@ -141,7 +141,7 @@ with open('exercises.txt') as f:
 # solution 1
 import string
 
-with open('exercises.txt') as f:
+with open('exercise.txt') as f:
     # remove punctuation marks from the text 
     intab = string.punctuation
     outtab = " "*len(string.punctuation)
@@ -165,7 +165,7 @@ print(words_freq)
 from collections import Counter
 import string
 
-with open('exercises.txt') as f:
+with open('exercise.txt') as f:
     # remove punctuation marks from the text
     intab = string.punctuation
     outtab = " "*len(string.punctuation)
@@ -187,7 +187,7 @@ from os import stat
 
 # os.stat() - Get the status of a file or a file descriptor.
 # st_size - Size of the file in bytes
-statinfo = stat('exercises.txt')
+statinfo = stat('exercise.txt')
 print(statinfo.st_size)
 
 """
@@ -203,14 +203,14 @@ with open('list-to-file.txt', 'w+') as f:
 
 # solution 1 (copy without deleting existing data)
 f = open('list-to-file.txt')
-f1 = open('exercises.txt', 'a')
+f1 = open('exercise.txt', 'a')
 f1.write(f.read())
 f.close()
 f1.close()
 
 # solution 2 (copy with deleting all previous data in target file)
 import shutil
-shutil.copyfile('list-to-file.txt', 'exercises.txt')
+shutil.copyfile('list-to-file.txt', 'exercise.txt')
 
 """
 14. Write a Python program to combine each line from first file with the

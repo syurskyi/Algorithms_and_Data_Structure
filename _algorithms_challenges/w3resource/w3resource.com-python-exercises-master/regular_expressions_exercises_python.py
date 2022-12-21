@@ -265,14 +265,14 @@ else:
 
 """
 21. Write a Python program to find the substrings within a string. 
-Sample text : 'Python exercises, PHP exercises, C# exercises'
-Pattern : 'exercises'
-Note: There are two instances of exercises in the input string.
+Sample text : 'Python exercise, PHP exercise, C# exercise'
+Pattern : 'exercise'
+Note: There are two instances of exercise in the input string.
 """
 
 import re
-my_string = 'Python exercises, PHP exercises, C# exercises'
-my_substring = 'exercises'
+my_string = 'Python exercise, PHP exercise, C# exercise'
+my_substring = 'exercise'
 m = re.findall(my_substring, my_string)
 if m:
     print('it\'s a match', len(m))
@@ -285,8 +285,8 @@ substrings within a string.
 """
 
 import re
-my_string = 'Python exercises, PHP exercises, C# exercises'
-my_substring = 'exercises'
+my_string = 'Python exercise, PHP exercise, C# exercise'
+my_substring = 'exercise'
 m = re.finditer(my_substring, my_string)
 for match in m:
     print('string \'{}\''.format(my_substring), 'found at position', match.span())
