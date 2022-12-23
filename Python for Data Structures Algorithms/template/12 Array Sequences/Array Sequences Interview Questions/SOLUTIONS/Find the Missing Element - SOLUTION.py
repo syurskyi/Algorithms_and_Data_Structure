@@ -35,7 +35,7 @@
 #             r_ ?
 #
 #     # Otherwise return last element
-#     r_ arr1[-1]
+#     r_ _1 -#
 #
 # arr1 _ [1,2,3,4,5,6,7]
 # arr2 _ [3,7,2,1,4,6]
