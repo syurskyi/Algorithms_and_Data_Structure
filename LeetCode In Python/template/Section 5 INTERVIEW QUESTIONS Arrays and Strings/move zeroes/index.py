@@ -1,4 +1,5 @@
 # ____ t.. ______ L..
+
 # c_ Solution
 #     ___ moveZeroes nums L.. i.. __ N..
 #         # j indicates the no. of non-zero elements that we have,
@@ -15,3 +16,6 @@
 #         # position j to end of array to zero
 #         ___ x __ r.. ? l.. ?
 #             ? ? _ 0
+
+# s = Solution()
+# print(s.moveZeroes([0, 2, 0, 1, 4]))

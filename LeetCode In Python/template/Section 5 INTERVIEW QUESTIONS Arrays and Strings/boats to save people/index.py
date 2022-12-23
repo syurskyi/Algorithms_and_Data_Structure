@@ -1,3 +1,5 @@
+# ____ t.. ______ L..
+
 # c_ Solution
 #     ___ numRescueBoats people L.. i.. limit i.. __ i..
 #         ?.s..
@@ -17,3 +19,13 @@
 #             ?-_1
 #             ?+_1
 #         r_ ?
+
+# s = Solution()
+# [2, 1, 3, 4], limit = 4
+# [1, 2, 3, 4]
+
+# [4]
+# [1, 3]
+# [2]
+# answer = s.numRescueBoats([2, 1, 3, 4], 4)
+# print(answer)
